@@ -1,6 +1,6 @@
 # Cuaderno de bitácora
 ## Roles
-| Nombre | Roles |
+| Nombre | Roles | |
 |-----|-----------|--------|
 | BRUNO | ESCRIBA | ✍️ |
 | JAVIER | CHACHA | 👩🏻‍⚖️ |
