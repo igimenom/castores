@@ -19,7 +19,8 @@
 * Identificación de los componentes del ordenador. Javier
 * Hacer fotos. Javier
 * Descripción en detalle de cada foto. Marcos.
-* Hacer la tabla de componentes y compatibilidad. Bruno
+* Hacer la tabla de
+ componentes y compatibilidad. Bruno
 * Formatear usb con ventoy y linux mint. Iván
 * Volver a montar el ordenador. Marcos
 * Instalar linux. Javier
@@ -33,6 +34,9 @@
 
 * Bruno, acabar la Excel 
 * Javier; hacer la tabla de Excel pero en HTML 
-* Iván, Organizar el Git Hub 
+* Iván, Organizar el Git Hub
 * Marcos, instalar OCCT y monitorizar temperaturas del procesador
-
+* Javier; desmontar un PC
+* Marcos; montar PC
+* Iván; apuntar inventario
+* Bruno; hacer Kanban 
