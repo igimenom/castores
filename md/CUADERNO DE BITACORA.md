@@ -1,13 +1,12 @@
 # Cuaderno de bitácora
 ## Roles
-BRUNO
-ESCRIBA ✍️
-JAVIER
-CHACHA 👩🏻‍⚖️
-MARCOS
-TÉCNICO
-IVAN
-LÍDER 👑
+| Nombre | Roles |
+|-----|-----------|--------|
+| BRUNO | ESCRIBA | ✍️ |
+| JAVIER | CHACHA | 👩🏻‍⚖️ |
+| MARCOS | TÉCNICO | |
+| IVAN | LÍDER | 👑 |
+ 
 ### Día 1 ; 15/09/2026
 
 * Creación de grupo
