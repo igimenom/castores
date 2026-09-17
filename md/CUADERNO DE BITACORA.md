@@ -3,7 +3,7 @@
 | Nombre | Roles | |
 |-----|-----------|--------|
 | BRUNO | ESCRIBA | ✍️ |
-| JAVIER | CHACHA | 👩🏻‍⚖️ |
+| JAVIER | COORDINADOR | 👩🏻‍⚖️ |
 | MARCOS | TÉCNICO | |
 | IVAN | LÍDER | 👑 |
  
