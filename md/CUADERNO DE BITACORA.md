@@ -33,6 +33,6 @@
 
 * Bruno, acabar la Excel 
 * Javier; hacer la tabla de Excel pero en HTML 
-* Marcos e Iván, Organizar el Git Hub 
-
+* Iván, Organizar el Git Hub 
+* Marcos, instalar OCCT y monitorizar temperaturas del procesador
 
