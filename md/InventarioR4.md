@@ -13,3 +13,10 @@
 * pc sin nombre
 * tarjeta red conceptronic 300mbps c300ri
 * no tarjeta gráfica
+---
+* tarjetas gráficas
+* 9600 gt
+* eah3450
+---
+* wd500aakx x4
+*  sssd plus san disk 240gb      
