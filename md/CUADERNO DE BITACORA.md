@@ -40,3 +40,10 @@
 * Marcos; montar PC
 * Iván; apuntar inventario
 * Bruno; hacer Kanban 
+
+### Día 4 ; 17/09/2026
+
+* Bruno; No ha asistido
+* Javier; Remodelación del HTML, apuntar en el Excel los componentes
+* Marcos; Inventario de la sala R4, apuntar en el Excel los componentes.
+* Iván; Organizar el Kanban, Diagrama entidad-relación, supervisar a los compañeros.

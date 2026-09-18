@@ -1,24 +1,31 @@
 # Inventario R4 
-* pc16
-* tarjet gráfia x1550 super 512mb ddr2
-* proce amd athlon ii 2009
-* tp-link pci-express 300 mb tl wn881nd
-* disipador stock amd
-* pc case 500 psu
-* lector dvd rom
-* sandisk ssd plus 240gb
-* asus m2n68 - am plus
-* 2x2gb ram kingston
+## PC 16
+* Tarjeta gráfica ATI Radeon X1550 Super 512MB DDR2
+* Procesador AMD Athlon II 2009
+* Tarjeta de red TP-Link TL-WN881ND PCI-Express 300Mbps
+* Disipador Stock AMD
+* Caja PC Case con fuente de alimentación PSU 500W
+* Lector DVD-ROM
+* Disco SSD SanDisk PLUS 240GB
+* Placa base ASUS M2N68 - AM Plus
+* Memoria RAM Kingston 4GB 2x2GB
 ---
-* pc sin nombre
-* tarjeta red conceptronic 300mbps c300ri
-* no tarjeta gráfica
+## PC Sin Nombre
+* Tarjeta de red Conceptronic C300RI 300Mbps
+* Sin tarjeta gráfica dedicada
+* Procesador AMD Athlon II 2009
+* Disipador Stock AMD
+* Caja PC Case con fuente de alimentación PSU 500W
+* Lector DVD-ROM
+* Disco SSD SanDisk PLUS 240GB
+* Placa base ASUS M2N68 - AM Plus
+* Memoria RAM Kingston 4GB 2x2GB
 ---
 ## Tarjetas Gráficas
 * ASUS ATI Radeon HD 3450 512MB DDR2 (EAH3450/HTP/512M/A) x2
 * ASUS NVIDIA GeForce 8600 GT 512MB DDR2 (EN8600GT MG/HTP/512M/A)
 * Gigabyte NVIDIA GeForce GT 210 1GB DDR3 (GV-N210D3-1GI)
-* ATI Radeon HD 3650 512MB DDR2 (PN 188-0BE41-01ASA SKU# 11127-00)
+* ATI Radeon HD 3650 512MB GDDR3 (PN 188-0BE41-01ASA SKU# 11127-00)
 ---
 ## Almacenamiento
 ### Discos HDD
