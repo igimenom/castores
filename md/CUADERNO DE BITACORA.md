@@ -43,7 +43,7 @@
 
 ### Día 4 ; 17/09/2026
 
-* Bruno; No ha asistido
+* Bruno; No ha asistido (incluso con la posibilidad de trabajar en su domicilio de forma telemática)
 * Javier; Remodelación del HTML, apuntar en el Excel los componentes
 * Marcos; Inventario de la sala R4, apuntar en el Excel los componentes.
 * Iván; Organizar el Kanban, Diagrama entidad-relación, supervisar a los compañeros.
