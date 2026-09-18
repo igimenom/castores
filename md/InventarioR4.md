@@ -8,7 +8,7 @@
 * lector dvd rom
 * sandisk ssd plus 240gb
 * asus m2n68 - am plus
-* 2gb ram kingston
+* 2x2gb ram kingston
 ---
 * pc sin nombre
 * tarjeta red conceptronic 300mbps c300ri
