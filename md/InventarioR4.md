@@ -8,16 +8,14 @@
 * lector dvd rom
 * sandisk ssd plus 240gb
 * asus m2n68 - am plus
-* 2gb ram kingston
+* 2x2gb ram kingston
 ---
 * pc sin nombre
 * tarjeta red conceptronic 300mbps c300ri
 * no tarjeta gráfica
 ---
 ## Tarjetas Gráficas
-* 9600 gt 
-* eah3450
-* ASUS ATI Radeon HD 3450 512MB DDR2 (EAH3450/HTP/512M/A)
+* ASUS ATI Radeon HD 3450 512MB DDR2 (EAH3450/HTP/512M/A) x2
 * ASUS NVIDIA GeForce 8600 GT 512MB DDR2 (EN8600GT MG/HTP/512M/A)
 * Gigabyte NVIDIA GeForce GT 210 1GB DDR3 (GV-N210D3-1GI)
 * ATI Radeon HD 3650 512MB DDR2 (PN 188-0BE41-01ASA SKU# 11127-00)
