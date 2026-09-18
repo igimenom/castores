@@ -15,7 +15,7 @@
 * no tarjeta gráfica
 ---
 ## Tarjetas Gráficas
-* 9600 gt
+* 9600 gt gitano
 * eah3450
 * ASUS ATI Radeon HD 3450 512MB DDR2 (EAH3450/HTP/512M/A)
 * ASUS NVIDIA GeForce 8600 GT 512MB DDR2 (EN8600GT MG/HTP/512M/A)
