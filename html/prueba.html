@@ -1,52 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<style>
-  table { border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; margin-bottom: 20px; }
-  th, td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: middle; }
-  th { background-color: #f2f2f2; text-align: center; }
-  .img-producto {
-    max-width: 120px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-</style>
+  <meta charset="UTF-8">
+  <title>Inventario de Componentes</title>
+  
+  <!-- ESTILOS CSS: Definen la apariencia visual de la tabla y sus elementos -->
+  <style>
+    /* Colapsa los bordes dobles de la tabla en un solo borde limpio y ocupa el 100% del ancho */
+    table { 
+      border-collapse: collapse; 
+      width: 100%; 
+      font-family: Arial, sans-serif; 
+      margin-bottom: 20px; 
+    }
+    /* Estilo general para celdas de encabezado (th) y celdas de datos (td) */
+    th, td { 
+      border: 1px solid #ccc; 
+      padding: 8px; 
+      text-align: left; 
+      vertical-align: middle; 
+    }
+    /* Encabezados con fondo gris claro y texto centrado */
+    th { 
+      background-color: #f2f2f2; 
+      text-align: center; 
+    }
+    /* Estilo para ajustar y centrar las imágenes de los productos dentro de su celda */
+    .img-producto {
+      max-width: 120px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
+
+<!-- INICIO DE LA TABLA DE INVENTARIO -->
 <table>
+  
+  <!-- ENCABEZADO DE LA TABLA (THEAD) -->
   <thead>
+    <!-- PRIMERA FILA DEL ENCABEZADO -->
     <tr>
+      <!-- rowspan="2" hace que la celda abarque 2 filas verticalmente -->
       <th rowspan="2">ID</th>
       <th rowspan="2">Categoría</th>
       <th rowspan="2">Marca</th>
       <th rowspan="2">Modelo</th>
       <th rowspan="2">Estado</th>
       <th rowspan="2">Cantidad</th>
+      
+      <!-- colspan="2" hace que esta celda ocupe 2 columnas horizontalmente (Parámetro y Valor) -->
       <th colspan="2">Especificaciones</th>
+      
       <th rowspan="2">Imagen</th>
     </tr>
+    
+    <!-- SEGUNDA FILA DEL ENCABEZADO (Subcolumnas dentro de 'Especificaciones') -->
     <tr>
       <th>Parámetro</th>
       <th>Valor</th>
     </tr>
   </thead>
+
+  <!-- CUERPO DE LA TABLA (TBODY): Contiene la información de los productos -->
   <tbody>
-    <!-- PROCESADOR -->
+
+    <!-- ========================================== -->
+    <!-- COMPONENTE 1: PROCESADOR (Total 17 filas)  -->
+    <!-- ========================================== -->
+    
+    <!-- Fila 1 del Procesador: Define las celdas principales que abarcan 17 filas con rowspan="17" -->
     <tr>
+      <!-- Celdas fijas del producto (Abarcan desde la fila 1 hasta la 17) -->
       <td rowspan="17"><a href="https://www.amd.com/es/support/downloads/drivers.html/processors/athlon/athlon-3000-series/amd-athlon-3000g.html#amd_support_product_spec" target="_blank">PR_01</a></td>
       <td rowspan="17">Procesador</td>
       <td rowspan="17">AMD</td>
       <td rowspan="17">AMD Athlon™ 3000G</td>
       <td rowspan="17">Funciona</td>
       <td rowspan="17">1</td>
+      
+      <!-- Primera especificación técnica (Parámetro y Valor) -->
       <td>Nombre</td>
       <td>AMD Athlon™ 3000G</td>
+      
+      <!-- Celda de la imagen (Abarca 17 filas) -->
       <td rowspan="17">
         <img class="img-producto" src="../img/procesador.jfif" alt="Procesador amd-athlon-3000g">
       </td>
     </tr>
+    
+    <!-- Filas 2 a 17 del Procesador: Solo contienen Parámetro y Valor (las demás columnas están unificadas por rowspan) -->
     <tr><td>Familia</td><td>AMD Athlon™ Processors</td></tr>
     <tr><td>Serie</td><td>AMD Athlon™ Desktop Processors with Radeon™ Graphics</td></tr>
     <tr><td>Formato</td><td>Desktop</td></tr>
@@ -64,9 +109,13 @@
     <tr><td>Temperatura de funcionamiento máxima (Tjmax)</td><td>95°C</td></tr>
     <tr><td>Compatibilidad con SO</td><td>Windows 11 - 64-Bit, Windows 10 - 64-Bit, RHEL x86 64-Bit, Ubuntu x86 64-Bit</td></tr>
     
-    <!-- RAM -->
+    <!-- ========================================== -->
+    <!-- COMPONENTE 2: RAM (Total 15 filas)         -->
+    <!-- ========================================== -->
+    
+    <!-- Fila 1 de la RAM: Celdas principales con rowspan="15" -->
     <tr>
-      <td rowspan="15"><a href="https://www.xpg.com/es/xpg/dram-modules-gammix-d35-ddr4?tab=desc">RAM_02</a></td>
+      <td rowspan="15"><a href="https://www.xpg.com/es/xpg/dram-modules-gammix-d35-ddr4?tab=desc" target="_blank">RAM_02</a></td>
       <td rowspan="15">RAM</td>
       <td rowspan="15">XPG</td>
       <td rowspan="15">GAMMIX D35 DDR4</td>
@@ -78,6 +127,7 @@
         <img class="img-producto" src="../img/ram.jfif" alt="Memoria ram xpg">
       </td>
     </tr>
+    <!-- Filas 2 a 15 de la RAM (Especificaciones secundarias) -->
     <tr><td>Tipo de memoria</td><td>DDR4</td></tr>
     <tr><td>Factor de forma</td><td>U-DIMM</td></tr>
     <tr><td>Colores</td><td>Negro / Blanco</td></tr>
@@ -93,7 +143,11 @@
     <tr><td>Weight</td><td>27.34g / 28.41g / 29.27g</td></tr>
     <tr><td>Garantía</td><td>Garantía limitada</td></tr>
 
-    <!-- CHASIS -->
+    <!-- ========================================== -->
+    <!-- COMPONENTE 3: CHASIS (Total 16 filas)      -->
+    <!-- ========================================== -->
+    
+    <!-- Fila 1 del Chasis: Celdas principales con rowspan="16" -->
     <tr>
       <td rowspan="16"><a href="#">CAJA_00</a></td>
       <td rowspan="16">Chasis</td>
@@ -107,6 +161,7 @@
         <img class="img-producto" src="../img/chasis.jfif" alt="Chasis Tacens AC4500">
       </td>
     </tr>
+    <!-- Filas 2 a 16 del Chasis -->
     <tr><td>Dimensiones</td><td>350 x 315 x 165 mm</td></tr>
     <tr><td>Tamaño</td><td>Minitorre</td></tr>
     <tr><td>Formato placas base</td><td>MicroATX / Mini-ITX</td></tr>
@@ -122,8 +177,12 @@
     <tr><td>Puertos I/O</td><td>USB 3.0 x1 / USB 2.0 x1 / HD Audio + Mic</td></tr>
     <tr><td>Fuente incorporada</td><td>500W PSU</td></tr>
     <tr><td>Conectores Fuente de alimentación incluida</td><td>1x ATX 20+4 pin / 1x EPS 4+4 pin / 3x SATA / 2x PATA</td></tr>
-    <!-- PLACA BASE -->
-   <!-- PLACA BASE -->
+
+    <!-- ========================================== -->
+    <!-- COMPONENTE 4: PLACA BASE (Total 19 filas)  -->
+    <!-- ========================================== -->
+    
+    <!-- Fila 1 de Placa Base: Celdas principales con rowspan="19" -->
     <tr>
       <td rowspan="19"><a href="#">PB_03</a></td>
       <td rowspan="19">PLACA BASE</td>
@@ -137,6 +196,7 @@
         <img class="img-producto" src="../img/placabase.jfif" alt="Placa Base Gigabyte A520M">
       </td>
     </tr>
+    <!-- Filas 2 a 19 de Placa Base -->
     <tr><td>Chipset</td><td>AMD A520</td></tr>
     <tr><td>Memoria</td><td>2 x DDR4 DIMM sockets supporting up to 64 GB (32 GB single DIMM capacity) of system memory<br>Support for DDR4 5100(O.C.) / 4800(O.C.) / 4600(O.C.) / 4400(O.C.) / 4266(O.C.) / 4133(O.C.) / 4000(O.C.) / 3866(O.C.) / 3733(O.C.) / 3600(O.C.) / 3466(O.C.) / 3400(O.C.) / 3200 / 2933 / 2667 / 2400 / 2133 MHz memory modules<br>Dual channel memory architecture<br>Support for ECC Un-buffered DIMM 1Rx8/2Rx8 memory modules (operate in non-ECC mode)<br>Support for non-ECC Un-buffered DIMM 1Rx8/2Rx8/1Rx16 memory modules<br>Support for Extreme Memory Profile (XMP) memory modules</td></tr>
     <tr><td>Gráfica Integrada</td><td>Integrated Graphics Processor:<br>1 x D-Sub port, supporting a maximum resolution of 1920x1200@60 Hz<br>1 x HDMI port, supporting a maximum resolution of 4096x2160@60 Hz<br>* Support for HDMI 2.1 version, HDCP 2.3, and HDR.<br>Maximum shared memory of 16 GB</td></tr>
@@ -155,7 +215,12 @@
     <tr><td>Sistema Operativo</td><td>Support for Windows 11 64-bit<br>Support for Windows 10 64-bit</td></tr>
     <tr><td>Formato</td><td>Micro ATX Form Factor; 23.3cm x 19.8cm</td></tr>
     <tr><td>Observaciones</td><td>Due to different Linux support condition provided by chipset vendors, please download Linux driver from chipset vendors' website or 3rd party website.<br>Most hardware/software vendors may no longer offer drivers to support Win9X/ME/2000/XP. If drivers are available from the vendors, we will update them on the GIGABYTE website.</td></tr>
-    <!-- DISCO DURO (SSD) -->
+
+    <!-- ========================================== -->
+    <!-- COMPONENTE 5: DISCO DURO (Total 9 filas)   -->
+    <!-- ========================================== -->
+    
+    <!-- Fila 1 del SSD: Celdas principales con rowspan="9" -->
     <tr>
       <td rowspan="9"><a href="#">SSD_04</a></td>
       <td rowspan="9">DISCO DURO</td>
@@ -169,6 +234,7 @@
         <img class="img-producto" src="../img/ssd.jfif" alt="Disco Duro Intenso SSD">
       </td>
     </tr>
+    <!-- Filas 2 a 9 del SSD -->
     <tr><td>Factor forma</td><td>2,5"</td></tr>
     <tr><td>NAND Flash</td><td>High-Speed MLC</td></tr>
     <tr><td>Interfaz</td><td>SATA III (6 Gbps)</td></tr>
@@ -177,9 +243,12 @@
     <tr><td>Prestación de escritura:</td><td>hasta 520 MB/s</td></tr>
     <tr><td>Propiedades</td><td>Bajo consumo energético<br>Resistencia shock (1500 G / 0.5 ms)<br>Operación silenciosa</td></tr>
     <tr><td>Funciones</td><td>SMART Command Support<br>TRIM Command Support</td></tr>
-    
 
-    <!-- DISIPADOR DE CALOR -->
+    <!-- ========================================== -->
+    <!-- COMPONENTE 6: DISIPADOR (Total 14 filas)   -->
+    <!-- ========================================== -->
+    
+    <!-- Fila 1 del Disipador: Celdas principales con rowspan="14" -->
     <tr>
       <td rowspan="14"><a href="#">DIS_05</a></td>
       <td rowspan="14">DISIPADOR DE CALOR</td>
@@ -193,6 +262,7 @@
         <img class="img-producto" src="../img/disipador.jfif" alt="Disipador AMD Wraith Stealth">
       </td>
     </tr>
+    <!-- Filas 2 a 14 del Disipador -->
     <tr><td>Modelo</td><td>Wraith Stealth</td></tr>
     <tr><td>Tipo</td><td>Refrigerador de aire (Top Blower)</td></tr>
     <tr><td>Socket compatible</td><td>AM4</td></tr>
@@ -207,7 +277,11 @@
     <tr><td>Rango de ventas</td><td>146 de 1205 en CPU Kühler</td></tr>
     <tr><td>Compromiso medioambiental</td><td>SBTi</td></tr>
 
-    <!-- FUENTE DE ALIMENTACIÓN -->
+    <!-- ========================================== -->
+    <!-- COMPONENTE 7: FUENTE (Total 5 filas)       -->
+    <!-- ========================================== -->
+    
+    <!-- Fila 1 de la Fuente de Alimentación: Celdas principales con rowspan="5" -->
     <tr>
       <td rowspan="5"><a href="#">FA_06</a></td>
       <td rowspan="5">FUENTE DE ALIMENTACIÓN</td>
@@ -221,11 +295,14 @@
         <img class="img-producto" src="../img/fuente.jfif" alt="Fuente Tacens Anima APIII500">
       </td>
     </tr>
+    <!-- Filas 2 a 5 de la Fuente de Alimentación -->
     <tr><td>Peso y dimensiones</td><td>Ancho: 145 mm<br>Profundidad: 150 mm<br>Altura: 85 mm<br>Peso: 950 g</td></tr>
     <tr><td>Enfriamiento</td><td>Número de ventiladores: 1<br>Diámetro de ventilador: 12 cm<br>Ubicación de ventilador: Superior</td></tr>
     <tr><td>Diseño</td><td>Color del producto: Negro<br>Cableado: Cables planos extra largos</td></tr>
     <tr><td>Desempeño</td><td>Utilizar con: PC<br>Factor de forma de fuente de alimentación (PSU): ATX<br>Potencia: 500W<br>Nivel de ruido: 14dB<br>Certificaciones: ATX12V, Haswell Ready, CE, ROHS<br>Protecciones: OPP, OVP, UVP, SCP</td></tr>
+
   </tbody>
 </table>
+
 </body>
 </html>
