@@ -47,3 +47,7 @@
 * Javier; Remodelación del HTML, apuntar en el Excel los componentes
 * Marcos; Inventario de la sala R4, apuntar en el Excel los componentes.
 * Iván; Organizar el Kanban, Diagrama entidad-relación, supervisar a los compañeros.
+
+## Posibles cambios
+* Englobar todo en una carpeta llamada Reto-00
+* Reorganizar carpeta HTML
