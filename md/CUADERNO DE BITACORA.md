@@ -51,3 +51,4 @@
 ## Posibles cambios
 * Englobar todo en una carpeta llamada Reto-00
 * Reorganizar carpeta HTML
+* Hacer un HTML con hipervínculos a las tablas de los diferentes componentes.
