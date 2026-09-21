@@ -49,6 +49,7 @@
 * Iván; Organizar el Kanban, Diagrama entidad-relación, supervisar a los compañeros.
 
 ## Posibles cambios
-* Englobar todo en una carpeta llamada Reto-00
-* Reorganizar carpeta HTML
+* Englobar todo en una carpeta llamada Reto-00. Marcos
+* Reorganizar carpeta HTML. Marcos.
 * Hacer un HTML con hipervínculos a las tablas de los diferentes componentes.
+* Renombrar imágenes de componentes. Iván.
