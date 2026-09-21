@@ -1,10 +1,43 @@
 body {
+    /* Color de fondo*/
     background-color: #F8F6F0;
+
+    /* Cambia el tipo de fuente del body */
     font-family: 'Montserrat', sans-serif;
+
+    /* Cambia el color del texto del body */
     color: #2B1E1A;
 }
-footer{
+footer {
+    /* Color de fondo*/
     background-color: #3D5A45;
+
+    /* Elimina el margen exterior alrededor del footer */
+    margin: 0%;
+
+    /* Añade espacio de relleno interno para que el contenido no pegue a los bordes */
+    padding: 1%;
+
+    /* Activa Flexbox para organizar y alinear fácilmente los elementos internos */
+    display: flex;
+
+    /* Centra horizontalmente todo el contenido interno */
+    justify-content: center;
+
+    /* Deja el footer fijo en la pantalla, no se mueve aunque hagas scroll */
+    position: fixed;
+
+    /* Pega el footer justo al borde inferior de la ventana */
+    bottom: 0%;
+
+    /* Alinea el borde izquierdo del footer con el extremo izquierdo de la pantalla */
+    left: 0%;
+
+    /* Hace que el footer ocupe todo el ancho de la pantalla (100%) */
+    width: 100%;
+
+    font-weight: bold; /* Pone el texto en negrita */
+
 }
 th{
     background-color: #E05A2B;
