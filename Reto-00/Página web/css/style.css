@@ -1,0 +1,15 @@
+body {
+    background-color: #F8F6F0;
+    font-family: 'Montserrat', sans-serif;
+    color: #2B1E1A;
+}
+footer{
+    background-color: #3D5A45;
+}
+th{
+    background-color: #E05A2B;
+}
+td:hover{
+    background-color: #ff9a63;
+    color: white;
+}
