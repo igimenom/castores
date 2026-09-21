@@ -1,3 +1,7 @@
+*::before, *::after{
+    margin: 0;
+    padding: 0;
+}
 body {
     /* Color de fondo*/
     background-color: #F8F6F0;
@@ -7,17 +11,17 @@ body {
 
     /* Cambia el color del texto del body */
     color: #2B1E1A;
+
+    max-width: 1800px;
+
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 footer {
+    /* Color de texto */
+    color: antiquewhite;
     /* Color de fondo*/
     background-color: #3D5A45;
-
-    /* Elimina el margen exterior alrededor del footer */
-    margin: 0%;
-
-    /* Añade espacio de relleno interno para que el contenido no pegue a los bordes */
-    padding: 1%;
-
     /* Activa Flexbox para organizar y alinear fácilmente los elementos internos */
     display: flex;
 
@@ -39,10 +43,23 @@ footer {
     font-weight: bold; /* Pone el texto en negrita */
 
 }
+th, td {
+    border: 1px solid #ccc; 
+  padding: 8px;           /* Separa el texto del borde */
+  text-align: left;
+}
 th{
     background-color: #E05A2B;
 }
-td:hover{
-    background-color: #ff9a63;
-    color: white;
+table {
+  width: 100%;
+  border-collapse: collapse; /* Une los bordes para que no se vean dobles */
+  margin: 0 auto;
 }
+
+    td img {
+    max-width: 100%;          /* Se adapta al ancho de la celda sin desbordar */
+    height: auto;
+    display: block;
+    margin: 0 auto;           /* Centra la imagen dentro de la celda */
+    }
