@@ -18,6 +18,7 @@ body {
     box-sizing: border-box;
 }
 footer {
+    padding: 1rem;
     /* Color de texto */
     color: antiquewhite;
     /* Color de fondo*/
@@ -32,10 +33,10 @@ footer {
     position: fixed;
 
     /* Pega el footer justo al borde inferior de la ventana */
-    bottom: 0%;
+    bottom: 0;
 
     /* Alinea el borde izquierdo del footer con el extremo izquierdo de la pantalla */
-    left: 0%;
+    left: 0;
 
     /* Hace que el footer ocupe todo el ancho de la pantalla (100%) */
     width: 100%;
