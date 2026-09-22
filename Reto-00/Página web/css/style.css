@@ -1,10 +1,10 @@
-    * {
+    * { /* Para normalizar el css y eliminar todos los margin y padding de todos los elementos */
         margin: 0;
         padding: 0;
     }
     
     body {
-        min-height: 100vh;
+        min-height: 100vh; /* la altura miníma es toda la altura de la pantalla */
         display: flex;
     flex-direction: column; /* Organiza header, main y footer en columna */
         /* Color de fondo*/
@@ -19,7 +19,7 @@
         
 justify-content: center;
         
-        box-sizing: border-box;
+        box-sizing: border-box; /* incluimos padding y border dentro del ancho y alto total para controlar las dimensiones mejor */
     }
     footer {
         /* Color de texto */
@@ -37,7 +37,7 @@ justify-content: center;
     }
     footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* para que los elementos estén uno debajo de otro */
         align-items: center;
     }
     nav{
@@ -74,7 +74,7 @@ justify-content: center;
         margin: 0 auto;           /* Centra la imagen dentro de la celda */
     }
     header{
-        top: 0;
+        top: 0; /* posicion arriba del todo */
         left: 0;
         margin-bottom:  1%;
         min-width: 100%;
@@ -98,9 +98,7 @@ justify-content: center;
         flex: 1;/*  "empuja" al footer hacia la parte inferior */
         
     }
-    .imgHeader{
-        left: 0%;
-    }
+    
 
     a {
         text-decoration: none;
