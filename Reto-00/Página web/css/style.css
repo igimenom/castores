@@ -79,6 +79,9 @@
     }
     header img {
         padding: 0.33rem 0;
+        max-height: 2rem;
+        width: auto;
+        margin: 0 1rem;
     }
     main {
         margin: 5rem 1rem;
