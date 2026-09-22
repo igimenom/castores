@@ -1,5 +1,7 @@
 # Inventario R4 
-## PC 16
+## EQ-00
+* 
+## EQ-01
 * Tarjeta gráfica ATI Radeon X1550 Super 512MB DDR2
 * Procesador AMD Athlon II 2009
 * Tarjeta de red TP-Link TL-WN881ND PCI-Express 300Mbps
@@ -10,7 +12,7 @@
 * Placa base ASUS M2N68 - AM Plus
 * Memoria RAM Kingston 4GB 2x2GB
 ---
-## PC Sin Nombre
+## EQ-02
 * Tarjeta de red Conceptronic C300RI 300Mbps
 * Sin tarjeta gráfica dedicada
 * Procesador AMD Athlon II 2009
@@ -20,6 +22,10 @@
 * Disco SSD SanDisk PLUS 240GB
 * Placa base ASUS M2N68 - AM Plus
 * Memoria RAM Kingston 4GB 2x2GB
+---
+## Tarjetas de red
+* TP-Link TL-WN881ND PCI-Express 300Mbps
+* Conceptronic C300RI 300Mbps
 ---
 ## Tarjetas Gráficas
 * ASUS ATI Radeon HD 3450 512MB DDR2 (EAH3450/HTP/512M/A) x2
