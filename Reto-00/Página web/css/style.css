@@ -1,7 +1,3 @@
-*::before, *::after{
-    margin: 0;
-    padding: 0;
-}
 body {
     /* Color de fondo*/
     background-color: #F8F6F0;
@@ -45,21 +41,21 @@ footer {
 }
 th, td {
     border: 1px solid #ccc; 
-  padding: 8px;           /* Separa el texto del borde */
-  text-align: left;
+    padding: 8px;           /* Separa el texto del borde */
+    text-align: left;
 }
 th{
     background-color: #E05A2B;
 }
 table {
-  width: 100%;
-  border-collapse: collapse; /* Une los bordes para que no se vean dobles */
-  margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes para que no se vean dobles */
+    margin: 0 auto;
 }
 
-    td img {
+td img {
     max-width: 100%;          /* Se adapta al ancho de la celda sin desbordar */
     height: auto;
     display: block;
     margin: 0 auto;           /* Centra la imagen dentro de la celda */
-    }
+}
