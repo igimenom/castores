@@ -4,6 +4,9 @@
     }
     
     body {
+        min-height: 100vh;
+        display: flex;
+    flex-direction: column; /* Organiza header, main y footer en columna */
         /* Color de fondo*/
         background-color: #F8F6F0;
 
@@ -13,9 +16,9 @@
         /* Cambia el color del texto del body */
         color: #2B1E1A;
 
-        max-width: 1800px;
-
-        margin: 0 auto 5rem auto; /* Arriba | Derecha | Abajo | Izquierda */
+        
+justify-content: center;
+        
         box-sizing: border-box;
     }
     footer {
@@ -26,24 +29,28 @@
         /* Activa Flexbox para organizar y alinear fácilmente los elementos internos */
         display: flex;
 
-        /* Centra horizontalmente todo el contenido interno */
-        justify-content: center;
-
-        /* Deja el footer fijo en la pantalla, no se mueve aunque hagas scroll */
-        position: fixed;
-
-        /* Pega el footer justo al borde inferior de la ventana */
-        bottom: 0%;
-
-        /* Alinea el borde izquierdo del footer con el extremo izquierdo de la pantalla */
-        left: 0%;
-
-        /* Hace que el footer ocupe todo el ancho de la pantalla (100%) */
-        width: 100%;
+      
 
         font-weight: bold; /* Pone el texto en negrita */
 
         padding: 1rem 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+    }
+ 
+    footer ul {
+        font-size: 0.8rem;
+        list-style-type: none;
+    }
+    footer ul a {
+        color: rgba(250, 235, 215, 0.705);
     }
     th, td {
         border: 1px solid #ccc; 
@@ -84,7 +91,12 @@
         margin: 0 1rem;
     }
     main {
-        margin: 5rem 1rem;
+        padding: 5rem 0;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1800px;
+        flex: 1;/*  "empuja" al footer hacia la parte inferior */
+        
     }
     .imgHeader{
         left: 0%;
