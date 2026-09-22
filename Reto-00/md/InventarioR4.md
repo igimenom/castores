@@ -2,7 +2,7 @@
 ## EQ-00
 * Procesador AMD Athlon 3000G
 * Placa base Gigabyte a520 mk v2
-* Memoria RAM XPG Gammix d35 ddr4 8gb
+* Memoria RAM XPG Gammix d35 ddr4 8gb `AX4U32008G16A-SBKD35`
 * Chasis Tacens Anima AC4500
 * Fuente de alimentación Tacens Apsi500
 * Disco duro Intenso 128gb 3832430
