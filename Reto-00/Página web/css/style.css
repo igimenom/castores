@@ -1,65 +1,91 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    /* Color de fondo*/
-    background-color: #F8F6F0;
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        /* Color de fondo*/
+        background-color: #F8F6F0;
 
-    /* Cambia el tipo de fuente del body */
-    font-family: 'Montserrat', sans-serif;
+        /* Cambia el tipo de fuente del body */
+        font-family: 'Montserrat', sans-serif;
 
-    /* Cambia el color del texto del body */
-    color: #2B1E1A;
+        /* Cambia el color del texto del body */
+        color: #2B1E1A;
 
-    max-width: 1800px;
-    padding: 1%;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-footer {
-    /* Color de texto */
-    color: antiquewhite;
-    /* Color de fondo*/
-    background-color: #3D5A45;
-    /* Activa Flexbox para organizar y alinear fácilmente los elementos internos */
-    display: flex;
+        max-width: 1800px;
 
-    /* Centra horizontalmente todo el contenido interno */
-    justify-content: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    footer {
+        /* Color de texto */
+        color: antiquewhite;
+        /* Color de fondo*/
+        background-color: #3D5A45;
+        /* Activa Flexbox para organizar y alinear fácilmente los elementos internos */
+        display: flex;
 
-    /* Deja el footer fijo en la pantalla, no se mueve aunque hagas scroll */
-    position: fixed;
+        /* Centra horizontalmente todo el contenido interno */
+        justify-content: center;
 
-    /* Pega el footer justo al borde inferior de la ventana */
-    bottom: 0%;
+        /* Deja el footer fijo en la pantalla, no se mueve aunque hagas scroll */
+        position: fixed;
 
-    /* Alinea el borde izquierdo del footer con el extremo izquierdo de la pantalla */
-    left: 0%;
+        /* Pega el footer justo al borde inferior de la ventana */
+        bottom: 0%;
 
-    /* Hace que el footer ocupe todo el ancho de la pantalla (100%) */
-    width: 100%;
+        /* Alinea el borde izquierdo del footer con el extremo izquierdo de la pantalla */
+        left: 0%;
 
-    font-weight: bold; /* Pone el texto en negrita */
+        /* Hace que el footer ocupe todo el ancho de la pantalla (100%) */
+        width: 100%;
 
-}
-th, td {
-    border: 1px solid #ccc; 
-    padding: 8px;           /* Separa el texto del borde */
-    text-align: left;
-}
-th{
-    background-color: #E05A2B;
-}
-table {
-    width: 100%;
-    border-collapse: collapse; /* Une los bordes para que no se vean dobles */
-    margin: 0 auto;
-}
+        font-weight: bold; /* Pone el texto en negrita */
 
-td img {
-    max-width: 100%;          /* Se adapta al ancho de la celda sin desbordar */
-    height: auto;
-    display: block;
-    margin: 0 auto;           /* Centra la imagen dentro de la celda */
-}
+        padding: 1rem 0;
+    }
+    th, td {
+        border: 1px solid #ccc; 
+        padding: 8px;           /* Separa el texto del borde */
+        text-align: left;
+    }
+    th{
+        background-color: #E05A2B;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Une los bordes para que no se vean dobles */
+        margin: 0 auto;
+    }
+
+    td img {
+        max-width: 100%;          /* Se adapta al ancho de la celda sin desbordar */
+        height: auto;
+        display: block;
+        margin: 0 auto;           /* Centra la imagen dentro de la celda */
+    }
+    header{
+        top: 0;
+        left: 0;
+        margin-bottom:  1%;
+        min-width: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF964A;
+    }
+    header img {
+        padding: 0.33rem 0;
+    }
+    main {
+        margin: 5rem 1rem;
+    }
+    .imgHeader{
+        left: 0%;
+    }
+    .headerCastor {
+        text-decoration: none;
+        color: #000;
+    }
