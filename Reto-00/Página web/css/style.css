@@ -1,114 +1,120 @@
-    * { /* Para normalizar el css y eliminar todos los margin y padding de todos los elementos */
-        margin: 0;
-        padding: 0;
-    }
+/* El selector universal (*) aplica estas reglas a TODOS los elementos de la página */
+* {
+    margin: 0;   /* Elimina los márgenes predeterminados del navegador */
+    padding: 0;  /* Elimina los rellenos predeterminados del navegador */
+}
+
+body {
+    min-height: 100vh;           /* Fuerza a que el cuerpo mida, como mínimo, el 100% del alto de la pantalla */
+    display: flex;               /* Convierte el body en un contenedor Flexbox */
+    flex-direction: column;      /* Organiza a los hijos (header, main, footer) en forma vertical (columna) */
+    justify-content: center;     /* Alinea el contenido verticalmente en el centro del espacio disponible */
+    /* Apariencia tipográfica y color */
+    background-color: #F8F6F0;   /* Establece un tono blanco cálido/crema de fondo */
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat o la tipografía sans-serif del sistema */
+    color: #2B1E1A;              /* Color del texto (marrón muy oscuro) */
+    box-sizing: border-box;      /* Incluye el padding y border dentro de los cálculos de ancho y alto del elemento */
+}
+
+/* El contenido principal de la página */
+main {
+    padding: 5rem 0;             /* Espacio interno de 5rem arriba/abajo (evita que el header fijo tape contenido) y 0 a los lados */
+    margin: 0 auto;              /* Centra horizontalmente el contenedor en la pantalla */
+    width: 100%;                 /* Ocupa todo el ancho disponible */
+    max-width: 1800px;           /* Limita el ancho máximo en pantallas muy grandes para no estirar demasiado el contenido */
+    flex: 1;                     /* Ocupa todo el espacio vertical disponible, 'empujando' el footer al final de la pantalla */
+}
+
+header {
+    position: fixed;             /* Fija el header en la pantalla para que no se desplace al hacer scroll */
+    top: 0;                      /* Lo pega en la parte superior */
+    left: 0;                     /* Lo pega en el borde izquierdo */
+    min-width: 100%;             /* Se asegura de que cubra todo el ancho de la ventana */
+    margin-bottom: 1%;           /* Nota: En elementos con 'position: fixed' el margin-bottom no surte efecto respecto a otros elementos */
+    /* Alineación de contenido interno */
+    display: flex;               /* Distribuye el contenido interno usando Flexbox */
+    justify-content: center;     /* Centra horizontalmente el logo/menú interno */
+    align-items: center;         /* Centra verticalmente los elementos internos */
+    background-color: #FF964A;   /* Color de fondo naranja */
+}
+
+/* Imágenes dentro del header*/
+header img {
+    padding: 0.33rem 0;          /* Relleno superior e inferior */
+    max-height: 2rem;            /* Controla el alto máximo de la imagen para que no deforme el header */
+    width: auto;                 /* Mantiene la proporción original del ancho */
+    margin: 0 1rem;              /* Margen lateral para separarla de los elementos contiguos */
+}
+nav {
+    display: flex;               /* Organiza los elementos de navegación en línea */
+    align-items: center;         /* Centra verticalmente los elementos del menú */
+}
+
+/* Estilos globales para etiquetas de enlace <a> */
+a {
+    text-decoration: none;       /* Elimina el subrayado predeterminado de los enlaces */
+    color: #000;                 /* Color del texto en negro */
+}
+
+/* Clase específica para enlaces del header */
+.headerCastor {
+    text-decoration: none;       /* Elimina el subrayado */
+    color: #000;                 /* Mantiene el color negro */
+}
+
+/* Elementos de lista general */
+ul li {
+    margin-inline-start: 3rem;   /* Añade una separación a la izquierda de cada ítem de lista (equivalente a margin-left en LTR) */
+}
+
+
+table {
+    width: 100%;                 /* La tabla ocupa el 100% del ancho del contenedor */
+    border-collapse: collapse;   /* Fusiona los bordes de las celdas adyacentes para que se vea una sola línea limpia */
+    margin: 0 auto;              /* Centra la tabla dentro de su contenedor */
+}
+
+/* Encabezados (th) y celdas de datos (td) */
+th, td {
+    border: 1px solid #ccc;      /* Borde delgado de color gris claro */
+    padding: 8px;                /* Relleno interno para que el texto no toque las paredes de la celda */
+    text-align: left;            /* Alinea el texto a la izquierda */
+}
+
+/* Celdas de encabezado de la tabla */
+th {
+    background-color: #E05A2B;   /* Fondo naranja rojizo para resaltar la cabecera */
+}
+
+/* Imágenes dentro de las celdas de la tabla */
+td img {
+    min-width: 100%;             /* Hace que la imagen intente llenar la celda */
+    max-width: 20rem;            /* Limita el tamaño de la imagen para que no supere los 20rem (~320px) */
+    height: auto;                /* Mantiene la relación de aspecto sin distorsionar la imagen */
+    display: block;              /* Elimina el espacio blanco inferior por defecto de las imágenes inline */
+    margin: 0 auto;              /* Centra la imagen horizontalmente dentro de la celda */
+}
+
+footer {
+    color: antiquewhite;         /* Color del texto claro/crema */
+    background-color: #3D5A45;   /* Color de fondo verde oscuro */
     
-    body {
-        min-height: 100vh; /* la altura miníma es toda la altura de la pantalla */
-        display: flex;
-    flex-direction: column; /* Organiza header, main y footer en columna */
-        /* Color de fondo*/
-        background-color: #F8F6F0;
-
-        /* Cambia el tipo de fuente del body */
-        font-family: 'Montserrat', sans-serif;
-
-        /* Cambia el color del texto del body */
-        color: #2B1E1A;
-
-        
-justify-content: center;
-        
-        box-sizing: border-box; /* incluimos padding y border dentro del ancho y alto total para controlar las dimensiones mejor */
-    }
-    footer {
-        /* Color de texto */
-        color: antiquewhite;
-        /* Color de fondo*/
-        background-color: #3D5A45;
-        /* Activa Flexbox para organizar y alinear fácilmente los elementos internos */
-        display: flex;
-
-      
-
-        font-weight: bold; /* Pone el texto en negrita */
-
-        padding: 1rem 0;
-    }
-    footer {
-        display: flex;
-        flex-direction: column; /* para que los elementos estén uno debajo de otro */
-        align-items: center;
-    }
-    nav{
-        display: flex;
-        align-items: center;
-    }
- 
-    footer ul {
-        font-size: 0.8rem;
-        list-style-type: none;
-    }
-    footer ul a {
-        color: rgba(250, 235, 215, 0.705);
-    }
-    th, td {
-        border: 1px solid #ccc; 
-        padding: 8px;           /* Separa el texto del borde */
-        text-align: left;
-    }
-    th{
-        background-color: #E05A2B;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse; /* Une los bordes para que no se vean dobles */
-        margin: 0 auto;
-    }
-
-    td img {
-        min-width: 100%;          /* Se adapta al ancho de la celda sin desbordar */
-        max-width: 20rem;
-        height: auto;
-        display: block;
-        margin: 0 auto;           /* Centra la imagen dentro de la celda */
-    }
-    header{
-        top: 0; /* posicion arriba del todo */
-        left: 0;
-        margin-bottom:  1%;
-        min-width: 100%;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #FF964A;
-    }
-    header img {
-        padding: 0.33rem 0;
-        max-height: 2rem;
-        width: auto;
-        margin: 0 1rem;
-    }
-    main {
-        padding: 5rem 0;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1800px;
-        flex: 1;/*  "empuja" al footer hacia la parte inferior */
-        
-    }
+    /* Configuración Flexbox */
+    display: flex;               /* Activa el modelo Flexbox */
+    flex-direction: column;      /* Organiza todo el contenido interno uno debajo del otro */
+    align-items: center;         /* Centra todo el contenido horizontalmente */
     
+    font-weight: bold;           /* Aplica estilo negrita a todo el texto del footer */
+    padding: 1rem 0;             /* Espaciado interno de 1rem arriba/abajo y 0 a los lados */
+}
 
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-   
-    .headerCastor {
-        text-decoration: none;
-        color: #000;
-    }
-    ul li  {
-        margin-inline-start: 3rem;
-    }
+/* Listas dentro del footer */
+footer ul {
+    font-size: 0.8rem;          /* Tamaño de letra ligeramente reducido respecto al texto base */
+    list-style-type: none;       /* Elimina los puntos/viñetas predeterminados de la lista */
+}
+
+/* Enlaces situados dentro de las listas del footer */
+footer ul a {
+    color: rgba(250, 235, 215, 0.705); /* Aplica el color antiquewhite pero con una transparencia del 70.5% */
+}
