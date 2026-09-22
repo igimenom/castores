@@ -79,3 +79,6 @@
 * ASUS a520 mk v2
 * ASUS M2N68 - AM Plus
 * ASUS M2N68 - AM Plus
+## Procesadores
+* AMD Athlon 3000G
+* AMD Athlon II 2009
