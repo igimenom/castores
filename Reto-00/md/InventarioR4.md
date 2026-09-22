@@ -6,6 +6,7 @@
 * Chasis Tacens Anima AC4500
 * Fuente de alimentación Tacens Apsi500
 * Disco duro Intenso 128gb 3832430
+* Ventilador CPU Amd AMD Socket AM4 92mm Wraith Stealth
 ## EQ-01
 * Tarjeta gráfica ATI Radeon X1550 Super 512MB DDR2
 * Procesador AMD Athlon II 2009
