@@ -75,3 +75,7 @@
 ## Ventiladores
 * Ningjie Electronic - Modelo: NJ12025SE - DC 12V 0.12A
 * Gaming / Tacens - Modelo: AV12025 - 12V DC 0.15A
+## Placas base
+* ASUS a520 mk v2
+* ASUS M2N68 - AM Plus
+* ASUS M2N68 - AM Plus
