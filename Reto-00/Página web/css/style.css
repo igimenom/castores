@@ -13,7 +13,7 @@ body {
     color: #2B1E1A;
 
     max-width: 1800px;
-
+    padding: 1%;
     margin: 0 auto;
     box-sizing: border-box;
 }
