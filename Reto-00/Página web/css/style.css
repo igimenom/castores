@@ -60,7 +60,8 @@
     }
 
     td img {
-        max-width: 100%;          /* Se adapta al ancho de la celda sin desbordar */
+        min-width: 100%;          /* Se adapta al ancho de la celda sin desbordar */
+        max-width: 20rem;
         height: auto;
         display: block;
         margin: 0 auto;           /* Centra la imagen dentro de la celda */
