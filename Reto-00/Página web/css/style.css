@@ -1,7 +1,3 @@
-*::before, *::after{
-    margin: 0;
-    padding: 0;
-}
 body {
     /* Color de fondo*/
     background-color: #F8F6F0;
