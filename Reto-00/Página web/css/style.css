@@ -15,7 +15,7 @@
 
         max-width: 1800px;
 
-        margin: 0 auto;
+        margin: 0 auto 5rem auto; /* Arriba | Derecha | Abajo | Izquierda */
         box-sizing: border-box;
     }
     footer {
