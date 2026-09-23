@@ -15,7 +15,7 @@
 * Caja PC Case con fuente de alimentación PSU 500W
 * Lector DVD-ROM
 * Disco SSD SanDisk PLUS 240GB
-* Placa base ASUS M2N68 - AM Plus
+* Placa base ASUS M2N68 - AM2 Plus
 * Memoria RAM Kingston 4GB 2x2GB
 ---
 ## EQ-02
