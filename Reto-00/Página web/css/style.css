@@ -118,3 +118,57 @@ footer ul {
 footer ul a {
     color: rgba(250, 235, 215, 0.705); /* Aplica el color antiquewhite pero con una transparencia del 70.5% */
 }
+.wrap {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.wrap p.lead {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  border-bottom: 1px solid var(--line);
+}
+
+ul.menu li:first-child {
+  border-top: 1px solid var(--line);
+}
+
+ul.menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  transition: color 0.15s ease, padding-left 0.15s ease;
+}
+
+ul.menu a:hover {
+  color: var(--header);
+  padding-left: 10px;
+}
+
+ul.menu a .arrow {
+  font-size: 18px;
+  color: var(--text-dim);
+  transition: transform 0.15s ease;
+}
+
+ul.menu a:hover .arrow {
+  color: var(--header);
+  transform: translateX(3px);
+}
