@@ -16,7 +16,7 @@
 * Lector DVD-ROM
 * Disco SSD SanDisk PLUS 240GB
 * Placa base ASUS M2N68 - AM2 Plus
-* Memoria RAM Kingston 4GB 2x2GB
+* Memoria RAM Kingston 4GB 2x2GB `KVR800D2N5/2G`
 ---
 ## EQ-02
 * Tarjeta de red Conceptronic C300RI 300Mbps
@@ -27,7 +27,7 @@
 * Lector DVD-ROM
 * Disco SSD SanDisk PLUS 240GB
 * Placa base ASUS M2N68 - AM Plus
-* Memoria RAM Kingston 4GB 2x2GB
+* Memoria RAM Kingston 4GB 2x2GB `KVR800D2N5/2G`
 ---
 ## Tarjetas de red
 * TP-Link TL-WN881ND PCI-Express 300Mbps
