@@ -265,10 +265,6 @@ ul.menu a:hover .arrow {
     100% { opacity: 1; transform: translateY(0); }
   }
 
-
-
-
-
   @keyframes introOut {
     0%   { opacity: 1; visibility: visible; }
     100% { opacity: 0; visibility: hidden; pointer-events: none; }
