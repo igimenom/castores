@@ -269,3 +269,19 @@ ul.menu a:hover .arrow {
     0%   { opacity: 1; visibility: visible; }
     100% { opacity: 0; visibility: hidden; pointer-events: none; }
   }
+  #btnArriba {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FF964A;;
+  color: var(--header-text);
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
