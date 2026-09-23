@@ -62,9 +62,10 @@
 * Iván; Renombrar imágenes de componentes.
 * Marcos; ayudar a Iván a corregir inventario.
 
-### Día 7 ; 23/09/2026
+## Dia 7 ; 23/09/2026
 
-* Bruno; Ha hecho la intro y la ha incorporado a la página web
-* Javier; Ha dado unos graandes y maravillosos retoques a la página haciendo que tenga un mejor diseño  
-* Iván; Ha organiado al equipo y resuelto dudas.
-* Marcos; No ha venido 
+* Bruno; intro en CSS (efecto wow).
+* Javier; modificación del CSS.
+* Iván; actualización de tablas HTML con los nuevos componentes.
+* Marcos; no disponible.
+
