@@ -61,3 +61,10 @@
 * Javier; tablas HTML.
 * Iván; Renombrar imágenes de componentes.
 * Marcos; ayudar a Iván a corregir inventario.
+
+## Dia 7 ; 23/09/2026
+
+* Bruno; ayudar a Javier con CSS.
+* Javier; modificación del CSS.
+* Iván; actualización de tablas HTML con los nuevos componentes.
+* Marcos; no disponible.
