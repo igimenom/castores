@@ -10,10 +10,13 @@ body {
     flex-direction: column;      /* Organiza a los hijos (header, main, footer) en forma vertical (columna) */
     justify-content: center;     /* Alinea el contenido verticalmente en el centro del espacio disponible */
     /* Apariencia tipográfica y color */
-    background-color: #F8F6F0;   /* Establece un tono blanco cálido/crema de fondo */
+    
     font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat o la tipografía sans-serif del sistema */
     color: #2B1E1A;              /* Color del texto (marrón muy oscuro) */
     box-sizing: border-box;      /* Incluye el padding y border dentro de los cálculos de ancho y alto del elemento */
+    opacity: 1;
+    background-image: url(../../media/logobgweb.png);
+    background-size: cover;
 }
 
 /* El contenido principal de la página */
@@ -21,9 +24,12 @@ main {
     padding: 5rem 0;             /* Espacio interno de 5rem arriba/abajo (evita que el header fijo tape contenido) y 0 a los lados */
     margin: 0 auto;              /* Centra horizontalmente el contenedor en la pantalla */
     width: 100%;                 /* Ocupa todo el ancho disponible */
+    
     max-width: 1800px;           /* Limita el ancho máximo en pantallas muy grandes para no estirar demasiado el contenido */
     flex: 1;                     /* Ocupa todo el espacio vertical disponible, 'empujando' el footer al final de la pantalla */
+background-color: #cacaca;
 }
+
 
 header {
     position: fixed;             /* Fija el header en la pantalla para que no se desplace al hacer scroll */
@@ -60,6 +66,12 @@ a {
 .headerCastor {
     text-decoration: none;       /* Elimina el subrayado */
     color: #000;                 /* Mantiene el color negro */
+}
+.imagenlogo {
+width: 8rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: -10px;
 }
 
 /* Elementos de lista general */
@@ -171,4 +183,20 @@ ul.menu a .arrow {
 ul.menu a:hover .arrow {
   color: var(--header);
   transform: translateX(3px);
+}
+#btnArriba {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FF964A;;
+  color: var(--header-text);
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
