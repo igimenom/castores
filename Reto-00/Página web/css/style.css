@@ -285,3 +285,9 @@ ul.menu a:hover .arrow {
   text-decoration: none;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
+.imagenlogo {
+width: 8rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: -10px;
+}
