@@ -64,13 +64,8 @@
 
 ## Dia 7 ; 23/09/2026
 
-* Bruno; ayudar a Javier con CSS.
+* Bruno; intro en CSS (efecto wow).
 * Javier; modificación del CSS.
 * Iván; actualización de tablas HTML con los nuevos componentes.
 * Marcos; no disponible.
-### Día 7 ; 23/09/2026
 
-* Bruno; Ha hecho la intro y la ha incorporado a la página web
-* Javier; Ha dado unos graandes y maravillosos retoques a la página haciendo que tenga un mejor diseño  
-* Iván; Ha organiado al equipo y resuelto dudas.
-* Marcos; No ha venido 
