@@ -172,3 +172,9 @@ ul.menu a:hover .arrow {
   color: var(--header);
   transform: translateX(3px);
 }
+.imagenlogo {
+width: 8rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: -10px;
+}
