@@ -64,7 +64,7 @@
 
 ## Dia 7 ; 23/09/2026
 
-* Bruno; intro en CSS (efecto wow).
+* Bruno; intro en CSS (efecto wow), ha realizado la matriz de compatibilidad 
 * Javier; modificación del CSS.
 * Iván; actualización de tablas HTML con los nuevos componentes.
 * Marcos; no disponible.
