@@ -1,7 +1,7 @@
 # Puesta a punto del equipo
 Para comenzar el proyecto, formamos el equipo de trabajo y repartimos los diferentes roles para tener claras las responsabilidades desde el primer momento, además de elaborar un documento organizativo para la distribución general de las tareas.
 
-En la parte de hardware, desmontamos el ordenador para identificar cada uno de sus componentes. Durante este proceso, realizamos fotos a los diferentes componentes, anotamos en el inventario cada pieza y volvimos a montar el equipo. También realizamos pruebas de rendimiento instalando la herramienta OCCT para monitorizar y revisar las temperaturas del procesador en funcionamiento.
+En la parte de hardware, desmontamos el ordenador para identificar cada uno de sus componentes. Durante este proceso tuvimos un problema al quitar el disipador, ya que la CPU se quedó pegada a él debido a la pasta térmica. Para solucionarlo, fuimos a por un secador para darle calor y, tras calentar la zona, hicimos palanca cuidadosamente con un destornillador plano hasta lograr despegar la CPU sin dañarla. Después, realizamos fotos a los diferentes componentes, anotamos en el inventario cada pieza y volvimos a montar el equipo. También realizamos pruebas de rendimiento instalando la herramienta OCCT para monitorizar y revisar las temperaturas del procesador en funcionamiento.
 
 Respecto al software y sistemas, preparamos un USB ejecutable utilizando Ventoy y Linux Mint, realizamos la instalación completa del sistema operativo y actualizamos la BIOS de la placa base a la versión más reciente, aparte activamos el perfil XMP para tener el máximo rendimiento de la memoria RAM.
 ![BIOS](./Documentación/img/Imagen%20de%20la%20bios%20del%20ordenador.jpg)
