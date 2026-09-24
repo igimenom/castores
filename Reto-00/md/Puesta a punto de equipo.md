@@ -8,6 +8,7 @@ Respecto al software y sistemas, preparamos un USB ejecutable utilizando Ventoy 
 ![GG](./Documentación/img/Especificaciones%20desde%20Linux.jpg)
 
 Con Linux Mint tuvimos problemas con el arranque y terminamos instalando y configurando Windows 11 ltsc.
+Para ello tuvimos que meter en el USB Hiren's Boot para poder formatear el disco duro, dentro de Hiren's Boot usamos la herramienta Diskpart para formatear el disco duro. Y ahora volvimos a formatear el USB con la ISO de Windows 11 LTSC e instalamos el sistema en el ordenador.
 
 En el apartado de documentación y datos, creamos una tabla para comprobar la compatibilidad de los componentes, recopilamos sus fichas técnicas e información técnica desde las webs oficiales, y diseñamos el logo del equipo. Toda esta información recopilada en hojas de cálculo se trasladó a código HTML para su visualización web.
 
