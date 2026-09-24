@@ -95,3 +95,9 @@
 * Iván; actualización de tablas HTML con los nuevos componentes.
 * Marcos; no disponible.
 
+## Día 8 ; 24/09/2026 
+
+* Bruno; hace el Mockup y actualizar cuaderno de bitácora.
+* Javier; ha hecho las páginas de equipo. 
+* Iván; ha hecho de líder y ha puesto orden fomentando el trabajo. 
+* Marcos; ha hecho la documentación y ha solucionado errores.
