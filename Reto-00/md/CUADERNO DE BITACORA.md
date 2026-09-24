@@ -106,6 +106,6 @@
 ---
 ### TAREAS PENDIENTES
 * Bruno: continuación del mockup en canva.
-* Javier; inventario en HTML y excel, solucionando errores.
+* Javier; inventario en HTML y CSS.
 * Iván; repaso de documentación y otras tareas.
-* Marcos; diagrama entidad-relación.
+* Marcos; corrigiendo errores del Excel y unificando inventario.
