@@ -26,12 +26,14 @@
 
 6. **Una base de datos** que permita gestionar el inventario, incluyendo:
 
+* [DIAGRAMA ENTIDAD RELACIÓN](https://canva.link/alt9kqb2z29adyl)
+
    * Diseño de la información.
    * Modelo de datos.
    * Implementación.
    * Datos reales.
    * Consultas útiles.
-
+---
 
 ### Día 1 ; 15/09/2026
 
@@ -45,8 +47,7 @@
 * Identificación de los componentes del ordenador. Javier
 * Hacer fotos. Javier
 * Descripción en detalle de cada foto. Marcos.
-* Hacer la tabla de
- componentes y compatibilidad. Bruno
+* Hacer la tabla de componentes y compatibilidad. Bruno
 * Formatear usb con ventoy y linux mint. Iván
 * Volver a montar el ordenador. Marcos
 * Instalar linux. Javier
@@ -95,3 +96,9 @@
 * Iván; actualización de tablas HTML con los nuevos componentes.
 * Marcos; no disponible.
 
+## Día 8 ; 24/09/2026 
+
+* Bruno; hace el Mockup y actualizar cuaderno de bitácora.
+* Javier; ha hecho las páginas de equipo. 
+* Iván; ha hecho de líder y ha puesto orden fomentando el trabajo. 
+* Marcos; ha hecho la documentación y ha solucionado errores.

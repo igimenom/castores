@@ -9,10 +9,11 @@
 * Ventilador CPU Amd AMD Socket AM4 92mm Wraith Stealth
 ## EQ-01
 * Tarjeta gráfica ATI Radeon X1550 Super 512MB DDR2
+* Fuente de alimentación PC Case 500W
 * Procesador AMD Athlon II 2009
 * Tarjeta de red TP-Link TL-WN881ND PCI-Express 300Mbps
 * Disipador Stock AMD
-* Caja PC Case con fuente de alimentación PSU 500W
+* Caja PC Codegen Q6232-A2
 * Lector DVD-ROM
 * Disco SSD SanDisk PLUS 240GB
 * Placa base ASUS M2N68 - AM2 Plus
@@ -21,6 +22,7 @@
 ## EQ-02
 * Tarjeta de red Conceptronic C300RI 300Mbps
 * Sin tarjeta gráfica dedicada
+* Fuente de alimentación PC Case 500W
 * Procesador AMD Athlon II 2009
 * Disipador Stock AMD
 * Caja PC Case con fuente de alimentación PSU 500W
