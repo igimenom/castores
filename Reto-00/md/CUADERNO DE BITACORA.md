@@ -26,6 +26,8 @@
 
 6. **Una base de datos** que permita gestionar el inventario, incluyendo:
 
+* [DIAGRAMA ENTIDAD RELACIÓN]()
+
    * Diseño de la información.
    * Modelo de datos.
    * Implementación.
