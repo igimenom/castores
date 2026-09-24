@@ -10,3 +10,5 @@ Respecto al software y sistemas, preparamos un USB ejecutable utilizando Ventoy 
 En el apartado de documentación y datos, creamos una tabla para comprobar la compatibilidad de los componentes, recopilamos sus fichas técnicas e información técnica desde las webs oficiales, y diseñamos el logo del equipo. Toda esta información recopilada en hojas de cálculo se trasladó a código HTML para su visualización web.
 
 Para la gestión global y la organización, estructuramos el repositorio en GitHub, pusimos en marcha un tablero Kanban para seguir la evolución del trabajo, realizamos el inventariado del material disponible en la sala R4 y diseñamos el diagrama entidad-relación del proyecto.
+
+Al terminar con el ordenador, cogimos otros dos ordenadores de la sala R4 y les identificamos todos los componentes. Además, apuntamos en el inventario las piezas que había en las estanterías, como las fuentes de alimentación, los ventiladores, las tarjetas gráficas y las memorias RAM.
