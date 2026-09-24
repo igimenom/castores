@@ -7,6 +7,8 @@ Respecto al software y sistemas, preparamos un USB ejecutable utilizando Ventoy 
 ![BIOS](./Documentación/img/Imagen%20de%20la%20bios%20del%20ordenador.jpg)
 ![GG](./Documentación/img/Especificaciones%20desde%20Linux.jpg)
 
+Con Linux Mint tuvimos problemas con el arranque y terminamos instalando y configurando Windows 11 ltsc.
+
 En el apartado de documentación y datos, creamos una tabla para comprobar la compatibilidad de los componentes, recopilamos sus fichas técnicas e información técnica desde las webs oficiales, y diseñamos el logo del equipo. Toda esta información recopilada en hojas de cálculo se trasladó a código HTML para su visualización web.
 
 Para la gestión global y la organización, estructuramos el repositorio en GitHub, pusimos en marcha un tablero Kanban para seguir la evolución del trabajo, realizamos el inventariado del material disponible en la sala R4 y diseñamos el diagrama entidad-relación del proyecto.
