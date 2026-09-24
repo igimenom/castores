@@ -31,7 +31,7 @@
    * Implementación.
    * Datos reales.
    * Consultas útiles.
-
+---
 
 ### Día 1 ; 15/09/2026
 
