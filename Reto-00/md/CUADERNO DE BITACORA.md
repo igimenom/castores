@@ -45,8 +45,7 @@
 * Identificación de los componentes del ordenador. Javier
 * Hacer fotos. Javier
 * Descripción en detalle de cada foto. Marcos.
-* Hacer la tabla de
- componentes y compatibilidad. Bruno
+* Hacer la tabla de componentes y compatibilidad. Bruno
 * Formatear usb con ventoy y linux mint. Iván
 * Volver a montar el ordenador. Marcos
 * Instalar linux. Javier
