@@ -1,0 +1,261 @@
+/**
+ * VC9300 design tokens — source of truth for semantic CSS variables.
+ * Loaded before vc9300-core.css from both videocardz.com and videocardz.net headers.
+ *
+ * Sections: primitives (brand/status), surfaces, text, chrome, tables, misc.
+ * Dark theme overrides live under html[data-theme="dark"].
+ *
+ * Gray scale: --vc-gray-50 (lightest) … --vc-gray-900 (darkest).
+ * Yellow scale: --vc-yellow-200 (highlight) … --vc-yellow-300 (primary brand gold).
+ * Legacy: --vc-yellow-to-gold aliases --vc-yellow-300.
+ *
+ * Motion: --vc-duration-* / --vc-ease-*; composites avoid transition: all (clearer + cheaper).
+ */
+
+:root {
+	--vc-green:#10b11e;
+	--vc-red:#bd0909;
+	--vc-red-font:#fff;
+	--vc-lightred:#ff5050;
+	--vc-darkgray:#222;
+	--vc-darkergray:#222;
+	--vc-lightgray:#888;
+	--vc-purple:#9001e9;
+	--vc-pink:#e9018e;
+	--vc-yellow-200: #fec700;
+	--vc-yellow-300: #f8c701;
+	--vc-yellow-to-gold: var(--vc-yellow-300);
+	--vc-yellow-to-gold-font:#000;
+	--vc-yellow-to-black: var(--vc-yellow-300);
+	--vc-white-to-gray:#fff;
+	--vc-lightgray-to-lightblack:#f3f3f3;
+	--vc-lightgray-to-lightblack-font:#222;
+	--vc-white-to-black:#fff;
+	--vc-white-to-black-font:#000;
+	--vc-white-to-gold:#fff;
+	--vc-white-to-yellow:#fff;
+	--vc-white-to-darkgray:rgba(255,255,255,.5);
+	--vc-lightgray-to-black:#f3f3f3;
+	--vc-lightgray-to-darkgray:#ccc;
+	--vc-darkgray-to-gold:#222;
+	--vc-darkgray-to-black:#111;
+	--vc-darkgray-to-lightgray:#222;
+	--vc-darkgray-to-lightgray-font:#f3f3f3;
+	--vc-black-to-darkgray:#000;
+	--vc-black-to-white:#000;
+	--vc-body-bg:#5a5a5a;
+	--vc-maincontainer-bg:#f3f3f3;
+	--vc-text-article-color:#222;
+	--vc-text-article-color-strong:#222;
+	--vc-p-color:#222;
+	--vc-a-color:#222;
+	--vc-a-dark-color:#222;
+	--vc-h-color:#333;
+	--vc-h2-h3-bg:#eee;
+	--vc-white-text:#fff;
+	--vc-main-index-article-border:#f3f3f3;
+	--vc-techbuzz-border:#f3f3f3;
+	--vc-techbuzz-link:#000;
+	--vc-techbuzz-background:rgb(215,215,215);
+	--vc-event-bg:#ccc;
+	--vc-video-bg:#222;
+	--vc-ad1-bg:#d6d6d6;
+	--vc-ad-bg:#6d6d6d;
+	--vc-nextprev-bg:#ccc;
+	--vc-nextprev-button-bg:#f3f3f3;
+	--vc-nextprev-button-bg-hover:#222;
+	--vc-nextprev-button-color:#222;
+	--vc-nextprev-button-color-hover:#f3f3f3;
+	--vc-disqus-bg:#333;
+	--vc-table-border:#f8c701;
+	--vc-table-border-hover:#000;
+	--vc-table-th-bg:#d2d2d2;
+	--vc-table-th-bg-odd:#c7c7c7;
+	--vc-table-td-bg:#f3f3f3;
+	--vc-table-td-bg-odd:#e6e6e6;
+	--vc-table-th-bg-db:#d2d2d2;
+	--vc-table-th-bg-odd-db:#c7c7c7;
+	--vc-table-td-bg-db:#f3f3f3;
+	--vc-table-td-bg-odd-db:#e6e6e6;
+	--vc-table-td-bg-db-hover:#ccc;
+	--vc-table-a:#000;
+	--vc-table-a-darker:#000;
+	--vc-table-text:#222;
+	--vc-table-vcbar-bg:rgba(0,0,0,.05);
+	--vc-table-vcbar-bg-vch:rgba(0,0,0,.05);
+	--vc-table-vcbar-bg1:#bfbfbf;
+	--vc-table-vcbar-bg2:#f8c701;
+	--vc-table-vcbar-bg3:#1072fe;
+	--vc-table-vcbar-bg4:#00c468;
+	--vc-table-vcbar-bg5:#bb0142;
+	--var-driverlink-border:#ddd;
+	/* Reusable brand gradients (see .gradient-yellow1 / .gradient-yellow2 in vc9300-core.css) */
+	--vc-gradient-gold-90: linear-gradient(90deg, rgba(248, 199, 1, 1) 0%, rgba(214, 133, 0, 1) 100%);
+	--vc-gradient-gold-180: linear-gradient(180deg, rgba(248, 199, 1, 1) 0%, rgba(214, 133, 0, 1) 100%);
+	/* Gray scale: 50 = lightest, 900 = darkest */
+	--vc-gray-50: #ffffff;
+	--vc-gray-100: #f0f0f0;
+	--vc-gray-200: #d2d2d2;
+	--vc-gray-300: #cccccc;
+	--vc-gray-400: #969696;
+	--vc-gray-500: #666666;
+	--vc-gray-600: #444444;
+	--vc-gray-700: #333333;
+	--vc-gray-800: #222222;
+	--vc-gray-900: #000000;
+
+	/* Inline SVG mask — check-in-circle “verified”; tint via color / background on .icon-verified */
+	--vc-icon-verified-mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath fill='%23000' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3e%3c/svg%3e");
+
+	/* Footer surface tokens — keep text ≥ 4.5:1 against --vc-footer-bg. */
+	--vc-footer-bg: #000000;
+	--vc-footer-bg-elev: #141414;
+	--vc-footer-fg: #e5e5e5;
+	--vc-footer-fg-muted: #a8a8a8;
+	--vc-footer-border: rgba(255, 255, 255, 0.08);
+	--vc-footer-border-strong: rgba(248, 199, 1, 0.35);
+	--vc-footer-accent: var(--vc-yellow-300);
+
+	/* Motion — durations & easing */
+	--vc-duration-instant: 0ms;
+	--vc-duration-fast: 100ms;
+	--vc-duration-short: 200ms;
+	--vc-duration-base: 200ms;
+	--vc-duration-moderate: 300ms;
+	--vc-duration-slow: 400ms;
+	--vc-duration-slower: 500ms;
+	--vc-ease-default: ease;
+	--vc-ease-in-out: ease-in-out;
+	--vc-ease-out: ease-out;
+	--vc-ease-in: ease-in;
+	--vc-ease-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	--vc-ease-material: cubic-bezier(0.4, 0, 0.2, 1);
+
+	/* Composites: explicit properties (not "all") — include background for gradients */
+	--vc-transition-theme: background-color var(--vc-duration-base) var(--vc-ease-in-out), color var(--vc-duration-base) var(--vc-ease-in-out);
+	--vc-transition-ui: background var(--vc-duration-moderate) var(--vc-ease-default), color var(--vc-duration-moderate) var(--vc-ease-default), opacity var(--vc-duration-moderate) var(--vc-ease-default), transform var(--vc-duration-moderate) var(--vc-ease-default), box-shadow var(--vc-duration-moderate) var(--vc-ease-default), border-color var(--vc-duration-moderate) var(--vc-ease-default), filter var(--vc-duration-moderate) var(--vc-ease-default);
+	--vc-transition-ui-inout: background var(--vc-duration-moderate) var(--vc-ease-in-out), color var(--vc-duration-moderate) var(--vc-ease-in-out), opacity var(--vc-duration-moderate) var(--vc-ease-in-out), transform var(--vc-duration-moderate) var(--vc-ease-in-out), box-shadow var(--vc-duration-moderate) var(--vc-ease-in-out), border-color var(--vc-duration-moderate) var(--vc-ease-in-out), filter var(--vc-duration-moderate) var(--vc-ease-in-out);
+	--vc-transition-fast-out: background var(--vc-duration-short) var(--vc-ease-out), color var(--vc-duration-short) var(--vc-ease-out), opacity var(--vc-duration-short) var(--vc-ease-out), transform var(--vc-duration-short) var(--vc-ease-out), box-shadow var(--vc-duration-short) var(--vc-ease-out), border-color var(--vc-duration-short) var(--vc-ease-out), filter var(--vc-duration-short) var(--vc-ease-out);
+	--vc-transition-fast-in: background var(--vc-duration-short) var(--vc-ease-in), color var(--vc-duration-short) var(--vc-ease-in), opacity var(--vc-duration-short) var(--vc-ease-in), transform var(--vc-duration-short) var(--vc-ease-in), box-shadow var(--vc-duration-short) var(--vc-ease-in), border-color var(--vc-duration-short) var(--vc-ease-in), filter var(--vc-duration-short) var(--vc-ease-in);
+	--vc-transition-micro: background var(--vc-duration-fast) var(--vc-ease-in-out), color var(--vc-duration-fast) var(--vc-ease-in-out), opacity var(--vc-duration-fast) var(--vc-ease-in-out), transform var(--vc-duration-fast) var(--vc-ease-in-out), box-shadow var(--vc-duration-fast) var(--vc-ease-in-out), border-color var(--vc-duration-fast) var(--vc-ease-in-out), filter var(--vc-duration-fast) var(--vc-ease-in-out);
+	--vc-transition-micro-out: background var(--vc-duration-fast) var(--vc-ease-out), color var(--vc-duration-fast) var(--vc-ease-out), opacity var(--vc-duration-fast) var(--vc-ease-out), transform var(--vc-duration-fast) var(--vc-ease-out), box-shadow var(--vc-duration-fast) var(--vc-ease-out), border-color var(--vc-duration-fast) var(--vc-ease-out), filter var(--vc-duration-fast) var(--vc-ease-out);
+	--vc-transition-short: background var(--vc-duration-short) var(--vc-ease-default), color var(--vc-duration-short) var(--vc-ease-default), opacity var(--vc-duration-short) var(--vc-ease-default), transform var(--vc-duration-short) var(--vc-ease-default), box-shadow var(--vc-duration-short) var(--vc-ease-default), border-color var(--vc-duration-short) var(--vc-ease-default), filter var(--vc-duration-short) var(--vc-ease-default);
+	--vc-transition-slow: background var(--vc-duration-slow) var(--vc-ease-default), color var(--vc-duration-slow) var(--vc-ease-default), opacity var(--vc-duration-slow) var(--vc-ease-default), transform var(--vc-duration-slow) var(--vc-ease-default), box-shadow var(--vc-duration-slow) var(--vc-ease-default), border-color var(--vc-duration-slow) var(--vc-ease-default), filter var(--vc-duration-slow) var(--vc-ease-default);
+	--vc-transition-slower: background var(--vc-duration-slower) var(--vc-ease-default), color var(--vc-duration-slower) var(--vc-ease-default), opacity var(--vc-duration-slower) var(--vc-ease-default), transform var(--vc-duration-slower) var(--vc-ease-default), box-shadow var(--vc-duration-slower) var(--vc-ease-default), border-color var(--vc-duration-slower) var(--vc-ease-default), filter var(--vc-duration-slower) var(--vc-ease-default);
+	--vc-transition-bounce: background var(--vc-duration-moderate) var(--vc-ease-bounce), color var(--vc-duration-moderate) var(--vc-ease-bounce), opacity var(--vc-duration-moderate) var(--vc-ease-bounce), transform var(--vc-duration-moderate) var(--vc-ease-bounce), box-shadow var(--vc-duration-moderate) var(--vc-ease-bounce), border-color var(--vc-duration-moderate) var(--vc-ease-bounce), filter var(--vc-duration-moderate) var(--vc-ease-bounce);
+	--vc-transition-bounce-slow: background var(--vc-duration-slow) var(--vc-ease-bounce), color var(--vc-duration-slow) var(--vc-ease-bounce), opacity var(--vc-duration-slow) var(--vc-ease-bounce), transform var(--vc-duration-slow) var(--vc-ease-bounce), box-shadow var(--vc-duration-slow) var(--vc-ease-bounce), border-color var(--vc-duration-slow) var(--vc-ease-bounce), filter var(--vc-duration-slow) var(--vc-ease-bounce);
+	--vc-transition-slider-thumb: transform var(--vc-duration-slow) var(--vc-ease-default);
+	--vc-transition-slider-track: background var(--vc-duration-slow) var(--vc-ease-default);
+
+}
+
+body {
+	transition: var(--vc-transition-theme);
+}
+
+/* Reset filters in light mode (dark theme overrides below) */
+img,
+#AGAL,
+#VCN-GALLERY-EMPTY,
+div.vc-db-card-image,
+ul.imagelist li {
+	filter: none;
+}
+
+html[data-theme="dark"] {
+	--vc-green:#10b11e;
+	--vc-red:#bd0909;
+	--vc-red-font:#fff;
+	--vc-lightred:#ff5050;
+	--vc-purple:#9001e9;
+	--vc-pink:#e9018e;
+	--vc-darkgray:#222;
+	--vc-darkergray:#222;
+	--vc-lightgray:#888;
+	--vc-yellow-200: #b89a00;
+	--vc-yellow-300: #dcb000;
+	--vc-yellow-to-gold: var(--vc-yellow-300);
+	--vc-yellow-to-gold-font:#000;
+	--vc-yellow-to-black:#000;
+	--vc-white-to-gray:#ccc;
+	--vc-white-to-darkgray:rgba(64,64,64,.5);
+	--vc-lightgray-to-lightblack:#444;
+	--vc-lightgray-to-lightblack-font:#ccc;
+	--vc-lightgray-to-black:#000;
+	--vc-lightgray-to-darkgray:#222;
+	--vc-white-to-gold:#dcb000;
+	--vc-white-to-black:#000;
+	--vc-white-to-black-font:#f3f3f3;
+	--vc-white-to-yellow:#f8c701;
+	--vc-darkgray-to-gold:#dcb000;
+	--vc-darkgray-to-black:#000;
+	--vc-darkgray-to-lightgray:#ccc;
+	--vc-darkgray-to-lightgray-font:#222;
+	--vc-black-to-darkgray:#111;
+	--vc-black-to-white:#fff;
+	--vc-body-bg:#222;
+	--vc-maincontainer-bg:#111;
+	--vc-text-article-color:#c1c1c1;
+	--vc-text-article-color-strong:#e5e5e5;
+	--vc-p-color:#c7c7c7;
+	--vc-a-color:#c7c7c7;
+	--vc-a-dark-color:#222;
+	--vc-h-color:#fff;
+	--vc-h2-h3-bg:#000;
+	--vc-white-text:#ccc;
+	--vc-main-index-article-border:#252525;
+	--vc-techbuzz-border:#252525;
+	--vc-techbuzz-link:#eaeaea;
+	--vc-techbuzz-background:#222;
+	--vc-event-bg:#000;
+	--vc-video-bg:#111;
+	--vc-ad1-bg:#111;
+	--vc-ad-bg:#111;
+	--vc-nextprev-bg:#111;
+	--vc-nextprev-button-bg:#222;
+	--vc-nextprev-button-bg-hover:#f3f3f3;
+	--vc-nextprev-button-color:#f3f3f3;
+	--vc-nextprev-button-color-hover:#222;
+	--vc-disqus-bg:#111;
+	--vc-table-border:#dcb000;
+	--vc-table-border-hover:#f8c701;
+	--vc-table-th-bg:#222;
+	--vc-table-th-bg-odd:#222;
+	--vc-table-td-bg:#3e3e3e;
+	--vc-table-td-bg-odd:#333;
+	--vc-table-th-bg-db:#000;
+	--vc-table-th-bg-odd-db:#000;
+	--vc-table-td-bg-db:#222;
+	--vc-table-td-bg-odd-db:#111;
+	--vc-table-td-bg-db-hover:#333;
+	--vc-table-a:#f3f3f3;
+	--vc-table-a-darker:#ccc;
+	--vc-table-text:#ccc;
+	--vc-table-vcbar-bg:rgba(0,0,0,.2);
+	--vc-table-vcbar-bg-vch:rgba(255,255,255,.3);
+	--vc-table-vcbar-bg1:#111;
+	--vc-table-vcbar-bg2:#dcb000;
+	--vc-table-vcbar-bg3:#1072fe;
+	--vc-table-vcbar-bg4:#00c468;
+	--vc-table-vcbar-bg5:#bb0142;
+	--var-driverlink-border:#353535;
+	/* Override --vc-gray-* / --vc-yellow-* here if dark chrome should diverge */
+
+	/* Footer stays dark in both themes — slightly less pitch-black for depth. */
+	--vc-footer-bg: #000000;
+	--vc-footer-bg-elev: #181818;
+	--vc-footer-fg: #e0e0e0;
+	--vc-footer-fg-muted: #9a9a9a;
+	--vc-footer-border: rgba(255, 255, 255, 0.07);
+	--vc-footer-border-strong: rgba(220, 176, 0, 0.32);
+	--vc-footer-accent: var(--vc-yellow-300);
+}
+
+/* Dark mode: slightly dim images for comfort */
+html[data-theme="dark"] img,
+html[data-theme="dark"] #AGAL,
+html[data-theme="dark"] #VCN-GALLERY-EMPTY,
+html[data-theme="dark"] div.vc-db-card-image,
+html[data-theme="dark"] ul.imagelist li {
+	filter: brightness(0.9) contrast(1.05);
+}

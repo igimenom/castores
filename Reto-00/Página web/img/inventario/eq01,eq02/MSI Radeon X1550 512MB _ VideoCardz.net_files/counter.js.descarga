@@ -1,0 +1,54 @@
+(function () {
+	'use strict';
+
+	if (typeof pvcvBeacon === 'undefined' || !pvcvBeacon.payload) {
+		return;
+	}
+
+	var endpoint = pvcvBeacon.endpoint;
+	var payload = pvcvBeacon.payload;
+	var body = JSON.stringify(payload);
+
+	function updateCount(count) {
+		if (typeof count !== 'number') {
+			return;
+		}
+		var nodes = document.querySelectorAll('.post-views-count');
+		for (var i = 0; i < nodes.length; i++) {
+			nodes[i].textContent = count.toLocaleString();
+		}
+	}
+
+	function sendFetch() {
+		return fetch(endpoint, {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: body,
+			credentials: 'same-origin',
+			keepalive: true
+		}).then(function (res) {
+			return res.json();
+		}).then(function (data) {
+			if (data && typeof data.count === 'number') {
+				updateCount(data.count);
+			}
+		}).catch(function () {});
+	}
+
+	function send() {
+		if (navigator.sendBeacon) {
+			var blob = new Blob([body], { type: 'application/json' });
+			var ok = navigator.sendBeacon(endpoint, blob);
+			if (ok) {
+				return;
+			}
+		}
+		sendFetch();
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', send);
+	} else {
+		send();
+	}
+})();
