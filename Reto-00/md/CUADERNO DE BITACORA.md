@@ -99,6 +99,13 @@
 ## Día 8 ; 24/09/2026 
 
 * Bruno; hace el Mockup y actualizar cuaderno de bitácora.
-* Javier; ha hecho las páginas de equipo. 
-* Iván; ha hecho de líder y ha puesto orden fomentando el trabajo. 
-* Marcos; ha hecho la documentación y ha solucionado errores.
+* Javier; ha hecho las páginas de equipo en HTML. 
+* Iván; enlazando las fichas técnicas de los componentes en la matriz de compatibilidad.
+* Marcos; ha hecho la documentación y ha solucionado errores del equipo00.
+
+---
+### TAREAS PENDIENTES
+* Bruno: continuación del mockup en canva.
+* Javier; inventario en HTML y excel, solucionando errores.
+* Iván; repaso de documentación y otras tareas.
+* Marcos; diagrama entidad-relación.
