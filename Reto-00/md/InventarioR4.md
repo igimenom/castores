@@ -15,8 +15,8 @@
 * Caja PC Case con fuente de alimentación PSU 500W
 * Lector DVD-ROM
 * Disco SSD SanDisk PLUS 240GB
-* Placa base ASUS M2N68 - AM Plus
-* Memoria RAM Kingston 4GB 2x2GB
+* Placa base ASUS M2N68 - AM2 Plus
+* Memoria RAM Kingston 4GB 2x2GB `KVR800D2N5/2G`
 ---
 ## EQ-02
 * Tarjeta de red Conceptronic C300RI 300Mbps
@@ -27,13 +27,14 @@
 * Lector DVD-ROM
 * Disco SSD SanDisk PLUS 240GB
 * Placa base ASUS M2N68 - AM Plus
-* Memoria RAM Kingston 4GB 2x2GB
+* Memoria RAM Kingston 4GB 2x2GB `KVR800D2N5/2G`
 ---
 ## Tarjetas de red
 * TP-Link TL-WN881ND PCI-Express 300Mbps
 * Conceptronic C300RI 300Mbps
 ---
 ## Tarjetas Gráficas
+* ATI Radeon X1550 Super 512MB DDR2
 * ASUS ATI Radeon HD 3450 512MB DDR2 (EAH3450/HTP/512M/A) x2
 * ASUS NVIDIA GeForce 8600 GT 512MB DDR2 (EN8600GT MG/HTP/512M/A)
 * Gigabyte NVIDIA GeForce GT 210 1GB DDR3 (GV-N210D3-1GI)
