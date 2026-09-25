@@ -15,3 +15,23 @@ En el apartado de documentación y datos, creamos una tabla para comprobar la co
 Para la gestión global y la organización, estructuramos el repositorio en GitHub, pusimos en marcha un tablero Kanban para seguir la evolución del trabajo, realizamos el inventariado del material disponible en la sala R4 y diseñamos el diagrama entidad-relación del proyecto.
 
 Al terminar con el ordenador, cogimos otros dos ordenadores de la sala R4 y les identificamos todos los componentes. Además, apuntamos en el inventario las piezas que había en las estanterías, como las fuentes de alimentación, los ventiladores, las tarjetas gráficas y las memorias RAM.
+
+## Resumen
+### Material utilizado
+* destornillador
+* secador
+* usb
+### Problemas encontrados
+* el cpu estaba pegado al ventilador
+* problemas de arranque
+### Pruebas realizadas
+* OCCT
+* CPU-Z
+* GPU-Z
+### Decisiones tomadas
+* instalar Windows
+* usb formateado con ventoy
+### Intervenciones realizadas
+* montar y desmontar el pc
+* instalación windows
+* pruebas de rendimiento y temperaturas
