@@ -12,7 +12,7 @@
 
 2. **Un inventario digital** del material analizado. ✅
 
-3. **Documentación técnica** suficiente para comprender: ✍️
+3. **Documentación técnica** suficiente para comprender: ✅
 
    * El material utilizado.
    * Los problemas encontrados.
@@ -20,11 +20,11 @@
    * Las decisiones tomadas.
    * Las intervenciones realizadas.
 
-4. **Una justificación de las compatibilidades** entre los componentes utilizados. (matriz de compatibilidad junto con fuentes de datasheet)
+4. **Una justificación de las compatibilidades** entre los componentes utilizados. (matriz de compatibilidad junto con fuentes de datasheet)✅
 
 5. **Un sistema operativo instalado y configurado**, cuya elección deberéis justificar frente a otras posibles alternativas.✅
 
-6. **Una base de datos** que permita gestionar el inventario, incluyendo:
+6. **Una base de datos** que permita gestionar el inventario, incluyendo:✍️
 
 * [DIAGRAMA ENTIDAD RELACIÓN](https://canva.link/alt9kqb2z29adyl)
 
