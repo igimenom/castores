@@ -18,16 +18,19 @@ Al terminar con el ordenador, cogimos otros dos ordenadores de la sala R4 y les 
 
 ## Resumen
 ### Material utilizado
-* Destornillador
-* Secador
-* USB
+* Destornillador: Usado para montar y desmontar el ordenador.
+* Secador: Utilizado para calentar el Procesador para separarlo del CPU FAN.
+* USB: Para instalar el sistema.
 ### Problemas encontrados
 * El cpu estaba pegado al ventilador
 * Problemas de arranque con Linux Mint
 ### Pruebas realizadas
-* OCCT
-* CPU-Z
-* GPU-Z
+* CPU-Z para un benchmark de la CPU.
+* GPU-Z para un benchmark de la GPU.
+* Memtest64, para la memoria RAM.
+* Hwinfo; para voltajes y temperaturas.
+* Ungine Heaven Benchmark para rendimiento de GPU.
+* CrystalDiskInfo para la salud y errores del disco.
 ### Decisiones tomadas
 * Instalar Windows
 * USB formateado con ventoy
