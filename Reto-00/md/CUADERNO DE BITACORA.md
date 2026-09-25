@@ -70,7 +70,7 @@
 
 ### Día 4 ; 17/09/2026
 
-* Bruno; No ha asistido debido a indisponibilidad 
+* Bruno; No ha asistido debido a irresponsibilidad 
 * Javier; Remodelación del HTML, apuntar en el Excel los componentes
 * Marcos; Inventario de la sala R4, apuntar en el Excel los componentes.
 * Iván; Organizar el Kanban, Diagrama entidad-relación, supervisar a los compañeros.
@@ -103,6 +103,12 @@
 * Iván; enlazando las fichas técnicas de los componentes en la matriz de compatibilidad.
 * Marcos; ha hecho la documentación y ha solucionado errores del equipo00.
 
+## Dia 9 ; 25/09/2026
+
+* Bruno; No ha asistido debido a irresponsibilidad
+* Javier; inventario en HTML y excel.
+* Iván; repaso de documentación y otras tareas.
+* Marcos; pruebas al pc, instalación windows.
 ---
 ### TAREAS PENDIENTES
 * Bruno: continuación del mockup en canva.
