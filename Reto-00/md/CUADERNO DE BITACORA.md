@@ -26,8 +26,9 @@
 
 6. **Una base de datos** que permita gestionar el inventario, incluyendo:✍️
 
-* [DIAGRAMA ENTIDAD RELACIÓN](https://canva.link/alt9kqb2z29adyl)
-
+* [DIAGRAMA ENTIDAD RELACIÓN](https://canva.link/alt9kqb2z29adyl)✍️
+      * añadir matriz compatibilidad
+      * software
    * Diseño de la información.
    * Modelo de datos.
    * Implementación.
@@ -106,9 +107,9 @@
 ## Dia 9 ; 25/09/2026
 
 * Bruno; No ha asistido debido a irresponsibilidad
-* Javier; inventario en HTML y excel.
+* Javier; inventario en HTML y excel, pruebas al pc, instalación windows..
 * Iván; repaso de documentación y otras tareas.
-* Marcos; pruebas al pc, instalación windows.
+* Marcos; diagrama entidad relación.
 ---
 ### TAREAS PENDIENTES
 * Bruno: continuación del mockup en canva.
