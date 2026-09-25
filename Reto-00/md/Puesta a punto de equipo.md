@@ -18,20 +18,20 @@ Al terminar con el ordenador, cogimos otros dos ordenadores de la sala R4 y les 
 
 ## Resumen
 ### Material utilizado
-* destornillador
-* secador
-* usb
+* Destornillador
+* Secador
+* USB
 ### Problemas encontrados
-* el cpu estaba pegado al ventilador
-* problemas de arranque
+* El cpu estaba pegado al ventilador
+* Problemas de arranque con Linux Mint
 ### Pruebas realizadas
 * OCCT
 * CPU-Z
 * GPU-Z
 ### Decisiones tomadas
-* instalar Windows
-* usb formateado con ventoy
+* Instalar Windows
+* USB formateado con ventoy
 ### Intervenciones realizadas
-* montar y desmontar el pc
-* instalación windows
-* pruebas de rendimiento y temperaturas
+* Montar y desmontar el pc
+* Instalación windows
+* Pruebas de rendimiento y temperaturas
