@@ -11,6 +11,8 @@
 1. **Un equipo funcional** montado, reparado o puesto a punto por el grupo. ✅
 
 2. **Un inventario digital** del material analizado. ✅
+ * html, css
+ * mockup en figma/canva
 
 3. **Documentación técnica** suficiente para comprender: ✅
 
