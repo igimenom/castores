@@ -108,7 +108,7 @@
 
 ## Dia 9 ; 25/09/2026
 
-* Bruno; No ha asistido debido a irresponsibilidad
+* Bruno; No ha asistido debido que tuvo que asisitir a las urgencias del hosiptal.
 * Javier; inventario en HTML y excel, pruebas al pc, instalación windows..
 * Iván; repaso de documentación y otras tareas.
 * Marcos; diagrama entidad relación.
