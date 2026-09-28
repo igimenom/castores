@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="WvLBE_gxd2pFYAi7OF3C">
-    <mxGraphModel dx="1433" dy="785" grid="1" gridSize="20" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="86000" pageHeight="116900" math="0" shadow="0">
+    <mxGraphModel dx="975" dy="517" grid="1" gridSize="20" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="86000" pageHeight="116900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -30,6 +30,10 @@
         </mxCell>
         <mxCell id="Jta-hUF-aJqR6Ij_7dQa-64" edge="1" parent="1" source="6T9NBpTGu6DU5PBGmlQY-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;">
           <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="460" />
+              <mxPoint x="960" y="460" />
+            </Array>
             <mxPoint x="960" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -206,7 +210,7 @@
           <mxGeometry height="30" width="60" x="860" y="365" as="geometry" />
         </mxCell>
         <mxCell id="Jta-hUF-aJqR6Ij_7dQa-84" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(0,N)&lt;div&gt;responsable&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="60" x="860" y="410" as="geometry" />
+          <mxGeometry height="30" width="60" x="860" y="420" as="geometry" />
         </mxCell>
         <mxCell id="Jta-hUF-aJqR6Ij_7dQa-86" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(0,N)" vertex="1">
           <mxGeometry height="30" width="60" x="1540" y="880" as="geometry" />
@@ -214,11 +218,20 @@
         <mxCell id="Jta-hUF-aJqR6Ij_7dQa-87" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(0,1)" vertex="1">
           <mxGeometry height="30" width="60" x="400" y="725" as="geometry" />
         </mxCell>
-        <mxCell id="Jta-hUF-aJqR6Ij_7dQa-88" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(0,N)" vertex="1">
-          <mxGeometry height="30" width="60" x="820" y="840" as="geometry" />
-        </mxCell>
         <mxCell id="6Ikp0HQLOGtztXQNaTz9-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,1)" vertex="1">
-          <mxGeometry height="30" width="60" x="1140" y="770" as="geometry" />
+          <mxGeometry height="30" width="60" x="1300" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="7C0NE8TAGBIj6k4QoB6x-1" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;" value="(0,N)" vertex="1">
+          <mxGeometry height="30" width="60" x="1060" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="7C0NE8TAGBIj6k4QoB6x-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,N)" vertex="1">
+          <mxGeometry height="30" width="60" x="1060" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="7C0NE8TAGBIj6k4QoB6x-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1:1)" vertex="1">
+          <mxGeometry height="30" width="60" x="400" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="7C0NE8TAGBIj6k4QoB6x-4" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" value="Un empleado, como jefe, ¿a cuántos empleados dirige? → (0,N)&lt;br&gt;&lt;br&gt;Un empleado, como subordinado, ¿cuántos jefes tiene? → (0,1): la directora no tiene" vertex="1">
+          <mxGeometry height="80" width="280" x="1020" y="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
