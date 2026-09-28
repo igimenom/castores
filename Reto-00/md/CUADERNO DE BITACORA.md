@@ -12,7 +12,7 @@
 
 2. **Un inventario digital** del material analizado. ✅
  * html, css
- * mockup en figma/canva
+ * [mockup en figma/canva ](https://www.figma.com/design/0Fquef48T7qZToLNaXOF8e/CASTORES?node-id=0-1&p=f&t=QxgSsZ2Z3FIjVHfY-0)
 
 3. **Documentación técnica** suficiente para comprender: ✅
 
