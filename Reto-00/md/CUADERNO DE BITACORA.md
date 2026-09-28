@@ -112,7 +112,6 @@
 * Javier; inventario en HTML y excel, pruebas al pc, instalación windows..
 * Iván; repaso de documentación y otras tareas.
 * Marcos; diagrama entidad relación.
-
 ## Día 10 ; 28/09/2026
 
 * Bruno; Hacer un 3er nivel del inventario que conste de  una agrupación de definiciones de
