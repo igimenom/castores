@@ -36,6 +36,7 @@ header {
     justify-content: center;     /* Centra horizontalmente el logo/menú interno */
     align-items: center;         /* Centra verticalmente los elementos internos */
     background-color: #FF964A;   /* Color de fondo naranja */
+  z-index: 1000;
 }
 
 /* Imágenes dentro del header*/
@@ -173,7 +174,7 @@ ul.menu a:hover .arrow {
   transform: translateX(3px);
 }
 /* ---------- PANTALLA DE INTRO ---------- */
-  #intro {
+  .intro {
     position: fixed;
     inset: 0;
     display: flex;
@@ -305,10 +306,16 @@ width: 8rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   color: #333;
-  z-index: 10;
+  z-index: 2;
   font-size: 80%;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.dropdown-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 200px;
 }
