@@ -7,8 +7,34 @@ Respecto al software y sistemas, preparamos un USB ejecutable utilizando Ventoy 
 ![BIOS](./Documentación/img/Imagen%20de%20la%20bios%20del%20ordenador.jpg)
 ![GG](./Documentación/img/Especificaciones%20desde%20Linux.jpg)
 
+Con Linux Mint tuvimos problemas con el arranque y terminamos instalando y configurando Windows 11 ltsc.
+Para ello tuvimos que meter en el USB Hiren's Boot para poder formatear el disco duro, dentro de Hiren's Boot usamos la herramienta Diskpart para formatear el disco duro. Y ahora volvimos a formatear el USB con la ISO de Windows 11 LTSC e instalamos el sistema en el ordenador.
+
 En el apartado de documentación y datos, creamos una tabla para comprobar la compatibilidad de los componentes, recopilamos sus fichas técnicas e información técnica desde las webs oficiales, y diseñamos el logo del equipo. Toda esta información recopilada en hojas de cálculo se trasladó a código HTML para su visualización web.
 
 Para la gestión global y la organización, estructuramos el repositorio en GitHub, pusimos en marcha un tablero Kanban para seguir la evolución del trabajo, realizamos el inventariado del material disponible en la sala R4 y diseñamos el diagrama entidad-relación del proyecto.
 
 Al terminar con el ordenador, cogimos otros dos ordenadores de la sala R4 y les identificamos todos los componentes. Además, apuntamos en el inventario las piezas que había en las estanterías, como las fuentes de alimentación, los ventiladores, las tarjetas gráficas y las memorias RAM.
+
+## Resumen
+### Material utilizado
+* Destornillador: Usado para montar y desmontar el ordenador.
+* Secador: Utilizado para calentar el Procesador para separarlo del CPU FAN.
+* USB: Para instalar el sistema.
+### Problemas encontrados
+* El cpu estaba pegado al ventilador
+* Problemas de arranque con Linux Mint
+### Pruebas realizadas
+* CPU-Z para un benchmark de la CPU.
+* GPU-Z para un benchmark de la GPU.
+* Memtest64, para la memoria RAM.
+* Hwinfo; para voltajes y temperaturas.
+* Ungine Heaven Benchmark para rendimiento de GPU.
+* CrystalDiskInfo para la salud y errores del disco.
+### Decisiones tomadas
+* Instalar Windows
+* USB formateado con ventoy
+### Intervenciones realizadas
+* Montar y desmontar el pc
+* Instalación windows
+* Pruebas de rendimiento y temperaturas
