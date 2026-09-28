@@ -112,6 +112,15 @@
 * Javier; inventario en HTML y excel, pruebas al pc, instalación windows..
 * Iván; repaso de documentación y otras tareas.
 * Marcos; diagrama entidad relación.
+
+
+## Dia 10 ; 28/09/2026
+
+* Bruno; Crear tercer nivel de la página web.
+* Javier; Limpiar código HTML y mejorar la página web principal.
+* Iván; Mockup de la página web.
+* Marcos; Limpiar código HTML.
+
 ---
 ### TAREAS PENDIENTES
 * Bruno: continuación del mockup en canva.
