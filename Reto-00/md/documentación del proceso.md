@@ -73,7 +73,15 @@ Sostenibilidad y protección de datos: reutilización frente a residuo electrón
 
 ## 4. Requisitos del proyecto
 ### 4.1. Requisitos funcionales
- 
+1. Identificar de forma única cada equipo, componente y periférico (código de inventario/etiqueta).
+2. Registrar características técnicas y estado de cada componente. 
+3. Registrar qué componentes forman parte de cada equipo y sus cambios (historial de montaje).
+4. Registrar incidencias detectadas e intervenciones realizadas (fecha, responsable, descripción, resultado).
+5. Registrar los sistemas operativos instalados en cada equipo.
+6. Consultar mediante HTML: equipos utilizables, material disponible, equipos con incidencias pendientes, componentes de un equipo concreto, historial de actuaciones, sistemas operativos instalados, equipos mejorables y material reutilizable.
+7. Obtener al menos un equipo plenamente funcional con SO instalado y configurado.
+8. Evitar inconsistencias y duplicidades en los datos (claves, restricciones, normalización).
+9. Trabajar con datos reales del material analizado.
 ### 4.2. Requisitos no funcionales 
 ## 5. Planificación
 ### 5.1. Fases del proyecto
