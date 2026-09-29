@@ -73,7 +73,7 @@
 
 ### Día 4 ; 17/09/2026
 
-* Bruno; No ha asistido debido a irresponsibilidad 
+* Bruno; No ha asistido debido a motivos externos 
 * Javier; Remodelación del HTML, apuntar en el Excel los componentes
 * Marcos; Inventario de la sala R4, apuntar en el Excel los componentes.
 * Iván; Organizar el Kanban, Diagrama entidad-relación, supervisar a los compañeros.
@@ -109,17 +109,24 @@
 ## Día 9 ; 25/09/2026
 
 * Bruno; No ha asistido debido que tuvo que asisitir a las urgencias del hosiptal.
-* Javier; inventario en HTML y excel, pruebas al pc, instalación windows..
+* Javier; inventario en HTML y excel, pruebas al pc, instalación windows.
 * Iván; repaso de documentación y otras tareas.
 * Marcos; diagrama entidad relación.
+
 ## Día 10 ; 28/09/2026
 
 * Bruno; Hacer un 3er nivel del inventario que conste de  una agrupación de definiciones de
 lo que es cada cosa de este.
-* Javier; Hacer el HTML (quitar div)
-* Iván; Hacer el MOCKUP 
+* Javier; Hacer el HTML (quitar div).
+* Iván; Hacer el MOCKUP. 
 * Marcos; Ayuda a Javier en el HTML con sus conocimientos.
-## Día 11 ; 
+
+## Día 11 ; 29/09/2026
+
+* Bruno; Hace el Glosario y actualizar el cuaderno de Bitácora.
+* Javier; organización del kanban y docuementación de problemas.
+* Iván; Hace CSS para el Glosario. 
+* Marcos;  comentarios HTML para el Glosario.
 
 ---
 ### TAREAS PENDIENTES
