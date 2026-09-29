@@ -29,17 +29,52 @@
 - [11. Anexos](#11-anexos)
 ## 1. Introducción 
 ### 1.1. Descripción del proyecto
+Este proyecto corresponde al Reto 0 de 1º de ASIR: Recuperación y digitalización del parque informático. El centro dispone de ordenadores, periféricos y componentes de distintas generaciones, algunos funcionales, otros averiados o incompletos, y no existe un registro fiable de qué hay, en qué estado está ni qué se ha hecho sobre cada equipo.
 
+Nuestro equipo Castores formado por(Marcos,Ivan,Javier y Bruno) debe estudiar el material, recuperar al menos un equipo plenamente funcional, documentar todo el proceso y crear un inventario digital basado en una base de datos propia. Además, debemos proponer cómo gestionar el parque informático de forma más eficiente mediante tecnologías digitales.
 ### 1.2. Objetivos del proyecto
+Objetivo general: convertir el material informático disponible para montar un ordenador funcional, hacer inventario y ordenar.
 
+Objetivos específicos:
+
+Identificar, catalogar y evaluar el estado del material disponible (equipos, componentes y periféricos).
+Determinar qué material se puede recuperar, reutilizar, reparar o descartar.
+Montar o reparar al menos un equipo plenamente funcional, justificando la compatibilidad entre sus componentes.
+Elegir, instalar y configurar un sistema operativo adecuado, justificándolo frente a alternativas.
+Diseñar e implementar una base de datos de inventario con datos reales y consultas útiles.
+Registrar todas las intervenciones y conservar evidencias del trabajo utilizando un Kanban.
+Trabajar de forma organizada en equipo, para conseguir que todos dominen todos los aspectos que vamos trabajando en el reto 
 ## 2. Análisis del contexto y justificación de la propuesta 
+Situación de partida. El centro cuenta con material informático con mucha diferencia de antigüedad. Por lo que nos resulta difícil saber qué material hay, en qué estado está, qué características tiene, qué componentes son compatibles entre sí y qué equipos son recuperables.
+
+No se trata solo de un problema técnico como reparar ordenadores, sino de gestión de la información: sin un registro fiable se duplican esfuerzos, se pierde material aprovechable y no se pueden tomar las decisiones correctas.
+
+Justificación. Una solución que combine (1) la recuperación práctica de un equipo, (2) un inventario en base de datos y (3) una propuesta de digitalización:
+
+Aprovecha recursos ya existentes, reduciendo costes y residuos electrónicos que contaminarian el ecosistema.
+Deja una marca de cada equipo, componente e intervención.
+Permite a la persona responsable responder preguntas como qué equipos se pueden usar, qué material está disponible o qué equipos tienen incidencias pendientes o se tienen que llevar para reciclarlos al punto limpio o similares.
+Es mantenible en el tiempo, porque la información queda estructurada y no depende de la memoria de nadie y hace mas fácil cuando haya que actualizarlo con nuevos componentes.
 
 ## 3. Estado del arte 
+Gestión de activos informáticos (ITAM/CMDB): conceptos de inventario de hardware, ciclo de vida del equipo y trazabilidad.
+
+Herramientas habituales de código abierto: GLPI, Snipe-IT, OCS Inventory / Fusion Inventory, NetBox. Comparar qué ofrece cada una (inventario, incidencias, agentes automáticos, coste, complejidad).
+
+Recuperación y reutilización de hardware: criterios de compatibilidad (socket, chipset, tipo de RAM, fuente de alimentación, interfaces de almacenamiento, BIOS/UEFI), diagnóstico (POST, pruebas de RAM utilizando Memtest86, SMART de discos) y reacondicionamiento.
+
+Sistemas operativos para hardware antiguo o limitado: distribuciones Linux ligeras (Lubuntu, Xubuntu, Linux Mint XFCE, entorno ligero), frente a Windows 10/11 (requisitos como TPM 2.0 y UEFI) u otras opciones.
+
+Bases de datos relacionales: modelo entidad-relación, normalización, y motores como MySQL/MariaDB, PostgreSQL o SQLite.
+
+Herramientas de organización de proyectos: tableros Kanban (Trello, Planka, GitHub Projects, Notion).
+
+Sostenibilidad y protección de datos: reutilización frente a residuo electrónico (RAEE) y borrado seguro de dispositivos (normativa de protección de datos, RGPD).
 
 ## 4. Requisitos del proyecto
-### 4.1. Requisitos funcionales 
+### 4.1. Requisitos funcionales
+ 
 ### 4.2. Requisitos no funcionales 
-
 ## 5. Planificación
 ### 5.1. Fases del proyecto
 ### 5.2. Cronograma de trabajo 
