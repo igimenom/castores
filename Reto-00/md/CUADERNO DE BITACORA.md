@@ -124,7 +124,7 @@ lo que es cada cosa de este.
 ## Día 11 ; 29/09/2026
 
 * Bruno; Hace el Glosario y actualizar el cuaderno de Bitácora.
-* Javier; actualización y organización del kanban.
+* Javier; organización del kanban y docuementación de problemas.
 * Iván; Hace CSS para el Glosario. 
 * Marcos;  comentarios HTML para el Glosario.
 
