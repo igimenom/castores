@@ -24,7 +24,68 @@ main {
     max-width: 1800px;           /* Limita el ancho máximo en pantallas muy grandes para no estirar demasiado el contenido */
     flex: 1;                     /* Ocupa todo el espacio vertical disponible, 'empujando' el footer al final de la pantalla */
 }
+/* Contenedor que pone las cajas una al lado de la otra */
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
 
+/* Cada caja individual */
+.item-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 10px solid #fffcf256;
+border-left: 10px solid #FF964A;
+  background-color: #e3e0d6;
+  padding: 20px;
+}
+
+
+
+/* Texto a la izquierda */
+.item-box .texto {
+  flex: 1;
+}
+
+.item-box .texto h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.item-box .texto p {
+  margin: 0;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Imagen a la derecha */
+.item-box .img-producto {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+/* Responsive: en móviles las cajas se apilan */
+@media (max-width: 600px) {
+  .item-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .item-box .img-producto {
+    width: 120px;
+  }
+} 
+
+.img-producto {
+  max-width: 200px; /* Ajusta el tamaño de la imagen si es necesario */
+  height: auto;
+}
 header {
     position: fixed;             /* Fija el header en la pantalla para que no se desplace al hacer scroll */
     top: 0;                      /* Lo pega en la parte superior */
@@ -107,6 +168,7 @@ footer {
     
     font-weight: bold;           /* Aplica estilo negrita a todo el texto del footer */
     padding: 1rem 0;             /* Espaciado interno de 1rem arriba/abajo y 0 a los lados */
+
 }
 
 /* Listas dentro del footer */
