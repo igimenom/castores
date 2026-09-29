@@ -1,31 +1,3 @@
-    1. Introducción 
-        1.1. Descripción del proyecto
-        1.2. Objetivos del proyecto
-    2. Análisis del contexto y justificación de la propuesta 
-    3. Estado del arte 
-    4. Requisitos del proyecto
-        4.1. Requisitos funcionales 
-        4.2. Requisitos no funcionales 
-    5. Planificación
-        5.1. Fases del proyecto
-        5.2. Cronograma de trabajo 
-        5.3. Recursos necesarios 
-    6. Desarrollo del proyecto
-        6.1. Análisis y diseño 
-        6.2. Tecnologías/Herramientas empleadas
-        6.3. Partes contratantes
-        6.4. Presupuesto. 
-        6.5. OPCIONAL: Contrato y pliego de condiciones
-        6.6. OPCIONAL: Análisis de riesgos
-    7. Pruebas y validación
-    8. Documentación técnica
-    9. Conclusiones
-        9.1. Desviación sobre la planificación inicial
-        9.2. Resultados obtenidos y posibles mejoras futuras
-        9.3. Valoración personal
-        9.4. OPCIONAL: Agradecimientos
-    10. Bibliografía
-    11. Anexos
 # Puesta a punto del equipo
 Para comenzar el proyecto, formamos el equipo de trabajo y repartimos los diferentes roles para tener claras las responsabilidades desde el primer momento, además de elaborar un documento organizativo para la distribución general de las tareas.
 
