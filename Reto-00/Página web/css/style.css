@@ -24,7 +24,81 @@ main {
     max-width: 1800px;           /* Limita el ancho máximo en pantallas muy grandes para no estirar demasiado el contenido */
     flex: 1;                     /* Ocupa todo el espacio vertical disponible, 'empujando' el footer al final de la pantalla */
 }
+/* Contenedor de las cajas */
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
 
+/* Cada caja */
+.item-box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 8px 20px;
+  background: #ffffff13;
+  border-left: 1rem solid #FF964A;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  align-items: center;
+}
+
+
+
+/* Título */
+.item-box h3 {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Párrafo */
+.item-box p {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Imagen a la derecha (ocupa las dos filas) */
+.item-box .img-producto {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .item-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  }
+
+  .item-box h3,
+  .item-box p,
+  .item-box .img-producto {
+    grid-column: 1;
+  }
+
+  .item-box .img-producto {
+    grid-row: 3;
+    width: 120px;
+    margin: 0 auto;
+  }
+}
+
+.img-producto {
+  max-width: 200px; /* Ajusta el tamaño de la imagen si es necesario */
+  height: auto;
+}
 header {
     position: fixed;             /* Fija el header en la pantalla para que no se desplace al hacer scroll */
     top: 0;                      /* Lo pega en la parte superior */
@@ -107,6 +181,7 @@ footer {
     
     font-weight: bold;           /* Aplica estilo negrita a todo el texto del footer */
     padding: 1rem 0;             /* Espaciado interno de 1rem arriba/abajo y 0 a los lados */
+
 }
 
 /* Listas dentro del footer */
