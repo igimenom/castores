@@ -130,6 +130,11 @@ lo que es cada cosa de este.
 
 ---
 ### TAREAS PENDIENTES
+* terminar mockup
+* matriz de compatibilidad a html
+* corregir html
+* docuemtnación del proceso.md
+---
 * Documentación web html, css y mockup.
 * Estructura web
 * Terminar diagrama e/r del ejercicio 2-software.
