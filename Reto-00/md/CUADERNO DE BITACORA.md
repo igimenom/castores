@@ -12,7 +12,7 @@
 
 2. **Un inventario digital** del material analizado. ✅
  * html, css
- * mockup en figma/canva
+ * [mockup en figma/canva ](https://www.figma.com/design/0Fquef48T7qZToLNaXOF8e/CASTORES?node-id=0-1&p=f&t=QxgSsZ2Z3FIjVHfY-0)
 
 3. **Documentación técnica** suficiente para comprender: ✅
 
@@ -119,11 +119,10 @@ lo que es cada cosa de este.
 * Javier; Hacer el HTML (quitar div)
 * Iván; Hacer el MOCKUP 
 * Marcos; Ayuda a Javier en el HTML con sus conocimientos.
-
+## Día 11 ; 
 
 ---
 ### TAREAS PENDIENTES
-* Bruno: continuación del mockup en canva.
-* Javier; inventario en HTML y CSS.
-* Iván; repaso de documentación y otras tareas.
-* Marcos; corrigiendo errores del Excel y unificando inventario.
+* Documentación web html, css y mockup.
+* Estructura web
+* Terminar diagrama e/r del ejercicio 2-software.
