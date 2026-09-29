@@ -130,7 +130,15 @@ a {
     text-decoration: none;       /* Elimina el subrayado predeterminado de los enlaces */
     color: #000;                 /* Color del texto en negro */
 }
-
+details {
+  margin-top: 1.5rem;
+}
+details a {
+  
+  text-decoration: underline;
+  text-decoration-color: #E05A2B;
+  text-decoration-thickness: 0.1rem;
+}
 /* Clase específica para enlaces del header */
 .headerCastor {
     text-decoration: none;       /* Elimina el subrayado */
@@ -393,4 +401,24 @@ width: 8rem;
   max-width: 100%;
   height: auto;
   width: 200px;
+}
+details {
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0.5em;
 }
