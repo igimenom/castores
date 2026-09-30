@@ -130,7 +130,7 @@ lo que es cada cosa de este.
 
 ## Día 12 ; 30/09/2026
 
-* Bruno; Kanban .
+* Bruno; Kanban y diagrama e/r.
 * Javier; correción del footer y documentación de todo el proceso. 
 * Iván; corrección CSS y matriz de compatbilidad.
 * Marcos; matriz de comaptibilidad en HTML y comentarios CSS.
