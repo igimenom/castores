@@ -128,6 +128,13 @@ lo que es cada cosa de este.
 * Iván; Hace CSS para el Glosario. 
 * Marcos;  comentarios HTML para el Glosario.
 
+## Día 12 ; 30/09/2026
+
+* Bruno; Corrige detalles y actualiza los datos.
+* Javier; Hace documentación. 
+* Iván; Lídera como el buen Boss.
+* Marcos; Hace presentación.
+
 ---
 ### TAREAS PENDIENTES
 * terminar mockup
