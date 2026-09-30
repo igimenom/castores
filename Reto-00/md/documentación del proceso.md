@@ -83,13 +83,37 @@ Sostenibilidad y protección de datos: reutilización frente a residuo electrón
 8. Evitar inconsistencias y duplicidades en los datos (claves, restricciones, normalización).
 9. Trabajar con datos reales del material analizado.
 ### 4.2. Requisitos no funcionales 
+1. Usabilidad: el inventario debe poder ser consultado por una persona responsable sin conocimientos avanzados.
+2. Integridad y coherencia: uso de claves primarias/foráneas y restricciones.
+3. Mantenibilidad y escalabilidad: poder añadir nuevo material sin rediseñar la base de datos.
+4. Trazabilidad: todo cambio de componentes o configuración queda registrado.
+5. Seguridad y protección de datos: no borrar almacenamiento sin autorización; avisar al profesorado ante datos personales; copias de seguridad de la base de datos.
+6. Seguridad física y laboral: no manipular equipos conectados a la corriente y usar protección antiestática.
+7. Documentación: todas las decisiones justificadas técnicamente y las fuentes citadas.
+8. Realismo y economía: priorizar la reutilización y software libre, sin sobrecargar de tecnologías.
+9. Organización: puesto y material ordenados al terminar cada sesión.
 ## 5. Planificación
 ### 5.1. Fases del proyecto
+Fase 0. Organización del equipo: reparto de roles, elección de la herramienta Kanban.
+Fase 1. Análisis del material: identificación, fotografiado, etiquetado y primera evaluación de estado.
+Fase 2. Diagnóstico y pruebas: comprobación de componentes, pruebas de arranque, RAM, disco y detección de averías.
+Fase 3. Diseño del inventario: modelo entidad-relación, web en html.
+Fase 4. Recuperación del equipo: selección de componentes compatibles, montaje y reparación con registro de cada cambio.
+Fase 5. Sistema operativo: comparativa de alternativas, instalación y configuración.
+Fase 6. Implementación de la base de datos: creación de tablas, carga de datos reales y consultas.
+Fase 7. Documentación y memoria.
+Fase 8. Preparación y demostración final.
 ### 5.2. Cronograma de trabajo 
+[Kanban](https://github.com/users/igimenom/projects/1/views/1)
 ### 5.3. Recursos necesarios 
+Humanos: equipo de 4 compañeros y profesorado como supervisión.
+Hardware: equipos, componentes y periféricos del centro; herramientas de montaje (destornilladores, boligrafo probador de voltaje), equipo de prueba (monitor y teclado) y USB para instalar el sistema operativo.
+Software: sistema operativo primeramente siendo linux y despues para realizar mas benchmarks instalamos windows 11 pro, herramientas de modelado (draw.io), Kanban, herramientas de diagnóstico (MemTest86, smartctl…) y un repositorio compartido para la documentación.
+Espacio: aula y taller de inventario con puestos ordenados y zona de almacenamiento del material.
 
 ## 6. Desarrollo del proyecto
-### 6.1. Análisis y diseño 
+### 6.1. Análisis y diseño
+[Análisis del material](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/P%C3%A1gina_principal.html)
 ### 6.2. Tecnologías/Herramientas empleadas
 ### 6.3. Partes contratantes
 ### 6.4. Presupuesto
