@@ -24,28 +24,27 @@ main {
     max-width: 1800px;           /* Limita el ancho máximo en pantallas muy grandes para no estirar demasiado el contenido */
     flex: 1;                     /* Ocupa todo el espacio vertical disponible, 'empujando' el footer al final de la pantalla */
 }
-/* Contenedor de las cajas */
+
+/* Contenedor principal para organizar elementos en una cuadrícula adaptable */
 .grid-items {
-  display: grid; /* organización en cuadriculas */
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /*  */
-  gap: 25px;
-  margin-bottom: 40px;
+  display: grid; /* Activa el modelo de maquetación CSS Grid */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Genera columnas automáticas con un ancho mínimo de 320px y máximo de 1 fracción del espacio libre */
+  gap: 25px; /* Define una separación constante de 25px tanto entre filas como entre columnas */
+  margin-bottom: 40px; /* Agrega un espacio exterior en la parte inferior para alejarlo de elementos siguientes */
 }
 
-/* Cada caja */
+/* Estilo individual para cada tarjeta o caja dentro de la cuadrícula */
 .item-box {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
-  gap: 8px 20px;
-  background: #ffffff13;
-  border-left: 1rem solid #FF964A;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  align-items: center;
+  display: grid; /* Convierte la caja en su propia sub-cuadrícula interna */
+  grid-template-columns: 1fr auto; /* Define 2 columnas internas: la primera toma el espacio disponible y la segunda se ajusta a su contenido */
+  grid-template-rows: auto auto; /* Define 2 filas internas con altura automática según el contenido */
+  gap: 8px 20px; /* Establece la separación interna: 8px entre filas y 20px entre columnas */
+  background: #ffffff13; /* Aplica un fondo blanco con un 7% de opacidad (transparencia en hexadecimal) */
+  border-left: 1rem solid #FF964A; /* Agrega un borde lateral izquierdo de 1rem de grosor de color naranja */
+  padding: 20px; /* Crea un espacio de relleno interno de 20px en los cuatro lados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Proyecta una sombra sutil hacia abajo (desplazamiento Y: 4px, desenfoque: 12px, opacidad: 8%) */
+  align-items: center; /* Alinea verticalmente al centro los elementos contenidos en esta sub-cuadrícula */
 }
-
-
 
 /* Título */
 .item-box h3 {
