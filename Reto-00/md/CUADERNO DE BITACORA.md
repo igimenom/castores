@@ -138,10 +138,11 @@ lo que es cada cosa de este.
 ---
 ### TAREAS PENDIENTES
 * terminar mockup
-* matriz de compatibilidad a html
+* matriz de compatibilidad a html, entre paréntesis poner el nombre de cada componenete.
 * corregir html
 * docuemtnación del proceso.md
 ---
 * Documentación web html, css y mockup.
 * Estructura web
 * Terminar diagrama e/r del ejercicio 2-software.
+*
