@@ -26,8 +26,8 @@ main {
 }
 /* Contenedor de las cajas */
 .grid-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid; /* organización en cuadriculas */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /*  */
   gap: 25px;
   margin-bottom: 40px;
 }
