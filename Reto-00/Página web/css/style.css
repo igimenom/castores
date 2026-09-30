@@ -24,74 +24,75 @@ main {
     max-width: 1800px;           /* Limita el ancho máximo en pantallas muy grandes para no estirar demasiado el contenido */
     flex: 1;                     /* Ocupa todo el espacio vertical disponible, 'empujando' el footer al final de la pantalla */
 }
-/* Contenedor de las cajas */
+
+/* Contenedor principal para organizar elementos en una cuadrícula adaptable */
 .grid-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 25px;
-  margin-bottom: 40px;
+  display: grid; /* Activa el modelo de maquetación CSS Grid */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Genera columnas automáticas con un ancho mínimo de 320px y máximo de 1 fracción del espacio libre */
+  gap: 25px; /* Define una separación constante de 25px tanto entre filas como entre columnas */
+  margin-bottom: 40px; /* Agrega un espacio exterior en la parte inferior para alejarlo de elementos siguientes */
 }
 
-/* Cada caja */
+/* Estilo individual para cada tarjeta o caja dentro de la cuadrícula */
 .item-box {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
-  gap: 8px 20px;
-  background: #ffffff13;
-  border-left: 1rem solid #FF964A;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  align-items: center;
+  display: grid; /* Convierte la caja en su propia sub-cuadrícula interna */
+  grid-template-columns: 1fr auto; /* Define 2 columnas internas: la primera toma el espacio disponible y la segunda se ajusta a su contenido */
+  grid-template-rows: auto auto; /* Define 2 filas internas con altura automática según el contenido */
+  gap: 8px 20px; /* Establece la separación interna: 8px entre filas y 20px entre columnas */
+  background: #ffffff13; /* Aplica un fondo blanco con un 7% de opacidad (transparencia en hexadecimal) */
+  border-left: 1rem solid #FF964A; /* Agrega un borde lateral izquierdo de 1rem de grosor de color naranja */
+  padding: 20px; /* Crea un espacio de relleno interno de 20px en los cuatro lados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Proyecta una sombra sutil hacia abajo (desplazamiento Y: 4px, desenfoque: 12px, opacidad: 8%) */
+  align-items: center; /* Alinea verticalmente al centro los elementos contenidos en esta sub-cuadrícula */
 }
 
-
-
-/* Título */
+/* Título principal dentro de la tarjeta */
 .item-box h3 {
-  grid-column: 1;
-  grid-row: 1;
-  margin: 0;
-  font-size: 1.2rem;
+  grid-column: 1; /* Ubica el título en la primera columna del grid */
+  grid-row: 1; /* Ubica el título en la primera fila del grid */
+  margin: 0; /* Elimina los márgenes por defecto del encabezado */
+  font-size: 1.2rem; /* Define un tamaño de fuente de 1.2 veces el tamaño base */
 }
 
-/* Párrafo */
+/* Párrafo descriptivo dentro de la tarjeta */
 .item-box p {
-  grid-column: 1;
-  grid-row: 2;
-  margin: 0;
-  line-height: 1.5;
-  color: #444;
+  grid-column: 1; /* Ubica el texto en la primera columna, debajo del título */
+  grid-row: 2; /* Ubica el texto en la segunda fila del grid */
+  margin: 0; /* Elimina los márgenes por defecto del párrafo */
+  line-height: 1.5; /* Define una altura de línea de 1.5 para facilitar la lectura del texto */
+  color: #444; /* Aplica un tono gris oscuro al texto */
 }
 
-/* Imagen a la derecha (ocupa las dos filas) */
+/* Imagen a la derecha que abarca las dos filas */
 .item-box .img-producto {
-  grid-column: 2;
-  grid-row: 1 / 3;
-  width: 140px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
+  grid-column: 2; /* Coloca la imagen en la segunda columna (a la derecha) */
+  grid-row: 1 / 3; /* Extiende la imagen desde la línea de fila 1 hasta la 3 (abarca 2 filas completas) */
+  width: 140px; /* Establece un ancho fijo de 140px */
+  height: auto; /* Mantiene la relación de aspecto original de la imagen */
+  object-fit: contain; /* Escala la imagen para que quepa en su contenedor sin recortarse ni deformarse */
+  border-radius: 8px; /* Redondea las esquinas de la imagen con un radio de 8px */
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Regla adaptativa para pantallas pequeñas */
+@media (max-width: 600px) { /* Aplica estilos si el ancho de la ventana es de 600px o inferior */
   .item-box {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    text-align: center;
+    grid-template-columns: 1fr; /* Reestructura el grid a una sola columna */
+    grid-template-rows: auto auto auto; /* Define 3 filas automáticas (para título, párrafo e imagen) */
+    text-align: center; /* Centra horizontalmente el texto de la caja */
   }
 
+  /* Aplica a todos los elementos dentro de la tarjeta en móvil */
   .item-box h3,
   .item-box p,
   .item-box .img-producto {
-    grid-column: 1;
+    grid-column: 1; /* Fuerza a todos los elementos a ocuparla única columna disponible */
   }
 
+  /* Ajuste específico para la imagen en pantallas pequeñas */
   .item-box .img-producto {
-    grid-row: 3;
-    width: 120px;
-    margin: 0 auto;
+    grid-row: 3; /* Reubica la imagen en la tercera fila (al final del contenido) */
+    width: 120px; /* Reduce ligeramente el ancho de la imagen a 120px */
+    margin: 0 auto; /* Centra horizontalmente la imagen dentro de su espacio */
   }
 }
 
@@ -421,4 +422,11 @@ details[open] {
 details[open] summary {
   border-bottom: 1px solid #aaaaaa;
   margin-bottom: 0.5em;
+}
+
+.compatible{
+  background-color: #15FF00;
+}
+.nocompatible{
+  background-color: #FF0000;
 }
