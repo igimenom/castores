@@ -194,7 +194,7 @@ Temperaturas en la Bios
 ## 8. Documentación técnica
 [Ficha técnica del equipo recuperado](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/Inventario/equipo/EQ_00.html).
 
-Intervenciones del equipo.
+[Intervenciones del equipo]()
 Inventario del material analizado (exportado desde la base de datos).
 Modelo de datos: diagrama ER, modelo relacional y diccionario de datos.
 Scripts SQL: creación de tablas, carga de datos reales y consultas útiles con su explicación.
