@@ -422,3 +422,10 @@ details[open] summary {
   border-bottom: 1px solid #aaaaaa;
   margin-bottom: 0.5em;
 }
+
+.compatible{
+  background-color: #15FF00;
+}
+.nocompatible{
+  background-color: #FF0000;
+}
