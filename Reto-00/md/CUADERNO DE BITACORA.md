@@ -15,7 +15,7 @@
  * [mockup en figma/canva ](https://www.figma.com/design/0Fquef48T7qZToLNaXOF8e/CASTORES?node-id=0-1&p=f&t=QxgSsZ2Z3FIjVHfY-0)
 
 3. **Documentación técnica** suficiente para comprender: ✅
-
+* presentación
    * El material utilizado.
    * Los problemas encontrados.
    * Las pruebas realizadas.
@@ -28,7 +28,7 @@
 
 6. **Una base de datos** que permita gestionar el inventario, incluyendo:✍️
 
-* [DIAGRAMA ENTIDAD RELACIÓN](https://canva.link/alt9kqb2z29adyl)✍️
+* [DIAGRAMA ENTIDAD RELACIÓN](./Documentación/img/diagramaer.png)✍️
       * añadir matriz compatibilidad
       * software
    * Diseño de la información.
@@ -36,6 +36,10 @@
    * Implementación.
    * Datos reales.
    * Consultas útiles.
+
+7. **Una propuesta de transformación digital** para mejorar la gestión futura del parque informático.
+
+8. **Una memoria del proyecto** que permita comprender el proceso seguido por el equipo.  
 ---
 
 ### Día 1 ; 15/09/2026
@@ -143,13 +147,6 @@ lo que es cada cosa de este.
 * Marcos; ajustes del diagrama e/r con su matriz de compatibilidad y web tree y matriz de compatibilidad.
 ---
 ### TAREAS PENDIENTES
-* terminar mockup
-* matriz de compatibilidad a html, entre paréntesis poner el nombre de cada componenete.
-* matriz de compatibilidad a html, entre paréntesis poner el nombre de cada componenete.
-* corregir html
 * docuemtnación del proceso.md
----
-* Documentación web html, css y mockup.
-* Estructura web
-* Terminar diagrama e/r del ejercicio 2-software.
-* cronograma y fases en documentación. del cuaderno de bitácora a documentación de todo el proceso.
+* fases del proceso
+* preguntar sobre el diagrama e/r está correctao
