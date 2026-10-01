@@ -8,16 +8,26 @@
     <meta name="copyright" content="© 2026 Grupo Castores S.L.">
     <meta name="keywords" content="hardware, inventario, tabla">
     <title>Castores | Inicio</title>
+
+    <!-- Hoja de estilos principal. "../" sube una carpeta desde donde está este HTML -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Icono que aparece en la pestaña del navegador -->
     <link rel="icon" href="../../media/logobg.png">
+
+    <!-- Preconnect: abre la conexión con Google Fonts antes de pedir la fuente, para que cargue más rápido -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- crossorigin es necesario porque los archivos de fuente se sirven desde otro dominio -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carga la fuente Montserrat (todos los pesos, normal y cursiva). display=swap muestra texto con otra fuente mientras carga -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <!-- Clase imgHeader: estilos del logo definidos en style.css. El width="20%" en línea puede ser sobrescrito por el CSS -->
         <img class="imgHeader" src="../../media/logobg.png" alt="Logotipo de Castores S.L." width="20%">
         <h1>
+            <!-- Clase headerCastor: da estilo al enlace del título (color, quitar subrayado, etc.) desde el CSS -->
             <a class="headerCastor" href="../html/Página_principal.html">Castores</a>
         </h1>
     </header>
@@ -26,17 +36,21 @@
   <h1>Glosario</h1>
 
   <h2>Discos duros</h2>
+  <!-- grid-items: contenedor de la cuadrícula (CSS Grid/Flex). Coloca las tarjetas hijas (item-box) en columnas y controla el espacio entre ellas -->
   <section class="grid-items">
     <!-- HDD -->
+    <!-- item-box: tarjeta individual. El CSS le da borde, padding, sombra, fondo, etc. -->
     <article class="item-box">
       <h3>HDD: Hard Disk Drive</h3>
       <p>
         Un disco duro o HDD (Hard disk drive) es un dispositivo de almacenamiento de datos que utiliza un sistema magnético para guardar y recuperar archivos digitales de forma permanente.
       </p>
+      <!-- img-producto: controla el tamaño de las imágenes desde el CSS para que todas queden uniformes -->
       <img class="img-producto" src="../img/inventario/componentes_sin_equipo/Hdd.webp" alt="Imagen de HDD">
     </article>
 
     <!-- SSD -->
+    <!-- item-box: segunda tarjeta del mismo grid, se coloca al lado de la anterior -->
     <article class="item-box">
       <h3>SSD: Solid State Drive</h3>
       <p>
@@ -47,7 +61,9 @@
   </section>
 
   <h2>Fuente de Alimentación</h2>
+  <!-- grid-items: grid con una sola tarjeta; usa el mismo estilo que el resto para mantener la coherencia visual -->
   <section class="grid-items">
+    <!-- item-box: tarjeta de la fuente ATX -->
     <article class="item-box">
       <h3>Fuente de Alimentación ATX</h3>
       <p>
@@ -58,7 +74,9 @@
   </section>
 
   <h2>Lector de Discos</h2>
+  <!-- grid-items: grid con una sola tarjeta -->
   <section class="grid-items">
+    <!-- item-box: tarjeta del lector de discos -->
     <article class="item-box">
       <h3>Lector de Discos</h3>
       <p>
@@ -69,8 +87,10 @@
   </section>
 
   <h2>Memorias RAM</h2>
+  <!-- grid-items: grid con 2 tarjetas (DIMM y SO-DIMM), una al lado de la otra -->
   <section class="grid-items">
     <!-- DIMM -->
+    <!-- item-box: tarjeta de la memoria DIMM -->
     <article class="item-box">
       <h3>DIMM</h3>
       <p>
@@ -80,6 +100,7 @@
     </article>
 
     <!-- SO-DIMM -->
+    <!-- item-box: tarjeta de la memoria SO-DIMM -->
     <article class="item-box">
       <h3>SO-DIMM</h3>
       <p>
@@ -90,7 +111,9 @@
   </section>
 
   <h2>Tarjetas gráficas</h2>
+  <!-- grid-items: grid con 4 tarjetas; el CSS las reparte en filas según el ancho de pantalla -->
   <section class="grid-items">
+    <!-- item-box: tarjeta DDR2 -->
     <article class="item-box">
       <h3>DDR2</h3>
       <p>
@@ -98,6 +121,7 @@
       </p>
       <img class="img-producto" src="../img/inventario/componentes_sin_equipo/tarjetaddr2.webp" alt="Imagen Tarjeta Gráfica DDR2">
     </article>
+    <!-- item-box: tarjeta DDR3 -->
     <article class="item-box">
       <h3>DDR3</h3>
       <p>
@@ -105,14 +129,16 @@
       </p>
       <img class="img-producto" src="../img/inventario/componentes_sin_equipo/tarjetagraficaddr3.webp" alt="Imagen Tarjeta Gráfica DDR3">
     </article>
-        <article class="item-box">
+    <!-- item-box: tarjeta GDDR2 -->
+    <article class="item-box">
       <h3>GDDR2</h3>
       <p>
         GDDR2 (Graphics Double Data Rate 2) es un tipo de memoria de acceso aleatorio (RAM) que se utiliza en tarjetas gráficas y otros dispositivos electrónicos para almacenar y acceder a datos de manera rápida y eficiente.
       </p>
-       <img class="img-producto" src="../img/inventario/componentes_sin_equipo/gddr2.jpg" alt="Imagen Tarjeta Gráfica GDDR2">
+      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/gddr2.jpg" alt="Imagen Tarjeta Gráfica GDDR2">
     </article>
-        <article class="item-box">
+    <!-- item-box: tarjeta GDDR3 (ojo: el título y el texto dicen "GDRR3", es una errata) -->
+    <article class="item-box">
       <h3>GDRR3</h3>
       <p>
         GDRR3 (Graphics Double Data Rate 3) es un tipo de memoria de acceso aleatorio (RAM) que se utiliza en tarjetas gráficas y otros dispositivos electrónicos para almacenar y acceder a datos de manera rápida y eficiente.
@@ -122,7 +148,9 @@
   </section>
 
   <h2>Procesadores</h2>
+  <!-- grid-items: primer grid de procesadores, solo contiene la tarjeta AM4 -->
   <section class="grid-items">
+    <!-- item-box: tarjeta del socket AM4 -->
     <article class="item-box">
       <h3>AM4</h3>
       <p>
@@ -133,7 +161,9 @@
     
   </section>
 
+  <!-- grid-items: segundo grid separado; AM2 queda en otra fila/contenedor distinto al de AM4 (si quisieras verlas juntas, ponlas en el mismo grid) -->
   <section class="grid-items">
+    <!-- item-box: tarjeta del socket AM2 -->
     <article class="item-box">
       <h3>AM2</h3>
       <p>
@@ -150,9 +180,11 @@
 
     <footer>
         <p>Grupo Castores S.L.</p>
+        <!-- Menú del footer: el CSS de nav/ul/li define si va en horizontal o en columnas -->
         <nav>
            <ul>
                 <li><a href="Página_principal.html">Inicio</a></li>
+                <!-- target="_blank" abre el enlace en una pestaña nueva -->
                 <li><a href="./Inventario/equipos.html" target="_blank">Equipos</a></li>
                 <li><a href="./Inventario/discos_duros.html" target="_blank">Discos duros</a></li>
                 <li><a href="./Inventario/fuentes_alimentacion.html" target="_blank">Fuentes de alimentación</a></li>
@@ -168,6 +200,7 @@
                 <li><a href="matrizCompatibilidad.html" target="_blank">Matriz de compatibilidad</a></li>
             </ul>  
         </nav>
+        <!-- btnArriba: botón de volver arriba; el CSS suele fijarlo (position: fixed) en una esquina. href="#top" salta al elemento con id="top" -->
         <a href="#top" class="btnArriba" title="Volver al inicio">↑</a>
         <p>© 2026</p>
     </footer>
