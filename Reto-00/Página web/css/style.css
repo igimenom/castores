@@ -96,10 +96,13 @@ main {
   }
 }
 
+/* Limita el tamaño de las imágenes de producto en cualquier contexto */
 .img-producto {
   max-width: 200px; /* Ajusta el tamaño de la imagen si es necesario */
-  height: auto;
+  height: auto;     /* Mantiene la proporción original de la imagen */
 }
+
+/* Cabecera fija de la web */
 header {
     position: fixed;             /* Fija el header en la pantalla para que no se desplace al hacer scroll */
     top: 0;                      /* Lo pega en la parte superior */
@@ -111,7 +114,7 @@ header {
     justify-content: center;     /* Centra horizontalmente el logo/menú interno */
     align-items: center;         /* Centra verticalmente los elementos internos */
     background-color: #FF964A;   /* Color de fondo naranja */
-  z-index: 1000;
+  z-index: 1000;                 /* Lo coloca por encima del resto de elementos para que nunca quede tapado */
 }
 
 /* Imágenes dentro del header*/
@@ -121,6 +124,8 @@ header img {
     width: auto;                 /* Mantiene la proporción original del ancho */
     margin: 0 1rem;              /* Margen lateral para separarla de los elementos contiguos */
 }
+
+/* Menú de navegación */
 nav {
     display: flex;               /* Organiza los elementos de navegación en línea */
     align-items: center;         /* Centra verticalmente los elementos del menú */
@@ -131,15 +136,20 @@ a {
     text-decoration: none;       /* Elimina el subrayado predeterminado de los enlaces */
     color: #000;                 /* Color del texto en negro */
 }
-details {
-  margin-top: 1.5rem;
+
+/* Bloques desplegables <details> (separación exterior) */
+details {                           
+  margin-top: 1.5rem;            /* Deja 1.5rem de espacio por encima del desplegable */
 }
+
+/* Enlaces dentro de un desplegable: se subrayan para distinguirlos */
 details a {
   
-  text-decoration: underline;
-  text-decoration-color: #E05A2B;
-  text-decoration-thickness: 0.1rem;
+  text-decoration: underline;            /* Vuelve a activar el subrayado (que se había quitado en los enlaces globales) */
+  text-decoration-color: #E05A2B;        /* Subrayado en naranja rojizo */
+  text-decoration-thickness: 0.1rem;     /* Grosor del subrayado */
 }
+
 /* Clase específica para enlaces del header */
 .headerCastor {
     text-decoration: none;       /* Elimina el subrayado */
@@ -203,230 +213,281 @@ footer ul {
 footer ul a {
     color: rgba(250, 235, 215, 0.705); /* Aplica el color antiquewhite pero con una transparencia del 70.5% */
 }
+
+/* ---------- MENÚ DE ENLACES CENTRADO ---------- */
+
+/* Contenedor que centra y limita el ancho del bloque de menú */
 .wrap {
-  max-width: 620px;
-  margin: 0 auto;
+  max-width: 620px;   /* Ancho máximo del bloque para que el texto no se estire demasiado */
+  margin: 0 auto;     /* Lo centra horizontalmente en la página */
 }
 
+/* Texto introductorio encima del menú */
 .wrap p.lead {
-  color: var(--text-dim);
-  font-size: 14px;
-  margin: 0 0 24px;
-  text-align: center;
+  color: var(--text-dim);  /* Color atenuado definido en una variable CSS (--text-dim); debe declararse en :root */
+  font-size: 14px;         /* Tamaño de letra pequeño */
+  margin: 0 0 24px;        /* Sin margen arriba/laterales y 24px de separación inferior respecto al menú */
+  text-align: center;      /* Centra el texto */
 }
 
+/* Lista del menú sin viñetas ni espaciados */
 ul.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  list-style: none;  /* Quita las viñetas */
+  margin: 0;         /* Sin margen exterior */
+  padding: 0;        /* Sin relleno interior */
 }
 
+/* Cada ítem del menú lleva una línea separadora inferior */
 ul.menu li {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);  /* Línea fina con el color de la variable --line */
 }
 
+/* El primer ítem también lleva línea superior para cerrar el bloque */
 ul.menu li:first-child {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line);  /* Línea superior solo en el primer elemento */
 }
 
+/* Enlace de cada ítem: ocupa toda la fila, con texto a la izquierda y flecha a la derecha */
 ul.menu a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 6px;
-  color: var(--text);
-  text-decoration: none;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  transition: color 0.15s ease, padding-left 0.15s ease;
+  display: flex;                          /* Flexbox para repartir texto y flecha */
+  align-items: center;                    /* Centra verticalmente el contenido */
+  justify-content: space-between;         /* Texto al extremo izquierdo y flecha al derecho */
+  padding: 18px 6px;                      /* Relleno para que la fila sea cómoda de pulsar */
+  color: var(--text);                     /* Color del texto desde variable CSS */
+  text-decoration: none;                  /* Sin subrayado */
+  font-family: 'Space Grotesk', sans-serif; /* Fuente propia del menú */
+  font-weight: 500;                       /* Grosor de letra medio */
+  font-size: 17px;                        /* Tamaño de letra */
+  transition: color 0.15s ease, padding-left 0.15s ease; /* Animación suave al cambiar color y relleno izquierdo */
 }
 
+/* Efecto al pasar el ratón por encima del enlace */
 ul.menu a:hover {
-  color: var(--header);
-  padding-left: 10px;
+  color: var(--header);   /* Cambia el color del texto al color de acento */
+  padding-left: 10px;     /* Desplaza ligeramente el texto hacia la derecha */
 }
 
+/* Flecha situada a la derecha de cada ítem */
 ul.menu a .arrow {
-  font-size: 18px;
-  color: var(--text-dim);
-  transition: transform 0.15s ease;
+  font-size: 18px;                      /* Tamaño de la flecha */
+  color: var(--text-dim);               /* Color atenuado */
+  transition: transform 0.15s ease;     /* Animación suave del movimiento */
 }
 
+/* La flecha cambia de color y se mueve a la derecha al pasar el ratón */
 ul.menu a:hover .arrow {
-  color: var(--header);
-  transform: translateX(3px);
+  color: var(--header);                 /* Color de acento */
+  transform: translateX(3px);           /* Desplaza la flecha 3px hacia la derecha */
 }
+
 /* ---------- PANTALLA DE INTRO ---------- */
+
+/* Capa que cubre toda la pantalla al cargar la web */
   .intro {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(circle at center, #e67219 0%, #E05A2B 75%);
-    z-index: 10;
-    animation: introOut 1s ease forwards;
-    animation-delay: 3.2s;
+    position: fixed;       /* Se fija sobre la página */
+    inset: 0;              /* Atajo de top/right/bottom/left: 0 → cubre toda la ventana */
+    display: flex;         /* Flexbox para centrar el contenido */
+    flex-direction: column; /* Apila logo, nombre y lema en vertical */
+    align-items: center;   /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    background: radial-gradient(circle at center, #e67219 0%, #E05A2B 75%); /* Degradado radial naranja del centro hacia los bordes */
+    z-index: 10;           /* La coloca por encima del contenido de la página */
+    animation: introOut 1s ease forwards; /* Animación de desvanecimiento final (ver @keyframes introOut) */
+    animation-delay: 3.2s; /* Espera 3.2s antes de empezar a desvanecerse */
   }
 
+/* Zona que contiene el logo y los anillos animados */
   .logo-stage {
-    position: relative;
-    width: 260px;
-    height: 260px;
+    position: relative;    /* Sirve de referencia para posicionar logo y anillos dentro */
+    width: 260px;          /* Ancho del escenario */
+    height: 260px;         /* Alto del escenario */
   }
 
+/* Anillos circulares que se expanden alrededor del logo */
   .anillo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 260px;
+    position: absolute;    /* Se posiciona dentro de .logo-stage */
+    top: 50%;              /* Lo lleva al centro vertical... */
+    left: 50%;             /* ...y al centro horizontal */
+    width: 260px;          /* Mismo tamaño que el logo */
     height: 260px;
-    border-radius: 50%;
-    border: 2px solid rgb(255, 141, 20);
-    transform: translate(-50%, -50%) scale(0.6);
-    animation: expandir 2.5s ease-out infinite;
-    z-index: 1;
+    border-radius: 50%;    /* Lo convierte en un círculo */
+    border: 2px solid rgb(255, 141, 20); /* Borde naranja fino */
+    transform: translate(-50%, -50%) scale(0.6); /* Centra exactamente el anillo y lo empieza en escala reducida */
+    animation: expandir 2.5s ease-out infinite;  /* Animación de expansión repetida sin fin */
+    z-index: 1;            /* Queda por detrás del logo */
   }
-  .anillo:nth-child(2) { animation-delay: 0.6s; }
-  .anillo:nth-child(3) { animation-delay: 1.2s; }
+  .anillo:nth-child(2) { animation-delay: 0.6s; } /* El segundo anillo empieza 0.6s más tarde (efecto de ondas) */
+  .anillo:nth-child(3) { animation-delay: 1.2s; } /* El tercer anillo empieza 1.2s más tarde */
 
+/* Animación de los anillos: crecen y se desvanecen */
   @keyframes expandir {
-    0%   { transform: translate(-50%, -50%) scale(0.6); opacity: 0.6; }
-    100% { transform: translate(-50%, -50%) scale(1.6); opacity: 0; }
+    0%   { transform: translate(-50%, -50%) scale(0.6); opacity: 0.6; } /* Inicio: pequeño y semitransparente */
+    100% { transform: translate(-50%, -50%) scale(1.6); opacity: 0; }   /* Final: grande y totalmente transparente */
   }
 
+/* Contenedor circular del logo */
   .logo-wrap {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
+    position: absolute;    /* Posicionado dentro de .logo-stage */
+    top: 50%;              /* Centrado vertical... */
+    left: 50%;             /* ...y horizontal */
+    z-index: 2;            /* Por encima de los anillos */
     width: 260px;
     height: 260px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 0 0 6px rgb(253, 137, 13), 0 20px 60px rgba(0,0,0,0.5);
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.4) rotate(-8deg);
-    animation: aparecerLogo 1.1s cubic-bezier(.34,1.56,.64,1) forwards;
+    border-radius: 50%;    /* Forma circular */
+    overflow: hidden;      /* Recorta la imagen para que respete el círculo */
+    box-shadow: 0 0 0 6px rgb(253, 137, 13), 0 20px 60px rgba(0,0,0,0.5); /* Aro naranja de 6px + sombra grande y suave debajo */
+    opacity: 0;            /* Empieza invisible (la animación lo hace aparecer) */
+    transform: translate(-50%, -50%) scale(0.4) rotate(-8deg); /* Estado inicial: centrado, pequeño y ligeramente girado */
+    animation: aparecerLogo 1.1s cubic-bezier(.34,1.56,.64,1) forwards; /* Entrada con efecto "rebote"; forwards mantiene el estado final */
   }
+
+/* Imagen del logo dentro del círculo */
   .logo-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%;           /* Ocupa todo el ancho del círculo */
+    height: 100%;          /* Ocupa todo el alto del círculo */
+    object-fit: cover;     /* Rellena el círculo recortando lo que sobre, sin deformar */
   }
 
+/* Animación de entrada del logo: aparece, se pasa un poco de tamaño y se asienta */
   @keyframes aparecerLogo {
-    0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.4) rotate(-8deg); }
-    60%  { opacity: 1; transform: translate(-50%, -50%) scale(1.08) rotate(2deg); }
-    100% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+    0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.4) rotate(-8deg); } /* Invisible, pequeño y girado */
+    60%  { opacity: 1; transform: translate(-50%, -50%) scale(1.08) rotate(2deg); } /* Visible, un poco más grande de lo normal (rebote) */
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(0deg); }    /* Tamaño y posición finales */
   }
 
+/* Nombre de la marca en la intro */
   #nombre {
-    margin-top: 33px;
-    font-size: 30px;
-    letter-spacing: 4px;
-    color: #fff2e6;
-    font-weight: 700;
-    opacity: 0;
-    text-shadow: 0 0 18px rgba(255,140,20,0.7);
-    animation: subirTexto 0.9s ease forwards;
-    animation-delay: 0.9s;
+    margin-top: 33px;      /* Separación respecto al logo */
+    font-size: 30px;       /* Tamaño grande */
+    letter-spacing: 4px;   /* Espaciado entre letras para un aspecto elegante */
+    color: #fff2e6;        /* Blanco cálido */
+    font-weight: 700;      /* Negrita */
+    opacity: 0;            /* Empieza invisible */
+    text-shadow: 0 0 18px rgba(255,140,20,0.7); /* Resplandor naranja alrededor del texto */
+    animation: subirTexto 0.9s ease forwards;   /* Aparece subiendo suavemente */
+    animation-delay: 0.9s; /* Espera 0.9s para entrar después del logo */
   }
 
+/* Lema o eslogan en la intro */
   #lema {
-    margin-top: 13px;
-    font-size: 14px;
-    color: #ffbb80;
-    letter-spacing: 2px;
-    opacity: 0;
-    animation: subirTexto 0.9s ease forwards;
-    animation-delay: 1.2s;
+    margin-top: 13px;      /* Separación respecto al nombre */
+    font-size: 14px;       /* Tamaño pequeño */
+    color: #ffbb80;        /* Naranja claro */
+    letter-spacing: 2px;   /* Espaciado entre letras */
+    opacity: 0;            /* Empieza invisible */
+    animation: subirTexto 0.9s ease forwards; /* Misma animación de entrada que el nombre */
+    animation-delay: 1.2s; /* Entra un poco después que el nombre */
   }
 
+/* Animación de entrada de los textos: suben 14px mientras aparecen */
   @keyframes subirTexto {
-    0%   { opacity: 0; transform: translateY(14px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0%   { opacity: 0; transform: translateY(14px); } /* Invisible y 14px más abajo */
+    100% { opacity: 1; transform: translateY(0); }    /* Visible y en su posición final */
   }
 
+/* Animación de salida de la intro: se desvanece y deja de bloquear clics */
   @keyframes introOut {
-    0%   { opacity: 1; visibility: visible; }
-    100% { opacity: 0; visibility: hidden; pointer-events: none; }
+    0%   { opacity: 1; visibility: visible; }                     /* Visible al inicio */
+    100% { opacity: 0; visibility: hidden; pointer-events: none; } /* Invisible, oculta y sin capturar clics */
   }
+
+/* ---------- BOTÓN "VOLVER ARRIBA" ---------- */
   .btnArriba {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #FF964A;;
-  color: var(--header-text);
-  font-size: 20px;
-  text-decoration: none;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  position: fixed;              /* Queda fijo en pantalla aunque se haga scroll */
+  bottom: 24px;                 /* A 24px del borde inferior */
+  right: 24px;                  /* A 24px del borde derecho */
+  display: flex;                /* Flexbox para centrar el icono/flecha */
+  align-items: center;          /* Centrado vertical del contenido */
+  justify-content: center;      /* Centrado horizontal del contenido */
+  width: 44px;                  /* Ancho del botón */
+  height: 44px;                 /* Alto del botón (mismo valor = círculo perfecto) */
+  border-radius: 50%;           /* Forma circular */
+  background-color: #FF964A;;   /* Naranja de la marca (nota: hay un ';' duplicado, es inofensivo pero conviene quitarlo) */
+  color: var(--header-text);    /* Color del icono desde variable CSS */
+  font-size: 20px;              /* Tamaño del icono/flecha */
+  text-decoration: none;        /* Sin subrayado */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* Sombra suave para dar sensación de elevación */
 }
+
+/* Logo centrado de tamaño mediano */
 .imagenlogo {
-width: 8rem;
-  display: block;
-  margin: 0 auto;
-  margin-top: -10px;
+width: 8rem;           /* Ancho de 8rem */
+  display: block;      /* Lo convierte en bloque para poder centrarlo con margin auto */
+  margin: 0 auto;      /* Centra horizontalmente */
+  margin-top: -10px;   /* Lo sube 10px (sobrescribe el margen superior anterior) */
 }
+
+/* ---------- MENÚ DESPLEGABLE AL PASAR EL RATÓN ---------- */
+
+/* Elemento contenedor: sirve de referencia para posicionar el contenido emergente */
 .dropdown {
-  position: relative;
+  position: relative;   /* Permite que .dropdown-content se posicione respecto a este elemento */
 }
 
+/* Cuadro emergente (oculto por defecto) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  right: 100%;
-  background-color: #f9f9f9;
-  min-width: 200px;
-  top: 23%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  color: #333;
-  z-index: 2;
-  font-size: 80%;
+  display: none;                 /* Oculto hasta que se pase el ratón */
+  position: absolute;            /* Se coloca respecto a .dropdown */
+  right: 100%;                   /* Aparece a la izquierda del elemento padre */
+  background-color: #f9f9f9;     /* Fondo gris muy claro */
+  min-width: 200px;              /* Ancho mínimo del cuadro */
+  top: 23%;                      /* Lo desplaza un 23% desde la parte superior del padre */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra para que parezca flotar */
+  padding: 12px 16px;            /* Relleno interno */
+  color: #333;                   /* Texto gris oscuro */
+  z-index: 2;                    /* Por encima de los elementos vecinos */
+  font-size: 80%;                /* Letra algo más pequeña que la normal */
 }
 
+/* Al pasar el ratón sobre .dropdown se muestra el cuadro emergente */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: block;                /* Lo hace visible */
 }
+
+/* Imágenes dentro del cuadro emergente */
 .dropdown-content img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: 200px;
+  display: block;                /* Evita huecos inferiores de imagen inline */
+  max-width: 100%;               /* Nunca sobrepasa el ancho del cuadro */
+  height: auto;                  /* Mantiene la proporción */
+  width: 200px;                  /* Ancho base de 200px */
 }
+
+/* ---------- ACORDEÓN <details> / <summary> ---------- */
+
+/* Caja del desplegable (esta regla se suma a la de 'details' definida más arriba) */
 details {
-  border: 1px solid #aaaaaa;
-  border-radius: 4px;
-  padding: 0.5em 0.5em 0;
+  border: 1px solid #aaaaaa;     /* Borde gris fino */
+  border-radius: 4px;            /* Esquinas ligeramente redondeadas */
+  padding: 0.5em 0.5em 0;        /* Relleno arriba y lados; sin relleno abajo cuando está cerrado */
 }
 
+/* Título clicable del desplegable */
 summary {
-  font-weight: bold;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
+  font-weight: bold;             /* Texto en negrita */
+  margin: -0.5em -0.5em 0;       /* Márgenes negativos: el título ocupa todo el ancho de la caja */
+  padding: 0.5em;                /* Relleno para que sea cómodo de pulsar */
 }
 
+/* Cuando el desplegable está abierto, se añade relleno inferior */
 details[open] {
-  padding: 0.5em;
+  padding: 0.5em;                /* Relleno uniforme alrededor del contenido */
 }
 
+/* Cuando está abierto, el título se separa del contenido con una línea */
 details[open] summary {
-  border-bottom: 1px solid #aaaaaa;
-  margin-bottom: 0.5em;
+  border-bottom: 1px solid #aaaaaa; /* Línea divisoria bajo el título */
+  margin-bottom: 0.5em;             /* Espacio entre el título y el contenido */
 }
 
+/* ---------- ETIQUETAS DE COMPATIBILIDAD ---------- */
+
+/* Fondo verde brillante para indicar "compatible" */
 .compatible{
   background-color: #15FF00;
 }
+
+/* Fondo rojo para indicar "no compatible" */
 .nocompatible{
   background-color: #FF0000;
 }
+
