@@ -265,7 +265,7 @@ ul.menu a:hover .arrow {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at center, #b3550f 0%, #e0550b 75%);
+    background: radial-gradient(circle at center, #d36714 0%, #f37a3a 75%);
     z-index: 10;
     animation: introOut 1s ease forwards;
     animation-delay: 3.2s;
