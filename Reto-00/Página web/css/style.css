@@ -265,7 +265,7 @@ ul.menu a:hover .arrow {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at center, #d36714 0%, #f37a3a 75%);
+    background: radial-gradient(circle at center, #e67219 0%, #E05A2B 75%);
     z-index: 10;
     animation: introOut 1s ease forwards;
     animation-delay: 3.2s;
@@ -284,7 +284,7 @@ ul.menu a:hover .arrow {
     width: 260px;
     height: 260px;
     border-radius: 50%;
-    border: 2px solid rgba(255,140,20,0.35);
+    border: 2px solid rgb(255, 141, 20);
     transform: translate(-50%, -50%) scale(0.6);
     animation: expandir 2.5s ease-out infinite;
     z-index: 1;
