@@ -151,4 +151,4 @@ lo que es cada cosa de este.
 * Documentación web html, css y mockup.
 * Estructura web
 * Terminar diagrama e/r del ejercicio 2-software.
-*
+* cronograma y fases en documentación. del cuaderno de bitácora a documentación de todo el proceso.
