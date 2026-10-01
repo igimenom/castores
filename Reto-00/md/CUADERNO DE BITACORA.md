@@ -140,6 +140,9 @@ lo que es cada cosa de este.
 * Javier; documentación de todo el proceso
 * Iván; revisión HTML, CSS y sus respectivo comentarios. 
 * Marcos; ajustes del diagrama e/r con su matriz de compatibilidad.
+
+
+
 ---
 ### TAREAS PENDIENTES
 * terminar mockup
