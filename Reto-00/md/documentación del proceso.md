@@ -31,7 +31,7 @@
 ### 1.1. Descripción del proyecto
 Este proyecto corresponde al Reto 0 de 1º de ASIR: Recuperación y digitalización del parque informático. El centro dispone de ordenadores, periféricos y componentes de distintas generaciones, algunos funcionales, otros averiados o incompletos, y no existe un registro fiable de qué hay, en qué estado está ni qué se ha hecho sobre cada equipo.
 
-Nuestro equipo Castores formado por(Marcos,Ivan,Javier y Bruno) debe estudiar el material, recuperar al menos un equipo plenamente funcional, documentar todo el proceso y crear un inventario digital basado en una base de datos propia. Además, debemos proponer cómo gestionar el parque informático de forma más eficiente mediante tecnologías digitales.
+Nuestro equipo Castores formado por(Marcos, Iván, Javier y Bruno) debe estudiar el material, recuperar al menos un equipo plenamente funcional, documentar todo el proceso y crear un inventario digital basado en una base de datos propia. Además, debemos proponer cómo gestionar el parque informático de forma más eficiente mediante tecnologías digitales.
 ### 1.2. Objetivos del proyecto
 Objetivo general: convertir el material informático disponible para montar un ordenador funcional, hacer inventario y ordenar.
 
@@ -92,6 +92,15 @@ Sostenibilidad y protección de datos: reutilización frente a residuo electrón
 7. Documentación: todas las decisiones justificadas técnicamente y las fuentes citadas.
 8. Realismo y economía: priorizar la reutilización y software libre, sin sobrecargar de tecnologías.
 9. Organización: puesto y material ordenados al terminar cada sesión.
+1. Usabilidad: el inventario debe poder ser consultado por una persona responsable sin conocimientos avanzados.
+2. Integridad y coherencia: uso de claves primarias/foráneas y restricciones.
+3. Mantenibilidad y escalabilidad: poder añadir nuevo material sin rediseñar la base de datos.
+4. Trazabilidad: todo cambio de componentes o configuración queda registrado.
+5. Seguridad y protección de datos: no borrar almacenamiento sin autorización; avisar al profesorado ante datos personales; copias de seguridad de la base de datos.
+6. Seguridad física y laboral: no manipular equipos conectados a la corriente y usar protección antiestática.
+7. Documentación: todas las decisiones justificadas técnicamente y las fuentes citadas.
+8. Realismo y economía: priorizar la reutilización y software libre, sin sobrecargar de tecnologías.
+9. Organización: puesto y material ordenados al terminar cada sesión.
 ## 5. Planificación
 ### 5.1. Fases del proyecto
 Fase 0. Organización del equipo: reparto de roles, elección de la herramienta Kanban.
@@ -103,9 +112,23 @@ Fase 5. Sistema operativo: comparativa de alternativas, instalación y configura
 Fase 6. Implementación de la base de datos: creación de tablas, carga de datos reales y consultas.
 Fase 7. Documentación y memoria.
 Fase 8. Preparación y demostración final.
+Fase 0. Organización del equipo: reparto de roles, elección de la herramienta Kanban.
+Fase 1. Análisis del material: identificación, fotografiado, etiquetado y primera evaluación de estado.
+Fase 2. Diagnóstico y pruebas: comprobación de componentes, pruebas de arranque, RAM, disco y detección de averías.
+Fase 3. Diseño del inventario: modelo entidad-relación, web en html.
+Fase 4. Recuperación del equipo: selección de componentes compatibles, montaje y reparación con registro de cada cambio.
+Fase 5. Sistema operativo: comparativa de alternativas, instalación y configuración.
+Fase 6. Implementación de la base de datos: creación de tablas, carga de datos reales y consultas.
+Fase 7. Documentación y memoria.
+Fase 8. Preparación y demostración final.
 ### 5.2. Cronograma de trabajo 
 [Kanban](https://github.com/users/igimenom/projects/1/views/1)
+[Kanban](https://github.com/users/igimenom/projects/1/views/1)
 ### 5.3. Recursos necesarios 
+Humanos: equipo de 4 compañeros y profesorado como supervisión.
+Hardware: equipos, componentes y periféricos del centro; herramientas de montaje (destornilladores, boligrafo probador de voltaje), equipo de prueba (monitor y teclado) y USB para instalar el sistema operativo.
+Software: sistema operativo primeramente siendo linux y despues para realizar mas benchmarks instalamos windows 11 pro, herramientas de modelado (draw.io), Kanban, herramientas de diagnóstico (MemTest86, smartctl…) y un repositorio compartido para la documentación.
+Espacio: aula y taller de inventario con puestos ordenados y zona de almacenamiento del material.
 Humanos: equipo de 4 compañeros y profesorado como supervisión.
 Hardware: equipos, componentes y periféricos del centro; herramientas de montaje (destornilladores, boligrafo probador de voltaje), equipo de prueba (monitor y teclado) y USB para instalar el sistema operativo.
 Software: sistema operativo primeramente siendo linux y despues para realizar mas benchmarks instalamos windows 11 pro, herramientas de modelado (draw.io), Kanban, herramientas de diagnóstico (MemTest86, smartctl…) y un repositorio compartido para la documentación.
@@ -114,16 +137,59 @@ Espacio: aula y taller de inventario con puestos ordenados y zona de almacenamie
 ## 6. Desarrollo del proyecto
 ### 6.1. Análisis y diseño
 [Análisis del material](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/P%C3%A1gina_principal.html)
+[Compatibilidad del equipo recuperado](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/matrizCompatibilidad.html)
+[Diseño de la base de datos](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/P%C3%A1gina_principal.html)
 ### 6.2. Tecnologías/Herramientas empleadas
+Gestión de tareas: Github Projects Kanban.
+Modelado: Draw.io.
+Sistema Operativo: Linux Mint y Windows 11.
+Diagnóstico: MemTest86, Cpu-X, Furmark, HWinfo64, Msiafterburner.
+Documentación y evidencias: Github, drive compartido, fotos. 
 ### 6.3. Partes contratantes
+Al ser un proyecto académico, no hay contratación real, pero se identifican las partes:
+
+Cliente: Campus digital
+Equipo desarrollador: Castores(Marcos, Iván, Javier, Bruno), alumnado de 1º de ASIR.
+Supervisión: Abraham Bartolomé Hernández, David Gascueña Ferre, María José González Naya, Javier Orna Sáez.
 ### 6.4. Presupuesto
-### 6.5. OPCIONAL: Contrato y pliego de condiciones
+0€
 ### 6.6. OPCIONAL: Análisis de riesgos
+Riesgo	Probabilidad	Impacto	Medida de mitigación
+Riesgo: Componentes incompatibles o defectuosos	Probabilidad: Media	Impacto:Alto Medida de mitigación: Verificar especificaciones y probar con componentes conocidos
+Riesgo: Daño por electricidad estática	Probabilidad: Media	Impacto: Alto	Medida de mitigación: Pulsera antiestática, manipulación correcta
+Riesgo: Encontrar datos personales en discos	Probabilidad: Baja	Impacto: Alto	Medida de mitigación: No acceder, avisar inmediatamente al profesorado
+Riesgo: Pérdida de datos del inventario	Probabilidad: Baja	Impacto: Alto	Medida de mitigación: Copias de seguridad, claves y restricciones
+Riesgo: Desigual conocimiento en el equipo	Media	Alto	Medida de mitigación: Rotación de roles y que los que mas sepan de ese tema ayuden al principio a los que no lo habian hecho antes
 
 ## 7. Pruebas y validación
+Pruebas de hardware:
+![Actualizar la BIOS](./Documentación/img/bios.jpeg)
+Actualizar la BIOS
+![Instalación de Linux Mint](./Documentación/img/instalacion.jpeg)
+Instalación de Linux Mint
+![Elección de idioma en Linux Mint](./Documentación/img/IMG_2286.jpeg).
+Elección de idioma en Linux Mint
+![prueba de arranque](./Documentación/img/benchmark.jpeg)
 
+![prueba de arranque](./Documentación/img/bios.jpeg)
+![prueba de arranque](./Documentación/img/cpu-x.jpeg)
+![prueba de arranque](./Documentación/img/cpux_slow.jpeg)
+![prueba de arranque](./Documentación/img/foto_cpu.jpeg)
+![prueba de arranque](./Documentación/img/furmark_knot.jpeg)
+![prueba de arranque](./Documentación/img/linux_mint.jpeg)
+![prueba de arranque](./Documentación/img/Ordenador%20en%20funcionamiento.jpg)
+![prueba de arranque](./Documentación/img/Velocidad%20RAM.jpg)
+![prueba de arranque](./Documentación/img/Temperaturas%20CPU.jpg)
 ## 8. Documentación técnica
-
+Ficha técnica del equipo recuperado: 
+Registro de incidencias e intervenciones por equipo.
+Inventario del material analizado (exportado desde la base de datos).
+Modelo de datos: diagrama ER, modelo relacional y diccionario de datos.
+Scripts SQL: creación de tablas, carga de datos reales y consultas útiles con su explicación.
+Manual de instalación y configuración del SO y decisiones tomadas.
+Manual básico de uso del inventario para la persona responsable.
+Propuesta de transformación digital: por ejemplo, adoptar una herramienta de gestión de activos (GLPI o Snipe-IT), etiquetado con códigos QR o de barras, formularios de alta de material, inventario automático mediante agentes, tablero de incidencias y copias de seguridad periódicas. Justificad cada elemento con los problemas reales encontrados y valorad su viabilidad y coste.
+Registro de fuentes consultadas.
 ## 9. Conclusiones
 ### 9.1. Desviación sobre la planificación inicial
 ### 9.2. Resultados obtenidos y posibles mejoras futuras
