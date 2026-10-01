@@ -194,17 +194,19 @@ Temperaturas en la Bios
 ## 8. Documentación técnica
 [Ficha técnica del equipo recuperado](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/Inventario/equipo/EQ_00.html).
 
-[Intervenciones del equipo]()
-Inventario del material analizado (exportado desde la base de datos).
-Modelo de datos: diagrama ER, modelo relacional y diccionario de datos.
-Scripts SQL: creación de tablas, carga de datos reales y consultas útiles con su explicación.
-Manual de instalación y configuración del SO y decisiones tomadas.
-Manual básico de uso del inventario para la persona responsable.
-Propuesta de transformación digital: por ejemplo, adoptar una herramienta de gestión de activos (GLPI o Snipe-IT), etiquetado con códigos QR o de barras, formularios de alta de material, inventario automático mediante agentes, tablero de incidencias y copias de seguridad periódicas. Justificad cada elemento con los problemas reales encontrados y valorad su viabilidad y coste.
-Registro de fuentes consultadas.
+[Intervenciones del equipo](./Documentación/img/poniendo%20ssd.jpeg)
+[Intervenciones del equipo](./Documentación/img/poniendo%20rj-45.jpeg)
+[Intervenciones del equipo](./Documentación/img/poniendo%20ram.jpeg)
+[Intervenciones del equipo](./Documentación/img/poniendo%20cable%20alimentacion.jpeg)
+[Intervenciones del equipo](./Documentación/img/poniendo%20cable%20.jpeg)
+[Intervenciones del equipo](./Documentación/img/destornillador.jpg)
 ## 9. Conclusiones
 ### 9.1. Desviación sobre la planificación inicial
+Se retrasaron: Desmontar el ordenador debido a que el disipador estaba pegado con la pasta termica. Linux no arrancaba y tuvimos que instalar el windows 11. Tuvimos que volver a bajar a la sala de inventario para registrar las 2 cajas de los equipos 1 y 2
+Se adelantaron: El web tree. El mockup. 
 ### 9.2. Resultados obtenidos y posibles mejoras futuras
+Resultados: Conseguir que el EQ_00 sea funcional y sus componentes esten perfecto funcionamiento.
+Hemos conseguido 3 equipos completos y 36 elemntos extras
 ### 9.3. Valoración personal
 ### 9.4. OPCIONAL: Agradecimientos
 
