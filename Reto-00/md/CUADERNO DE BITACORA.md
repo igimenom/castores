@@ -36,6 +36,10 @@
    * Implementación.
    * Datos reales.
    * Consultas útiles.
+
+7. **Una propuesta de transformación digital** para mejorar la gestión futura del parque informático.
+
+8. **Una memoria del proyecto** que permita comprender el proceso seguido por el equipo.  
 ---
 
 ### Día 1 ; 15/09/2026
