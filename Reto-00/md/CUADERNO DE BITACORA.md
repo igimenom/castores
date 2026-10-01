@@ -115,7 +115,7 @@
 
 ## Día 10 ; 28/09/2026
 
-* Bruno; Hacer un 3er nivel del inventario que conste de  una agrupación de definiciones de
+* Bruno; Hacer un 3er nivel del inventario que conste de una agrupación de definiciones de
 lo que es cada cosa de este.
 * Javier; Hacer el HTML (quitar div).
 * Iván; Hacer el MOCKUP. 
