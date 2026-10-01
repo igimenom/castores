@@ -136,10 +136,10 @@ lo que es cada cosa de este.
 * Marcos; matriz de comaptibilidad en HTML y comentarios CSS.
 
 ## Día 13; 1/09/2026
-* Bruno; organización del kanban, cuaderno de bitácora, preparar presentación.
-* Javier; documentación de todo el proceso
-* Iván; revisión HTML, CSS y sus respectivo comentarios. 
-* Marcos; ajustes del diagrama e/r con su matriz de compatibilidad.
+* Bruno; organización del kanban, cuaderno de bitácora, preparar presentación y comentar css.
+* Javier; documentación de todo el proceso.
+* Iván; revisión HTML, CSS y sus respectivo comentarios y añadir elementos al footer. 
+* Marcos; ajustes del diagrama e/r con su matriz de compatibilidad y web tree y matriz de compatibilidad.
 ---
 ### TAREAS PENDIENTES
 * terminar mockup
