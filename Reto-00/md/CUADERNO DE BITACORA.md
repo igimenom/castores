@@ -136,6 +136,7 @@ lo que es cada cosa de este.
 * Marcos; matriz de comaptibilidad en HTML y comentarios CSS.
 
 ## Día 13; 1/09/2026
+
 * Bruno; organización del kanban, cuaderno de bitácora, preparar presentación y comentar css.
 * Javier; documentación de todo el proceso.
 * Iván; revisión HTML, CSS y sus respectivo comentarios y añadir elementos al footer. 
@@ -143,6 +144,7 @@ lo que es cada cosa de este.
 ---
 ### TAREAS PENDIENTES
 * terminar mockup
+* matriz de compatibilidad a html, entre paréntesis poner el nombre de cada componenete.
 * matriz de compatibilidad a html, entre paréntesis poner el nombre de cada componenete.
 * corregir html
 * docuemtnación del proceso.md
