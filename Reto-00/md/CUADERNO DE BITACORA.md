@@ -145,6 +145,7 @@ lo que es cada cosa de este.
 ### TAREAS PENDIENTES
 * terminar mockup
 * matriz de compatibilidad a html, entre paréntesis poner el nombre de cada componenete.
+* matriz de compatibilidad a html, entre paréntesis poner el nombre de cada componenete.
 * corregir html
 * docuemtnación del proceso.md
 ---
