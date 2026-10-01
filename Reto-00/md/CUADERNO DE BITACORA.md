@@ -146,7 +146,7 @@ lo que es cada cosa de este.
 * Iván; revisión HTML, CSS y sus respectivo comentarios y añadir elementos al footer. 
 * Marcos; ajustes del diagrama e/r con su matriz de compatibilidad y web tree y matriz de compatibilidad.
 ---
-## Día 14; 1/09/2026
+## Día 14; 2/09/2026
 * Bruno; organización del kanban, cuaderno de bitácora, y comentar css.
 * Javier; propuesta de transformación digital
 * Iván; continuación documentación del proceso.
