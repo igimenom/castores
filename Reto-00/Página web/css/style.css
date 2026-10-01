@@ -131,7 +131,7 @@ a {
     text-decoration: none;       /* Elimina el subrayado predeterminado de los enlaces */
     color: #000;                 /* Color del texto en negro */
 }
-details {
+details {                           
   margin-top: 1.5rem;
 }
 details a {
