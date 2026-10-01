@@ -113,9 +113,12 @@ Espacio: aula y taller de inventario con puestos ordenados y zona de almacenamie
 
 ## 6. Desarrollo del proyecto
 ### 6.1. Análisis y diseño
-[Análisis del material](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/P%C3%A1gina_principal.html)
-[Compatibilidad del equipo recuperado](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/matrizCompatibilidad.html)
-[Diseño de la base de datos](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/P%C3%A1gina_principal.html)
+[Análisis del material](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/P%C3%A1gina_principal.html).
+
+[Compatibilidad del equipo recuperado](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/matrizCompatibilidad.html).
+
+[Diseño de la base de datos](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/P%C3%A1gina_principal.html).
+
 ### 6.2. Tecnologías/Herramientas empleadas
 Gestión de tareas: Github Projects Kanban.
 Modelado: Draw.io.
@@ -142,24 +145,33 @@ Riesgo: Desigual conocimiento en el equipo	Media	Alto	Medida de mitigación: Rot
 Pruebas de hardware:
 ![Actualizar la BIOS](./Documentación/img/bios.jpeg)
 Actualizar la BIOS
+![Inicio Linux Mint](./Documentación/img/linux_mint.jpeg)
+Inicio Linux Mint
 ![Instalación de Linux Mint](./Documentación/img/instalacion.jpeg)
 Instalación de Linux Mint
 ![Elección de idioma en Linux Mint](./Documentación/img/IMG_2286.jpeg).
 Elección de idioma en Linux Mint
-![prueba de arranque](./Documentación/img/benchmark.jpeg)
+![Prueba de benchmark en furmark](./Documentación/img/benchmark.jpeg)
+Prueba de benchmark en furmark
+![Componentes en Cpu-X](./Documentación/img/cpu-x.jpeg)
+Componentes en Cpu-X
+![Benchmark en Cpu-X](./Documentación/img/cpux_slow.jpeg)
+Benchmark en Cpu-X
+![Foto Fps](./Documentación/img/foto_cpu.jpeg)
+Foto Fps
+![Furmark_knot](./Documentación/img/furmark_knot.jpeg)
+Furmark_knot
 
-![prueba de arranque](./Documentación/img/bios.jpeg)
-![prueba de arranque](./Documentación/img/cpu-x.jpeg)
-![prueba de arranque](./Documentación/img/cpux_slow.jpeg)
-![prueba de arranque](./Documentación/img/foto_cpu.jpeg)
-![prueba de arranque](./Documentación/img/furmark_knot.jpeg)
-![prueba de arranque](./Documentación/img/linux_mint.jpeg)
-![prueba de arranque](./Documentación/img/Ordenador%20en%20funcionamiento.jpg)
-![prueba de arranque](./Documentación/img/Velocidad%20RAM.jpg)
-![prueba de arranque](./Documentación/img/Temperaturas%20CPU.jpg)
+![EQ_00 Funcionando](./Documentación/img/Ordenador%20en%20funcionamiento.jpg)
+EQ_00 Funcionando
+![Velocidad mhz ram](./Documentación/img/Velocidad%20RAM.jpg)
+Velocidad mhz ram
+![Temperaturas en la Bios](./Documentación/img/Temperaturas%20CPU.jpg)
+Temperaturas en la Bios
 ## 8. Documentación técnica
-Ficha técnica del equipo recuperado: 
-Registro de incidencias e intervenciones por equipo.
+[Ficha técnica del equipo recuperado](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/Inventario/equipo/EQ_00.html).
+
+Intervenciones del equipo.
 Inventario del material analizado (exportado desde la base de datos).
 Modelo de datos: diagrama ER, modelo relacional y diccionario de datos.
 Scripts SQL: creación de tablas, carga de datos reales y consultas útiles con su explicación.
