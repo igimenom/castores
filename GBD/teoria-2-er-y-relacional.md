@@ -166,7 +166,8 @@ flowchart LR
 |---|---|---|
 | **Atributo o entidad** | Ver 1.1 | «De la sala solo interesa el nombre» → atributo. «De cada sala, aforo y planta» → entidad |
 | **Atributo de relación** | Ver 1.2 | «Cuántas unidades de cada producto hay **en un pedido**»: no es del producto ni del pedido |
-| **Dato derivado** | Un dato que se calcula a partir de otros. No se guarda: si se guardara, se desincronizaría al cambiar los datos de los que sale | «El total se calcula», «el resultado se cuenta a partir de los goles» |
+| **Dato derivado** | Un dato que se calcula a partir de otros. No se guarda: si se guardara, se desincronizaría al cambiar los datos de los que sale | «El total se calcula», «el resultado se cuenta a partir de los goles», «la RAM montada en cada equipo» |
+| **Dato histórico** | Parece derivado y no lo es: es una foto de un valor en un momento, que no debe cambiar aunque cambie el original. Se guarda | El precio al que se vendió un producto en un pedido, aunque el producto suba mañana. Si se calculara a partir del precio actual, las facturas antiguas cambiarían |
 | **Dos relaciones entre las mismas entidades** | Ver 1.2 y 1.5 | Un partido tiene un equipo **local** y un equipo **visitante** |
 | **Entidad débil** | Una entidad que solo se identifica dentro de otra. Ver 4.2 | «El tercer gol» solo significa algo dentro de un partido concreto |
 | **Restricción no representable** | Una regla del enunciado que el diagrama no puede dibujar. Se escribe en una lista aparte, diciendo dónde se garantizaría | «Los dos equipos de un partido tienen que ser distintos» |
@@ -275,11 +276,15 @@ tiene cero o muchos equipos» se lee de GRUPO hacia EQUIPO, y el símbolo va en 
 ### 2.5 Las reglas 1 a 6
 
 **Regla 1 · Cada entidad es una tabla.** Sus atributos son columnas; su clave es la clave primaria.
-Los atributos derivados **no** se pasan: no se guardan.
+Los atributos derivados **no** se pasan: no se guardan. Los históricos, sí (apartado 1.6).
 
-**Regla 2 · Relación 1:N → clave ajena en el lado N.** La tabla de la entidad que participa como
-mucho una vez (la que tiene máximo 1 en su cardinalidad) recibe una columna con la clave de la otra.
-No se crea tabla nueva.
+**Regla 2 · Relación 1:N → la clave ajena va a la entidad que tiene máximo 1 junto a ella.** Esa
+tabla recibe una columna con la clave de la otra. No se crea tabla nueva.
+
+Ojo con la notación de clase: la N se escribe junto a la entidad que **no** recibe la clave ajena.
+En `GRUPO (0,N) — tiene asignado — (0,1) EQUIPO`, la N está junto a GRUPO y la clave ajena va a
+EQUIPO, que tiene el `(0,1)`. La pregunta que lo decide: una ocurrencia de esta entidad, ¿con
+cuántas de la otra como máximo? Si la respuesta es una, la clave ajena va aquí.
 
 - Si esa entidad tiene **mínimo 1**, la clave ajena es obligatoria.
 - Si tiene **mínimo 0**, la clave ajena admite nulo (`?`).
@@ -300,7 +305,7 @@ erDiagram
   }
 ```
 
-¿Por qué en el lado N y no al revés? Porque un grupo tiene muchos equipos: si la clave fuera en
+¿Por qué en EQUIPO y no al revés? Porque un grupo tiene muchos equipos: si la clave fuera en
 GRUPO, habría que poner varios equipos en una celda, que es justo el error de la hoja del aula.
 Cada equipo, en cambio, apunta a un solo grupo.
 
@@ -330,9 +335,24 @@ erDiagram
 Una N:M con muchos atributos o con vida propia (se crea, cambia de estado, se cierra) suele ser en
 realidad una entidad: PEDIDO, RESERVA, PRÉSTAMO.
 
+**N:M que guarda historia.** Con la clave compuesta, la misma pareja no puede aparecer dos veces. En
+una matrícula es justo lo que se quiere; en un préstamo, no: el mismo socio puede llevarse el mismo
+ejemplar en marzo y otra vez en mayo, y `PK(id_socio, id_ejemplar)` rechaza el segundo préstamo. Dos
+soluciones:
+
+| Solución | Tabla | Cuándo |
+|---|---|---|
+| Fecha dentro de la clave primaria | `PRESTAMO(id_socio FK, id_ejemplar FK, fecha_prestamo, fecha_devolucion?)` con `PK(id_socio, id_ejemplar, fecha_prestamo)` | Si la fecha basta para distinguir dos ocurrencias |
+| Clave subrogada | `PRESTAMO(id_prestamo PK, id_socio FK, id_ejemplar FK, fecha_prestamo, fecha_devolucion?)` | Si otras tablas tienen que apuntar al préstamo, o si la fecha puede repetirse |
+
+La pregunta que lo decide: ¿puede repetirse la misma pareja en momentos distintos? Si sí, la pareja
+sola no es clave. Pasa con préstamos, reservas, revisiones y cualquier historial. En el IOC, unidad 2,
+apartado 3.1.5, *L'entitat DATA*.
+
 **Regla 4 · Relación 1:1 → clave ajena en uno de los dos lados, con UK.** Se pone en el lado que
 participa obligatoriamente, para evitar nulos; si los dos son opcionales, en el que deje menos
-nulos. El UK impide que dos filas apunten a la misma.
+nulos. El UK impide que dos filas apunten a la misma. Si los dos lados tienen `(1,1)`, antes de hacer dos tablas
+comprueba si no son la misma entidad (apartado 4.3).
 
 ```mermaid
 erDiagram
@@ -391,7 +411,7 @@ diagrama, y del enunciado, que se pierden por el camino, y hay que apuntarlas co
 
 | Se pierde | Ejemplo | Por qué |
 |---|---|---|
-| El mínimo 1 del lado «uno» de una 1:N | «Un pedido lleva al menos un producto» | La clave ajena está en la otra tabla: nada obliga a que exista alguna fila que apunte a este pedido |
+| El mínimo 1 de la entidad sin clave ajena en una 1:N | «Todo grupo tiene al menos un alumno» | La clave ajena está en ALUMNO: nada obliga a que exista alguna fila que apunte a este grupo |
 | Reglas entre filas o entre tablas | «El jugador que marca es de uno de los dos equipos del partido» | Una clave ajena comprueba que el jugador existe, no de qué equipo es |
 | Relaciones que se excluyen | «Un componente está montado o guardado, no las dos cosas» | Son dos claves ajenas independientes; que no estén las dos rellenas se pone aparte, con un `CHECK` |
 | Reglas sobre valores | «La cantidad es mayor que 0» | Se puede poner con `CHECK` en el gestor, pero no se ve en el diagrama |
@@ -762,8 +782,8 @@ nombre del tipo, basta un atributo `tipo`.
 
 *IOC, unidad 3, apartados 1.3.2–1.3.4 (págs. 182–192).*
 
-Las reglas 1 a 6 están en el apartado 2.5: entidad → tabla, 1:N → clave ajena en el lado N, N:M →
-tabla nueva, 1:1 → clave ajena con UK, débil → clave de la fuerte más discriminante, dos relaciones
+Las reglas 1 a 6 están en el apartado 2.5: entidad → tabla, 1:N → clave ajena en la entidad con
+máximo 1, N:M → tabla nueva, 1:1 → clave ajena con UK, débil → clave de la fuerte más discriminante, dos relaciones
 → dos claves ajenas con nombre de papel.
 
 **Regla 7 · Reflexiva 1:N → clave ajena a la propia tabla.** Se nombra con el papel, nunca con el
@@ -915,4 +935,4 @@ garantizan:
 
 ---
 
-Última actualización: 25 de septiembre de 2026.
+Última actualización: 2 de octubre de 2026.

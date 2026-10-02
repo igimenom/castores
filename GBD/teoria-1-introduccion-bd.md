@@ -827,8 +827,8 @@ que saber decir de un gestor dado qué es según cada criterio.
 > **Los gestores concretos, en la investigación.** La tabla con MariaDB, PostgreSQL, SQLite,
 > MongoDB, Redis y Oracle clasificados uno a uno no está aquí a propósito: es justo lo que pide la
 > ficha de [`investigacion-1-gestores.md`](investigacion-1-gestores.md), y sale de la documentación
-> oficial de cada gestor. Se publicará en este documento después de la puesta en común del 28 de
-> septiembre.
+> oficial de cada gestor. Se publicará en este documento después de la presentación del 9 de
+> octubre.
 
 ---
 

@@ -19,7 +19,7 @@ El trabajo práctico comenzó con el desmontaje e identificación de los compone
 
 **Solución:** Se utilizó un secador para aplicar calor de forma directa en el bloque y ablandar la pasta. Una vez caliente la zona, se hizo palanca con cuidado utilizando un destornillador plano hasta lograr desenganchar la CPU sin causar ningún daño a los pines.
 
-Durante el proceso, Javier tomó las fotos de cada componente, Marcos redactó la descripción detallada de cada una e Iván se encargó de renombrar las imágenes. Con el hardware al descubierto, **Bruno** recopiló los *datasheets* y especificaciones oficiales, permitiendo a **Iván** y **Bruno** diseñar la matriz de compatibilidad. Una vez documentado el proceso, **Marcos** reensambló el equipo. Posteriormente, **Javier** y **Marcos** repitieron el procedimiento de identificación de componentes en dos ordenadores adicionales de la sala R4.
+Durante el proceso, Javier tomó las fotos de cada componente, Marcos redactó la descripción detallada de cada una e Iván se encargó de renombrar las imágenes. Con el hardware al descubierto, **Bruno** recopiló los *datasheets* y especificaciones oficiales, permitiendo a **Iván** diseñar la matriz de compatibilidad. Una vez documentado el proceso, **Marcos** reensambló el equipo. Posteriormente, **Javier** y **Marcos** repitieron el procedimiento de identificación de componentes en dos ordenadores adicionales de la sala R4.
 
 ---
 

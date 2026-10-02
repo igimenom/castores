@@ -31,19 +31,19 @@
 ### 1.1. Descripción del proyecto
 Este proyecto corresponde al Reto 0 de 1º de ASIR: Recuperación y digitalización del parque informático. El centro dispone de ordenadores, periféricos y componentes de distintas generaciones, algunos funcionales, otros averiados o incompletos, y no existe un registro fiable de qué hay, en qué estado está ni qué se ha hecho sobre cada equipo.
 
-Nuestro equipo Castores formado por(Marcos, Iván, Javier y Bruno) debe estudiar el material, recuperar al menos un equipo plenamente funcional, documentar todo el proceso y crear un inventario digital basado en una base de datos propia. Además, debemos proponer cómo gestionar el parque informático de forma más eficiente mediante tecnologías digitales.
+Nuestro equipo Castores formado por (Marcos, Iván, Javier y Bruno) debe estudiar el material, recuperar al menos un equipo plenamente funcional, documentar todo el proceso y crear un inventario digital basado en una base de datos propia. Además, debemos proponer cómo gestionar el parque informático de forma más eficiente mediante tecnologías digitales.
 ### 1.2. Objetivos del proyecto
-Objetivo general: convertir el material informático disponible para montar un ordenador funcional, hacer inventario y ordenar.
+El presente proyecto persigue como principal objetivo la puesta en valor del material informático disponible, con el fin de ensamblar un equipo plenamente funcional, al mismo tiempo que se lleva a cabo un proceso exhaustivo de organización e inventariado.
 
-Objetivos específicos:
+Para alcanzar esta meta, el desarrollo se estructurará en diversas fases interconectadas. En primer lugar, se procederá a la identificación, catalogación y evaluación técnica de todos los recursos físicos existentes, abarcando equipos, componentes y periféricos. Este análisis minucioso permitirá determinar con precisión qué elementos son susceptibles de ser recuperados, reutilizados o reparados, y cuáles, por el contrario, deberán ser descartados de manera definitiva.
 
-Identificar, catalogar y evaluar el estado del material disponible (equipos, componentes y periféricos).
-Determinar qué material se puede recuperar, reutilizar, reparar o descartar.
-Montar o reparar al menos un equipo plenamente funcional, justificando la compatibilidad entre sus componentes.
-Elegir, instalar y configurar un sistema operativo adecuado, justificándolo frente a alternativas.
-Diseñar e implementar una base de datos de inventario con datos reales y consultas útiles.
-Registrar todas las intervenciones y conservar evidencias del trabajo utilizando un Kanban.
-Trabajar de forma organizada en equipo, para conseguir que todos dominen todos los aspectos que vamos trabajando en el reto 
+Una vez clasificado el material, la labor técnica se centrará en el montaje o la reparación de, como mínimo, un sistema informático operativo. Dicha intervención requerirá una justificación técnica rigurosa que acredite la compatibilidad de los componentes seleccionados. Posteriormente, se abordará la dotación de software mediante la elección, instalación y configuración del sistema operativo más adecuado para el hardware ensamblado, argumentando sólidamente esta decisión frente a otras alternativas disponibles.
+
+De manera transversal a estas tareas, la gestión de los recursos quedará respaldada por el diseño y la implementación de una base de datos para el control del inventario, la cual se alimentará con datos reales y estará optimizada para la ejecución de consultas de valor práctico. Asimismo, el rigor documental del proyecto se asegurará mediante el registro continuo de todas las intervenciones y la conservación de evidencias del progreso a través de la metodología Kanban.
+
+Finalmente, la ejecución de todas estas actividades se sustentará en un modelo de trabajo en equipo estrictamente organizado, cuyo propósito pedagógico y colaborativo es garantizar que cada uno de los integrantes adquiera un dominio integral sobre la totalidad de las competencias y áreas abordadas durante el reto.
+
+
 ## 2. Análisis del contexto y justificación de la propuesta 
 Situación de partida. El centro cuenta con material informático con mucha diferencia de antigüedad. Por lo que nos resulta difícil saber qué material hay, en qué estado está, qué características tiene, qué componentes son compatibles entre sí y qué equipos son recuperables.
 
@@ -103,24 +103,64 @@ Sostenibilidad y protección de datos: reutilización frente a residuo electrón
 9. Organización: puesto y material ordenados al terminar cada sesión.
 ## 5. Planificación
 ### 5.1. Fases del proyecto
-Fase 0. Organización del equipo: reparto de roles, elección de la herramienta Kanban.
-Fase 1. Análisis del material: identificación, fotografiado, etiquetado y primera evaluación de estado.
-Fase 2. Diagnóstico y pruebas: comprobación de componentes, pruebas de arranque, RAM, disco y detección de averías.
-Fase 3. Diseño del inventario: modelo entidad-relación, web en html.
-Fase 4. Recuperación del equipo: selección de componentes compatibles, montaje y reparación con registro de cada cambio.
-Fase 5. Sistema operativo: comparativa de alternativas, instalación y configuración.
-Fase 6. Implementación de la base de datos: creación de tablas, carga de datos reales y consultas.
-Fase 7. Documentación y memoria.
-Fase 8. Preparación y demostración final.
-Fase 0. Organización del equipo: reparto de roles, elección de la herramienta Kanban.
-Fase 1. Análisis del material: identificación, fotografiado, etiquetado y primera evaluación de estado.
-Fase 2. Diagnóstico y pruebas: comprobación de componentes, pruebas de arranque, RAM, disco y detección de averías.
-Fase 3. Diseño del inventario: modelo entidad-relación, web en html.
-Fase 4. Recuperación del equipo: selección de componentes compatibles, montaje y reparación con registro de cada cambio.
-Fase 5. Sistema operativo: comparativa de alternativas, instalación y configuración.
-Fase 6. Implementación de la base de datos: creación de tablas, carga de datos reales y consultas.
-Fase 7. Documentación y memoria.
-Fase 8. Preparación y demostración final.
+# Memoria de Trabajo: Puesta a Punto e Inventario de Equipos
+
+---
+
+## 1. Fase 1: Organización del Equipo y Gestión del Proyecto
+
+En la etapa inicial nos enfocamos en estructurar la metodología de trabajo. **Iván** asignó los roles y redactó el documento organizador para la distribución de tareas, mientras **Bruno** diseñó el logo del equipo.
+
+Para la gestión y el seguimiento continuo, **Iván** configuró el repositorio en GitHub y, junto a **Bruno** y **Javier**, pusimos en marcha un tablero Kanban. En el apartado de inventario, **Marcos**, **Bruno** e **Iván** registraron en Excel el material de la sala R4, tanto ordenadores como componentes guardados en estanterías (fuentes de alimentación, ventiladores, tarjetas gráficas y memorias RAM). 
+
+---
+
+## 2. Fase 2: Desmontaje, Inspección Física y Hardware
+
+El trabajo práctico comenzó con el desmontaje e identificación de los componentes. Durante esta fase, **Bruno** realizó la limpieza y el mantenimiento de las piezas.
+
+### Incidencia en el Desmontaje: Procesador pegado al Disipador
+**Problema:** Al intentar retirar el disipador de la CPU, el procesador se quedó completamente pegado a la base debido al estado de la pasta térmica.
+
+**Solución:** Se utilizó un secador para aplicar calor de forma directa en el bloque y ablandar la pasta. Una vez caliente la zona, se hizo palanca con cuidado utilizando un destornillador plano hasta lograr desenganchar la CPU sin causar ningún daño a los pines.
+
+Durante el proceso, Javier tomó las fotos de cada componente, Marcos redactó la descripción detallada de cada una e Iván se encargó de renombrar las imágenes. Con el hardware al descubierto, **Bruno** recopiló los *datasheets* y especificaciones oficiales, permitiendo a **Iván** diseñar la matriz de compatibilidad. Una vez documentado el proceso, **Marcos** reensambló el equipo. Posteriormente, **Javier** y **Marcos** repitieron el procedimiento de identificación de componentes en dos ordenadores adicionales de la sala R4.
+
+---
+
+## 3. Fase 3: Puesta a Punto, Pruebas y Desarrollo Web
+
+### Configuración del Sistema y Solución de Problemas
+Inicialmente, **Iván** preparó un USB ejecutable con Ventoy y Linux Mint. **Javier** actualizó la BIOS a la última versión disponible y activó el perfil XMP en la placa base para exprimir el rendimiento de la memoria RAM.
+
+![BIOS](./Documentación/img/Imagen%20de%20la%20bios%20del%20ordenador.jpg)
+![Especificaciones Linux](./Documentación/img/Especificaciones%20desde%20Linux.jpg)
+
+Debido a problemas de arranque con Linux Mint, decidimos cambiar el sistema a Windows 11. Para preparar el disco duro, booteamos **Hiren's Boot** desde un USB y limpiamos las particiones utilizando la herramienta de consola diskpart. Posteriormente, flasheamos la ISO de Windows 11 e instalamos el sistema correctamente.
+
+Para validar la estabilidad del equipo, **Marcos** y **Javier** ejecutaron pruebas de rendimiento y diagnóstico:
+* **OCCT & HWInfo:** Monitorización térmica y comprobación de voltajes en la CPU.
+* **CPU-Z / GPU-Z:** Pruebas de rendimiento (*benchmark*) de procesador y tarjeta gráfica.
+* **Memtest64:** Test de diagnóstico de estabilidad para la memoria RAM.
+* **Unigine Heaven:** Test de estrés para evaluar el rendimiento gráfico.
+* **CrystalDiskInfo:** Análisis del estado de salud y errores del disco duro.
+
+### Desarrollo y Maquetación Web
+**Bruno** e **Iván** diseñaron los bocetos iniciales (*mockups*). **Marcos** definió el árbol de la web (*web tree*) para organizar la estructura de las páginas HTML, mientras que **Javier** migró las tablas de Excel e inventario a código HTML y creó las secciones del equipo. El diseño visual se maquetó entre **Bruno**, **Javier** e **Iván** utilizando CSS. Finalmente, el equipo optimizó el código limpiando etiquetas innecesarias, **Marcos** adaptó la matriz de compatibilidad a formato HTML e **Iván** y **Javier** ajustaron la estructura general y el pie de página 
+
+Para cerrar esta fase, **Marcos** y **Bruno** desarrollaron el Diagrama Entidad-Relación (E/R), **Javier** redactó el informe de incidencias y **Bruno** preparó la presentación final.
+
+### Bases de Datos y Documentación Final
+En el apartado de gestión de datos, **Marcos** y **Bruno** desarrollaron el Diagrama Entidad-Relación del proyecto. Por su parte, **Javier** redactó el informe de incidencias y **Bruno** preparó el material para la presentación final.
+
+---
+
+## 4. Resumen Técnico de Intervenciones
+
+* **Material e Instrumental:** Destornilladores (plano y estrella), secador de aire caliente y memorias USB de instalación.
+* **Sistemas y Herramientas Utilizadas:** Ventoy, Linux Mint, Windows 11, Hiren's Boot (`diskpart`), OCCT, CPU-Z, GPU-Z, Memtest64, HWInfo, Unigine Heaven y CrystalDiskInfo.
+* **Principales Decisiones:** Migración a Windows 11 LTSC tras fallos de arranque en Linux, formateo profundo con `diskpart` y activación del perfil XMP en la BIOS.
+
 ### 5.2. Cronograma de trabajo 
 [Kanban](https://github.com/users/igimenom/projects/1/views/1)
 [Kanban](https://github.com/users/igimenom/projects/1/views/1)
