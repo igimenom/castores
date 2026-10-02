@@ -14,7 +14,7 @@ Equipo: … · Integrantes: …
 
 | # | Campo | Respuesta | Fuente (URL) |
 |---|---|---|---|
-| 4 | Modelo de datos: relacional (tablas), documental, clave-valor, columnar, de grafos… (apartado 4) | Principalmente modelo relacional  | |
+| 4 | Modelo de datos: relacional (tablas), documental, clave-valor, columnar, de grafos… (apartado 4) |  utiliza principalmente un modelo de datos relacional y objeto-relacional, lo que significa que organiza la información en tablas conectadas entre sí, pero además permite manejar características avanzadas de orientación a objetos (como herencia de tablas y tipos personalizados) y soporta datos semiestructurados (como JSON). | https://www.databricks.com/es/blog/what-is-postgresql-database |
 | 5 | Cómo quedaría el equipo EQ-04, con sus dos módulos de RAM, guardado en este gestor. Un dibujo o un ejemplo | | |
 | 6 | ¿Hay que definir la estructura antes de guardar datos (esquema fijo) o no? | | |
 
