@@ -31,19 +31,19 @@
 ### 1.1. Descripción del proyecto
 Este proyecto corresponde al Reto 0 de 1º de ASIR: Recuperación y digitalización del parque informático. El centro dispone de ordenadores, periféricos y componentes de distintas generaciones, algunos funcionales, otros averiados o incompletos, y no existe un registro fiable de qué hay, en qué estado está ni qué se ha hecho sobre cada equipo.
 
-Nuestro equipo Castores formado por(Marcos, Iván, Javier y Bruno) debe estudiar el material, recuperar al menos un equipo plenamente funcional, documentar todo el proceso y crear un inventario digital basado en una base de datos propia. Además, debemos proponer cómo gestionar el parque informático de forma más eficiente mediante tecnologías digitales.
+Nuestro equipo Castores formado por (Marcos, Iván, Javier y Bruno) debe estudiar el material, recuperar al menos un equipo plenamente funcional, documentar todo el proceso y crear un inventario digital basado en una base de datos propia. Además, debemos proponer cómo gestionar el parque informático de forma más eficiente mediante tecnologías digitales.
 ### 1.2. Objetivos del proyecto
-Objetivo general: convertir el material informático disponible para montar un ordenador funcional, hacer inventario y ordenar.
+El presente proyecto persigue como principal objetivo la puesta en valor del material informático disponible, con el fin de ensamblar un equipo plenamente funcional, al mismo tiempo que se lleva a cabo un proceso exhaustivo de organización e inventariado.
 
-Objetivos específicos:
+Para alcanzar esta meta, el desarrollo se estructurará en diversas fases interconectadas. En primer lugar, se procederá a la identificación, catalogación y evaluación técnica de todos los recursos físicos existentes, abarcando equipos, componentes y periféricos. Este análisis minucioso permitirá determinar con precisión qué elementos son susceptibles de ser recuperados, reutilizados o reparados, y cuáles, por el contrario, deberán ser descartados de manera definitiva.
 
-Identificar, catalogar y evaluar el estado del material disponible (equipos, componentes y periféricos).
-Determinar qué material se puede recuperar, reutilizar, reparar o descartar.
-Montar o reparar al menos un equipo plenamente funcional, justificando la compatibilidad entre sus componentes.
-Elegir, instalar y configurar un sistema operativo adecuado, justificándolo frente a alternativas.
-Diseñar e implementar una base de datos de inventario con datos reales y consultas útiles.
-Registrar todas las intervenciones y conservar evidencias del trabajo utilizando un Kanban.
-Trabajar de forma organizada en equipo, para conseguir que todos dominen todos los aspectos que vamos trabajando en el reto 
+Una vez clasificado el material, la labor técnica se centrará en el montaje o la reparación de, como mínimo, un sistema informático operativo. Dicha intervención requerirá una justificación técnica rigurosa que acredite la compatibilidad de los componentes seleccionados. Posteriormente, se abordará la dotación de software mediante la elección, instalación y configuración del sistema operativo más adecuado para el hardware ensamblado, argumentando sólidamente esta decisión frente a otras alternativas disponibles.
+
+De manera transversal a estas tareas, la gestión de los recursos quedará respaldada por el diseño y la implementación de una base de datos para el control del inventario, la cual se alimentará con datos reales y estará optimizada para la ejecución de consultas de valor práctico. Asimismo, el rigor documental del proyecto se asegurará mediante el registro continuo de todas las intervenciones y la conservación de evidencias del progreso a través de la metodología Kanban.
+
+Finalmente, la ejecución de todas estas actividades se sustentará en un modelo de trabajo en equipo estrictamente organizado, cuyo propósito pedagógico y colaborativo es garantizar que cada uno de los integrantes adquiera un dominio integral sobre la totalidad de las competencias y áreas abordadas durante el reto.
+
+
 ## 2. Análisis del contexto y justificación de la propuesta 
 Situación de partida. El centro cuenta con material informático con mucha diferencia de antigüedad. Por lo que nos resulta difícil saber qué material hay, en qué estado está, qué características tiene, qué componentes son compatibles entre sí y qué equipos son recuperables.
 
