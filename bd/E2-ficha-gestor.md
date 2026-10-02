@@ -32,14 +32,14 @@ Equipo: Castores · Integrantes: Bruno, Javier, Iván y Marcos.
 |---|---|---|---|
 | 10 | Lenguaje: ¿SQL u otro? Un ejemplo de cómo se pide «el equipo EQ-04» (apartado 3.3) | ``` SELECT * FROM equipos WHERE id = EQ-04 ``` | https://learnsql.es/blog/20-ejemplos-de-consultas-sql-basicas-para-principiantes-una-vision-completa/ |
 | 11 | ¿Tiene transacciones? ¿Cumple ACID del todo, en parte o no? (apartado 3.2) | Sí, PostgreSQL tiene transacciones y cumple las reglas ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad) del todo. Gestiona las transacciones mediante MVCC (Multiversion Concurrency Control); un método que usan las bases de datos para permitir que varios usuarios lean y escriban datos al mismo tiempo sin bloquearse entre sí. | |
-| 12 | ¿Tiene usuarios y permisos propios? (apartado 3.4) | | |
-| 13 | Una herramienta gráfica para administrarlo o consultarlo | | |
+| 12 | ¿Tiene usuarios y permisos propios? (apartado 3.4) | PostgreSQL ...| https://www.postgresql.org/docs/current/user-manag.html https://aws.amazon.com/es/blogs/aws-spanish/managing-postgresql-users-and-roles/ |
+| 13 | Una herramienta gráfica para administrarlo o consultarlo | pgAdmin, disponible para Windows, Linux y macOS y en contenedores. | https://openwebinars.net/blog/pgadmin-para-novatos-como-gestionar-bases-de-datos-sin-complicaciones/ |
 
 ## 5. Valoración
 
 | # | Campo | Respuesta |
 |---|---|---|
-| 14 | Para qué destaca | |
+| 14 | Para qué destaca | Se destaca la tolerancia a fallos |
 | 15 | Una limitación importante | |
 | 16 | Clasificación: por modelo, por ubicación y por licencia (apartado 6) | |
 | 17 | ¿Serviría para el inventario del aula? ¿Por qué sí o por qué no? | |
