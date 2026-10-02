@@ -1,43 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html> <!-- Indica al navegador que el documento está escrito en HTML5 -->
+<html lang="en"> <!-- Etiqueta raíz: todo el contenido va dentro; lang indica el idioma (aquí inglés, aunque la web está en español) -->
+<head> <!-- Cabecera: información de la página que no se ve en pantalla -->
     <meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales y acentos correctamente -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño a la pantalla de móviles y tablets -->
     <meta name="author" content="Iván Gimeno, Marcos Sánchez, Javier Martínez, Bruno Coscojuela"> <!-- Indica los creadores de la página -->
     <meta name="description" content="Inventario de discos duros en la sala R4"> <!-- Resumen de la web que muestra Google en los resultados -->
-    <meta name="copyright" content="© 2026 Grupo Castores S.L.">
-    <meta name="keywords" content="hardware, inventario, tabla">
-    <title>Castores | Inicio</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../../media/logobg.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="copyright" content="© 2026 Grupo Castores S.L."> <!-- Derechos de autor de la web -->
+    <meta name="keywords" content="hardware, inventario, tabla"> <!-- Palabras clave de la temática de la página -->
+    <title>Castores | Inicio</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Conecta el archivo CSS para dar estilo a la web -->
+    <link rel="icon" href="../../media/logobg.png"> <!-- Logo como icono en la pestaña del navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Abre la conexión con Google Fonts antes de usarla, para que cargue más rápido -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Lo mismo con el servidor que guarda los archivos de la fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Descarga la fuente Montserrat en todos sus grosores, normal y cursiva -->
 </head>
-<body>
-    <header>
-        <img class="imgHeader" src="../../media/logobg.png" alt="Logotipo de Castores S.L." width="20%">
-        <h1>
-            <a class="headerCastor" href="../html/Página_principal.html">Castores</a>
+<body> <!-- Cuerpo: todo lo que se ve en la página -->
+    <header> <!-- Cabecera visible: logo y nombre de la empresa -->
+        <img class="imgHeader" src="../../media/logobg.png" alt="Logotipo de Castores S.L." width="20%"> <!-- Logo; el alt lo leen los lectores de pantalla; width="20%" fija su tamaño; class lo usa el CSS -->
+        <h1> <!-- Título principal de la página -->
+            <a class="headerCastor" href="../html/Página_principal.html">Castores</a> <!-- Enlace a la página de inicio -->
         </h1>
     </header>
     
-    <main>
+    <main> <!-- Contenido principal, distinto de la cabecera y el pie -->
 
-    <h2>Matriz de compatibilidad</h2>
+    <h2>Matriz de compatibilidad</h2> <!-- Subtítulo de la página -->
 
 
         
-  <table border="1">
-  <tr>
-    <th>Componente</th>
-    <th><a href="https://www.dominiovirtual.es/placas-base/29368/a520m-k-v2/gigabyte-a520m-k-v2-placa-base-amd-a520-zocalo-am4-micro-atx-4719331852771.html">PB00 (Gigabyte A520M K V2)</a></th>
+  <table border="1"> <!-- Tabla de compatibilidad; border="1" dibuja un borde fino -->
+  <tr> <!-- tr = fila de la tabla. Esta primera fila son los encabezados: una columna por cada placa base -->
+    <th>Componente</th> <!-- th = celda de encabezado (negrita y centrada por defecto) -->
+    <th><a href="https://www.dominiovirtual.es/placas-base/29368/a520m-k-v2/gigabyte-a520m-k-v2-placa-base-amd-a520-zocalo-am4-micro-atx-4719331852771.html">PB00 (Gigabyte A520M K V2)</a></th> <!-- PB = placa base; el enlace lleva a su ficha en una tienda -->
     <th><a href="https://theretroweb.com/motherboards/s/asus-m2n68-am-plus-rev-2-01g">PB01 (ASUS M2N68-AM PLUS)</a></th>
   </tr>
   <tr>
-    <td><a href="https://www.techpowerup.com/cpu-specs/athlon-3000g-fh.c2243"><b>CPU00</b> (AMD Athlon 3000G)</a></td>
-    <td class="compatible">COMPATIBLE</td>
-    <td class="nocompatible">NO COMPATIBLE</td>
+    <td><a href="https://www.techpowerup.com/cpu-specs/athlon-3000g-fh.c2243"><b>CPU00</b> (AMD Athlon 3000G)</a></td> <!-- td = celda de datos normal; CPU = procesador; <b> pone el código en negrita; el enlace lleva a sus especificaciones. Cada fila sigue este mismo formato: componente + una celda por placa base -->
+    <td class="compatible">COMPATIBLE</td> <!-- class="compatible" permite al CSS darle color (p. ej. verde) a las celdas compatibles -->
+    <td class="nocompatible">NO COMPATIBLE</td> <!-- class="nocompatible" hace lo mismo para las incompatibles (p. ej. rojo) -->
   </tr>
   <tr>
     <td><a href="https://www.techpowerup.com/cpu-specs/athlon-ii-x2-250.c602"><b>CPU01</b> (AMD Athlon II X2 250)</a></td>
@@ -45,7 +45,7 @@
     <td class="compatible">COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://assets.adata.com/storage/downloadfile/datasheet_xpg_gammix_d35_ddr4_memory_20260831.pdf"><b>RAM00</b> (ADATA XPG GAMMIX D35 DDR4)</a></td>
+    <td><a href="https://assets.adata.com/storage/downloadfile/datasheet_xpg_gammix_d35_ddr4_memory_20260831.pdf"><b>RAM00</b> (ADATA XPG GAMMIX D35 DDR4)</a></td> <!-- RAM = memoria RAM; el enlace lleva a su hoja de características (datasheet) -->
     <td class="compatible">COMPATIBLE</td>
     <td class="nocompatible">NO COMPATIBLE</td>
   </tr>
@@ -80,7 +80,7 @@
     <td class="nocompatible">NO COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://ram-co-shop.de/2-GB-DDR3-ECC-RAM-PC3-10600E-Micron-MT9JSF25672AZ-1G4D1ZE_1"><b>RAM07</b> (Micron MT9JSF25672AZ-1G4D1ZE DDR3 ECC)</a></td>
+    <td><a href="https://ram-co-shop.de/2-GB-DDR3-ECC-RAM-PC3-10600E-Micron-MT9JSF25672AZ-1G4D1ZE_1"><b>RAM07</b> (Micron MT9JSF25672AZ-1G4D1ZE DDR3 ECC)</a></td> <!-- ECC = memoria con corrección de errores, más propia de servidores -->
     <td class="nocompatible">NO COMPATIBLE</td>
     <td class="nocompatible">NO COMPATIBLE</td>
   </tr>
@@ -90,12 +90,12 @@
     <td class="nocompatible">NO COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://www.alldatasheet.es/datasheet-pdf/pdf/2172819/KINGSTON/KVR800D2N5-1G.html"><b>RAM09</b> (Kingston KVR800D2N5/1G DDR2)</a></td>
+    <td><a href="https://www.alldatasheet.es/datasheet-pdf/pdf/2172819/KINGSTON/KVR800D2N5-1G.html"><b>RAM09</b> (Kingston KVR800D2N5/1G DDR2)</a></td> <!-- Única RAM compatible con la PB01, porque ambas son DDR2 -->
     <td class="nocompatible">NO COMPATIBLE</td>
     <td class="compatible">COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://www.techpowerup.com/gpu-specs/radeon-x1550.c1805"><b>GPU00</b> (ATI Radeon X1550)</a></td>
+    <td><a href="https://www.techpowerup.com/gpu-specs/radeon-x1550.c1805"><b>GPU00</b> (ATI Radeon X1550)</a></td> <!-- GPU = tarjeta gráfica -->
     <td class="compatible">COMPATIBLE</td>
     <td class="compatible">COMPATIBLE</td>
   </tr>
@@ -120,7 +120,7 @@
     <td class="compatible">COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://gzhls.at/blob/ldb/3/f/5/8/df89cd2a2bdba8b18b009df9232c196e8c47.pdf"><b>DD00</b> (Crucial BX500 2.5 SSD SATA)</a></td>
+    <td><a href="https://gzhls.at/blob/ldb/3/f/5/8/df89cd2a2bdba8b18b009df9232c196e8c47.pdf"><b>DD00</b> (Crucial BX500 2.5 SSD SATA)</a></td> <!-- DD = disco duro / unidad de almacenamiento (HDD o SSD) -->
     <td class="compatible">COMPATIBLE</td>
     <td class="nocompatible">NO COMPATIBLE</td>
   </tr>
@@ -160,7 +160,7 @@
     <td class="compatible">COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://tacens.es/en/componentes/apsiii500"><b>FA00</b> (Tacens Anima APSIII500 500W)</a></td>
+    <td><a href="https://tacens.es/en/componentes/apsiii500"><b>FA00</b> (Tacens Anima APSIII500 500W)</a></td> <!-- FA = fuente de alimentación -->
     <td class="compatible">COMPATIBLE</td>
     <td class="compatible">COMPATIBLE</td>
   </tr>
@@ -175,7 +175,7 @@
     <td class="compatible">COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://psacomputoypapeleria.com/producto/Componentes/lector_interno_dvd_uj8b1_memoria_cache_2mb_velocidad_de_escritura_8x_cav_24x_cav_interfaz_sata_color_gris"><b>LD00</b> (Panasonic UJ8B1 Lector DVD SATA)</a></td>
+    <td><a href="https://psacomputoypapeleria.com/producto/Componentes/lector_interno_dvd_uj8b1_memoria_cache_2mb_velocidad_de_escritura_8x_cav_24x_cav_interfaz_sata_color_gris"><b>LD00</b> (Panasonic UJ8B1 Lector DVD SATA)</a></td> <!-- LD = lectora de disco (DVD) -->
     <td class="compatible">COMPATIBLE</td>
     <td class="compatible">COMPATIBLE</td>
   </tr>
@@ -185,7 +185,7 @@
     <td class="compatible">COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://ibertronica.es/tp-link-tl-wn881nd-300mb-pci-e"><b>TR00</b> (TP-Link TL-WN881ND PCIe)</a></td>
+    <td><a href="https://ibertronica.es/tp-link-tl-wn881nd-300mb-pci-e"><b>TR00</b> (TP-Link TL-WN881ND PCIe)</a></td> <!-- TR = tarjeta de red inalámbrica; PCIe y PCI son tipos de ranura distintos de la placa base -->
     <td class="compatible">COMPATIBLE</td>
     <td class="compatible">COMPATIBLE</td>
   </tr>
@@ -195,7 +195,7 @@
     <td class="compatible">COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://dakis.es/2105-disipador-amd-am4-712-000046-original.html"><b>V00</b> (Disipador AMD AM4 712-000046)</a></td>
+    <td><a href="https://dakis.es/2105-disipador-amd-am4-712-000046-original.html"><b>V00</b> (Disipador AMD AM4 712-000046)</a></td> <!-- V = refrigeración (disipadores y ventiladores) -->
     <td class="compatible">COMPATIBLE</td>
     <td class="compatible">COMPATIBLE</td>
   </tr>
@@ -210,7 +210,7 @@
     <td class="compatible">COMPATIBLE</td>
   </tr>
   <tr>
-    <td><a href="https://tacens.es/componentes/ac4500"><b>CH00</b> (Tacens Anima AC4500)</a></td>
+    <td><a href="https://tacens.es/componentes/ac4500"><b>CH00</b> (Tacens Anima AC4500)</a></td> <!-- CH = chasis / caja del equipo -->
     <td class="compatible">COMPATIBLE</td>
     <td class="compatible">COMPATIBLE</td>
   </tr>
@@ -219,24 +219,24 @@
     <td class="compatible">COMPATIBLE</td>
     <td class="compatible">COMPATIBLE</td>
   </tr>
-</table>
+</table> <!-- Fin de la tabla -->
         <!-- Bloque desplegable de información complementaria (abierto por defecto) -->
-        <details open>
-            <summary>Más información</summary>
+        <details open> <!-- details crea un bloque que se abre y se cierra; "open" hace que salga abierto -->
+            <summary>Más información</summary> <!-- Texto visible sobre el que se hace clic para plegar o desplegar -->
         <!-- Abre el glosario en una pestaña nueva -->
-            <p>
-                Ir a <a href="glosario.html" target="_blank">glosario</a>
+            <p> <!-- Párrafo con el enlace -->
+                Ir a <a href="glosario.html" target="_blank">glosario</a> <!-- target="_blank" abre el enlace en otra pestaña -->
             </p>
         </details>
     </main>
 
-    <footer>
-        <p>Grupo Castores S.L.</p>
-        <nav>
+    <footer> <!-- Zona inferior de la página -->
+        <p>Grupo Castores S.L.</p> <!-- Nombre de la empresa -->
+        <nav> <!-- nav marca un bloque de enlaces de navegación -->
           <!-- Columna 1: Enlaces a equipos y hardware -->
-            <ul>
-                <li><a href="Página_principal.html">Inicio</a></li>
-                <li><a href="./Inventario/equipos.html" target="_blank">Equipos</a></li>
+            <ul> <!-- Lista sin numerar -->
+                <li><a href="Página_principal.html">Inicio</a></li> <!-- li = elemento de la lista; cada uno enlaza a la página de ese componente -->
+                <li><a href="./Inventario/equipos.html" target="_blank">Equipos</a></li> <!-- "./" indica una ruta relativa a la carpeta actual -->
                 <li><a href="./Inventario/discos_duros.html" target="_blank">Discos duros</a></li>
                 <li><a href="./Inventario/fuentes_alimentacion.html" target="_blank">Fuentes de alimentación</a></li>
                 <li><a href="./Inventario/ram.html" target="_blank">Memoria RAM</a></li>
@@ -249,12 +249,12 @@
                 <li><a href="./Inventario/lectoras_disco.html" target="_blank">Lectoras de disco</a></li>
                 <li><a href="./Inventario/procesadores.html" target="_blank">Procesadores</a></li>
                 <li><a href="glosario.html" target="_blank">Glosario</a></li>
-                <li><a href="matrizCompatibilidad.html" target="_blank">Matriz de compatibilidad</a></li>
+                <li><a href="matrizCompatibilidad.html" target="_blank">Matriz de compatibilidad</a></li> <!-- Esta misma página -->
             </ul>    
         </nav>
         <!-- Botón para regresar a la parte superior -->
-        <a href="#top" class="btnArriba" title="Volver al inicio">↑</a>
-        <p>© 2026</p>
+        <a href="#top" class="btnArriba" title="Volver al inicio">↑</a> <!-- #top salta al elemento con id="top" (ahora no existe); title es el texto al pasar el ratón -->
+        <p>© 2026</p> <!-- Año del copyright -->
     </footer>
     
 </body>
