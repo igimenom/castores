@@ -193,23 +193,214 @@ Velocidad mhz ram
 Temperaturas en la Bios
 ## 8. Documentación técnica
 [Ficha técnica del equipo recuperado](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/Inventario/equipo/EQ_00.html).
-
-[Intervenciones del equipo](./Documentación/img/poniendo%20ssd.jpeg)
-[Intervenciones del equipo](./Documentación/img/poniendo%20rj-45.jpeg)
-[Intervenciones del equipo](./Documentación/img/poniendo%20ram.jpeg)
-[Intervenciones del equipo](./Documentación/img/poniendo%20cable%20alimentacion.jpeg)
-[Intervenciones del equipo](./Documentación/img/poniendo%20cable%20.jpeg)
-[Intervenciones del equipo](./Documentación/img/destornillador.jpg)
+### Intervenciones del equipo
+![Intervenciones del equipo](./Documentación/img/poniendo%20rj-45.jpeg)
+![Intervenciones del equipo](./Documentación/img/poniendo%20ram.jpeg)
+![Intervenciones del equipo](./Documentación/img/poniendo%20cable%20alimentacion.jpeg)
+![Intervenciones del equipo](./Documentación/img/poniendo%20cable%20.jpeg)
+![Intervenciones del equipo](./Documentación/img/destornillador.jpg)
 ## 9. Conclusiones
 ### 9.1. Desviación sobre la planificación inicial
 Se retrasaron: Desmontar el ordenador debido a que el disipador estaba pegado con la pasta termica. Linux no arrancaba y tuvimos que instalar el windows 11. Tuvimos que volver a bajar a la sala de inventario para registrar las 2 cajas de los equipos 1 y 2
 Se adelantaron: El web tree. El mockup. 
 ### 9.2. Resultados obtenidos y posibles mejoras futuras
 Resultados: Conseguir que el EQ_00 sea funcional y sus componentes esten perfecto funcionamiento.
-Hemos conseguido 3 equipos completos y 36 elemntos extras
+Hemos conseguido 3 equipos completos y 36 elemntos extras.
+Como propuesta de digitalización hemos pensado:
+
+Para mejoras futuras:
+Pasar el html a CMS para asi poder mantener más fácil y rápido la página y editar sin tener gran conocimiento de programación. 
+Subir la página a Internet para que se pueda acceder al inventario de forma sencilla. 
 ### 9.3. Valoración personal
-### 9.4. OPCIONAL: Agradecimientos
-
+Hemos aprendido mucho haciendo un trabajo maravilloso mientras ibamos forjando lazos entre los compañeros y aprendiendo cosas nuevas muy interesantes y importantes para nuestro futuro. Los compañeros de Bachillerato han aprendido muchas cosas nuevas que les han enseñado los compañeros de SMR.
 ## 10. Bibliografía
-
+* (HTML: Lenguaje de Marcado de Hipertexto | MDN, 2026)
+* CSS | MDN. (2026, 11 septiembre). https://developer.mozilla.org/es/docs/Web/CSS
+* Bartolomeh, A. (2026, 16 septiembre). Reto 1. Recuperación y digitalización del parque informático. GitHub. https://github.com/labartolomeh/ASIR-1-Retos/blob/main/00_Reto_0/00_Reto0_enuciado%20alumnos.mdu
+* Anthropic. (s. f.). Claude. Claude. https://claude.ai/share/
+* Montiel, O. (2022, 22 febrero). La guía para principiantes de Git y Github. freeCodeCamp.org. https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/
+* colaboradores de Wikipedia. (2026, 14 septiembre). Base de datos. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Base_de_datos
+* Extended Syntax | Markdown Guide. (s. f.). https://www.markdownguide.org/extended-syntax/
 ## 11. Anexos
+### Anexo A
+![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20ssd.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20rj-45.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20ram.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20cable%20alimentacion.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20cable%20.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/destornillador.jpg)
+### Anexo B
+![Anexo B: capturas del tablero de tareas (historial)](./Documentación/img/)
+### Anexo C
+![Anexo C: diagramas](./Documentación/img/diagramaer.png)
+### Anexo D: tabla comparativa de sistemas operativos
+#### Comparativa: Linux Mint vs Windows 11
+
+| Característica | Linux Mint | Windows 11 |
+|---|---|---|
+| **Tipo de licencia** | Software libre y gratuito | Propietario, de pago (licencia) |
+| **Coste** | 0 € | Licencia de pago (incluida en equipos nuevos) |
+| **Base** | Ubuntu / Debian (Linux) | Windows NT (Microsoft) |
+| **RAM mínima / recomendada** | 2 GB / 4 GB | 4 GB / 8 GB o más |
+| **Espacio en disco** | Unos 20 GB | Mínimo 64 GB |
+| **Requisitos especiales** | Ninguno relevante; arranca en equipos antiguos | UEFI, Secure Boot, TPM 2.0 y CPU compatible |
+| **Equipos antiguos** | Muy adecuado (ediciones Xfce y MATE ligeras) | Poco adecuado: muchos equipos viejos no cumplen |
+| **Entornos de escritorio** | Cinnamon, MATE y Xfce | Interfaz única de Windows |
+| **Software ofimático** | LibreOffice incluido | Microsoft Office (de pago, aparte) |
+| **Compatibilidad de programas** | Alternativas libres; Wine para algunos de Windows | La más amplia (Office, Adobe, juegos, etc.) |
+| **Seguridad** | Pocos virus; permisos de usuario estrictos | Windows Defender; mayor objetivo de malware |
+| **Privacidad** | Sin telemetría ni publicidad | Telemetría y servicios en la nube integrados |
+| **Actualizaciones** | Controladas por el usuario (Gestor de actualizaciones) | Automáticas y poco controlables |
+| **Mantenimiento** | Soporte de la versión actual hasta 2029 | Soporte continuo de Microsoft |
+| **Uso en entornos ASIR** | Excelente para servidores, redes y aprendizaje | Necesario para administrar entornos Microsoft |
+
+> (Datos orientativos de las versiones actuales. Comprobad los requisitos oficiales de cada versión antes de instalar y citad las fuentes en la bibliografía.)
+### Anexo E: fichas técnicas de los componentes
+#### Compatibilidad de componentes con las placas base
+
+##### Placas base
+
+- **PB00**: [Gigabyte A520M K V2](https://www.dominiovirtual.es/placas-base/29368/a520m-k-v2/gigabyte-a520m-k-v2-placa-base-amd-a520-zocalo-am4-micro-atx-4719331852771.html)
+- **PB01**: [ASUS M2N68-AM PLUS](https://theretroweb.com/motherboards/s/asus-m2n68-am-plus-rev-2-01g)
+
+Leyenda: ✅ Compatible · ❌ No compatible
+
+---
+
+#### Procesadores (CPU)
+
+- **CPU00** · [AMD Athlon 3000G](https://www.techpowerup.com/cpu-specs/athlon-3000g-fh.c2243)
+  - PB00: ✅ Compatible
+  - PB01: ❌ No compatible
+- **CPU01** · [AMD Athlon II X2 250](https://www.techpowerup.com/cpu-specs/athlon-ii-x2-250.c602)
+  - PB00: ❌ No compatible
+  - PB01: ✅ Compatible
+
+#### Memoria RAM
+
+- **RAM00** · [ADATA XPG GAMMIX D35 DDR4](https://assets.adata.com/storage/downloadfile/datasheet_xpg_gammix_d35_ddr4_memory_20260831.pdf)
+  - PB00: ✅ Compatible
+  - PB01: ❌ No compatible
+- **RAM01** · [Hynix HMT325U6BFR8C-H9 DDR3](https://www.alldatasheet.es/datasheet-pdf/pdf/332884/HYNIX/HMT325U6BFR8C-H9.html)
+  - PB00: ❌ No compatible
+  - PB01: ❌ No compatible
+- **RAM02** · [Hynix HYMP125S64CP8-Y5 DDR2 SO-DIMM](https://www.alldatasheet.com/datasheet-pdf/pdf/332753/HYNIX/HYMP125S64CP8-Y5.html)
+  - PB00: ❌ No compatible
+  - PB01: ❌ No compatible
+- **RAM03** · [Samsung M378B5773CH0-CK0 DDR3](https://www.compuram.biz/memory_module/samsung/m378b5773ch0-ck0.htm)
+  - PB00: ❌ No compatible
+  - PB01: ❌ No compatible
+- **RAM04** · [Ramaxel RMR5030MN58E8F-1600 DDR3](https://www.rueducommerce.fr/p/m24072750089.html)
+  - PB00: ❌ No compatible
+  - PB01: ❌ No compatible
+- **RAM05** · [Micron MT8JTF25664AZ-1G6D1 DDR3](https://www.compuram.biz/memory_module/micron/mt8jtf25664az-1g6d1.htm)
+  - PB00: ❌ No compatible
+  - PB01: ❌ No compatible
+- **RAM06** · [Micron MT8JTF25664AZ-1G4D1 DDR3](https://octopart.com/es/part/micron/MT8JTF25664AZ-1G4D1)
+  - PB00: ❌ No compatible
+  - PB01: ❌ No compatible
+- **RAM07** · [Micron MT9JSF25672AZ-1G4D1ZE DDR3 ECC](https://ram-co-shop.de/2-GB-DDR3-ECC-RAM-PC3-10600E-Micron-MT9JSF25672AZ-1G4D1ZE_1)
+  - PB00: ❌ No compatible
+  - PB01: ❌ No compatible
+- **RAM08** · [Crucial CT25664BA160B.C8F DDR3](https://www.compuram.biz/memory_module/crucial/ct25664ba160b-c8f.htm)
+  - PB00: ❌ No compatible
+  - PB01: ❌ No compatible
+- **RAM09** · [Kingston KVR800D2N5/1G DDR2](https://www.alldatasheet.es/datasheet-pdf/pdf/2172819/KINGSTON/KVR800D2N5-1G.html)
+  - PB00: ❌ No compatible
+  - PB01: ✅ Compatible
+
+#### Tarjetas gráficas (GPU)
+
+- **GPU00** · [ATI Radeon X1550](https://www.techpowerup.com/gpu-specs/radeon-x1550.c1805)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **GPU01** · [ATI Mobility Radeon HD 3450](https://www.chaynikam.info/es/Mobility_Radeon_HD_3450.html)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **GPU02** · [NVIDIA GeForce 8600 GTS](https://www.geektopia.es/es/product/nvidia/geforce-8600-gts/)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **GPU03** · [NVIDIA GeForce 210](https://www.techpowerup.com/gpu-specs/geforce-210.c2020)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **GPU04** · [ATI Radeon HD 3650](https://www.techpowerup.com/gpu-specs/radeon-hd-3650.c226)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+
+#### Discos de almacenamiento (DD)
+
+- **DD00** · [Crucial BX500 2.5" SSD SATA](https://gzhls.at/blob/ldb/3/f/5/8/df89cd2a2bdba8b18b009df9232c196e8c47.pdf)
+  - PB00: ✅ Compatible
+  - PB01: ❌ No compatible
+- **DD01** · [Western Digital WD Blue WD5000AAKX 500GB](https://www.hdsentinel.com/storageinfo_details.php?lang=en&model=WDC%20WD5000AAKX)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **DD02** · [Samsung SpinPoint F3 HD502HJ 500GB](https://recuperodatos.com/disco/samsung-hd502hj-hdd-3-5-sata-500gb-595-955)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **DD03** · [Seagate Barracuda ST500DM002 500GB](https://recuperodatos.com/disco/seagate-st500dm002-1bd142-hdd-3-5-sata-500gb-595-3561)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **DD04** · [Western Digital WD Blue WD10EZEX 1TB](https://www.geektopia.es/es/product/western-digital/wd10ezex/)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **DD05** · [Maxtor DiamondMax 21 STM3320820AS 320GB](https://www.hdsentinel.com/storageinfo_details.php?lang=en&model=MAXTOR%20STM3320820AS)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **DD06** · [SanDisk Ultra SSD 240GB](https://www.storagereview.com/review/sandisk-ultra-ssd-review-240gb)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **DD07** · [Kingston A400 SA400S37 SSD SATA](https://www.kingston.com/datasheets/SA400S37_latam.pdf)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+
+#### Fuentes de alimentación (FA)
+
+- **FA00** · [Tacens Anima APSIII500 500W](https://tacens.es/en/componentes/apsiii500)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **FA01** · [Thermaltake Litepower 700W](https://www.hardmaniacos.com/review-fuente-de-alimentacion-thermaltake-litepower-700w/)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **FA02** · [Maxima OKE ST-452 450W](https://es.wallapop.com/item/fuente-alimentacion-maxima-oke-model-st452-de-450w-1161711566)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+
+#### Lectores de DVD (LD)
+
+- **LD00** · [Panasonic UJ8B1 Lector DVD SATA](https://psacomputoypapeleria.com/producto/Componentes/lector_interno_dvd_uj8b1_memoria_cache_2mb_velocidad_de_escritura_8x_cav_24x_cav_interfaz_sata_color_gris)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **LD01** · [Samsung SN-208FB Lector DVD SATA](https://icecat.biz/p/samsung/sn-208-fb-bebe/optical+disc+drives-sn-208fb-38079125.html)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+
+#### Tarjetas de red (TR)
+
+- **TR00** · [TP-Link TL-WN881ND PCIe](https://ibertronica.es/tp-link-tl-wn881nd-300mb-pci-e)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **TR01** · [Conceptronic Wireless C300RI PCI](https://www.quickhard.com/Conceptronic-Wireless-Tarjeta-PCI-(C300RI).asp)
+  - PB00: ❌ No compatible
+  - PB01: ✅ Compatible
+
+#### Ventilación (V)
+
+- **V00** · [Disipador AMD AM4 712-000046](https://dakis.es/2105-disipador-amd-am4-712-000046-original.html)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **V01** · [Ningjie NJ12025SE Ventilador 120mm](https://www.elecok.com/es/ningjie-nj12025se-server-square-fan-sq120x25-w165x2x2-12v-0-12a.html)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **V02** · [Tacens Anima AF12 Ventilador 120mm](https://tacens.es/en/ventiladores/af12)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+
+#### Cajas (CH)
+
+- **CH00** · [Tacens Anima AC4500](https://tacens.es/componentes/ac4500)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
+- **CH01** · [Codegen SuperPower Q6232-A2](https://mobilespecs.net/cases/Codegen/Codegen_SuperPower_Q6232-A2_480W.html)
+  - PB00: ✅ Compatible
+  - PB01: ✅ Compatible
