@@ -1,10 +1,19 @@
 # GBD · Investigación 1 · Gestores de bases de datos
 
 Cada equipo investiga un gestor de bases de datos, lo prueba y lo presenta a la clase. Entre todos
-se completa la tabla que compara los cinco. Es la **fase 1 del reto** y su entregable **E2**.
+se completa la tabla que compara los cinco. Forma parte de la base de datos del Reto 0.
+
+| | |
+|---|---|
+| Se hace | Por equipos, fuera de clase |
+| Entrega | En `bd/` de vuestro repositorio, antes del **viernes 9 de octubre** a las 11:30 |
+| Presentación | Viernes 9 de octubre (S4V), en clase |
+| Cuenta para | RA1 b, c y f |
 
 La teoría que hay que tener delante está en `teoria-1-introduccion-bd.md`: apartados 3 (qué hace un
-gestor), 4 (modelos de datos), 5 (dónde vive) y 6 (clasificación).
+gestor), 4 (modelos de datos), 5 (dónde vive) y 6 (criterios de clasificación). La teoría da los
+criterios; la ficha los aplica a vuestro gestor. La tabla con los gestores clasificados uno a uno se
+añade a la teoría después de la presentación.
 
 ## Reparto
 
@@ -32,8 +41,8 @@ gestor), 4 (modelos de datos), 5 (dónde vive) y 6 (clasificación).
 En la carpeta `bd/` de vuestro repositorio, un fichero `E2-ficha-gestor.md` con la plantilla de
 abajo rellena, y la captura de la prueba (`E2-prueba.png`).
 
-**Plazo:** lunes 28 de septiembre (S3L), antes de la puesta en común. En clase hay 25 minutos para
-terminarla.
+**Plazo:** viernes 9 de octubre a las 11:30, antes de la presentación. Cuenta la última
+confirmación anterior a esa hora.
 
 ## La ficha
 
@@ -164,10 +173,10 @@ Web para probarlo: [dbfiddle.uk](https://dbfiddle.uk), eligiendo Oracle, con el 
 relacionales. Oracle también tiene su propia web de pruebas, Oracle Live SQL, que pide crear una
 cuenta.
 
-## Cómo se presenta (lunes, S3L)
+## Cómo se presenta (viernes 9 de octubre, S4V)
 
-**4 minutos por equipo.** Se leen los campos 4, 7, 2 y 10, y se enseña la prueba. Mientras, entre
-todos se rellena en la pizarra esta tabla:
+**4 minutos por equipo.** Se explican los campos 4, 7, 2 y 10 sin leerlos, y se enseña la prueba.
+Quién contesta lo elige el profesor. Mientras, entre todos se rellena en la pizarra esta tabla:
 
 | Gestor | Modelo | Dónde vive | Licencia | Lenguaje | ACID | ¿Para el inventario? |
 |---|---|---|---|---|---|---|
@@ -178,9 +187,19 @@ todos se rellena en la pizarra esta tabla:
 | Redis | | | | | | |
 | Oracle | | | | | | |
 
-Con la tabla completa se contesta a la pregunta del reto: **¿por qué el inventario del aula va en
+Con la tabla completa se contesta a la pregunta: **¿por qué el inventario del aula va en
 MariaDB?**
+
+## Cuándo está bien
+
+| Requisito | Si falta |
+|---|---|
+| Cada dato con su fuente (URL), y al menos la mitad de la web o la documentación oficial | Se devuelve |
+| Campo 5 con un ejemplo o un dibujo vuestro del EQ-04 | Se devuelve |
+| Prueba hecha, con captura y las preguntas de vuestro gestor contestadas | Se devuelve |
+| Campo 17 justificado con algo de la ficha. «Sí, porque es bueno» no vale | Se devuelve |
+| Cualquiera del equipo explica cualquier campo en la presentación | Ese campo cuenta como no hecho |
 
 ---
 
-Última actualización: 25 de septiembre de 2026.
+Última actualización: 2 de octubre de 2026.

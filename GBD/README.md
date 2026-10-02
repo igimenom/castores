@@ -1,8 +1,15 @@
 # GBD · Material de Gestión de Bases de Datos
 
-Teoría y ejercicios del módulo **0372. Gestión de bases de datos**. Esta carpeta la mantiene el
-profesor: no hace falta que la modifiquéis. Vuestras entregas van en `bd/`, como dice el enunciado
-del reto.
+Teoría, ejercicios y encargo del módulo **0372. Gestión de bases de datos**. Esta carpeta la
+mantiene el profesor: no la modifiquéis. Vuestras entregas van en `bd/`, en la raíz del
+repositorio, como dice el encargo.
+
+## El reto
+
+| Documento | Qué es |
+|---|---|
+| [`encargo.md`](encargo.md) | Parte de bases de datos del Reto 0: las preguntas que tiene que contestar vuestra base de datos, las fases, los entregables E1–E10 y las herramientas. Las fechas de entrega se anuncian en clase |
+| [`rubrica.md`](rubrica.md) | Cómo se evalúa cada criterio, con qué entregable y cuándo es apto |
 
 ## Teoría
 
@@ -29,8 +36,8 @@ del reto.
 La autoevaluación de `teoria-1-introduccion-bd.md` lleva las respuestas: intentad contestar antes
 de mirarlas.
 
-El apartado 6 de `teoria-1-introduccion-bd.md` se amplía después de la puesta en común del 28 de
-septiembre, con la tabla de los gestores que habéis investigado entre todos. Ahora no está porque
+El apartado 6 de `teoria-1-introduccion-bd.md` se amplía después de la presentación del 9 de
+octubre, con la tabla de los gestores que habéis investigado entre todos. Ahora no está porque
 es lo que tenéis que averiguar vosotros.
 
 Si encontráis un error o algo que no se entiende, decídselo al profesor o abrid una incidencia.
