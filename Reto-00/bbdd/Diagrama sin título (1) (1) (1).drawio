@@ -1,10 +1,13 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="WvLBE_gxd2pFYAi7OF3C">
-    <mxGraphModel dx="975" dy="517" grid="1" gridSize="20" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="86000" pageHeight="116900" math="0" shadow="0">
+    <mxGraphModel dx="491" dy="269" grid="1" gridSize="20" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="86000" pageHeight="116900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Jta-hUF-aJqR6Ij_7dQa-4" edge="1" parent="1" source="6T9NBpTGu6DU5PBGmlQY-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Jta-hUF-aJqR6Ij_7dQa-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQmYLdSjvfYsIIngLVQC-6" edge="1" parent="1" source="6T9NBpTGu6DU5PBGmlQY-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="XQmYLdSjvfYsIIngLVQC-5" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6T9NBpTGu6DU5PBGmlQY-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Departamento" vertex="1">
@@ -232,6 +235,24 @@
         </mxCell>
         <mxCell id="7C0NE8TAGBIj6k4QoB6x-4" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" value="Un empleado, como jefe, ¿a cuántos empleados dirige? → (0,N)&lt;br&gt;&lt;br&gt;Un empleado, como subordinado, ¿cuántos jefes tiene? → (0,1): la directora no tiene" vertex="1">
           <mxGeometry height="80" width="280" x="1020" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="XQmYLdSjvfYsIIngLVQC-8" edge="1" parent="1" source="XQmYLdSjvfYsIIngLVQC-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="XQmYLdSjvfYsIIngLVQC-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQmYLdSjvfYsIIngLVQC-5" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;rounded=0;" value="Tiene" vertex="1">
+          <mxGeometry height="80" width="80" x="900" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="XQmYLdSjvfYsIIngLVQC-7" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Director" vertex="1">
+          <mxGeometry height="60" width="120" x="1040" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="XQmYLdSjvfYsIIngLVQC-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,1)" vertex="1">
+          <mxGeometry height="30" width="60" x="820" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="XQmYLdSjvfYsIIngLVQC-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(0,1)" vertex="1">
+          <mxGeometry height="30" width="60" x="980" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="XQmYLdSjvfYsIIngLVQC-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="30" width="80" x="1020" y="795" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
