@@ -41,8 +41,8 @@ Equipo: Castores · Integrantes: Bruno, Javier, Iván y Marcos.
 |---|---|---|
 | 14 | Para qué destaca | Se destaca la tolerancia a fallos, su alto rendimiento que almacena los datos de forma estructurada, así como su facilidad de monitorización proporcioandado estadísticas sobre la actividad del servidor |
 | 15 | Una limitación importante | Existen varias limitaciones. Una limitación técnica sería un tamaño de campo de 1 GB u otra: 65.535 para los parámetros de consulta. A nivel operativo se encuentra el peor rendimiento en bases pequeñas o la gestión de conexiones concurrentes que puedes generar una saturación en la CPU y RAM.  |
-| 16 | Clasificación: por modelo, por ubicación y por licencia (apartado 6) | |
-| 17 | ¿Serviría para el inventario del aula? ¿Por qué sí o por qué no? | |
+| 16 | Clasificación: por modelo, por ubicación y por licencia (apartado 6) | Modelo: objeto relacional. Ubicación: cliente-servidor de forma nativa. Licencia: Libre bajo su propia licencua.|
+| 17 | ¿Serviría para el inventario del aula? ¿Por qué sí o por qué no? | Sí, técnicamente es posible. Cuenta con la integridad de datos (ACID) y concurrencia que permite a varias personas consultar o actualizar el inventario al mismo tiempo. El único probema es su excesiva complejidad para administradores o personal inexperto.|
 
 ## 6. La prueba
 
