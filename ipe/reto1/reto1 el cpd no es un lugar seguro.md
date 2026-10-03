@@ -143,3 +143,85 @@ poder acceder a las zonas de paso para personas con movilidad reducida
 **Responsable de emergencias**: Canal de mensajes por si hay dudas acerca de la organización de trabajo o del significado de la señalización.
 
 **Responsable de prevención**: Obligación de colocar señalización en situaciones o lugares de riesgo.
+
+## Fase 2: Clasificamos los riesgos.
+#### Ahora vais a organizar lo que habéis encontrado.
+
+#### Utilizad las siguientes categorías:
+
+### 1. Seguridad
+Riesgos relacionados con accidentes:
+* **caídas**: Poder llegar a romperse un hueso o fracturarlo
+* **golpes**: Tener dolor, moratones o heridas
+* **cortes**: Heridas en manos y dedos
+* **atrapamientos**: Aplastamiento o pinzamiento de dedos
+* **incendios**: Quemaduras, humo, daños materiales
+* **contactos eléctricos**: Descargas, quemaduras, en casos graves parada cardíaca.
+### 2. Riesgos físicos
+Por ejemplo:
+* **ruido**: Dolor de cabeza, pérdida de concentración
+* **temperatura**: Malestar, cansancio, quemaduras leves
+* **iluminación**: Fatiga visual, errores al identificar piezas
+* **vibraciones**: Molestias en manos y brazos
+### 3. Riesgos químicos
+Por ejemplo:
+* **productos de limpieza**: Irritación de piel, ojos o vías respiratorias
+* **baterías**: Fugas, quemaduras, incendio si están dañadas o hinchadas
+* **sustancias utilizadas en determinadas instalaciones**: Alergias, irritación, intoxicación leve
+### 4. Riesgos ergonómicos
+Por ejemplo:
+* **posturas**: Dolor de espalda, cuello y hombros
+* **manipulación de cargas**: Lesiones lumbares, tirones, hernias
+* **movimientos repetitivos**: Molestias en muñecas y manos (tendinitis)
+* **pantallas**: Fatiga visual, sequedad ocular, dolor de cabeza
+* **diseño del puesto**: Mala postura mantenida, cansancio
+### 5. Riesgos psicosociales
+Por ejemplo:
+* **estrés**: Ansiedad, irritabilidad, bloqueo
+* **carga de trabajo**: Agotamiento, errores
+* **organización**: Confusión, conflictos, retrasos
+* **turnos**: Descoordinación, cansancio
+* **presión**: Nervios, bajo rendimiento
+* **falta de descanso**: Fatiga, falta de atención, más accidente
+
+## Fase 3: Peligro, riesgo y daño
+
+#### Ahora tenéis que demostrar que sabéis diferenciar tres conceptos.
+
+#### Ejemplo:
+| Situación | Peligro | Riesgo | Daño |
+|-|-|-|-|
+| Un cable atraviesa una zona de paso. | El cable en la zona de paso. | Tropezar con el cable. | Caída, golpe, esguince, fractura... |
+
+#### Ahora vosotros…
+#### Completad la siguiente tabla siguiendo el modelo de arriba:
+| Situación | Peligro | Riesgo | Daño |
+|-|-|-|-|
+| 1. Rack con cables desorganizados y la puerta abierta | Puerta abierta, cables sueltos | Engancharse, tropezarse, electrocutarse | Caída, golpe, esguince, fractura... |
+| 2. Puesto de trabajo con mala ergonomía | Silla no ergonómica, luz azul del monitor, escritorio no regulable en altura | Adoptar malas posturas, forzar vista | Lesión lumbar, hernia, problemas oculares, síndrome del túnel carpiano |
+| 3. Regleta sobrecargada | Regleta que soporta demasiada energía, cables desordenados | Engancharse, tropezarse, sobrecarga eléctrica de la regleta | Incendio, caída, fractura, esguince |
+| 4. Temperatura y climatización | Temperatura y humedad inadecuados | Vestimenta inadecuada por la temperatura | Resfriados por cambios bruscos en la temperatura |
+| 5. Iluminación insuficiente | La iluminación no permite ver bien el entorno | Forzar la vista | Problemas de visión prematuros |
+| 6. Falta de señalización y organización | No hay horarios claros, no hay señalización que advierta de peligros | Perder tiempo, no encontrar el material, no advertir de peligros | Pérdida de productividad y mayor riesgo de accidentes en general |
+
+## Fase 4: Eligiendo los riesgos más importantes
+
+#### Habéis identificado muchos riesgos.
+
+#### Pero una empresa no puede solucionarlo todo simultáneamente.
+
+#### Debéis seleccionar los 5 riesgos que consideráis prioritarios.
+
+#### Para ello, utilizad la siguiente escala:
+![alt text](image-6.png)
+![alt text](image-7.png)
+
+#### **Matriz de priorización**: siendo 1 el riesgo más importante y 5 el menos.
+
+| Lista de riesgos | Probabilidad | Gravedad | Valoración |
+|-|-|-|-|
+| 1. Engancharse, tropezarse, electrocutarse | Media | Baja | Tolerable |
+| 2. Adoptar malas posturas, forzar vista | Alta | Media | Importante |
+| 3. Vestimenta inadecuada por temperatura | Media | Baja | Tolerable |
+| 4. Forzar la vista por mala iluminación | Alta | Media | Importante |
+| 5. Perder tiempo, no encontrar el material, no advertir de peligros por mala señalización | Alta | Alta | Intolerable |
