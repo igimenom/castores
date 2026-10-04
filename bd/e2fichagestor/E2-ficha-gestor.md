@@ -47,4 +47,23 @@ Equipo: Castores · Integrantes: Bruno, Javier, Iván y Marcos.
 ## 6. La prueba
 
 Qué hicimos, qué salió y qué nos llamó la atención (tres o cuatro líneas). Captura en `E2-prueba.png`.
+
+### ¿Qué hicimos?
+Copiar y pegar el código en la web de [dbfiddle.uk](https://dbfiddle.uk/A-WS1zJr) que corresponde a SQL.
+
+En el código creamos la tabla `equipo`.
+
+```sql
+CREATE TABLE equipo
+```
+
+En la tabla `equipo` creamos las columnas `etiqueta`, `aula` y `ram`. Las columnas `etiqueta` y `aula` van a cadenas de carácteres con una limitación de 10 y 20 carácteres respectivamente. 
+
+```sql
+etiqueta VARCHAR(10) PRIMARY KEY,
+aula     VARCHAR(20),
+ram_gb   INT
+```
+
+### ¿Qué salió? ¿Qué devuelve el SELECT? ¿Qué pasa con el último INSERT, y por qué? ¿Qué regla de la teoría es esa?
 ![alt text](image.png)
