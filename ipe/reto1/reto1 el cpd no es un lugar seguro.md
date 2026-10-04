@@ -10,6 +10,7 @@ Acabáis de incorporaros como técnicos/as de sistemas a NetSys, una empresa que
 La empresa dispone de un pequeño Centro de Procesamiento de Datos (CPD) donde se encuentran servidores, equipos de comunicaciones, sistemas de alimentación eléctrica y sistemas de refrigeración.
 
 Antes de ponerlo definitivamente en funcionamiento, la dirección os plantea una pregunta:
+#### ¿Es seguro trabajar aquí?
 #### 3. Organización
 * **Responsable de riesgos** (Marcos Sánchez Gracia): Identifica los peligros y realiza la evaluación inicial.
 * **Responsable de ergonomía** (Javier Martínez Gavin): Analiza puestos de trabajo, pantallas, posturas y organización del trabajo.
