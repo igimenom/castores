@@ -1,87 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales y acentos correctamente -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño a la pantalla de móviles y tablets -->
-    <meta name="author" content="Iván Gimeno, Marcos Sánchez, Javier Martínez, Bruno Coscojuela"> <!-- Indica los creadores de la página -->
-    <meta name="description" content="Inventario de discos duros en la sala R4"> <!-- Resumen de la web que muestra Google en los resultados -->
-    <meta name="keywords" content="inventario, discos duros, SSD, almacenamiento, sala R4, castores, hardware"> <!-- Palabras clave relevantes para la temática de la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iván Gimeno, Marcos Sánchez, Javier Martínez, Bruno Coscojuela">
+    <meta name="description" content="Inventario de discos duros en la sala R4">
+    <meta name="keywords" content="inventario, discos duros, SSD, almacenamiento, sala R4, castores, hardware">
     <meta name="copyright" content="© 2026 Grupo Castores S.L.">
-    <meta name="language" content="Spanish"> <!-- Especifica el idioma principal del contenido de la web -->
+    <meta name="language" content="Spanish">
 
     <title>Castores | Inventario de Componentes</title>
 
-    <link rel="icon" href="../../../media/logobg.png"> <!-- Muestra el logo como icono en la pestaña del navegador -->
-    <link rel="icon" href="../../../media/logobg.png"> <!-- Muestra el logo como icono en la pestaña del navegador -->
-    <link rel="stylesheet" href="../../css/style.css"> <!-- Conecta el archivo CSS para dar estilo a la web -->
-
-    <!-- Importa un tipo de fuente -->
+    <!-- Estilos y fuentes -->
+    <link rel="icon" href="../../../media/logobg.png">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="top">
+    <!-- CABECERA PRINCIPAL -->
     <header>
         <img class="imgHeader" src="../../../media/logobg.png" alt="Logotipo de Castores S.L." width="5%">
         <h1>
             <a class="headerCastor" href="../Página_principal.html">Castores</a>
         </h1>
     </header>
-    
+
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <h2>
-            Placas base
-        </h2>
-        <br>
+        <h2>Placas base</h2>
+        
         <table border="1">
-            <!-- Fila 1 -->
-            <tr>
-                <th>ID</th>
-                <th>Equipo</th>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Socket</th>
-                <th>Tipo de RAM</th>
-                <th>Cantidad</th>
-            </tr>
-            <!-- Fila 2 -->
-            <tr>
-                <td>PB-00</td>
-                <td>eq-00</td>
-                <td>Gigabyte</td>
-                <td>A520M K V2</td>
-                <td>AM4</td>
-                <td>DDR4</td>
-                <td>1</td>
-            </tr>
-            <!-- Fila 3 -->
-            <tr>
-                <td>PB-01</td>
-                <td>eq-01,eq-02</td>
-                <td>Aus</td>
-                <td>M2N68-AM Plus</td>
-                <td>AM2</td>
-                <td>DDR2</td>   
-                <td>2</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Equipo</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Socket</th>
+                    <th>Tipo de RAM</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PB-00</td>
+                    <td>eq-00</td>
+                    <td>Gigabyte</td>
+                    <td>A520M K V2</td>
+                    <td>AM4</td>
+                    <td>DDR4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>PB-01</td>
+                    <td>eq-01,eq-02</td>
+                    <td>Asus</td>
+                    <td>M2N68-AM Plus</td>
+                    <td>AM2</td>
+                    <td>DDR2</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
         </table>
+
         <!-- Bloque desplegable de información complementaria (abierto por defecto) -->
         <details open>
             <summary>Más información</summary>
-        <!-- Abre el glosario en una pestaña nueva -->
             <p>
                 Ir a <a href="../glosario.html" target="_blank">glosario</a>
             </p>
         </details>
     </main>
 
-    <!-- Pie de página -->
+    <!-- PIE DE PÁGINA Y NAVEGACIÓN -->
     <footer>
         <p>Grupo Castores S.L.</p>
         
-        <!-- Menú de navegación por catálogo -->
         <nav>
-            <!-- Columna 1: Enlaces a equipos y hardware base -->
             <ul>
                 <li><a href="../Página_principal.html">Inicio</a></li>
                 <li><a href="../Inventario/equipos.html" target="_blank">Equipos</a></li>
@@ -91,8 +88,7 @@
                 <li><a href="../Inventario/placas_base.html" target="_blank">Placa base</a></li>
             </ul>
             <ul>
-                
-                <li><a href="../Inventario/tarjetas_graficas.html" target="_blank">Tarjetas graficas</a></li>
+                <li><a href="../Inventario/tarjetas_graficas.html" target="_blank">Tarjetas gráficas</a></li>
                 <li><a href="../Inventario/disipadores.html" target="_blank">Disipadores</a></li>
                 <li><a href="../Inventario/lectoras_disco.html" target="_blank">Lectoras de disco</a></li>
                 <li><a href="../Inventario/procesadores.html" target="_blank">Procesadores</a></li>
@@ -101,7 +97,6 @@
             </ul> 
         </nav>
 
-        <!-- Botón para regresar a la parte superior -->
         <a href="#top" class="btnArriba" title="Volver arriba">↑</a>
 
         <p>© 2026</p>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales y acentos correctamente -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño a la pantalla de móviles y tablets -->
-    <meta name="author" content="Iván Gimeno, Marcos Sánchez, Javier Martínez, Bruno Coscojuela"> <!-- Indica los creadores de la página -->
-    <meta name="description" content="Inventario de discos duros en la sala R4"> <!-- Resumen de la web que muestra Google en los resultados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iván Gimeno, Marcos Sánchez, Javier Martínez, Bruno Coscojuela">
+    <meta name="description" content="Inventario de discos duros en la sala R4">
     <meta name="copyright" content="© 2026 Grupo Castores S.L.">
     <meta name="keywords" content="hardware, inventario, tabla">
     <title>Castores | Inicio</title>
@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="top">
+    <!-- CABECERA PRINCIPAL -->
     <header>
         <img class="imgHeader" src="../../media/logobg.png" alt="Logotipo de Castores S.L." width="20%">
         <h1>
@@ -22,78 +23,73 @@
         </h1>
     </header>
     
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
         <!-- Pantalla de introduccion -->
-  <section class="intro">
-    <section class="logo-stage">
-      <article class="anillo"></article>
-      <article class="anillo"></article>
-      <article class="anillo"></article>
-      <section class="logo-wrap">
-      <img src="../img/misc/logobg.png" alt="Logo corporativo Castores S.L.">
-      </section>
-    </section>
-  </section>
-    <!-- Imagen y texto elegir sección -->
+        <section class="intro">
+            <section class="logo-stage">
+                <article class="anillo"></article>
+                <article class="anillo"></article>
+                <article class="anillo"></article>
+                <section class="logo-wrap">
+                    <img src="../img/misc/logobg.png" alt="Logo corporativo Castores S.L.">
+                </section>
+            </section>
+        </section>
+
+        <!-- Imagen y texto elegir sección -->
         <section class="wrap">
-    <img class="imagenlogo" src="../../media/logobg.png" alt="Logo Castores">
-    <br>
-    <p class="lead">Elige una sección para continuar</p>
+            <img class="imagenlogo" src="../../media/logobg.png" alt="Logo Castores">
+            <br>
+            <p class="lead">Elige una sección para continuar</p>
 
-    <!-- Índice del inventario -->
-  <ul class="menu">
-  <li class="dropdown">
-    <a href="../html/Inventario/equipos.html" target="_blank"><span>Equipos</span><span class="arrow">›</span></a>
-    <span class="dropdown-content"><img src="../img/inventario/eq00/caja00.webp" alt="Información del Equipo00"></span>
-  </li>
-
-  <li class="dropdown">
-    <a href="../html/Inventario/discos_duros.html" target="_blank"><span>Discos duros</span><span class="arrow">›</span></a>
-    <span class="dropdown-content"><img src="../img/inventario/eq00/dd00.webp" alt="Inventario de discos"></span>
-  </li>
-
-  <li class="dropdown">
-    <a href="../html/Inventario/fuentes_alimentacion.html" target="_blank"><span>Fuentes de alimentación</span><span class="arrow">›</span></a>
-    <span class="dropdown-content"><img src="../img/inventario/componentes_sin_equipo/fuente-alimentacion.jpg" alt="Inventario de fuentes de alimentación"></span>
-  </li>
-
-  <li class="dropdown">
-    <a href="../html/Inventario/lectoras_disco.html" target="_blank"><span>Lectoras de disco</span><span class="arrow">›</span></a>
-    <span class="dropdown-content"><img src="../img/inventario/componentes_sin_equipo/4173lAplzBL.webp" alt="Inventario de lectoras de disco"></span>
-  </li>
-
-  <li class="dropdown">
-    <a href="../html/Inventario/ram.html" target="_blank"><span>RAM</span><span class="arrow">›</span></a>
-    <span class="dropdown-content"><img src="../img/inventario/eq00/ram00.jfif" alt="Inventario de ram"></span>
-  </li>
-
-  <li class="dropdown">
-    <a href="../html/Inventario/tarjetas_graficas.html" target="_blank"><span>Tarjetas gráficas</span><span class="arrow">›</span></a>
-    <span class="dropdown-content"><img src="../img/inventario/eq01,eq02/msi-radeon-x1550-512mb-db8a-1200x900.webp" alt="Inventario de tarjetas graficas"></span>
-  </li>
-  <li class="dropdown">
-    <a href="../html/Inventario/procesadores.html" target="_blank"><span>Procesadores</span><span class="arrow">›</span></a>
-    <span class="dropdown-content"><img src="../img/inventario/eq00/pr00.jfif" alt="Inventario de procesadores"></span>
-  </li>
-    <li class="dropdown">
-    <a href="../html/Inventario/placas_base.html" target="_blank"><span>Placas base</span><span class="arrow">›</span></a>
-    <span class="dropdown-content"><img src="../img/inventario/eq00/pb00.jfif" alt="Inventario de placa base"></span>
-  </li>
-  <li class="dropdown">
-    <a href="../html/Inventario/disipadores.html" target="_blank"><span>Disipadores</span><span class="arrow">›</span></a>
-    <span class="dropdown-content"><img src="../img/inventario/eq00/v00.jpg" alt="Inventario de disipadores"></span>
-  </li>
-      </ul>
-  
-  </section>
+            <!-- Índice del inventario -->
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="../html/Inventario/equipos.html" target="_blank"><span>Equipos</span><span class="arrow">›</span></a>
+                    <span class="dropdown-content"><img src="../img/inventario/eq00/caja00.webp" alt="Información del Equipo00"></span>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Inventario/discos_duros.html" target="_blank"><span>Discos duros</span><span class="arrow">›</span></a>
+                    <span class="dropdown-content"><img src="../img/inventario/eq00/dd00.webp" alt="Inventario de discos"></span>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Inventario/fuentes_alimentacion.html" target="_blank"><span>Fuentes de alimentación</span><span class="arrow">›</span></a>
+                    <span class="dropdown-content"><img src="../img/inventario/componentes_sin_equipo/fuente-alimentacion.jpg" alt="Inventario de fuentes de alimentación"></span>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Inventario/lectoras_disco.html" target="_blank"><span>Lectoras de disco</span><span class="arrow">›</span></a>
+                    <span class="dropdown-content"><img src="../img/inventario/componentes_sin_equipo/4173lAplzBL.webp" alt="Inventario de lectoras de disco"></span>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Inventario/ram.html" target="_blank"><span>RAM</span><span class="arrow">›</span></a>
+                    <span class="dropdown-content"><img src="../img/inventario/eq00/ram00.jfif" alt="Inventario de ram"></span>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Inventario/tarjetas_graficas.html" target="_blank"><span>Tarjetas gráficas</span><span class="arrow">›</span></a>
+                    <span class="dropdown-content"><img src="../img/inventario/eq01,eq02/msi-radeon-x1550-512mb-db8a-1200x900.webp" alt="Inventario de tarjetas graficas"></span>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Inventario/procesadores.html" target="_blank"><span>Procesadores</span><span class="arrow">›</span></a>
+                    <span class="dropdown-content"><img src="../img/inventario/eq00/pr00.jfif" alt="Inventario de procesadores"></span>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Inventario/placas_base.html" target="_blank"><span>Placas base</span><span class="arrow">›</span></a>
+                    <span class="dropdown-content"><img src="../img/inventario/eq00/pb00.jfif" alt="Inventario de placa base"></span>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Inventario/disipadores.html" target="_blank"><span>Disipadores</span><span class="arrow">›</span></a>
+                    <span class="dropdown-content"><img src="../img/inventario/eq00/v00.jpg" alt="Inventario de disipadores"></span>
+                </li>
+            </ul>
+        </section>
     </main>
-    <!-- Pie de página -->
+
+    <!-- PIE DE PÁGINA Y NAVEGACIÓN -->
     <footer>
         <p>Grupo Castores S.L.</p>
-        <!-- Menú de navegación por catálogo -->
         <nav>
-          <!-- Columna 1: Enlaces a equipos y hardware -->
-           <ul>
+            <ul>
                 <li><a href="Página_principal.html">Inicio</a></li>
                 <li><a href="./Inventario/equipos.html" target="_blank">Equipos</a></li>
                 <li><a href="./Inventario/discos_duros.html" target="_blank">Discos duros</a></li>
@@ -101,9 +97,8 @@
                 <li><a href="./Inventario/ram.html" target="_blank">Memoria RAM</a></li>
                 <li><a href="./Inventario/placas_base.html" target="_blank">Placa base</a></li>
             </ul>
-            <!-- Columna 2: Enlaces a hardware y Matriz de compatibilidad -->
             <ul>
-                <li><a href="./Inventario/tarjetas_graficas.html" target="_blank">Tarjetas graficas</a></li>
+                <li><a href="./Inventario/tarjetas_graficas.html" target="_blank">Tarjetas gráficas</a></li>
                 <li><a href="./Inventario/disipadores.html" target="_blank">Disipadores</a></li>
                 <li><a href="./Inventario/lectoras_disco.html" target="_blank">Lectoras de disco</a></li>
                 <li><a href="./Inventario/procesadores.html" target="_blank">Procesadores</a></li>
@@ -111,10 +106,8 @@
                 <li><a href="matrizCompatibilidad.html" target="_blank">Matriz de compatibilidad</a></li>
             </ul> 
         </nav>
-        <!-- Botón para regresar a la parte superior -->
         <a href="#top" class="btnArriba" title="Volver al inicio">↑</a>
         <p>© 2026</p>
     </footer>
-    
 </body>
 </html>

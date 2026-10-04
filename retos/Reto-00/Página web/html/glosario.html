@@ -1,190 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales y acentos correctamente -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño a la pantalla de móviles y tablets -->
-    <meta name="author" content="Iván Gimeno, Marcos Sánchez, Javier Martínez, Bruno Coscojuela"> <!-- Indica los creadores de la página -->
-    <meta name="description" content="Inventario de discos duros en la sala R4"> <!-- Resumen de la web que muestra Google en los resultados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iván Gimeno, Marcos Sánchez, Javier Martínez, Bruno Coscojuela">
+    <meta name="description" content="Inventario de discos duros en la sala R4">
     <meta name="copyright" content="© 2026 Grupo Castores S.L.">
     <meta name="keywords" content="hardware, inventario, tabla">
     <title>Castores | Inicio</title>
 
-    <!-- Hoja de estilos principal. "../" sube una carpeta desde donde está este HTML -->
+    <!-- Estilos y fuentes -->
     <link rel="stylesheet" href="../css/style.css">
-
-    <!-- Icono que aparece en la pestaña del navegador -->
     <link rel="icon" href="../../media/logobg.png">
-
-    <!-- Preconnect: abre la conexión con Google Fonts antes de pedir la fuente, para que cargue más rápido -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- crossorigin es necesario porque los archivos de fuente se sirven desde otro dominio -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Carga la fuente Montserrat (todos los pesos, normal y cursiva). display=swap muestra texto con otra fuente mientras carga -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="top">
+    <!-- CABECERA PRINCIPAL -->
     <header>
-        <!-- Clase imgHeader: estilos del logo definidos en style.css. El width="20%" en línea puede ser sobrescrito por el CSS -->
         <img class="imgHeader" src="../../media/logobg.png" alt="Logotipo de Castores S.L." width="20%">
         <h1>
-            <!-- Clase headerCastor: da estilo al enlace del título (color, quitar subrayado, etc.) desde el CSS -->
             <a class="headerCastor" href="../html/Página_principal.html">Castores</a>
         </h1>
     </header>
     
-<main>
-  <h1>Glosario</h1>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <h1>Glosario</h1>
 
-  <h2>Discos duros</h2>
-  <!-- grid-items: contenedor de la cuadrícula (CSS Grid/Flex). Coloca las tarjetas hijas (item-box) en columnas y controla el espacio entre ellas -->
-  <section class="grid-items">
-    <!-- HDD -->
-    <!-- item-box: tarjeta individual. El CSS le da borde, padding, sombra, fondo, etc. -->
-    <article class="item-box">
-      <h3>HDD: Hard Disk Drive</h3>
-      <p>
-        Un disco duro o HDD (Hard disk drive) es un dispositivo de almacenamiento de datos que utiliza un sistema magnético para guardar y recuperar archivos digitales de forma permanente.
-      </p>
-      <!-- img-producto: controla el tamaño de las imágenes desde el CSS para que todas queden uniformes -->
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/Hdd.webp" alt="Imagen de HDD">
-    </article>
+        <!-- Seccion: Discos duros -->
+        <h2>Discos duros</h2>
+        <section class="grid-items">
+            <article class="item-box">
+                <h3>HDD: Hard Disk Drive</h3>
+                <p>
+                    Un disco duro o HDD (Hard disk drive) es un dispositivo de almacenamiento de datos que utiliza un sistema magnético para guardar y recuperar archivos digitales de forma permanente.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/Hdd.webp" alt="Imagen de HDD">
+            </article>
 
-    <!-- SSD -->
-    <!-- item-box: segunda tarjeta del mismo grid, se coloca al lado de la anterior -->
-    <article class="item-box">
-      <h3>SSD: Solid State Drive</h3>
-      <p>
-        Un SSD (Solid State Drive) es un dispositivo de almacenamiento de datos que guarda la información usando chips de memoria electrónica en lugar de discos magnéticos.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/ssd.webp" alt="SSD">
-    </article>
-  </section>
+            <article class="item-box">
+                <h3>SSD: Solid State Drive</h3>
+                <p>
+                    Un SSD (Solid State Drive) es un dispositivo de almacenamiento de datos que guarda la información usando chips de memoria electrónica en lugar de discos magnéticos.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/ssd.webp" alt="SSD">
+            </article>
+        </section>
 
-  <h2>Fuente de Alimentación</h2>
-  <!-- grid-items: grid con una sola tarjeta; usa el mismo estilo que el resto para mantener la coherencia visual -->
-  <section class="grid-items">
-    <!-- item-box: tarjeta de la fuente ATX -->
-    <article class="item-box">
-      <h3>Fuente de Alimentación ATX</h3>
-      <p>
-        Una fuente de alimentación ATX es un dispositivo que convierte la corriente alterna (AC) de la toma de corriente en corriente continua (DC) necesaria para alimentar los componentes internos de una computadora.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/fuente-alimentacion.jpg" alt="Imagen de Fuente de Alimentación ATX">
-    </article>
-  </section>
+        <!-- Seccion: Fuente de alimentacion -->
+        <h2>Fuente de Alimentación</h2>
+        <section class="grid-items">
+            <article class="item-box">
+                <h3>Fuente de Alimentación ATX</h3>
+                <p>
+                    Una fuente de alimentación ATX es un dispositivo que convierte la corriente alterna (AC) de la toma de corriente en corriente continua (DC) necesaria para alimentar los componentes internos de una computadora.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/fuente-alimentacion.jpg" alt="Imagen de Fuente de Alimentación ATX">
+            </article>
+        </section>
 
-  <h2>Lector de Discos</h2>
-  <!-- grid-items: grid con una sola tarjeta -->
-  <section class="grid-items">
-    <!-- item-box: tarjeta del lector de discos -->
-    <article class="item-box">
-      <h3>Lector de Discos</h3>
-      <p>
-        Un lector de discos es un dispositivo que permite leer y escribir datos en discos ópticos, como CD, DVD o Blu-ray.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/lectordiscos.webp" alt="Imagen de Lector de Discos">
-    </article>
-  </section>
+        <!-- Seccion: Lector de Discos -->
+        <h2>Lector de Discos</h2>
+        <section class="grid-items">
+            <article class="item-box">
+                <h3>Lector de Discos</h3>
+                <p>
+                    Un lector de discos es un dispositivo que permite leer y escribir datos en discos ópticos, como CD, DVD o Blu-ray.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/lectordiscos.webp" alt="Imagen de Lector de Discos">
+            </article>
+        </section>
 
-  <h2>Memorias RAM</h2>
-  <!-- grid-items: grid con 2 tarjetas (DIMM y SO-DIMM), una al lado de la otra -->
-  <section class="grid-items">
-    <!-- DIMM -->
-    <!-- item-box: tarjeta de la memoria DIMM -->
-    <article class="item-box">
-      <h3>DIMM</h3>
-      <p>
-        Un DIMM (Dual In-line Memory Module) es un tipo de módulo de memoria que se inserta en la placa base de una computadora para proporcionar almacenamiento temporal de datos y programas en ejecución.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/dimm.jpg" alt="Imagen de memoria Ram DIMM">
-    </article>
+        <!-- Seccion: Memorias RAM -->
+        <h2>Memorias RAM</h2>
+        <section class="grid-items">
+            <article class="item-box">
+                <h3>DIMM</h3>
+                <p>
+                    Un DIMM (Dual In-line Memory Module) es un tipo de módulo de memoria que se inserta en la placa base de una computadora para proporcionar almacenamiento temporal de datos y programas en ejecución.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/dimm.jpg" alt="Imagen de memoria Ram DIMM">
+            </article>
 
-    <!-- SO-DIMM -->
-    <!-- item-box: tarjeta de la memoria SO-DIMM -->
-    <article class="item-box">
-      <h3>SO-DIMM</h3>
-      <p>
-        Un SO-DIMM (Small Outline Dual In-line Memory Module) es un tipo de módulo de memoria más pequeño y compacto que se utiliza principalmente en computadoras portátiles, mini-PCs y otros dispositivos con espacio limitado.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/sodimm.jpg" alt="Imagen de memoria Ram SO-DIMM">
-    </article>
-  </section>
+            <article class="item-box">
+                <h3>SO-DIMM</h3>
+                <p>
+                    Un SO-DIMM (Small Outline Dual In-line Memory Module) es un tipo de módulo de memoria más pequeño y compacto que se utiliza principalmente en computadoras portátiles, mini-PCs y otros dispositivos con espacio limitado.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/sodimm.jpg" alt="Imagen de memoria Ram SO-DIMM">
+            </article>
+        </section>
 
-  <h2>Tarjetas gráficas</h2>
-  <!-- grid-items: grid con 4 tarjetas; el CSS las reparte en filas según el ancho de pantalla -->
-  <section class="grid-items">
-    <!-- item-box: tarjeta DDR2 -->
-    <article class="item-box">
-      <h3>DDR2</h3>
-      <p>
-        DDR2 (en Tarjetas Gráficas): Memoria de sistema adaptada a GPUs de bajo coste a mediados de los 2000. Opera a 1.8 V con frecuencias de 400 a 800 MHz y prefetch de 4 bits, priorizando la reducción de costes sobre el rendimiento gráfico.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/tarjetaddr2.webp" alt="Imagen Tarjeta Gráfica DDR2">
-    </article>
-    <!-- item-box: tarjeta DDR3 -->
-    <article class="item-box">
-      <h3>DDR3</h3>
-      <p>
-        DDR3 (en Tarjetas Gráficas): Memoria de sistema reutilizada en GPUs de gama baja a partir de 2007. Funciona a 1.5 V con frecuencias de 800 a 1800 MHz y prefetch de 8 bits, ofreciendo mayor eficiencia energética y velocidad que DDR2 a un coste reducido.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/tarjetagraficaddr3.webp" alt="Imagen Tarjeta Gráfica DDR3">
-    </article>
-    <!-- item-box: tarjeta GDDR2 -->
-    <article class="item-box">
-      <h3>GDDR2</h3>
-      <p>
-        GDDR2 (Graphics Double Data Rate 2) es un tipo de memoria de acceso aleatorio (RAM) que se utiliza en tarjetas gráficas y otros dispositivos electrónicos para almacenar y acceder a datos de manera rápida y eficiente.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/gddr2.jpg" alt="Imagen Tarjeta Gráfica GDDR2">
-    </article>
-    <!-- item-box: tarjeta GDDR3 (ojo: el título y el texto dicen "GDRR3", es una errata) -->
-    <article class="item-box">
-      <h3>GDRR3</h3>
-      <p>
-        GDRR3 (Graphics Double Data Rate 3) es un tipo de memoria de acceso aleatorio (RAM) que se utiliza en tarjetas gráficas y otros dispositivos electrónicos para almacenar y acceder a datos de manera rápida y eficiente.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/gddr3.jpg" alt="Imagen Tarjeta Gráfica DDR3">
-    </article>
-  </section>
+        <!-- Seccion: Tarjetas graficas -->
+        <h2>Tarjetas gráficas</h2>
+        <section class="grid-items">
+            <article class="item-box">
+                <h3>DDR2</h3>
+                <p>
+                    DDR2 (en Tarjetas Gráficas): Memoria de sistema adaptada a GPUs de bajo coste a mediados de los 2000. Opera a 1.8 V con frecuencias de 400 a 800 MHz y prefetch de 4 bits, priorizando la reducción de costes sobre el rendimiento gráfico.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/tarjetaddr2.webp" alt="Imagen Tarjeta Gráfica DDR2">
+            </article>
 
-  <h2>Procesadores</h2>
-  <!-- grid-items: primer grid de procesadores, solo contiene la tarjeta AM4 -->
-  <section class="grid-items">
-    <!-- item-box: tarjeta del socket AM4 -->
-    <article class="item-box">
-      <h3>AM4</h3>
-      <p>
-        AM4 Uno de los sockets más populares de AMD, lanzado en 2016 para dar vida a la familia de procesadores Ryzen. Su mayor logro fue mantenerse como estándar durante casi una década (dando soporte desde los Ryzen 1000 hasta los Ryzen 5000), lo que permitió a los usuarios actualizar el procesador sin necesidad de cambiar de placa base.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/socketam4.webp" alt="Imagen de Socket AM4">
-    </article>
-    
-  </section>
+            <article class="item-box">
+                <h3>DDR3</h3>
+                <p>
+                    DDR3 (en Tarjetas Gráficas): Memoria de sistema reutilizada en GPUs de gama baja a partir de 2007. Funciona a 1.5 V con frecuencias de 800 a 1800 MHz y prefetch de 8 bits, ofreciendo mayor eficiencia energética y velocidad que DDR2 a un coste reducido.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/tarjetagraficaddr3.webp" alt="Imagen Tarjeta Gráfica DDR3">
+            </article>
 
-  <!-- grid-items: segundo grid separado; AM2 queda en otra fila/contenedor distinto al de AM4 -->
-  <section class="grid-items">
-    <!-- item-box: tarjeta del socket AM2 -->
-    <article class="item-box">
-      <h3>AM2</h3>
-      <p>
-        AM2: Socket de procesador comercializado por AMD a partir de 2006 para sus líneas Athlon 64, Sempron y Opteron. Ganó gran popularidad por introducir el soporte nativo para memorias RAM DDR2, manteniéndose vigente en el mercado durante varias generaciones de procesadores hasta ser sucedido por el socket AM2+.
-      </p>
-      <img class="img-producto" src="../img/inventario/componentes_sin_equipo/socketam2.jpg" alt="Imagen de Socket AM2">
-    </article>
-    
-  </section>
+            <article class="item-box">
+                <h3>GDDR2</h3>
+                <p>
+                    GDDR2 (Graphics Double Data Rate 2) es un tipo de memoria de acceso aleatorio (RAM) que se utiliza en tarjetas gráficas y otros dispositivos electrónicos para almacenar y acceder a datos de manera rápida y eficiente.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/gddr2.jpg" alt="Imagen Tarjeta Gráfica GDDR2">
+            </article>
 
+            <article class="item-box">
+                <h3>GDDR3</h3>
+                <p>
+                    GDDR3 (Graphics Double Data Rate 3) es un tipo de memoria de acceso aleatorio (RAM) que se utiliza en tarjetas gráficas y otros dispositivos electrónicos para almacenar y acceder a datos de manera rápida y eficiente.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/gddr3.jpg" alt="Imagen Tarjeta Gráfica GDDR3">
+            </article>
+        </section>
 
-</main>
+        <!-- Seccion: Procesadores -->
+        <h2>Procesadores</h2>
+        <section class="grid-items">
+            <article class="item-box">
+                <h3>AM4</h3>
+                <p>
+                    AM4: Uno de los sockets más populares de AMD, lanzado en 2016 para dar vida a la familia de procesadores Ryzen. Su mayor logro fue mantenerse como estándar durante casi una década (dando soporte desde los Ryzen 1000 hasta los Ryzen 5000), lo que permitió a los usuarios actualizar el procesador sin necesidad de cambiar de placa base.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/socketam4.webp" alt="Imagen de Socket AM4">
+            </article>
 
+            <article class="item-box">
+                <h3>AM2</h3>
+                <p>
+                    AM2: Socket de procesador comercializado por AMD a partir de 2006 para sus líneas Athlon 64, Sempron y Opteron. Ganó gran popularidad por introducir el soporte nativo para memorias RAM DDR2, manteniéndose vigente en el mercado durante varias generaciones de procesadores hasta ser sucedido por el socket AM2+.
+                </p>
+                <img class="img-producto" src="../img/inventario/componentes_sin_equipo/socketam2.jpg" alt="Imagen de Socket AM2">
+            </article>
+        </section>
+    </main>
 
+    <!-- PIE DE PÁGINA Y NAVEGACIÓN -->
     <footer>
         <p>Grupo Castores S.L.</p>
-        <!-- Menú del footer: el CSS de nav/ul/li define si va en horizontal o en columnas -->
         <nav>
-           <ul>
+            <ul>
                 <li><a href="Página_principal.html">Inicio</a></li>
-                <!-- target="_blank" abre el enlace en una pestaña nueva -->
                 <li><a href="./Inventario/equipos.html" target="_blank">Equipos</a></li>
                 <li><a href="./Inventario/discos_duros.html" target="_blank">Discos duros</a></li>
                 <li><a href="./Inventario/fuentes_alimentacion.html" target="_blank">Fuentes de alimentación</a></li>
@@ -192,7 +163,7 @@
                 <li><a href="./Inventario/placas_base.html" target="_blank">Placa base</a></li>
             </ul>
             <ul>
-                <li><a href="./Inventario/tarjetas_graficas.html" target="_blank">Tarjetas graficas</a></li>
+                <li><a href="./Inventario/tarjetas_graficas.html" target="_blank">Tarjetas gráficas</a></li>
                 <li><a href="./Inventario/disipadores.html" target="_blank">Disipadores</a></li>
                 <li><a href="./Inventario/lectoras_disco.html" target="_blank">Lectoras de disco</a></li>
                 <li><a href="./Inventario/procesadores.html" target="_blank">Procesadores</a></li>
@@ -200,10 +171,8 @@
                 <li><a href="matrizCompatibilidad.html" target="_blank">Matriz de compatibilidad</a></li>
             </ul>  
         </nav>
-        <!-- btnArriba: botón de volver arriba; el CSS suele fijarlo (position: fixed) en una esquina. href="#top" salta al elemento con id="top" -->
         <a href="#top" class="btnArriba" title="Volver al inicio">↑</a>
         <p>© 2026</p>
     </footer>
-    
 </body>
 </html>

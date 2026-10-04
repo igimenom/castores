@@ -4,66 +4,68 @@
     <meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales y acentos correctamente -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño a la pantalla de móviles y tablets -->
     <meta name="author" content="Iván Gimeno, Marcos Sánchez, Javier Martínez, Bruno Coscojuela"> <!-- Indica los creadores de la página -->
-    <meta name="description" content="Inventario de discos duros en la sala R4"> <!-- Resumen de la web que muestra Google en los resultados -->
-    <meta name="keywords" content="inventario, discos duros, SSD, almacenamiento, sala R4, castores, hardware"> <!-- Palabras clave relevantes para la temática de la página -->
-    <meta name="copyright" content="© 2026 Grupo Castores S.L."> <!-- Derechos de autor de la web -->
+    <meta name="description" content="Inventario de tarjetas gráficas en la sala R4"> <!-- Resumen de la web que muestra Google en los resultados -->
+    <meta name="keywords" content="inventario, tarjetas graficas, GPU, VRAM, GDDR3, ATI, NVIDIA, sala R4, castores, hardware"> <!-- Palabras clave relevantes para la temática de la página -->
+    <meta name="copyright" content="© 2026 Grupo Castores S.L.">
     <meta name="language" content="Spanish"> <!-- Especifica el idioma principal del contenido de la web -->
 
-    <title>Castores | Inventario de Componentes</title> <!-- Título que aparece en la pestaña del navegador -->
+    <title>Castores | Inventario de Componentes</title>
 
     <link rel="icon" href="../../../media/logobg.png"> <!-- Muestra el logo como icono en la pestaña del navegador -->
-    <link rel="icon" href="../../../media/logobg.png">
     <link rel="stylesheet" href="../../css/style.css"> <!-- Conecta el archivo CSS para dar estilo a la web -->
 
     <!-- Importa un tipo de fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Abre la conexión con Google Fonts antes de usarla, para que cargue más rápido -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Lo mismo con el servidor que guarda los archivos de la fuente -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Descarga la fuente Montserrat en todos sus grosores, normal y cursiva -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body> <!-- Cuerpo: todo lo que se ve en la página -->
-    <header> <!-- Cabecera visible: logo y nombre de la empresa -->
-        <img class="imgHeader" src="../../../media/logobg.png" alt="Logotipo de Castores S.L." width="5%"> <!-- Logo; el alt lo leen los lectores de pantalla; width="5%" lo hace pequeño -->
-        <h1> <!-- Título principal de la página -->
-            <a class="headerCastor" href="../Página_principal.html">Castores</a> <!-- Enlace a la página de inicio; class lo usa el CSS para darle estilo -->
+<body id="top">
+    <!-- Cabecera de la página -->
+    <header>
+        <img class="imgHeader" src="../../../media/logobg.png" alt="Logotipo de Castores S.L." width="5%">
+        <h1>
+            <a class="headerCastor" href="../Página_principal.html">Castores</a>
         </h1>
     </header>
 
-    <main> <!-- Contenido principal, distinto de la cabecera y el pie -->
-        <h2>Inventario tarjetas gráficas</h2> <!-- Subtítulo de la página -->
+    <!-- Contenido principal -->
+    <main>
+        <h2>Inventario tarjetas gráficas</h2>
     
-        <section> <!-- Agrupa la tabla como un bloque propio -->
-            <table border="1"> <!-- Tabla del inventario; border="1" dibuja un borde fino -->
-                <!-- Fila 1 -->
-                <tr> <!-- tr = fila de la tabla -->
-                    <th>ID</th> <!-- th = celda de encabezado (negrita y centrada por defecto); código único de la tarjeta -->
-                    <th>Equipo</th> <!-- Equipo donde está instalada -->
-                    <th>Marca</th> <!-- Fabricante -->
-                    <th>Modelo</th> <!-- Modelo de la tarjeta -->
-                    <th>Tipo de VRAM</th> <!-- Tecnología de la memoria de vídeo -->
-                    <th>Memoria</th> <!-- Capacidad de la memoria, en MB -->
-                    <th>Cantidad</th> <!-- Número de unidades -->
-                </tr>
-                <!-- Fila 2 -->
+        <section>
+            <!-- Tabla con el inventario de componentes -->
+            <table border="1">
+                <!-- Encabezados de la tabla -->
                 <tr>
-                    <td>GPU-00</td> <!-- td = celda de datos normal; cada fila sigue el orden de las columnas de arriba -->
-                    <td>eq-01</td> <!-- Esta tarjeta está instalada en el equipo eq-01 -->
+                    <th>ID</th>
+                    <th>Equipo</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Tipo de VRAM</th>
+                    <th>Memoria (MB)</th>
+                    <th>Cantidad</th>
+                </tr>
+                <!-- Fila 1 -->
+                <tr>
+                    <td>GPU-00</td>
+                    <td>eq-01</td>
                     <td>ATI</td>
                     <td>Radeon X1550</td>
                     <td>DDR2</td>
                     <td>512</td>
                     <td>1</td>
                 </tr>
-                <!-- Fila 3 -->
+                <!-- Fila 2 -->
                 <tr>
                     <td>GPU-01</td>
-                    <td></td> <!-- Celda vacía: la tarjeta no está instalada en ningún equipo (igual en las filas siguientes) -->
+                    <td></td>
                     <td>ATI</td>
-                    <td>ATI Radeon HD 3450</td>
+                    <td>Radeon HD 3450</td>
                     <td>DDR2</td>
                     <td>512</td>
                     <td>1</td>
                 </tr>
-                <!-- Fila 4 -->
+                <!-- Fila 3 -->
                 <tr>
                     <td>GPU-02</td>
                     <td></td>
@@ -73,68 +75,69 @@
                     <td>512</td>
                     <td>1</td>
                 </tr>
-                <!-- Fila 5 -->
+                <!-- Fila 4 -->
                 <tr>
                     <td>GPU-03</td>
                     <td></td>
                     <td>Gigabyte</td>
                     <td>NVIDIA GeForce GT 210</td>
                     <td>DDR3</td>
-                    <td>1024</td> <!-- 1024 MB = 1 GB -->
+                    <td>1024</td>
                     <td>1</td>
                 </tr>
-                <!-- Fila 6 -->
+                <!-- Fila 5 -->
                 <tr>
                     <td>GPU-04</td>
                     <td></td>
                     <td>ATI</td>
                     <td>Radeon HD 3650</td>
-                    <td>GDRR3</td> <!-- Errata: debería ser GDDR3 -->
+                    <td>GDDR3</td>
                     <td>512</td>
                     <td>1</td>
                 </tr>
-            </table> <!-- Fin de la tabla -->
+            </table>
         </section>
+
         <!-- Bloque desplegable de información complementaria (abierto por defecto) -->
-        <details open> <!-- details crea un bloque que se abre y se cierra; "open" hace que salga abierto -->
-            <summary>Más información</summary> <!-- Texto visible sobre el que se hace clic para plegar o desplegar -->
+        <details open>
+            <summary>Más información</summary>
             <!-- Abre el glosario en una pestaña nueva -->
-            <p> <!-- Párrafo con el enlace -->
-                Ir a <a href="../glosario.html" target="_blank">glosario</a> <!-- target="_blank" abre el enlace en otra pestaña -->
+            <p>
+                Ir a <a href="../glosario.html" target="_blank">glosario</a>
             </p>
         </details>
     </main>
 
     <!-- Pie de página -->
-    <footer> <!-- Zona inferior de la página -->
-        <p>Grupo Castores S.L.</p> <!-- Nombre de la empresa -->
+    <footer>
+        <p>Grupo Castores S.L.</p>
         
         <!-- Menú de navegación por catálogo -->
-        <nav> <!-- nav marca un bloque de enlaces de navegación -->
+        <nav>
             <!-- Columna 1: Enlaces a equipos y hardware base -->
-            <ul> <!-- Lista sin numerar -->
-                <li><a href="../Página_principal.html">Inicio</a></li> <!-- li = elemento de la lista; cada uno lleva un enlace a la página de ese componente -->
-                <li><a href="../Inventario/equipos.html" target="_blank">Equipos</a></li> <!-- Los enlaces con target="_blank" se abren en otra pestaña -->
+            <ul>
+                <li><a href="../Página_principal.html">Inicio</a></li>
+                <li><a href="../Inventario/equipos.html" target="_blank">Equipos</a></li>
                 <li><a href="../Inventario/discos_duros.html" target="_blank">Discos duros</a></li>
                 <li><a href="../Inventario/fuentes_alimentacion.html" target="_blank">Fuentes de alimentación</a></li>
                 <li><a href="../Inventario/ram.html" target="_blank">Memoria RAM</a></li>
                 <li><a href="../Inventario/placas_base.html" target="_blank">Placa base</a></li>
             </ul>
-            <ul> <!-- Columna 2: resto de componentes y páginas de apoyo -->
-                
-                <li><a href="../Inventario/tarjetas_graficas.html" target="_blank">Tarjetas graficas</a></li> <!-- Esta misma página -->
+            <!-- Columna 2: Resto de componentes y páginas de apoyo -->
+            <ul>
+                <li><a href="../Inventario/tarjetas_graficas.html" target="_blank">Tarjetas gráficas</a></li>
                 <li><a href="../Inventario/disipadores.html" target="_blank">Disipadores</a></li>
                 <li><a href="../Inventario/lectoras_disco.html" target="_blank">Lectoras de disco</a></li>
                 <li><a href="../Inventario/procesadores.html" target="_blank">Procesadores</a></li>
                 <li><a href="../glosario.html" target="_blank">Glosario</a></li>
-                <li><a href="../matrizCompatibilidad.html" target="_blank">Matriz de compatibilidad</a></li> <!-- Qué componentes son compatibles entre sí -->
+                <li><a href="../matrizCompatibilidad.html" target="_blank">Matriz de compatibilidad</a></li>
             </ul> 
         </nav>
 
         <!-- Botón para regresar a la parte superior -->
-        <a href="#top" class="btnArriba" title="Volver arriba">↑</a> <!-- #top salta al elemento con id="top" (ahora no existe); title es el texto al pasar el ratón -->
+        <a href="#top" class="btnArriba" title="Volver arriba">↑</a>
 
-        <p>© 2026</p> <!-- Año del copyright -->
+        <p>© 2026</p>
     </footer>
 </body>
 </html>
