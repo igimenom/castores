@@ -269,7 +269,14 @@ Deberían usarse ayudas mecánicas o humanas y en cuanto a la técnica de levant
 - Informar y formar a los trabajadores de la técnica de como levantar los pesos
 #### 5. ¿Sería suficiente utilizar un EPI? ¿Por qué?
 No, en absoluto. Los EPIs (como calzado de seguridad o guantes) solo amortiguan las consecuencias de un accidente, como la caída del equipo, pero no eliminan el esfuerzo sobre la columna. El riesgo de lesión lumbar por levantar 30 kg a solas sigue intacto; la normativa exige priorizar siempre las medidas colectivas, como usar ayudas mecánicas o realizar la tarea entre dos personas.
+## Fase 7: Una decisión difícil
 
+Tras lo realizado hasta ahora, es el momento de que vuestro equipo entregue un:
+#### INFORME DE IDENTIFICACIÓN DE RIESGOS DEL CPD
+Este informe lo usaremos para la presentación.
+Ver [aquí presentación](https://docs.google.com/presentation/d/12FZGeHTsJ4eGV8-03vteXR1szjBe9gPT7l0EXs7yrwg/edit?usp=sharing).
+## Fase 8: Defensa del reto.
+Presentaremos el informe al resto de la clase y nos harán preguntas.
 ## RETO EXTRA
 
 #### La dirección os comunica una última información:
