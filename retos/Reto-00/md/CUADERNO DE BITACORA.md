@@ -155,4 +155,5 @@ lo que es cada cosa de este.
 ### TAREAS PENDIENTES
 * docuemtnación del proceso.md
 * fases del proceso
-* preguntar sobre el diagrama e/r está correctao
+* terminar tarea bases de datos
+* terminar presentación y docu ipe
