@@ -15,7 +15,7 @@ Equipo: Castores · Integrantes: Bruno, Javier, Iván y Marcos.
 | # | Campo | Respuesta | Fuente (URL) |
 |---|---|---|---|
 | 4 | Modelo de datos: relacional (tablas), documental, clave-valor, columnar, de grafos… (apartado 4) |  utiliza principalmente un modelo de datos relacional y objeto-relacional, lo que significa que organiza la información en tablas conectadas entre sí, pero además permite manejar características avanzadas de orientación a objetos (como herencia de tablas y tipos personalizados) y soporta datos semiestructurados (como JSON). | https://www.databricks.com/es/blog/what-is-postgresql-database |
-| 5 | Cómo quedaría el equipo EQ-04, con sus dos módulos de RAM, guardado en este gestor. Un dibujo o un ejemplo | | |
+| 5 | Cómo quedaría el equipo EQ-04, con sus dos módulos de RAM, guardado en este gestor. Un dibujo o un ejemplo | ![dibjo/ejemplo](image-1.png) | |
 | 6 | ¿Hay que definir la estructura antes de guardar datos (esquema fijo) o no? | Sí, al ser un sistema relacional requiere esquema fijo previa definición mediante comandos SQL | https://www.postgresql.org/docs/current/ddl-basics.html |
 
 ## 3. Dónde vive
@@ -48,7 +48,7 @@ Equipo: Castores · Integrantes: Bruno, Javier, Iván y Marcos.
 
 Qué hicimos, qué salió y qué nos llamó la atención (tres o cuatro líneas). Captura en `E2-prueba.png`.
 
-### ¿Qué hicimos?
+### ¿Qué hicimos? ¿Qué salió? ¿Qué devuelve el SELECT? ¿Qué pasa con el último INSERT, y por qué? ¿Qué regla de la teoría es esa?
 Copiar y pegar el código en la web de [dbfiddle.uk](https://dbfiddle.uk/A-WS1zJr) que corresponde a SQL.
 
 En el código creamos la tabla `equipo`.
@@ -82,6 +82,9 @@ Por último, escribimos una línea errónea. Lo que hace es insertar en la tabla
 ```sql
 INSERT INTO equipo VALUES ('EQ-01', 'Taller', 4);
 ```
+La regla de la teoría que se incumple es:
+> ### 1.6 Atributos identificadores y claves
+>
+> Atributo identificador: su valor es único y no se repite entre instancias.
 
-### ¿Qué salió? ¿Qué devuelve el SELECT? ¿Qué pasa con el último INSERT, y por qué? ¿Qué regla de la teoría es esa?
 ![alt text](image.png)
