@@ -47,3 +47,4 @@ Equipo: Castores · Integrantes: Bruno, Javier, Iván y Marcos.
 ## 6. La prueba
 
 Qué hicimos, qué salió y qué nos llamó la atención (tres o cuatro líneas). Captura en `E2-prueba.png`.
+![alt text](image.png)
