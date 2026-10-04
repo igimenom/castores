@@ -225,3 +225,64 @@ Por ejemplo:
 | 3. Vestimenta inadecuada por temperatura | Media | Baja | Tolerable |
 | 4. Forzar la vista por mala iluminación | Alta | Media | Importante |
 | 5. Perder tiempo, no encontrar el material, no advertir de peligros por mala señalización | Alta | Alta | Intolerable |
+
+## Fase 5: ¿Cómo lo solucionamos?
+
+#### Ahora viene la parte más importante.
+#### Para cada uno de los cinco riesgos prioritarios, proponed medidas preventivas - puedes ayudarte de la teoría-.
+#### Pero hay una condición:
+#### **No podéis solucionar todos los problemas diciendo simplemente "utilizar EPI"**.
+
+| Riesgo | ¿Qué podemos hacer para evitarlo? | Tipo de medida |
+|-|-|-|
+|Engancharse, tropezarse, electrocutarse|Evitar obstáculos en el suelo y si hay señalizarse adecuadamente. Ordenar todo los materiales.|Seguridad en el trabajo|
+|Adoptar malas posturas, forzar la vista | Adecuar la altura de la silla, la mesa y otros elementos al trabajador. Iluminación adecuada.|Ergonomía y medicina del trabajo|
+|Vestimenta inadecuada para la temperatura|No poner una temperatura extrema: ni muy alta ni muy baja. Mantener la humedad en los rangos recomendables.|Ergonomía|
+|Forzar la vista|Una correcta iluminación, monitores con protección ocular, gafas si se necesitan, gafas de luz azul para pantallas|Ergonomía Y medicina del trabajo|
+|Perder tiempo, no encontrar el material, no advertir de peligros por mala señalización|Horarios, señalizar|Psicosociología|
+
+## Fase 6: El caso del técnico de sistemas
+#### Ahora aparece una nueva situación.
+#### Son las 16:45 y un técnico tiene que sustituir un servidor que pesa aproximadamente 30 kg.
+#### El servidor se encuentra en el suelo, junto al rack.
+#### El técnico decide levantarlo él solo porque "solo serán un par de minutos".
+#### Para hacerlo, se agacha, levanta el equipo y lo introduce en el rack.
+#### Responded a las siguientes cuestiones - ver teoría sobre carga máxima a manipular-.
+
+#### 1. ¿Qué riesgos existen en esta situación?
+- Sobreesfuerzo físico
+- Posturas forzadas
+- Falta de agarre seguro
+- Caída o golpe de la carga
+- Fatiga acumulada
+#### 2. ¿Qué daños podrían producirse?
+- Lesiones dorsolumbares
+- Desgarros o distensiones musculares
+- Traumatismos y fracturas
+- Golpes o cortes
+#### 3. ¿Cómo debería realizarse la operación de forma segura?
+Deberían usarse ayudas mecánicas o humanas y en cuanto a la técnica de levantamiento deberían acercarse lo más posible a la carga, separar los pies para mantener una base de sustentación estable y flexionar las piernas manteniendo la espalda recta.
+#### 4. ¿Qué medidas preventivas propondríais?
+- Medidas técnicas como dotar a la empresa con carros de elevación.
+- Prohibir que la gente levante por si sola grandes pesos.
+- Informar y formar a los trabajadores de la técnica de como levantar los pesos
+#### 5. ¿Sería suficiente utilizar un EPI? ¿Por qué?
+No, en absoluto. Los EPIs (como calzado de seguridad o guantes) solo amortiguan las consecuencias de un accidente, como la caída del equipo, pero no eliminan el esfuerzo sobre la columna. El riesgo de lesión lumbar por levantar 30 kg a solas sigue intacto; la normativa exige priorizar siempre las medidas colectivas, como usar ayudas mecánicas o realizar la tarea entre dos personas.
+
+## RETO EXTRA
+
+#### La dirección os comunica una última información:
+#### "A partir de la semana que viene, el CPD funcionará las 24 horas y habrá técnicos trabajando en turnos de mañana, tarde y noche."
+#### Pregunta
+#### ¿Qué nuevos riesgos laborales pueden aparecer o aumentar?
+#### Intentad identificar al menos cinco.
+#### Nuevo riesgo ¿Por qué puede aparecer o aumentar?
+1. Alteración del sueño y fatiga crónica, ya que, el turno de noche rompe el reloj biológico.
+2. Mayor riesgo de accidentem, la falta de alerta de madrugada provoca más fallos al manipular
+cables o servidores.
+3. Problemas digestivos y metabólico al cambiar las horas de comida y abusar del café se altera el
+estómago.
+4. Trabajar a deshoras dificulta la vida familiar, generando estrés y
+ansiedad.
+5. Conducir de noche o de madrugada con fatiga extrema multiplica el
+riesgo de accidentes viales.
