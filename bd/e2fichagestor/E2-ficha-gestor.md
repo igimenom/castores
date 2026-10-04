@@ -78,7 +78,7 @@ La siguiente línea nos sirve para buscar y mostrar información que ya está gu
 SELECT * FROM equipo WHERE aula = '1.12';
 ```
 
-Por último, escribimos una línea errónea. Lo que hace es intsetar en la tabla `equipo` unos valores. Da error porque intenta añadir otros datos con el mismo identificador (`EQ-01`) que ya se encuentra guardado en la tabla. Este identificador no se puede repetir y da error su creación.
+Por último, escribimos una línea errónea. Lo que hace es insertar en la tabla `equipo` unos valores. Da error porque intenta añadir otros datos con el mismo identificador (`EQ-01`) que ya se encuentra guardado en la tabla. Este identificador no se puede repetir y da error su creación.
 ```sql
 INSERT INTO equipo VALUES ('EQ-01', 'Taller', 4);
 ```
