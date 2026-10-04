@@ -57,12 +57,30 @@ En el código creamos la tabla `equipo`.
 CREATE TABLE equipo
 ```
 
-En la tabla `equipo` creamos las columnas `etiqueta`, `aula` y `ram`. Las columnas `etiqueta` y `aula` van a cadenas de carácteres con una limitación de 10 y 20 carácteres respectivamente. 
+En la tabla `equipo` creamos las columnas `etiqueta`, `aula` y `ram`. Las columnas `etiqueta` y `aula` van a cadenas de carácteres con una limitación de 10 y 20 carácteres respectivamente. Mientras, que `ram_gb` va a contener números enteros. Además, la columna `aula` es clave primera (`PRIMARY KEY`), es decir, es el identificador único para cada fila, para cada `equipo` en este ejemplo.
 
 ```sql
 etiqueta VARCHAR(10) PRIMARY KEY,
 aula     VARCHAR(20),
 ram_gb   INT
+```
+
+Posteriormente, añadimos dos filas una que corresponde al equipo con identificador `EQ-01` y la siguiente al `EQ-04`. En el primer caso, `1.12` es el aula y `8` es los gigas de RAM.
+
+```sql
+INSERT INTO equipo VALUES ('EQ-01', '1.12', 8);
+INSERT INTO equipo VALUES ('EQ-04', 'Taller', 8);
+```
+
+La siguiente línea nos sirve para buscar y mostrar información que ya está guardada (`select`). Busca todas las columnas (`*`) en la tabla (`equipo`) donde exista el valor sea `1.12` en la columna `aula`.
+
+```sql
+SELECT * FROM equipo WHERE aula = '1.12';
+```
+
+Por último, escribimos una línea errónea. Lo que hace es intsetar en la tabla `equipo` unos valores. Da error porque intenta añadir otros datos con el mismo identificador (`EQ-01`) que ya se encuentra guardado en la tabla. Este identificador no se puede repetir y da error su creación.
+```sql
+INSERT INTO equipo VALUES ('EQ-01', 'Taller', 4);
 ```
 
 ### ¿Qué salió? ¿Qué devuelve el SELECT? ¿Qué pasa con el último INSERT, y por qué? ¿Qué regla de la teoría es esa?
