@@ -161,3 +161,6 @@ lo que es cada cosa de este.
 * docuemtnación del proceso.md
 * terminar tarea bases de datos iván
 * terminar presentación y docu ipe marcos
+* propuesta de transformación digital
+* formulario
+* excel
