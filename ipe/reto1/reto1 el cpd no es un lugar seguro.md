@@ -17,12 +17,12 @@ Antes de ponerlo definitivamente en funcionamiento, la dirección os plantea una
 * **Responsable de emergencias** (Bruno Coscojuela Viader): Diseña las actuaciones ante incendio, evacuación, accidente, etc.
 * **Responsable de prevención** (Iván Gimeno Montoya): Investiga derechos, obligaciones y medidas preventivas.
 ## Fase 1: Inspección
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](https://raw.githubusercontent.com/igimenom/castores/refs/heads/main/ipe/reto1/image.png)
+![alt text](https://raw.githubusercontent.com/igimenom/castores/refs/heads/main/ipe/reto1/image-1.png)
+![alt text](https://raw.githubusercontent.com/igimenom/castores/refs/heads/main/ipe/reto1/image-2.png)
+![alt text](https://raw.githubusercontent.com/igimenom/castores/refs/heads/main/ipe/reto1/image-3.png)
+![alt text](https://raw.githubusercontent.com/igimenom/castores/refs/heads/main/ipe/reto1/image-4.png)
+![alt text](https://raw.githubusercontent.com/igimenom/castores/refs/heads/main/ipe/reto1/image-5.png)
 ### En esta fase observamos las imágenes y cada responsable del equipo aporta un análisis desde su función en la PRL.
 #### Primera imagen
 **Responsable de riesgos**: Hay cajas y cables de por medio con riesgo de caerse
@@ -214,8 +214,8 @@ Por ejemplo:
 #### Debéis seleccionar los 5 riesgos que consideráis prioritarios.
 
 #### Para ello, utilizad la siguiente escala:
-![alt text](image-6.png)
-![alt text](image-7.png)
+![alt text](https://raw.githubusercontent.com/igimenom/castores/refs/heads/main/ipe/reto1/image-6.png)
+![alt text](https://raw.githubusercontent.com/igimenom/castores/refs/heads/main/ipe/reto1/image-7.png)
 
 #### **Matriz de priorización**: siendo 1 el riesgo más importante y 5 el menos.
 
@@ -274,7 +274,7 @@ No, en absoluto. Los EPIs (como calzado de seguridad o guantes) solo amortiguan 
 Tras lo realizado hasta ahora, es el momento de que vuestro equipo entregue un:
 #### INFORME DE IDENTIFICACIÓN DE RIESGOS DEL CPD
 Este informe lo usaremos para la presentación.
-Ver [aquí presentación](https://docs.google.com/presentation/d/12FZGeHTsJ4eGV8-03vteXR1szjBe9gPT7l0EXs7yrwg/edit?usp=sharing).
+Ver [aquí presentación](https://docs.google.com/presentation/d/12Z__bVeBdn2MpxoV-3wM9TGGplyyR76tNNW7_ENSN6w/edit?usp=sharing).
 ## Fase 8: Defensa del reto.
 Presentaremos el informe al resto de la clase y nos harán preguntas.
 ## RETO EXTRA
