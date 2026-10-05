@@ -1,3 +1,14 @@
+---
+title: MANUAL PARA CREAR PORTADAS
+subtitle: Guía sencilla para crear portadas para documentos Markdown
+author: Luis GuLo
+date: 2025
+abstract: |
+  Este documento es una guia sencilla en el que se muestra como incluir
+  una imagen en una portada de una manual.
+
+  No tiene otra pretensión ni complicacion.
+---
 # Reto 1: El CPD no es un lugar seguro
 Fecha de entrega: 6 de octubre de 2026
 
