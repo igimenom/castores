@@ -53,6 +53,10 @@ flowchart LR
 
 Preguntas: ¿qué bicicletas están circulando ahora? ¿Cuántas hay en la estación `E-07`?
 
+```text
+ESTACIÓN(id_codigo PK, direccion, num_anclajes)
+BICICLETA(id_num_bici PK, tipo)
+```
 ---
 
 ## 2 · Clubes de e-sports
