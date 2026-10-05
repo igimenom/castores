@@ -25,6 +25,7 @@ repositorio, como dice el encargo.
 | [`ejercicios-er-1.md`](ejercicios-er-1.md) | Cuatro ejercicios de E/R y paso a tablas, de dificultad creciente. Se entregan |
 | [`ejercicios-er-2.md`](ejercicios-er-2.md) | Los siete ejercicios que se corrigieron en la pizarra (P1–P7), con la solución debajo de cada uno. Para repasar |
 | [`ejercicios-er-3-equipos/`](ejercicios-er-3-equipos/) | Los cinco ejercicios de equipo (G1–G5). El vuestro es el que se repartió en clase; los otros cuatro están aquí para que podáis seguir las presentaciones de los demás |
+| [`ejercicios-er-4.md`](ejercicios-er-4.md) | Nueve ejercicios de paso a tablas (reglas 1 a 3), por parejas en clase: siete con el E/R ya dado, uno en el que hacéis vosotros el E/R y uno al revés, de las tablas al E/R |
 | [`investigacion-1-gestores.md`](investigacion-1-gestores.md) | Investigación del gestor asignado a vuestro equipo: ficha de 17 campos y prueba en línea. Es el entregable **E2** del reto |
 
 ## Cómo se usa
