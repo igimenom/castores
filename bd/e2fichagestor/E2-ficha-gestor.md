@@ -8,7 +8,7 @@ Equipo: Castores · Integrantes: Bruno, Javier, Iván y Marcos.
 |---|---|---|---|
 | 1 | Quién lo desarrolla y desde cuándo. ¿Nació de otro producto? | Lo desarrolla la comunidad de código abierto PostgreSQL Global Develpmoent Group desde 1996. Primero, el proyecto POSTGRES (1986), que nació como sucesor del sistema INGRES. Posteriormente, unos estudiantes Andrew Yu y Jolly Chen agregaron unn intérprete  de lenguaje SQL, creando Postgre95. Finalmente, en 1996 llega el actual PostgreSQL con total compatbilidad a SQL. | https://www.todopostgresql.com/preguntas-y-respuestas-sobre-postgresql/ |
 | 2 | Licencia: libre o de pago. Cuál exactamente. ¿Hay versión gratuita? ¿Ha cambiado de licencia? (apartado 6) | PostgreSQL es gratuito y de código abierto. Su licencia es PostgreSQL License similar a las MIT/BSD.  | https://www.postgresql.org/about/licence/ |
-| 3 | Dos empresas u organizaciones conocidas que lo usan | Apple, Spotify, Instagram, Uber, NASA o Reddit. | |
+| 3 | Dos empresas u organizaciones conocidas que lo usan | Apple, Spotify, Instagram, o Nebulas X. | https://nubecolectiva.com/blog/5-empresas-o-proyectos-que-usan-postgresql/ |
 
 ## 2. Cómo guarda los datos
 
