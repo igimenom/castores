@@ -139,21 +139,25 @@ lo que es cada cosa de este.
 * Iván; corrección CSS y matriz de compatbilidad.
 * Marcos; matriz de comaptibilidad en HTML y comentarios CSS.
 
-## Día 13; 1/09/2026
+## Día 13; 1/10/2026
 
 * Bruno; organización del kanban, cuaderno de bitácora, y comentar css.
 * Javier; documentación de todo el proceso.
 * Iván; revisión HTML, CSS y sus respectivo comentarios y añadir elementos al footer. 
 * Marcos; ajustes del diagrama e/r con su matriz de compatibilidad y web tree y matriz de compatibilidad.
 ---
-## Día 14; 2/09/2026
+## Día 14; 2/10/2026
 * Bruno; organización del kanban, cuaderno de bitácora, y comentar css.
 * Javier; propuesta de transformación digital
 * Iván; continuación documentación del proceso.
 * Marcos; fases bitácora.
-
+---
+## Día 15; 5/10/2026
+* Bruno; ayudar a marcos.
+* Javier; presentación del reto
+* Iván; tarea bases de datos.
+* Marcos; tareas de ipe, presentación de IPE y otras de tareas menores de IPE.
 ### TAREAS PENDIENTES
 * docuemtnación del proceso.md
-* fases del proceso
-* terminar tarea bases de datos
-* terminar presentación y docu ipe
+* terminar tarea bases de datos iván
+* terminar presentación y docu ipe marcos
