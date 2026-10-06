@@ -157,6 +157,12 @@ lo que es cada cosa de este.
 * Javier; presentación del reto
 * Iván; tarea bases de datos.
 * Marcos; tareas de ipe, presentación de IPE y otras de tareas menores de IPE.
+---
+## Día 16; 6/10/2026
+* Bruno; ayudar a marcos.
+* Javier; presentación del reto.
+* Iván; tarea bases de datos.
+* Marcos; formulario html
 ### TAREAS PENDIENTES
 * docuemtnación del proceso.md
 * terminar tarea bases de datos iván
