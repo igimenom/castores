@@ -176,36 +176,37 @@ Espacio: aula y taller de inventario con puestos ordenados y zona de almacenamie
 
 ## 6. Desarrollo del proyecto
 ### 6.1. Análisis y diseño
-[Análisis del material](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/P%C3%A1gina_principal.html).
+[Análisis del material](../Página%20web/html/Página_principal.html).
 
-[Compatibilidad del equipo recuperado](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/matrizCompatibilidad.html).
+[Compatibilidad del equipo recuperado](../Página%20web/html/matrizCompatibilidad.html).
 
-[Diseño de la base de datos](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/P%C3%A1gina_principal.html).
+[Diseño de la base de datos](../Página%20web/html/Página_principal.html).
 
 ### 6.2. Tecnologías/Herramientas empleadas
-Gestión de tareas: Github Projects Kanban.
-Modelado: Draw.io.
-Sistema Operativo: Linux Mint y Windows 11.
-Diagnóstico: MemTest86, Cpu-X, Furmark, HWinfo64, Msiafterburner.
-Documentación y evidencias: Github, drive compartido, fotos. 
+* Gestión de tareas: Github Projects Kanban.
+* Modelado: Draw.io.
+* Sistema Operativo: Linux Mint y Windows 11.
+* Diagnóstico: MemTest86, Cpu-X, Furmark, HWinfo64, Msiafterburner.
+* Documentación y evidencias: Github, drive compartido, fotos. 
 ### 6.3. Partes contratantes
 Al ser un proyecto académico, no hay contratación real, pero se identifican las partes:
 
-Cliente: Campus digital
-Equipo desarrollador: Castores(Marcos, Iván, Javier, Bruno), alumnado de 1º de ASIR.
-Supervisión: Abraham Bartolomé Hernández, David Gascueña Ferre, María José González Naya, Javier Orna Sáez.
+* *Cliente*: Campus Digital
+* Equipo desarrollador: Grupo Castores (Marcos, Iván, Javier, Bruno), alumnado de 1º de ASIR.
+* Supervisión: Abraham Bartolomé Hernández, David Gascueña Ferre, María José González Naya, Javier Orna Sáez.
 ### 6.4. Presupuesto
-0€
+Para este proyecto no podemos gastar ni un solo euro, hay que acudir al material ya existente y a software o servicios gratuitos.
 ### 6.6. OPCIONAL: Análisis de riesgos
-Riesgo	Probabilidad	Impacto	Medida de mitigación
-Riesgo: Componentes incompatibles o defectuosos	Probabilidad: Media	Impacto:Alto Medida de mitigación: Verificar especificaciones y probar con componentes conocidos
-Riesgo: Daño por electricidad estática	Probabilidad: Media	Impacto: Alto	Medida de mitigación: Pulsera antiestática, manipulación correcta
-Riesgo: Encontrar datos personales en discos	Probabilidad: Baja	Impacto: Alto	Medida de mitigación: No acceder, avisar inmediatamente al profesorado
-Riesgo: Pérdida de datos del inventario	Probabilidad: Baja	Impacto: Alto	Medida de mitigación: Copias de seguridad, claves y restricciones
-Riesgo: Desigual conocimiento en el equipo	Media	Alto	Medida de mitigación: Rotación de roles y que los que mas sepan de ese tema ayuden al principio a los que no lo habian hecho antes
+| Riesgo | Probabilidad | Impacto | Medida de mitigación |
+| :--- | :--- | :--- | :--- |
+| **Componentes incompatibles o defectuosos** | Media | Alto | Verificar especificaciones y probar con componentes conocidos |
+| **Daño por electricidad estática** | Media | Alto | Pulsera antiestática, manipulación correcta |
+| **Encontrar datos personales en discos** | Baja | Alto | No acceder, avisar inmediatamente al profesorado |
+| **Pérdida de datos del inventario** | Baja | Alto | Copias de seguridad, claves y restricciones |
+| **Desigual conocimiento en el equipo** | Media | Alto | Rotación de roles y que los que más sepan de ese tema ayuden al principio a los que no lo habían hecho antes |
 
 ## 7. Pruebas y validación
-Pruebas de hardware:
+### Pruebas de hardware:
 ![Actualizar la BIOS](./Documentación/img/bios.jpeg)
 Actualizar la BIOS
 ![Inicio Linux Mint](./Documentación/img/linux_mint.jpeg)
@@ -241,18 +242,28 @@ Temperaturas en la Bios
 ![Intervenciones del equipo](./Documentación/img/destornillador.jpg)
 ## 9. Conclusiones
 ### 9.1. Desviación sobre la planificación inicial
-Se retrasaron: Desmontar el ordenador debido a que el disipador estaba pegado con la pasta termica. Linux no arrancaba y tuvimos que instalar el windows 11. Tuvimos que volver a bajar a la sala de inventario para registrar las 2 cajas de los equipos 1 y 2
-Se adelantaron: El web tree. El mockup. 
-### 9.2. Resultados obtenidos y posibles mejoras futuras
-Resultados: Conseguir que el EQ_00 sea funcional y sus componentes esten perfecto funcionamiento.
-Hemos conseguido 3 equipos completos y 36 elemntos extras.
-Como propuesta de digitalización hemos pensado:
+Reconocer que hubo tanto tareas que se retrasaron como algunas que se adelantaron.
 
-Para mejoras futuras:
-Pasar el html a CMS para asi poder mantener más fácil y rápido la página y editar sin tener gran conocimiento de programación. 
-Subir la página a Internet para que se pueda acceder al inventario de forma sencilla. 
+Por ejemplo, a la hora de desmontar el ordenador, tuvimos un problema; el disipador estaba pegado con la pasta térmica lo que provocó un retraso sobre la panificación inicial. Se documenta otro retraso; Linux dejó de arrancar y probamos a instalar Windows 11, sospechamos que el problema estaba en el disco duro debido a que el equipo se apaga al cabo de un rato encendido. Además, como se nos olvidó apuntar algunos componentes tuvimos que bajar una vez más a la sala de inventario.
+
+Sin embargo otras tareas se adelantaron; tales como el árbol de la web o el prototipo (`mockup`).
+### 9.2. Resultados obtenidos y posibles mejoras futuras
+Hemos conseguido;
+* inventariar equipos y componentes (Google Sheets)
+* página web funcional con el inventario (HTML, CSS)
+* diagrama e/r de los componentes y equipos (draw.io)
+#### Propuesta de digitalización
+El objetivo de la propuesta de didigtalización en un proyecto o empresa es el proceso donde éstas adoptan tecnologías digitales con el objetivo de mejorar su eficiencia y adaptandose a las nuevas necesidades del mundo digital.
+
+En nuestro caso hemos propuesto una serie de mejoras futuras:
+
+* Pasar el HTML a CMS para asi poder mantener más fácil y rápido la página y editar sin tener tantos conocimiento técnicos. 
+* Subir la página a Internet para que se pueda acceder al inventario de forma sencilla. 
+* Pasar la hoja de cálculo (Google Sheets) a una base de datos con PostgreSQL.
+* Registrar cada equipo y componente con un identificador único (consistente en el tiempo). 
+* Cada equipo y componente tiene una etiqueta RFID, y además la sala debería contar con una zona RFID en la entrada/salida de la zona de inventario. De esta forma, se registra cuando una persona retira o añade componentes nuevos gracias a su etiqueta.
 ### 9.3. Valoración personal
-Hemos aprendido mucho haciendo un trabajo maravilloso mientras ibamos forjando lazos entre los compañeros y aprendiendo cosas nuevas muy interesantes y importantes para nuestro futuro. Los compañeros de Bachillerato han aprendido muchas cosas nuevas que les han enseñado los compañeros de SMR.
+Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad para adaptarnos a esta nueva forma de trabajo más colaborativa y menos guiada con respecto a lo que estabamos acostumbrados. Como consecuencia, hemos forjado grandes lazos de amistad entre todos. Además hemos desarrollado la paciencia que tan necesaria ha sido para los integrantes de SMR, que tuvieron que cargarse con lo más técnico, mientras que, los exalumnos de Bachillerato colaboraron más en la parte creativa.
 ## 10. Bibliografía
 * (HTML: Lenguaje de Marcado de Hipertexto | MDN, 2026)
 * CSS | MDN. (2026, 11 septiembre). https://developer.mozilla.org/es/docs/Web/CSS
