@@ -163,6 +163,12 @@ lo que es cada cosa de este.
 * Javier; presentación del reto.
 * Iván; tarea bases de datos.
 * Marcos; formulario html
+---
+## Día 17; 7/10/2026
+* Bruno; 
+* Javier; presentación del reto.
+* Iván; documentación de todo el proceso.
+* Marcos; revisión conjunta de la documentación con Iván siguiendo las pautas de la lista de cotejo.
 ### TAREAS PENDIENTES
 * docuemtnación del proceso.md
 * terminar tarea bases de datos iván

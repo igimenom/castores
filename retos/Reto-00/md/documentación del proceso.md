@@ -253,7 +253,7 @@ Hemos conseguido;
 * inventariar equipos y componentes (Google Sheets)
 * página web funcional con el inventario (HTML, CSS)
 * diagrama e/r de los componentes y equipos (draw.io)
-#### Propuesta de digitalización
+#### Propuesta de digitalización (futura)
 El objetivo de la propuesta de didigtalización en un proyecto o empresa es el proceso donde éstas adoptan tecnologías digitales con el objetivo de mejorar su eficiencia y adaptandose a las nuevas necesidades del mundo digital.
 
 En nuestro caso hemos propuesto una serie de mejoras futuras:
