@@ -259,7 +259,7 @@ El objetivo de la propuesta de didigtalización en un proyecto o empresa es el p
 En nuestro caso hemos propuesto una serie de mejoras futuras:
 
 * Pasar el HTML a un sistema de gestión de contenidos para asi poder mantener más fácil y rápido la página y editar sin tener tantos conocimiento técnicos. El tiempo de publicación de contenidos se reduce considerablemente y además, permite gestionar de forma automática la estructura.
-* Subir la página a Internet para que se pueda acceder al inventario de forma sencilla. 
+* Subir la página a Internet para que se pueda acceder al inventario de forma sencilla. En este caso, como el inventario no es de gran valor sería simplemente suficiente con colgarlo a Internet de forma pública (tal y como hace la Universidad de Zaragoza https://lonja.unizar.es/catalogo/) sin tener que configurar VPN o IP's públicas.
 * Pasar la hoja de cálculo (Google Sheets) a una base de datos con PostgreSQL.
 * Registrar cada equipo y componente con un identificador único (consistente en el tiempo). 
 * Cada equipo y componente tiene una etiqueta RFID, y además la sala debería contar con una zona RFID en la entrada/salida de la zona de inventario. De esta forma, se registra cuando una persona retira o añade componentes nuevos gracias a su etiqueta.
