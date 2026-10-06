@@ -103,7 +103,6 @@ Sostenibilidad y protección de datos: reutilización frente a residuo electrón
 9. Organización: puesto y material ordenados al terminar cada sesión.
 ## 5. Planificación
 ### 5.1. Fases del proyecto
-# Memoria de Trabajo: Puesta a Punto e Inventario de Equipos
 
 ---
 
@@ -254,7 +253,7 @@ Para mejoras futuras:
 Pasar el html a CMS para asi poder mantener más fácil y rápido la página y editar sin tener gran conocimiento de programación. 
 Subir la página a Internet para que se pueda acceder al inventario de forma sencilla. 
 ### 9.3. Valoración personal
-Hemos aprendido mucho haciendo un trabajo maravilloso mientras ibamos forjando lazos entre los compañeros y aprendiendo cosas nuevas muy interesantes y importantes para nuestro futuro. Los compañeros de Bachillerato han aprendido muchas cosas nuevas que les han enseñado los compañeros de SMR.
+Hemos aprendido mucho haciendo un trabajo maravilloso mientras ibamos forjando lazos entre los compañeros y aprendiendo cosas nuevas muy interesantes e importantes para nuestro futuro. Los compañeros de Bachillerato han aprendido muchas cosas nuevas que les han enseñado los compañeros de SMR.
 ## 10. Bibliografía
 * (HTML: Lenguaje de Marcado de Hipertexto | MDN, 2026)
 * CSS | MDN. (2026, 11 septiembre). https://developer.mozilla.org/es/docs/Web/CSS
