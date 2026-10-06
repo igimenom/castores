@@ -103,7 +103,6 @@ Sostenibilidad y protección de datos: reutilización frente a residuo electrón
 9. Organización: puesto y material ordenados al terminar cada sesión.
 ## 5. Planificación
 ### 5.1. Fases del proyecto
-# Memoria de Trabajo: Puesta a Punto e Inventario de Equipos
 
 ---
 
@@ -146,9 +145,11 @@ Para validar la estabilidad del equipo, **Marcos** y **Javier** ejecutaron prueb
 * **CrystalDiskInfo:** Análisis del estado de salud y errores del disco duro.
 
 ### Desarrollo y Maquetación Web
-**Bruno** e **Iván** diseñaron los bocetos iniciales (*mockups*). **Marcos** definió el árbol de la web (*web tree*) para organizar la estructura de las páginas HTML, mientras que **Javier** migró las tablas de Excel e inventario a código HTML y creó las secciones del equipo. El diseño visual se maquetó entre **Bruno**, **Javier** e **Iván** utilizando CSS. Finalmente, el equipo optimizó el código limpiando etiquetas innecesarias, **Marcos** adaptó la matriz de compatibilidad a formato HTML e **Iván** y **Javier** ajustaron la estructura general y el pie de página 
+**Bruno** e **Iván** diseñaron los bocetos iniciales (*mockups*). **Marcos** definió el árbol de la web (*web tree*) para organizar la estructura de las páginas HTML, mientras que **Javier** migró las tablas de Excel e inventario a código HTML y creó las secciones del equipo. El diseño visual se maquetó entre **Bruno**, **Javier** e **Iván** utilizando CSS. Finalmente, el equipo optimizó el código limpiando etiquetas innecesarias, **Marcos** adaptó la matriz de compatibilidad a formato HTML e **Iván** y **Javier** ajustaron la estructura general y el pie de página.
 
-Para cerrar esta fase, **Marcos** y **Bruno** desarrollaron el Diagrama Entidad-Relación (E/R), **Javier** redactó el informe de incidencias y **Bruno** preparó la presentación final.
+Y por último **Marcos** hizo el formulario de contacto para la recogida de datos sobre incidencias técnicas. Ha configurado los atributos name y value de los campos para estructurar la información de forma clara y ha integrado la API de Web3Forms para recibir las respuestas automáticamente por correo electrónico sin necesidad de servidor propio.
+
+
 
 ### Bases de Datos y Documentación Final
 En el apartado de gestión de datos, **Marcos** y **Bruno** desarrollaron el Diagrama Entidad-Relación del proyecto. Por su parte, **Javier** redactó el informe de incidencias y **Bruno** preparó el material para la presentación final.
@@ -159,7 +160,7 @@ En el apartado de gestión de datos, **Marcos** y **Bruno** desarrollaron el Dia
 
 * **Material e Instrumental:** Destornilladores (plano y estrella), secador de aire caliente y memorias USB de instalación.
 * **Sistemas y Herramientas Utilizadas:** Ventoy, Linux Mint, Windows 11, Hiren's Boot (`diskpart`), OCCT, CPU-Z, GPU-Z, Memtest64, HWInfo, Unigine Heaven y CrystalDiskInfo.
-* **Principales Decisiones:** Migración a Windows 11 LTSC tras fallos de arranque en Linux, formateo profundo con `diskpart` y activación del perfil XMP en la BIOS.
+* **Principales Decisiones:** Migración a Windows 11 LTSC tras fallos de arranque en Linux, formateo profundo con `diskpart` y activación del perfil XMP en la BIOS. Posteriormente debido a repentinos apagados pasados 5 minutos encendido, sospechabamos del ssd y decidimos bootear windows desde el usb y ya no daba ningun problema.
 
 ### 5.2. Cronograma de trabajo 
 [Kanban](https://github.com/users/igimenom/projects/1/views/1)

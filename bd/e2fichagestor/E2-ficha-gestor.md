@@ -23,7 +23,7 @@ Equipo: Castores · Integrantes: Bruno, Javier, Iván y Marcos.
 | # | Campo | Respuesta | Fuente (URL) |
 |---|---|---|---|
 | 7 | Dentro de la aplicación (embebido), en un servidor al que se conectan los clientes, o como servicio en la nube (apartado 5.1) | Se define como modelo cliente-servidor. Técnicamente, se divide en un proceso de servidor (administra los archivos de la base de datos) y en la aplicación cliente (como una aplicación gráfica). |https://www.postgresql.org/docs/current/tutorial-arch.html||
-| 8 | ¿Puede repartir o copiar los datos entre varias máquinas? ¿Cómo se llama eso en este gestor? (apartado 5.2) | Sí. Cuando necesitas que toda la base de datos se copie exactamente igual en otros servidores, el concepto técnico se llama *replicación*. . Si el objetivo es romper una base de datos masiva en múltiples servidores porque ya no cabe en uno, tu término es *fragmentación*.| |
+| 8 | ¿Puede repartir o copiar los datos entre varias máquinas? ¿Cómo se llama eso en este gestor? (apartado 5.2) | Sí. Cuando necesitas que toda la base de datos se copie exactamente igual en otros servidores, el concepto técnico se llama *replicación*. . Si el objetivo es romper una base de datos masiva en múltiples servidores porque ya no cabe en uno, tu término es *fragmentación*.| https://cloud.google.com/discover/what-is-database-sharding?hl=es |
 | 9 | Sistemas operativos en los que funciona | Funciona en Linux, Windows, macOS, UNIX y BSD. Actualmente, lo más común es la instalación en contenedores tales como Docker o Kubernetes.| https://cloud.google.com/learn/postgresql-vs-sql?hl=es |
 
 ## 4. Qué ofrece como gestor
@@ -31,8 +31,8 @@ Equipo: Castores · Integrantes: Bruno, Javier, Iván y Marcos.
 | # | Campo | Respuesta | Fuente (URL) |
 |---|---|---|---|
 | 10 | Lenguaje: ¿SQL u otro? Un ejemplo de cómo se pide «el equipo EQ-04» (apartado 3.3) | ``` SELECT * FROM equipos WHERE id = EQ-04 ``` | https://learnsql.es/blog/20-ejemplos-de-consultas-sql-basicas-para-principiantes-una-vision-completa/ |
-| 11 | ¿Tiene transacciones? ¿Cumple ACID del todo, en parte o no? (apartado 3.2) | Sí, PostgreSQL tiene transacciones y cumple las reglas ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad) del todo. Gestiona las transacciones mediante MVCC (Multiversion Concurrency Control); un método que usan las bases de datos para permitir que varios usuarios lean y escriban datos al mismo tiempo sin bloquearse entre sí. | |
-| 12 | ¿Tiene usuarios y permisos propios? (apartado 3.4) | PostgreSQL ...| https://www.postgresql.org/docs/current/user-manag.html https://aws.amazon.com/es/blogs/aws-spanish/managing-postgresql-users-and-roles/ |
+| 11 | ¿Tiene transacciones? ¿Cumple ACID del todo, en parte o no? (apartado 3.2) | Sí, PostgreSQL tiene transacciones y cumple las reglas ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad) del todo. Gestiona las transacciones mediante MVCC (Multiversion Concurrency Control); un método que usan las bases de datos para permitir que varios usuarios lean y escriban datos al mismo tiempo sin bloquearse entre sí. |https://xomalli.blogspot.com/2013/03/entendiendo-transacciones-con-postgresql.html https://www.geeksforgeeks.org/postgresql/multiversion-concurrency-control-mvcc-in-postgresql/ |
+| 12 | ¿Tiene usuarios y permisos propios? (apartado 3.4) | Sí, se pueden crear usuarios y roles con permisos granulares (leer, modificar, etc). Cada usuario o rol tiene asignados unos permisos especficios para cada objeto de la bases de datos. | https://www.postgresql.org/docs/current/user-manag.html https://aws.amazon.com/es/blogs/aws-spanish/managing-postgresql-users-and-roles/ |
 | 13 | Una herramienta gráfica para administrarlo o consultarlo | pgAdmin, disponible para Windows, Linux y macOS y en contenedores. | https://openwebinars.net/blog/pgadmin-para-novatos-como-gestionar-bases-de-datos-sin-complicaciones/ |
 
 ## 5. Valoración

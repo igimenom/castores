@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iván Gimeno, Marcos Sánchez, Javier Martínez, Bruno Coscojuela">
+    <meta name="description" content="Inventario de discos duros en la sala R4">
+    <meta name="copyright" content="© 2026 Grupo Castores S.L.">
+    <meta name="keywords" content="hardware, inventario, tabla">
+    <title>Castores | Inicio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../../media/logobg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+    <!-- CABECERA PRINCIPAL -->
+    <header>
+        <img class="imgHeader" src="../../media/logobg.png" alt="Logotipo de Castores S.L." width="20%">
+        <h1>
+            <a class="headerCastor" href="../html/Página_principal.html">Castores</a>
+        </h1>
+    </header>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="1b043d6b-b2e2-4a13-9e72-b44a675e5f89">
+
+            <h2>1. Datos del Solicitante</h2>
+            <label>Nombre:</label>
+            <input type="text" name="Nombre" required>
+            <br>
+
+            <label>Correo electrónico del centro: </label>
+            <input type="email" name="Email" placeholder="ejemplo@campusdigitalfp.com" required>
+            <br>
+
+            <label>Fecha de incidencia:</label>
+            
+            <input type="date" name="Fecha_incidencia">
+            <br><br>
+
+            <h2>2. Tipo de Consulta o Incidencia</h2>
+            <label>Tipo de incidencia: </label>
+            <br>
+            
+            <input type="radio" id="rotura" name="Tipo_incidencia" value="Rotura / Avería">
+            <label for="rotura">Rotura / Avería</label>
+            <br>
+            
+            <input type="radio" id="solicitud" name="Tipo_incidencia" value="Solicitud de Material">
+            <label for="solicitud">Solicitud de Material</label>
+            <br>
+            
+            <input type="radio" id="perdida" name="Tipo_incidencia" value="Pérdida / Extravío">
+            <label for="perdida">Pérdida / Extravío</label>
+            <br>
+            
+            <input type="radio" id="sugerencia" name="Tipo_incidencia" value="Consulta / Sugerencia">
+            <label for="sugerencia">Consulta / Sugerencia</label>
+            <br><br>
+
+            <h2>3. Ordenadores / Tipo de pc afectado</h2>
+            
+            <input type="checkbox" id="sobremesa" name="Tipo_ordenador[]" value="Pc Sobremesa / Torre">
+            <label for="sobremesa">Pc Sobremesa / Torre</label>
+            <br>
+
+            <input type="checkbox" id="portatil" name="Tipo_ordenador[]" value="Ordenador Portátil">
+            <label for="portatil">Ordenador Portátil</label>
+            <br>
+
+            <input type="checkbox" id="aio" name="Tipo_ordenador[]" value="All in One">
+            <label for="aio">All in One</label>
+            <br>
+
+            <input type="checkbox" id="minipc" name="Tipo_ordenador[]" value="Mini PC">
+            <label for="minipc">Mini PC</label>
+            <br><br>
+
+            <h2>4. Componente de ordenador afectado</h2>
+            
+            <select name="Componente" id="componente">
+                <option value="Procesador (CPU)">Procesador</option>
+                <option value="Tarjeta Gráfica (GPU)">Tarjeta Gráfica</option>
+                <option value="Memoria RAM">Memoria RAM</option>
+                <option value="Disco Duro / SSD">Disco Duro / SSD</option>
+                <option value="Fuente de alimentación">Fuente de alimentación</option>
+                <option value="Placa base">Placa base</option>
+                <option value="Tarjeta de red">Tarjeta de red</option>
+                <option value="Ventiladores">Ventiladores</option>
+                <option value="Periféricos">Periféricos</option>
+                <option value="Cables y adaptadores">Cables y adaptadores</option>
+                <option value="Otro componente">Otro componente</option>
+            </select>
+            <br><br>
+
+            <h2>Comentarios:</h2>
+            
+            <textarea name="Comentarios" rows="4" cols="50"></textarea>
+            <br><br>
+
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <!-- PIE DE PÁGINA Y NAVEGACIÓN -->
+    <footer>
+        <p>Grupo Castores S.L.</p>
+        <nav>
+            <ul>
+                <li><a href="Página_principal.html">Inicio</a></li>
+                <li><a href="./Inventario/equipos.html" target="_blank">Equipos</a></li>
+                <li><a href="./Inventario/discos_duros.html" target="_blank">Discos duros</a></li>
+                <li><a href="./Inventario/fuentes_alimentacion.html" target="_blank">Fuentes de alimentación</a></li>
+                <li><a href="./Inventario/ram.html" target="_blank">Memoria RAM</a></li>
+                <li><a href="./Inventario/placas_base.html" target="_blank">Placa base</a></li>
+            </ul>
+            <ul>
+                <li><a href="./Inventario/tarjetas_graficas.html" target="_blank">Tarjetas gráficas</a></li>
+                <li><a href="./Inventario/disipadores.html" target="_blank">Disipadores</a></li>
+                <li><a href="./Inventario/lectoras_disco.html" target="_blank">Lectoras de disco</a></li>
+                <li><a href="./Inventario/procesadores.html" target="_blank">Procesadores</a></li>
+                <li><a href="glosario.html" target="_blank">Glosario</a></li>
+                <li><a href="matrizCompatibilidad.html" target="_blank">Matriz de compatibilidad</a></li>
+            </ul> 
+        </nav>
+        <a href="#top" class="btnArriba" title="Volver al inicio">↑</a>
+        <p>© 2026</p>
+    </footer>
+</body>
+</html>
