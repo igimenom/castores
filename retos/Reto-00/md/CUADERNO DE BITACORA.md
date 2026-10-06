@@ -169,6 +169,7 @@ lo que es cada cosa de este.
 * Javier; presentación del reto.
 * Iván; documentación de todo el proceso.
 * Marcos; revisión conjunta de la documentación con Iván siguiendo las pautas de la lista de cotejo.
+#### pregunta: la documentación es correcta¿?¿?¿?
 #### pregunta: la propuesta de digitalización en que sección se mete
 ### TAREAS PENDIENTES
 * docuemtnación del proceso.md

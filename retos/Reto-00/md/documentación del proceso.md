@@ -45,7 +45,7 @@ Finalmente, la ejecución de todas estas actividades se sustentará en un modelo
 
 
 ## 2. Análisis del contexto y justificación de la propuesta 
-Situación de partida. El centro cuenta con material informático con mucha diferencia de antigüedad. Por lo que nos resulta difícil saber qué material hay, en qué estado está, qué características tiene, qué componentes son compatibles entre sí y qué equipos son recuperables.
+**¿Cuál es el problema?**. El centro cuenta con material informático con mucha diferencia de antigüedad. Por lo que nos resulta difícil saber qué material hay, en qué estado está, qué características tiene, qué componentes son compatibles entre sí y qué equipos son recuperables.
 
 No se trata solo de un problema técnico como reparar ordenadores, sino de gestión de la información: sin un registro fiable se duplican esfuerzos, se pierde material aprovechable y no se pueden tomar las decisiones correctas.
 
@@ -163,13 +163,10 @@ En el apartado de gestión de datos, **Marcos** y **Bruno** desarrollaron el Dia
 * **Principales Decisiones:** Migración a Windows 11 LTSC tras fallos de arranque en Linux, formateo profundo con `diskpart` y activación del perfil XMP en la BIOS. Posteriormente debido a repentinos apagados pasados 5 minutos encendido, sospechabamos del ssd y decidimos bootear windows desde el usb y ya no daba ningun problema.
 
 ### 5.2. Cronograma de trabajo 
+Para la organziación diaria del trabajo hemos utilizado dos herramientas clave: un cuaderno de bitácora que asigna las tareas para cada día y para cada compañero, y además, bemos utilizado la plantilla de Kanban en Github Projects donde gestionar el trabajo en tarjetas para las tareas (pendiente, realizado, trabajando, revisando y finalizado.)
 [Kanban](https://github.com/users/igimenom/projects/1/views/1)
-[Kanban](https://github.com/users/igimenom/projects/1/views/1)
+[Cuaderno de bitácora](./CUADERNO%20DE%20BITACORA.md)
 ### 5.3. Recursos necesarios 
-Humanos: equipo de 4 compañeros y profesorado como supervisión.
-Hardware: equipos, componentes y periféricos del centro; herramientas de montaje (destornilladores, boligrafo probador de voltaje), equipo de prueba (monitor y teclado) y USB para instalar el sistema operativo.
-Software: sistema operativo primeramente siendo linux y despues para realizar mas benchmarks instalamos windows 11 pro, herramientas de modelado (draw.io), Kanban, herramientas de diagnóstico (MemTest86, smartctl…) y un repositorio compartido para la documentación.
-Espacio: aula y taller de inventario con puestos ordenados y zona de almacenamiento del material.
 Humanos: equipo de 4 compañeros y profesorado como supervisión.
 Hardware: equipos, componentes y periféricos del centro; herramientas de montaje (destornilladores, boligrafo probador de voltaje), equipo de prueba (monitor y teclado) y USB para instalar el sistema operativo.
 Software: sistema operativo primeramente siendo linux y despues para realizar mas benchmarks instalamos windows 11 pro, herramientas de modelado (draw.io), Kanban, herramientas de diagnóstico (MemTest86, smartctl…) y un repositorio compartido para la documentación.
@@ -249,7 +246,7 @@ Por ejemplo, a la hora de desmontar el ordenador, tuvimos un problema; el disipa
 
 Sin embargo otras tareas se adelantaron; tales como el árbol de la web o el prototipo (`mockup`).
 ### 9.2. Resultados obtenidos y posibles mejoras futuras
-Hemos conseguido;
+Hemos conseguido; ***(desarrollar más)***
 * inventariar equipos y componentes (Google Sheets)
 * página web funcional con el inventario (HTML, CSS)
 * diagrama e/r de los componentes y equipos (draw.io)
@@ -258,13 +255,13 @@ El objetivo de la propuesta de didigtalización en un proyecto o empresa es el p
 
 En nuestro caso hemos propuesto una serie de mejoras futuras:
 
-* Pasar el HTML a un sistema de gestión de contenidos para asi poder mantener más fácil y rápido la página y editar sin tener tantos conocimiento técnicos. El tiempo de publicación de contenidos se reduce considerablemente y además, permite gestionar de forma automática la estructura.
+* Pasar el HTML a un sistema de gestión de  (WordPress) para asi poder mantener más fácil y rápido la página y editar sin tener tantos conocimiento técnicos. El tiempo de publicación de contenidos se reduce considerablemente y además, permite gestionar de forma automática la estructura.
 * Subir la página a Internet para que se pueda acceder al inventario de forma sencilla. En este caso, como el inventario no es de gran valor sería simplemente suficiente con colgarlo a Internet de forma pública (tal y como hace la Universidad de Zaragoza https://lonja.unizar.es/catalogo/) sin tener que configurar VPN o IP's públicas.
-* Pasar la hoja de cálculo (Google Sheets) a una base de datos con PostgreSQL.
-* Registrar cada equipo y componente con un identificador único (consistente en el tiempo). 
-* Cada equipo y componente tiene una etiqueta RFID, y además la sala debería contar con una zona RFID en la entrada/salida de la zona de inventario. De esta forma, se registra cuando una persona retira o añade componentes nuevos gracias a su etiqueta.
+* Pasar la hoja de cálculo (Google Sheets) a una base de datos con PostgreSQL. La duplicidad o la falta de rendimiento, son problemas típicos de las hojas de cálculo en cuanto aumenta el volumen de datos a manejar. De modo que, se propone la migración compleeta a un sistema de gestión de bases de datos relacionales, que es conocido por su estabilidad y potencia. Se destacan funciones como la posibilidad de recibir cientos de peticiones simultáneas o la realización de consultas complejas.
+* Registrar cada equipo y componente con un identificador único (consistente en el tiempo). Con la migración a un sistema gestor de bases de datos se facilita la identificación de cada elemento del inventario.
+* El registro manual de entrada y salida de componentes no es para nada eficiente. Por tanto, la propuesta es; que cada equipo y componente tiene una etiqueta RFID, y además la sala debería contar con una zona RFID en la entrada/salida de la zona de inventario. De esta forma, se registra cuando una persona retira o añade componentes nuevos gracias a su etiqueta.
 ### 9.3. Valoración personal
-Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad para adaptarnos a esta nueva forma de trabajo más colaborativa y menos guiada con respecto a lo que estabamos acostumbrados. Como consecuencia, hemos forjado grandes lazos de amistad entre todos. Además hemos desarrollado la paciencia que tan necesaria ha sido para los integrantes de SMR, que tuvieron que cargarse con lo más técnico, mientras que, los exalumnos de Bachillerato colaboraron más en la parte creativa.
+Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad para adaptarnos a esta nueva forma de trabajo más colaborativa y menos guiada con respecto a lo que estabamos acostumbrados. Como consecuencia, hemos forjado grandes lazos de amistad entre todos. Además hemos desarrollado la paciencia que tan necesaria ha sido para los integrantes de SMR, que tuvieron que cargarse con lo más técnico (HTML o CSS), mientras que, los exalumnos de Bachillerato colaboraron más en la parte creativa (diseño).
 ## 10. Bibliografía
 * (HTML: Lenguaje de Marcado de Hipertexto | MDN, 2026)
 * CSS | MDN. (2026, 11 septiembre). https://developer.mozilla.org/es/docs/Web/CSS
