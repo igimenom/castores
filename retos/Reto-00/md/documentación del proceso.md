@@ -60,12 +60,42 @@ Es mantenible en el tiempo, porque la información queda estructurada y no depen
 ### 1. Gestión de Activos Informáticos (ITAM) y CMDB
 La **gestión de activos de Tecnologías de la Información** (**ITAM**, *IT Asset Management*) y las bases de datos de gestión de la configuración (**CMDB**, *Configuration Management Database*) constituyen la base operativa para supervisar, controlar e inventariar la infraestructura tecnológica de una organización. Mientras que la CMDB centra su atención en las relaciones, dependencias y servicios que prestan los elementos de configuración (*Configuration Items* o CIs), el enfoque ITAM abarca el control financiero, contractual y físico del hardware y software a lo largo de todo su ciclo de vida.
 
-Gestión de activos informáticos (ITAM/CMDB): conceptos de inventario de hardware, ciclo de vida del equipo y trazabilidad.
+El ciclo de vida del hardware dentro del almacén se divide en cinco etapas clave:
 
-Herramientas habituales de código abierto: GLPI, Snipe-IT, OCS Inventory / Fusion Inventory, NetBox. Comparar qué ofrece cada una (inventario, incidencias, agentes automáticos, coste, complejidad).
+1. **Planificación y Adquisición**: Registro de la necesidad, orden de compra y proveedor.
 
-Recuperación y reutilización de hardware: criterios de compatibilidad (socket, chipset, tipo de RAM, fuente de alimentación, interfaces de almacenamiento, BIOS/UEFI), diagnóstico (POST, pruebas de RAM utilizando Memtest86, SMART de discos) y reacondicionamiento.
+2. **Recepción e Inventariado**: Asignación de identificadores únicos (números de serie, códigos de barras o etiquetas QR) y registro inicial en stock.
 
+3. **Despliegue y Asignación**: Cambio de estado a "En uso", vinculando el equipo a un usuario, departamento o ubicación física.
+
+4. **Mantenimiento, Diagnóstico y Reacondicionamiento**: Período operativo donde el activo sufre reparaciones, sustitución de componentes (upgrades) o formateo para un nuevo ciclo de uso.
+
+5. **Baja y Desincorporación**: Proceso final impulsado por obsolescencia o avería irreparable, exigiendo el desguace por componentes reutilizables, borrado seguro de información y la gestión del residuo.
+
+La trazabilidad granular a nivel de componente resulta fundamental en la gestión de almacén. No basta con registrar el equipo completo (p. ej., un ordenador de sobremesa); es necesario auditar la composición interna (módulos de RAM, discos duros, procesadores, fuentes de alimentación y tarjetas de expansión) para permitir el intercambio de piezas entre sistemas en desuso (cannibalization) y garantizar la máxima disponibilidad de recambios.
+
+### 2. Análisis Comparativo de Herramientas de Código Abierto para ITAM/CMDB
+El ecosistema open source ofrece diversas soluciones para la gestión de activos, cada una orientada a un perfil operativo específico (Helpdesk integral, inventario puro de almacén o gestión de infraestructura de red/data center).
+
+* **GLPI**: Entornos corporativos que requieren gestión integral de inventario, contratos, licencias y mesa de ayuda.
+* **Snipe-IT**: Control estricto de entradas, salidas, asignación de componentes, consumibles y licencias a usuarios.
+* **OCS Inventory**: Auditoría rápida y automatizada del hardware y software instalado en redes heterogéneas.
+* **Netbox**: Gestión de racks, cableado, direcciones IP y equipamiento de red en centros de datos.
+
+### 3. Reutilización, Diagnóstico y Reacondicionamiento de Hardware
+El reacondicionamiento de equipos (*refurbishing*) requiere comprobar rigurosamente los parámetros de compatibilidad física y electrónica entre componentes, así como ejecutar protocolos de testeo previo a la incorporación al inventario activo.
+
+#### Criterios Técnicos de Compatibilidad
+* **Procesador** (CPU): Compatibilidad del socket físico (p. ej., LGA1200, LGA1700, AM4, AM5) y soporte específico del chipset de la placa base (verificado vía tabla de compatibilidad BIOS/UEFI).
+
+* **Memoria RAM**: Tipo de tecnología (DDR3, DDR4, DDR5), formato (DIMM para torre, SO-DIMM para portátiles/mini PCs), frecuencia máxima soportada por la controladora de memoria, latencias (CL) y soporte para memoria con/sin corrección de errores (ECC vs non-ECC).
+
+* **Fuente de Alimentación** (PSU): Formato mecánico (ATX, SFX, TFX), potencia nominal continuada, distribución y amperaje del raíl de +12V, y conectores disponibles (ATX 24-pin, EPS 12V 4+4 pin, PCIe 6+2 pin, conectores SATA/Molex).
+
+* **Interfaces de Almacenamiento**: Mosaico de conectores SATA III (6 Gbps), M.2 (diferenciando conectores Key B, Key M, y protocolos SATA vs NVMe PCIe Gen3/Gen4/Gen5) y bus de expansión PCIe (factor de forma y revisión del bus).
+
+* **Firmware** (BIOS / UEFI): Identificación del modo de arranque (Legacy BIOS frente a UEFI nativo), compatibilidad con esquemas de partición MBR o GPT, y soporte para tablas de claves de seguridad (Secure Boot).
+https://gemini.google.com/app/406d990317b0ebf1
 Sistemas operativos para hardware antiguo o limitado: distribuciones Linux ligeras (Lubuntu, Xubuntu, Linux Mint XFCE, entorno ligero), frente a Windows 10/11 (requisitos como TPM 2.0 y UEFI) u otras opciones.
 
 Bases de datos relacionales: modelo entidad-relación, normalización, y motores como MySQL/MariaDB, PostgreSQL o SQLite.
