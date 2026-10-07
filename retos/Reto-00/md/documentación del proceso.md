@@ -95,15 +95,66 @@ El reacondicionamiento de equipos (*refurbishing*) requiere comprobar rigurosame
 * **Interfaces de Almacenamiento**: Mosaico de conectores SATA III (6 Gbps), M.2 (diferenciando conectores Key B, Key M, y protocolos SATA vs NVMe PCIe Gen3/Gen4/Gen5) y bus de expansión PCIe (factor de forma y revisión del bus).
 
 * **Firmware** (BIOS / UEFI): Identificación del modo de arranque (Legacy BIOS frente a UEFI nativo), compatibilidad con esquemas de partición MBR o GPT, y soporte para tablas de claves de seguridad (Secure Boot).
-https://gemini.google.com/app/406d990317b0ebf1
-Sistemas operativos para hardware antiguo o limitado: distribuciones Linux ligeras (Lubuntu, Xubuntu, Linux Mint XFCE, entorno ligero), frente a Windows 10/11 (requisitos como TPM 2.0 y UEFI) u otras opciones.
 
-Bases de datos relacionales: modelo entidad-relación, normalización, y motores como MySQL/MariaDB, PostgreSQL o SQLite.
+#### Protocolo de Diagnósitco Operativo
+1. **Verificación de Encendido y POST** (*Power-On Self-Test*): Comprobación de la secuencia inicial de comprobación de hardware mediante el análisis de códigos emitidos por altavoz interno (beeps), LEDs de depuración (Debug LEDs) o tarjetas de diagnóstico PCI/PCIe.
+2. **Actualizar la BIOS**: El motivo es permitir la actualización para que puede reconoce nuevos componentes, corregir errores y el más importante; reparar fallos de seguridad.
 
-Herramientas de organización de proyectos: tableros Kanban (Trello, Planka, GitHub Projects, Notion).
+3. **Pruebas de rendimiento y estrés**: Son útiles para determinar que el hardware funciona a plena capacidad. Ejemplos; FurMark para tarjetas gráficas, CPU-Z o CPU-X para el procesador, MemTest86 para la memoria RAM o Victoria para discos duros o SSD.
 
-Sostenibilidad y protección de datos: reutilización frente a residuo electrónico (RAEE) y borrado seguro de dispositivos (normativa de protección de datos, RGPD).
+### 4. Selección de Sistemas Operativos para el hardware restringido
 
+En cuanto a la elección de sistemas operativos se suele recomendar siempre lo mismo: para la productividad general, Linux para servidores y desarrollo, y macOS para diseño y creatividad.
+
+En la práctica:
+* Microsoft Windows: En sus versiones empresariales (LTSC o Server) son una opción estable y destaca su compatibilidad total con diversidad de software y facilidad de uso.
+* Linux: Districuiones como Debian o Fedora se posicionan como la opción prefereida para entornos técnicos, servidores y computación en la nube. Destaca por su mayor seguridad, aunque requiere de mayores conocimiento técnicos para su administración.
+* macOS (Apple): Tiene sentido en emprersas enfocadas en el diseño gráfico, desarrollo multimedia y la producción creativa.
+
+### 5. Motores de bases de datos
+Para almacenar los componentes del inventario de forma rápida, segura y estructurada tenemos que usar un buen motor de base de datos. A continuación, se describen brevemente algunos de los más utilizados.
+
+* **SQLite**: Motor de base de datos embebido en fichero local, sin necesidad de proceso servidor. Excelente para aplicaciones de escritorio locales, prototipos o terminales independientes de inventario con lecturas/escrituras de bajo volumen.
+
+* **MySQL** / **MariaDB**: Estándar en aplicaciones web de gestión (backend nativo de GLPI y Snipe-IT). Ofrece alto rendimiento en lecturas, amplia compatibilidad y sencillez de administración mediante replicación maestro-esclavo.
+
+* **PostgreSQL**: SGBD relacional de nivel empresarial con soporte avanzado para consultas complejas, tipos de datos JSON/JSONB (ideal para guardar especificaciones técnicas heterogéneas de componentes) e integridad transaccional estricta (ACID).
+
+### 6. Herramientes de organizaciñon y metodología del proyecto
+
+Con motivo de realizar el trabajo de forma más orgsanizado, estructurada y con menos errores se utilizan herramientas de organización.
+
+* **Planka**: Solución open source autoalojada (self-hosted), ligera y enfocada exclusivamente en tableros Kanban. Perfecta para mantener la privacidad de los datos de infraestructura interna sin depender de servicios SaaS externos.
+
+* **GitHub Projects**: Integración nativa si el código fuente o las tareas del inventario se gestionan en un repositorio Git. Permite automatizar el cierre de tareas (issues) cuando se realizan cambios en el código o despliegues.
+
+* **Trello**: Plataforma SaaS de interfaz intuitiva y rápida curva de aprendizaje, aunque limitada en sus planes gratuitos para integraciones complejas o cumplimiento estricto de privacidad de datos local.
+
+* **Notion**: Herramienta híbrida que combina bases de datos relacionales simples, documentos y tableros Kanban. Adecuada para documentar guías de montaje y diagnósticos junto con el tablero de seguimiento, aunque con mayor sobrecarga operativa.
+
+### 7. Sostenibilidad, Normativa RAEE y Borrado Seguro de Datos
+Gestionar el hardware que llega al final de su ciclo de vida no es simplemente decidir qué se guarda y qué se tira; es encontrar un equilibrio real entre el compromiso ecológico y la protección rigurosa de la información confidencial.
+
+#### Economía Circular vs. Basura Electrónica (RAEE)
+Extender la vida útil de los equipos es siempre la opción más limpia y eficiente. Reparar o reutilizar componentes minimiza el volumen de desperdicio y reduce de forma directa la huella de carbono al posponer la fabricación de hardware nuevo. Sin embargo, cuando la degradación o las averías hacen imposible recuperar un componente, la reutilización cede el paso al reciclaje responsable:
+
+* **Cumplimiento de la normativa RAEE**: Se activa el marco legal para Residuos de Aparatos Eléctricos y Electrónicos (la Directiva 2012/19/UE a nivel europeo y el Real Decreto 110/2015 en España).
+
+* **Gestión autorizada**: El material inservible no puede desecharse en contenedores convencionales. Se tramita mediante gestores homologados que certifican la recogida, aseguran la extracción limpia de metales pesados o contaminantes y canalizan las materias primas para su reincorporación al ciclo industrial.
+
+#### Borrado Seguro de Datos y Cumplimiento del RGPD
+Reutilizar o deshacerse de un disco sin una limpieza profunda representa un riesgo de seguridad inaceptable. El Reglamento General de Protección de Datos (RGPD) obliga a garantizar que la información personal, comercial o sensible sea completamente irrecuperable antes de que el soporte cambie de manos o pase al reciclaje.
+
+Un error muy extendido es asumir que un formateo habitual (FAT32, NTFS, EXT4) o la eliminación de una partición dejan el disco "limpio". En realidad, el formateo tradicional solo elimina el "índice" que le dice al sistema dónde están los archivos; la información sigue intacta en la memoria y cualquiera con un software básico de recuperación de datos puede restaurarla en cuestión de minutos.
+
+#### Métodos de Higienización Según la Tecnología
+Para que la destrucción de la información sea irreversible, el método de borrado debe adaptarse a la tecnología del soporte:
+
+* **Discos Mecánicos (HDD)**: La técnica clave es la sobrescritura completa. Guiados por estándares internacionales como NIST SP 800-88 o DoD 5220.22-M, se escriben ceros, unos y datos aleatorios sobre cada sector magnético. En la práctica, herramientas libres como shred, dd o soluciones estilo DBAN (Darik's Boot and Nuke) ejecutan esta tarea con total fiabilidad.
+
+* **Unidades de Estado Sólido (SSD)**: La sobrescritura repetida genera un desgaste innecesario en las celdas Flash y no suele alcanzar las zonas ocultas de gestión interna (over-provisioning). En los SSD, la solución pasa por enviar órdenes de bajo nivel al propio controlador de la unidad mediante comandos como ATA Secure Erase o NVMe Sanitize / Format (usando utilidades como nvme-cli), restableciendo las celdas a su estado eléctrico original.
+
+* **Destrucción Física**: Si un disco está defectuoso y no responde a los comandos de borrado por software, la única alternativa segura es su inutilización definitiva mediante desmagnetización (degaussing) o trituración mecánica (shredding).
 ## 4. Requisitos del proyecto
 ### 4.1. Requisitos funcionales
 1. Identificar de forma única cada equipo, componente y periférico (código de inventario/etiqueta).
@@ -200,7 +251,7 @@ Para validar la estabilidad del equipo, **Marcos** y **Javier** ejecutaron prueb
 > Desarrollado inicialmente por el WHATWG desde 2004 y adoptado como Recomendación Oficial por el W3C en 2014, HTML5 reemplazó el modelo DTD/SGML por un algoritmo de parseo determinista a nivel de motor de renderizado mediante el doctype ``<!DOCTYPE html>``. Esta actualización introdujo elementos semánticos para definir la arquitectura de información (``<header>``, ``<nav>``, ``<main>``, ``<article>``, ``<section>``, ``<footer>``), así como una pipeline multimedia nativa mediante los elementos ``<video>`` y ``<audio>``. En el ámbito gráfico incorporó la etiqueta ``<canvas>`` con API de contexto 2D y soporte para WebGL con aceleración por GPU, junto con la integración directa de SVG en el DOM. Los formularios añadieron validación nativa sin JavaScript a través de tipos de entrada específicos (email, date, number), mientras que el entorno de ejecución se amplió con APIs para almacenamiento local (localStorage, IndexedDB), concurrencia (Web Workers), comunicación bidireccional (WebSockets) y control del historial de navegación.
 
 > [!TIP]
-> La diferencia técnica fundamental entre ambos estándares reside en el motor de procesamiento que interpreta el documento. HTML opera mediante un algoritmo de parseo permisivo y determinista que asimila errores de sintaxis (como etiquetas sin cerrar, anidamientos cruzados o atributos mal formados) y reconstruye un árbol DOM válido sin interrumpir la experiencia de usuario.
+> La diferencia técnica fundamental entre ambos estándares (HTML y XHTML) reside en el motor de procesamiento que interpreta el documento. HTML opera mediante un algoritmo de parseo permisivo y determinista que asimila errores de sintaxis (como etiquetas sin cerrar, anidamientos cruzados o atributos mal formados) y reconstruye un árbol DOM válido sin interrumpir la experiencia de usuario.
 >
 > XHTML, al ser una aplicación directa de XML 1.0, exige que el documento sea estrictamente bien formado (well-formed). Si el parser XML encuentra una sola violación de la sintaxis, interrumpe el proceso de renderizado y despliega un error fatal en pantalla (Yellow Screen of Death).
 
