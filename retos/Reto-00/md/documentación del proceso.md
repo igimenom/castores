@@ -57,6 +57,9 @@ Permite a la persona responsable responder preguntas como qué equipos se pueden
 Es mantenible en el tiempo, porque la información queda estructurada y no depende de la memoria de nadie y hace mas fácil cuando haya que actualizarlo con nuevos componentes.
 
 ## 3. Estado del arte 
+### 1. Gestión de Activos Informáticos (ITAM) y CMDB
+La **gestión de activos de Tecnologías de la Información** (**ITAM**, *IT Asset Management*) y las bases de datos de gestión de la configuración (**CMDB**, *Configuration Management Database*) constituyen la base operativa para supervisar, controlar e inventariar la infraestructura tecnológica de una organización. Mientras que la CMDB centra su atención en las relaciones, dependencias y servicios que prestan los elementos de configuración (*Configuration Items* o CIs), el enfoque ITAM abarca el control financiero, contractual y físico del hardware y software a lo largo de todo su ciclo de vida.
+
 Gestión de activos informáticos (ITAM/CMDB): conceptos de inventario de hardware, ciclo de vida del equipo y trazabilidad.
 
 Herramientas habituales de código abierto: GLPI, Snipe-IT, OCS Inventory / Fusion Inventory, NetBox. Comparar qué ofrece cada una (inventario, incidencias, agentes automáticos, coste, complejidad).
