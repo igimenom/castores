@@ -255,11 +255,26 @@ El objetivo de la propuesta de didigtalización en un proyecto o empresa es el p
 
 En nuestro caso hemos propuesto una serie de mejoras futuras:
 
-* Pasar el HTML a un sistema de gestión de  (WordPress) para asi poder mantener más fácil y rápido la página y editar sin tener tantos conocimiento técnicos. El tiempo de publicación de contenidos se reduce considerablemente y además, permite gestionar de forma automática la estructura.
-* Subir la página a Internet para que se pueda acceder al inventario de forma sencilla. En este caso, como el inventario no es de gran valor sería simplemente suficiente con colgarlo a Internet de forma pública (tal y como hace la Universidad de Zaragoza https://lonja.unizar.es/catalogo/) sin tener que configurar VPN o IP's públicas.
-* Pasar la hoja de cálculo (Google Sheets) a una base de datos con PostgreSQL. La duplicidad o la falta de rendimiento, son problemas típicos de las hojas de cálculo en cuanto aumenta el volumen de datos a manejar. De modo que, se propone la migración compleeta a un sistema de gestión de bases de datos relacionales, que es conocido por su estabilidad y potencia. Se destacan funciones como la posibilidad de recibir cientos de peticiones simultáneas o la realización de consultas complejas.
-* Registrar cada equipo y componente con un identificador único (consistente en el tiempo). Con la migración a un sistema gestor de bases de datos se facilita la identificación de cada elemento del inventario.
-* El registro manual de entrada y salida de componentes no es para nada eficiente. Por tanto, la propuesta es; que cada equipo y componente tiene una etiqueta RFID, y además la sala debería contar con una zona RFID en la entrada/salida de la zona de inventario. De esta forma, se registra cuando una persona retira o añade componentes nuevos gracias a su etiqueta.
+Propuesta de digitalización
+
+La digitalización de un proyecto o de una empresa consiste en incorporar tecnologías digitales a sus procesos con un doble objetivo: mejorar su eficiencia y adaptarse a las nuevas necesidades de un entorno cada vez más digital.
+
+En nuestro caso, hemos planteado las siguientes mejoras futuras:
+
+1. Migración de la página web a un gestor de contenidos (WordPress).
+Actualmente la página está desarrollada directamente en HTML, lo que obliga a modificar el código cada vez que se quiere cambiar algo. Pasarla a un sistema de gestión de contenidos (CMS) como WordPress permitiría mantenerla de forma más sencilla y rápida, y editarla sin necesidad de grandes conocimientos técnicos. Además, el tiempo de publicación de contenidos se reduciría de forma considerable y la estructura del sitio se gestionaría de forma automática.
+
+2. Publicación del inventario en Internet.
+Para que el inventario sea accesible de forma cómoda desde cualquier lugar, proponemos alojar la página en Internet. Dado que los datos del inventario no tienen un valor crítico, bastaría con publicarlo de forma abierta, tal y como hace la Universidad de Zaragoza con su catálogo (https://lonja.unizar.es/catalogo/). Así se evita tener que configurar una VPN o contratar direcciones IP públicas, lo que simplifica el despliegue y reduce los costes de mantenimiento.
+
+3. Migración de la hoja de cálculo (Google Sheets) a una base de datos PostgreSQL.
+Las hojas de cálculo presentan problemas habituales cuando el volumen de datos crece, como la duplicidad de registros o la pérdida de rendimiento. Por ello, proponemos migrar por completo a un sistema gestor de bases de datos relacionales, reconocido por su estabilidad y potencia. PostgreSQL permite, entre otras ventajas, atender cientos de peticiones simultáneas y ejecutar consultas complejas con soltura, algo que una hoja de cálculo no puede ofrecer.
+
+4. Identificador único para cada equipo y componente.
+Cada equipo y cada componente debería registrarse con un identificador único y estable en el tiempo, de modo que nunca cambie ni se repita. La migración a una base de datos facilita esta tarea, ya que permite asignar y controlar de forma centralizada la identificación de cada elemento del inventario, evitando confusiones y duplicados.
+
+5. Control automático de entradas y salidas mediante RFID.
+El registro manual de la entrada y salida de componentes resulta poco eficiente y propenso a errores u olvidos. Por ello, proponemos que cada equipo y componente lleve una etiqueta RFID y que la sala de inventario cuente con una zona de lectura RFID en su acceso. De esta forma, cada vez que una persona retire o añada un componente, el sistema lo registrará automáticamente gracias a su etiqueta, sin intervención manual.
 ### 9.3. Valoración personal
 Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad para adaptarnos a esta nueva forma de trabajo más colaborativa y menos guiada con respecto a lo que estabamos acostumbrados. Como consecuencia, hemos forjado grandes lazos de amistad entre todos. Además hemos desarrollado la paciencia que tan necesaria ha sido para los integrantes de SMR, que tuvieron que cargarse con lo más técnico (HTML o CSS), mientras que, los exalumnos de Bachillerato colaboraron más en la parte creativa (diseño).
 ## 10. Bibliografía
