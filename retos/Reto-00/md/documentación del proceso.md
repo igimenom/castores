@@ -149,7 +149,8 @@ Para validar la estabilidad del equipo, **Marcos** y **Javier** ejecutaron prueb
 
 Y por último **Marcos** hizo el formulario de contacto para la recogida de datos sobre incidencias técnicas. Ha configurado los atributos name y value de los campos para estructurar la información de forma clara y ha integrado la API de Web3Forms para recibir las respuestas automáticamente por correo electrónico sin necesidad de servidor propio.
 
-
+> [!TIP]
+> 
 
 ##### Bases de Datos y Documentación Final
 En el apartado de gestión de datos, **Marcos** y **Bruno** desarrollaron el Diagrama Entidad-Relación del proyecto. Por su parte, **Javier** redactó el informe de incidencias y **Bruno** preparó el material para la presentación final.
