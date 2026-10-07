@@ -165,10 +165,16 @@ lo que es cada cosa de este.
 * Marcos; formulario html
 ---
 ## Día 17; 7/10/2026
-* Bruno; 
+* Bruno ayudando a Javier con la presentación y comprobación lista de cotejo; 
 * Javier; presentación del reto.
 * Iván; documentación de todo el proceso.
-* Marcos; revisión conjunta de la documentación con Iván siguiendo las pautas de la lista de cotejo.
+* Marcos; ayudando a Javier en la presentación y diseño del reto.
+---
+## Día 18; 8/10/2026
+* Bruno; imágenes de apoyo en la documentación y presentación.
+* Javier; presentación del reto.
+* Iván; documentación de todo el proceso.
+* Marcos; ayudando a Javier en la presentación y diseño del reto.
 #### pregunta: la documentación es correcta¿?¿?¿?
 #### pregunta: la propuesta de digitalización en que sección se mete
 ### TAREAS PENDIENTES
