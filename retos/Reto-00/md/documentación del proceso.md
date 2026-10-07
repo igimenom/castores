@@ -166,6 +166,11 @@ Para validar la estabilidad del equipo, **Marcos** y **Javier** ejecutaron prueb
 > HTML 5 (2014)
 > Desarrollado inicialmente por el WHATWG desde 2004 y adoptado como Recomendación Oficial por el W3C en 2014, HTML5 reemplazó el modelo DTD/SGML por un algoritmo de parseo determinista a nivel de motor de renderizado mediante el doctype ``<!DOCTYPE html>``. Esta actualización introdujo elementos semánticos para definir la arquitectura de información (``<header>``, ``<nav>``, ``<main>``, ``<article>``, ``<section>``, ``<footer>``), así como una pipeline multimedia nativa mediante los elementos ``<video>`` y ``<audio>``. En el ámbito gráfico incorporó la etiqueta ``<canvas>`` con API de contexto 2D y soporte para WebGL con aceleración por GPU, junto con la integración directa de SVG en el DOM. Los formularios añadieron validación nativa sin JavaScript a través de tipos de entrada específicos (email, date, number), mientras que el entorno de ejecución se amplió con APIs para almacenamiento local (localStorage, IndexedDB), concurrencia (Web Workers), comunicación bidireccional (WebSockets) y control del historial de navegación.
 
+> [!TIP]
+> La diferencia técnica fundamental entre ambos estándares reside en el motor de procesamiento que interpreta el documento. HTML opera mediante un algoritmo de parseo permisivo y determinista que asimila errores de sintaxis (como etiquetas sin cerrar, anidamientos cruzados o atributos mal formados) y reconstruye un árbol DOM válido sin interrumpir la experiencia de usuario.
+>
+> XHTML, al ser una aplicación directa de XML 1.0, exige que el documento sea estrictamente bien formado (well-formed). Si el parser XML encuentra una sola violación de la sintaxis, interrumpe el proceso de renderizado y despliega un error fatal en pantalla (Yellow Screen of Death).
+
 Y por último **Marcos** hizo el formulario de contacto para la recogida de datos sobre incidencias técnicas. Ha configurado los atributos name y value de los campos para estructurar la información de forma clara y ha integrado la API de Web3Forms para recibir las respuestas automáticamente por correo electrónico sin necesidad de servidor propio.
 
 > [!TIP]
