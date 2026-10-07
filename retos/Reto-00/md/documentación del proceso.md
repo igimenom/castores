@@ -49,9 +49,9 @@ Finalmente, la ejecución de todas estas actividades se sustentará en un modelo
 
 No se trata solo de un problema técnico como reparar ordenadores, sino de gestión de la información: sin un registro fiable se duplican esfuerzos, se pierde material aprovechable y no se pueden tomar las decisiones correctas.
 
-Justificación. Una solución que combine (1) la recuperación práctica de un equipo, (2) un inventario en base de datos y (3) una propuesta de digitalización:
+Debemos buscar una solución que combine (1) la recuperación práctica de un equipo, (2) un inventario en base de datos y (3) una propuesta de digitalización:
 
-Aprovecha recursos ya existentes, reduciendo costes y residuos electrónicos que contaminarian el ecosistema.
+Aprovecha recursos ya existentes, reduciendo costes y residuos electrónicos que contaminarían el ecosistema.
 Deja una marca de cada equipo, componente e intervención.
 Permite a la persona responsable responder preguntas como qué equipos se pueden usar, qué material está disponible o qué equipos tienen incidencias pendientes o se tienen que llevar para reciclarlos al punto limpio o similares.
 Es mantenible en el tiempo, porque la información queda estructurada y no depende de la memoria de nadie y hace mas fácil cuando haya que actualizarlo con nuevos componentes.
