@@ -87,4 +87,4 @@ La regla de la teoría que se incumple es:
 >
 > Atributo identificador: su valor es único y no se repite entre instancias.
 
-![alt text](image.png)
+![alt text](E2-prueba.png)
