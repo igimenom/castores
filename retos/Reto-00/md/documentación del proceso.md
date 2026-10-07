@@ -234,7 +234,9 @@ Para validar la estabilidad del equipo, **Marcos** y **Javier** ejecutaron prueb
 Y por último **Marcos** hizo el formulario de contacto para la recogida de datos sobre incidencias técnicas. Ha configurado los atributos name y value de los campos para estructurar la información de forma clara y ha integrado la API de Web3Forms para recibir las respuestas automáticamente por correo electrónico sin necesidad de servidor propio.
 
 > [!TIP]
+>
 > **API**
+>
 > Una API (del inglés, application programming interface, en español, interfaz de programación de aplicaciones) es una pieza de código que permite a dos aplicaciones comunicarse entre sí para compartir información y funcionalidades. En el caso de Web3Forms, esta API actúa como un intermediario o "puente" sin servidor (serverless) que conecta los formularios de tu página web (estática o dinámica) directamente con tu correo electrónico.
 
 ##### Bases de Datos y Documentación Final
