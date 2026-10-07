@@ -10,7 +10,7 @@
 
 #### El objetivo del RA2 es verificar que sabes utilizar lenguajes de marcas para la transmisión de información a través de la Web, analizando la estructura de los documentos e identificando sus elementos. Utiliza este cuestionario como guía antes de entregar tu paquete comprimido y realizar tu exposición oral.
 ---
-| Criterio | Pregunta de Autoevaluación e Ítem de Comprobación | Evidencia / Soporte | Cumple (Sí/No) | Ponderación |
+| Criterio | Pregunta de Autoevaluación e Ítem de Comprobación | Evidencia / Soporte | CumpleE2-prueba.png (Sí/No) | Ponderación |
 | :--- | :--- | :--- | :---: | :---: |
 | **CE2A** | **Clasificación y Versiones:** ¿Has identificado y clasificado en la memoria técnica los lenguajes de marcas relacionados con la Web y la evolución de sus distintas versiones (ej. HTML4, XHTML, HTML5)? | Memoria / Oral | ☐ Sí <br> ☐ No | 5% |
 | **CE2B** | **Estructura HTML y Árbol DOM:** ¿Has analizado la estructura del documento identificando sus secciones (`head`, `body`, `header`, `nav`, `main`, `footer`) y cumpliendo al menos 3 niveles de profundidad en el árbol DOM? | Código HTML | ☐ Sí <br> ☐ No | 15% |

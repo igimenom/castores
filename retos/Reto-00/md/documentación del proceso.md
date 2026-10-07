@@ -147,10 +147,30 @@ Para validar la estabilidad del equipo, **Marcos** y **Javier** ejecutaron prueb
 ##### Desarrollo y Maquetación Web
 **Bruno** e **Iván** diseñaron los bocetos iniciales (*mockups*). **Marcos** definió el árbol de la web (*web tree*) para organizar la estructura de las páginas HTML, mientras que **Javier** migró las tablas de Excel e inventario a código HTML y creó las secciones del equipo. El diseño visual se maquetó entre **Bruno**, **Javier** e **Iván** utilizando CSS. Finalmente, el equipo optimizó el código limpiando etiquetas innecesarias, **Marcos** adaptó la matriz de compatibilidad a formato HTML e **Iván** y **Javier** ajustaron la estructura general y el pie de página.
 
+> [!TIP]
+> 
+> HTML 1.0 surgió en el CERN de la mano de Tim Berners-Lee como un perfil simplificado derivado de SGML (Standard Generalized Markup Language). En esta fase no existía un organismo oficial de estandarización ni una especificación formal, sino un documento descriptivo con algo menos de veinte elementos orientados exclusivamente a la estructuración jerárquica de hipertexto basado en texto plano (``<html>``, ``<head>``, ``<body>``, ``<h1>``-``<h6>``, ``<p>``, ``<a>``). La arquitectura carecía de capacidades de maquetación, hojas de estilo o lógica ejecutable. El procesamiento de archivos multimedia se realizaba de forma externa al navegador, ya que el motor de renderizado no incorporaba un parser determinista para imágenes alineadas en el flujo de texto, y tampoco existía un subsistema para la transferencia de datos desde el cliente hacia el servidor.
+>
+> HTML 2.0 (1995)
+>
+> La primera estandarización formal llegó con HTML 2.0, publicado por el IETF (Internet Engineering Task Force) bajo el RFC 1866. Esta especificación introdujo la integración nativa del elemento <img> para el renderizado de gráficos dentro del flujo de texto (inline graphics) y formalizó el subsistema de formularios mediante los elementos ``<form>``, ``<input>``, ``<select>`` y ``<textarea>``. La transferencia de información entre cliente y servidor se estructuró a través de los métodos HTTP GET y POST empleando la codificación ``application/x-www-form-urlencoded``. Asimismo, se incorporó el soporte inicial para entidades de caracteres SGML, extendiendo la capacidad del lenguaje para representar símbolos fuera del estándar ASCII.
+>
+> HTML 3.2 (1997)
+>
+> El W3C (World Wide Web Consortium) asumió la estandarización del lenguaje con la publicación de HTML 3.2 como Recomendación Oficial en enero de 1997, tras descartar el borrador inestable de HTML 3.0. Esta versión introdujo el modelo de tablas (``<table>``, ``<tr>``, ``<td>``), que aunque fue diseñado para representar datos tabulares, comenzó a utilizarse masivamente como mecanismo de maquetación bidimensional en el DOM. HTML 3.2 integró atributos de presentación visual directa dentro del marcado (``<font>``, ``<center>``, atributos de alineación y color), además de habilitar la ejecución de código en el cliente mediante el elemento ``<applet>`` para bytecode de Java y las bases para la inclusión de scripts.
+>
+> HTML 4.01 y XHTML 1.0 (1999–2000)
+>
+> HTML 4.01 se aprobó en 1999 para establecer la separación estricta entre la arquitectura del marcado y la capa de presentación, desaconsejando las etiquetas visuales directas en favor de las Hojas de Estilo en Cascada (CSS). La sintaxis se dividió en tres Document Type Definitions (DTD) distintos: Strict, Transitional y Frameset. Esta versión consolidó el soporte para caracteres Unicode, atributos de accesibilidad (alt, title) y el elemento ``<iframe>``. En el año 2000, el W3C reformuló el estándar bajo XHTML 1.0, supeditando el código a las reglas sintácticas estrictas de XML 1.0, lo que exigía un árbol de documento perfectamente formado con cierre explícito de etiquetas vacías (``<br />``), sensibilidad a mayúsculas y entrecomillado estricto en todos los atributos.
+>
+> HTML 5 (2014)
+> Desarrollado inicialmente por el WHATWG desde 2004 y adoptado como Recomendación Oficial por el W3C en 2014, HTML5 reemplazó el modelo DTD/SGML por un algoritmo de parseo determinista a nivel de motor de renderizado mediante el doctype ``<!DOCTYPE html>``. Esta actualización introdujo elementos semánticos para definir la arquitectura de información (``<header>``, ``<nav>``, ``<main>``, ``<article>``, ``<section>``, ``<footer>``), así como una pipeline multimedia nativa mediante los elementos ``<video>`` y ``<audio>``. En el ámbito gráfico incorporó la etiqueta ``<canvas>`` con API de contexto 2D y soporte para WebGL con aceleración por GPU, junto con la integración directa de SVG en el DOM. Los formularios añadieron validación nativa sin JavaScript a través de tipos de entrada específicos (email, date, number), mientras que el entorno de ejecución se amplió con APIs para almacenamiento local (localStorage, IndexedDB), concurrencia (Web Workers), comunicación bidireccional (WebSockets) y control del historial de navegación.
+
 Y por último **Marcos** hizo el formulario de contacto para la recogida de datos sobre incidencias técnicas. Ha configurado los atributos name y value de los campos para estructurar la información de forma clara y ha integrado la API de Web3Forms para recibir las respuestas automáticamente por correo electrónico sin necesidad de servidor propio.
 
 > [!TIP]
-> 
+> **API**
+> Una API (del inglés, application programming interface, en español, interfaz de programación de aplicaciones) es una pieza de código que permite a dos aplicaciones comunicarse entre sí para compartir información y funcionalidades. En el caso de Web3Forms, esta API actúa como un intermediario o "puente" sin servidor (serverless) que conecta los formularios de tu página web (estática o dinámica) directamente con tu correo electrónico.
 
 ##### Bases de Datos y Documentación Final
 En el apartado de gestión de datos, **Marcos** y **Bruno** desarrollaron el Diagrama Entidad-Relación del proyecto. Por su parte, **Javier** redactó el informe de incidencias y **Bruno** preparó el material para la presentación final.
