@@ -98,6 +98,29 @@ Frase clave: relacional, esquema fijo, cliente-servidor.
 
 Como gestor, usa SQL. Por ejemplo, para pedir el equipo EQ-04 hacemos un SELECT sobre la tabla equipo filtrando por su etiqueta. Tiene transacciones y cumple ACID del todo: atomicidad, consistencia, aislamiento y durabilidad. Para la concurrencia usa MVCC, que permite que varios usuarios lean y escriban a la vez sin bloquearse. Tiene usuarios y roles con permisos granulares sobre cada objeto de la base de datos. Y para administrarlo, herramientas gráficas como pgAdmin, que funciona en Windows, Linux y macOS.
 
+Para entenderlo de forma fácil, imagina que una "transacción" es el proceso de enviar dinero desde tu cuenta bancaria a la de un amigo.
+Así es como ACID asegura que ese envío salga bien:
+
+🪙 A - Atomicidad (Atomicity)
+
+O se hace todo, o no se hace nada.
+El envío de dinero tiene dos partes: restar dinero de tu cuenta y sumarlo a la de tu amigo. Si el sistema se cae justo en el medio, la base de datos cancela todo. No es posible que el dinero desaparezca de tu cuenta pero nunca le llegue a tu amigo.
+
+📜 C - Consistencia (Consistency)
+
+Se respetan las reglas del juego.
+Antes y después de la transferencia, los datos deben ser válidos. Por ejemplo, si tu cuenta no puede tener saldo negativo y solo tienes $10, el sistema no te dejará enviar $20. La base de datos no cambiará a un estado que rompa las reglas preestablecidas.
+
+🛡️ I - Aislamiento (Isolation)
+
+Las operaciones no se estorban entre sí.
+Si estás enviando $10 a tu amigo, y al mismo tiempo tu empresa te está depositando tu sueldo, cada operación ocurre por separado, en su propio "carril". El sistema hace que parezca que una transacción ocurrió después de la otra, evitando que los números se mezclen o se calculen mal.
+
+💾 D - Durabilidad (Durability)
+
+Lo guardado, guardado se queda.
+Una vez que el sistema te confirma que la transferencia fue exitosa, ese cambio es permanente. Incluso si un segundo después se corta la luz en los servidores del banco, los datos no se van a perder ni a olvidar porque ya se escribieron de forma segura en el disco.
+
 Frase clave: SQL, ACID del todo, roles con permisos, pgAdmin.
 
 ## Marcos - Diapositiva 20 (55 s)
