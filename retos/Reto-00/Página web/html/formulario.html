@@ -25,60 +25,49 @@
     
     <!-- CONTENIDO PRINCIPAL -->
     <main>
+        <section class="seccion-listado">
         <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="1b043d6b-b2e2-4a13-9e72-b44a675e5f89">
 
             <h2>1. Datos del Solicitante</h2>
             <label>Nombre:</label>
             <input type="text" name="Nombre" required>
-            <br>
 
             <label>Correo electrónico del centro: </label>
             <input type="email" name="Email" placeholder="ejemplo@campusdigitalfp.com" required>
-            <br>
 
             <label>Fecha de incidencia:</label>
             
             <input type="date" name="Fecha_incidencia">
-            <br><br>
 
             <h2>2. Tipo de Consulta o Incidencia</h2>
             <label>Tipo de incidencia: </label>
-            <br>
             
             <input type="radio" id="rotura" name="Tipo_incidencia" value="Rotura / Avería">
             <label for="rotura">Rotura / Avería</label>
-            <br>
             
             <input type="radio" id="solicitud" name="Tipo_incidencia" value="Solicitud de Material">
             <label for="solicitud">Solicitud de Material</label>
-            <br>
             
             <input type="radio" id="perdida" name="Tipo_incidencia" value="Pérdida / Extravío">
             <label for="perdida">Pérdida / Extravío</label>
-            <br>
             
             <input type="radio" id="sugerencia" name="Tipo_incidencia" value="Consulta / Sugerencia">
             <label for="sugerencia">Consulta / Sugerencia</label>
-            <br><br>
 
             <h2>3. Ordenadores / Tipo de pc afectado</h2>
             
             <input type="checkbox" id="sobremesa" name="Tipo_ordenador[]" value="Pc Sobremesa / Torre">
             <label for="sobremesa">Pc Sobremesa / Torre</label>
-            <br>
 
             <input type="checkbox" id="portatil" name="Tipo_ordenador[]" value="Ordenador Portátil">
             <label for="portatil">Ordenador Portátil</label>
-            <br>
 
             <input type="checkbox" id="aio" name="Tipo_ordenador[]" value="All in One">
             <label for="aio">All in One</label>
-            <br>
 
             <input type="checkbox" id="minipc" name="Tipo_ordenador[]" value="Mini PC">
             <label for="minipc">Mini PC</label>
-            <br><br>
 
             <h2>4. Componente de ordenador afectado</h2>
             
@@ -95,16 +84,15 @@
                 <option value="Cables y adaptadores">Cables y adaptadores</option>
                 <option value="Otro componente">Otro componente</option>
             </select>
-            <br><br>
 
             <h2>Comentarios:</h2>
             
             <textarea name="Comentarios" rows="4" cols="50"></textarea>
-            <br><br>
 
             <button type="reset">Borrar</button>
             <button type="submit">Enviar</button>
         </form>
+    </section>
     </main>
 
     <!-- PIE DE PÁGINA Y NAVEGACIÓN -->
@@ -113,7 +101,7 @@
         <nav>
             <ul>
                 <li><a href="Página_principal.html">Inicio</a></li>
-                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="formulario.html" target="_blank">Formulario</a></li>
                 <li><a href="./Inventario/equipos.html" target="_blank">Equipos</a></li>
                 <li><a href="./Inventario/discos_duros.html" target="_blank">Discos duros</a></li>
                 <li><a href="./Inventario/fuentes_alimentacion.html" target="_blank">Fuentes de alimentación</a></li>
