@@ -93,15 +93,15 @@ El reacondicionamiento de equipos (*refurbishing*) requiere comprobar rigurosame
 * **Procesador** (CPU): Compatibilidad del socket físico (p. ej., LGA1200, LGA1700, AM4, AM5) y soporte específico del chipset de la placa base (verificado vía tabla de compatibilidad BIOS/UEFI).
 
 ![alt text](image-1.png)
-![alt text](image-2.png)
 
 * **Memoria RAM**: Tipo de tecnología (DDR3, DDR4, DDR5), formato (DIMM para torre, SO-DIMM para portátiles/mini PCs), frecuencia máxima soportada por la controladora de memoria, latencias (CL) y soporte para memoria con/sin corrección de errores (ECC vs non-ECC).
-
+![alt text](image-2.png)
 * **Fuente de Alimentación** (PSU): Formato mecánico (ATX, SFX, TFX), potencia nominal continuada, distribución y amperaje del raíl de +12V, y conectores disponibles (ATX 24-pin, EPS 12V 4+4 pin, PCIe 6+2 pin, conectores SATA/Molex).
 
 * **Interfaces de Almacenamiento**: Mosaico de conectores SATA III (6 Gbps), M.2 (diferenciando conectores Key B, Key M, y protocolos SATA vs NVMe PCIe Gen3/Gen4/Gen5) y bus de expansión PCIe (factor de forma y revisión del bus).
 
 * **Firmware** (BIOS / UEFI): Identificación del modo de arranque (Legacy BIOS frente a UEFI nativo), compatibilidad con esquemas de partición MBR o GPT, y soporte para tablas de claves de seguridad (Secure Boot).
+
 
 #### Protocolo de Diagnósitco Operativo
 1. **Verificación de Encendido y POST** (*Power-On Self-Test*): Comprobación de la secuencia inicial de comprobación de hardware mediante el análisis de códigos emitidos por altavoz interno (beeps), LEDs de depuración (Debug LEDs) o tarjetas de diagnóstico PCI/PCIe.
