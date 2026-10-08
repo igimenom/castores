@@ -251,14 +251,24 @@ En el apartado de gestión de datos, **Marcos** y **Bruno** desarrollaron el Dia
 * **Principales Decisiones:** Migración a Windows 11 LTSC tras fallos de arranque en Linux, formateo profundo con `diskpart` y activación del perfil XMP en la BIOS. Posteriormente debido a repentinos apagados pasados 5 minutos encendido, sospechabamos del ssd y decidimos bootear windows desde el usb y ya no daba ningun problema.
 
 ### 5.2. Cronograma de trabajo 
-Para la organziación diaria del trabajo hemos utilizado dos herramientas clave: un cuaderno de bitácora que asigna las tareas para cada día y para cada compañero, y además, bemos utilizado la plantilla de Kanban en Github Projects donde gestionar el trabajo en tarjetas para las tareas (pendiente, realizado, trabajando, revisando y finalizado.)
-[Kanban](https://github.com/users/igimenom/projects/1/views/1)
-[Cuaderno de bitácora](./CUADERNO%20DE%20BITACORA.md)
+Para la organziación diaria del trabajo hemos utilizado dos herramientas clave: un [cuaderno de bitácora](./CUADERNO%20DE%20BITACORA.md) que asigna las tareas para cada día y para cada compañero, y además, bemos utilizado la plantilla de [Kanban](https://github.com/users/igimenom/projects/1/views/1) en Github Projects donde gestionar el trabajo en tarjetas para las tareas (pendiente, realizado, trabajando, revisando y finalizado.)
+
 ### 5.3. Recursos necesarios 
-Humanos: equipo de 4 compañeros y profesorado como supervisión.
-Hardware: equipos, componentes y periféricos del centro; herramientas de montaje (destornilladores, boligrafo probador de voltaje), equipo de prueba (monitor y teclado) y USB para instalar el sistema operativo.
-Software: sistema operativo primeramente siendo linux y despues para realizar mas benchmarks instalamos windows 11 pro, herramientas de modelado (draw.io), Kanban, herramientas de diagnóstico (MemTest86, smartctl…) y un repositorio compartido para la documentación.
-Espacio: aula y taller de inventario con puestos ordenados y zona de almacenamiento del material.
+#### Recursos humanos
+El proyecto lo llevamos a cabo un equipo de cuatro compañeros, contando con la supervisión del profesorado durante todo el proceso.
+
+#### Hardware
+Utilizamos los equipos, componentes y periféricos del centro. Para el ensamblaje disponemos de herramientas de montaje (destornilladores y un bolígrafo probador de voltaje), un monitor y un teclado como equipo de prueba, y una memoria USB para la instalación del sistema operativo.
+
+#### Software
+En cuanto al sistema operativo, instalamos primero Linux y posteriormente Windows 11 Pro para realizar pruebas de rendimiento (benchmarks). El trabajo se apoya en las siguientes herramientas:
+
+#### Diseño y organización: Draw.io para el modelado, un tablero Kanban para la gestión del trabajo y un repositorio compartido donde centralizamos la documentación.
+
+#### Diagnóstico: Herramientas como MemTest86 y smartctl para revisar los componentes.
+
+#### Espacio
+El trabajo se realiza entre el aula y el taller de inventario, contando con puestos de trabajo ordenados y una zona específica para el almacenamiento del material.
 
 ## 6. Desarrollo del proyecto
 ### 6.1. Análisis y diseño
