@@ -184,3 +184,7 @@ lo que es cada cosa de este.
 * propuesta de transformación digital
 * formulario
 * excel
+---
+* footer formulario
+* css formulario
+* presentacion postgre sql
