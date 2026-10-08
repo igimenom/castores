@@ -362,12 +362,6 @@ Hemos conseguido; ***(desarrollar más)***
 #### Propuesta de digitalización (futura)
 El objetivo de la propuesta de didigtalización en un proyecto o empresa es el proceso donde éstas adoptan tecnologías digitales con el objetivo de mejorar su eficiencia y adaptandose a las nuevas necesidades del mundo digital.
 
-En nuestro caso hemos propuesto una serie de mejoras futuras:
-
-Propuesta de digitalización
-
-La digitalización de un proyecto o de una empresa consiste en incorporar tecnologías digitales a sus procesos con un doble objetivo: mejorar su eficiencia y adaptarse a las nuevas necesidades de un entorno cada vez más digital.
-
 En nuestro caso, hemos planteado las siguientes mejoras futuras:
 
 1. Migración de la página web a un gestor de contenidos (WordPress).
@@ -376,8 +370,8 @@ Actualmente la página está desarrollada directamente en HTML, lo que obliga a 
 2. Publicación del inventario en Internet.
 Para que el inventario sea accesible de forma cómoda desde cualquier lugar, proponemos alojar la página en Internet. Dado que los datos del inventario no tienen un valor crítico, bastaría con publicarlo de forma abierta, tal y como hace la Universidad de Zaragoza con su catálogo (https://lonja.unizar.es/catalogo/). Así se evita tener que configurar una VPN o contratar direcciones IP públicas, lo que simplifica el despliegue y reduce los costes de mantenimiento.
 
-3. Migración de la hoja de cálculo (Google Sheets) a una base de datos PostgreSQL.
-Las hojas de cálculo presentan problemas habituales cuando el volumen de datos crece, como la duplicidad de registros o la pérdida de rendimiento. Por ello, proponemos migrar por completo a un sistema gestor de bases de datos relacionales, reconocido por su estabilidad y potencia. PostgreSQL permite, entre otras ventajas, atender cientos de peticiones simultáneas y ejecutar consultas complejas con soltura, algo que una hoja de cálculo no puede ofrecer.
+3. Migración de la hoja de cálculo (Google Sheets) a una base de datos SQLite.
+Las hojas de cálculo pueden presentar problemas cuando el volumen de datos aumenta, como la duplicidad de registros, errores de edición o una menor facilidad para realizar consultas. Por ello, proponemos migrar la información del inventario a una base de datos SQLite, un sistema ligero y sencillo de utilizar que no requiere instalar ni mantener un servidor de bases de datos independiente. SQLite permite organizar los datos de forma estructurada, realizar búsquedas y consultas de manera rápida y controlar mejor la información del inventario. Para las necesidades de este proyecto, donde el número de usuarios y operaciones simultáneas no es elevado, SQLite ofrece una solución suficiente, sencilla y de bajo coste de mantenimiento.
 
 4. Identificador único para cada equipo y componente.
 Cada equipo y cada componente debería registrarse con un identificador único y estable en el tiempo, de modo que nunca cambie ni se repita. La migración a una base de datos facilita esta tarea, ya que permite asignar y controlar de forma centralizada la identificación de cada elemento del inventario, evitando confusiones y duplicados.
