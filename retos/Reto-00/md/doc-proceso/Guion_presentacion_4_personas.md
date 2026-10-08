@@ -66,7 +66,7 @@ La cuarta mejora es un identificador único para cada equipo y componente, que n
 
 ---
 
-## Marcos · Diapositivas 13 a 17
+## Marcos · Diapositivas 13 a 16
 
 **Diapositiva 13 · Versiones de HTML (0:35)**
 HTML nació en 1991 de la mano de Tim Berners-Lee. En 1995 llegó HTML 2.0, el primer estándar formal; en 1997, HTML 3.2 añadió tablas; en 1999, HTML 4.01 separó contenido y presentación con CSS; en 2000 apareció XHTML 1.0, que es HTML con las reglas de XML; y en 2014, HTML5, el estándar actual, con audio, vídeo y etiquetas semánticas.
@@ -80,10 +80,31 @@ HTML es como una conversación entre amigos: aunque falte algo, el navegador adi
 **Diapositiva 16 · Ventajas de CSS (0:35)**
 Por último, CSS. HTML aporta la estructura y el contenido, y CSS la presentación. Separarlos da mantenimiento más fácil, porque un cambio actualiza todas las páginas; coherencia en todo el sitio; rapidez, gracias a la caché; adaptación a móvil, pantalla o impresión; y accesibilidad. Podemos cambiar el diseño sin tocar el contenido.
 
-**Diapositiva 17 · Cierre (0:15)**
-Esto ha sido todo. Somos el equipo Castores. Muchas gracias; si tenéis alguna pregunta, estaremos encantados de responder.
-
 > **Frase clave:** en XHTML un error se detecta al instante; con CSS se cambia el diseño sin tocar el contenido.
+
+## Bruno - Diapositiva 17 (40 s)
+
+PostgreSQL es un gestor de bases de datos que desarrolla la comunidad de código abierto PostgreSQL Global Development Group. Su historia empieza en 1986 con el proyecto POSTGRES, que nació como sucesor de INGRES. Después, dos estudiantes, Andrew Yu y Jolly Chen, le añadieron un intérprete de SQL y apareció Postgre95. En 1996 llegó el actual PostgreSQL, con compatibilidad total con SQL. Es gratuito y de código abierto, con una licencia propia parecida a MIT y BSD, y lo usan empresas como Apple, Spotify e Instagram.
+
+Frase clave: 1986, 1995, 1996: POSTGRES, Postgre95, PostgreSQL.
+
+## Javier - Diapositiva 18 (50 s)
+
+PostgreSQL usa un modelo relacional y objeto-relacional: guarda los datos en tablas conectadas entre sí, y además admite JSON. Al ser relacional, hay que definir el esquema antes de guardar datos, con comandos SQL. Funciona con el modelo cliente-servidor: un servidor administra los archivos y los clientes se conectan a él. Puede copiar los datos a otras máquinas, lo que se llama replicación, o repartir una base muy grande entre varias, lo que se llama fragmentación. Funciona en Linux, Windows, macOS, UNIX y BSD, y hoy se instala sobre todo en contenedores como Docker o Kubernetes.
+
+Frase clave: relacional, esquema fijo, cliente-servidor.
+
+## Iván - Diapositivam 19 (45 s)
+
+Como gestor, usa SQL. Por ejemplo, para pedir el equipo EQ-04 hacemos un SELECT sobre la tabla equipo filtrando por su etiqueta. Tiene transacciones y cumple ACID del todo: atomicidad, consistencia, aislamiento y durabilidad. Para la concurrencia usa MVCC, que permite que varios usuarios lean y escriban a la vez sin bloquearse. Tiene usuarios y roles con permisos granulares sobre cada objeto de la base de datos. Y para administrarlo, herramientas gráficas como pgAdmin, que funciona en Windows, Linux y macOS.
+
+Frase clave: SQL, ACID del todo, roles con permisos, pgAdmin.
+
+## Marcos - Diapositiva 20 (55 s)
+
+Destaca por su tolerancia a fallos, su alto rendimiento y su facilidad de monitorización. Como limitación, tiene campos de hasta 1 GB y puede saturarse con muchas conexiones a la vez. Para el inventario del aula sí serviría: ofrece integridad de datos y concurrencia, aunque es complejo para personal inexperto. En la prueba creamos la tabla equipo, con la etiqueta como clave primaria, insertamos EQ-01 y EQ-04 y consultamos por aula. El último INSERT repite EQ-01 y da error, porque el identificador es único y no se puede repetir. Es la regla de la teoría sobre atributos identificadores y claves.
+Frase clave: el INSERT falla porque la clave primaria no se puede repetir.
+
 
 ---
 
@@ -101,26 +122,3 @@ Esto ha sido todo. Somos el equipo Castores. Muchas gracias; si tenéis alguna p
 - **¿Cómo os organizasteis?** *(Persona 1)* Con un tablero Kanban, roles rotativos y evidencias en cada fase.
 
 Guion de las 4 diapositivas de PostgreSQL (unos 3 minutos en total)
-
-BRUNO 1 · Qué es (40 s)
-
-PostgreSQL es un gestor de bases de datos que desarrolla la comunidad de código abierto PostgreSQL Global Development Group. Su historia empieza en 1986 con el proyecto POSTGRES, que nació como sucesor de INGRES. Después, dos estudiantes, Andrew Yu y Jolly Chen, le añadieron un intérprete de SQL y apareció Postgre95. En 1996 llegó el actual PostgreSQL, con compatibilidad total con SQL. Es gratuito y de código abierto, con una licencia propia parecida a MIT y BSD, y lo usan empresas como Apple, Spotify e Instagram.
-
-Frase clave: 1986, 1995, 1996: POSTGRES, Postgre95, PostgreSQL.
-
-JAVIER 2 · Datos y despliegue (50 s)
-
-PostgreSQL usa un modelo relacional y objeto-relacional: guarda los datos en tablas conectadas entre sí, y además admite JSON. Al ser relacional, hay que definir el esquema antes de guardar datos, con comandos SQL. Funciona con el modelo cliente-servidor: un servidor administra los archivos y los clientes se conectan a él. Puede copiar los datos a otras máquinas, lo que se llama replicación, o repartir una base muy grande entre varias, lo que se llama fragmentación. Funciona en Linux, Windows, macOS, UNIX y BSD, y hoy se instala sobre todo en contenedores como Docker o Kubernetes.
-
-Frase clave: relacional, esquema fijo, cliente-servidor.
-
-IVAN 3 · Qué ofrece (45 s)
-
-Como gestor, usa SQL. Por ejemplo, para pedir el equipo EQ-04 hacemos un SELECT sobre la tabla equipo filtrando por su etiqueta. Tiene transacciones y cumple ACID del todo: atomicidad, consistencia, aislamiento y durabilidad. Para la concurrencia usa MVCC, que permite que varios usuarios lean y escriban a la vez sin bloquearse. Tiene usuarios y roles con permisos granulares sobre cada objeto de la base de datos. Y para administrarlo, herramientas gráficas como pgAdmin, que funciona en Windows, Linux y macOS.
-
-Frase clave: SQL, ACID del todo, roles con permisos, pgAdmin.
-
-MARCOS 4 · Valoración y prueba (55 s)
-
-Destaca por su tolerancia a fallos, su alto rendimiento y su facilidad de monitorización. Como limitación, tiene campos de hasta 1 GB y puede saturarse con muchas conexiones a la vez. Para el inventario del aula sí serviría: ofrece integridad de datos y concurrencia, aunque es complejo para personal inexperto. En la prueba creamos la tabla equipo, con la etiqueta como clave primaria, insertamos EQ-01 y EQ-04 y consultamos por aula. El último INSERT repite EQ-01 y da error, porque el identificador es único y no se puede repetir. Es la regla de la teoría sobre atributos identificadores y claves.
-Frase clave: el INSERT falla porque la clave primaria no se puede repetir.
