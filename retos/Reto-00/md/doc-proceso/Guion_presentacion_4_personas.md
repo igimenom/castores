@@ -3,10 +3,10 @@
 
 | Persona | Diapositivas | Tema | Tiempo aprox. |
 |---|---|---|---|
-| **Persona 1** | 1 a 4 | Introducción, organización y resultado | 2:10 |
-| **Persona 2** | 5 a 8 | Parte técnica: configuración, SO, decisiones y pruebas | 2:35 |
-| **Persona 3** | 9 a 12 | Inventario y propuesta de digitalización | 2:35 |
-| **Persona 4** | 13 a 17 | Lenguajes de marcas y cierre | 2:40 |
+| **Bruno** | 1 a 4 | Introducción, organización y resultado | 2:10 |
+| **Javier** | 5 a 8 | Parte técnica: configuración, SO, decisiones y pruebas | 2:35 |
+| **Ivan** | 9 a 12 | Inventario y propuesta de digitalización | 2:35 |
+| **Marcos** | 13 a 17 | Lenguajes de marcas y cierre | 2:40 |
 
 *Los tiempos son orientativos: ensayadlo con cronómetro. Hablad con calma (unas 140 palabras por minuto) y aprended las ideas, no las frases literales.*
 
