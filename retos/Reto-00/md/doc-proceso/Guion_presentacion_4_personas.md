@@ -36,10 +36,10 @@ Y este es el resultado: el equipo EQ_00 funcionando. A la izquierda, el interior
 El EQ_00 monta un procesador Athlon 3000G, 8 GB de RAM DDR4 a 3200 MHz y un SSD de 128 GB SATA3. La placa base es una Gigabyte A520M K V2, con un disipador Wraith Stealth para el socket AM4, y todo va en una caja AC4500 con fuente APIII500.
 
 **Diapositiva 6 · Sistema operativo (0:45)**
-Al instalar Linux Mint tuvimos problemas de arranque, así que decidimos cambiar el sistema a Windows 11. Para preparar el disco duro, arrancamos Hiren's Boot desde un USB y limpiamos las particiones con diskpart, una herramienta de consola. Después flasheamos la ISO de Windows 11 en el USB e instalamos el sistema. La instalación se completó correctamente.
+Al instalar Linux Mint tuvimos problemas de arranque, así que decidimos cambiar el sistema a Windows 11. Para preparar el ssd, arrancamos Hiren's Boot desde un USB y limpiamos las particiones con diskpart, una herramienta de consola. Después flasheamos la ISO de Windows 11 en el USB e instalamos el sistema. La instalación se completó correctamente.
 
 **Diapositiva 7 · Decisiones técnicas (0:55)**
-Tomamos cinco decisiones. Uno: actualizamos la BIOS a la última versión, para que si se instala un procesador de la serie 5000 no haya problemas de compatibilidad. Dos: usamos Ventoy, que se instala una vez en el pendrive y después solo hay que copiar las ISO; así preparamos varios equipos con distintos sistemas. Tres: arrancamos Hiren's Boot desde el USB por los repetidos problemas con el SSD, que hacían que no hubiera imagen. Cuatro: las pruebas con FurMark, Afterburner y CPU-Z, que veremos ahora. Y cinco: Web3Forms como backend de los formularios, porque no tenemos backend propio ni una base de datos donde almacenar los datos.
+Tomamos cinco decisiones. Uno: actualizamos la BIOS a la última versión, para que si se instala un procesador de la serie 5000 no haya problemas de compatibilidad. Dos: usamos Ventoy, que se instala una vez en el pendrive y después solo hay que copiar las ISO; así preparamos varios equipos con distintos sistemas. Tres: arrancamos Hiren's Boot desde el USB por los repetidos problemas con el SSD, que hacían que no hubiera imagen. Cuatro: las pruebas con FurMark, Afterburner y CPU-Z, que veremos ahora. Y cinco: Utilizamos Web3Forms para que el formulario sea funcional, ya que al no tener un backend no podriamos hacer funcional el formulario y asi al darle al boton de enviar nos llega el email al equipo
 
 **Diapositiva 8 · Pruebas (0:30)**
 Para comprobar que el equipo aguanta, usamos FurMark, que pone los componentes al máximo, y MSI Afterburner y CPU-Z para vigilar las temperaturas mientras tanto. Estas capturas son la evidencia de las pruebas. Paso la palabra a mi compañera, que os cuenta cómo organizamos toda la información.
@@ -99,3 +99,28 @@ Esto ha sido todo. Somos el equipo Castores. Muchas gracias; si tenéis alguna p
 - **¿Para qué sirve la sintaxis estricta de XHTML?** *(Persona 4)* Porque un programa lee la página: el error se detecta al momento y se valida antes de guardar.
 - **¿Qué ventaja da CSS?** *(Persona 4)* Cambiar el diseño en un único archivo, sin tocar el contenido de cada página.
 - **¿Cómo os organizasteis?** *(Persona 1)* Con un tablero Kanban, roles rotativos y evidencias en cada fase.
+
+Guion de las 4 diapositivas de PostgreSQL (unos 3 minutos en total)
+
+BRUNO 1 · Qué es (40 s)
+
+PostgreSQL es un gestor de bases de datos que desarrolla la comunidad de código abierto PostgreSQL Global Development Group. Su historia empieza en 1986 con el proyecto POSTGRES, que nació como sucesor de INGRES. Después, dos estudiantes, Andrew Yu y Jolly Chen, le añadieron un intérprete de SQL y apareció Postgre95. En 1996 llegó el actual PostgreSQL, con compatibilidad total con SQL. Es gratuito y de código abierto, con una licencia propia parecida a MIT y BSD, y lo usan empresas como Apple, Spotify e Instagram.
+
+Frase clave: 1986, 1995, 1996: POSTGRES, Postgre95, PostgreSQL.
+
+JAVIER 2 · Datos y despliegue (50 s)
+
+PostgreSQL usa un modelo relacional y objeto-relacional: guarda los datos en tablas conectadas entre sí, y además admite JSON. Al ser relacional, hay que definir el esquema antes de guardar datos, con comandos SQL. Funciona con el modelo cliente-servidor: un servidor administra los archivos y los clientes se conectan a él. Puede copiar los datos a otras máquinas, lo que se llama replicación, o repartir una base muy grande entre varias, lo que se llama fragmentación. Funciona en Linux, Windows, macOS, UNIX y BSD, y hoy se instala sobre todo en contenedores como Docker o Kubernetes.
+
+Frase clave: relacional, esquema fijo, cliente-servidor.
+
+IVAN 3 · Qué ofrece (45 s)
+
+Como gestor, usa SQL. Por ejemplo, para pedir el equipo EQ-04 hacemos un SELECT sobre la tabla equipo filtrando por su etiqueta. Tiene transacciones y cumple ACID del todo: atomicidad, consistencia, aislamiento y durabilidad. Para la concurrencia usa MVCC, que permite que varios usuarios lean y escriban a la vez sin bloquearse. Tiene usuarios y roles con permisos granulares sobre cada objeto de la base de datos. Y para administrarlo, herramientas gráficas como pgAdmin, que funciona en Windows, Linux y macOS.
+
+Frase clave: SQL, ACID del todo, roles con permisos, pgAdmin.
+
+MARCOS 4 · Valoración y prueba (55 s)
+
+Destaca por su tolerancia a fallos, su alto rendimiento y su facilidad de monitorización. Como limitación, tiene campos de hasta 1 GB y puede saturarse con muchas conexiones a la vez. Para el inventario del aula sí serviría: ofrece integridad de datos y concurrencia, aunque es complejo para personal inexperto. En la prueba creamos la tabla equipo, con la etiqueta como clave primaria, insertamos EQ-01 y EQ-04 y consultamos por aula. El último INSERT repite EQ-01 y da error, porque el identificador es único y no se puede repetir. Es la regla de la teoría sobre atributos identificadores y claves.
+Frase clave: el INSERT falla porque la clave primaria no se puede repetir.
