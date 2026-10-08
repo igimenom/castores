@@ -51,7 +51,7 @@ Para comprobar que el equipo aguanta, usamos FurMark, que pone los componentes a
 ## Iván · Diapositivas 9 a 12
 
 **Diapositiva 9 · Sistema de inventario: diagrama (0:35)**
-Para organizar la información creamos una base de datos de inventario. Tiene siete entidades: equipos, componentes, ubicaciones, estados, incidencias, intervenciones y sistemas operativos, y este diagrama muestra cómo se relacionan. Guarda el historial de componentes de cada equipo y usa restricciones para evitar duplicados.
+Para crear la base de datos (que todavía no hemos creado) realizamos un diagrama entidad-relación. Tenemos dos entidades: un equipo que contiene de 1 a n componentes y unos componentes que pueden estar en 0 o en 1 un equipo. Además, tenemos cada componente con sus diferentes atributos para la matriz de compatibilidad.
 
 **Diapositiva 10 · Sistema de inventario: datos (0:30)**
 Aquí vemos el inventario con datos reales del material analizado; en este ejemplo, las tarjetas gráficas, con su marca, modelo, tipo y cantidad de memoria. 
