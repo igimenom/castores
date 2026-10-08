@@ -39,11 +39,12 @@ El EQ_00 monta un procesador Athlon 3000G, 8 GB de RAM DDR4 a 3200 MHz y un SSD 
 Al instalar Linux Mint tuvimos problemas de arranque, así que decidimos cambiar el sistema a Windows 11. Para preparar el ssd, arrancamos Hiren's Boot desde un USB y limpiamos las particiones con diskpart, una herramienta de consola. Después flasheamos la ISO de Windows 11 en el USB e instalamos el sistema. La instalación se completó correctamente.
 
 **Diapositiva 7 · Decisiones técnicas (0:55)**
-Tomamos cinco decisiones. Uno: actualizamos la BIOS a la última versión, para que si se instala un procesador de la serie 5000 no haya problemas de compatibilidad. Dos: usamos Ventoy, que se instala una vez en el pendrive y después solo hay que copiar las ISO; así preparamos varios equipos con distintos sistemas. Tres: arrancamos Hiren's Boot desde el USB por los repetidos problemas con el SSD, que hacían que no hubiera imagen. Cuatro: las pruebas con FurMark, Afterburner y CPU-X, que veremos ahora. Y cinco: Utilizamos Web3Forms para que el formulario sea funcional, ya que al no tener un backend no podriamos hacer funcional el formulario y asi al darle al boton de enviar nos llega el email al equipo
+Tomamos cinco decisiones. Uno: actualizamos la BIOS a la última versión, para que si se instala un procesador de la serie 5000 no haya problemas de compatibilidad. Dos: usamos Ventoy, que se instala una vez en el pendrive y después solo hay que copiar las ISO; así preparamos varios equipos con distintos sistemas. Tres: arrancamos Hiren's Boot desde el USB por los repetidos problemas con el SSD, que hacían que no hubiera imagen. Cuatro: las pruebas con FurMark, Afterburner y CPU-Z, que veremos ahora. Y cinco: Utilizamos Web3Forms para que el formulario sea funcional, ya que al no tener un backend no podriamos hacer funcional el formulario y asi al darle al boton de enviar nos llega el email al equipo
 
 **Diapositiva 8 · Pruebas (0:30)**
-Para comprobar que el equipo aguanta, usamos FurMark, que pone los componentes al máximo, y MSI Afterburner y CPU-X para vigilar las temperaturas mientras tanto. Estas capturas son la evidencia de las pruebas. Paso la palabra a mi compañera, que os cuenta cómo organizamos toda la información.
+Para comprobar que el equipo aguanta, usamos FurMark, que pone los componentes al máximo, y MSI Afterburner y CPU-Z para vigilar las temperaturas mientras tanto. Estas capturas son la evidencia de las pruebas. Paso la palabra a mi compañera, que os cuenta cómo organizamos toda la información.
 
+> **Frase clave:** Mint porque es gratis y ligero; cinco decisiones: BIOS, Ventoy, Hiren's, pruebas y Web3Forms.
 
 ---
 
@@ -56,7 +57,7 @@ Para crear la base de datos (que todavía no hemos creado) realizamos un diagram
 Aquí vemos el inventario con datos reales del material analizado; en este ejemplo, las tarjetas gráficas, con su marca, modelo, tipo y cantidad de memoria. 
 
 **Diapositiva 11 · Digitalización 1/2 (0:55)**
-Ahora, la propuesta de digitalización: incorporar tecnología para ser más eficientes. Proponemos cinco mejoras. La primera, migrar la web a WordPress: ahora está en HTML, así que cualquier cambio obliga a tocar código, y con un gestor de contenidos se edita sin grandes conocimientos y se publica más rápido. La segunda, publicar el inventario en Internet de forma abierta, como el catálogo de la Universidad de Zaragoza: sus datos no son críticos, así que no hace falta VPN ni IP pública. La tercera, pasar de Google Sheets a SQLite, que es perfecto para realizar búsquedas y consultas de manera rápida.
+Ahora, la propuesta de digitalización: incorporar tecnología para ser más eficientes. Proponemos cinco mejoras. La primera, migrar la web a WordPress: ahora está en HTML, así que cualquier cambio obliga a tocar código, y con un gestor de contenidos se edita sin grandes conocimientos y se publica más rápido. La segunda, publicar el inventario en Internet de forma abierta, como el catálogo de la Universidad de Zaragoza: sus datos no son críticos, así que no hace falta VPN ni IP pública. La tercera, pasar de Google Sheets a PostgreSQL, que evita duplicados y rinde mejor con muchos datos.
 
 **Diapositiva 12 · Digitalización 2/2 (0:35)**
 La cuarta mejora es un identificador único para cada equipo y componente, que no cambie ni se repita y que asigna la base de datos. Y la quinta, control automático con RFID: cada equipo y componente lleva una etiqueta, y una zona de lectura en el acceso al inventario registra sola cada retirada o alta, sin intervención manual. Menos errores y menos olvidos. Termina mi compañero con la parte de lenguajes de marcas.
