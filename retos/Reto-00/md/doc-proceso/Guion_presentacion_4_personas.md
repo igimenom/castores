@@ -33,7 +33,7 @@ Y este es el resultado: el equipo EQ_00 funcionando. A la izquierda, el interior
 ## Javier· Diapositivas 5 a 8
 
 **Diapositiva 5 · Configuración EQ_00 (0:25)**
-El EQ_00 monta un procesador Athlon 3000G, 8 GB de RAM DDR4 a 3200 MHz y un SSD de 128 GB SATA3. La placa base es una Gigabyte A520M K V2, con un disipador Wraith Stealth para el socket AM4, y todo va en una caja con fuente AC4500.
+El EQ_00 monta un procesador Athlon 3000G, 8 GB de RAM DDR4 a 3200 MHz y un SSD de 128 GB SATA3. La placa base es una Gigabyte A520M K V2, con un disipador Wraith Stealth para el socket AM4, y todo va en una caja AC4500 con fuente APIII500.
 
 **Diapositiva 6 · Sistema operativo (0:45)**
 Para elegir sistema operativo comparamos Linux Mint y Windows 11. Linux Mint es gratuito y de código abierto, necesita unos 2 GB de RAM y 20 GB de disco y no exige TPM, así que sirve para hardware antiguo; además incluye LibreOffice. Windows 11 es de pago, pide como mínimo 4 GB de RAM y 64 GB de disco y exige UEFI, Secure Boot y TPM 2.0, aunque tiene una compatibilidad de programas más amplia. Con placas de esta generación, Linux Mint es la opción más realista.
