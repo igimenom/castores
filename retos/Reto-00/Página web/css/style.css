@@ -217,14 +217,13 @@ footer ul a {
 /* ---------- MENÚ DE ENLACES CENTRADO ---------- */
 
 /* Contenedor que centra y limita el ancho del bloque de menú */
-.wrap {
+.seccion-listado {
   max-width: 620px;   /* Ancho máximo del bloque para que el texto no se estire demasiado */
   margin: 0 auto;     /* Lo centra horizontalmente en la página */
 }
 
 /* Texto introductorio encima del menú */
-.wrap p.lead {
-  color: var(--text-dim);  /* Color atenuado definido en una variable CSS (--text-dim); debe declararse en :root */
+.seccion-listado p.seccion-listado-texto {
   font-size: 14px;         /* Tamaño de letra pequeño */
   margin: 0 0 24px;        /* Sin margen arriba/laterales y 24px de separación inferior respecto al menú */
   text-align: center;      /* Centra el texto */
@@ -297,7 +296,7 @@ ul.menu a:hover .arrow {
   }
 
 /* Zona que contiene el logo y los anillos animados */
-  .logo-stage {
+  .logo-intro {
     position: relative;    /* Sirve de referencia para posicionar logo y anillos dentro */
     width: 260px;          /* Ancho del escenario */
     height: 260px;         /* Alto del escenario */
@@ -326,7 +325,7 @@ ul.menu a:hover .arrow {
   }
 
 /* Contenedor circular del logo */
-  .logo-wrap {
+  .logo-contenedor {
     position: absolute;    /* Posicionado dentro de .logo-stage */
     top: 50%;              /* Centrado vertical... */
     left: 50%;             /* ...y horizontal */
@@ -342,7 +341,7 @@ ul.menu a:hover .arrow {
   }
 
 /* Imagen del logo dentro del círculo */
-  .logo-wrap img {
+  .logo-intro img {
     width: 100%;           /* Ocupa todo el ancho del círculo */
     height: 100%;          /* Ocupa todo el alto del círculo */
     object-fit: cover;     /* Rellena el círculo recortando lo que sobre, sin deformar */
@@ -420,12 +419,12 @@ width: 8rem;           /* Ancho de 8rem */
 /* ---------- MENÚ DESPLEGABLE AL PASAR EL RATÓN ---------- */
 
 /* Elemento contenedor: sirve de referencia para posicionar el contenido emergente */
-.dropdown {
+.menu-lista {
   position: relative;   /* Permite que .dropdown-content se posicione respecto a este elemento */
 }
 
 /* Cuadro emergente (oculto por defecto) */
-.dropdown-content {
+.menu-lista-span {
   display: none;                 /* Oculto hasta que se pase el ratón */
   position: absolute;            /* Se coloca respecto a .dropdown */
   right: 100%;                   /* Aparece a la izquierda del elemento padre */
@@ -440,12 +439,12 @@ width: 8rem;           /* Ancho de 8rem */
 }
 
 /* Al pasar el ratón sobre .dropdown se muestra el cuadro emergente */
-.dropdown:hover .dropdown-content {
+.menu-lista:hover .menu-lista-span {
   display: block;                /* Lo hace visible */
 }
 
 /* Imágenes dentro del cuadro emergente */
-.dropdown-content img {
+.menu-lista img {
   display: block;                /* Evita huecos inferiores de imagen inline */
   max-width: 100%;               /* Nunca sobrepasa el ancho del cuadro */
   height: auto;                  /* Mantiene la proporción */
