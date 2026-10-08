@@ -1,4 +1,5 @@
 # Grupo Castores S.L.
+![alt text](LOGO_MEJORADO_CASTORES_S.L.-removebg-preview.png)
 - [1. Introducción](#1-introducción)
     - [1.1. Descripción del proyecto](#11-descripción-del-proyecto)
     - [1.2. Objetivos del proyecto](#12-objetivos-del-proyecto)
@@ -29,6 +30,7 @@
 - [11. Anexos](#11-anexos)
 ## 1. Introducción 
 ### 1.1. Descripción del proyecto
+
 Este proyecto corresponde al Reto 0 de 1º de ASIR: Recuperación y digitalización del parque informático. El centro dispone de ordenadores, periféricos y componentes de distintas generaciones, algunos funcionales, otros averiados o incompletos, y no existe un registro fiable de qué hay, en qué estado está ni qué se ha hecho sobre cada equipo.
 
 Nuestro equipo Castores formado por (Marcos, Iván, Javier y Bruno) debe estudiar el material, recuperar al menos un equipo plenamente funcional, documentar todo el proceso y crear un inventario digital basado en una base de datos propia. Además, debemos proponer cómo gestionar el parque informático de forma más eficiente mediante tecnologías digitales.
@@ -73,6 +75,7 @@ El ciclo de vida del hardware dentro del almacén se divide en cinco etapas clav
 5. **Baja y Desincorporación**: Proceso final impulsado por obsolescencia o avería irreparable, exigiendo el desguace por componentes reutilizables, borrado seguro de información y la gestión del residuo.
 
 La trazabilidad granular a nivel de componente resulta fundamental en la gestión de almacén. No basta con registrar el equipo completo (p. ej., un ordenador de sobremesa); es necesario auditar la composición interna (módulos de RAM, discos duros, procesadores, fuentes de alimentación y tarjetas de expansión) para permitir el intercambio de piezas entre sistemas en desuso (cannibalization) y garantizar la máxima disponibilidad de recambios.
+![alt text](image.png)
 
 ### 2. Análisis Comparativo de Herramientas de Código Abierto para ITAM/CMDB
 El ecosistema open source ofrece diversas soluciones para la gestión de activos, cada una orientada a un perfil operativo específico (Helpdesk integral, inventario puro de almacén o gestión de infraestructura de red/data center).
@@ -87,6 +90,8 @@ El reacondicionamiento de equipos (*refurbishing*) requiere comprobar rigurosame
 
 #### Criterios Técnicos de Compatibilidad
 * **Procesador** (CPU): Compatibilidad del socket físico (p. ej., LGA1200, LGA1700, AM4, AM5) y soporte específico del chipset de la placa base (verificado vía tabla de compatibilidad BIOS/UEFI).
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 * **Memoria RAM**: Tipo de tecnología (DDR3, DDR4, DDR5), formato (DIMM para torre, SO-DIMM para portátiles/mini PCs), frecuencia máxima soportada por la controladora de memoria, latencias (CL) y soporte para memoria con/sin corrección de errores (ECC vs non-ECC).
 
@@ -119,7 +124,7 @@ Para almacenar los componentes del inventario de forma rápida, segura y estruct
 * **MySQL** / **MariaDB**: Estándar en aplicaciones web de gestión (backend nativo de GLPI y Snipe-IT). Ofrece alto rendimiento en lecturas, amplia compatibilidad y sencillez de administración mediante replicación maestro-esclavo.
 
 * **PostgreSQL**: SGBD relacional de nivel empresarial con soporte avanzado para consultas complejas, tipos de datos JSON/JSONB (ideal para guardar especificaciones técnicas heterogéneas de componentes) e integridad transaccional estricta (ACID).
-
+![alt text](image-3.png)
 ### 6. Herramientes de organizaciñon y metodología del proyecto
 
 Con motivo de realizar el trabajo de forma más orgsanizado, estructurada y con menos errores se utilizan herramientas de organización.
@@ -155,6 +160,7 @@ Para que la destrucción de la información sea irreversible, el método de borr
 * **Unidades de Estado Sólido (SSD)**: La sobrescritura repetida genera un desgaste innecesario en las celdas Flash y no suele alcanzar las zonas ocultas de gestión interna (over-provisioning). En los SSD, la solución pasa por enviar órdenes de bajo nivel al propio controlador de la unidad mediante comandos como ATA Secure Erase o NVMe Sanitize / Format (usando utilidades como nvme-cli), restableciendo las celdas a su estado eléctrico original.
 
 * **Destrucción Física**: Si un disco está defectuoso y no responde a los comandos de borrado por software, la única alternativa segura es su inutilización definitiva mediante desmagnetización (degaussing) o trituración mecánica (shredding).
+![alt text](image-4.png)
 ## 4. Requisitos del proyecto
 ### 4.1. Requisitos funcionales
 1. Identificar de forma única cada equipo, componente y periférico (código de inventario/etiqueta).
