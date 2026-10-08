@@ -221,7 +221,22 @@ footer ul a {
   max-width: 620px;   /* Ancho máximo del bloque para que el texto no se estire demasiado */
   margin: 0 auto;     /* Lo centra horizontalmente en la página */
 }
-
+.seccion-listado h2 {
+  margin-bottom: 1rem;
+}
+.seccion-listado form label {
+  display: block;
+}
+.seccion-listado form input, .seccion-listado form select {
+  min-height: 1rem;
+  width: 100%;
+}
+.seccion-listado textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 3rem;
+  max-height: 5rem;
+}
 /* Texto introductorio encima del menú */
 .seccion-listado p.seccion-listado-texto {
   font-size: 14px;         /* Tamaño de letra pequeño */
@@ -489,4 +504,3 @@ details[open] summary {
 .nocompatible{
   background-color: #FF0000;
 }
-
