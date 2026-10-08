@@ -54,7 +54,7 @@ Para comprobar que el equipo aguanta, usamos FurMark, que pone los componentes a
 Para organizar la información creamos una base de datos de inventario. Tiene siete entidades: equipos, componentes, ubicaciones, estados, incidencias, intervenciones y sistemas operativos, y este diagrama muestra cómo se relacionan. Guarda el historial de componentes de cada equipo y usa restricciones para evitar duplicados.
 
 **Diapositiva 10 · Sistema de inventario: datos (0:30)**
-Aquí vemos el inventario con datos reales del material analizado; en este ejemplo, las tarjetas gráficas, con su marca, modelo, tipo y cantidad de memoria. Permite consultas útiles: qué equipos son utilizables, qué material hay disponible, qué incidencias están pendientes, qué componentes tiene un equipo, qué sistemas operativos hay instalados y qué material es reutilizable.
+Aquí vemos el inventario con datos reales del material analizado; en este ejemplo, las tarjetas gráficas, con su marca, modelo, tipo y cantidad de memoria. 
 
 **Diapositiva 11 · Digitalización 1/2 (0:55)**
 Ahora, la propuesta de digitalización: incorporar tecnología para ser más eficientes. Proponemos cinco mejoras. La primera, migrar la web a WordPress: ahora está en HTML, así que cualquier cambio obliga a tocar código, y con un gestor de contenidos se edita sin grandes conocimientos y se publica más rápido. La segunda, publicar el inventario en Internet de forma abierta, como el catálogo de la Universidad de Zaragoza: sus datos no son críticos, así que no hace falta VPN ni IP pública. La tercera, pasar de Google Sheets a PostgreSQL, que evita duplicados y rinde mejor con muchos datos.
