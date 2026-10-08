@@ -403,7 +403,7 @@ Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad p
 ![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/poniendo%20cable%20.jpeg)
 ![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/destornillador.jpg)
 ### Anexo B
-![Anexo B: capturas del tablero de tareas (historial)](../Documentación/img/)
+![Anexo B: capturas del tablero de tareas (historial)![alt text](image-5.png)
 ### Anexo C
 ![Anexo C: diagramas](../Documentación/img/diagramaer.png)
 ### Anexo D: tabla comparativa de sistemas operativos
