@@ -39,12 +39,11 @@ El EQ_00 monta un procesador Athlon 3000G, 8 GB de RAM DDR4 a 3200 MHz y un SSD 
 Al instalar Linux Mint tuvimos problemas de arranque, así que decidimos cambiar el sistema a Windows 11. Para preparar el ssd, arrancamos Hiren's Boot desde un USB y limpiamos las particiones con diskpart, una herramienta de consola. Después flasheamos la ISO de Windows 11 en el USB e instalamos el sistema. La instalación se completó correctamente.
 
 **Diapositiva 7 · Decisiones técnicas (0:55)**
-Tomamos cinco decisiones. Uno: actualizamos la BIOS a la última versión, para que si se instala un procesador de la serie 5000 no haya problemas de compatibilidad. Dos: usamos Ventoy, que se instala una vez en el pendrive y después solo hay que copiar las ISO; así preparamos varios equipos con distintos sistemas. Tres: arrancamos Hiren's Boot desde el USB por los repetidos problemas con el SSD, que hacían que no hubiera imagen. Cuatro: las pruebas con FurMark, Afterburner y CPU-Z, que veremos ahora. Y cinco: Utilizamos Web3Forms para que el formulario sea funcional, ya que al no tener un backend no podriamos hacer funcional el formulario y asi al darle al boton de enviar nos llega el email al equipo
+Tomamos cinco decisiones. Uno: actualizamos la BIOS a la última versión, para que si se instala un procesador de la serie 5000 no haya problemas de compatibilidad. Dos: usamos Ventoy, que se instala una vez en el pendrive y después solo hay que copiar las ISO; así preparamos varios equipos con distintos sistemas. Tres: arrancamos Hiren's Boot desde el USB por los repetidos problemas con el SSD, que hacían que no hubiera imagen. Cuatro: las pruebas con FurMark, Afterburner y CPU-X, que veremos ahora. Y cinco: Utilizamos Web3Forms para que el formulario sea funcional, ya que al no tener un backend no podriamos hacer funcional el formulario y asi al darle al boton de enviar nos llega el email al equipo
 
 **Diapositiva 8 · Pruebas (0:30)**
-Para comprobar que el equipo aguanta, usamos FurMark, que pone los componentes al máximo, y MSI Afterburner y CPU-Z para vigilar las temperaturas mientras tanto. Estas capturas son la evidencia de las pruebas. Paso la palabra a mi compañera, que os cuenta cómo organizamos toda la información.
+Para comprobar que el equipo aguanta, usamos FurMark, que pone los componentes al máximo, y MSI Afterburner y CPU-X para vigilar las temperaturas mientras tanto. Estas capturas son la evidencia de las pruebas. Paso la palabra a mi compañera, que os cuenta cómo organizamos toda la información.
 
-> **Frase clave:** Mint porque es gratis y ligero; cinco decisiones: BIOS, Ventoy, Hiren's, pruebas y Web3Forms.
 
 ---
 
