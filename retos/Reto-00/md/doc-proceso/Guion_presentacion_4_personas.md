@@ -12,7 +12,7 @@
 
 ---
 
-## PERSONA 1 · Diapositivas 1 a 4
+## Bruno · Diapositivas 1 a 4
 
 **Diapositiva 1 · Portada (0:25)**
 Buenos días a todos. Somos el equipo Castores, de 1º de ASIR, y os presentamos el Reto 0: la recuperación y digitalización del parque informático del centro. Yo os cuento de dónde partimos y qué hemos conseguido. Después mis compañeros explicarán la parte técnica, el inventario y los lenguajes de marcas.
@@ -30,7 +30,7 @@ Y este es el resultado: el equipo EQ_00 funcionando. A la izquierda, el interior
 
 ---
 
-## PERSONA 2 · Diapositivas 5 a 8
+## Javier· Diapositivas 5 a 8
 
 **Diapositiva 5 · Configuración EQ_00 (0:25)**
 El EQ_00 monta un procesador Athlon 3000G, 8 GB de RAM DDR4 a 3200 MHz y un SSD de 128 GB SATA3. La placa base es una Gigabyte A520M K V2, con un disipador Wraith Stealth para el socket AM4, y todo va en una caja con fuente AC4500.
@@ -48,7 +48,7 @@ Para comprobar que el equipo aguanta, usamos FurMark, que pone los componentes a
 
 ---
 
-## PERSONA 3 · Diapositivas 9 a 12
+## Iván · Diapositivas 9 a 12
 
 **Diapositiva 9 · Sistema de inventario: diagrama (0:35)**
 Para organizar la información creamos una base de datos de inventario. Tiene siete entidades: equipos, componentes, ubicaciones, estados, incidencias, intervenciones y sistemas operativos, y este diagrama muestra cómo se relacionan. Guarda el historial de componentes de cada equipo y usa restricciones para evitar duplicados.
@@ -66,7 +66,7 @@ La cuarta mejora es un identificador único para cada equipo y componente, que n
 
 ---
 
-## PERSONA 4 · Diapositivas 13 a 17
+## Marcos · Diapositivas 13 a 17
 
 **Diapositiva 13 · Versiones de HTML (0:35)**
 HTML nació en 1991 de la mano de Tim Berners-Lee. En 1995 llegó HTML 2.0, el primer estándar formal; en 1997, HTML 3.2 añadió tablas; en 1999, HTML 4.01 separó contenido y presentación con CSS; en 2000 apareció XHTML 1.0, que es HTML con las reglas de XML; y en 2014, HTML5, el estándar actual, con audio, vídeo y etiquetas semánticas.
