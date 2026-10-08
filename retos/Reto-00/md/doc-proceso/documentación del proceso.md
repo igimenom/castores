@@ -75,6 +75,7 @@ El ciclo de vida del hardware dentro del almacén se divide en cinco etapas clav
 5. **Baja y Desincorporación**: Proceso final impulsado por obsolescencia o avería irreparable, exigiendo el desguace por componentes reutilizables, borrado seguro de información y la gestión del residuo.
 
 La trazabilidad granular a nivel de componente resulta fundamental en la gestión de almacén. No basta con registrar el equipo completo (p. ej., un ordenador de sobremesa); es necesario auditar la composición interna (módulos de RAM, discos duros, procesadores, fuentes de alimentación y tarjetas de expansión) para permitir el intercambio de piezas entre sistemas en desuso (cannibalization) y garantizar la máxima disponibilidad de recambios.
+
 ![alt text](image.png)
 
 ### 2. Análisis Comparativo de Herramientas de Código Abierto para ITAM/CMDB
@@ -90,6 +91,7 @@ El reacondicionamiento de equipos (*refurbishing*) requiere comprobar rigurosame
 
 #### Criterios Técnicos de Compatibilidad
 * **Procesador** (CPU): Compatibilidad del socket físico (p. ej., LGA1200, LGA1700, AM4, AM5) y soporte específico del chipset de la placa base (verificado vía tabla de compatibilidad BIOS/UEFI).
+
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
@@ -124,6 +126,7 @@ Para almacenar los componentes del inventario de forma rápida, segura y estruct
 * **MySQL** / **MariaDB**: Estándar en aplicaciones web de gestión (backend nativo de GLPI y Snipe-IT). Ofrece alto rendimiento en lecturas, amplia compatibilidad y sencillez de administración mediante replicación maestro-esclavo.
 
 * **PostgreSQL**: SGBD relacional de nivel empresarial con soporte avanzado para consultas complejas, tipos de datos JSON/JSONB (ideal para guardar especificaciones técnicas heterogéneas de componentes) e integridad transaccional estricta (ACID).
+
 ![alt text](image-3.png)
 ### 6. Herramientes de organizaciñon y metodología del proyecto
 
@@ -160,7 +163,9 @@ Para que la destrucción de la información sea irreversible, el método de borr
 * **Unidades de Estado Sólido (SSD)**: La sobrescritura repetida genera un desgaste innecesario en las celdas Flash y no suele alcanzar las zonas ocultas de gestión interna (over-provisioning). En los SSD, la solución pasa por enviar órdenes de bajo nivel al propio controlador de la unidad mediante comandos como ATA Secure Erase o NVMe Sanitize / Format (usando utilidades como nvme-cli), restableciendo las celdas a su estado eléctrico original.
 
 * **Destrucción Física**: Si un disco está defectuoso y no responde a los comandos de borrado por software, la única alternativa segura es su inutilización definitiva mediante desmagnetización (degaussing) o trituración mecánica (shredding).
+
 ![alt text](image-4.png)
+
 ## 4. Requisitos del proyecto
 ### 4.1. Requisitos funcionales
 1. Identificar de forma única cada equipo, componente y periférico (código de inventario/etiqueta).
@@ -222,8 +227,8 @@ Durante el proceso, Javier tomó las fotos de cada componente, Marcos redactó l
 ##### Configuración del Sistema y Solución de Problemas
 Inicialmente, **Iván** preparó un USB ejecutable con Ventoy y Linux Mint. **Javier** actualizó la BIOS a la última versión disponible y activó el perfil XMP en la placa base para exprimir el rendimiento de la memoria RAM.
 
-![BIOS](./Documentación/img/Imagen%20de%20la%20bios%20del%20ordenador.jpg)
-![Especificaciones Linux](./Documentación/img/Especificaciones%20desde%20Linux.jpg)
+![BIOS](../../md/Documentación/img/Imagen%20de%20la%20bios%20del%20ordenador.jpg)
+![Especificaciones Linux](../../md/Documentación/img/Especificaciones%20desde%20Linux.jpg)
 
 Debido a problemas de arranque con Linux Mint, decidimos cambiar el sistema a Windows 11. Para preparar el disco duro, booteamos **Hiren's Boot** desde un USB y limpiamos las particiones utilizando la herramienta de consola diskpart. Posteriormente, flasheamos la ISO de Windows 11 e instalamos el sistema correctamente.
 
@@ -257,7 +262,7 @@ En el apartado de gestión de datos, **Marcos** y **Bruno** desarrollaron el Dia
 * **Principales Decisiones:** Migración a Windows 11 LTSC tras fallos de arranque en Linux, formateo profundo con `diskpart` y activación del perfil XMP en la BIOS. Posteriormente debido a repentinos apagados pasados 5 minutos encendido, sospechabamos del ssd y decidimos bootear windows desde el usb y ya no daba ningun problema.
 
 ### 5.2. Cronograma de trabajo 
-Para la organziación diaria del trabajo hemos utilizado dos herramientas clave: un [cuaderno de bitácora](./CUADERNO%20DE%20BITACORA.md) que asigna las tareas para cada día y para cada compañero, y además, bemos utilizado la plantilla de [Kanban](https://github.com/users/igimenom/projects/1/views/1) en Github Projects donde gestionar el trabajo en tarjetas para las tareas (pendiente, realizado, trabajando, revisando y finalizado.)
+Para la organziación diaria del trabajo hemos utilizado dos herramientas clave: un [cuaderno de bitácora](../../md/CUADERNO%20DE%20BITACORA.md) que asigna las tareas para cada día y para cada compañero, y además, bemos utilizado la plantilla de [Kanban](https://github.com/users/igimenom/projects/1/views/1) en Github Projects donde gestionar el trabajo en tarjetas para las tareas (pendiente, realizado, trabajando, revisando y finalizado.)
 
 ### 5.3. Recursos necesarios 
 #### Recursos humanos
@@ -278,9 +283,9 @@ El trabajo se realiza entre el aula y el taller de inventario, contando con pues
 
 ## 6. Desarrollo del proyecto
 ### 6.1. Análisis y diseño
-[Análisis del material](../Página%20web/html/Página_principal.html).
+[Análisis del material](../../Página%20web/html/Página_principal.html).
 
-[Compatibilidad del equipo recuperado](../Página%20web/html/matrizCompatibilidad.html).
+[Compatibilidad del equipo recuperado](../../Página%20web/html/matrizCompatibilidad.html).
 
 [Diseño de la base de datos](../Página%20web/html/Página_principal.html).
 
@@ -309,39 +314,39 @@ Para este proyecto no podemos gastar ni un solo euro, hay que acudir al material
 
 ## 7. Pruebas y validación
 ### Pruebas de hardware:
-![Actualizar la BIOS](./Documentación/img/bios.jpeg)
+![Actualizar la BIOS](../Documentación/img/bios.jpeg)
 Actualizar la BIOS
-![Inicio Linux Mint](./Documentación/img/linux_mint.jpeg)
+![Inicio Linux Mint](../Documentación/img/linux_mint.jpeg)
 Inicio Linux Mint
-![Instalación de Linux Mint](./Documentación/img/instalacion.jpeg)
+![Instalación de Linux Mint](../Documentación/img/instalacion.jpeg)
 Instalación de Linux Mint
-![Elección de idioma en Linux Mint](./Documentación/img/IMG_2286.jpeg).
+![Elección de idioma en Linux Mint](../Documentación/img/IMG_2286.jpeg).
 Elección de idioma en Linux Mint
-![Prueba de benchmark en furmark](./Documentación/img/benchmark.jpeg)
+![Prueba de benchmark en furmark](../Documentación/img/benchmark.jpeg)
 Prueba de benchmark en furmark
-![Componentes en Cpu-X](./Documentación/img/cpu-x.jpeg)
+![Componentes en Cpu-X](../Documentación/img/cpu-x.jpeg)
 Componentes en Cpu-X
-![Benchmark en Cpu-X](./Documentación/img/cpux_slow.jpeg)
+![Benchmark en Cpu-X](../Documentación/img/cpux_slow.jpeg)
 Benchmark en Cpu-X
-![Foto Fps](./Documentación/img/foto_cpu.jpeg)
+![Foto Fps](../Documentación/img/foto_cpu.jpeg)
 Foto Fps
-![Furmark_knot](./Documentación/img/furmark_knot.jpeg)
+![Furmark_knot](../Documentación/img/furmark_knot.jpeg)
 Furmark_knot
 
-![EQ_00 Funcionando](./Documentación/img/Ordenador%20en%20funcionamiento.jpg)
+![EQ_00 Funcionando](../Documentación/img/Ordenador%20en%20funcionamiento.jpg)
 EQ_00 Funcionando
-![Velocidad mhz ram](./Documentación/img/Velocidad%20RAM.jpg)
+![Velocidad mhz ram](../Documentación/img/Velocidad%20RAM.jpg)
 Velocidad mhz ram
-![Temperaturas en la Bios](./Documentación/img/Temperaturas%20CPU.jpg)
+![Temperaturas en la Bios](../Documentación/img/Temperaturas%20CPU.jpg)
 Temperaturas en la Bios
 ## 8. Documentación técnica
-[Ficha técnica del equipo recuperado](http://127.0.0.1:5500/Reto-00/P%C3%A1gina%20web/html/Inventario/equipo/EQ_00.html).
+[Ficha técnica del equipo recuperado](../../Página%20web/html/Inventario/equipo/EQ_00.html).
 ### Intervenciones del equipo
-![Intervenciones del equipo](./Documentación/img/poniendo%20rj-45.jpeg)
-![Intervenciones del equipo](./Documentación/img/poniendo%20ram.jpeg)
-![Intervenciones del equipo](./Documentación/img/poniendo%20cable%20alimentacion.jpeg)
-![Intervenciones del equipo](./Documentación/img/poniendo%20cable%20.jpeg)
-![Intervenciones del equipo](./Documentación/img/destornillador.jpg)
+![Intervenciones del equipo](../Documentación/img/poniendo%20rj-45.jpeg)
+![Intervenciones del equipo](../Documentación/img/poniendo%20ram.jpeg)
+![Intervenciones del equipo](../Documentación/img/poniendo%20cable%20alimentacion.jpeg)
+![Intervenciones del equipo](../Documentación/img/poniendo%20cable%20.jpeg)
+![Intervenciones del equipo](../Documentación/img/destornillador.jpg)
 ## 9. Conclusiones
 ### 9.1. Desviación sobre la planificación inicial
 Reconocer que hubo tanto tareas que se retrasaron como algunas que se adelantaron.
@@ -391,12 +396,12 @@ Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad p
 * Extended Syntax | Markdown Guide. (s. f.). https://www.markdownguide.org/extended-syntax/
 ## 11. Anexos
 ### Anexo A
-![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20ssd.jpeg)
-![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20rj-45.jpeg)
-![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20ram.jpeg)
-![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20cable%20alimentacion.jpeg)
-![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/poniendo%20cable%20.jpeg)
-![Anexo A: fotografías del material y del proceso de montaje.](./Documentación/img/destornillador.jpg)
+![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/poniendo%20ssd.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/poniendo%20rj-45.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/poniendo%20ram.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/poniendo%20cable%20alimentacion.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/poniendo%20cable%20.jpeg)
+![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/destornillador.jpg)
 ### Anexo B
 ![Anexo B: capturas del tablero de tareas (historial)](./Documentación/img/)
 ### Anexo C
@@ -624,11 +629,11 @@ En cambio, XHTML estricto es como un contrato legal o un programa informático: 
 En la realidad cuando una página web se conceta con un sistema de gestión (como el de una base de datos de nuestro inventario de componentes), ya no la está leyendo solo una persona, sino un programa automático.
 
 Para esto hay una serie de conceptos que garantizan que todo funcione sin errores:
-* **El Analizador Sintáctico** (Parser): Es el programa informático encargado de leer y traducir tu página web para que la base de datos la entienda. En HTML: si el navegador encuentra una etiqueta mal cerrada (por ejemplo, abres una negrita <b> pero nunca la cierras), el navegador "hace trampa" e intenta adivinar dónde querías cerrarla. Sin embargo, en XHTML los analizadores de bases de datos no adivinan. Si ven un error, se rompen o rechazan los datos. Al exigir una sintaxis estricta, te aseguras de que el sistema nunca falle por culpa de un malentendido de código.
+* **El Analizador Sintáctico** (Parser): Es el programa informático encargado de leer y traducir tu página web para que la base de datos la entienda. En HTML: si el navegador encuentra una etiqueta mal cerrada (por ejemplo, abres una negrita ``<b>`` pero nunca la cierras), el navegador "hace trampa" e intenta adivinar dónde querías cerrarla. Sin embargo, en XHTML los analizadores de bases de datos no adivinan. Si ven un error, se rompen o rechazan los datos. Al exigir una sintaxis estricta, te aseguras de que el sistema nunca falle por culpa de un malentendido de código.
 
-* Consultas precisas con XPath: Imagina que necesitas buscar automáticamente en tu base de datos el precio de todos los productos que están dentro de una tabla. Con XHTML, al ser un documento ultra ordenado (como una estructura de árbol perfecta), puedes usar una herramienta técnica llamada XPath para "navegar" exactamente hasta el dato que buscas sin miedo a que una etiqueta mal colocada desvíe la búsqueda.
+* **Consultas precisas con XPath**: Imagina que necesitas buscar automáticamente en tu base de datos el precio de todos los productos que están dentro de una tabla. Con XHTML, al ser un documento ultra ordenado (como una estructura de árbol perfecta), puedes usar una herramienta técnica llamada XPath para "navegar" exactamente hasta el dato que buscas sin miedo a que una etiqueta mal colocada desvíe la búsqueda.
 
-* Validación previa: Como XHTML se basa en las reglas del formato XML, los sistemas de inventario pueden pasar el código por un filtro automático (un esquema de validación) antes de guardarlo en la base de datos. Si el texto tiene un error de estructura, el sistema lo bloquea automáticamente, evitando que rompa la página web más adelante.
+* **Validación previa**: Como XHTML se basa en las reglas del formato XML, los sistemas de inventario pueden pasar el código por un filtro automático (un esquema de validación) antes de guardarlo en la base de datos. Si el texto tiene un error de estructura, el sistema lo bloquea automáticamente, evitando que rompa la página web más adelante.
 
 ### Ventajas que aporta separar el HTML del CSS
 
