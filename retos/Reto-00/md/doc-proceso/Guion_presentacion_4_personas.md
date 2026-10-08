@@ -94,7 +94,7 @@ PostgreSQL usa un modelo relacional y objeto-relacional: guarda los datos en tab
 
 Frase clave: relacional, esquema fijo, cliente-servidor.
 
-## Iván - Diapositivam 19 (45 s)
+## Iván - Diapositiva 19 (45 s)
 
 Como gestor, usa SQL. Por ejemplo, para pedir el equipo EQ-04 hacemos un SELECT sobre la tabla equipo filtrando por su etiqueta. Tiene transacciones y cumple ACID del todo: atomicidad, consistencia, aislamiento y durabilidad. Para la concurrencia usa MVCC, que permite que varios usuarios lean y escriban a la vez sin bloquearse. Tiene usuarios y roles con permisos granulares sobre cada objeto de la base de datos. Y para administrarlo, herramientas gráficas como pgAdmin, que funciona en Windows, Linux y macOS.
 
