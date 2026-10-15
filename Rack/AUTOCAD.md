@@ -1,4 +1,4 @@
-* canaleta 1.60
+* canaleta 1.60 https://www.simonelectric.com/es-es/tk121029-canal-pvc-2m-130x55mm-2-compartimentos-funciones-k45-color-blanco
 * tablero 160x80
 * tornillos: https://www.leroymerlin.es/productos/25-tornillo-para-madera-spax-pozidriv-con-cabeza-avellanada-4-x-l-16-mm-14676823.html
 
