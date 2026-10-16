@@ -118,6 +118,7 @@ WHERE j.nick = 'Zeta';
 Piensa: **nick es único, pero la clave es id_jugador. ¿Qué es entonces nick?**
 
 Una clave alternativa (*Alternate Key o AK*) es cualquier clave candidata que cumple con los requisitos para ser una clave primaria, pero que no ha sido seleccionada como tal.
+
 ---
 
 ## 3 · Concesionario
