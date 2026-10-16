@@ -94,6 +94,19 @@ jugadores?
 
 Piensa: `nick` es único, pero la clave es `id_jugador`. ¿Qué es entonces `nick`?
 
+```text
+CLUB(id_club PK, nombre, num_jugadores · derivado)
+JUGADOR(id_jugador PK, nick, fecha_nacimiento, edad · derivado, fecha_fichaje, id club FK → CLUB)
+```
+Preguntas: **¿en qué club juega el nick Zeta? ¿Desde cuándo? ¿Qué jugadores tiene el club con más jugadores?**
+
+```SQL
+SELECT id_club
+FROM JUGADOR
+WHERE nick is "Zeta"
+```
+
+Piensa: **nick es único, pero la clave es id_jugador. ¿Qué es entonces nick?**
 ---
 
 ## 3 · Concesionario
