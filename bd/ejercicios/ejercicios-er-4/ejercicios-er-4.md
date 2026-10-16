@@ -112,12 +112,20 @@ FROM JUGADOR j
 WHERE j.nick = 'Zeta';
 ```
 ```SQL
-`procesando`
+SELECT j.nick, j.fecha_nacimiento, j.fecha_fichaje
+FROM JUGADOR j
+WHERE j.id_club = (
+    SELECT id_club 
+    FROM JUGADOR 
+    GROUP BY id_club 
+    ORDER BY COUNT(*) DESC 
+    LIMIT 1
+);
 ```
 
 Piensa: **nick es único, pero la clave es id_jugador. ¿Qué es entonces nick?**
 
-Una clave alternativa (*Alternate Key o AK*) es cualquier clave candidata que cumple con los requisitos para ser una clave primaria, pero que no ha sido seleccionada como tal.
+Una clave alternativa (*Alternate Key o AK*); es cualquier clave candidata que cumple con los requisitos para ser una clave primaria, pero que no ha sido seleccionada como tal.
 
 ---
 
