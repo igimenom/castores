@@ -17,8 +17,7 @@
     - [6.2. Tecnologías/Herramientas empleadas](#62-tecnologíasherramientas-empleadas)
     - [6.3. Partes contratantes](#63-partes-contratantes)
     - [6.4. Presupuesto](#64-presupuesto)
-    - [6.5. OPCIONAL: Contrato y pliego de condiciones](#65-opcional-contrato-y-pliego-de-condiciones)
-    - [6.6. OPCIONAL: Análisis de riesgos](#66-opcional-análisis-de-riesgos)
+    - [6.5. Análisis de riesgos](#65-análisis-de-riesgos)
 - [7. Pruebas y validación](#7-pruebas-y-validación)
 - [8. Documentación técnica](#8-documentación-técnica)
 - [9. Conclusiones](#9-conclusiones)
@@ -95,7 +94,9 @@ El reacondicionamiento de equipos (*refurbishing*) requiere comprobar rigurosame
 ![alt text](image-1.png)
 
 * **Memoria RAM**: Tipo de tecnología (DDR3, DDR4, DDR5), formato (DIMM para torre, SO-DIMM para portátiles/mini PCs), frecuencia máxima soportada por la controladora de memoria, latencias (CL) y soporte para memoria con/sin corrección de errores (ECC vs non-ECC).
+
 ![alt text](image-2.png)
+
 * **Fuente de Alimentación** (PSU): Formato mecánico (ATX, SFX, TFX), potencia nominal continuada, distribución y amperaje del raíl de +12V, y conectores disponibles (ATX 24-pin, EPS 12V 4+4 pin, PCIe 6+2 pin, conectores SATA/Molex).
 
 * **Interfaces de Almacenamiento**: Mosaico de conectores SATA III (6 Gbps), M.2 (diferenciando conectores Key B, Key M, y protocolos SATA vs NVMe PCIe Gen3/Gen4/Gen5) y bus de expansión PCIe (factor de forma y revisión del bus).
@@ -283,27 +284,32 @@ El trabajo se realiza entre el aula y el taller de inventario, contando con pues
 
 ## 6. Desarrollo del proyecto
 ### 6.1. Análisis y diseño
-[Análisis del material](../../Página%20web/html/Página_principal.html).
 
-[Compatibilidad del equipo recuperado](../../Página%20web/html/matrizCompatibilidad.html).
+* Índice [análisis del material](../../Página%20web/html/Página_principal.html).
 
-[Diseño de la base de datos](../Página%20web/html/Página_principal.html).
+* [Matriz de compatibilidad](../../Página%20web/html/matrizCompatibilidad.html).
+
+* [Árbol de la página web](../Página%20web/html/Página_principal.html).
+
+* [Diagrama de entidad relación](../Documentación/img/diagramaer.png)
+
+* [Mockup](https://www.figma.com/design/0Fquef48T7qZToLNaXOF8e/CASTORES?node-id=0-1&t=zLqLo6tkRqUASVwp-1)
 
 ### 6.2. Tecnologías/Herramientas empleadas
 * Gestión de tareas: Github Projects Kanban.
 * Modelado: Draw.io.
 * Sistema Operativo: Linux Mint y Windows 11.
-* Diagnóstico: MemTest86, Cpu-X, Furmark, HWinfo64, Msiafterburner.
+* Diagnóstico: MemTest86, CPU-X, Furmark, HWinfo64, Msiafterburner.
 * Documentación y evidencias: Github, drive compartido, fotos. 
 ### 6.3. Partes contratantes
 Al ser un proyecto académico, no hay contratación real, pero se identifican las partes:
 
 * *Cliente*: Campus Digital
 * Equipo desarrollador: Grupo Castores (Marcos, Iván, Javier, Bruno), alumnado de 1º de ASIR.
-* Supervisión: Abraham Bartolomé Hernández, David Gascueña Ferre, María José González Naya, Javier Orna Sáez.
+* Supervisión: Abraham Bartolomé Hernández, David Gascueña Ferre, María José González Naya, Javier Orna Sáez y Marta Peribáñez Vela.
 ### 6.4. Presupuesto
 Para este proyecto no podemos gastar ni un solo euro, hay que acudir al material ya existente y a software o servicios gratuitos.
-### 6.6. OPCIONAL: Análisis de riesgos
+### 6.5 Análisis de riesgos
 | Riesgo | Probabilidad | Impacto | Medida de mitigación |
 | :--- | :--- | :--- | :--- |
 | **Componentes incompatibles o defectuosos** | Media | Alto | Verificar especificaciones y probar con componentes conocidos |
@@ -364,20 +370,26 @@ El objetivo de la propuesta de didigtalización en un proyecto o empresa es el p
 
 En nuestro caso, hemos planteado las siguientes mejoras futuras:
 
-1. Migración de la página web a un gestor de contenidos (WordPress).
+1. **Migración de la página web a un gestor de contenidos (WordPress).**
+
 Actualmente la página está desarrollada directamente en HTML, lo que obliga a modificar el código cada vez que se quiere cambiar algo. Pasarla a un sistema de gestión de contenidos (CMS) como WordPress permitiría mantenerla de forma más sencilla y rápida, y editarla sin necesidad de grandes conocimientos técnicos. Además, el tiempo de publicación de contenidos se reduciría de forma considerable y la estructura del sitio se gestionaría de forma automática.
 
-2. Publicación del inventario en Internet.
+2. **Publicación del inventario en Internet.**
+
 Para que el inventario sea accesible de forma cómoda desde cualquier lugar, proponemos alojar la página en Internet. Dado que los datos del inventario no tienen un valor crítico, bastaría con publicarlo de forma abierta, tal y como hace la Universidad de Zaragoza con su catálogo (https://lonja.unizar.es/catalogo/). Así se evita tener que configurar una VPN o contratar direcciones IP públicas, lo que simplifica el despliegue y reduce los costes de mantenimiento.
 
-3. Migración de la hoja de cálculo (Google Sheets) a una base de datos PostgreSQL.
+3. **Migración de la hoja de cálculo (Google Sheets) a una base de datos PostgreSQL.**
+
 Las hojas de cálculo presentan problemas habituales cuando el volumen de datos crece, como la duplicidad de registros o la pérdida de rendimiento. Por ello, proponemos migrar por completo a un sistema gestor de bases de datos relacionales, reconocido por su estabilidad y potencia. PostgreSQL permite, entre otras ventajas, atender cientos de peticiones simultáneas y ejecutar consultas complejas con soltura, algo que una hoja de cálculo no puede ofrecer.
 
-4. Identificador único para cada equipo y componente.
+4. **Identificador único para cada equipo y componente.**
+
 Cada equipo y cada componente debería registrarse con un identificador único y estable en el tiempo, de modo que nunca cambie ni se repita. La migración a una base de datos facilita esta tarea, ya que permite asignar y controlar de forma centralizada la identificación de cada elemento del inventario, evitando confusiones y duplicados.
 
-5. Control automático de entradas y salidas mediante RFID.
+5. **Control automático de entradas y salidas mediante RFID.**
+
 El registro manual de la entrada y salida de componentes resulta poco eficiente y propenso a errores u olvidos. Por ello, proponemos que cada equipo y componente lleve una etiqueta RFID y que la sala de inventario cuente con una zona de lectura RFID en su acceso. De esta forma, cada vez que una persona retire o añada un componente, el sistema lo registrará automáticamente gracias a su etiqueta, sin intervención manual.
+
 ### 9.3. Valoración personal
 Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad para adaptarnos a esta nueva forma de trabajo más colaborativa y menos guiada con respecto a lo que estabamos acostumbrados. Como consecuencia, hemos forjado grandes lazos de amistad entre todos. Además hemos desarrollado la paciencia que tan necesaria ha sido para los integrantes de SMR, que tuvieron que cargarse con lo más técnico (HTML o CSS), mientras que, los exalumnos de Bachillerato colaboraron más en la parte creativa (diseño).
 ## 10. Bibliografía
