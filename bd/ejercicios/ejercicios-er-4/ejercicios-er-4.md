@@ -152,6 +152,15 @@ Preguntas: ¿qué coches no se han vendido? ¿Qué descuento se hizo en cada ven
 Piensa: ¿`precio_venta` es derivado de `precio_tarifa`? ¿Puede `fecha_compra` estar rellena y el
 cliente vacío?
 
+```text
+CLIENTE(dni PK, nombre)
+COCHE(num_bastidor PK, marca, modelo, precio_tarifa, fecha_compra, precio_venta, dni FK → CLIENTE)
+```
+
+Preguntas: ¿qué coches no se han vendido? ¿Qué descuento se hizo en cada venta?
+```sql
+SELECT 
+```
 ---
 
 ## 4 · Comida a domicilio
