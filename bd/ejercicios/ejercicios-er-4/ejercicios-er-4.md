@@ -101,12 +101,23 @@ JUGADOR(id_jugador PK, nick, fecha_nacimiento, edad · derivado, fecha_fichaje, 
 Preguntas: **¿en qué club juega el nick Zeta? ¿Desde cuándo? ¿Qué jugadores tiene el club con más jugadores?**
 
 ```SQL
-SELECT id_club
-FROM JUGADOR
-WHERE nick is "Zeta"
+SELECT c.nombre 
+FROM CLUB c
+JOIN JUGADOR j ON c.id_club = j.id_club
+WHERE j.nick = 'Zeta';
+```
+```SQL
+SELECT j.fecha_fichaje 
+FROM JUGADOR j
+WHERE j.nick = 'Zeta';
+```
+```SQL
+`procesando`
 ```
 
 Piensa: **nick es único, pero la clave es id_jugador. ¿Qué es entonces nick?**
+
+Una clave alternativa (*Alternate Key o AK*) es cualquier clave candidata que cumple con los requisitos para ser una clave primaria, pero que no ha sido seleccionada como tal.
 ---
 
 ## 3 · Concesionario
