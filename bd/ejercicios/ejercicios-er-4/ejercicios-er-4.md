@@ -154,13 +154,26 @@ cliente vacío?
 
 ```text
 CLIENTE(dni PK, nombre)
-COCHE(num_bastidor PK, marca, modelo, precio_tarifa, fecha_compra, precio_venta, dni FK → CLIENTE)
+COCHE(num_bastidor PK, marca, modelo, precio_tarifa, fecha_compra ?, precio_venta ?, dni FK → CLIENTE)
 ```
 
 Preguntas: ¿qué coches no se han vendido? ¿Qué descuento se hizo en cada venta?
 ```sql
-SELECT 
+SELECT num_bastidor, marca, modelo
+FROM COCHE
+WHERE fecha_compra IS NULL
 ```
+
+```SQL
+SELECT num_bastidor, precio_tarifa, precio_venta, (precio_tarifa - precio_venta) AS importe_descuento
+FROM COCHE
+WHERE fecha_compra IS NOT NULL
+```
+
+Piensa: ¿`precio_venta` es derivado de `precio_tarifa`? ¿Puede `fecha_compra` estar rellena y el
+cliente vacío?
+No, precio de venta no es un atributo derivado porque no se puede calcular el ``precio_tarifa`` a partir del ``precio_venta``.
+No, si la venta se ha producido es porque un cliente ha realidado la compra.
 ---
 
 ## 4 · Comida a domicilio
