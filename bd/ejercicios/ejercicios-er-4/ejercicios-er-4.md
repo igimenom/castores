@@ -174,6 +174,7 @@ Piensa: ¿`precio_venta` es derivado de `precio_tarifa`? ¿Puede `fecha_compra` 
 cliente vacío?
 No, precio de venta no es un atributo derivado porque no se puede calcular el ``precio_tarifa`` a partir del ``precio_venta``.
 No, si la venta se ha producido es porque un cliente ha realidado la compra.
+
 ---
 
 ## 4 · Comida a domicilio
