@@ -161,13 +161,13 @@ Preguntas: ¿qué coches no se han vendido? ¿Qué descuento se hizo en cada ven
 ```sql
 SELECT num_bastidor, marca, modelo
 FROM COCHE
-WHERE fecha_compra IS NULL
+WHERE fecha_compra IS NULL;
 ```
 
 ```SQL
 SELECT num_bastidor, precio_tarifa, precio_venta, (precio_tarifa - precio_venta) AS importe_descuento
 FROM COCHE
-WHERE fecha_compra IS NOT NULL
+WHERE fecha_compra IS NOT NULL;
 ```
 
 Piensa: ¿`precio_venta` es derivado de `precio_tarifa`? ¿Puede `fecha_compra` estar rellena y el
@@ -202,9 +202,33 @@ restaurante tarda más de media?
 CLIENTE(id_cliente PK)
 RESTUARANTE(id_restaurante PK)
 REPARTIDOR(id_repartidor PK)
-PEDIDO(id_pedido PK, fecha_hora_pedido, fecha_hora_entrega, minutos_entrega · derivado, id_cliente FK → CLIENTE, id_restaurante FK → RESTAURANTE, id_repartidor → REPARTIDOR)
+PEDIDO(id_pedido PK, fecha_hora_pedido, fecha_hora_entrega, minutos_entrega · derivado, id_cliente FK → CLIENTE, id_restaurante FK → RESTAURANTE, id_repartidor FK → REPARTIDOR)
 ```
 
+Preguntas: ¿qué pedidos esperan repartidor? ¿Cuántos pedidos ha entregado cada repartidor? ¿Qué
+restaurante tarda más de media?
+
+```SQL
+SELECT id_pedido, fecha_hora_pedido, id_cliente, id_restaurante
+FROM PEDIDO
+WHERE id_repartidor iS NOT NULL;
+```
+
+```SQL
+SELECT id_repartidor, COUNT(*) AS pedidos_entregados
+FROM PEDIDO
+WHERE fecha_hora_entrega IS NOT NULL
+GROUP BY id_repartidor;
+```
+
+```SQL
+SELECT id_restaurante, AVG(TIMESTAMPDIFF(MINUTE, fecha_hora_pedido, fecha_hora_entrega)) AS tiempo_medio_minutos
+FROM PEDIDO
+WHERE fecha_hora_entrega IS NOT NULL
+GROUP BY id_restaurante
+ORDER BY tiempo_medio_minutos DESC
+LIMIT 1;
+```
 ---
 
 ## 5 · Listas de reproducción
