@@ -252,6 +252,17 @@ canción?
 Piensa: con tus tablas, ¿puede la misma canción estar dos veces en la misma lista? ¿Y dos canciones
 en la misma posición? Si quisieras permitir lo primero e impedir lo segundo, ¿qué cambiarías?
 
+```text
+LISTA(id_lista PK, nombre)
+CANCION(id_cancion, título, duracion_s)
+CONTIENE(id_lista FK → LISTA, id_cancion FK → CANCION, posicion, PRIMARY KEY (id_lista, id_cancion))
+```
+
+Preguntas: ¿qué canciones tiene la lista «Para estudiar», en orden? ¿En cuántas listas está cada
+canción?
+
+
+```
 ---
 
 ## 6 · Proyectos
