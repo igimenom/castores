@@ -174,7 +174,7 @@ Piensa: ¿`precio_venta` es derivado de `precio_tarifa`? ¿Puede `fecha_compra` 
 cliente vacío?
 No, precio de venta no es un atributo derivado porque no se puede calcular el ``precio_tarifa`` a partir del ``precio_venta``.
 No, si la venta se ha producido es porque un cliente ha realidado la compra.
-.
+
 ---
 
 ## 4 · Comida a domicilio
@@ -196,6 +196,13 @@ flowchart LR
 
 Preguntas: ¿qué pedidos esperan repartidor? ¿Cuántos pedidos ha entregado cada repartidor? ¿Qué
 restaurante tarda más de media?
+
+```SQL
+CLIENTE(id_cliente PK)
+RESTUARANTE(id_restaurante PK)
+REPARTIDOR(id_repartidor PK)
+PEDIDO(id_pedido PK, fecha_hora_pedido, fecha_hora_entrega, minutos_entrega · derivado, id_cliente FK → CLIENTE, id_restaurante FK → RESTAURANTE, id_repartidor → REPARTIDOR)
+```
 
 ---
 
