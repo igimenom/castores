@@ -1,0 +1,1 @@
+Click https://dictionary.cambridge.org/ link to open resource.

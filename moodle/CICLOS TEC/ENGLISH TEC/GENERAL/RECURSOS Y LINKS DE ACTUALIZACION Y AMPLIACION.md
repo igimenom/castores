@@ -1,0 +1,1 @@
+Click https://view.genially.com/69033e3d6153fc86d3ce9449/interactive-content-recursos-y-links-actualizacion-y-ampliacion link to open resource.

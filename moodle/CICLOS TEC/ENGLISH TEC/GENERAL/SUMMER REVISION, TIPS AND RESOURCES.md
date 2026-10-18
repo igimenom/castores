@@ -1,0 +1,1 @@
+Click https://canva.link/qbsumeh7zf1rmk1 link to open resource.
