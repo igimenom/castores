@@ -262,7 +262,6 @@ Preguntas: ¿qué canciones tiene la lista «Para estudiar», en orden? ¿En cu�
 canción?
 
 
-```
 ---
 
 ## 6 · Proyectos
