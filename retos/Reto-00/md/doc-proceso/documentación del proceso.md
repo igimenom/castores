@@ -412,7 +412,7 @@ Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad p
 ![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/poniendo%20cable%20.jpeg)
 ![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/destornillador.jpg)
 ### Anexo B
-![Anexo B: capturas del tablero de tareas (historial)![alt text](image-5.png)
+![Anexo B: capturas del tablero de tareas (historial)](image-5.png)
 ### Anexo C
 ![Anexo C: diagramas](../Documentación/img/diagramaer.png)
 ### Anexo D: tabla comparativa de sistemas operativos
@@ -436,7 +436,7 @@ Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad p
 | **Mantenimiento** | Soporte de la versión actual hasta 2029 | Soporte continuo de Microsoft |
 | **Uso en entornos ASIR** | Excelente para servidores, redes y aprendizaje | Necesario para administrar entornos Microsoft |
 
-> (Datos orientativos de las versiones actuales. Comprobad los requisitos oficiales de cada versión antes de instalar y citad las fuentes en la bibliografía.)
+
 ### Anexo E: fichas técnicas de los componentes
 #### Compatibilidad de componentes con las placas base
 
