@@ -17,11 +17,15 @@ El más barato corresponde a LeroyMerlin.
 El más barato el de Legrand y buena calidad.
 
 # Rack
-- Link 1: https://www.leroymerlin.es/productos/pipario-rack-lanberg-6u-600x450x368-auto-ensamblado-19-hasta-60-kg-negro-84978758.html
-- Link 2: 
-- Link 3:
+- Link 1: https://www.leroymerlin.es/productos/pipario-rack-lanberg-6u-600x450x368-auto-ensamblado-19-hasta-60-kg-negro-84978758.html 94,51€
+- Link 2: https://ekanet.es/rack-6u-puerta-cristal/48-rack-mural-6u-f450mmpuerta-cristal-19.html 119,45 € (impuestos y envío incluido)
+- Link 3: https://www.anvimur.com/es/telefonia-y-redes/1519-armario-rack-6u-mural-19-600x450x368mm.html 100,43 € (impuestos sin envío incluido)
 
+El pipaRIO es el mejor en calidad precio y entrega a domicilio gratis.
 # Switch
-- Link 1: https://www.rackonline.es/switch-para-red/switch-tp-link-24-puertos-gigabit-rack-19.html
-- Link 2: https://www.mediamarkt.es/es/product/_switch-cbs110-24t-eu-cisco-rj-45orethernet-10-kbps-mbps-24-puertos-ethernet-gris-144975635.html
-- Link 3:
+
+- Link 1: https://ekanet.es/switch-baratos-24-puertos/2749-switch-tp-link-19-24-puertos-gigabit-.html 97,74 € (impuestos + gastos envío)
+- Link 2: https://www.rackonline.es/switch-para-red/switch-tp-link-24-puertos-gigabit-rack-19.html 126,46 € (impuestos + gastos envío)
+- Link 3: https://www.mediamarkt.es/es/product/_switch-cbs110-24t-eu-cisco-rj-45orethernet-10-kbps-mbps-24-puertos-ethernet-gris-144975635.html 239,59 €
+
+eL TP-LINK de Ekanet es el switch no gestionable de 24 puertos con mejor calidad precio.
