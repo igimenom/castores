@@ -1,5 +1,5 @@
 **2 cables 5e**
-https://almacenelectricidad.es/cable-ethernet/5138-cable-de-datos-tipo-utp-categoria-5e.html 1,12 €
+https://www.leroymerlin.es/productos/cable-de-red-rigido-ftp-categoria-5e-gembird-1000ft-rojo-305-m-88374101.html 0,25 €
 2 cables 6
 https://www.lantec.es/cables-cat6-utp/171-caja-de-cable-cat6-utp-lszh-color-blanco-cpr-dca-305-mts-commscopeamp.html 0,81 €
 
