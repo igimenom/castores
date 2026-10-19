@@ -260,8 +260,50 @@ CONTIENE(id_lista FK → LISTA, id_cancion FK → CANCION, posicion, PRIMARY KEY
 
 Preguntas: ¿qué canciones tiene la lista «Para estudiar», en orden? ¿En cuántas listas está cada
 canción?
+```SQL
+SELECT C.titulo, C.duracion_s, CO.posicion
+FROM LISTA L
+JOIN CONTIENE CO ON L.id_lista = CO.id_lista
+JOIN CANCION C ON CO.id_cancion = C.id_cancion
+WHERE L.nombre = 'Para estudiar'
+ORDER BY CO.posicion ASC;
+```
 
+```SQL
+SELECT C.id_cancion, C.titulo, COUNT(CO.id_lista) AS total_listas
+FROM CANCION C
+LEFT JOIN CONTIENE CO ON C.id_cancion = CO.id_cancion
+GROUP BY C.id_cancion, C.titulo;
+```
 
+Piensa: con tus tablas, ¿puede la misma canción estar dos veces en la misma lista? ¿Y dos canciones
+en la misma posición? Si quisieras permitir lo primero e impedir lo segundo, ¿qué cambiarías?
+
+¿Puede la misma canción estar dos veces en la misma lista?
+
+No. La clave primaria actual es (id_lista, id_cancion). Al formar parte de la clave primaria, el par (id_lista, id_cancion) es único, lo que impide insertar la misma canción más de una vez dentro de una misma lista.
+
+¿Pueden dos canciones estar en la misma posición en la misma lista?
+
+Sí. La columna posicion es un atributo simple dentro de la tabla. Nada en la definición actual impide que existan dos filas con la misma id_lista y la misma posicion asignadas a canciones distintas.
+
+Para permitir que una canción se repita en la misma lista pero impedir que dos canciones compartan posición en una lista, debes cambiar la clave primaria de la tabla CONTIENE a (id_lista, posicion):
+
+```text
+LISTA(id_lista PK, nombre)
+CANCION(id_cancion PK, título, duracion_s)
+CONTIENE(
+  id_lista FK → LISTA, 
+  id_cancion FK → CANCION, 
+  posicion, 
+  PRIMARY KEY (id_lista, posicion)
+)
+```
+Efectos del cambio:
+
+Impide posiciones duplicadas: La clave primaria (id_lista, posicion) garantiza que no puedan existir dos registros con el mismo número de posición en una misma lista.
+
+Permite canciones repetidas: Como id_cancion deja de ser parte de la clave primaria, la misma canción se puede asociar a la misma lista múltiples veces, siempre que ocupe posiciones distintas.
 ---
 
 ## 6 · Proyectos
