@@ -198,7 +198,7 @@ flowchart LR
 Preguntas: ¿qué pedidos esperan repartidor? ¿Cuántos pedidos ha entregado cada repartidor? ¿Qué
 restaurante tarda más de media?
 
-```SQL
+```text
 CLIENTE(id_cliente PK)
 RESTUARANTE(id_restaurante PK)
 REPARTIDOR(id_repartidor PK)
