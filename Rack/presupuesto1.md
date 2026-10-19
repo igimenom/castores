@@ -17,11 +17,11 @@ El más barato corresponde a LeroyMerlin.
 El más barato el de Legrand y buena calidad.
 
 # Rack
-- Link 1:
+- Link 1: https://www.leroymerlin.es/productos/pipario-rack-lanberg-6u-600x450x368-auto-ensamblado-19-hasta-60-kg-negro-84978758.html
 - Link 2: 
 - Link 3:
 
 # Switch
-- Link 1:
-- Link 2: 
+- Link 1: https://www.rackonline.es/switch-para-red/switch-tp-link-24-puertos-gigabit-rack-19.html
+- Link 2: https://www.mediamarkt.es/es/product/_switch-cbs110-24t-eu-cisco-rj-45orethernet-10-kbps-mbps-24-puertos-ethernet-gris-144975635.html
 - Link 3:
