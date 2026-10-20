@@ -280,7 +280,12 @@ flowchart LR
   P --- p1([id_proyecto 🔑])
   P --- p2([nombre])
 ```
-
+```text
+DEPARTAMENTO (id_departamento PK)
+EMPLEADO (id_empleado PK, nombre, id_departamento FK)
+PROYECTO (id_proyecto PK, nombre)
+ASIGNACION (id_empleado FK, id_proyecto FK, horas_semana, rol)
+```
 Preguntas: ¿quién trabaja en el proyecto 4 y con qué rol? ¿Cuántas horas a la semana dedica cada
 departamento a cada proyecto?
 
