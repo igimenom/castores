@@ -197,9 +197,8 @@ footer {
     display: flex;               /* Activa el modelo Flexbox */
     flex-direction: column;      /* Organiza todo el contenido interno uno debajo del otro */
     align-items: center;         /* Centra todo el contenido horizontalmente */
-    
     font-weight: bold;           /* Aplica estilo negrita a todo el texto del footer */
-    padding: 1rem 0;             /* Espaciado interno de 1rem arriba/abajo y 0 a los lados */
+    padding: 1rem ;             /* Espaciado interno de 1rem arriba/abajo y 0 a los lados */
 
 }
 
@@ -212,6 +211,49 @@ footer ul {
 /* Enlaces situados dentro de las listas del footer */
 footer ul a {
     color: rgba(250, 235, 215, 0.705); /* Aplica el color antiquewhite pero con una transparencia del 70.5% */
+}
+.footer-content {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: grid;
+    /* Crea exactamente 4 columnas que se adaptan al espacio */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    align-items: start;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col li {
+    margin-bottom: 0.5rem;
+}
+.footer-col iframe {
+  min-height: 5rem;
+  min-width: 30rem;
+}
+/* Responsivo: Si la pantalla es pequeña, se apilan en una sola columna */
+@media (max-width: 900px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+.footer-col details {
+  margin-left: -2rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-col details[open] {
+  margin: 0;
+  padding: 0;
+}
+.footer-col details ul li a {
+  text-decoration: none;
 }
 .banner {
   max-height: 12rem;
