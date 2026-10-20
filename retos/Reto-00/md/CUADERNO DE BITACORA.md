@@ -198,6 +198,11 @@ lo que es cada cosa de este.
 * Javier; certificación Ibercaja.
 * Iván; web.
 * Marcos; inforgrafía IPE.
+## Día 23; 21/10/2026
+* Bruno; cuaderno de bitácora.
+* Javier; certificación Ibercaja.
+* Iván; tarea bases de datos.
+* Marcos; infografía IPE y documentación.
 ### TAREAS PENDIENTES
 * docuemtnación del proceso.md
 * terminar tarea bases de datos iván
