@@ -222,9 +222,17 @@ footer ul a {
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se multiplique */
   background-color: #FF964A ;
-
+display: flex;
 }
-
+.banner h1 {
+  color: #F8F6F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 620px;
+  margin: 0 auto;
+}
 /* ---------- MENÚ DE ENLACES CENTRADO ---------- */
 
 /* Contenedor que centra y limita el ancho del bloque de menú */
