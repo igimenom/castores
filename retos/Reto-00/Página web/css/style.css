@@ -218,7 +218,7 @@ footer ul a {
   min-height: 12rem;
   min-width: 100%;
   background-image: url('../img/misc/banner.png');
-  background-size: fill ; /* Hace que la imagen cubra todo el ancho y alto del contenedor */
+  background-size: cover ; /* Hace que la imagen cubra todo el ancho y alto del contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se multiplique */
   background-color: #FF964A ;
