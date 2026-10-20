@@ -177,6 +177,27 @@ lo que es cada cosa de este.
 * Marcos; ayudando a Javier en la presentación y diseño del reto.
 #### pregunta: la documentación es correcta¿?¿?¿?
 #### pregunta: la propuesta de digitalización en que sección se mete
+---
+## Día 19; 15/10/2026
+* Bruno; cuaderno de bitácora.
+* Javier; tablero red.
+* Iván; tablero red.
+* Marcos; tablero red.
+## Día 20; 16/10/2026
+* Bruno; cuaderno de bitácora.
+* Javier; certificación Ibercaja.
+* Iván; ejercicios bbdd.
+* Marcos: estudiando digitalización.
+## Día 21; 19/10/2026
+* Bruno; cuaderno de bitácora.
+* Javier: certificación Ibercaja.
+* Iván: presupuestos rack.
+* Marcos: presupuestos rack.
+## Día 22; 20/10/2026
+* Bruno; cuaderno de bitácora.
+* Javier; certificación Ibercaja.
+* Iván; web.
+* Marcos; inforgrafía IPE.
 ### TAREAS PENDIENTES
 * docuemtnación del proceso.md
 * terminar tarea bases de datos iván

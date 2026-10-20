@@ -213,6 +213,17 @@ footer ul {
 footer ul a {
     color: rgba(250, 235, 215, 0.705); /* Aplica el color antiquewhite pero con una transparencia del 70.5% */
 }
+.banner {
+  max-height: 12rem;
+  min-height: 12rem;
+  min-width: 100%;
+  background-image: url('../img/misc/banner.png');
+  background-size: contain ; /* Hace que la imagen cubra todo el ancho y alto del contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se multiplique */
+  background-color: #FF964A ;
+
+}
 
 /* ---------- MENÚ DE ENLACES CENTRADO ---------- */
 
@@ -222,6 +233,7 @@ footer ul a {
   margin: 0 auto;     /* Lo centra horizontalmente en la página */
 }
 .seccion-listado h2 {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .seccion-listado form label {
@@ -269,7 +281,6 @@ ul.menu a {
   padding: 18px 6px;                      /* Relleno para que la fila sea cómoda de pulsar */
   color: var(--text);                     /* Color del texto desde variable CSS */
   text-decoration: none;                  /* Sin subrayado */
-  font-family: 'Space Grotesk', sans-serif; /* Fuente propia del menú */
   font-weight: 500;                       /* Grosor de letra medio */
   font-size: 17px;                        /* Tamaño de letra */
   transition: color 0.15s ease, padding-left 0.15s ease; /* Animación suave al cambiar color y relleno izquierdo */
