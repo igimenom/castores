@@ -635,7 +635,7 @@ Para entenderlo de forma sencilla, imagina que el HTML normal es como una conver
 
 En cambio, XHTML estricto es como un contrato legal o un programa informático: las reglas son fijas y no hay espacio para interpretaciones. Si falta una coma o un cierre, el sistema se detiene y rechaza el documento.
 
-En la realidad cuando una página web se conceta con un sistema de gestión (como el de una base de datos de nuestro inventario de componentes), ya no la está leyendo solo una persona, sino un programa automático.
+En la realidad cuando una página web se conecta con un sistema de gestión (como el de una base de datos de nuestro inventario de componentes), ya no la está leyendo solo una persona, sino un programa automático.
 
 Para esto hay una serie de conceptos que garantizan que todo funcione sin errores:
 * **El Analizador Sintáctico** (Parser): Es el programa informático encargado de leer y traducir tu página web para que la base de datos la entienda. En HTML: si el navegador encuentra una etiqueta mal cerrada (por ejemplo, abres una negrita ``<b>`` pero nunca la cierras), el navegador "hace trampa" e intenta adivinar dónde querías cerrarla. Sin embargo, en XHTML los analizadores de bases de datos no adivinan. Si ven un error, se rompen o rechazan los datos. Al exigir una sintaxis estricta, te aseguras de que el sistema nunca falle por culpa de un malentendido de código.
