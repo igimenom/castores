@@ -211,7 +211,7 @@ lo que es cada cosa de este.
 * formulario
 * excel
 ---
-* cambiar grid por flex
+* árbol dom para documentación
 * banner pupilentas
 * footer formulario
 * css formulario
