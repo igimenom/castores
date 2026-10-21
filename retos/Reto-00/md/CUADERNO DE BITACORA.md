@@ -211,6 +211,7 @@ lo que es cada cosa de este.
 * formulario
 * excel
 ---
+* cambiar grid por flex
 * banner pupilentas
 * footer formulario
 * css formulario
