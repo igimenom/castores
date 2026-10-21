@@ -645,6 +645,26 @@ Para esto hay una serie de conceptos que garantizan que todo funcione sin errore
 
 * **Validación previa**: Como XHTML se basa en las reglas del formato XML, los sistemas de inventario pueden pasar el código por un filtro automático (un esquema de validación) antes de guardarlo en la base de datos. Si el texto tiene un error de estructura, el sistema lo bloquea automáticamente, evitando que rompa la página web más adelante.
 
+#### ¿Justificas la utilidad de la sintaxis estricta de XHTML cuando se integran páginas web con sistemas de gestión de información, inventarios y bases de datos?
+
+Sí, se justifica plenamente. Aunque hoy en día HTML5 es la norma general por su flexibilidad, la sintaxis estricta de XHTML es una gran opción cuando una página web necesita conectarse de forma directa con bases de datos u otros programas informáticos.
+
+La razón principal es que XHTML no permite errores en la estructura del código. Mientras que el HTML convencional intenta corregir sobre la marcha cualquier etiqueta mal cerrada u otros errores de sintaxis para que la página web se vea bien en pantalla, XHTML exige una sintaxis más limpia. 
+
+Al basarse exactamente en las reglas de XML (estándar creado por el W3C para almacenar, organizar e intercambiar datos), XHTML garantiza que la información de la web tenga la misma estructura limpia, jerárquica y ordenada que maneja una base de datos o un sistema de inventario.
+
+####  ¿Por qué un documento XHTML mal formado puede fallar al conectarse con una base de datos o sistema de inventario, mientras que HTML5 suele ser más permisivo con los errores del desarrollador?
+
+Un sistema de inventario o una base de datos que procesa datos web de forma automatizada necesita leer estructuras exactas para saber qué es un precio, qué es un código de producto o a qué categoría pertenece un stock. Si la página utilzara HTML flexible, un script de extracción podría interpretar mal los límites de las etiquetas debido a un error del código HTML, terminando por guardar datos corruptos, sin que nadie lo note. Con XHTML, la exigencia de estar perfectamente formado hace que: si el código tiene un fallo, el sistema automatizado lo detecta y frena la operación de la base de datos antes de que un error ocurra.
+
+#### ¿Qué problemas surgirían al mantener la web del almacén si aplicaras los estilos visuales directamente con atributos HTML incrustados en lugar de utilizar un archivo CSS externo?
+
+Mantener una web de almacén aplicando estilos visuales directamente con atributos incrustados en lugar de utilizar un archivo CSS externo generaría problemas graves de mantenimiento.
+
+* Dispersión absoluta del código: Cualquier cambio general de diseño obligaría a buscar y modificar manualmente cada etiqueta en muchas páginas diferentes. Totalmente inostenible.
+* Peso de cada documento HTML: Al mezclar el HTML con el CSS la web crece innecesariamente, lo que ralentiza la velocidad de carga y dificulta la lectura automatizada por parte de los sistemas de inventario.
+* Adaptar la interfaz de forma responsiva: Al no contar con hojas de estilo centralizadas es imposible su adaptación a diferentes tamaós de pantalla.
+
 ### Ventajas que aporta separar el HTML del CSS
 
 Separar la estructura HTML de la presentación visual en un archivo CSS optimiza el desarrollo web al centralizar los estilos en un único archivo, lo que simplifica el mantenimiento global y elimina etiquetas obsoletas para lograr un código mucho más limpio. En términos de rendimiento, el navegador almacena el diseño en caché tras la primera visita y reduce drásticamente el peso de transferencia en la red. Además, mejora la accesibilidad y el posicionamiento SEO al ofrecer una jerarquía semántica clara para lectores de pantalla y buscadores, permitiendo adaptar el contenido a cualquier dispositivo mediante media queries. Por último, otorga una gran flexibilidad al permitir rediseñar interfaces por completo sin tocar el código base y fomenta un trabajo en equipo más eficiente entre desarrolladores y diseñadores.
