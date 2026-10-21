@@ -663,7 +663,7 @@ Mantener una web de almacén aplicando estilos visuales directamente con atribut
 
 * Dispersión absoluta del código: Cualquier cambio general de diseño obligaría a buscar y modificar manualmente cada etiqueta en muchas páginas diferentes. Totalmente inostenible.
 * Peso de cada documento HTML: Al mezclar el HTML con el CSS la web crece innecesariamente, lo que ralentiza la velocidad de carga y dificulta la lectura automatizada por parte de los sistemas de inventario.
-* Adaptar la interfaz de forma responsiva: Al no contar con hojas de estilo centralizadas es imposible su adaptación a diferentes tamaós de pantalla.
+* Adaptar la interfaz de forma responsiva: Al no contar con hojas de estilo centralizadas es imposible su adaptación a diferentes tamaños de pantalla.
 
 ### Ventajas que aporta separar el HTML del CSS
 
