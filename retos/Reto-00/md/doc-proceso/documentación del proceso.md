@@ -129,7 +129,7 @@ Para almacenar los componentes del inventario de forma rápida, segura y estruct
 * **PostgreSQL**: SGBD relacional de nivel empresarial con soporte avanzado para consultas complejas, tipos de datos JSON/JSONB (ideal para guardar especificaciones técnicas heterogéneas de componentes) e integridad transaccional estricta (ACID).
 
 ![alt text](image-3.png)
-### 6. Herramientes de organizaciñon y metodología del proyecto
+### 6. Herramientes de organización y metodología del proyecto
 
 Con motivo de realizar el trabajo de forma más orgsanizado, estructurada y con menos errores se utilizan herramientas de organización.
 
@@ -647,6 +647,10 @@ Para esto hay una serie de conceptos que garantizan que todo funcione sin errore
 ### Ventajas que aporta separar el HTML del CSS
 
 Separar la estructura HTML de la presentación visual en un archivo CSS optimiza el desarrollo web al centralizar los estilos en un único archivo, lo que simplifica el mantenimiento global y elimina etiquetas obsoletas para lograr un código mucho más limpio. En términos de rendimiento, el navegador almacena el diseño en caché tras la primera visita y reduce drásticamente el peso de transferencia en la red. Además, mejora la accesibilidad y el posicionamiento SEO al ofrecer una jerarquía semántica clara para lectores de pantalla y buscadores, permitiendo adaptar el contenido a cualquier dispositivo mediante media queries. Por último, otorga una gran flexibilidad al permitir rediseñar interfaces por completo sin tocar el código base y fomenta un trabajo en equipo más eficiente entre desarrolladores y diseñadores.
+´
+### Anexo F:  Árbol DOM de la Página principal
+
+
 
 ### Anexo G: Árbol de la página web
 ![alt](../../Página%20web/img/misc/Árbol%20pagina%20web.png)
