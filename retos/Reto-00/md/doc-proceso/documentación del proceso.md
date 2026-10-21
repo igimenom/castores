@@ -627,7 +627,7 @@ XHTML, al ser una aplicación directa de XML 1.0, exige que el documento sea est
 | **Comillas en atributos** | Opcionales en valores simples (ej. `width=100`). | **Obligatorias siempre** (ej. `width="100"`). |
 | **Minimización de atributos** | Permitida (ej. `<input checked>` o `<option selected>`). | **Prohibida** (ej. `<input checked="checked" />`). |
 | **Anidamiento de etiquetas** | El navegador suele corregir desórdenes leves. | **Estricto:** Deben cerrarse exactamente en el orden inverso al que se abrieron. |
-| **Declaración `<html>**` | Etiqueta simple: `<html>`. | Requiere incluir el namespace XML: `<html xmlns="[http://www.w3.org/1999/xhtml](http://www.w3.org/1999/xhtml)">`.
+| **Declaración `<html>`** | Etiqueta simple: `<html>`. | Requiere incluir el namespace XML: `<html xmlns="[http://www.w3.org/1999/xhtml](http://www.w3.org/1999/xhtml)">`.
 
 #### ¿Entonces cuál es la diferencia fundamental o de concepto entre ambos?
 
