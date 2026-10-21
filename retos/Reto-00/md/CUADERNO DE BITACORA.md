@@ -211,6 +211,7 @@ lo que es cada cosa de este.
 * formulario
 * excel
 ---
+* banner pupilentas
 * footer formulario
 * css formulario
 * presentacion postgre sql
