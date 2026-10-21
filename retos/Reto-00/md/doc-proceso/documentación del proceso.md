@@ -403,6 +403,7 @@ Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad p
 * Montiel, O. (2022, 22 febrero). La guía para principiantes de Git y Github. freeCodeCamp.org. https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/
 * colaboradores de Wikipedia. (2026, 14 septiembre). Base de datos. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Base_de_datos
 * Extended Syntax | Markdown Guide. (s. f.). https://www.markdownguide.org/extended-syntax/
+* Módulos y Lenguajes de Marcas XHTML - Cómo crear módulos y lenguajes de marcas de la familia XHTML para diversión y provecho. (s. f.). http://www.sidar.org/recur/desdi/traduc/es/xhtml/tutxhtml/tutorial_xhtml_castellano.html
 ## 11. Anexos
 ### Anexo A
 ![Anexo A: fotografías del material y del proceso de montaje.](../Documentación/img/poniendo%20ssd.jpeg)
