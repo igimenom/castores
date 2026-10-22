@@ -361,10 +361,11 @@ Por ejemplo, a la hora de desmontar el ordenador, tuvimos un problema; el disipa
 
 Sin embargo otras tareas se adelantaron; tales como el árbol de la web o el prototipo (`mockup`).
 ### 9.2. Resultados obtenidos y posibles mejoras futuras
-Hemos conseguido; ***(desarrollar más)***
+Hemos conseguido;
 * Inventariar equipos y componentes (Google Sheets)
 * Página web funcional con el inventario (HTML, CSS)
 * Diagrama e/r de los componentes y equipos (draw.io)
+* Árbol DOM (draw.io)
 * Mtriz de compatibilidad
 * Prototipo mockup en Figma.
 * Hoja de cálculo a base de datos (futuro)
