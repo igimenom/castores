@@ -657,6 +657,18 @@ Al basarse exactamente en las reglas de XML (estándar creado por el W3C para al
 
 Un sistema de inventario o una base de datos que procesa datos web de forma automatizada necesita leer estructuras exactas para saber qué es un precio, qué es un código de producto o a qué categoría pertenece un stock. Si la página utilzara HTML flexible, un script de extracción podría interpretar mal los límites de las etiquetas debido a un error del código HTML, terminando por guardar datos corruptos, sin que nadie lo note. Con XHTML, la exigencia de estar perfectamente formado hace que: si el código tiene un fallo, el sistema automatizado lo detecta y frena la operación de la base de datos antes de que un error ocurra.
 
+#### Ejemplos de por qué XHTML es más estricto que HTML
+
+* Minúsculas obligatorias: Todas las etiquetas y atributos deben escribirse en minúsculas (``<body>``, ``<p>``). HTML permite mayúsculas o combinadas (``<BODY>``, ``<P>``).
+
+* Cierre obligatorio de etiquetas vacías: Elementos que no tienen etiqueta de cierre propia (como ``<br>``, ``<img>``, ``<input>``) deben cerrarse a sí mismos agregando espacio y barra al final (``<br />``, ``<img />``).
+
+* Comillas obligatorias en atributos: Todos los valores de atributo deben ir entre comillas dobles o simples. En HTML es válido src=foto.jpg, pero XHTML exige ``src="foto.jpg"``.
+
+* Prohibición de atributos abreviados: Los atributos booleanos no se pueden minimizar. En lugar de escribir simplemente ``checked`` o ``disabled``, XHTML requiere ``checked="checked"`` o ``disabled="disabled"``.
+
+* Anidamiento estricto (FIFO/LIFO): Las etiquetas deben cerrarse exactamente en el orden inverso al que se abrieron. La secuencia ``<b><i>texto</b></i>`` es aceptada por la tolerancia de HTML, pero XHTML exige ``<b><i>texto</i></b>``.
+
 #### ¿Qué problemas surgirían al mantener la web del almacén si aplicaras los estilos visuales directamente con atributos HTML incrustados en lugar de utilizar un archivo CSS externo?
 
 Mantener una web de almacén aplicando estilos visuales directamente con atributos incrustados en lugar de utilizar un archivo CSS externo generaría problemas graves de mantenimiento.

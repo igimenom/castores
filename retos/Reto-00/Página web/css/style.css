@@ -430,29 +430,7 @@ ul.menu a:hover .arrow {
     100% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(0deg); }    /* Tamaño y posición finales */
   }
 
-/* Nombre de la marca en la intro */
-  #nombre {
-    margin-top: 33px;      /* Separación respecto al logo */
-    font-size: 30px;       /* Tamaño grande */
-    letter-spacing: 4px;   /* Espaciado entre letras para un aspecto elegante */
-    color: #fff2e6;        /* Blanco cálido */
-    font-weight: 700;      /* Negrita */
-    opacity: 0;            /* Empieza invisible */
-    text-shadow: 0 0 18px rgba(255,140,20,0.7); /* Resplandor naranja alrededor del texto */
-    animation: subirTexto 0.9s ease forwards;   /* Aparece subiendo suavemente */
-    animation-delay: 0.9s; /* Espera 0.9s para entrar después del logo */
-  }
 
-/* Lema o eslogan en la intro */
-  #lema {
-    margin-top: 13px;      /* Separación respecto al nombre */
-    font-size: 14px;       /* Tamaño pequeño */
-    color: #ffbb80;        /* Naranja claro */
-    letter-spacing: 2px;   /* Espaciado entre letras */
-    opacity: 0;            /* Empieza invisible */
-    animation: subirTexto 0.9s ease forwards; /* Misma animación de entrada que el nombre */
-    animation-delay: 1.2s; /* Entra un poco después que el nombre */
-  }
 
 /* Animación de entrada de los textos: suben 14px mientras aparecen */
   @keyframes subirTexto {
