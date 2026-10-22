@@ -512,7 +512,7 @@ Leyenda: ✅ Compatible · ❌ No compatible
   - PB01: ✅ Compatible
 
 #### Discos de almacenamiento (DD)
-
+![alt text](minion-papoi-2.gif)
 - **DD00** · [Crucial BX500 2.5" SSD SATA](https://gzhls.at/blob/ldb/3/f/5/8/df89cd2a2bdba8b18b009df9232c196e8c47.pdf)
   - PB00: ✅ Compatible
   - PB01: ❌ No compatible
