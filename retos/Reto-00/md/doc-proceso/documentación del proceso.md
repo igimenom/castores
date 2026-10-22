@@ -568,7 +568,6 @@ Leyenda: ✅ Compatible · ❌ No compatible
   - PB00: ❌ No compatible
   - PB01: ✅ Compatible
 
-![alt text](minion-papoi-1.gif)
 
 #### Ventilación (V)
 
