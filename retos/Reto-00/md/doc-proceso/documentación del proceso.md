@@ -568,6 +568,7 @@ Leyenda: ✅ Compatible · ❌ No compatible
   - PB00: ❌ No compatible
   - PB01: ✅ Compatible
 
+
 #### Ventilación (V)
 
 - **V00** · [Disipador AMD AM4 712-000046](https://dakis.es/2105-disipador-amd-am4-712-000046-original.html)
