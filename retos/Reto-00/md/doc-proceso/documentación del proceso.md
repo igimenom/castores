@@ -682,7 +682,7 @@ Mantener una web de almacén aplicando estilos visuales directamente con atribut
 Separar la estructura HTML de la presentación visual en un archivo CSS optimiza el desarrollo web al centralizar los estilos en un único archivo, lo que simplifica el mantenimiento global y elimina etiquetas obsoletas para lograr un código mucho más limpio. En términos de rendimiento, el navegador almacena el diseño en caché tras la primera visita y reduce drásticamente el peso de transferencia en la red. Además, mejora la accesibilidad y el posicionamiento SEO al ofrecer una jerarquía semántica clara para lectores de pantalla y buscadores, permitiendo adaptar el contenido a cualquier dispositivo mediante media queries. Por último, otorga una gran flexibilidad al permitir rediseñar interfaces por completo sin tocar el código base y fomenta un trabajo en equipo más eficiente entre desarrolladores y diseñadores.
 ´
 ### Anexo F:  Árbol DOM de la Página principal
-
+![arbol dom](../Documentación/img/Árbol%20DOM.drawio%20(2).png)
 
 
 ### Anexo G: Árbol de la página web
