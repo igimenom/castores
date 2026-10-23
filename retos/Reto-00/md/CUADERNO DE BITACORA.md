@@ -216,6 +216,11 @@ lo que es cada cosa de este.
 * formulario
 * excel
 ---
+* presentacion:
+* más github project y canvan
+* diagrama er mejorar y más base de datos
+* enseñaer mockupo figma
+---
 * árbol dom para documentación
 * banner pupilentas
 * footer formulario
