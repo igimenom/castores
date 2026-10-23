@@ -221,6 +221,7 @@ lo que es cada cosa de este.
 * diagrama er mejorar y más base de datos
 * enseñaer mockupo figma
 ---
+* ejercicios bases de datos
 * árbol dom para documentación
 * banner pupilentas
 * footer formulario
