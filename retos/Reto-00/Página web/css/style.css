@@ -201,7 +201,9 @@ footer {
     padding: 1rem ;             /* Espaciado interno de 1rem arriba/abajo y 0 a los lados */
 
 }
-
+.footer-col {
+  max-width: 100%;
+}
 /* Listas dentro del footer */
 footer ul {
     font-size: 0.8rem;          /* Tamaño de letra ligeramente reducido respecto al texto base */
@@ -234,6 +236,7 @@ footer ul a {
 .footer-col iframe {
   min-height: 5rem;
   min-width: 30rem;
+  border: 1px solid rgba(0, 0, 0, 0)
 }
 /* Responsivo: Si la pantalla es pequeña, se apilan en una sola columna */
 @media (max-width: 900px) {

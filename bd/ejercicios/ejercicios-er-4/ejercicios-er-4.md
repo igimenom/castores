@@ -394,15 +394,28 @@ flowchart LR
     Z --- z2([nombre_zona])
 ```
 
-### A. Las tablas
-
-
 Preguntas: ¿qué patinetes están alquilados ahora? ¿Cuánto pagó un usuario por un alquiler? ¿Cuántas
 veces ha alquilado Ana el patinete `PT-120`?
 
 Piensa: si haces del alquiler una N:M entre USUARIO y PATINETE, ¿cabe que Ana alquile `PT-120` el
 lunes y otra vez el jueves? ¿El precio por minuto es derivado o histórico?
 
+### A. Las tablas
+
+```text
+USUARIO(id_usuario PK, nombre) -- UK(email)
+ZONA(código_zona PK, nombre_zona)
+PATINETE(matrícula PK, modelo, codigo_zona FK → ZONA)
+ALQUILER(id_usuario FK → USUARIO, matricula FK → PATINETE, fecha_inicio, fecha_fin ?, precio_minuto, PK(id_usuario, matricula, fecha_inicio))
+```
+
+### B. Justificación de claves ajenas y tablas intermedias
+
+* `código zona` en **PATINETE**: 
+* **ALQUILER**
+* `id_usario` en **ALQUILER**:
+* `matrícula` en **ALQUILER**:
+* **Atributos propios de la relación**:
 ---
 
 ## 9 · Festival de música · De las tablas al E/R
