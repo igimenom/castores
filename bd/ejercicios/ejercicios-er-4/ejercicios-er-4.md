@@ -411,11 +411,13 @@ ALQUILER(id_usuario FK → USUARIO, matricula FK → PATINETE, fecha_inicio, fec
 
 ### B. Justificación de claves ajenas y tablas intermedias
 
-* `código zona` en **PATINETE**: 
-* **ALQUILER**
-* `id_usario` en **ALQUILER**:
-* `matrícula` en **ALQUILER**:
-* **Atributos propios de la relación**:
+* `código zona` en **PATINETE**: Regla 2 (relación 1:N). La FK va en PATINETE porque tiene cardinalidad (``1,1``). No admite nulos (``?``) porque la cardinalidad mínima es 1 (todo patinete está asignado a una zona).
+* **ALQUILER**: Regla 3 (relación N:M). Al ser una relación (``0,N``) - (``0,N``) con historial, se genera una tabla intermedia para registrar cada alquiler.
+* `id_usario` en **ALQUILER**: FK hacia **USUARIO** por la Regla 3.
+* `matrícula` en **ALQUILER**: FK hacia **PATINETE** por la Regla 3.
+* **Atributos propios de la relación**: ``fecha_inicio``, ``fecha_fin`` y ``precio_minuto`` pasan a la tabla intermedia ALQUILER. ``fecha_fin`` admite nulos (``?``) porque está vacío mientras el alquiler sigue en curso.
+
+
 ---
 
 ## 9 · Festival de música · De las tablas al E/R
