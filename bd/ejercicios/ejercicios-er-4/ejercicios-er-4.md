@@ -291,16 +291,34 @@ Piensa: ¿qué cardinalidades del E/R no quedan garantizadas por las tablas?
 
 ### A. Las tablas
 
-```text
-DEPARTAMENTO (id_departamento PK)
-EMPLEADO (id_empleado PK, nombre, id_departamento FK)
-PROYECTO (id_proyecto PK, nombre)
-ASIGNACION (id_empleado FK, id_proyecto FK, horas_semana, rol)
-```
+    DEPARTAMENTO(id_departamento PK, nombre) -- (Atributos del departamento)
+    EMPLEADO(id_empleado PK, nombre, id_departamento FK → DEPARTAMENTO)
+    PROYECTO(id_proyecto PK, nombre)
+    TRABAJA_EN(id_empleado FK → EMPLEADO, id_proyecto FK → PROYECTO, horas_semana, rol, 
+              PK(id_empleado, id_proyecto))
 
-### B. Justificación de reglas y tablas intermedias
+### B. Justificación de claves ajenas y tablas intermedias
+
+* `id_departamento` en **EMPLEADO**: Regla 2 (relación 1:N). La FK va en **EMPLEADO** porque tiene cardinalidad `(1,1)`. No admite nulos (`?`) porque el mínimo es 1.
+* **TRABAJA_EN**: Regla 3 (relación N:M). Al ser una relación de varios a varios `(0,N) - (1,N)`, genera una tabla intermedia cuya clave primaria compuesta es `PK(id_empleado, id_proyecto)`.
+* `id_empleado` en **TRABAJA_EN**: FK hacia **EMPLEADO** por la regla 3.
+* `id_proyecto` en **TRABAJA_EN**: FK hacia **PROYECTO** por la regla 3.
 
 ### C. Preguntas y Piensa
+
+* **¿Quién trabaja en el proyecto 4 y con qué rol?**
+  * **Tablas:** `EMPLEADO` y `TRABAJA_EN`
+  * **Enlace:** `EMPLEADO.id_empleado = TRABAJA_EN.id_empleado`, filtrando por `TRABAJA_EN.id_proyecto = 4`.
+* **¿Cuántas horas a la semana dedica cada departamento a cada proyecto?**
+  * **Tablas:** `DEPARTAMENTO`, `EMPLEADO` y `TRABAJA_EN`
+  * **Enlace:** `DEPARTAMENTO.id_departamento = EMPLEADO.id_departamento` y `EMPLEADO.id_empleado = TRABAJA_EN.id_empleado`.
+  * **Cálculo:** Agrupar por `id_departamento` e `id_proyecto`, sumando `TRABAJA_EN.horas_semana`.
+* **Piensa:**
+  * **¿Qué cardinalidades del E/R no quedan garantizadas por las tablas?**
+    1. Las **cardinalidades mínimas 1** en los extremos `(1,N)`:
+       * Un departamento con 0 empleados (en la relación `pertenece`).
+       * Un proyecto sin empleados asignados (en la relación `trabaja en`).
+    2. Las restricciones de mínimo a nivel de base de datos relacional deben controlarse mediante programación/triggers o lógica de aplicación, ya que las PKs y FKs por sí solas solo imponen reglas de máximo y de integridad referencial.
 
 
 ---
@@ -325,6 +343,31 @@ flowchart LR
 Preguntas: ¿qué medicamentos llevan ibuprofeno y en qué dosis? ¿Qué laboratorios fabrican algún
 medicamento con paracetamol?
 
+### A. Las tablas
+
+    LABORATORIO(id_laboratorio PK, nombre) -- (Atributos del laboratorio)
+    MEDICAMENTO(codigo_nacional PK, nombre, id_laboratorio FK → LABORATORIO ?)
+    PRINCIPIO_ACTIVO(id_principio PK, nombre)
+    CONTIENE(codigo_nacional FK → MEDICAMENTO, id_principio FK → PRINCIPIO_ACTIVO, dosis_mg, PK(codigo_nacional, id_principio))
+
+### B. Justificación de claves ajenas y tablas intermedias
+
+* `id_laboratorio` en **MEDICAMENTO**: Regla 2 (relación 1:N). La FK va en **MEDICAMENTO** porque tiene cardinalidad `(1,1)`. Admite nulos (`?`) solo si la cardinalidad mínima fuera 0, pero como el E/R indica `(0,N)` en LABORATORIO y `(1,1)` en MEDICAMENTO, la clave ajena **no lleva `?`**.
+* **CONTIENE**: Regla 3 (relación N:M). Al ser una relación `(1,N) - (0,N)`, genera una tabla intermedia con clave compuesta `PK(codigo_nacional, id_principio)`.
+* `codigo_nacional` en **CONTIENE**: FK hacia **MEDICAMENTO** por la regla 3.
+* `id_principio` en **CONTIENE**: FK hacia **PRINCIPIO_ACTIVO** por la regla 3.
+
+### C. Preguntas del ejercicio
+
+* **¿Qué medicamentos llevan ibuprofeno y en qué dosis?**
+  * **Tablas:** `PRINCIPIO_ACTIVO`, `CONTIENE` y `MEDICAMENTO`
+  * **Enlace:** `PRINCIPIO_ACTIVO.id_principio = CONTIENE.id_principio` y `CONTIENE.codigo_nacional = MEDICAMENTO.codigo_nacional`.
+  * **Filtro:** `PRINCIPIO_ACTIVO.nombre = 'Ibuprofeno'`.
+* **¿Qué laboratorios fabrican algún medicamento con paracetamol?**
+  * **Tablas:** `PRINCIPIO_ACTIVO`, `CONTIENE`, `MEDICAMENTO` y `LABORATORIO`
+  * **Enlace:** `PRINCIPIO_ACTIVO.id_principio = CONTIENE.id_principio`, `CONTIENE.codigo_nacional = MEDICAMENTO.codigo_nacional` y `MEDICAMENTO.id_laboratorio = LABORATORIO.id_laboratorio`.
+  * **Filtro:** `PRINCIPIO_ACTIVO.nombre = 'Paracetamol'`.
+
 ---
 
 ## 8 · Alquiler de patinetes
@@ -337,6 +380,22 @@ Aquí haces tú el E/R antes de las tablas.
 > alquila mucha gente, también la misma persona varias veces. De cada alquiler, cuándo empieza,
 > cuándo acaba (vacío mientras está en curso) y el precio por minuto que se aplicó, porque la tarifa
 > cambia. El importe de cada alquiler se calcula.
+
+```mermaid
+flowchart LR
+    U[USUARIO] ---|"(0,N)"| r1{alquila · fecha_inicio, fecha_fin, precio_minuto} ---|"(0,N)"| P[PATINETE]
+    Z[ZONA] ---|"(0,N)"| r2{asignado a} ---|"(1,1)"| P
+    U --- u1([id_usuario 🔑])
+    U --- u2([nombre])
+    U --- u3([email])
+    P --- p1([matricula 🔑])
+    P --- p2([modelo])
+    Z --- z1([codigo_zona 🔑])
+    Z --- z2([nombre_zona])
+```
+
+### A. Las tablas
+
 
 Preguntas: ¿qué patinetes están alquilados ahora? ¿Cuánto pagó un usuario por un alquiler? ¿Cuántas
 veces ha alquilado Ana el patinete `PT-120`?
