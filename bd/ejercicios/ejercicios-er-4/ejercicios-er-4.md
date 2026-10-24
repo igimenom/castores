@@ -53,22 +53,25 @@ flowchart LR
 
 Preguntas: ¿qué bicicletas están circulando ahora? ¿Cuántas hay en la estación `E-07`?
 
-```text
-ESTACIÓN(id_codigo PK, direccion, num_anclajes)
-BICICLETA(id_num_bici PK, tipo, id_estacion FK → ESTACIÓN)
+### A. Las tablas
+
+    ESTACION(codigo PK, direccion, num_anclajes)
+    BICICLETA(num_bici PK, tipo, codigo_estacion FK → ESTACION ?)
+
+### B. Justificación de claves ajenas
+
+* `codigo_estacion` en **BICICLETA**: Regla 2 (relación 1:N). La FK va en **BICICLETA** porque tiene cardinalidad `(0,1)`. Lleva `?` (admite nulos) porque su cardinalidad mínima es 0.
+
+### C. Preguntas del ejercicio
+
+* **¿Qué bicicletas están circulando ahora?**
+  * **Tablas:** `BICICLETA`
+  * **Enlace / Condición:** Filtrar `codigo_estacion IS NULL`.
+* **¿Cuántas hay en la estación `E-07`?**
+  * **Tablas:** `BICICLETA`
+  * **Enlace / Condición:** Contar registros filtrando por `codigo_estacion = 'E-07'`.
 ```
-**¿Qué bicicletas están circulando ahora?**
-```sql
-SELECT id_num_bici 
-FROM BICICLETA 
-WHERE id_estacion IS NULL;
-```
-**¿Cuántas hay en la estación E-07?**
-```sql
-SELECT COUNT(*) AS total_bicicletas 
-FROM BICICLETA 
-WHERE id_estacion = 'E-07';
-```
+
 ---
 
 ## 2 · Clubes de e-sports
@@ -94,38 +97,28 @@ jugadores?
 
 Piensa: `nick` es único, pero la clave es `id_jugador`. ¿Qué es entonces `nick`?
 
-```text
-CLUB(id_club PK, nombre, num_jugadores · derivado)
-JUGADOR(id_jugador PK, nick, fecha_nacimiento, edad · derivado, fecha_fichaje, id club FK → CLUB)
-```
-Preguntas: **¿en qué club juega el nick Zeta? ¿Desde cuándo? ¿Qué jugadores tiene el club con más jugadores?**
+### A. Las tablas
 
-```SQL
-SELECT c.nombre 
-FROM CLUB c
-JOIN JUGADOR j ON c.id_club = j.id_club
-WHERE j.nick = 'Zeta';
-```
-```SQL
-SELECT j.fecha_fichaje 
-FROM JUGADOR j
-WHERE j.nick = 'Zeta';
-```
-```SQL
-SELECT j.nick, j.fecha_nacimiento, j.fecha_fichaje
-FROM JUGADOR j
-WHERE j.id_club = (
-    SELECT id_club 
-    FROM JUGADOR 
-    GROUP BY id_club 
-    ORDER BY COUNT(*) DESC 
-    LIMIT 1
-);
-```
+    CLUB(id_club PK, nombre)  -- UK(nombre)
+    JUGADOR(id_jugador PK, nick, fecha_nacimiento, id_club FK → CLUB, fecha_fichaje)  -- UK(nick)
 
-Piensa: **nick es único, pero la clave es id_jugador. ¿Qué es entonces nick?**
+> *Nota: Los atributos derivados `num_jugadores` (en CLUB) y `edad` (en JUGADOR) no se guardan en las tablas.*
 
-Una clave alternativa (*Alternate Key o AK*); es cualquier clave candidata que cumple con los requisitos para ser una clave primaria, pero que no ha sido seleccionada como tal.
+### B. Justificación de claves ajenas
+
+* `id_club` en **JUGADOR**: Regla 2 (relación 1:N). La FK va en **JUGADOR** porque tiene cardinalidad `(1,1)`. No lleva `?` porque el mínimo es 1.
+* `fecha_fichaje`: Atributo de una relación 1:N, migra a la tabla del lado N (**JUGADOR**) junto con la FK.
+
+### C. Preguntas y Piensa
+
+* **¿En qué club juega el nick `Zeta`? ¿Desde cuándo?**
+  * **Tablas:** `JUGADOR` y `CLUB`
+  * **Enlace:** `JUGADOR.id_club = CLUB.id_club`, filtrando por `JUGADOR.nick = 'Zeta'`. Se obtienen `CLUB.nombre` y `JUGADOR.fecha_fichaje`.
+* **¿Qué jugadores tiene el club con más jugadores?**
+  * **Tablas:** `CLUB` y `JUGADOR`
+  * **Enlace:** `CLUB.id_club = JUGADOR.id_club`, agrupando por club y contando jugadores para obtener los miembros del máximo.
+* **Piensa (`nick`):**
+  * `nick` es una **clave alternativa** (candidate key). Como la PK es `id_jugador`, `nick` se define con restricción de unicidad: `UK(nick)`.
 
 ---
 
@@ -152,29 +145,27 @@ Preguntas: ¿qué coches no se han vendido? ¿Qué descuento se hizo en cada ven
 Piensa: ¿`precio_venta` es derivado de `precio_tarifa`? ¿Puede `fecha_compra` estar rellena y el
 cliente vacío?
 
-```text
-CLIENTE(dni PK, nombre)
-COCHE(num_bastidor PK, marca, modelo, precio_tarifa, fecha_compra ?, precio_venta ?, dni FK → CLIENTE)
-```
+### A. Las tablas
 
-Preguntas: ¿qué coches no se han vendido? ¿Qué descuento se hizo en cada venta?
-```sql
-SELECT num_bastidor, marca, modelo
-FROM COCHE
-WHERE fecha_compra IS NULL;
-```
+    CLIENTE(dni PK, nombre)
+    COCHE(num_bastidor PK, marca, modelo, precio_tarifa, dni_cliente FK → CLIENTE ?, fecha_compra ?, precio_venta ?)
 
-```SQL
-SELECT num_bastidor, precio_tarifa, precio_venta, (precio_tarifa - precio_venta) AS importe_descuento
-FROM COCHE
-WHERE fecha_compra IS NOT NULL;
-```
+### B. Justificación de claves ajenas
 
-Piensa: ¿`precio_venta` es derivado de `precio_tarifa`? ¿Puede `fecha_compra` estar rellena y el
-cliente vacío?
+* `dni_cliente` en **COCHE**: Regla 2 (relación 1:N). La FK va en **COCHE** porque tiene cardinalidad `(0,1)`. Lleva `?` porque su cardinalidad mínima es 0 (el coche puede no estar vendido).
+* `fecha_compra` y `precio_venta`: Atributos de la relación 1:N, migran a la tabla **COCHE** junto con la FK y llevan `?` porque solo tienen valor si el coche se ha vendido.
 
-No, precio de venta no es un atributo derivado porque no se puede calcular el ``precio_tarifa`` a partir del ``precio_venta``.
-No, si la venta se ha producido es porque un cliente ha realidado la compra.
+### C. Preguntas y Piensa
+
+* **¿Qué coches no se han vendido?**
+  * **Tablas:** `COCHE`
+  * **Enlace / Condición:** Filtrar `dni_cliente IS NULL`.
+* **¿Qué descuento se hizo en cada venta?**
+  * **Tablas:** `COCHE`
+  * **Enlace / Cálculo:** Restar `precio_tarifa - precio_venta` para las filas donde `dni_cliente IS NOT NULL`.
+* **Piensa:**
+  * **¿`precio_venta` es derivado de `precio_tarifa`?** No, es un dato real/histórico independiente fruto de una negociación o descuento acordado en la venta, no calculable mediante una regla fija.
+  * **¿Puede `fecha_compra` estar rellena y el cliente vacío?** No. Si hay venta (`fecha_compra` no nulo), obligatoriamente debe existir un comprador (`dni_cliente` no nulo).
 
 ---
 
@@ -198,37 +189,33 @@ flowchart LR
 Preguntas: ¿qué pedidos esperan repartidor? ¿Cuántos pedidos ha entregado cada repartidor? ¿Qué
 restaurante tarda más de media?
 
-```text
-CLIENTE(id_cliente PK)
-RESTUARANTE(id_restaurante PK)
-REPARTIDOR(id_repartidor PK)
-PEDIDO(id_pedido PK, fecha_hora_pedido, fecha_hora_entrega, minutos_entrega · derivado, id_cliente FK → CLIENTE, id_restaurante FK → RESTAURANTE, id_repartidor FK → REPARTIDOR)
-```
+### A. Las tablas
 
-Preguntas: ¿qué pedidos esperan repartidor? ¿Cuántos pedidos ha entregado cada repartidor? ¿Qué
-restaurante tarda más de media?
+    CLIENTE(id_cliente PK, nombre, ...)
+    RESTAURANTE(id_restaurante PK, nombre, ...)
+    REPARTIDOR(id_repartidor PK, nombre, ...)
+    PEDIDO(id_pedido PK, fecha_hora_pedido, fecha_hora_entrega ?, id_cliente FK → CLIENTE, id_restaurante FK → RESTAURANTE, id_repartidor FK → REPARTIDOR ?)
 
-```SQL
-SELECT id_pedido, fecha_hora_pedido, id_cliente, id_restaurante
-FROM PEDIDO
-WHERE id_repartidor iS NOT NULL;
-```
+> *Nota: El atributo derivado `minutos_entrega` no se incluye en la tabla.*
 
-```SQL
-SELECT id_repartidor, COUNT(*) AS pedidos_entregados
-FROM PEDIDO
-WHERE fecha_hora_entrega IS NOT NULL
-GROUP BY id_repartidor;
-```
+### B. Justificación de claves ajenas
 
-```SQL
-SELECT id_restaurante, AVG(TIMESTAMPDIFF(MINUTE, fecha_hora_pedido, fecha_hora_entrega)) AS tiempo_medio_minutos
-FROM PEDIDO
-WHERE fecha_hora_entrega IS NOT NULL
-GROUP BY id_restaurante
-ORDER BY tiempo_medio_minutos DESC
-LIMIT 1;
-```
+* `id_cliente` en **PEDIDO**: Regla 2 (relación 1:N). La FK va en **PEDIDO** por su cardinalidad `(1,1)`. No admite nulos.
+* `id_restaurante` en **PEDIDO**: Regla 2 (relación 1:N). La FK va en **PEDIDO** por su cardinalidad `(1,1)`. No admite nulos.
+* `id_repartidor` en **PEDIDO**: Regla 2 (relación 1:N). La FK va en **PEDIDO** por su cardinalidad `(0,1)`. Lleva `?` porque al principio el pedido no tiene repartidor asignado.
+
+### C. Preguntas del ejercicio
+
+* **¿Qué pedidos esperan repartidor?**
+  * **Tablas:** `PEDIDO`
+  * **Enlace / Condición:** Filtrar `id_repartidor IS NULL`.
+* **¿Cuántos pedidos ha entregado cada repartidor?**
+  * **Tablas:** `REPARTIDOR` y `PEDIDO`
+  * **Enlace:** `REPARTIDOR.id_repartidor = PEDIDO.id_repartidor`, contando los pedidos donde `fecha_hora_entrega IS NOT NULL`.
+* **¿Qué restaurante tarda más de media?**
+  * **Tablas:** `RESTAURANTE` y `PEDIDO`
+  * **Enlace:** `RESTAURANTE.id_restaurante = PEDIDO.id_restaurante`, calculando el tiempo promedio de entrega (`fecha_hora_entrega - fecha_hora_pedido`) por restaurante.
+
 ---
 
 ## 5 · Listas de reproducción
@@ -252,56 +239,33 @@ canción?
 Piensa: con tus tablas, ¿puede la misma canción estar dos veces en la misma lista? ¿Y dos canciones
 en la misma posición? Si quisieras permitir lo primero e impedir lo segundo, ¿qué cambiarías?
 
-```text
-LISTA(id_lista PK, nombre)
-CANCION(id_cancion, título, duracion_s)
-CONTIENE(id_lista FK → LISTA, id_cancion FK → CANCION, posicion, PRIMARY KEY (id_lista, id_cancion))
-```
+### A. Las tablas
 
-#### Preguntas: ¿qué canciones tiene la lista «Para estudiar», en orden? ¿En cuántas listas está cada canción?
-```SQL
-SELECT C.titulo, C.duracion_s, CO.posicion
-FROM LISTA L
-JOIN CONTIENE CO ON L.id_lista = CO.id_lista
-JOIN CANCION C ON CO.id_cancion = C.id_cancion
-WHERE L.nombre = 'Para estudiar'
-ORDER BY CO.posicion ASC;
-```
+    LISTA(id_lista PK, nombre)
+    CANCION(id_cancion PK, titulo, duracion_s)
+    INCLUYE(id_lista FK → LISTA, id_cancion FK → CANCION, posicion, PK(id_lista, id_cancion))
 
-```SQL
-SELECT C.id_cancion, C.titulo, COUNT(CO.id_lista) AS total_listas
-FROM CANCION C
-LEFT JOIN CONTIENE CO ON C.id_cancion = CO.id_cancion
-GROUP BY C.id_cancion, C.titulo;
-```
+### B. Justificación de reglas y tablas intermedias
 
-#### Piensa: con tus tablas, ¿puede la misma canción estar dos veces en la misma lista? ¿Y dos canciones en la misma posición? Si quisieras permitir lo primero e impedir lo segundo, ¿qué cambiarías?
+* **INCLUYE**: Regla 3 (relación N:M). Al ser una relación de varios a varios `(0,N) - (0,N)`, se genera una tabla intermedia cuya clave primaria compuesta es `PK(id_lista, id_cancion)`.
+* `id_lista` en **INCLUYE**: FK hacia **LISTA** por la regla 3.
+* `id_cancion` en **INCLUYE**: FK hacia **CANCION** por la regla 3.
 
-#### ¿Puede la misma canción estar dos veces en la misma lista?
+### C. Preguntas y Piensa
 
-No. La clave primaria actual es (id_lista, id_cancion). Al formar parte de la clave primaria, el par (id_lista, id_cancion) es único, lo que impide insertar la misma canción más de una vez dentro de una misma lista.
-
-#### ¿Pueden dos canciones estar en la misma posición en la misma lista? Si quisieras permitir lo primero e impedir lo segundo, ¿qué cambiarías?
-
-Sí. La columna posicion es un atributo simple dentro de la tabla. Nada en la definición actual impide que existan dos filas con la misma id_lista y la misma posicion asignadas a canciones distintas.
-
-Para permitir que una canción se repita en la misma lista pero impedir que dos canciones compartan posición en una lista, debes cambiar la clave primaria de la tabla CONTIENE a (id_lista, posicion):
-
-```text
-LISTA(id_lista PK, nombre)
-CANCION(id_cancion PK, título, duracion_s)
-CONTIENE(
-  id_lista FK → LISTA, 
-  id_cancion FK → CANCION, 
-  posicion, 
-  PRIMARY KEY (id_lista, posicion)
-)
-```
-Efectos del cambio:
-
-**Impide posiciones duplicadas**: La clave primaria (id_lista, posicion) garantiza que no puedan existir dos registros con el mismo número de posición en una misma lista.
-
-**Permite canciones repetidas**: Como id_cancion deja de ser parte de la clave primaria, la misma canción se puede asociar a la misma lista múltiples veces, siempre que ocupe posiciones distintas.
+* **¿Qué canciones tiene la lista «Para estudiar», en orden?**
+  * **Tablas:** `LISTA`, `INCLUYE` y `CANCION`
+  * **Enlace:** `LISTA.id_lista = INCLUYE.id_lista` y `INCLUYE.id_cancion = CANCION.id_cancion`.
+  * **Filtro y Orden:** Filtrar `LISTA.nombre = 'Para estudiar'` y ordenar por `INCLUYE.posicion ASC`.
+* **¿En cuántas listas está cada canción?**
+  * **Tablas:** `CANCION` e `INCLUYE`
+  * **Enlace:** `CANCION.id_cancion = INCLUYE.id_cancion`, agrupando por canción y contando ocurrencias en `INCLUYE`.
+* **Piensa:**
+  * **Con estas tablas, ¿puede repetirse la pareja canción-lista?** No, porque la PK de la tabla intermedia es `PK(id_lista, id_cancion)`, lo que impide insertar la misma combinación dos veces.
+  * **¿Pueden dos canciones estar en la misma posición dentro de la misma lista?** Tal como está definida la tabla, sí podrían coincidir si no añadimos restricciones adicionales.
+  * **¿Qué cambiarías para permitir repetir la canción e impedir posiciones duplicadas?**
+    1. **Permitir la misma canción en la misma lista:** Se debería cambiar la clave primaria de **INCLUYE** a `PK(id_lista, posicion)` o bien añadir una clave artificial `PK(id_incluye)`.
+    2. **Impedir dos canciones en la misma posición de la lista:** Añadir una restricción de unicidad para la combinación lista-posición: `UK(id_lista, posicion)`.
 
 ---
 
@@ -321,24 +285,24 @@ flowchart LR
   P --- p1([id_proyecto 🔑])
   P --- p2([nombre])
 ```
+
+Preguntas: ¿quién trabaja en el proyecto 4 y con qué rol? ¿Cuántas horas a la semana dedica cada departamento a cada proyecto?
+
+Piensa: ¿qué cardinalidades del E/R no quedan garantizadas por las tablas?
+
+### A. Las tablas
+
 ```text
 DEPARTAMENTO (id_departamento PK)
 EMPLEADO (id_empleado PK, nombre, id_departamento FK)
 PROYECTO (id_proyecto PK, nombre)
 ASIGNACION (id_empleado FK, id_proyecto FK, horas_semana, rol)
 ```
-#### Preguntas: ¿quién trabaja en el proyecto 4 y con qué rol? ¿Cuántas horas a la semana dedica cada departamento a cada proyecto?
 
-```SQL
-SELECT e.nombre, a.rol
-FROM EMPLEADO e
-JOIN ASIGNACION a ON e.id_empleado = a.id_empleado
-WHERE a.id_proyecto = 4;
-```
+### B. Justificación de reglas y tablas intermedias
 
+### C. Preguntas y Piensa
 
-
-Piensa: ¿qué cardinalidades del E/R no quedan garantizadas por las tablas?
 
 ---
 
