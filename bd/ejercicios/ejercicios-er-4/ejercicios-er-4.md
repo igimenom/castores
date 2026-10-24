@@ -327,8 +327,16 @@ EMPLEADO (id_empleado PK, nombre, id_departamento FK)
 PROYECTO (id_proyecto PK, nombre)
 ASIGNACION (id_empleado FK, id_proyecto FK, horas_semana, rol)
 ```
-Preguntas: ¿quién trabaja en el proyecto 4 y con qué rol? ¿Cuántas horas a la semana dedica cada
-departamento a cada proyecto?
+#### Preguntas: ¿quién trabaja en el proyecto 4 y con qué rol? ¿Cuántas horas a la semana dedica cada departamento a cada proyecto?
+
+```SQL
+SELECT e.nombre, a.rol
+FROM EMPLEADO e
+JOIN ASIGNACION a ON e.id_empleado = a.id_empleado
+WHERE a.id_proyecto = 4;
+```
+
+
 
 Piensa: ¿qué cardinalidades del E/R no quedan garantizadas por las tablas?
 
