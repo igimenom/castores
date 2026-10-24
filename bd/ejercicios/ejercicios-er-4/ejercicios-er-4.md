@@ -70,7 +70,6 @@ Preguntas: ¿qué bicicletas están circulando ahora? ¿Cuántas hay en la estac
 * **¿Cuántas hay en la estación `E-07`?**
   * **Tablas:** `BICICLETA`
   * **Enlace / Condición:** Contar registros filtrando por `codigo_estacion = 'E-07'`.
-```
 
 ---
 
