@@ -706,24 +706,19 @@ HTML
       │         └── A (.headerCastor)
       ├── MAIN
       │    ├── SECTION (.intro)
-      │    │    └── SECTION (.logo-intro)
-      │    │         ├── ARTICLE (.anillo)
-      │    │         ├── ARTICLE (.anillo)
-      │    │         ├── ARTICLE (.anillo)
-      │    │         └── SECTION (.logo-contenedor)
-      │    │              └── IMG
+      │    │    └── IMG
       │    ├── SECTION (.banner)
       │    │    └── H1
       │    └── SECTION (.seccion-listado)
       │         ├── BR
       │         ├── P (.seccion-listado-texto)
       │         └── UL (.menu)
-      │              ├── LI (.menu-lista) (x9)
-      │              │    ├── A
-      │              │    │    ├── SPAN
-      │              │    │    └── SPAN (.arrow)
-      │              │    └── SPAN (.menu-lista-span)
-      │              │         └── IMG
+      │              └── LI (.menu-lista) (x9)
+      │                   ├── A
+      │                   │    ├── SPAN
+      │                   │    └── SPAN (.arrow)
+      │                   └── SPAN (.menu-lista-span)
+      │                        └── IMG
       └── FOOTER
            ├── SECTION (.footer-content)
            │    ├── ARTICLE (.footer-col)
@@ -738,12 +733,11 @@ HTML
            │    │    └── NAV
            │    │         └── DETAILS
            │    │              ├── SUMMARY
-           │    │              └── UL   
+           │    │              └── UL
            │    │                   └── LI (x8)
-           │    │                        └── A             
-           │    │                                  
+           │    │                        └── A
            │    └── ARTICLE (.footer-col)
-           │         └── IFRAME
+           │         └── IFRAME (.footer-col-iframe)
            ├── P (.footer-copy)
            └── A (.btnArriba)
 ```           
