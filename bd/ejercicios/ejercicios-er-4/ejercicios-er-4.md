@@ -417,6 +417,18 @@ ALQUILER(id_usuario FK → USUARIO, matricula FK → PATINETE, fecha_inicio, fec
 * `matrícula` en **ALQUILER**: FK hacia **PATINETE** por la Regla 3.
 * **Atributos propios de la relación**: ``fecha_inicio``, ``fecha_fin`` y ``precio_minuto`` pasan a la tabla intermedia ALQUILER. ``fecha_fin`` admite nulos (``?``) porque está vacío mientras el alquiler sigue en curso.
 
+### C. Preguntas del ejercicio
+
+* **¿Qué patinetes están alquilados ahora?**
+  * **Tablas**: `ALQUILER`
+  * **Enlace/Condición**: Filtrar los registros donde `fecha_fin IS NULL`
+* **¿Cuánto pagó un usuario por un alquiler?**
+  * **Tablas**: `ALQUILER`
+  * **Enlace/Cálculo**: Multiplicar la duración del alquiler por la tarifa aplicada: `(fecha_fin - fecha_inicio en minutos) * precio_minuto`
+* **Si haces del alquiler una N:M entre USUARIO y PATINETE, ¿cabe que Ana alquile PT-120 el lunes y otra vez el jueves?**
+  * Sí, siempre que incluyas la fecha de inicio en la clave primaria compuesta: `PK(id_usuario, matricula, fecha_inicio)`. Si la PK fuera únicamente `(id_usuario, matricula)`, solo se podría registrar un alquiler por pareja usuario-patinete en toda la historia.
+* **¿El precio por minuto es derivado o histórico?**
+  * Es un dato histórico. Se debe almacenar obligatoriamente en cada alquiler porque guarda la tarfica vigente en el momento en que se realizó la operación; no se puede calcular ni derivar a partir de otros campos actuales si la tarifca cambia con el tiempo.
 
 ---
 
