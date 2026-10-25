@@ -444,13 +444,50 @@ ACTUACION(id_grupo FK → GRUPO, id_escenario FK → ESCENARIO, dia, hora_inicio
           PK(id_grupo, id_escenario)
 ```
 
-1. Dibuja el E/R con todas las cardinalidades que puedas deducir. ¿Cuáles no se pueden saber mirando
-   solo las tablas?
-2. ¿Qué es ACTUACION en el E/R: una entidad o una relación? ¿Por qué?
-3. Con estas tablas, ¿puede un grupo tocar dos días en el mismo escenario? ¿Pueden dos grupos tocar
-   a la vez en el mismo escenario? Propón una clave primaria para ACTUACION que permita lo primero e
-   impida lo segundo.
+1. **Dibuja el E/R con todas las cardinalidades que puedas deducir. ¿Cuáles no se pueden saber mirando solo las tablas?**
 
+```mermaid
+flowchart LR
+    R[REPRESENTANTE] ---|"(0,N)"| r1{representa} ---|"(0,1)"| G[GRUPO]
+    G ---|"(0,N)"| r2{actua en · dia, hora_inicio} ---|"(0,N)"| E[ESCENARIO]
+    E --- e1([id_escenario 🔑])
+    E --- e2([nombre])
+    E --- e3([aforo])
+    R --- r_1([id_representante 🔑])
+    R --- r_2([nombre])
+    R --- r_3([telefono])
+    G --- g1([id_grupo 🔑])
+    G --- g2([nombre])
+```
+
+Mirando las tablas solo se pueden deducir con certeza las cardinalidades máximas (gracias a la ubicación de las FK y la PK de la relación N:M) y las mínimas que admiten nulo (?):
+
+* Cardinalidades mínimas que no se pueden asegurar:
+
+  * En **REPRESENTANTE** (extremo del grupo): No sabemos si un representante debe tener obligatoriamente al menos un grupo asociado (``1,N``) o si puede existir sin ningún grupo (``0,N``).
+
+  * En **GRUPO** (extremo del escenario): No se puede saber si un grupo debe tener al menos una actuación registrada (``1,N``) o puede no tener ninguna (``0,N``).
+
+  * En **ESCENARIO** (extremo del grupo): No se puede saber si un escenario debe albergar al menos una actuación (``1,N``) o si puede estar vacío (``0,N``).
+
+2. **¿Qué es ACTUACION en el E/R: una entidad o una relación? ¿Por qué?**
+
+Es una relación N:M (varios a varios) entre ``GRUPO`` y ``ESCENARIO`` con atributos propios (``dia`` y ``hora_inicio``).
+
+Por qué: Nace de aplicar la **Regla 3** de paso a tablas. Su clave primaria en las tablas está formada únicamente por la combinación de las claves primarias de las dos entidades a las que conecta (``PK(id_grupo, id_escenario)``), sin clave primaria propia.
+
+3. **Con estas tablas, ¿puede un grupo tocar dos días en el mismo escenario? ¿Pueden dos grupos tocar a la vez en el mismo escenario? Propón una clave primaria para ACTUACION que permita lo primero e impida lo segundo.**
+
+* **¿Puede un grupo tocar dos días en el mismo escenario?**
+
+  * No. Como la clave primaria es ``PK(id_grupo, id_escenario)``, la base de datos prohíbe insertar dos veces la misma pareja de grupo y escenario, impidiendo que actúen el mismo o distinto día.
+* **¿Pueden dos grupos tocar a la vez en el mismo escenario?**
+  * Sí. Las tablas actuales no impiden que dos grupos diferentes coincidan exactamente en el mismo ``id_escenario``, ``dia`` y ``hora_inicio``, ya que la combinación de (``id_escenario, dia, hora_inicio``) no forma parte de ninguna clave única (``PK`` o ``UK``).
+* Propuesta de Clave Primaria para **ACTUACION**:
+  * Nueva PK: ``PK(id_escenario, dia, hora_inicio)``
+  * Por qué funciona:
+    1. Impide que dos grupos toquen a la vez: Al ser (``id_escenario``, ``dia``, ``hora_inicio``) la clave primaria, no pueden existir dos filas con el mismo escenario, fecha y hora.
+    2. Permite que un grupo toque dos días en el mismo escenario: Como ``id_grupo`` ya no forma parte de la clave primaria, el mismo i``d_grupo`` puede aparecer en múltiples filas para un mismo ``id_escenario`` siempre que el ``dia`` o la ``hora_inicio`` cambien.
 ---
 
 Última actualización: 4 de octubre de 2026.
