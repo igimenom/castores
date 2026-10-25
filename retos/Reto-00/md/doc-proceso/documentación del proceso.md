@@ -736,13 +736,12 @@ HTML
            │    │                   └── A
            │    ├── ARTICLE (.footer-col)
            │    │    └── NAV
-           │    │         └── UL
-           │    │              └── LI
-           │    │                   └── DETAILS
-           │    │                        ├── SUMMARY
-           │    │                        └── UL
-           │    │                             └── LI (x8)
-           │    │                                  └── A
+           │    │         └── DETAILS
+           │    │              ├── SUMMARY
+           │    │              └── UL   
+           │    │                   └── LI (x8)
+           │    │                        └── A             
+           │    │                                  
            │    └── ARTICLE (.footer-col)
            │         └── IFRAME
            ├── P (.footer-copy)
