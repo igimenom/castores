@@ -64,6 +64,13 @@ partes B a E. El lunes se sigue desde ahí.
 
 ### B | Las tablas
 
+```TEXT
+EQUIPO(nombre PK, ciudad, pabellón)
+PARTIDO(id_partido PK, jornada, fecha, resultado)
+GOL(id_gol, minuto)
+JUGADOR(id_jugador, nombre, posición, dorsal, fecha_nacimiento)
+```
+
 ### C | Drawdb exportación SQL
 
 ### D | Crear tablas DBeaver
