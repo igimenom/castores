@@ -36,7 +36,7 @@ contestar recorriendo vuestras tablas.
 
 | # | Qué | Cómo |
 |---|---|---|
-| A | El E/R | draw.io, notación de clase: entidades, relaciones, atributos, claves y cardinalidades `(mín,máx)` |
+| A | El E/R | draw.io, notación de clase: entidades, relaciones, atributos, claves y cardinalidades `(mín,máx)` | 
 | B | Las tablas | Notación de texto del apartado 2.3: `PK`, `FK → TABLA`, `?` para lo que admite nulo, `UK(…)` |
 | C | La regla de cada clave ajena | Una línea por clave ajena: «`id_equipo` en JUGADOR: regla 2, JUGADOR tiene `(1,1)`» |
 | D | Las preguntas | Para cada una: qué tablas miras y por qué columnas las enlazas |
@@ -57,3 +57,13 @@ Piensa:
 
 En la carpeta `bd/liga/` del repositorio de vuestro equipo: la imagen del E/R y un documento con las
 partes B a E. El lunes se sigue desde ahí.
+
+### A | El E/R
+
+![diagram](PARTIDO.drawio.png)
+
+### B | Las tablas
+
+### C | Drawdb exportación SQL
+
+### D | Crear tablas DBeaver
