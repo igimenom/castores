@@ -73,4 +73,32 @@ JUGADOR(id_jugador, nombre, posición, dorsal, fecha_nacimiento)
 
 ### C | Drawdb exportación SQL
 
+```mermaid
+erDiagram
+	equipo {
+		VARCHAR(255) nombre
+		VARCHAR(255) ciudad
+		VARCHAR(255) pabellón
+	}
+
+	partido {
+		INTEGER id_partido
+		INTEGER jornada
+		DATE fecha
+		INTEGER resultado
+	}
+
+	gol {
+		INTEGER id_gol
+		DATETIME minuto
+	}
+
+	jugador {
+		INTEGER id_jugador
+		VARCHAR(255) nombre
+		INTEGER posicion
+		INTEGER dorsal
+		DATE fecha_nacimiento
+	}
+```
 ### D | Crear tablas DBeaver
