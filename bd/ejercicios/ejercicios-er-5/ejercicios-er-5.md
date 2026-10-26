@@ -75,6 +75,9 @@ JUGADOR(id_jugador, nombre, posición, dorsal, fecha_nacimiento)
 
 ```mermaid
 erDiagram
+	equipo ||--|| partido : references
+	equipo ||--|| partido : references
+
 	equipo {
 		VARCHAR(255) nombre
 		VARCHAR(255) ciudad
@@ -86,6 +89,8 @@ erDiagram
 		INTEGER jornada
 		DATE fecha
 		INTEGER resultado
+		VARCHAR(255) id_local
+		VARCHAR(255) id_visitante
 	}
 
 	gol {
