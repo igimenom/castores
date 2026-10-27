@@ -223,6 +223,7 @@ lo que es cada cosa de este.
 ---
 * ejercicios bases de datos er5 pendiente
 * árbol dom para documentación
+* @media
 * banner pupilentas
 * footer formulario
 * css formulario
