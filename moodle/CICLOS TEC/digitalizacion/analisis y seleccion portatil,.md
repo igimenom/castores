@@ -66,10 +66,27 @@ Por tanto el consumo total son 27 GB.
 
 Memoria restante para cada configuración:
 
-* Equipo 32 GB: 5 GB restantes
+* Equipo 32 GB: 5 GB restantes.
+    * ¿Son suficientes?: Dependerá de qué otros programas mantengamos abiertos. Dos escenarios y valores estimados de memoria:
+        * Ningun programa abierto o muy ligero: con 5 GB restantes es más que suficiente.
+        * Navegador Chromium (2GB), VS Code (0,5 GB), otros programas pesados como AutoCAD (2 GB) o Cisco Packet Tracer (0,5 GB): podría empezar a quedarse corto.
 * Equipo 64 GB: 37 GB restantes
+    * ¿Son suficientes?: Sí, de forma sobrada. Tanto para el sistema principal como para las máquinas virtuales y demás software habitual (VMware, Visual Studio, Cisco
+Packet Tracer) es más que suficiente.
 
 ### 2. Proponed cuántas vCPU asignaríais a cada VM. Explicad qué problemas puede generar asignar demasiadas.
+
+#### A. Propuesta de asignación de vCPU por Máquina Virtual
+* **VM 1 (Windows 11 - 8 GB RAM):** **4 vCPUs** (Suficiente para mover el entorno gráfico de Windows de forma fluida).
+* **VM 2 (Ubuntu Desktop - 4 GB RAM):** **2 vCPUs** (Adecuado para un escritorio Linux ligero).
+* **VM 3 (Ubuntu Server - 2 GB RAM):** **1 o 2 vCPUs** (Ideal para servicios de red y consola sin interfaz gráfica).
+* **VM 4 (Windows 11 - 8 GB RAM):** **4 vCPUs** (Igual que la primera para equilibrar cargas).
+* **Total asignado:** Entre **11 y 12 vCPUs**. Los hilos restantes (4 a 5 hilos) quedan reservados exclusivamente para el anfitrión y el hipervisor.
+
+#### B. Problemas que genera asignar demasiadas vCPU
+1. **Problemas de planificación (*Co-scheduling*):** Si asignas más hilos de los que el procesador físico tiene disponibles (por ejemplo, intentar dar 8 vCPUs a cada Windows 11 sumando más de 16 hilos en total), el hipervisor tendrá que pausar constantemente los procesos esperando a que queden núcleos libres, generando una latencia enorme (*CPU throttling* virtual).
+2. **Inestabilidad del Anfitrión (*Starvation*):** Si las VMs acaparan todos los hilos físicos, el sistema anfitrión se quedará sin capacidad de procesamiento para gestionar el disco, la red o la interfaz gráfica, provocando bloqueos y tirones (*stuttering*).
+3. **Sobrecarga del Hipervisor:** Gestionar un exceso de cambios de contexto entre hilos virtuales consume ciclos de CPU útiles, restando rendimiento general al equipo.
 
 ### 3. Repartid 1 TB de almacenamiento entre el anfitrión, aplicaciones, archivos, discos virtuales y espacio libre. Indicad las capacidades en una tabla.
 
