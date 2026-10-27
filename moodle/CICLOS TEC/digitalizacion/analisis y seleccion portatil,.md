@@ -56,6 +56,18 @@ El profesorado puede necesitar estas máquinas **funcionando simultáneamente**:
 
 ### 1. Calculad la RAM total asignada a las VM y la que queda para el anfitrión con 32 y 64 GB de RAM. Indicad si la memoria restante es suficiente y justificadlo.
 
+Para calcular la memoria restante debemos de sumar los siguiente datos (aproximados):
+
+* Windows 11 base: 6 GB
+* VirtualBox + vmmem (virtualización): 1 GB
+* RAM total máquinas host: 20 GB
+
+Por tanto el consumo total son 27 GB. 
+
+Memoria restante para cada configuración:
+
+* 
+
 ### 2. Proponed cuántas vCPU asignaríais a cada VM. Explicad qué problemas puede generar asignar demasiadas.
 
 ### 3. Repartid 1 TB de almacenamiento entre el anfitrión, aplicaciones, archivos, discos virtuales y espacio libre. Indicad las capacidades en una tabla.
