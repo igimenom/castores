@@ -396,7 +396,7 @@ Cada componente, herramienta o caja lleva adherida una pequeña etiqueta con un 
 
 Justo en la salida o entrada de la sala de inventario se instala un punto fijo: una tablet o un pequeño ordenador conectado a un escáner manos libres (o una pistola lectora). No requiere obras ni complejas instalaciones, solo un enchufe y conexión a internet/red local.
 
-Cuando una persona retira o devuelve un componente, simplemente pasa el código del producto por debajo del escáner al cruzar la puerta (igual que cuando pasas un artículo por la caja de un supermercado). El sistema lee el código al instante, identifica al usuario (por ejemplo, escaneando también su tarjeta de empleado o seleccionando su nombre en la tablet) y actualiza el stock automáticamente en la base de datos en tiempo real.
+Cuando una persona retira o devuelve un componente, simplemente pasa el código del producto por debajo del escáner al cruzar la puerta (igual que cuando pasas un artículo por la caja de un supermercado). El sistema lee el código al instante y actualiza el stock automáticamente en la base de datos en tiempo real.
 
 ### 9.3. Valoración personal
 Este primer reto ha resonado mucho con el equipo; nos ha sido de gran utilidad para adaptarnos a esta nueva forma de trabajo más colaborativa y menos guiada con respecto a lo que estabamos acostumbrados. Como consecuencia, hemos forjado grandes lazos de amistad entre todos. Además hemos desarrollado la paciencia que tan necesaria ha sido para los integrantes de SMR, que tuvieron que cargarse con lo más técnico (HTML o CSS), mientras que, los exalumnos de Bachillerato colaboraron más en la parte creativa (diseño).
