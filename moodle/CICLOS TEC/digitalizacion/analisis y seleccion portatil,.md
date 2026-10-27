@@ -66,7 +66,8 @@ Por tanto el consumo total son 27 GB.
 
 Memoria restante para cada configuración:
 
-* 
+* Equipo 32 GB: 5 GB restantes
+* Equipo 64 GB: 37 GB restantes
 
 ### 2. Proponed cuántas vCPU asignaríais a cada VM. Explicad qué problemas puede generar asignar demasiadas.
 
