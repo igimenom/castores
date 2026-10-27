@@ -392,7 +392,7 @@ Cada equipo y cada componente debería registrarse con un identificador único y
 
 5. **Control de inventario mediante códigos QR**
 
-Cada componente u ordenador lleva adherido una pequeña etiqueta con un código QR o de barras. Esta etiqueta es muy barata y se puede imprimir al momento desde cualquier impresora normal de etiquetas. Cada código contiene la información única de ese producto específico.
+Cada componente u ordenador lleva adherido una pequeña etiqueta con un código QR. Esta etiqueta es muy barata y se puede imprimir al momento desde cualquier impresora normal de etiquetas. Cada código contiene la información única de ese producto específico.
 
 Justo en la salida o entrada de la sala de inventario se instala un punto fijo: una tablet o un pequeño ordenador conectado a un escáner manos libres (o una pistola lectora). No requiere obras ni complejas instalaciones, solo un enchufe y conexión a internet/red local.
 
