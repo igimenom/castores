@@ -228,3 +228,5 @@ lo que es cada cosa de este.
 * footer formulario
 * css formulario
 * presentacion postgre sql
+#### cosas a mejorar:
+* matriz de compatibilidad y cambiar wodpress por otro cms
