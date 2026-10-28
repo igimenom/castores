@@ -240,6 +240,10 @@ Para validar la estabilidad del equipo, **Marcos** y **Javier** ejecutaron prueb
 * **Unigine Heaven:** Test de estrés para evaluar el rendimiento gráfico.
 * **CrystalDiskInfo:** Análisis del estado de salud y errores del disco duro.
 
+Tras un rato el ordenador se apagaba, entonces sospechamos que el problema estaba en el disco duro, por tanto, decidimos cambiarlo.
+
+Finalmente, cambiamos el antiguo disco duro por un nuevo ``Intenso`` y el equipo no presentó ningún problema más.
+
 ##### Desarrollo y Maquetación Web
 **Bruno** e **Iván** diseñaron los bocetos iniciales (*mockups*). **Marcos** definió el árbol de la web (*web tree*) para organizar la estructura de las páginas HTML, mientras que **Javier** migró las tablas de Excel e inventario a código HTML y creó las secciones del equipo. El diseño visual se maquetó entre **Bruno**, **Javier** e **Iván** utilizando CSS. Finalmente, el equipo optimizó el código limpiando etiquetas innecesarias, **Marcos** adaptó la matriz de compatibilidad a formato HTML e **Iván** y **Javier** ajustaron la estructura general y el pie de página.
 
