@@ -378,7 +378,7 @@ El objetivo de la propuesta de didigtalización en un proyecto o empresa es el p
 
 En nuestro caso, hemos planteado las siguientes mejoras futuras:
 
-1. **Migración de la página web a un gestor de contenidos (WordPress).**
+1. **Migración de la página web a un gestor de contenidos (WordPress).** HEADLESS CMS CAMBIAR
 
 Actualmente la página está desarrollada directamente en HTML, lo que obliga a modificar el código cada vez que se quiere cambiar algo. Pasarla a un sistema de gestión de contenidos (CMS) como WordPress permitiría mantenerla de forma más sencilla y rápida, y editarla sin necesidad de grandes conocimientos técnicos. Además, el tiempo de publicación de contenidos se reduciría de forma considerable y la estructura del sitio se gestionaría de forma automática.
 
