@@ -378,10 +378,9 @@ El objetivo de la propuesta de didigtalización en un proyecto o empresa es el p
 
 En nuestro caso, hemos planteado las siguientes mejoras futuras:
 
-1. **Migración de la página web a un gestor de contenidos (WordPress).** HEADLESS CMS CAMBIAR
+1. **Migración de la página web a un CMS sin cabeza y un framework web (Directus y Astro).** HEADLESS CMS CAMBIAR
 
-Actualmente la página está desarrollada directamente en HTML, lo que obliga a modificar el código cada vez que se quiere cambiar algo. Pasarla a un sistema de gestión de contenidos (CMS) como WordPress permitiría mantenerla de forma más sencilla y rápida, y editarla sin necesidad de grandes conocimientos técnicos. Además, el tiempo de publicación de contenidos se reduciría de forma considerable y la estructura del sitio se gestionaría de forma automática.
-
+Hemos identificado dos problemas: gestionar el frontend y gestionar el backend. Por tanto, hemos decidido en la propuesta de mejora utilizar Astro para la generación web del contenido en lugar de HTML y CSS manual, por otro lado, para la conexión de la base de datos con la tabla a mostrar usaremos el CMS sin cabeza: Directus.
 2. **Publicación del inventario en Internet.**
 
 Para que el inventario sea accesible de forma cómoda desde cualquier lugar, proponemos alojar la página en Internet. Dado que los datos del inventario no tienen un valor crítico, bastaría con publicarlo de forma abierta, tal y como hace la Universidad de Zaragoza con su catálogo (https://lonja.unizar.es/catalogo/). Así se evita tener que configurar una VPN o contratar direcciones IP públicas, lo que simplifica el despliegue y reduce los costes de mantenimiento.
