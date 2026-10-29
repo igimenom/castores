@@ -380,7 +380,48 @@ En nuestro caso, hemos planteado las siguientes mejoras futuras:
 
 1. **Migración de la página web a un CMS sin cabeza y un framework web (Directus y Astro).** HEADLESS CMS CAMBIAR
 
-Hemos identificado dos problemas: gestionar el frontend y gestionar el backend. Por tanto, hemos decidido en la propuesta de mejora utilizar Astro para la generación web del contenido en lugar de HTML y CSS manual, por otro lado, para la conexión de la base de datos con la tabla a mostrar usaremos el CMS sin cabeza: Directus.
+Para optimizar el desarrollo y el mantenimiento del sistema, se ha dividido la solución en dos capas claramente desacopladas:
+
+**Frontend modular con Astro** (SSR): Sustituimos la maquetación manual en HTML/CSS por la arquitectura basada en componentes de Astro. Esto permite centralizar elementos reutilizables (como el header o el footer) en un único punto, facilitando su actualización global. Al configurar Astro en modo Server-Side Rendering (SSR), el servidor procesa la lógica de la página y genera el documento HTML dinámicamente antes de enviarlo al cliente.
+
+**Backend y gestión de base de datos con Directus** (Headless CMS): Empleamos Directus como capa intermedia de administración sobre la base de datos MariaDB preexistente, exponiendo los datos de inventario mediante una API REST.
+
+**Flujo de actualización en tiempo real:**
+* Cada vez que un usuario solicita o recarga la página, el servidor ejecutará la consulta a la API de Directus de forma transparente. Esto asegura que cualquier modificación realizada en las tablas de MariaDB se refleje de manera inmediata en la interfaz web sin necesidad de recompilar la aplicación.
+
+```html
+---
+// ASTRO
+
+// Importamos componentes que vamos a reutilizar
+import Header desde '../components/Header.astro';
+import Footer desde '../components/Footer.astro';
+
+// Consultas a Directus 
+const respuesta = await fetch('https://tu-directus.com/items/productos/45');
+const producto = await respuesta.json();
+---
+
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>{producto.data.nombre}</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <Header /> <!-- Tu menú reutilizable -->
+
+  <main>
+    <h1>{producto.data.nombre}</h1>
+    <p>Stock disponible en tiempo real: <strong>{producto.data.stock}</strong></p>
+  </main>
+
+  <Footer /> <!-- Tu footer reutilizable -->
+</body>
+</html>
+```
+
 2. **Publicación del inventario en Internet.**
 
 Para que el inventario sea accesible de forma cómoda desde cualquier lugar, proponemos alojar la página en Internet. Dado que los datos del inventario no tienen un valor crítico, bastaría con publicarlo de forma abierta, tal y como hace la Universidad de Zaragoza con su catálogo (https://lonja.unizar.es/catalogo/). Así se evita tener que configurar una VPN o contratar direcciones IP públicas, lo que simplifica el despliegue y reduce los costes de mantenimiento.
