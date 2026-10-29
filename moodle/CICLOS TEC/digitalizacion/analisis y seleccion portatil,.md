@@ -75,7 +75,37 @@ Iván Gimeno Montoya
 
     * Filosofía: Prioriza la eficiencia energética por vatio, ofreciendo menor consumo eléctrico, menor emisión de calor y mayor duración de batería en dispositivos móviles y ultrabooks.
 
+#### Justificación de la elección de x86-64 para tus requisitos
+
+Para el perfil de portátil buscado (1.000–1.300 €, 32 GB ampliables a 64 GB, dual boot Windows 11 + Ubuntu y 2 monitores externos), la arquitectura x86-64 es la única opción que cumple íntegramente las especificaciones por las siguientes razones:
+
+1. Ampliación de memoria RAM por módulos (SODIMM):
+
+    * En ARM para portátiles (Snapdragon X Elite, Apple Silicon), la RAM está soldada en placa o integrada directamente dentro del encapsulado del SoC para obtener el máximo ancho de banda. Es imposible comprar un equipo con 32 GB y ampliarlo a 64 GB en el futuro.
+
+    * En x86-64 (Intel Core / AMD Ryzen), los portátiles de gama profesional (como Lenovo ThinkPad E14 o HP ProBook) siguen ofreciendo 2 ranuras SODIMM físicas sustituibles.
+
+2. Compatibilidad nativa y madurez en Linux (Ubuntu):
+
+    * La arquitectura x86-64 lleva más de dos décadas con soporte de primer nivel en el kernel de Linux. Los controladores gráficos de la GPU integrada, la gestión de suspensión (suspend-to-RAM), el control térmico y el Wi-Fi funcionan de forma estable desde la instalación.
+
+    * Los portátiles ARM en el mercado de consumo aún enfrentan serias limitaciones de controladores en distribuciones Linux convencionales (problemas con salidas de vídeo DisplayPort, aceleración gráfica por GPU o administración de energía).
+
+3. Ejecución nativa de binarios sin emulación:
+
+    * En x86-64, todo el entorno de desarrollo, contenedores Docker/Podman, máquinas virtuales (KVM, VirtualBox) y software técnico se ejecuta nativamente a máxima velocidad.
+
+    * En ARM, aunque existen capas de traducción de instrucciones (como Prism en Windows 11), las herramientas de virtualización de bajo nivel y aplicaciones no adaptadas sufren caídas de rendimiento o incompatibilidades directas.
+
+4. Gestión multimonitor nativa:
+
+    * Las GPU integradas de AMD e Intel actuales en x86-64 (Radeon 780M / Intel Arc) soportan de forma nativa hasta 3 o 4 pantallas independientes mediante el control de bus DisplayPort/HDMI directo, asegurando que ambos monitores externos funcionen sin depender de controladores USB de terceros (como DisplayLink).
+
 ### 3. Explicad por qué importan la ampliación de RAM y SSD, la refrigeración, el consumo y el ruido.
+
+#### 1. Ampliación de RAM y SSD: Longevidad y relación coste-rendimiento
+* Ampliación de RAM y SSD
+    * La posibilidad de ampliar la memoria RAM mediante módulos físicos SODIMM garantiza la longevidad del equipo frente a las exigencias crecientes del software, máquinas virtuales y contenedores, evitando tener que reemplazar el portátil cuando los 32 GB queden cortos. Ampliar a 64 GB de forma manual en el futuro resulta significativamente más económico que pagar el sobreprecio de la memoria soldada de fábrica. Por su parte, un SSD NVMe M.2 sustituible es imprescindible para mantener un arranque dual limpio entre Windows 11 y Ubuntu con espacio suficiente para ambos, garantizando además una reparación rápida ante fallos o desgaste de las celdas de memoria sin inutilizar la placa base.
 ### 4. Diferenciad los requisitos imprescindibles de los deseables y justificad vuestra clasificación.
 
 
