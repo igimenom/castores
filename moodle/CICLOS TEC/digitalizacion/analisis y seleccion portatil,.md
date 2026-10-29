@@ -121,6 +121,7 @@ Para el perfil de portátil buscado (1.000–1.300 €, 32 GB ampliables a 64 GB
 ### 4. Diferenciad los requisitos imprescindibles de los deseables y justificad vuestra clasificación.
 
 
+
 ## Actividad 2. Dimensionar cuatro máquinas virtuales
 
 El profesorado puede necesitar estas máquinas **funcionando simultáneamente**:
