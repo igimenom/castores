@@ -43,6 +43,41 @@ Iván Gimeno Montoya
     * **Función**: Conectar periféricos externos, pantallas adicionales, dispositivos de audio y transferencia de datos.
     * **Características importantes**: Los puertos USB-C con Power Delivery y DisplayPort aportan una gran versatilidad (permiten cargar el portátil y conectar monitores externos con un solo cable), mientras que el HDMI 2.1 garantiza salida de vídeo fluida a pantallas 4K.
 
+### 2. Explicad las diferencias entre núcleos físicos, hilos lógicos y arquitectura x86-64/ARM. Justificad la elección de arquitectura.
+
+#### Diferencias entre núcleos físicos e hilos lógicos
+
+* **Núcleo físico (Physical Core)**: 
+
+    * Es la unidad de procesamiento de hardware real dentro del silicio de la CPU. Dispone de sus propias unidades aritmético-lógicas (ALU), registros, unidad de punto flotante (FPU) y cachés de nivel 1 y 2 (L1/L2). Ejecuta instrucciones de forma totalmente independiente e simultánea a nivel físico.
+
+* **Hilo lógico** (Logical Thread / SMT / Hyper-Threading): 
+
+    * Es una subdivisión virtual gestionada por el procesador que permite a un único núcleo físico presentar dos procesadores lógicos al sistema operativo. Aprovecha los tiempos muertos en los que el núcleo físico espera datos de la memoria RAM para procesar una segunda secuencia de instrucciones.
+
+**Impacto práctico**: Un procesador de 8 núcleos físicos con SMT (Simultaneous Multithreading) muestra 16 hilos lógicos al sistema operativo, ofreciendo entre un 15% y un 30% más de rendimiento en tareas multihilo paralelas (compilación de código, renderizado, cálculo distribuido) respecto a un procesador sin SMT.
+
+#### Arquitectura x86-64 vs. ARM
+
+* **x86-64** (CISC - Complex Instruction Set Computer):
+
+    * **Diseño**: Utiliza instrucciones de longitud variable y alta complejidad, capaces de ejecutar múltiples operaciones internas en una sola orden.
+
+    * **Ecosistema**: Desarrollado por Intel y AMD. Es el estándar dominante en ordenadores de sobremesa, portátiles tradicionales y servidores.
+
+    * **Filosofía**: Prioriza el rendimiento bruto por ciclo de reloj y la compatibilidad retrospectiva con décadas de software, a costa de una mayor complejidad de silicio y un consumo térmico/eléctrico superior.
+
+* **ARM** (RISC - Reduced Instruction Set Computer):
+
+    * Diseño: Utiliza un conjunto de instrucciones simplificado y de longitud fija. Cada instrucción realiza una tarea sencilla que se ejecuta rápidamente en pocos ciclos de reloj.
+
+    * Ecosistema: Diseñada por ARM Ltd. y licenciada a fabricantes como Apple (Apple Silicon), Qualcomm (Snapdragon) o MediaTek.
+
+    * Filosofía: Prioriza la eficiencia energética por vatio, ofreciendo menor consumo eléctrico, menor emisión de calor y mayor duración de batería en dispositivos móviles y ultrabooks.
+
+### 3. Explicad por qué importan la ampliación de RAM y SSD, la refrigeración, el consumo y el ruido.
+### 4. Diferenciad los requisitos imprescindibles de los deseables y justificad vuestra clasificación.
+
 
 ## Actividad 2. Dimensionar cuatro máquinas virtuales
 
