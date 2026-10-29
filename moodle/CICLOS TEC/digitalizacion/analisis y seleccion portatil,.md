@@ -43,6 +43,7 @@ Iván Gimeno Montoya
     * **Función**: Conectar periféricos externos, pantallas adicionales, dispositivos de audio y transferencia de datos.
     * **Características importantes**: Los puertos USB-C con Power Delivery y DisplayPort aportan una gran versatilidad (permiten cargar el portátil y conectar monitores externos con un solo cable), mientras que el HDMI 2.1 garantiza salida de vídeo fluida a pantallas 4K.
 
+
 ## Actividad 2. Dimensionar cuatro máquinas virtuales
 
 El profesorado puede necesitar estas máquinas **funcionando simultáneamente**:
@@ -89,5 +90,9 @@ Packet Tracer) es más que suficiente.
 3. **Sobrecarga del Hipervisor:** Gestionar un exceso de cambios de contexto entre hilos virtuales consume ciclos de CPU útiles, restando rendimiento general al equipo.
 
 ### 3. Repartid 1 TB de almacenamiento entre el anfitrión, aplicaciones, archivos, discos virtuales y espacio libre. Indicad las capacidades en una tabla.
+
+|ANFITRIÓN|APLICACIONES|ARCHIVOS|DISCOS VIRTUALES|ESPACIO LIBRE
+|-|-|-|-|-|
+|50 GB + 30 GB + 30 GB + 50 GB|X GB|X GB|X GB|-|
 
 ### 4. Valorad el comportamiento esperado durante el uso simultáneo de las cuatro VM.
