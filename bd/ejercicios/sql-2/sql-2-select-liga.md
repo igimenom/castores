@@ -33,7 +33,11 @@ SELECT DISTINCT columna FROM tabla;
 ```
 
 - **T1.** Nombre y ciudad de los equipos.
+```sql
+SELECT nombre, ciudad FROM equipo;
+```
 - **T2.** Cada partido con su número y los goles totales, en una columna llamada `total`.
+
 - **T3.** ¿En qué ciudades hay equipo? Sin repetir.
 
 | A | B | C |
