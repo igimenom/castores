@@ -42,7 +42,7 @@ SELECT id_partido, goles_locales + goles_visitante as total from PARTIDO;
 ```
 - **T3.** ¿En qué ciudades hay equipo? Sin repetir.
 ```sql
-SELECT DISTINCT ciudad from equipo where equipo is not null
+SELECT DISTINCT ciudad from equipo where nombre is not null
 ```
 | A | B | C |
 |---|---|---|
