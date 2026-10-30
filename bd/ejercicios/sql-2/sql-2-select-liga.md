@@ -38,10 +38,12 @@ SELECT nombre, ciudad FROM equipo;
 ```
 - **T2.** Cada partido con su número y los goles totales, en una columna llamada `total`.
 ```sql
-SELECT id_partido, goles_locales + goles_visitante as total from PARTIDO
+SELECT id_partido, goles_locales + goles_visitante as total from PARTIDO;
 ```
 - **T3.** ¿En qué ciudades hay equipo? Sin repetir.
-
+```sql
+SELECT DISTINCT ciudad from equipo where equipo is not null
+```
 | A | B | C |
 |---|---|---|
 | Nombre, posición y dorsal de todos los jugadores | Nombre y fecha de nacimiento de los jugadores | Nombre y pabellón de los equipos, con las columnas llamadas `Equipo` y `Pabellón` |
