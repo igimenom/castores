@@ -184,6 +184,26 @@ Packet Tracer) es más que suficiente.
 
 |ANFITRIÓN|APLICACIONES|ARCHIVOS|DISCOS VIRTUALES|ESPACIO LIBRE
 |-|-|-|-|-|
-|50 GB + 30 GB + 30 GB + 50 GB|X GB|X GB|X GB|-|
+|100 GB|60 GB|300 GB|80 GB + 50 GB + 50 GB + 80 GB = 260 GB GB|280 GB|
 
 ### 4. Valorad el comportamiento esperado durante el uso simultáneo de las cuatro VM.
+
+**Gestión de memoria RAM en el MSI Modern A14**
+
+El equipo viene configurado de fábrica con 32 GB de RAM DDR5, lo que te permite asignar unos 5 GB a cada una de las cuatro máquinas virtuales y mantener unos 12 GB libres para el sistema operativo anfitrión. Sin embargo, debido a que la placa base fija el límite máximo en 32 GB sin posibilidad de ampliar a 64 GB, no dispondrás de margen de maniobra si en el futuro necesitas virtualizar sistemas más exigentes. Si mantienes las máquinas en entornos moderados el comportamiento será fluido, pero si ejecutas cuatro máquinas virtuales pesadas de forma simultánea, la RAM se saturará y el sistema recurrirá al archivo de paginación (swap), reduciendo la agilidad general.
+
+**Procesamiento y planificación de CPU con el procesador AMD Ryzen 7**
+
+El procesador AMD Ryzen 7 (arquitectura x86-64 con 8 núcleos físicos y 16 hilos lógicos) integrado en este portátil gestiona la carga de las cuatro máquinas virtuales con solvencia, permitiendo asignar entre 2 y 4 vCPUs a cada una. La sobrecarga del hipervisor por hardware AMD-V es imperceptible y la CPU repartirá las tareas sin crear cuellos de botella, respondiendo con fluidez excepto en los momentos puntuales en los que las cuatro instancias ejecuten procesos de compilación o cálculo pesado al mismo tiempo.
+
+**Rendimiento del almacenamiento NVMe SSD**
+
+El SSD M.2 de 1 TB con bus PCIe 4.0 que incluye este modelo ofrece un ancho de banda y una tasa de operaciones por segundo (IOPS) elevadas. Esto garantiza que la lectura y escritura simultánea sobre los cuatro archivos de disco virtual no bloquee la entrada y salida de datos (I/O wait), permitiendo un arranque rápido de las máquinas virtuales y una buena velocidad al mover archivos grandes. Además, al ser un módulo M.2 estándar, podrás reemplazarlo fácilmente por una unidad de 2 TB o 4 TB en el futuro si las imágenes virtuales ocupan demasiado espacio.
+
+**Comportamiento térmico y ruido en este chasis**
+
+Al tratarse de un chasis ligero de 14 pulgadas con un sistema de disipación compacto, la carga continua de cuatro máquinas virtuales mantendrá al procesador trabajando a un ritmo constante. Esto provocará que el ventilador interno funcione a revoluciones medias o altas para estabilizar las temperaturas, generando un soplido constante y claramente audible durante las sesiones de trabajo. El procesador regulará sus frecuencias para evitar el estrangulamiento térmico (thermal throttling), pero la zona inferior de la carcasa alcanzará temperaturas más elevadas que en modelos profesionales con doble ventilación.
+
+**Optimización según el sistema operativo base**
+
+Al comercializarse con FreeDOS, la elección del sistema anfitrión que instales determinará la eficiencia del portátil. Si instalas Ubuntu Linux como sistema base utilizando KVM / QEMU, se activará la función de deduplicación de memoria (Kernel Samepage Merging), lo que reducirá la huella de RAM de las cuatro máquinas virtuales y compensará en parte la imposibilidad de ampliar la memoria a 64 GB. Si optas por Windows 11 como sistema anfitrión con VirtualBox o Hyper-V, el propio sistema consumirá más recursos de base, dejando un margen de RAM más justo.
