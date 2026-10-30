@@ -120,7 +120,20 @@ Para el perfil de portátil buscado (1.000–1.300 €, 32 GB ampliables a 64 GB
     * El perfil sonoro del sistema de refrigeración influye en la concentración y la fatiga cognitiva durante jornadas de trabajo prolongadas. Los ventiladores pequeños a altas revoluciones generan silbidos agudos altamente molestos, mientras que un sistema térmico amplio con palas de mayor tamaño mueve un volumen de aire equivalente produciendo un soplido grave y discreto. Una curva de ventilación optimizada en el firmware permite que el equipo funcione en modo completamente silencioso durante la navegación o edición de texto, activando los ventiladores progresivamente solo bajo cargas altas.
 ### 4. Diferenciad los requisitos imprescindibles de los deseables y justificad vuestra clasificación.
 
-
+| Aspecto | Requisito |Imprescindible / deseable|
+| --- | --- | --- |
+| **Procesador** | Intel o AMD, arquitectura x86-64 | Imprescindible, si no se cumple este requisito no podemos utilizar el software deseado. |
+| **RAM** | 32 GB como mínimo; se valora ampliación a 64 GB | Imprescindible 32 GB para soportar las máquinas virtuales. Los 64 GB son deseables para los próximos años, pero ahora no interesan por el aumento de precio.  |
+| **Disco** | SSD NVMe de 1 TB como mínimo; preferiblemente sustituible | Imprescindible 1 TB para soportar las máquinas virtuales y otros prograams. Más de 1 TB sería deseable para los próximos años, pero ahora no interesan por el aumento de precio. |
+| **Pantalla** | 14 pulgadas; preferentemente 1920 × 1200 o superior | Tanto las 14 pulgadas como la resolución son requisitos deseables por motivos de portabilidad y comodidad, pero no son imprescindibles para trabajar. |
+| **Gráfica** | Integrada suficiente | Es imprescindible que el ordenador pueda manejar gráficos, pero no es necesario que tenga una gráfica dedicada. |
+| **Pantallas simultáneas** | Pantalla integrada y dos monitores externos independientes | Deseable porque no es imprescindible para realizaer nuestro trabajo, pero sí es más comodo para trabajar. |
+| **Puertos** | USB-A, HDMI y USB-C con salida de vídeo | No es impresicindible para el trabajo, pero sí es un requisito muy deseable y fácil de cumplir. |
+| **Red** | Wi-Fi moderno y Ethernet integrado o por adaptador/dock | La Wi-Fi es imprescindible para trabajar actualmente, el Ethernet es muy desable y relativamente fácil de cumplir en modelos deseables. |
+| **Movilidad** | Preferentemente 1,2–1,5 kg | Deseable la portabilidad y la movilidad, pero no es imprescindible para trabajar. |
+| **Sistemas operativos** | Compatible con Windows 11 y Ubuntu | Imprescindible para el uso que se le va a dar. |
+| **Teclado** | Español | Imprescindible para trabajar en entornos hispanohablantes. |
+| **Otros** | Buena refrigeración, poco ruido, construcción duradera y garantía | Deseables y elementos que permiten dirimir el portátil más adecuado. |
 
 ## Actividad 2. Dimensionar cuatro máquinas virtuales
 
