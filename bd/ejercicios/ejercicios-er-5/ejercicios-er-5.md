@@ -60,7 +60,7 @@ partes B a E. El lunes se sigue desde ahí.
 
 ### A | El E/R
 
-![diagram](PARTIDO.drawio.png)
+![diagram](PARTIDO.png)
 
 ### B | Las tablas
 
