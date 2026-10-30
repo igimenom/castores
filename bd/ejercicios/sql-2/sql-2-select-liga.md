@@ -57,6 +57,9 @@ SELECT … FROM … ORDER BY columna DESC, otra_columna LIMIT 5;
 ```
 
 - **T4.** Los tres jugadores más veteranos.
+```sql
+select j.nombre, j.fecha_nacimiento from jugador j order by j.fecha_nacimiento asc limit 3;
+```
 - **T5.** Los tres partidos con más goles. ¿Sale siempre lo mismo?
 
 Una, la que queráis:
