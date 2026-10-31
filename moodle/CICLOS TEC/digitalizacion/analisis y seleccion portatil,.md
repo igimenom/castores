@@ -207,3 +207,39 @@ Al tratarse de un chasis ligero de 14 pulgadas con un sistema de disipación com
 **Optimización según el sistema operativo base**
 
 Al comercializarse con FreeDOS, la elección del sistema anfitrión que instales determinará la eficiencia del portátil. Si instalas Ubuntu Linux como sistema base utilizando KVM / QEMU, se activará la función de deduplicación de memoria (Kernel Samepage Merging), lo que reducirá la huella de RAM de las cuatro máquinas virtuales y compensará en parte la imposibilidad de ampliar la memoria a 64 GB. Si optas por Windows 11 como sistema anfitrión con VirtualBox o Hyper-V, el propio sistema consumirá más recursos de base, dejando un margen de RAM más justo.
+
+## Actividad 3. Analizar los sistemas operativos
+
+### 1. Dibujad un esquema funcional que relacione hardware físico, sistema operativo anfitrión, hipervisor, sistemas invitados, aplicaciones y usuarios. Explicad la función de cada elemento.
+![alt text](<Diagrama sin título.drawio.png>)
+
+### 2. Comparad versiones concretas de Windows 11 y Ubuntu Desktop en: arquitectura, requisitos mínimos y recomendados, licencia, coste, compatibilidad con aplicaciones y virtualización, ventajas e inconvenientes.
+
+| Característica | Windows 11 (24H2 / Home & Pro) | Ubuntu Desktop (24.04 LTS - Noble Numbat) |
+| :--- | :--- | :--- |
+| **Arquitectura** | • **x86-64** (requiere extensión POPCNT / SSE4.2) <br> • **ARM64** (dispositivos Copilot+ / Snapdragon) | • **x86-64 (amd64)** <br> • **ARM64** (Raspberry Pi, Apple Silicon via VM) <br> • RISC-V, s390x, ppc64el |
+| **Requisitos Mínimos** | • CPU: 1 GHz 2+ núcleos de 64 bits compatibles <br> • RAM: 4 GB <br> • Disco: 64 GB <br> • Seguridad: TPM 2.0 y UEFI con Secure Boot <br> • GPU: DirectX 12 / WDDM 2.0 | • CPU: 2 GHz Dual-Core de 64 bits <br> • RAM: 4 GB <br> • Disco: 25 GB <br> • Seguridad: Compatible con Secure Boot (sin necesidad de TPM) <br> • GPU: Resolución 1024x768 |
+| **Requisitos Recomendados** | • CPU: 4+ núcleos (Intel Gen 12+ / AMD Ryzen 5000+) <br> • RAM: 16 GB+ <br> • Disco: 256 GB NVMe SSD | • CPU: 4+ núcleos a 2.5 GHz <br> • RAM: 8 GB–16 GB <br> • Disco: 80 GB+ NVMe SSD |
+| **Licencia** | **Propietaria / EULA** de Microsoft | **Código Abierto** (GPL y otras licencias FOSS) |
+| **Coste** | • Gratuito si actualizas desde Win 10 / Win 11 previa <br> • OEM / Retail: ~145 € (Home) / ~259 € (Pro) | **100% Gratuito** (Uso comercial y personal sin coste) |
+| **Compatibilidad con Aplicaciones** | • Nativa para todo el software comercial (MS Office, Adobe Creative Cloud, AutoCAD) <br> • Excelente para videojuegos (DirectX 12, Anti-Cheats propietarios) | • Soporta software nativo Linux, paquetes Snap, Flatpak, AppImage <br> • Vía **Wine / Proton** ejecuta la gran mayoría de juegos de Steam y ejecutables `.exe` <br> • **Incompatible** con software con anticheats a nivel de kernel (Valorant, Fortnite) o suite Adobe nativa |
+| **Virtualización** | • **Hyper-V** (Nativo en versión Pro) <br> • Windows Sandbox y WSL2 (Subsistema de Linux) <br> • Compatible con VMware Workstation, VirtualBox | • **KVM / QEMU / libvirt** (Hypervisor nativo de alto rendimiento) <br> • LXD / Docker (Contenedores nativos) <br> • Compatible con VirtualBox, VMware Workstation |
+| **Ventajas** | 1. Máxima compatibilidad con programas de diseño, edición y juegos. <br> 2. Excelente soporte para controladores de hardware comercial. <br> 3. Integración nativa con el ecosistema Microsoft 365 y Copilot. | 1. Consumo de recursos optimizado y sin software innecesario (*bloatware*). <br> 2. Entorno ideal para desarrollo de software, servidores y ciencia de datos. <br> 3. Mayor privacidad, seguridad sin necesidad de antivirus activo y actualizaciones no invasivas. |
+| **Inconvenientes** | 1. Restricciones estrictas de hardware (TPM 2.0 y CPUs antiguas excluidas). <br> 2. Mayor consumo de recursos de fondo y telemetría de datos integrada. <br> 3. Coste de licencia para equipos montados por piezas. | 1. Curva de aprendizaje para usuarios habituados al entorno de comandos/terminal. <br> 2. Dificultades con cierto software propietario sin alternativas nativas exactas. <br> 3. Requiere drivers específicos (ej. NVIDIA) que pueden dar problemas de configuración en portátiles. |
+
+### 3. Elegid y justificad qué sistema operativo instalaríais como anfitrión en el parque de portátiles.
+
+Para el parque de portátiles utilizaríamos Ubuntu 26.04.1 LTS que es compatible con todo el software requerido para su trabajo.
+
+Existen varias razones para elegir este sistema operativo:
+
+* KVM integrado en su kernel ofreciendo un rendimiento cercanos al nativo (bare-metal), superando a VirtualBox e Hyper-V.
+* Menor consumo de RAM respecto a Windows 11. Ubuntu consume de 2 a 3 GB en resposo, mientras que, Windows utiliza de 6 a 8 GB.
+* El procesoador del portátil cuenta con soporte y controladores natvios integrados en el kernel Linux (6.8+)
+* Coste cero en licencias. En cambio; Windows 11 Pro tiene un coste de 259 € por licencia.
+* A diferencia de Windows 11, las actualizaciones de sistema y kernel en Ubuntu no fuerzan reinicios inesperados ni interrumpen las sesiones de virtualización en ejecución.
+
+## Actividad 4. Comprobar el software profesional
+### Consultad la documentación oficial de VirtualBox, VMware, Visual Studio y Cisco Packet Tracer. Para cada aplicación registrad versión analizada, sistemas operativos admitidos, arquitectura, RAM y otros requisitos relevantes.
+
+### Explicad si la configuración que proponéis es compatible y qué problemas podría causarcelegir hardware o sistema operativo inadecuados. No confundáis Visual Studio con Visual Studio Code.
