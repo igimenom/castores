@@ -257,7 +257,7 @@ A un servicio de prevención ajeno le llegan las siguientes empresas consultando
 
 
 ## B. Identifica las siguientes señales
-![alt text](image.png)
+![alt text](https://i.imgur.com/u94Dh1N.png)
 
 | Nº | Señal |
 | --- | --- |
