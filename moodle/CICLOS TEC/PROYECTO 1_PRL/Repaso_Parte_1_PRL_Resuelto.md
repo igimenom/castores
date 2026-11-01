@@ -1,6 +1,6 @@
 ## Repaso Parte 1: Prevención de Riesgos Laborales
 
-Preguntas con sus opciones y solucionario completo. La respuesta correcta aparece en verde con una marca.
+Preguntas con sus opciones y solucionario completo. La respuesta correcta aparece en negrita con una marca.
 
 ## TEST
 
