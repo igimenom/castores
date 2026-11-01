@@ -1,6 +1,8 @@
 https://es-store.msi.com/products/modern-a14-ai-f2hmg-009xes-portatiles
 
 https://www.energystar.gov/productfinder/product/certified-computers/details/4478547
+
+https://knowledge.broadcom.com/external/article?legacyId=80807
 ![alt text](image.png)
 
 Iván Gimeno Montoya
@@ -242,4 +244,83 @@ Existen varias razones para elegir este sistema operativo:
 ## Actividad 4. Comprobar el software profesional
 ### Consultad la documentación oficial de VirtualBox, VMware, Visual Studio y Cisco Packet Tracer. Para cada aplicación registrad versión analizada, sistemas operativos admitidos, arquitectura, RAM y otros requisitos relevantes.
 
-### Explicad si la configuración que proponéis es compatible y qué problemas podría causarcelegir hardware o sistema operativo inadecuados. No confundáis Visual Studio con Visual Studio Code.
+| | VirtualBox | VMWare | Visual Studio Code | Cisco Packet Tracer |
+| - | - | - | - | - |
+| **Versión analizada** | VirtualBox 7.2 | VMware Workstation Pro 16.x, 17.x, 25H2, 26H1 | Visual Studio Code 1.9x (última versión estable) | Cisco Packet Tracer 8.2.x / 8.3.x |
+| **Sistemas operativos admitidos** | **Windows hosts**: <br> Windows 11 with Arm processors (Experimental Feature, see Experimental Features) <br> Windows 11 with x86_64 processors <br> Windows 10 with x86_64 processors <br> Windows Server 2025 with x86_64 processors <br> Windows Server 2022 with x86_64 processors <br> **macOS / Intel hosts**: <br> 26 (Tahoe) with Intel x86_64 processors <br> 15 (Sequoia) with Intel x86_64 processors <br> 14 (Sonoma) with Intel x86_64 processors <br> 13 (Ventura) with Intel x86_64 processors <br> **macOS / Apple Silicon hosts**: <br> 26 (Tahoe) with Apple Silicon Arm processors <br> 15 (Sequoia) with Apple Silicon Arm processors <br> 14 (Sonoma) with Apple Silicon Arm processors <br> 13 (Ventura) with Apple Silicon Arm processors <br> **Linux Distributions**: <br> ​Oracle Linux 10 / Red Hat Enterprise Linux 10 with x86_64 processors <br> Oracle Linux 9 / Red Hat Enterprise Linux 9 with x86_64 processors <br> ​Oracle Linux 8 / Red Hat Enterprise Linux 8​ with x86_64 processors <br> Ubuntu 24.10​ with x86_64 processors <br> Ubuntu 24.04​ with x86_64 processors <br> Ubuntu 22.04 with x86_64 processors <br> ​Ubuntu 20.04​ with x86_64 processors <br> Debian 12 - Debian GNU/Linux 12 (Bookworm)​ with x86_64 processors <br> Debian 11 - Debian GNU/Linux 11 (Bullseye) with x86_64 processors <br> openSUSE 15.6 with x86_64 processors <br> Fedora 40 / 41 / 42 with x86_64 processors <br> ​All distributions with x86_64 processors - Built on EL6 and therefore not requiring recent system libraries. Not covered by Oracle Premier Support. <br> **Solaris hosts and Solaris 11 IPS hosts** <br> Oracle Solaris 11.4 | Ubuntu 26.04: VMware Workstation 26H1, 26H1u1 <br> Ubuntu 24.04: VMware Workstation 17.5, 17.6, 25H2, 26H1u1 <br> Ubuntu 22.04: VMware Workstation 16.2.x, 17.0, 17.5, 17.6 <br> Ubuntu 20.10: VMware Workstation 16.1.0, 16.2.x <br> Ubuntu 20.04 / 18.04: VMware Workstation 16.0 a 17.5 <br> Ubuntu 16.04: VMware Workstation 16.0 a 16.2.x <br> Linux Mint 22: VMware Workstation 17.5 a 26H1u1 <br> Linux Mint 21: VMware Workstation 16.2.x a 26H1u1 <br> Linux Mint 20: VMware Workstation 16.0 a 17.5 <br> CentOS 10 Stream: VMware Workstation 25H2, 26H1, 26H1u1 <br> CentOS 9 Stream: VMware Workstation 17.6 a 26H1u1 <br> CentOS 7.x: VMware Workstation 16.0 a 17.5 <br> Debian 13.x: VMware Workstation 25H2, 26H1, 26H1u1 <br> Debian 12.x: VMware Workstation 17.5 a 26H1u1 <br> Debian 11.x: VMware Workstation 16.2.x, 17.0, 17.5 <br> Debian 10.x / 9.x: VMware Workstation 16.0 a 17.0 (9.x hasta 16.2.x) <br> Windows Server 2025: VMware Workstation 25H2, 26H1, 26H1u1 <br> Windows Server 2022: VMware Workstation 16.2.x a 26H1u1 <br> Windows Server 2019 / 2016 / 2012 R2: VMware Workstation 16.0 a 17.6 (2016 y 2012 R2 hasta 17.5) <br> Windows 11: VMware Workstation 16.2.x a 26H1u1 <br> Windows 10: VMware Workstation 16.0 a 26H1u1 <br> Windows 8.1: VMware Workstation 16.0 a 16.2.x <br> Fedora 44 / 43: VMware Workstation 26H1, 26H1u1 <br> Fedora 42 / 41: VMware Workstation 25H2 <br> Fedora 40: VMware Workstation 17.6 <br> Fedora 39: VMware Workstation 17.0, 17.5, 17.6 <br> Fedora 38 / 37 / 36 / 35 / 34: VMware Workstation 16.2.x a 17.5 <br> Fedora 33 / 32 / 31: VMware Workstation 16.0 a 16.2.x <br> RHEL 10.x: VMware Workstation 25H2, 26H1, 26H1u1 <br> RHEL 9.x: VMware Workstation 16.2.x a 26H1u1 <br> RHEL 8.x: VMware Workstation 16.0 a 17.6 <br> SUSE Linux Enterprise 16 / Desktop 16: VMware Workstation 26H1, 26H1u1 <br> SUSE Linux Enterprise 15 SP7: VMware Workstation 25H2, 26H1, 26H1u1 <br> SUSE Linux Enterprise 15 SP6: VMware Workstation 17.6, 25H2 <br> SUSE Linux Enterprise 15 SP5 / SP3 / 15.x: VMware Workstation 16.0 a 17.0 <br> SUSE Linux Enterprise 12 SP5: VMware Workstation 16.2.x, 17.0, 17.5, 17.6 <br> SUSE Linux Enterprise 12 SP3: VMware Workstation 16.0 a 16.2.x <br> openSUSE 16.x: VMware Workstation 26H1, 26H1u1 <br> openSUSE 15.x: VMware Workstation 16.0 a 26H1u1 | **Windows hosts**: <br> Windows 11 with x86_64 and Arm64 processors <br> Windows 10 with x86_64 and Arm64 processors <br> **macOS hosts**: <br> macOS 11 (Big Sur) y posterior con procesadores Intel x86_64 <br> macOS 11 (Big Sur) y posterior con Apple Silicon Arm64 <br> **Linux Distributions**: <br> Ubuntu 20.04 / 22.04 / 24.04 con x86_64, Arm64 y ARMv7l <br> Debian 10 / 11 / 12 con x86_64, Arm64 y ARMv7l <br> Red Hat Enterprise Linux 8 / 9 con x86_64 y Arm64 <br> Fedora 38+ con x86_64 y Arm64 <br> SUSE / openSUSE 15+ con x86_64 y Arm64 | **Windows hosts**: <br> Windows 10 (64-bit) <br> Windows 11 (64-bit) <br> **macOS hosts**: <br> macOS 10.14 o posterior con Intel x86_64 o Apple Silicon <br> **Linux Distributions**: <br> Ubuntu 20.04 / 22.04 / 24.04 LTS (64-bit) |
+| **Arquitectura** | x86_64 <br> Arm64 (experimental) | x86_64 <br> AMD64 | x86_64 / x64 <br> Arm64 / ARMv7l <br> Apple Silicon Universal | x86_64 / 64-bit |
+| **RAM** | No especificado | 8 GB (12 GB recomendados) | 1 GB mínimo (4 GB o superior recomendado) | 4 GB mínimo (8 GB recomendados) |
+| **Otros requisitos relevantes** | En linux son necesarios los módulos Qt 6.5.3 o posterior.<br> Necesarias instrucciones SSE2 para CPUs Intel. | Host con al menos dos núcleos de CPU.<br> Disco de arranque de al menos 32 GB de almacenamiento persistente | Procesador de 1.6 GHz o superior.<br> 500 MB de espacio en disco para la instalación básica.<br> Soporte para Git para control de versiones (opcional). | Procesador x86 compatible a 1.4 GHz o superior.<br> 1.4 GB de espacio libre en disco duro.<br> Resolución de pantalla de 1024x768.<br> Cuenta de usuario activa en Cisco Networking Academy (NetAcad) para autenticación. |
+
+### Explicad si la configuración que proponéis es compatible y qué problemas podría causar elegir hardware o sistema operativo inadecuados. No confundáis Visual Studio con Visual Studio Code.
+
+La configuración analizada (**Procesador AMD Ryzen™ 7 250**, **32 GB RAM DDR5** ampliable a 64 GB, **1 TB SSD NVMe PCIe Gen4** y **Ubuntu Desktop 24.04 LTS** como sistema operativo anfitrión) es **plenamente compatible** con las herramientas exigidas (VirtualBox, VMware Workstation, Visual Studio Code y Cisco Packet Tracer).
+
+| Herramienta | Compatibilidad con Hardware (MSI A14) | Compatibilidad con SO Anfitrión (Ubuntu 24.04 LTS) | Observaciones Técnicas |
+| :--- | :--- | :--- | :--- |
+| **VirtualBox (7.x)** | **Total** (Instrucciones AMD-V de virtualización nativas) | **Total** (Soporte oficial para Ubuntu 24.04 x86_64) | Requiere activar la virtualización en la BIOS/UEFI si viene desactivada por defecto. |
+| **VMware Workstation (17.5 / 17.6)** | **Total** (8 núcleos / 16 hilos del Ryzen 7 250) | **Total** (Sustentado oficialmente según la matriz de compatibilidad) | Rendimiento óptimo asignando hilos y RAM dentro de los límites calculados. |
+| **Visual Studio Code** | **Total** (Uso ligero de CPU/RAM) | **Total** (Soporte nativo mediante paquete `.deb` o Snap) | Diferenciación clave: VS Code es un editor multiplataforma ligero, no el IDE pesado *Microsoft Visual Studio* (exclusivo de Windows). |
+| **Cisco Packet Tracer (8.x)** | **Total** (Gráficos integrados Radeon™ 780M de sobra) | **Total** (Soporte nativo para versiones Ubuntu 64-bit) | Funciona perfectamente con la resolución FHD (1920x1080) de la pantalla. |
+
+Si se tomaran decisiones erróneas al seleccionar el hardware o el sistema operativo anfitrión para este encargo, surgirán los siguientes cuellos de botella y fallos operativos:
+
+#### A. Problemas por Hardware Inadecuado
+1. **Memoria RAM insuficiente (ej. 8 GB o 16 GB no ampliables):**
+   * *Problema:* Al ejecutar las 4 máquinas virtuales requeridas (que suman 22 GB de RAM asignada), un equipo con 16 GB entraría inmediatamente en colapso por **memoria agotada**.
+   * *Consecuencia:* El sistema operativo anfitrión empezará a volcar memoria en el disco (*thrashing* / uso masivo de la *swap*), provocando congelamientos del portátil y el cierre repentino (*Out Of Memory Killer*) de las máquinas virtuales.
+2. **Procesador con pocos núcleos o sin virtualización por hardware:**
+   * *Problema:* Usar procesadores de 2 o 4 núcleos (sin virtualización AMD-V o Intel VT-x activada).
+   * *Consecuencia:* Incapacidad de arrancar hypervisores de 64 bits o latencias extremas (*CPU Stuttering*) al intentar repartir 11–12 vCPUs entre solo 4 hilos reales.
+3. **Almacenamiento lento (HDD o SSD SATA en lugar de NVMe Gen4):**
+   * *Problema:* Ejecutar 4 sistemas operativos simultáneamente genera una alta tasa de lecturas y escrituras aleatorias de disco (I/O).
+   * *Consecuencia:* Tiempos de arranque de las VMs de varios minutos y tasa de respuesta lenta al abrir programas dentro de los entornos invitados.
+
+#### B. Problemas por Sistema Operativo Anfitrión Inadecuado
+1. **Seleccionar un SO de 32 bits o versiones descontinuadas:**
+   * *Problema:* Sistemas antiguos no reconocen más de 4 GB de RAM ni soportan las versiones recientes de VMware o VirtualBox.
+   * *Consecuencia:* Incompatibilidad directa de instalación de las herramientas de la práctica.
+2. **Uso de Windows 11 Home en lugar de Pro o Ubuntu (en equipos con RAM justa):**
+   * *Problema:* Windows 11 consume de 6 a 8 GB de RAM solo para mantenerse encendido, además de ejecutar servicios de telemetría y actualizaciones automáticas en segundo plano.
+   * *Consecuencia:* En la configuración de 32 GB de RAM, usar Windows 11 deja solo 3 GB libres (frente a los 7-10 GB libres que deja Ubuntu), restando margen de seguridad y forzando reinicios no programados durante la ejecución del laboratorio.
+3. **Confusión entre Visual Studio y Visual Studio Code según el SO:**
+   * *Problema:* Confundir el entorno de desarrollo y asumir que se necesita **Visual Studio** (el IDE completo).
+   * *Consecuencia:* Visual Studio IDE **no es nativo de Linux** (requiere Windows obligatoriamente). La herramienta requerida para este encargo es **Visual Studio Code**, un editor ligero y multiplataforma disponible nativamente en Ubuntu y Windows.
+
+## Actividad 5. Investigar el mercado
+### Buscad cuatro portátiles de al menos dos fabricantes, con disponibilidad y precio verificables en España. Para cada uno preparad una ficha con:
+
+| Categoría | Especificación / Detalle | Información del Equipo |
+| :--- | :--- | :--- |
+| **Identificación** | **Fabricante** | |
+| | **Modelo** | |
+| | **Referencia / SKU** | |
+| | **Tienda / Proveedor** | |
+| **Procesador** | **Procesador exacto** | |
+| | **Núcleos / Hilos** | |
+| | **Arquitectura** | |
+| **Memoria RAM** | **RAM instalada** | |
+| | **Tipo de memoria** | |
+| | **Ranuras (Slots)** | |
+| | **¿Soldada o Sustituible?** | |
+| | **Máximo admitido** | |
+| **Almacenamiento** | **SSD (Capacidad/Tipo)** | |
+| | **Interfaz de comunicación** | |
+| | **Posibilidades de ampliación/sustitución** | |
+| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | |
+| | **Tarjeta gráfica (GPU)** | |
+| **Físico y Periféricos** | **Peso** | |
+| | **Batería (Capacidad/Celdas)** | |
+| | **Webcam** | |
+| | **Teclado (Distribución/Retroiluminación)** | |
+| **Conectividad y Puertos** | **Puertos USB-A** | |
+| | **Puertos USB-C** | |
+| | **Salida HDMI** | |
+| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | |
+| | **Otras conexiones** | |
+| **Monitores Externos** | **Nº de pantallas externas simultáneas admitidas** | |
+| | **Condiciones de uso (Resolución/Modo/Puertos)** | |
+| **Comercial y Software** | **Sistema operativo** | |
+| | **Garantía** | |
+| | **Precio (con IVA)** | |
+| **Fuentes** | **Enlaces a las fuentes consultadas** | • [Enlace 1](URL) <br> • [Enlace 2](URL) |
