@@ -1,12 +1,10 @@
 ## Repaso Parte 1: Prevención de Riesgos Laborales
 
-Preguntas con sus opciones y solucionario completo. La respuesta correcta aparece en verde con una
-
-marca.
+Preguntas con sus opciones y solucionario completo. La respuesta correcta aparece en verde con una marca.
 
 ## TEST
 
-- 1. Desde el punto de vista de la prevención, para que exista un accidente de trabajo:
+1. Desde el punto de vista de la prevención, para que exista un accidente de trabajo:
 
 - a No se precisa que existan lesiones en las personas.
 
@@ -14,23 +12,23 @@ marca.
 
 - c Incluye también los incidentes donde no hay lesiones o daños.
 
-- d Todas son ciertas. [CORRECTA]
+- d **Todas son ciertas**. [CORRECTA]
 
 Respuesta: d. Desde la prevención, el accidente incluye también los incidentes sin lesiones ni daños.
 
-- 2. Un riesgo laboral es:
+2. Un riesgo laboral es:
 
 - a Cualquier característica del trabajo que puede influir en que aparezca un accidente.
 
 - b Un peligro grave para el trabajador.
 
-- c La posibilidad de sufrir un daño causado por el trabajo. [CORRECTA]
+- c **La posibilidad de sufrir un daño causado por el trabajo**. [CORRECTA]
 
 - d Todas son correctas.
 
 Respuesta: c. Riesgo laboral = posibilidad de sufrir un daño derivado del trabajo.
 
-- 3. La ergonomía:
+3. La ergonomía:
 
 - a Es adaptar el trabajo a la persona.
 
@@ -38,27 +36,27 @@ Respuesta: c. Riesgo laboral = posibilidad de sufrir un daño derivado del traba
 
 - c Trata de evitar la fatiga al trabajador.
 
-- d a y c son correctas. [CORRECTA]
+- d **a y c son correctas**. [CORRECTA]
 
 Respuesta: d. Adapta el trabajo a la persona y trata de evitar la fatiga.
 
-- 4. La diferencia entre medidas de protección colectiva y medidas de prevención es que:
+4. La diferencia entre medidas de protección colectiva y medidas de prevención es que:
 
 - a En primer lugar se aplican las de protección colectiva y después, una vez protegido, se aplican las de prevención.
 
 - b Las de prevención se aplican sobre el foco, sobre el origen, y las de protección colectiva sobre el trabajador.
 
-- c Las de prevención se aplican sobre el foco, y después se aplican las de protección colectiva sobre el medio de transmisión. [CORRECTA]
+- c **Las de prevención se aplican sobre el foco, y después se aplican las de protección colectiva sobre el medio de transmisión.** [CORRECTA]
 
 - d No existe diferencia entre ambas medidas.
 
 Respuesta: c. La prevención actúa sobre el foco/origen; la protección colectiva, sobre el medio de transmisión.
 
-- 5. No es una técnica de protección colectiva:
+5. No es una técnica de protección colectiva:
 
 - a Las redes de seguridad.
 
-- b La higiene industrial. [CORRECTA]
+- b **La higiene industrial**. [CORRECTA]
 
 - c Los dispositivos de seguridad.
 
@@ -74,7 +72,7 @@ Respuesta: b. La higiene industrial es una técnica preventiva, no de protecció
 
 - c  Accidente de trabajo.
 
-- d  Insatisfacción laboral. [CORRECTA]
+- d  **Insatisfacción laboral**. [CORRECTA]
 
 Respuesta: d. Trabajar por debajo de la titulación genera insatisfacción laboral.
 
@@ -86,7 +84,7 @@ Respuesta: d. Trabajar por debajo de la titulación genera insatisfacción labor
 
 - c  Ha de ser en el recorrido habitual.
 
-- d  Todas son correctas. [CORRECTA]
+- d  **Todas son correctas**. [CORRECTA]
 
 Respuesta: d. Todas son correctas.
 
@@ -98,13 +96,13 @@ Respuesta: d. Todas son correctas.
 
 - c  Se incluyen los locales, pasillos, escaleras, vías de circulación, comedores y zonas de descanso, entre otros.
 
-- d  a y c son correctas. [CORRECTA]
+- d  **a y c son correctas**. [CORRECTA]
 
 Respuesta: d. Áreas del centro de trabajo, edificadas o no, que incluyen pasillos, escaleras, comedores, etc.
 
 9. Entre las medidas de prevención:
 
-- a  Los locales deben tener 3 metros de altura y las oficinas 2,5 metros. [CORRECTA]
+- a  **Los locales deben tener 3 metros de altura y las oficinas 2,5 metros**. [CORRECTA]
 
 - b  Las puertas de emergencia permanecerán cerradas.
 
@@ -122,13 +120,13 @@ Respuesta: a. Solo la a es correcta: las puertas de emergencia no pueden estar c
 
 - c  Ambas son correctas.
 
-- d  Ambas son falsas. [CORRECTA]
+- d  **Ambas son falsas**. [CORRECTA]
 
 Respuesta: d. Están intercambiados: sedentarios 17 a 27 °C y ligeros 14 a 25 °C.
 
 11. ¿Qué tipo de radiaciones son los rayos X y los rayos gamma? Y ¿los microondas o salas de soldadura?
 
-- a  Ionizantes y no ionizantes, respectivamente. [CORRECTA]
+- a  **Ionizantes y no ionizantes, respectivamente**. [CORRECTA]
 
 - b  No ionizantes e ionizantes, respectivamente.
 
@@ -142,7 +140,7 @@ Respuesta: a. Rayos X y gamma son ionizantes; microondas y soldadura son no ioni
 
 - c  Todos los lugares de trabajo contarán con luces de emergencia.
 
-- d  Todas son correctas. [CORRECTA]
+- d  **Todas son correctas**. [CORRECTA]
 
 Respuesta: d. Todas son correctas.
 
@@ -155,7 +153,7 @@ Respuesta: d. Todas son correctas.
 
 - c  El número de trabajadores expuestos y el tiempo de exposición.
 
-- d  Todas son correctas. [CORRECTA]
+- d  **Todas son correctas**. [CORRECTA]
 
 Respuesta: d. Se estudian probabilidad, severidad, trabajadores expuestos y tiempo de exposición.
 
@@ -167,23 +165,23 @@ Respuesta: d. Se estudian probabilidad, severidad, trabajadores expuestos y tiem
 
 - c  Transporte inadecuado de las mismas.
 
-- d  Todas son ciertas. [CORRECTA]
+- d  **Todas son ciertas**. [CORRECTA]
 
 Respuesta: d. Todas son ciertas.
 
 15. Indica qué nivel de prioridad (1, 2, 3 y 4) tiene cada riesgo indicado, siendo la primera la de mayor riesgo.
 
-- a Riesgo tolerable: Prioridad 3
+- a Riesgo tolerable: **Prioridad 3**
 
-- b Riesgo importante: Prioridad 1
+- b Riesgo importante: **Prioridad 1**
 
-- c Riesgo moderado: Prioridad 2
+- c Riesgo moderado: **Prioridad 2**
 
-d Riesgo trivial: Prioridad 4
+- d Riesgo trivial: **Prioridad 4**
 
 Orden de mayor a menor riesgo: importante, moderado, tolerable, trivial.
 
-- 16. Los efectos sobre el cuerpo del paso de la electricidad dependen de los siguientes factores:
+16. Los efectos sobre el cuerpo del paso de la electricidad dependen de los siguientes factores:
 
 - a Nivel de intensidad.
 
@@ -191,15 +189,15 @@ Orden de mayor a menor riesgo: importante, moderado, tolerable, trivial.
 
 - c El tiempo del contacto.
 
-d Todas son correctas. [CORRECTA]
+- d **Todas son correctas**. [CORRECTA]
 
 Respuesta: d. Intensidad, trayectoria y tiempo de contacto.
 
 17. Rellena los huecos: Los efectos que pueden provocar los agentes químicos dependen del tipo de __________, de su ___________ y del tiempo de _________.
 
-a gravedad, naturaleza y exposición.
+- a gravedad, naturaleza y exposición.
 
-- b contaminante, concentración y exposición. [CORRECTA]
+- b **contaminante, concentración y exposición**. [CORRECTA]
 
 - c contagio, agresividad y exposición.
 
@@ -213,7 +211,7 @@ Respuesta: b. Contaminante, concentración y exposición.
 
 - b Tocar un aparato de aire acondicionado y un frigorífico, respectivamente.
 
-- c Tocar un cable pelado y tocar una radial, respectivamente. [CORRECTA]
+- c **Tocar un cable pelado y tocar una radial, respectivamente**. [CORRECTA]
 
 - d Es lo mismo, no hay diferencia.
 
@@ -227,12 +225,14 @@ Respuesta: c. Directo: cable pelado (parte activa). Indirecto: radial (masa con 
 
 - c Es un extintor válido para instalaciones eléctricas.
 
-- d Es un extintor válido para sólidos, líquidos y gases. [CORRECTA]
+- d **Es un extintor válido para sólidos, líquidos y gases**. [CORRECTA]
 
 Respuesta: d. El polvo ABC sirve para sólidos, líquidos y gases.
 
 
-20. Un trabajador no alcanza el nivel de ventas exigido. ¿Qué le puede generar esta situación? a) Estrés. [CORRECTA]
+20. Un trabajador no alcanza el nivel de ventas exigido. ¿Qué le puede generar esta situación? 
+
+- a **Estrés**. [CORRECTA]
 
 - b Fatiga profesional.
 
@@ -250,24 +250,18 @@ A un servicio de prevención ajeno le llegan las siguientes empresas consultando
 
 | Empresa | Modalidad y motivo |
 | --- | --- |
-| Una tienda de ropa con 20 trabajadores | Asunción personal por el empresario. Menos de 25 |
-| donde el empresario tiene la formación | trabajadores en un único centro, sin actividades del Anexo I, con |
-| básica y está todo el día en la tienda. | formación básica y presencia habitual en el centro. |
-| Un supermercado con 590 trabajadores. | Servicio de prevención propio. Obligatorio con más de 500 |
-|   | trabajadores. |
-| Varias empresas de un pequeño polígono | Servicio de prevención mancomunado. Varias empresas |
-| que quieren asumir entre todas ellas | comparten la prevención. |
-| conjuntamente la prevención. |   |
-| Una con 260 trabajadores que desarrolla | Servicio de prevención propio. Obligatorio con más de 250 |
-| una actividad del anexo I del RD 39/1997 | trabajadores, o más de 50 si hay actividad peligrosa del Anexo I. |
-| (actividades peligrosas). |   |
+| Una tienda de ropa con 20 trabajadores donde el empresario tiene la formación básica y está todo el día en la tienda.| **Asunción personal por el empresario**. Menos de 25 trabajadores en un único centro, sin actividades del Anexo I, con formación básica y presencia habitual en el centro.|
+| Un supermercado con 590 trabajadores | **Servicio de prevención propio**. Obligatorio con más de 500 trabajadores.|
+| Varias empresas de un pequeño polígono que quieren asumir entre todas ellas conjuntamente la prevención.|**Servicio de prevención mancomunado**. Varias empresas comparten la prevención.|
+| Una con 260 trabajadores que desarrolla una actividad del anexo I del RD 39/1997 (actividades peligrosas).|**Servicio de prevención propio**. Obligatorio con más de 250 trabajadores, o más de 50 si hay actividad peligrosa del Anexo I.|
+
 
 ## B. Identifica las siguientes señales
 ![alt text](image.png)
 
 | Nº | Señal |
 | --- | --- |
-| 1 | Peligro: caídas al mismo nivel (suelo resbaladizo) |
+| 1 | Peligro: caídas a distinto nivel |
 | 2 | Peligro: riesgo biológico |
 | 3 | Prohibido el paso a peatones |
 | 4 | Peligro en general |
@@ -280,7 +274,6 @@ A un servicio de prevención ajeno le llegan las siguientes empresas consultando
 | 11 | Peligro: carretillas de manutención |
 | 12 | Protección obligatoria del cuerpo (ropa de protección) |
 
-Nota: las señales 1 y 9 tienen pictogramas parecidos; si tu material llama a la 1 "caídas a distinto nivel", usa ese nombre.
 
 ## C. Polvo en suspensión en la cerámica
 
@@ -297,19 +290,19 @@ Orden de utilización: primero c (1, prevención), después b (2, colectiva) y p
 
 ## D. Fuego
 
-- a Indica cuáles son los tres elementos del triángulo del fuego y explica qué elemento está presente en este caso.
+#### a Indica cuáles son los tres elementos del triángulo del fuego y explica qué elemento está presente en este caso.
 
 Combustible, comburente (oxígeno) y energía de activación (calor). En este caso el combustible son los cables, plásticos o el producto inflamable; el comburente es el oxígeno del aire, siempre presente; y el foco de calor suele ser un cortocircuito o sobrecarga, que es lo que normalmente inicia el fuego.
 
-- b ¿Qué tipo de fuego podría producirse si arden los cables y componentes eléctricos? ¿Y si arde un producto de limpieza inflamable?
+#### b ¿Qué tipo de fuego podría producirse si arden los cables y componentes eléctricos? ¿Y si arde un producto de limpieza inflamable?
 
 Cables y componentes eléctricos: fuego de origen eléctrico (al ser sólidos, también se trata como clase A, con el riesgo añadido de la electricidad. Producto de limpieza inflamable: clase B (líquidos inflamables).
 
-- c ¿Qué tipo de extintor sería el más adecuado para intervenir sobre un fuego en un equipo eléctrico que continúa conectado a la corriente? Justifica tu respuesta.
+#### c ¿Qué tipo de extintor sería el más adecuado para intervenir sobre un fuego en un equipo eléctrico que continúa conectado a la corriente? Justifica tu respuesta.
 
-- CO2 (nieve carbónica). No conduce la electricidad, no deja residuo y no daña el equipo. El polvo ABC también sirve, pero ensucia y estropea los componentes. Nunca agua. Lo ideal es cortar antes la corriente.
+CO2 (nieve carbónica). No conduce la electricidad, no deja residuo y no daña el equipo. El polvo ABC también sirve, pero ensucia y estropea los componentes. Nunca agua. Lo ideal es cortar antes la corriente.
 
-- d Explica brevemente cómo se debe utilizar un extintor portátil, indicando al menos tres pasos.
+#### d Explica brevemente cómo se debe utilizar un extintor portátil, indicando al menos tres pasos.
 
 - Descolgarlo y quitar el precinto o pasador de seguridad.
 
@@ -319,7 +312,7 @@ Cables y componentes eléctricos: fuego de origen eléctrico (al ser sólidos, t
 
 - No dar la espalda al fuego y vigilar que no se reavive.
 
-- e Si el incendio comienza a extenderse y no se puede controlar con seguridad, ¿qué debe hacer el trabajador?
+#### e Si el incendio comienza a extenderse y no se puede controlar con seguridad, ¿qué debe hacer el trabajador?
 
 - No intentar apagarlo. Dar la alarma y avisar al 112 y al responsable.
 
