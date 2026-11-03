@@ -231,7 +231,7 @@ Al comercializarse con FreeDOS, la elección del sistema anfitrión que instales
 
 ### 3. Elegid y justificad qué sistema operativo instalaríais como anfitrión en el parque de portátiles.
 
-Para el parque de portátiles utilizaríamos Ubuntu 26.04.1 LTS que es compatible con todo el software requerido para su trabajo.
+Para el parque de portátiles utilizaríamos Ubuntu 24.04 LTS que es compatible con todo el software requerido para su trabajo.
 
 Existen varias razones para elegir este sistema operativo:
 
@@ -289,38 +289,139 @@ Si se tomaran decisiones erróneas al seleccionar el hardware o el sistema opera
 
 ## Actividad 5. Investigar el mercado
 ### Buscad cuatro portátiles de al menos dos fabricantes, con disponibilidad y precio verificables en España. Para cada uno preparad una ficha con:
-
+#### MSI Modern A14 AI F2HMG-009XES
 | Categoría | Especificación / Detalle | Información del Equipo |
 | :--- | :--- | :--- |
-| **Identificación** | **Fabricante** | |
-| | **Modelo** | |
-| | **Referencia / SKU** | |
-| | **Tienda / Proveedor** | |
-| **Procesador** | **Procesador exacto** | |
-| | **Núcleos / Hilos** | |
-| | **Arquitectura** | |
-| **Memoria RAM** | **RAM instalada** | |
-| | **Tipo de memoria** | |
-| | **Ranuras (Slots)** | |
-| | **¿Soldada o Sustituible?** | |
-| | **Máximo admitido** | |
-| **Almacenamiento** | **SSD (Capacidad/Tipo)** | |
-| | **Interfaz de comunicación** | |
-| | **Posibilidades de ampliación/sustitución** | |
-| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | |
-| | **Tarjeta gráfica (GPU)** | |
-| **Físico y Periféricos** | **Peso** | |
-| | **Batería (Capacidad/Celdas)** | |
-| | **Webcam** | |
-| | **Teclado (Distribución/Retroiluminación)** | |
+| **Identificación** | **Fabricante** | MSI  |
+| | **Modelo** | Modern A14 AI F2HMG-009XES |
+| | **Referencia / SKU** | 9S7-14SK21-009 |
+| | **Tienda / Proveedor** | Store MSI |
+| **Procesador** | **Procesador exacto** | AMD Ryzen™ 7 250 |
+| | **Núcleos / Hilos** | 8 núcleos |
+| | **Arquitectura** | Zen 4 |
+| **Memoria RAM** | **RAM instalada** | 32GB |
+| | **Tipo de memoria** | LPDDR5 |
+| | **Ranuras (Slots)** | 16GB*2 |
+| | **¿Soldada o Sustituible?** | Soldado |
+| | **Máximo admitido** | No permite ampliación |
+| **Almacenamiento** | **SSD (Capacidad/Tipo)** | 1TBx NVMe SSD PCIe Gen4 |
+| | **Interfaz de comunicación** | PCIe |
+| | **Posibilidades de ampliación/sustitución** | No |
+| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | 14.0" FHD (1920x1080) <br> IPS-Level 60Hz <br> Refresh Rate |
+| | **Tarjeta gráfica (GPU) / Integridad** | AMD Radeon™ 780M |
+| **Físico y Periféricos** | **Peso** | 1.4 kg |
+| | **Batería (Capacidad/Celdas)** | 3-Cell |
+| | **Webcam** | HD type (30fps@720p) with 3D Noise Reduction (3DNR) |
+| | **Teclado** | Single Backlit Keyboard (White) with Copilot Key |
 | **Conectividad y Puertos** | **Puertos USB-A** | |
-| | **Puertos USB-C** | |
-| | **Salida HDMI** | |
-| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | |
-| | **Otras conexiones** | |
-| **Monitores Externos** | **Nº de pantallas externas simultáneas admitidas** | |
-| | **Condiciones de uso (Resolución/Modo/Puertos)** | |
-| **Comercial y Software** | **Sistema operativo** | |
-| | **Garantía** | |
-| | **Precio (con IVA)** | |
-| **Fuentes** | **Enlaces a las fuentes consultadas** | • [Enlace 1](URL) <br> • [Enlace 2](URL) |
+| | **Puertos USB-C** | 2x Type-C (USB3.2 Gen2 / DisplayPort™/ Power Delivery 3.0)  |
+| | **Salida HDMI** | 1x HDMI™ 2.1 (4K @ 60Hz) |
+| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | Wi-Fi 6E+BT <br> Bluetooth v5.3 <br> Ethernet RJ45 |
+| | **Otras conexiones** | 2x Type-A USB3.2 Gen1 |
+| **Monitores Externos** | **Nº de pantallas externas simultáneas admitidas** | Cuatro pantallas externas |
+| **Comercial y Software** | **Sistema operativo** | Free DOS |
+| | **Garantía** | 3 años de garantía |
+| | **Precio (con IVA)** | 829,00€ |
+| **Fuentes** | **Enlaces a las fuentes consultadas** | • [store msi](https://es-store.msi.com/products/modern-a14-ai-f2hmg-009xes-portatiles) <br> • [AMD Ryzen™ 7 250](https://www.amd.com/es/products/processors/laptop/ryzen/200-series/amd-ryzen-7-250.html) |
+#### MSI Modern 15 F1MG-499ES
+| Categoría | Especificación / Detalle | Información del Equipo |
+| :--- | :--- | :--- |
+| **Identificación** | **Fabricante** | MSI  |
+| | **Modelo** | Modern 15 F1MG-499ES |
+| | **Referencia / SKU** | 9S7-15S112-499 |
+| | **Tienda / Proveedor** | Store MSI |
+| **Procesador** | **Procesador exacto** | Intel® Core™ 7 processor 150U |
+| | **Núcleos / Hilos** | 10 cores (2 P-cores + 8 E-cores), 12 threads, 12 MB Intel® Smart Cache |
+| | **Arquitectura** | Raptor Lake (64 bits) |
+| **Memoria RAM** | **RAM instalada** | 32GB |
+| | **Tipo de memoria** | LPDDR5 |
+| | **Ranuras (Slots)** | 16GB*2 |
+| | **¿Soldada o Sustituible?** | No soldado |
+| | **Máximo admitido** | 64 GB |
+| **Almacenamiento** | **SSD (Capacidad/Tipo)** | 1TBx NVMe SSD PCIe Gen4 |
+| | **Interfaz de comunicación** | PCIe |
+| | **Posibilidades de ampliación/sustitución** | No |
+| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | 15.6" FHD(1920x1080) <br> IPS-Level |
+| | **Tarjeta gráfica (GPU) / Integridad** | Intel Graphics 96 CU |
+| **Físico y Periféricos** | **Peso** | 1.7 kg |
+| | **Batería (Capacidad/Celdas)** | 3-Cell <br> 46.8 Whrs |
+| | **Webcam** | HD type (30fps@720p) with 3D Noise Reduction (3DNR) |
+| | **Teclado** | Single Backlit Keyboard (White) with Copilot Key |
+| **Conectividad y Puertos** | **Puertos USB-A** | |
+| | **Puertos USB-C** | 2x Type-C (USB3.2 Gen2 / DisplayPort™/ Power Delivery 3.0)  |
+| | **Salida HDMI** | 1x HDMI™ 2.1 (4K @ 60Hz) |
+| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | Intel® Wi-Fi 6E AX211 <br> Bluetooth v5.3 <br> Ethernet RJ45 |
+| | **Otras conexiones** | 2x Type-A USB3.2 Gen1 |
+| **Monitores Externos** | **Nº de pantallas externas simultáneas admitidas** | Cuatro pantallas externas |
+| **Comercial y Software** | **Sistema operativo** | Free DOS |
+| | **Garantía** | 3 años de garantía |
+| | **Precio (con IVA)** | 949,00€ |
+| **Fuentes** | **Enlaces a las fuentes consultadas** | • [store msi](https://es-store.msi.com/products/modern-15-f1mg-499es-portatiles) <br> • [AMD Ryzen™ 7 250](https://www.geektopia.es/es/product/intel/core-7-150u/) |
+#### MSI Modern 15 F1MG-499ES
+| Categoría | Especificación / Detalle | Información del Equipo |
+| :--- | :--- | :--- |
+| **Identificación** | **Fabricante** | MSI  |
+| | **Modelo** | Modern 15 F1MG-499ES |
+| | **Referencia / SKU** | 9S7-15S112-499 |
+| | **Tienda / Proveedor** | Store MSI |
+| **Procesador** | **Procesador exacto** | Intel® Core™ 7 processor 150U |
+| | **Núcleos / Hilos** | 10 cores (2 P-cores + 8 E-cores), 12 threads, 12 MB Intel® Smart Cache |
+| | **Arquitectura** | Raptor Lake (64 bits) |
+| **Memoria RAM** | **RAM instalada** | 32GB |
+| | **Tipo de memoria** | LPDDR5 |
+| | **Ranuras (Slots)** | 16GB*2 |
+| | **¿Soldada o Sustituible?** | No soldado |
+| | **Máximo admitido** | 64 GB |
+| **Almacenamiento** | **SSD (Capacidad/Tipo)** | 1TBx NVMe SSD PCIe Gen4 |
+| | **Interfaz de comunicación** | PCIe |
+| | **Posibilidades de ampliación/sustitución** | No |
+| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | 15.6" FHD(1920x1080) <br> IPS-Level |
+| | **Tarjeta gráfica (GPU) / Integridad** | Intel Graphics 96 CU |
+| **Físico y Periféricos** | **Peso** | 1.7 kg |
+| | **Batería (Capacidad/Celdas)** | 3-Cell <br> 46.8 Whrs |
+| | **Webcam** | HD type (30fps@720p) with 3D Noise Reduction (3DNR) |
+| | **Teclado** | Single Backlit Keyboard (White) with Copilot Key |
+| **Conectividad y Puertos** | **Puertos USB-A** | |
+| | **Puertos USB-C** | 2x Type-C (USB3.2 Gen2 / DisplayPort™/ Power Delivery 3.0)  |
+| | **Salida HDMI** | 1x HDMI™ 2.1 (4K @ 60Hz) |
+| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | Intel® Wi-Fi 6E AX211 <br> Bluetooth v5.3 <br> Ethernet RJ45 |
+| | **Otras conexiones** | 2x Type-A USB3.2 Gen1 |
+| **Monitores Externos** | **Nº de pantallas externas simultáneas admitidas** | Cuatro pantallas externas |
+| **Comercial y Software** | **Sistema operativo** | Free DOS |
+| | **Garantía** | 3 años de garantía |
+| | **Precio (con IVA)** | 949,00€ |
+| **Fuentes** | **Enlaces a las fuentes consultadas** | • [store msi](https://es-store.msi.com/products/modern-15-f1mg-499es-portatiles) <br> • [AMD Ryzen™ 7 250](https://www.geektopia.es/es/product/intel/core-7-150u/) |
+#### Medion SPRCHRGD 14 S2 MD62722
+| Categoría | Especificación / Detalle | Información del Equipo |
+| :--- | :--- | :--- |
+| **Identificación** | **Fabricante** | Medion |
+| | **Modelo** |  SPRCHRGD 14 S2 MD62722 |
+| | **Referencia / SKU** | 9S7-15S112-499 |
+| | **Tienda / Proveedor** | Store MSI |
+| **Procesador** | **Procesador exacto** | Intel® Core™ 7 processor 150U |
+| | **Núcleos / Hilos** | 10 cores (2 P-cores + 8 E-cores), 12 threads, 12 MB Intel® Smart Cache |
+| | **Arquitectura** | Raptor Lake (64 bits) |
+| **Memoria RAM** | **RAM instalada** | 32GB |
+| | **Tipo de memoria** | LPDDR5 |
+| | **Ranuras (Slots)** | 16GB*2 |
+| | **¿Soldada o Sustituible?** | No soldado |
+| | **Máximo admitido** | 64 GB |
+| **Almacenamiento** | **SSD (Capacidad/Tipo)** | 1TBx NVMe SSD PCIe Gen4 |
+| | **Interfaz de comunicación** | PCIe |
+| | **Posibilidades de ampliación/sustitución** | No |
+| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | 15.6" FHD(1920x1080) <br> IPS-Level |
+| | **Tarjeta gráfica (GPU) / Integridad** | Intel Graphics 96 CU |
+| **Físico y Periféricos** | **Peso** | 1.7 kg |
+| | **Batería (Capacidad/Celdas)** | 3-Cell <br> 46.8 Whrs |
+| | **Webcam** | HD type (30fps@720p) with 3D Noise Reduction (3DNR) |
+| | **Teclado** | Single Backlit Keyboard (White) with Copilot Key |
+| **Conectividad y Puertos** | **Puertos USB-A** | |
+| | **Puertos USB-C** | 2x Type-C (USB3.2 Gen2 / DisplayPort™/ Power Delivery 3.0)  |
+| | **Salida HDMI** | 1x HDMI™ 2.1 (4K @ 60Hz) |
+| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | Intel® Wi-Fi 6E AX211 <br> Bluetooth v5.3 <br> Ethernet RJ45 |
+| | **Otras conexiones** | 2x Type-A USB3.2 Gen1 |
+| **Monitores Externos** | **Nº de pantallas externas simultáneas admitidas** | Cuatro pantallas externas |
+| **Comercial y Software** | **Sistema operativo** | Free DOS |
+| | **Garantía** | 3 años de garantía |
+| | **Precio (con IVA)** | 949,00€ |
+| **Fuentes** | **Enlaces a las fuentes consultadas** | • [store msi](https://es-store.msi.com/products/modern-15-f1mg-499es-portatiles) <br> • [AMD Ryzen™ 7 250](https://www.geektopia.es/es/product/intel/core-7-150u/) |
