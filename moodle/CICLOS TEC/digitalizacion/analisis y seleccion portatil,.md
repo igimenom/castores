@@ -396,16 +396,16 @@ Si se tomaran decisiones erróneas al seleccionar el hardware o el sistema opera
 | :--- | :--- | :--- |
 | **Identificación** | **Fabricante** | Medion |
 | | **Modelo** |  SPRCHRGD 14 S2 MD62722 |
-| | **Referencia / SKU** | 9S7-15S112-499 |
-| | **Tienda / Proveedor** | Store MSI |
-| **Procesador** | **Procesador exacto** | Intel® Core™ 7 processor 150U |
-| | **Núcleos / Hilos** | 10 cores (2 P-cores + 8 E-cores), 12 threads, 12 MB Intel® Smart Cache |
-| | **Arquitectura** | Raptor Lake (64 bits) |
+| | **Referencia / SKU** | 4061275244595 |
+| | **Tienda / Proveedor** | Neobyte |
+| **Procesador** | **Procesador exacto** | Intel Core Ultra 7 258V |
+| | **Núcleos / Hilos** | 8 núcleos, 8 hilos de ejecución, 12 MB Intel Smart Cache, hasta 4,80 GHz |
+| | **Arquitectura** | Lunar Lake (64 bits) |
 | **Memoria RAM** | **RAM instalada** | 32GB |
-| | **Tipo de memoria** | LPDDR5 |
-| | **Ranuras (Slots)** | 16GB*2 |
-| | **¿Soldada o Sustituible?** | No soldado |
-| | **Máximo admitido** | 64 GB |
+| | **Tipo de memoria** | LPDDR5X 7467 MHz |
+| | **Ranuras (Slots)** | 32GB*1 |
+| | **¿Soldada o Sustituible?** | Soldado |
+| | **Máximo admitido** | No ampliable |
 | **Almacenamiento** | **SSD (Capacidad/Tipo)** | 1TBx NVMe SSD PCIe Gen4 |
 | | **Interfaz de comunicación** | PCIe |
 | | **Posibilidades de ampliación/sustitución** | No |
