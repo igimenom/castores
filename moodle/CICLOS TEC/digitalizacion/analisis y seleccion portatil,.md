@@ -425,3 +425,30 @@ Si se tomaran decisiones erróneas al seleccionar el hardware o el sistema opera
 | | **Garantía** | 3 años de garantía |
 | | **Precio (con IVA)** | 1.019,95 € |
 | **Fuentes** | **Enlaces a las fuentes consultadas** | • [Ecoportatil](https://ecoportatil.es/producto/lenovo-thinkpad-p15v-g3-156-i7-12800h-32gb-ssd-1tb-fhd-nvidia-quadro-t1200-4gb-a-copia) <br> • [Intel® Core™ i7-12800H](https://www.intel.la/content/www/xl/es/products/sku/226059/intel-core-i712800h-processor-24m-cache-up-to-4-80-ghz/specifications.html) |
+## Actividad 6: Diseñar el puesto de trabajo
+### 1. Clasificad monitor, teclado, ratón, almacenamiento externo y adaptadores como periféricos de entrada, salida o entrada/salida, según corresponda.
+* **Teclado**: Periférico de entrada (permite introducir datos y órdenes al ordenador).
+* **Ratón**: Periférico de entrada (permite interactuar mediante el puntero y enviar órdenes de posición o clics).
+* **Monitor**: Periférico de salida (muestra la información visual generada por el sistema). (Nota: Las pantallas táctiles se consideran de entrada/salida).
+* **Almacenamiento externo** (discos duros, memorias USB): Periférico de entrada/salida (permite leer información guardada en ellos —entrada— y escribir o almacenar datos nuevos —salida—).
+* **Adaptadores** (tarjetas de red, Wi-Fi, Bluetooth): Periféricos de entrada/salida (envían y reciben datos, señales o comunicaciones bidireccionales).
+### 2. Indicad cómo se comunican y comparad USB-A, USB-C, USB4, Thunderbolt, HDMI, DisplayPort y Ethernet. Aclarad que la forma USB-C no garantiza salida de vídeo.
+
+* **USB-A**: Conector rectangular tradicional. Se comunica exclusivamente mediante protocolo USB (desde USB 1.1 hasta USB 3.2). Solo transmite datos y, según la versión, energía (carga), sin capacidad para enviar señal de vídeo ni audio digital directo.
+* **USB-C**: Es únicamente un estándar físico (un conector ovalado y reversible). Tener forma de USB-C no garantiza salida de vídeo ni una velocidad específica; puede transportar desde USB 2.0 básico hasta USB4, carga (Power Delivery) o vídeo solo si el fabricante implementa DisplayPort Alt Mode.
+* **USB4**: Es un protocolo de comunicación de alta velocidad que utiliza el conector físico USB-C. Permite transferir datos (hasta 40 Gbps o más), suministrar energía y transportar vídeo (mediante túneles compatibles con DisplayPort), unificando múltiples funciones en un solo cable.
+* **Thunderbolt** (3, 4 y 5): Es un protocolo propietario (desarrollado por Intel) que también utiliza el conector físico USB-C. Ofrece certificaciones estrictas con un mínimo garantizado de 40 Gbps (en Thunderbolt 4/5), soporte obligatorio para doble monitor 4K, túneles PCI Express y entrega de energía. Es retrocompatible con USB4 y USB-C.
+* **HDMI**: Es una interfaz de audio y vídeo digital de propósito específico. Se comunica mediante un protocolo audiovisual dedicado diseñado para conectar fuentes de vídeo (ordenadores, consolas, reproductores) directamente a pantallas o proyectores, transportando vídeo sin comprimir y audio multicanal.
+* **DisplayPort**: Es una interfaz de audio y vídeo digital de alto rendimiento (frecuente en entornos de PC y monitores profesionales). Se comunica mediante paquetes de datos de vídeo/audio de alta tasa de refresco y resolución, y además puede «subirse» al conector USB-C a través del modo alternativo (DisplayPort Alt Mode).
+* **Ethernet** (RJ45): Es una interfaz de red por cable (LAN). Se comunica mediante tramas de datos de red (protocolo IEEE 802.3) para conectar dispositivos a una red local o a internet, sin relación con el transporte de vídeo o energía de alto vataje.
+
+| Característica / Puerto | Conector físico | Función principal | Velocidad máxima de datos | ¿Transporta vídeo? | ¿Transporta energía (carga)? |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **USB-A** | Rectangular (grande) | Datos y carga básica | Hasta 10 / 20 Gbps (USB 3.2) | **No** | Sí (baja/media) |
+| **USB-C** | Ovalado (reversible) | Variable según el puerto | Desde USB 2.0 (480 Mbps) hasta USB4 (40+ Gbps) | **No garantizado** (depende de *Alt Mode*) | Sí (según Power Delivery) |
+| **USB4** | Usa conector USB-C | Datos, vídeo y energía unificados | Hasta 40 Gbps (o más en v2) | Sí (opcional por túneles DisplayPort) | Sí (Power Delivery) |
+| **Thunderbolt** | Usa conector USB-C | Alto rendimiento, PCIe, vídeo y datos | 40 Gbps o más (según versión) | Sí (obligatorio y certificado) | Sí (mínimo 15W o más) |
+| **HDMI** | HDMI (A, C, D) | Audio y vídeo digital a pantallas | Depende de la versión (ej. HDMI 2.1: hasta 48 Gbps) | **Sí** (nativo) | **No** |
+| **DisplayPort** | DisplayPort / Mini DP | Vídeo y audio de alta tasa de refresco | Depende de la versión (HBR3 / UHBR) | **Sí** (nativo y vía USB-C *Alt Mode*) | **No** |
+| **Ethernet** | RJ45 (modular) | Conexión a red local / Internet | 1 Gbps, 2.5 Gbps, 10 Gbps+ | **No** | Opcional (PoE en entornos profesionales) |
+### 3. Diseñad y dibujad un esquema de conexión de portátil, monitor HDMI, monitor DisplayPort, teclado, ratón, Ethernet y alimentación.
