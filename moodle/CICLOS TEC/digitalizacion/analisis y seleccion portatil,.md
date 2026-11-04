@@ -357,47 +357,13 @@ Si se tomaran decisiones erróneas al seleccionar el hardware o el sistema opera
 | | **Garantía** | 3 años de garantía |
 | | **Precio (con IVA)** | 949,00€ |
 | **Fuentes** | **Enlaces a las fuentes consultadas** | • [store msi](https://es-store.msi.com/products/modern-15-f1mg-499es-portatiles) <br> • [AMD Ryzen™ 7 250](https://www.geektopia.es/es/product/intel/core-7-150u/) |
-#### MSI Modern 15 F1MG-499ES
-| Categoría | Especificación / Detalle | Información del Equipo |
-| :--- | :--- | :--- |
-| **Identificación** | **Fabricante** | MSI  |
-| | **Modelo** | Modern 15 F1MG-499ES |
-| | **Referencia / SKU** | 9S7-15S112-499 |
-| | **Tienda / Proveedor** | Store MSI |
-| **Procesador** | **Procesador exacto** | Intel® Core™ 7 processor 150U |
-| | **Núcleos / Hilos** | 10 cores (2 P-cores + 8 E-cores), 12 threads, 12 MB Intel® Smart Cache |
-| | **Arquitectura** | Raptor Lake (64 bits) |
-| **Memoria RAM** | **RAM instalada** | 32GB |
-| | **Tipo de memoria** | LPDDR5 |
-| | **Ranuras (Slots)** | 16GB*2 |
-| | **¿Soldada o Sustituible?** | No soldado |
-| | **Máximo admitido** | 64 GB |
-| **Almacenamiento** | **SSD (Capacidad/Tipo)** | 1TBx NVMe SSD PCIe Gen4 |
-| | **Interfaz de comunicación** | PCIe |
-| | **Posibilidades de ampliación/sustitución** | No |
-| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | 15.6" FHD(1920x1080) <br> IPS-Level |
-| | **Tarjeta gráfica (GPU) / Integridad** | Intel Graphics 96 CU |
-| **Físico y Periféricos** | **Peso** | 1.7 kg |
-| | **Batería (Capacidad/Celdas)** | 3-Cell <br> 46.8 Whrs |
-| | **Webcam** | HD type (30fps@720p) with 3D Noise Reduction (3DNR) |
-| | **Teclado** | Single Backlit Keyboard (White) with Copilot Key |
-| **Conectividad y Puertos** | **Puertos USB-A** | |
-| | **Puertos USB-C** | 2x Type-C (USB3.2 Gen2 / DisplayPort™/ Power Delivery 3.0)  |
-| | **Salida HDMI** | 1x HDMI™ 2.1 (4K @ 60Hz) |
-| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | Intel® Wi-Fi 6E AX211 <br> Bluetooth v5.3 <br> Ethernet RJ45 |
-| | **Otras conexiones** | 2x Type-A USB3.2 Gen1 |
-| **Monitores Externos** | **Nº de pantallas externas simultáneas admitidas** | Cuatro pantallas externas |
-| **Comercial y Software** | **Sistema operativo** | Free DOS |
-| | **Garantía** | 3 años de garantía |
-| | **Precio (con IVA)** | 949,00€ |
-| **Fuentes** | **Enlaces a las fuentes consultadas** | • [store msi](https://es-store.msi.com/products/modern-15-f1mg-499es-portatiles) <br> • [AMD Ryzen™ 7 250](https://www.geektopia.es/es/product/intel/core-7-150u/) |
 #### Medion SPRCHRGD 14 S2 MD62722
 | Categoría | Especificación / Detalle | Información del Equipo |
 | :--- | :--- | :--- |
 | **Identificación** | **Fabricante** | Medion |
 | | **Modelo** |  SPRCHRGD 14 S2 MD62722 |
-| | **Referencia / SKU** | 4061275244595 |
-| | **Tienda / Proveedor** | Neobyte |
+| | **Referencia / SKU** | 30040878 |
+| | **Tienda / Proveedor** | Life Informática |
 | **Procesador** | **Procesador exacto** | Intel Core Ultra 7 258V |
 | | **Núcleos / Hilos** | 8 núcleos, 8 hilos de ejecución, 12 MB Intel Smart Cache, hasta 4,80 GHz |
 | | **Arquitectura** | Lunar Lake (64 bits) |
@@ -409,19 +375,53 @@ Si se tomaran decisiones erróneas al seleccionar el hardware o el sistema opera
 | **Almacenamiento** | **SSD (Capacidad/Tipo)** | 1TBx NVMe SSD PCIe Gen4 |
 | | **Interfaz de comunicación** | PCIe |
 | | **Posibilidades de ampliación/sustitución** | No |
-| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | 15.6" FHD(1920x1080) <br> IPS-Level |
-| | **Tarjeta gráfica (GPU) / Integridad** | Intel Graphics 96 CU |
-| **Físico y Periféricos** | **Peso** | 1.7 kg |
+| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | 14″ IPS 2.8K (2880 × 1800) 16:10 <br> Brillo 400 nits <br> 100% sRGB |
+| | **Tarjeta gráfica (GPU) / Integridad** | 	Intel Arc 140V|
+| **Físico y Periféricos** | **Peso** | 1.4 kg |
+| | **Batería (Capacidad/Celdas)** | 65 Wh |
+| | **Webcam** | Webcam Full HD con micrófono dual |
+| | **Teclado** | Chiclet <br> Teclado QWERTY, incluye la letra ñ |
+| **Conectividad y Puertos** | **Puertos USB-A** | |
+| | **Puertos USB-C** | 2 x USB4 (40 Gb/s, compatible con DisplayPort y carga)  |
+| | **Salida HDMI** | 1 x HDMI 2.0 |
+| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | Wi-Fi 7 (802.11be) <br> Bluetooth 5.4 |
+| | **Otras conexiones** | 2 x USB4 (40 Gb/s, compatible con DisplayPort y carga) <br> 1 x USB-A 3.2 <br> 1 x HDMI 2.0 <br> 1 x Jack de audio combinado |
+| **Monitores Externos** | **Nº de pantallas externas simultáneas admitidas** | Cuatro pantallas externas |
+| **Comercial y Software** | **Sistema operativo** | Windows 11 Home |
+| | **Garantía** | 3 años de garantía |
+| | **Precio (con IVA)** | 1148,70 € |
+| **Fuentes** | **Enlaces a las fuentes consultadas** | • [Life Informática](https://lifeinformatica.com/tienda/medion-sprchrgd-14-s2-md62722-portatil-intel-core-ultra-7-258v-32gb-ddr5-1tb-ssd-nvme-14-2-8k-windows-11-home/) <br> • [Intel® Core™ Ultra 7 258V](https://www.intel.la/content/www/xl/es/products/sku/240957/intel-core-ultra-7-processor-258v-12m-cache-up-to-4-80-ghz/specifications.html) |
+#### Lenovo Thinkpad P15V G3
+| Categoría | Especificación / Detalle | Información del Equipo |
+| :--- | :--- | :--- |
+| **Identificación** | **Fabricante** | Lenovo |
+| | **Modelo** |  Thinkpad P15V G3|
+| | **Referencia / SKU** | 21D8007USP |
+| | **Tienda / Proveedor** | Ecoportatil |
+| **Procesador** | **Procesador exacto** | i7 12800H |
+| | **Núcleos / Hilos** | 14 núcleos, 20 hilos, 24 MB Intel Smart Cache, hasta 4,80 GHz |
+| | **Arquitectura** | Alder Lake H |
+| **Memoria RAM** | **RAM instalada** | 32GB |
+| | **Tipo de memoria** | DDR5-4800MHz (SODIMM) |
+| | **Ranuras (Slots)** | 32GB*1 |
+| | **¿Soldada o Sustituible?** | Soldado |
+| | **Máximo admitido** | No ampliable |
+| **Almacenamiento** | **SSD (Capacidad/Tipo)** | 1 TB SSD M.2 2280 PCIe Gen4 TLC Opal |
+| | **Interfaz de comunicación** | PCIe |
+| | **Posibilidades de ampliación/sustitución** | No |
+| **Pantalla y Gráficos** | **Pantalla (Tamaño, Res., Tipo)** | 15,6" FHD (1920 x 1080) <br> IPS <br> antirreflectante <br> sin capacidad táctil <br> 45 % NTSC <br> 300 nits <br> 60 Hz <br> marco biselado fino |
+| | **Tarjeta gráfica (GPU) / Integridad** | NVIDIA® T1200 4GB GDDR6 |
+| **Físico y Periféricos** | **Peso** | 2,09 kg |
 | | **Batería (Capacidad/Celdas)** | 3-Cell <br> 46.8 Whrs |
 | | **Webcam** | HD type (30fps@720p) with 3D Noise Reduction (3DNR) |
-| | **Teclado** | Single Backlit Keyboard (White) with Copilot Key |
+| | **Teclado** | Retroiluminación <br> Teclado numérico <br> Resistente a los derrames |
 | **Conectividad y Puertos** | **Puertos USB-A** | |
 | | **Puertos USB-C** | 2x Type-C (USB3.2 Gen2 / DisplayPort™/ Power Delivery 3.0)  |
 | | **Salida HDMI** | 1x HDMI™ 2.1 (4K @ 60Hz) |
-| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | Intel® Wi-Fi 6E AX211 <br> Bluetooth v5.3 <br> Ethernet RJ45 |
-| | **Otras conexiones** | 2x Type-A USB3.2 Gen1 |
+| | **Red (Ethernet RJ45 / Wi-Fi / BT)** | Intel® Wi-Fi 6E* AX211 <br> Bluetooth™ 5.2 <br> Opcional: WWAN** FIBOCOM L860-GL <br> 4G LTE CAT16 con eSIM |
+| | **Otras conexiones** | Thunderbolt 4/USB4™ de 40 Gbps/USB-C 3.2 de 2.ª generación (compatible con transferencia de datos, Power Delivery 3.0 y DisplayPort™ 1.4) <br> 2 USB-A 3.2 de 1.ª generación (uno siempre activo) <br> HDMI 2.1 (solo TMDS, hasta 4 K/60 Hz) <br> Toma combinada para auriculares y micrófono <br> Ethernet (RJ45) <br> Lector de tarjetas SD <br> Opcional: lector de tarjetas inteligentes <br> Tarjeta nano-SIM (opcional)|
 | **Monitores Externos** | **Nº de pantallas externas simultáneas admitidas** | Cuatro pantallas externas |
-| **Comercial y Software** | **Sistema operativo** | Free DOS |
+| **Comercial y Software** | **Sistema operativo** | Sin sistema operativo |
 | | **Garantía** | 3 años de garantía |
-| | **Precio (con IVA)** | 949,00€ |
-| **Fuentes** | **Enlaces a las fuentes consultadas** | • [store msi](https://es-store.msi.com/products/modern-15-f1mg-499es-portatiles) <br> • [AMD Ryzen™ 7 250](https://www.geektopia.es/es/product/intel/core-7-150u/) |
+| | **Precio (con IVA)** | 1.019,95 € |
+| **Fuentes** | **Enlaces a las fuentes consultadas** | • [Ecoportatil](https://ecoportatil.es/producto/lenovo-thinkpad-p15v-g3-156-i7-12800h-32gb-ssd-1tb-fhd-nvidia-quadro-t1200-4gb-a-copia) <br> • [Intel® Core™ i7-12800H](https://www.intel.la/content/www/xl/es/products/sku/226059/intel-core-i712800h-processor-24m-cache-up-to-4-80-ghz/specifications.html) |
