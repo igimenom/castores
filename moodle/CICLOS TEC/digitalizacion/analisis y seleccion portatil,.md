@@ -488,3 +488,28 @@ Gracias a que el puerto USB-C del MSI soporta DisplayPort 1.4 con DSC (*Display 
 | 1080p (1920x1080) @ 60 Hz | 4K (3840x2160) @ 60 Hz | 4K (3840x2160) @ 60 Hz | Escritorio Extendido (3 pantallas independientes) con DSC activado por driver. |
 | 1080p (1920x1080) @ 60 Hz | 1440p (2560x1440) @ 60 Hz | 1440p (2560x1440) @ 60 Hz | Escritorio Extendido (3 pantallas independientes) en HBR3 estándar sin compresión. |
 | 1080p (1920x1080) @ 60 Hz | 1080p (1920x1080) @ 60 Hz | 1080p (1920x1080) @ 60 Hz | Escritorio Extendido (3 pantallas independientes) consumo de ancho de banda < 40%. |
+
+## Actividad 7. Comparar y puntuar los candidatos
+### Consultad documentación de fabricante y, cuando existan, pruebas independientes de rendimiento, autonomía, temperatura y ruido. Citad las fuentes y evitad comparar ensayos realizados en condiciones muy distintas.
+
+#### MSI Modern A14 AI F2HMG-009XES
+
+* [Documentación](https://storage-asset.msi.com/specSheet/es/bnp/Modern%20A14%20AI%20F2HMG-009XES.pdf)
+* [Reseña del producto (similar)](https://www.profesionalreview.com/2022/06/24/msi-modern-14-review/)
+
+#### MSI Modern 15 F1MG-499ES
+
+* [Documentación](https://storage-asset.msi.com/specSheet/es/bnp/Modern%2015%20F1MG-499ES.pdf)
+* [Reseña del producto (similar)](https://www.techradar.com/computing/laptops/msi-modern-15)
+
+#### Medion SPRCHRGD 14 S2 MD62722
+
+* [Documentación](https://cdn.medion.com/downloads/anleitungen/bda_sprchrgd_14s2_en.pdf)
+* [Reseña del producto](https://www.notebookcheck.org/Intel-se-enfrenta-a-Qualcomm-Analisis-del-Medion-SPRCHRGD-14-S2.990899.0.html)
+
+#### Lenovo Thinkpad P15V G3
+
+* [Documentación](https://download.lenovo.com/pccbbs/mobiles_pdf/p15v_t15p_gen3_ug_es.pdf)
+* [Reseña del producto](https://laptopmedia.com/review/lenovo-thinkpad-p15v-gen-3-review-a-mobile-workstation-with-an-impressive-display/p5/)
+
+### Construid una hoja de cálculo con puntuaciones de 0 a 10, justificación y estos pesos:
