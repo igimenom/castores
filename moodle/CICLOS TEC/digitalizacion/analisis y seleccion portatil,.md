@@ -467,4 +467,24 @@ Proponemos el dock: **i-tec USB-C Triple Display Docking Station Gen 2 Pro + Pow
 
 La propuesta del dock i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W es totalmente compatible con el portátil MSI Modern A14 AI F2HMG-009XES. A continuación se detalla la justificación técnica y la evidencia de funcionamiento simultáneo en modo escritorio extendido (1 pantalla integrada + 2 pantallas externas).
 
-Tener dos conectores de vídeo físicos en el dock no garantiza el modo extendido por sí solo, pero en esta combinación específica la evidencia técnica se fundamenta en tres pilares arquitectónicos:A. Multiplexación por Hardware: Protocolo DisplayPort MST (Multi-Stream Transport)El puerto USB-C del MSI Modern A14 entrega una señal DisplayPort 1.4 en modo alternativo. El dock i-tec incorpora un controlador interno MST (Multi-Stream Transport). A diferencia de un duplicador pasivo (SST), la tecnología MST desglosa el ancho de banda del enlace DisplayPort único del portátil en múltiples flujos de datos independientes, asignando una trama lógica única a cada monitor conectado al dock.B. Capacidad Hardware de la GPU (AMD Radeon 780M)   El procesador AMD Ryzen 7 250 cuenta con la GPU integrada AMD Radeon 780M, cuyo motor de pantalla (Display Engine) soporta en silicio un máximo de 4 pantallas independientes simultáneas (MSI Matrix Display):   Pipeline 0: Pantalla integrada del portátil ($1920 \times 1080$ @ 60 Hz).   Pipeline 1: Monitor externo 1 en el dock (vía flujo MST 1).Pipeline 2: Monitor externo 2 en el dock (vía flujo MST 2).
+Tener dos conectores de vídeo físicos en el dock no garantiza el modo extendido por sí solo, pero en esta combinación específica la evidencia técnica se fundamenta en tres pilares arquitectónicos:
+
+Tener dos conectores de vídeo físicos en el dock no garantiza el modo extendido por sí solo, pero en esta combinación específica la evidencia técnica se fundamenta en tres pilares arquitectónicos:
+
+#### A. Multiplexación por Hardware: Protocolo DisplayPort MST (Multi-Stream Transport)
+El puerto USB-C del MSI Modern A14 entrega una señal DisplayPort 1.4 en modo alternativo. El dock i-tec incorpora un controlador interno MST (Multi-Stream Transport). A diferencia de un duplicador pasivo (SST), la tecnología MST desglosa el ancho de banda del enlace DisplayPort único del portátil en múltiples flujos de datos independientes, asignando una trama lógica única a cada monitor conectado al dock.
+
+#### B. Capacidad Hardware de la GPU (AMD Radeon 780M)
+El procesador AMD Ryzen 7 250 cuenta con la GPU integrada AMD Radeon 780M, cuyo motor de pantalla (*Display Engine*) soporta en silicio un máximo de 4 pantallas independientes simultáneas (MSI Matrix Display):
+1. **Pipeline 0:** Pantalla integrada del portátil ($1920 \times 1080$ @ 60 Hz).
+2. **Pipeline 1:** Monitor externo 1 en el dock (vía flujo MST 1).
+3. **Pipeline 2:** Monitor externo 2 en el dock (vía flujo MST 2).
+
+#### C. Matriz de Ancho de Banda, Resolución y Frecuencia de Refresco
+Gracias a que el puerto USB-C del MSI soporta DisplayPort 1.4 con DSC (*Display Stream Compression*) y velocidad de enlace HBR3 ($32.4\text{ Gbps}$ brutos / $25.92\text{ Gbps}$ netos), el ancho de banda disponible en el cable permite las siguientes combinaciones de rendimiento en modo extendido simultáneo:
+
+| Pantalla Integrada (MSI A14) | Monitor Externo 1 (DP 1 del dock) | Monitor Externo 2 (DP 2 o HDMI del dock) | Rendimiento / Modo |
+| :--- | :--- | :--- | :--- |
+| 1080p (1920x1080) @ 60 Hz | 4K (3840x2160) @ 60 Hz | 4K (3840x2160) @ 60 Hz | Escritorio Extendido (3 pantallas independientes) con DSC activado por driver. |
+| 1080p (1920x1080) @ 60 Hz | 1440p (2560x1440) @ 60 Hz | 1440p (2560x1440) @ 60 Hz | Escritorio Extendido (3 pantallas independientes) en HBR3 estándar sin compresión. |
+| 1080p (1920x1080) @ 60 Hz | 1080p (1920x1080) @ 60 Hz | 1080p (1920x1080) @ 60 Hz | Escritorio Extendido (3 pantallas independientes) consumo de ancho de banda < 40%. |
