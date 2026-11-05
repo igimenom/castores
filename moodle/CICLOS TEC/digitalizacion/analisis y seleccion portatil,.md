@@ -213,7 +213,7 @@ Al comercializarse con FreeDOS, la elección del sistema anfitrión que instales
 ## Actividad 3. Analizar los sistemas operativos
 
 ### 1. Dibujad un esquema funcional que relacione hardware físico, sistema operativo anfitrión, hipervisor, sistemas invitados, aplicaciones y usuarios. Explicad la función de cada elemento.
-![alt text](<Diagrama sin título.drawio.png>)
+![alt text](image-2.png)
 
 ### 2. Comparad versiones concretas de Windows 11 y Ubuntu Desktop en: arquitectura, requisitos mínimos y recomendados, licencia, coste, compatibilidad con aplicaciones y virtualización, ventajas e inconvenientes.
 
@@ -451,4 +451,20 @@ Si se tomaran decisiones erróneas al seleccionar el hardware o el sistema opera
 | **HDMI** | HDMI (A, C, D) | Audio y vídeo digital a pantallas | Depende de la versión (ej. HDMI 2.1: hasta 48 Gbps) | **Sí** (nativo) | **No** |
 | **DisplayPort** | DisplayPort / Mini DP | Vídeo y audio de alta tasa de refresco | Depende de la versión (HBR3 / UHBR) | **Sí** (nativo y vía USB-C *Alt Mode*) | **No** |
 | **Ethernet** | RJ45 (modular) | Conexión a red local / Internet | 1 Gbps, 2.5 Gbps, 10 Gbps+ | **No** | Opcional (PoE en entornos profesionales) |
+
+>TIP
+>
+>Aunque el conector USB-C sea idéntico visualmente en todos los dispositivos, su funcionamiento interno depende de los protocolos que el fabricante haya decidido implementar en ese puerto específico.
+>
+>Para poder conectar un monitor o televisor directamente a un puerto USB-C, este debe cumplir con alguna de las siguientes características técnicas:
+>* DisplayPort Alt Mode (Modo alternativo): Es la tecnología que permite al puerto USB-C desviar los pines de datos para transmitir la señal de vídeo nativa de DisplayPort. Si el puerto no cuenta con esta certificación, no dará imagen.
+>* Compatibilidad con Thunderbolt (3 o 4) o USB4: Estos estándares sí exigen obligatoriamente la capacidad de transmitir vídeo de alta resolución.
 ### 3. Diseñad y dibujad un esquema de conexión de portátil, monitor HDMI, monitor DisplayPort, teclado, ratón, Ethernet y alimentación.
+![alt text](esquema2.png)
+### 4. Si proponéis un dock, indicad modelo, precio y compatibilidad con el portátil. Aportad evidencia de que funcionan simultáneamente la pantalla integrada y las dos pantallas externas en modo escritorio extendido, teniendo en cuenta puertos, resolución y frecuencia. Tener dos conectores de vídeo no constituye prueba suficiente.
+![alt text](image-1.png)
+Proponemos el dock: **i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W** a un precio de 195,95 € en [LDLC España](https://www.ldlc.com/es-es/ficha/PB00630772.html).
+
+La propuesta del dock i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W es totalmente compatible con el portátil MSI Modern A14 AI F2HMG-009XES. A continuación se detalla la justificación técnica y la evidencia de funcionamiento simultáneo en modo escritorio extendido (1 pantalla integrada + 2 pantallas externas).
+
+Tener dos conectores de vídeo físicos en el dock no garantiza el modo extendido por sí solo, pero en esta combinación específica la evidencia técnica se fundamenta en tres pilares arquitectónicos:A. Multiplexación por Hardware: Protocolo DisplayPort MST (Multi-Stream Transport)El puerto USB-C del MSI Modern A14 entrega una señal DisplayPort 1.4 en modo alternativo. El dock i-tec incorpora un controlador interno MST (Multi-Stream Transport). A diferencia de un duplicador pasivo (SST), la tecnología MST desglosa el ancho de banda del enlace DisplayPort único del portátil en múltiples flujos de datos independientes, asignando una trama lógica única a cada monitor conectado al dock.B. Capacidad Hardware de la GPU (AMD Radeon 780M)   El procesador AMD Ryzen 7 250 cuenta con la GPU integrada AMD Radeon 780M, cuyo motor de pantalla (Display Engine) soporta en silicio un máximo de 4 pantallas independientes simultáneas (MSI Matrix Display):   Pipeline 0: Pantalla integrada del portátil ($1920 \times 1080$ @ 60 Hz).   Pipeline 1: Monitor externo 1 en el dock (vía flujo MST 1).Pipeline 2: Monitor externo 2 en el dock (vía flujo MST 2).
