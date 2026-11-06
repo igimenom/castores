@@ -362,7 +362,7 @@ Si se tomaran decisiones erróneas al seleccionar el hardware o el sistema opera
 | :--- | :--- | :--- |
 | **Identificación** | **Fabricante** | Medion |
 | | **Modelo** |  SPRCHRGD 14 S2 MD62722 |
-| | **Referencia / SKU** | 30040878 |
+| | **Referencia / SKU** | POMED024  |
 | | **Tienda / Proveedor** | Life Informática |
 | **Procesador** | **Procesador exacto** | Intel Core Ultra 7 258V |
 | | **Núcleos / Hilos** | 8 núcleos, 8 hilos de ejecución, 12 MB Intel Smart Cache, hasta 4,80 GHz |
@@ -513,3 +513,67 @@ Gracias a que el puerto USB-C del MSI soporta DisplayPort 1.4 con DSC (*Display 
 * [Reseña del producto](https://laptopmedia.com/review/lenovo-thinkpad-p15v-gen-3-review-a-mobile-workstation-with-an-impressive-display/p5/)
 
 ### Construid una hoja de cálculo con puntuaciones de 0 a 10, justificación y estos pesos:
+| Criterio | Peso | MSI Modern A14 AI F2HMG-009XES | Medion SPRCHRGD 14 S2 MD62722 | MSI Modern 15 F1MG-499ES | Lenovo Thinkpad P15V G3 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Tres pantallas simultáneas | 20,00 % | 10 | 10 | 10 | 10 |
+| RAM y ampliación | 20,00 % | 5 | 5 | 10 | 10 |
+| Rendimiento para virtualización | 20,00 % | 10 | 7 | 7 | 7 |
+| Temperatura, ruido y autonomía | 15,00 % | 8 | 8 | 8 | 5 |
+| Construcción y garantía | 10,00 % | 8 | 8 | 8 | 8 |
+| Almacenamiento y ampliación | 5,00 % | 7 | 7 | 7 | 7 |
+| Pantalla y portabilidad | 5,00 % | 10 | 10 | 5 | 10 |
+| Relación calidad/precio | 5,00 % | 10 | 10 | 6 | 10 |
+| **Puntuación Final Total** | **100,00 %** | **83,50 %** | **77,50 %** | **83,00 %** | **83,00 %** |
+### Desglose por Modelo
+
+#### 1. MSI Modern A14 AI F2HMG-009XES
+| Criterio | Nota | Peso |
+| :--- | :---: | :---: |
+| Tres pantallas simultáneas | 10 | 20,00 % |
+| RAM y ampliación | 5 | 20,00 % |
+| Rendimiento para virtualización | 10 | 20,00 % |
+| Temperatura, ruido y autonomía | 8 | 15,00 % |
+| Construcción y garantía | 8 | 10,00 % |
+| Almacenamiento y ampliación | 7 | 5,00 % |
+| Pantalla y portabilidad | 10 | 5,00 % |
+| Relación calidad/precio | 10 | 5,00 % |
+| **Total** | **83,50 %** | **100,00 %** |
+
+#### 2. Medion SPRCHRGD 14 S2 MD62722
+| Criterio | Nota | Peso |
+| :--- | :---: | :---: |
+| Tres pantallas simultáneas | 10 | 20,00 % |
+| RAM y ampliación | 5 | 20,00 % |
+| Rendimiento para virtualización | 7 | 20,00 % |
+| Temperatura, ruido y autonomía | 8 | 15,00 % |
+| Construcción y garantía | 8 | 10,00 % |
+| Almacenamiento y ampliación | 7 | 5,00 % |
+| Pantalla y portabilidad | 10 | 5,00 % |
+| Relación calidad/precio | 10 | 5,00 % |
+| **Total** | **77,50 %** | **100,00 %** |
+
+#### 3. MSI Modern 15 F1MG-499ES
+| Criterio | Nota | Peso |
+| :--- | :---: | :---: |
+| Tres pantallas simultáneas | 10 | 20,00 % |
+| RAM y ampliación | 10 | 20,00 % |
+| Rendimiento para virtualización | 7 | 20,00 % |
+| Temperatura, ruido y autonomía | 8 | 15,00 % |
+| Construcción y garantía | 8 | 10,00 % |
+| Almacenamiento y ampliación | 7 | 5,00 % |
+| Pantalla y portabilidad | 5 | 5,00 % |
+| Relación calidad/precio | 6 | 5,00 % |
+| **Total** | **83,00 %** | **100,00 %** |
+
+#### 4. Lenovo Thinkpad P15V G3
+| Criterio | Nota | Peso |
+| :--- | :---: | :---: |
+| Tres pantallas simultáneas | 10 | 20,00 % |
+| RAM y ampliación | 10 | 20,00 % |
+| Rendimiento para virtualización | 7 | 20,00 % |
+| Temperatura, ruido y autonomía | 5 | 15,00 % |
+| Construcción y garantía | 8 | 10,00 % |
+| Almacenamiento y ampliación | 7 | 5,00 % |
+| Pantalla y portabilidad | 10 | 5,00 % |
+| Relación calidad/precio | 10 | 5,00 % |
+| **Total** | **83,00 %** | **100,00 %** |
