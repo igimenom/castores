@@ -611,13 +611,24 @@ A pesar de la modularidad contenida propia de los equipos delgados, el margen de
 ### 3. Preparad un presupuesto para 10 portátiles (máximo 13.000 € en portátiles, IVA incluido) y, por separado, el coste de diez docks/adaptadores y demás accesorios necesarios. Calculad también el coste completo de la solución.
 
 #### Portátil (10)
+![alt text](image-4.png)
 MSI Modern A14 AI F2HMG-009XES: 829,00€ x 10 = 8290,00 €
+https://es-store.msi.com/products/modern-a14-ai-f2hmg-009xes-portatiles
+
 #### Dock (10)
+![alt text](image-3.png)
 https://www.ldlc.com/es-es/ficha/PB00630772.html
 i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W: 195,95€ x 10 = 1959,50€
 #### Monitor (20)
+![alt text](image-5.png)
 https://www.coolmod.com/aoc-gaming-q25g4sr-25-qhd-ips-300hz-0-3ms-hdr-freesync-g-sync/
-AOC Gaming Q25G4SR 25"
+AOC Gaming Q25G4SR 25" 259 94 € x 20 = 5.198,80 €
 #### Teclado (10)
-https://www.razer.com/es-es/gaming-keyboards/razer-pro-type-ultra/RZ03-04110300-R3G1
+![alt text](image-6.png)
+https://keychron.com.es/collections/100-layout-keyboards-1/products/coleccion-de-teclados-mecanicos-personalizados-con-cable-keychron-c2-pro-8k-qmk-diseno-iso
+€76,99 * 10 = 769,90 €
 #### Ratón (10)
+![alt text](image-7.png)
+ Razer DeathAdder V3 30000 Dpi 59g Negro
+ https://www.coolmod.com/razer-deathadder-v3-30000-dpi-59g-negro/
+59 95 € * 10 = 599,50 €
