@@ -610,9 +610,12 @@ A pesar de la modularidad contenida propia de los equipos delgados, el margen de
 
 ### 3. Preparad un presupuesto para 10 portátiles (máximo 13.000 € en portátiles, IVA incluido) y, por separado, el coste de diez docks/adaptadores y demás accesorios necesarios. Calculad también el coste completo de la solución.
 
-#### Portátil
+#### Portátil (10)
 MSI Modern A14 AI F2HMG-009XES: 829,00€ x 10 = 8290,00 €
-#### Dock
+#### Dock (10)
+https://www.ldlc.com/es-es/ficha/PB00630772.html
 i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W: 195,95€ x 10 = 1959,50€
-
-
+#### Monitor (20)
+https://www.coolmod.com/aoc-gaming-q25g4sr-25-qhd-ips-300hz-0-3ms-hdr-freesync-g-sync/
+AOC Gaming Q25G4SR 25"
+#### Teclado (10)
