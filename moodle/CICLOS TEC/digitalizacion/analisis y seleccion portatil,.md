@@ -619,3 +619,5 @@ i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W: 195,
 https://www.coolmod.com/aoc-gaming-q25g4sr-25-qhd-ips-300hz-0-3ms-hdr-freesync-g-sync/
 AOC Gaming Q25G4SR 25"
 #### Teclado (10)
+https://www.razer.com/es-es/gaming-keyboards/razer-pro-type-ultra/RZ03-04110300-R3G1
+#### Ratón (10)
