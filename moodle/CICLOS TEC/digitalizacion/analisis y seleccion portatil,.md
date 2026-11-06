@@ -577,3 +577,42 @@ Gracias a que el puerto USB-C del MSI soporta DisplayPort 1.4 con DSC (*Display 
 | Pantalla y portabilidad | 10 | 5,00 % |
 | Relación calidad/precio | 10 | 5,00 % |
 | **Total** | **83,00 %** | **100,00 %** |
+
+## Actividad 8. Presentar la propuesta de compra
+
+### 1. Seleccionad un equipo y su configuración exacta. Justificad por qué es la mejor elección frente a las otras tres.
+
+
+Al final, el MSI Modern A14 AI F2HMG-009XES se lleva la puntuación más alta con un 83,50 %, y las razones se entienden rápido. Es el equipo que mejor responde si necesitas un portátil ligero para moverte a diario pero con soltura de sobra para tareas exigentes.
+
+Donde más destaca es en el rendimiento puro para virtualización. A la hora de levantar varias máquinas virtuales o trabajar con contenedores, el procesador va muy fino y se nota claramente por encima de los otros candidatos. Además, poder conectar tres pantallas simultáneas sin complicaciones es un puntazo para montar un puesto de trabajo cómodo en cualquier sitio. Que todo esto venga en un chasis de 14 pulgadas fácil de transportar, con buen control de temperatura y a un precio bastante ajustado hace que sea la opción más sensata.
+
+Su punto más débil es la ampliación de memoria RAM, donde se queda en un 5. Sin embargo, en el uso real esta pega queda bastante matizada. Al usar una memoria rápida e integrada en placa, se consigue menor latencia en las tareas del procesador, un consumo de batería más bajo y un diseño delgado. Salvo que necesites montar laboratorios gigantescos que requieran decenas de gigabytes adicionales, la velocidad del disco SSD ayuda a que el flujo de trabajo siga siendo muy fluido.
+
+En definitiva, por potencia de cálculo, portabilidad y precio, el MSI Modern A14 es la compra más práctica y equilibrada de toda la comparativa.
+
+### 2. Presentad proveedor, garantía, ventajas, limitaciones y ampliaciones futuras.
+
+La adquisición del MSI Modern A14 AI F2HMG-009XES se realizará a través del proveedor EU-BUSINESS-STORE-MSI. El equipo incluye 3 años de garantía oficial, lo que asegura cobertura frente a eventuales fallos de hardware o defectos de fabricación y garantiza asistencia técnica durante la vida útil inicial del portátil.
+
+#### Limitaciones
+
+* RAM no ampliable: La memoria RAM está soldada en placa y no cuenta con zócalos de expansión, por lo que no es posible sustituirla ni aumentar su capacidad tras la compra.
+
+* Sin ranura de almacenamiento adicional: El chasis no incluye un segundo puerto M.2 libre para añadir una segunda unidad sin retirar la principal.
+
+#### Ampliaciones futuras
+A pesar de la modularidad contenida propia de los equipos delgados, el margen de mejora del hardware queda definido de la siguiente forma:
+
+* Sustitución del disco SSD principal: Aunque no hay un slot extra, la unidad SSD NVMe original sí se puede reemplazar por un módulo M.2 de mayor capacidad (por ejemplo, pasar de la unidad de origen a un SSD de 2 TB). Esta operación requiere la clonación del disco actual o una reinstalación limpia del sistema.
+
+* Almacenamiento externo de alta velocidad: La conectividad USB-C / Thunderbolt permite conectar unidades SSD externas de alto rendimiento para alojar máquinas virtuales o archivos pesados sin necesidad de modificar el hardware interno.
+
+### 3. Preparad un presupuesto para 10 portátiles (máximo 13.000 € en portátiles, IVA incluido) y, por separado, el coste de diez docks/adaptadores y demás accesorios necesarios. Calculad también el coste completo de la solución.
+
+#### Portátil
+MSI Modern A14 AI F2HMG-009XES: 829,00€ x 10 = 8290,00 €
+#### Dock
+i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W: 195,95€ x 10 = 1959,50€
+
+
