@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.9)  7 NOV 2026 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.9)  7 NOV 2026 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,9 +722,9 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `template_Article.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'template_Article.bbl' not found.
+Package biblatex Info: ... file 'template_Article.bbl' found.
 
-No file template_Article.bbl.
+(template_Article.bbl)
 Package biblatex Info: Reference section=0 on input line 30.
 Package biblatex Info: Reference segment=0 on input line 30.
 \c@lstlisting=\count450
@@ -734,24 +734,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 33.
+<IMG/image-4.png, id=47, 903.375pt x 903.375pt>
+File: IMG/image-4.png Graphic file (type png)
+<use IMG/image-4.png>
+Package pdftex.def Info: IMG/image-4.png  used on input line 35.
+(pdftex.def)             Requested size: 500.484pt x 500.49687pt.
+ [1
 
-! LaTeX Error: File `IMG/' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ncludegraphics[width=0.25\textwidth]{IMG/}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[1
-
-{C:/Users/PC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(template_Article.toc
+{C:/Users/PC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./IMG/image-4.p
+ng>] (template_Article.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -773,7 +764,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-[2] (template_Article.aux
+[2]
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.1638pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.1638pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
+
+[3] (template_Article.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -787,7 +789,7 @@ L3 programming layer <2025-12-24>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `template_Article.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: F90D2D142E336DB4C487EDC3DF247A18;2639.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                template_Article
@@ -798,22 +800,23 @@ Package logreq Info: Writing requests to 'template_Article.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20982 strings out of 467871
- 364000 string characters out of 5428453
- 1202881 words of memory out of 5000000
- 49667 multiletter control sequences out of 15000+600000
- 635220 words of font info for 56 fonts, out of 8000000 for 9000
+ 20990 strings out of 467871
+ 364180 string characters out of 5428453
+ 1205911 words of memory out of 5000000
+ 49660 multiletter control sequences out of 15000+600000
+ 635996 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,83p,707b,1842s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx144
-0.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl
-1000.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-crm1000.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm1200.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
-i600\ecrm1728.pk>
-Output written on template_Article.pdf (2 pages, 24347 bytes).
+ 75i,11n,83p,707b,1889s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx100
+0.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
+1440.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+csl1000.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm1000.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+i600\ecrm1200.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecrm1728.pk>
+Output written on template_Article.pdf (3 pages, 427061 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 94 words of extra memory for PDF output out of 10000 (max. 10000000)
 

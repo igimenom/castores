@@ -1,0 +1,9 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'template_Article.blg'
+[77] biber-MSWIN64:342> INFO - === 
+[108] Biber.pm:421> INFO - Reading 'template_Article.bcf'
+[186] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[194] Biber.pm:4487> INFO - Processing section 0
+[201] Biber.pm:4678> INFO - Looking for bibtex file 'bib.bib' for section 0
+[367] Utils.pm:479> ERROR - Cannot find 'bib.bib'!
+[367] Biber.pm:137> INFO - ERRORS: 1
