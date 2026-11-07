@@ -1,14 +1,17 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'template_Article.blg'
-[79] biber-MSWIN64:342> INFO - === 
-[113] Biber.pm:421> INFO - Reading 'template_Article.bcf'
-[190] Biber.pm:999> INFO - Using all citekeys in bib section 0
-[201] Biber.pm:4487> INFO - Processing section 0
-[210] Biber.pm:4678> INFO - Looking for bibtex file 'bib.bib' for section 0
-[270] bibtex.pm:1713> INFO - LaTeX decoding ...
-[278] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
-[291] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[291] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[291] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'es-ES'
-[295] bbl.pm:676> INFO - Writing 'template_Article.bbl' with encoding 'UTF-8'
-[296] bbl.pm:779> INFO - Output to template_Article.bbl
+[77] biber-MSWIN64:342> INFO - === 
+[109] Biber.pm:421> INFO - Reading 'template_Article.bcf'
+[186] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[196] Biber.pm:4487> INFO - Processing section 0
+[205] Biber.pm:4678> INFO - Looking for bibtex file 'bib.bib' for section 0
+[267] bibtex.pm:1713> INFO - LaTeX decoding ...
+[280] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
+[355] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[355] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[355] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[363] bbl.pm:676> INFO - Writing 'template_Article.bbl' with encoding 'UTF-8'
+[366] bbl.pm:779> INFO - Output to template_Article.bbl
+[366] Biber.pm:132> WARN - Duplicate entry key: 'unknown-author-no-date' in file 'bib.bib', skipping ...
+[366] Biber.pm:132> WARN - Duplicate entry key: 'unknown-author-no-date' in file 'bib.bib', skipping ...
+[366] Biber.pm:134> INFO - WARNINGS: 2
