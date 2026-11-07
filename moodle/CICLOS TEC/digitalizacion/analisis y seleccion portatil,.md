@@ -612,23 +612,40 @@ A pesar de la modularidad contenida propia de los equipos delgados, el margen de
 
 #### Portátil (10)
 ![alt text](image-4.png)
-MSI Modern A14 AI F2HMG-009XES: 829,00€ x 10 = 8290,00 €
-https://es-store.msi.com/products/modern-a14-ai-f2hmg-009xes-portatiles
+
+[MSI Modern A14 AI F2HMG-009XES](https://es-store.msi.com/products/modern-a14-ai-f2hmg-009xes-portatiles): 829,00€ x 10 = 8290,00 €
 
 #### Dock (10)
 ![alt text](image-3.png)
-https://www.ldlc.com/es-es/ficha/PB00630772.html
-i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W: 195,95€ x 10 = 1959,50€
+
+[i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W](https://www.ldlc.com/es-es/ficha/PB00630772.html): 195,95€ x 10 = 1959,50€
 #### Monitor (20)
 ![alt text](image-5.png)
-https://www.coolmod.com/aoc-gaming-q25g4sr-25-qhd-ips-300hz-0-3ms-hdr-freesync-g-sync/
-AOC Gaming Q25G4SR 25" 259 94 € x 20 = 5.198,80 €
+
+[AOC Gaming Q25G4SR 25" 259 94 € x 20](https://www.coolmod.com/aoc-gaming-q25g4sr-25-qhd-ips-300hz-0-3ms-hdr-freesync-g-sync/) = 5.198,80 €
 #### Teclado (10)
-![alt text](image-6.png)
-https://keychron.com.es/collections/100-layout-keyboards-1/products/coleccion-de-teclados-mecanicos-personalizados-con-cable-keychron-c2-pro-8k-qmk-diseno-iso
-€76,99 * 10 = 769,90 €
+![alt text](image-8.png)
+
+[Keychron C2 Pro 8K QMK](https://keychron.com.es/collections/100-layout-keyboards-1/products/coleccion-de-teclados-mecanicos-personalizados-con-cable-keychron-c2-pro-8k-qmk-diseno-iso): €76,99 * 10 = 769,90 €
+
 #### Ratón (10)
 ![alt text](image-7.png)
- Razer DeathAdder V3 30000 Dpi 59g Negro
- https://www.coolmod.com/razer-deathadder-v3-30000-dpi-59g-negro/
-59 95 € * 10 = 599,50 €
+
+[Razer DeathAdder V3 30000 Dpi 59g Negro]( https://www.coolmod.com/razer-deathadder-v3-30000-dpi-59g-negro/):59 95 € * 10 = 599,50 €
+
+#### TOTAL
+16.817,70 € en total.
+
+### 4. Explicad cómo favorece vuestra elección el mantenimiento de un parque homogéneo durante cinco años
+
+Adoptar una configuración estándar idéntica para los 10 puestos durante un ciclo de vida prolongado (5 años) ofrece ventajas estratégicas a nivel operativo y económico:
+
+* **Gestión de imágenes y despliegue centralizado** (Clonación de SO): Al contar con un modelo de portátil único (MSI Modern A14), los departamentos de IT pueden crear una única imagen de sistema operativo (Drivers, software corporativo, configuraciones de red y seguridad) y desplegarla masivamente mediante PXE o carpetas de clonación. Si el parque fuera heterogéneo, habría que mantener imágenes de software independientes para cada modelo.
+
+* **Estandarización de Puestos Calientes** (Hot-Desking y Flexibilidad): La combinación del dock i-tec USB-C Power Delivery y los monitores AOC permite que cualquier empleado conecte un único cable USB-C a su portátil para tener alimentación de 100W, doble pantalla QHD, red local gigabit y periféricos (teclado/ratón) funcionando al instante, independientemente del escritorio en el que se siente.
+
+* **Optimización de stock de repuestos y sustituciones de cortesía**: Mantener la misma referencia de periféricos y cargadores facilita disponer de un pequeño stock de repuesto (p. ej., un portátil o dock extra). Si un equipo falla, se sustituye en minutos por el de repuesto cargándole la misma imagen de sistema sin incurrir en incompatibilidades de cargador, funda o réplica de cables.
+
+* **Reducción de costes de soporte técnico** (TCO - Total Cost of Ownership): Los técnicos de soporte resuelven incidencias más rápido al enfrentarse a una arquitectura idéntica de hardware, BIOS/Firmware y controladores. La curva de aprendizaje de incidencias disminuye a cero tras los primeros meses de despliegue.
+
+* **Gestión de garantías y contratos con fabricantes**: Lidiar con un único proveedor para el equipo principal (MSI) simplifica la gestión de garantías corporativas de 5 años, tramitación de RMA y peticiones de soporte de drivers/firmware actualizados a lo largo del tiempo.
