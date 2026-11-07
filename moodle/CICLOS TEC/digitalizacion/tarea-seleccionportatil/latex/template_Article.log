@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.9)  7 NOV 2026 20:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.9)  7 NOV 2026 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,7 +1070,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 44.
-<IMG/image-4.png, id=182, 903.375pt x 903.375pt>
+<IMG/image-4.png, id=178, 903.375pt x 903.375pt>
 File: IMG/image-4.png Graphic file (type png)
 <use IMG/image-4.png>
 Package pdftex.def Info: IMG/image-4.png  used on input line 46.
@@ -1236,7 +1236,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
 [8]
-<IMG/image-2.png, id=298, 805.0075pt x 433.62pt>
+<IMG/image-2.png, id=293, 805.0075pt x 433.62pt>
 File: IMG/image-2.png Graphic file (type png)
 <use IMG/image-2.png>
 Package pdftex.def Info: IMG/image-2.png  used on input line 330.
@@ -1462,7 +1462,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
 
 [18]
-<IMG/esquema2.png, id=405, 820.2645pt x 407.6028pt>
+<IMG/esquema2.png, id=400, 820.2645pt x 407.6028pt>
 File: IMG/esquema2.png Graphic file (type png)
 <use IMG/esquema2.png>
 Package pdftex.def Info: IMG/esquema2.png  used on input line 1039.
@@ -1472,7 +1472,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 1039--1040
 [][] 
  []
 
-<IMG/image-1.png, id=407, 1204.5pt x 446.41782pt>
+<IMG/image-1.png, id=402, 1204.5pt x 446.41782pt>
 File: IMG/image-1.png Graphic file (type png)
 <use IMG/image-1.png>
 Package pdftex.def Info: IMG/image-1.png  used on input line 1045.
@@ -1544,8 +1544,8 @@ LaTeX Info: Redefining \% on input line 1277.
 LaTeX Info: Redefining \. on input line 1277.
 LaTeX Info: Redefining \% on input line 1277.
  [22]
-LaTeX Info: Redefining \. on input line 1307.
-LaTeX Info: Redefining \% on input line 1307.
+LaTeX Info: Redefining \. on input line 1311.
+LaTeX Info: Redefining \% on input line 1311.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1554,7 +1554,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
-[23] (template_Article.aux
+[23]
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <10> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 1320.
+
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 9.49997pt on input line 1320.
+LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
+(Font)              scaled to size 9.49997pt on input line 1320.
+LaTeX Info: Redefining \. on input line 1322.
+LaTeX Info: Redefining \% on input line 1322.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.48717pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.48717pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
+
+[24] (template_Article.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1567,54 +1585,38 @@ L3 programming layer <2025-12-24>
 
 LaTeX Warning: There were undefined references.
 
+Package rerunfilecheck Info: File `template_Article.out' has not changed.
+(rerunfilecheck)             Checksum: F4BD022ABDAACCBBF425C5E4EEC2761A;23181.
 
-Package rerunfilecheck Warning: File `template_Article.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `template_Article.out':
-(rerunfilecheck)             Before: F4C5D656FCA125052BEC301C6AB79279;22881
-(rerunfilecheck)             After:  55D5A7725A97E5231EFA90202DDB63AA;22582.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                template_Article
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'template_Article.run.xml'.
 \openout1 = `template_Article.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34368 strings out of 467871
- 657767 string characters out of 5428453
- 1500174 words of memory out of 5000000
- 62655 multiletter control sequences out of 15000+600000
- 671926 words of font info for 84 fonts, out of 8000000 for 9000
+ 34589 strings out of 467871
+ 662396 string characters out of 5428453
+ 1501174 words of memory out of 5000000
+ 62873 multiletter control sequences out of 15000+600000
+ 676291 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,118p,1911b,2444s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{subsubsection.8.2.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.8.2.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
- <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.
-pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt08
-00.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
-m1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
-Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX/
-fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/he
-lvetic/uhvro8a.pfb>
-Output written on template_Article.pdf (23 pages, 2158434 bytes).
+ <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt100
+0.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+0800.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+crm1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C
+:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTe
+X/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/
+helvetic/uhvro8a.pfb>
+Output written on template_Article.pdf (24 pages, 2162658 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 377 words of extra memory for PDF output out of 10000 (max. 10000000)
 
