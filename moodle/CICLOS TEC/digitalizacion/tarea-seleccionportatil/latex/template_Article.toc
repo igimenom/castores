@@ -38,7 +38,8 @@
 \contentsline {section}{\numberline {8}Recomendación razonada y presupuesto de diez equipos.}{23}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Seleccionad un equipo y su configuración exacta. Justificad por qué es la mejor elección frente a las otras tres.}{23}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Presentad proveedor, garantía, ventajas, limitaciones y ampliaciones futuras.}{23}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Posibilidades de mantenimiento y ampliación.}{23}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Explicad cómo favorece vuestra elección el mantenimiento de un parque homogéneo durante cinco años}{23}{subsection.9.1}%
-\contentsline {section}{\numberline {10}Conclusión}{24}{section.10}%
-\contentsline {section}{\numberline {11}Bibliografía}{24}{section.11}%
+\contentsline {subsection}{\numberline {8.3}Preparad un presupuesto para 10 portátiles (máximo 13.000 € en portátiles, IVA incluido) y, por separado, el coste de diez docks/adaptadores y demás accesorios necesarios. Calculad también el coste completo de la solución.}{24}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Posibilidades de mantenimiento y ampliación.}{24}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Explicad cómo favorece vuestra elección el mantenimiento de un parque homogéneo durante cinco años}{24}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Conclusión}{25}{section.10}%
+\contentsline {section}{\numberline {11}Bibliografía}{25}{section.11}%

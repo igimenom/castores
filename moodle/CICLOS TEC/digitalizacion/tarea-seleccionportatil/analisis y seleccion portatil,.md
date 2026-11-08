@@ -629,7 +629,7 @@ A pesar de la modularidad contenida propia de los equipos delgados, el margen de
 [LDLC Silent Duo Pack ES Teclado Español (QWERTY Español)](https://www.ldlc.com/es-es/ficha/PB00282303.html): 17,95 * 10 = 179,50€.
 
 #### TOTAL
-16.817,70 € en total.
+12.129,00 € € en total.
 
 ### 4. Explicad cómo favorece vuestra elección el mantenimiento de un parque homogéneo durante cinco años
 

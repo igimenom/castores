@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.9)  7 NOV 2026 22:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.9)  8 NOV 2026 09:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1107,7 +1107,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 45.
-<IMG/image-4.png, id=178, 903.375pt x 903.375pt>
+<IMG/image-4.png, id=182, 903.375pt x 903.375pt>
 File: IMG/image-4.png Graphic file (type png)
 <use IMG/image-4.png>
 Package pdftex.def Info: IMG/image-4.png  used on input line 47.
@@ -1130,7 +1130,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
- [2])
+ [2]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 4
+1.
+
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 41.
+)
 \tf@toc=\write6
 \openout6 = `template_Article.toc'.
 
@@ -1153,13 +1162,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [3]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 11.39996pt on input line 58.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
-1.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 61.
 LaTeX Info: Redefining \. on input line 110.
 LaTeX Info: Redefining \% on input line 110.
 
@@ -1259,7 +1261,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
 [8]
-<IMG/image-2.png, id=292, 805.0075pt x 433.62pt>
+<IMG/image-2.png, id=299, 805.0075pt x 433.62pt>
 File: IMG/image-2.png Graphic file (type png)
 <use IMG/image-2.png>
 Package pdftex.def Info: IMG/image-2.png  used on input line 331.
@@ -1485,7 +1487,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
 
 [18]
-<IMG/esquema2.png, id=399, 820.2645pt x 407.6028pt>
+<IMG/esquema2.png, id=406, 820.2645pt x 407.6028pt>
 File: IMG/esquema2.png Graphic file (type png)
 <use IMG/esquema2.png>
 Package pdftex.def Info: IMG/esquema2.png  used on input line 1040.
@@ -1495,7 +1497,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 1040--1041
 [][] 
  []
 
-<IMG/image-1.png, id=401, 1204.5pt x 446.41782pt>
+<IMG/image-1.png, id=408, 1204.5pt x 446.41782pt>
 File: IMG/image-1.png Graphic file (type png)
 <use IMG/image-1.png>
 Package pdftex.def Info: IMG/image-1.png  used on input line 1046.
@@ -1567,9 +1569,22 @@ LaTeX Info: Redefining \% on input line 1278.
 LaTeX Info: Redefining \. on input line 1278.
 LaTeX Info: Redefining \% on input line 1278.
  [22]
-LaTeX Info: Redefining \. on input line 1312.
-LaTeX Info: Redefining \% on input line 1312.
+LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 1304.
 
+Overfull \hbox (52.78961pt too wide) in paragraph at lines 1336--1336
+[]$\T1/cmtt/m/n/8 https : / / es-[]store . msi . com / products / modern-[]a14-
+[]ai-[]f2hmg-[]009xes-[]portatiles$[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1336--1336
+[]$\T1/cmtt/m/n/8 https : / / www . lg . com / es / monitores / todos-[]los-[]m
+onitores /
+ []
+
+LaTeX Info: Redefining \. on input line 1338.
+LaTeX Info: Redefining \% on input line 1338.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.48717pt, for example:
@@ -1579,21 +1594,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [23]
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
-(Font)              scaled to size 9.49997pt on input line 1321.
+(Font)              scaled to size 9.49997pt on input line 1366.
+LaTeX Info: Redefining \. on input line 1366.
+LaTeX Info: Redefining \% on input line 1366.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 9.49997pt on input line 1366.
+LaTeX Info: Redefining \. on input line 1366.
+LaTeX Info: Redefining \% on input line 1366.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.58723pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.58723pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
+
+[24]
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <10> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 1321.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 1366.
 
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 1321.
+(Font)              scaled to size 9.49997pt on input line 1366.
 
-Overfull \hbox (3.5868pt too wide) in paragraph at lines 1321--1321
+Overfull \hbox (3.5868pt too wide) in paragraph at lines 1366--1366
 []\T1/phv/m/n/10 Isaac. \T1/phv/m/sl/10 RISC-V vs ARM: di-fe-ren-cias, ven-ta-j
 as y des-ven-ta-jas\T1/phv/m/n/10 . Dic. de 2023. \T1/phv/m/sc/10 url\T1/phv/m/
 n/10 : []$\T1/cmtt/m/n/10 https : / / www . profesionalreview .
  []
 
-LaTeX Info: Redefining \. on input line 1323.
-LaTeX Info: Redefining \% on input line 1323.
+LaTeX Info: Redefining \. on input line 1368.
+LaTeX Info: Redefining \% on input line 1368.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.48717pt, for example:
@@ -1601,7 +1631,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
-[24] (template_Article.aux
+[25] (template_Article.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1610,18 +1640,25 @@ LaTeX Info: Redefining \% on input line 13.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-Package rerunfilecheck Info: File `template_Article.out' has not changed.
-(rerunfilecheck)             Checksum: F4BD022ABDAACCBBF425C5E4EEC2761A;23181.
+
+
+Package rerunfilecheck Warning: File `template_Article.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `template_Article.out':
+(rerunfilecheck)             Before: 5B8959D2F30D8B00B0607086E221A53A;24490
+(rerunfilecheck)             After:  88CAF5793A9FC4ABED98411A920E1BC6;24472.
 Package logreq Info: Writing requests to 'template_Article.run.xml'.
 \openout1 = `template_Article.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34923 strings out of 467871
- 668466 string characters out of 5428453
- 1508987 words of memory out of 5000000
- 63197 multiletter control sequences out of 15000+600000
- 676291 words of font info for 86 fonts, out of 8000000 for 9000
+ 34929 strings out of 467871
+ 668544 string characters out of 5428453
+ 1509987 words of memory out of 5000000
+ 63199 multiletter control sequences out of 15000+600000
+ 676603 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,118p,1911b,2356s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt100
@@ -1636,9 +1673,9 @@ m/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pr
 ogram Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTe
 X/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/
 helvetic/uhvro8a.pfb>
-Output written on template_Article.pdf (24 pages, 2171000 bytes).
+Output written on template_Article.pdf (25 pages, 2186748 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
- 377 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 709 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
