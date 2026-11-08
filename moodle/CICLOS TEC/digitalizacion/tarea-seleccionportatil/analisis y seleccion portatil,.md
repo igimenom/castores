@@ -622,16 +622,11 @@ A pesar de la modularidad contenida propia de los equipos delgados, el margen de
 #### Monitor (20)
 ![alt text](image-5.png)
 
-[AOC Gaming Q25G4SR 25" 259 94 € x 20](https://www.coolmod.com/aoc-gaming-q25g4sr-25-qhd-ips-300hz-0-3ms-hdr-freesync-g-sync/) = 5.198,80 €
-#### Teclado (10)
+[AOC Gaming Q25G4SR 25" 85,00 € x 20](https://www.lg.com/es/monitores/todos-los-monitores/24u411b-b-aeu/) = 1.700,00 € €
+#### Teclado y ratón (10)
 ![alt text](image-8.png)
 
-[Keychron C2 Pro 8K QMK](https://keychron.com.es/collections/100-layout-keyboards-1/products/coleccion-de-teclados-mecanicos-personalizados-con-cable-keychron-c2-pro-8k-qmk-diseno-iso): €76,99 * 10 = 769,90 €
-
-#### Ratón (10)
-![alt text](image-7.png)
-
-[Razer DeathAdder V3 30000 Dpi 59g Negro]( https://www.coolmod.com/razer-deathadder-v3-30000-dpi-59g-negro/):59 95 € * 10 = 599,50 €
+[LDLC Silent Duo Pack ES Teclado Español (QWERTY Español)](https://www.ldlc.com/es-es/ficha/PB00282303.html): 17,95 * 10 = 179,50€.
 
 #### TOTAL
 16.817,70 € en total.
