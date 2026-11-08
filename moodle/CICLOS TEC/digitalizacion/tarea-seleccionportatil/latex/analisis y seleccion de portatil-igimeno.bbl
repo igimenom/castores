@@ -1,0 +1,255 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{unknown-author-no-date}{misc}{}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{title}{{| EPA ENERGY STAR}}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.energystar.gov/productfinder/product/certified-computers/details/4478547
+      \endverb
+      \verb{url}
+      \verb https://www.energystar.gov/productfinder/product/certified-computers/details/4478547
+      \endverb
+    \endentry
+    \entry{reddit_cores_vs_threads_2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=7079c72c21415131774625ba1d64f4b0}{%
+           family={{Anonymous}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Reddit}%
+      }
+      \strng{namehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{fullhash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{fullhashraw}{7079c72c21415131774625ba1d64f4b0}
+      \strng{bibnamehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authorbibnamehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authornamehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authorfullhash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authorfullhashraw}{7079c72c21415131774625ba1d64f4b0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{note}{r/buildapc}
+      \field{title}{What is the difference between cores and threads?}
+      \field{urlday}{7}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.reddit.com/r/buildapc/comments/12ngf7g/what_is_the_difference_between_cores_and_threads/
+      \endverb
+      \verb{url}
+      \verb https://www.reddit.com/r/buildapc/comments/12ngf7g/what_is_the_difference_between_cores_and_threads/
+      \endverb
+    \endentry
+    \entry{cruz-2026}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b92b9891d99f2a23e311955456e9046f}{%
+           family={Cruz},
+           familyi={C\bibinitperiod},
+           given={Andrea\bibnamedelima Lluch},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{b92b9891d99f2a23e311955456e9046f}
+      \strng{fullhash}{b92b9891d99f2a23e311955456e9046f}
+      \strng{fullhashraw}{b92b9891d99f2a23e311955456e9046f}
+      \strng{bibnamehash}{b92b9891d99f2a23e311955456e9046f}
+      \strng{authorbibnamehash}{b92b9891d99f2a23e311955456e9046f}
+      \strng{authornamehash}{b92b9891d99f2a23e311955456e9046f}
+      \strng{authorfullhash}{b92b9891d99f2a23e311955456e9046f}
+      \strng{authorfullhashraw}{b92b9891d99f2a23e311955456e9046f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{{Dispositivos periféricos de entrada/salida: Características}}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.eniun.com/dispositivos-perifericos-entrada-salida-caracteristicas/
+      \endverb
+      \verb{url}
+      \verb https://www.eniun.com/dispositivos-perifericos-entrada-salida-caracteristicas/
+      \endverb
+    \endentry
+    \entry{msi-store-tienda-oficial-msi-espana-no-date}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ceaeb8e499db313d736f8465c1787899}{%
+           family={España},
+           familyi={E\bibinitperiod},
+           given={MSI\bibnamedelimb Store\bibnamedelimb |\bibnamedelimb Tienda\bibnamedelimb Oficial\bibnamedelima MSI},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim |\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ceaeb8e499db313d736f8465c1787899}
+      \strng{fullhash}{ceaeb8e499db313d736f8465c1787899}
+      \strng{fullhashraw}{ceaeb8e499db313d736f8465c1787899}
+      \strng{bibnamehash}{ceaeb8e499db313d736f8465c1787899}
+      \strng{authorbibnamehash}{ceaeb8e499db313d736f8465c1787899}
+      \strng{authornamehash}{ceaeb8e499db313d736f8465c1787899}
+      \strng{authorfullhash}{ceaeb8e499db313d736f8465c1787899}
+      \strng{authorfullhashraw}{ceaeb8e499db313d736f8465c1787899}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{MSI Modern A14 AI F2HMG-009XES | Portátil con AMD Ryzen™ 7 250}}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://es-store.msi.com/products/modern-a14-ai-f2hmg-009xes-portatiles
+      \endverb
+      \verb{url}
+      \verb https://es-store.msi.com/products/modern-a14-ai-f2hmg-009xes-portatiles
+      \endverb
+    \endentry
+    \entry{isaac-2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ba092f0aca4ee5d510274c706a8f336a}{%
+           family={Isaac},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba092f0aca4ee5d510274c706a8f336a}
+      \strng{fullhash}{ba092f0aca4ee5d510274c706a8f336a}
+      \strng{fullhashraw}{ba092f0aca4ee5d510274c706a8f336a}
+      \strng{bibnamehash}{ba092f0aca4ee5d510274c706a8f336a}
+      \strng{authorbibnamehash}{ba092f0aca4ee5d510274c706a8f336a}
+      \strng{authornamehash}{ba092f0aca4ee5d510274c706a8f336a}
+      \strng{authorfullhash}{ba092f0aca4ee5d510274c706a8f336a}
+      \strng{authorfullhashraw}{ba092f0aca4ee5d510274c706a8f336a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{{RISC-V vs ARM: diferencias, ventajas y desventajas}}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.profesionalreview.com/2023/12/30/risc-v-vs-arm/
+      \endverb
+      \verb{url}
+      \verb https://www.profesionalreview.com/2023/12/30/risc-v-vs-arm/
+      \endverb
+    \endentry
+    \entry{lopez-2020}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2c6dbbefa4d402f5e1247ff5899bfb46}{%
+           family={López},
+           familyi={L\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c6dbbefa4d402f5e1247ff5899bfb46}
+      \strng{fullhash}{2c6dbbefa4d402f5e1247ff5899bfb46}
+      \strng{fullhashraw}{2c6dbbefa4d402f5e1247ff5899bfb46}
+      \strng{bibnamehash}{2c6dbbefa4d402f5e1247ff5899bfb46}
+      \strng{authorbibnamehash}{2c6dbbefa4d402f5e1247ff5899bfb46}
+      \strng{authornamehash}{2c6dbbefa4d402f5e1247ff5899bfb46}
+      \strng{authorfullhash}{2c6dbbefa4d402f5e1247ff5899bfb46}
+      \strng{authorfullhashraw}{2c6dbbefa4d402f5e1247ff5899bfb46}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{{¿Qué es una placa base y para qué sirve?}}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.geeknetic.es/Placa-base/que-es-y-para-que-sirve
+      \endverb
+      \verb{url}
+      \verb https://www.geeknetic.es/Placa-base/que-es-y-para-que-sirve
+      \endverb
+    \endentry
+    \entry{amazon-web-services-no-date}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=4d7e5f784bb5801c23c91ba37ed2649d}{%
+           family={Services},
+           familyi={S\bibinitperiod},
+           given={Amazon\bibnamedelima Web},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{fullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{fullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{bibnamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorbibnamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authornamehash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorfullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \strng{authorfullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{¿Qué es una unidad central de procesamiento (CPU)?}}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/es/what-is/cpu/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/es/what-is/cpu/
+      \endverb
+    \endentry
+    \entry{unknown-author-2017}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5d8a7855af1f9574d20f554d21f3b456}{%
+           family={Technology},
+           familyi={T\bibinitperiod},
+           given={Kingston},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d8a7855af1f9574d20f554d21f3b456}
+      \strng{fullhash}{5d8a7855af1f9574d20f554d21f3b456}
+      \strng{fullhashraw}{5d8a7855af1f9574d20f554d21f3b456}
+      \strng{bibnamehash}{5d8a7855af1f9574d20f554d21f3b456}
+      \strng{authorbibnamehash}{5d8a7855af1f9574d20f554d21f3b456}
+      \strng{authornamehash}{5d8a7855af1f9574d20f554d21f3b456}
+      \strng{authorfullhash}{5d8a7855af1f9574d20f554d21f3b456}
+      \strng{authorfullhashraw}{5d8a7855af1f9574d20f554d21f3b456}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{{PC Build – Types of SSDs - DIY in 5 Ep 71}}
+      \field{year}{2017}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=Lojr3OFYPkY
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=Lojr3OFYPkY
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

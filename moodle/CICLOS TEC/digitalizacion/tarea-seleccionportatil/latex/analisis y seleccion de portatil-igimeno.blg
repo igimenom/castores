@@ -1,0 +1,17 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'analisis y seleccion de portatil-igimeno.blg'
+[191] biber-MSWIN64:342> INFO - === 
+[272] Biber.pm:421> INFO - Reading 'analisis y seleccion de portatil-igimeno.bcf'
+[356] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[371] Biber.pm:4487> INFO - Processing section 0
+[387] Biber.pm:4678> INFO - Looking for bibtex file 'bib.bib' for section 0
+[458] bibtex.pm:1713> INFO - LaTeX decoding ...
+[471] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
+[523] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[525] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[525] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[559] bbl.pm:676> INFO - Writing 'analisis y seleccion de portatil-igimeno.bbl' with encoding 'UTF-8'
+[562] bbl.pm:779> INFO - Output to analisis y seleccion de portatil-igimeno.bbl
+[562] Biber.pm:132> WARN - Duplicate entry key: 'unknown-author-no-date' in file 'bib.bib', skipping ...
+[562] Biber.pm:132> WARN - Duplicate entry key: 'unknown-author-no-date' in file 'bib.bib', skipping ...
+[562] Biber.pm:134> INFO - WARNINGS: 2

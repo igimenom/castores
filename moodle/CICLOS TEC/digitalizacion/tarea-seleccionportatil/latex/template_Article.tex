@@ -1,0 +1,1346 @@
+% !TeX TXS-program:bibliography = txs:///biber
+
+\documentclass[11.5pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{biblatex}
+\usepackage{float}
+\usepackage{listings}
+\usepackage[normalem]{ulem}
+\usepackage{tabularx}
+\usepackage{array}
+
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault} % Hace que Helvetica sea la fuente principal
+
+
+\usepackage{tabularx}
+\usepackage{enumitem}   % para los [leftmargin=*,nosep]
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tcolorbox}   % para la caja del TIP
+\usepackage{tocloft}
+\renewcommand{\cftdotsep}{4.5}     % Más separados (valor por defecto ≈ 4.5)
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+\nocite{*} 
+
+
+\addbibresource{bib.bib} 
+
+\pagestyle{fancy}
+
+\title{ Renovación del parque de portátiles del profesorado}
+\author{Iván Gimeno Montoya}
+\date{9 de noviembre de 2026}
+
+\begin{document}
+	\maketitle
+	
+	\begin{center}
+		\includegraphics[width=1\textwidth]{IMG/image-4.png}
+	\end{center}
+	
+	\newpage
+	
+	\tableofcontents
+	
+	\newpage
+	
+	\section{Análisis de necesidades y componentes.}
+	
+	El departamento de informática de un centro educativo necesita renovar diez portátiles utilizados por su profesorado. Los equipos se emplean en programación, administración de sistemas, virtualización, simulación de redes, preparación de clases y presentaciones.
+	
+	La dirección necesita un informe técnico de compra que compare distintas opciones del
+	mercado español y justifique una propuesta fiable y mantenible durante, al menos, cinco
+	años.
+	
+	Para la elección del portátil se han tenido en cuenta los requisitos marcados por el centro.
+	
+	ATENCIÓN: Cuando no se especifique el equipo nos referimos al portátil elegido: MSI Modern A14 AI F2HMG-009XES.
+	
+	\subsection{Requisitos}
+	
+	\begin{table}[H]
+		\centering
+
+		\begin{tabularx}{\textwidth}{|l|X|}
+			\hline
+			\textbf{Categoría} & \textbf{Especificación / Detalle} \\
+			\hline
+			{Procesador} & {Intel o AMD, arquitectura x86-64} \\
+			\hline
+			{RAM} & {}32 GB como mínimo; se valora ampliación a 64 GB \\
+			\hline
+			{Disco} & {SSD NVMe de 1 TB como mínimo; preferiblemente sustituible} \\
+			\hline
+			{Pantalla} & {14 pulgadas; preferentemente 1920 × 1200 o superior} \\
+			\hline
+			{Gráfica} & {Integrada suficiente} \\
+			\hline
+			{Puertos} & {USB-A, HDMI y USB-C con salida de vídeo} \\
+			\hline
+			{Red} & {Wi-Fi moderno y Ethernet integrado o por adaptador/dock} \\
+			\hline
+			{Movilidad} & {Preferentemente 1,2–1,5 kg} \\
+			\hline
+			{Sistemas operativos} & {Compatible con Windows 11 y Ubuntu} \\
+			\hline
+			{Teclado} & {Español} \\
+			\hline
+			{Otros} & {Buena refrigeración, poco ruido, construcción duradera y garantía} \\
+			\hline
+			{Otras indicaciones} & {En el despacho de cada docente se utilizará un monitor HDMI y otro DisplayPort, además del teclado, ratón y conexión Ethernet. Se valora poder conectarlo todo mediante un solo cable a un dock.} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	A la hora de elegir cada componente debemos tener en cuenta qué función tiene cada uno
+	\subsection{Qué función tiene cada componente y modelo elegido}
+	\subsubsection*{CPU}
+	
+	\textbf{Modelo}: AMD Ryzen™ 7 250 (8 cores, Max Boost Clock 3.3 GHz)
+	
+	\textbf{Función}: Es el cerebro del ordenador; se encarga de procesar las instrucciones del sistema operativo, aplicaciones y tareas en segundo plano.
+	
+	\textbf{Características importantes}: Sus 8 núcleos aportan una excelente capacidad multitarea, permitiendo ejecutar aplicaciones de ofimática avanzada, navegación pesada y software profesional de forma fluida.
+
+	\subsubsection*{RAM}
+	\textbf{Modelo}: 32 GB (16 GB * 2) DDR5
+	
+	\textbf{Función}: Memoria de acceso aleatorio donde se cargan de forma temporal los datos de los programas y archivos que estás usando activamente para un acceso ultra rápido.
+	
+	\textbf{Características importantes}: La capacidad de 32 GB en doble canal (dual-channel) es ideal para mantener decenas de pestañas abiertas, máquinas virtuales o programas pesados sin ralentizaciones.
+
+	\subsubsection*{Disco de estado sólido}
+	\textbf{Modelo}: 1 TB NVMe SSD PCIe Gen4
+	
+	\textbf{Función}: Almacenamiento permanente de alta velocidad para el sistema operativo, programas y archivos personales.
+	
+	\textbf{Características importantes}: Al ser NVMe PCIe Gen4, ofrece tasas de lectura y escritura sumamente rápidas (arranque del sistema en pocos segundos y transferencia de archivos instantánea).
+
+	\subsubsection*{Tarjeta gráfica}
+	\textbf{Modelo}: AMD Radeon™ Graphics (Integrada)
+	
+	\textbf{Función}: Procesador gráfico encargado de renderizar la interfaz visual, vídeos y gráficos en pantalla.
+	
+	\textbf{Características importantes}: Al estar integrada en el procesador, comparte memoria con la RAM. Es perfecta para tareas multimedia de alta definición, reproducción de vídeo 4K y ofimática, ahorrando batería frente a gráficas dedicadas.
+	\subsubsection*{Placa base}
+	
+	\textbf{Modelo}: Propietaria de MSI (Chipset SoC integrado / Serie MS-14SK)
+	
+	\textbf{Función}: El circuito impreso principal que conecta físicamente todos los componentes del portátil (CPU, RAM, almacenamiento y puertos) permitiendo su comunicación.
+	
+	\textbf{Características importantes}: Su diseño compacto está optimizado para el chasis ultrafino de 14 pulgadas del portátil, integrando conectividad moderna como Wi-Fi 6E y controladoras de alta velocidad.
+	\subsubsection*{Interfaces de entrada/salida (I/O)}
+	
+	\textbf{Modelo}
+	
+	\begin{itemize}
+		\item 2x USB Type-C (USB3.2 Gen2 / DisplayPort™ / Power Delivery 3.0)
+		\item 	2x USB Type-A USB3.2 Gen1
+		\item 	1x HDMI™ 2.1 (4K @ 60Hz)
+		\item 	1x Mic-in/Headphone-out Combo Jack
+		\item 	1x Lector de tarjetas microSD
+	\end{itemize}
+	
+	\textbf{Función}: Conectar periféricos externos, pantallas adicionales, dispositivos de audio y transferencia de datos.
+	
+	\textbf{Características importantes}: Los puertos USB-C con Power Delivery y DisplayPort aportan una gran versatilidad (permiten cargar el portátil y conectar monitores externos con un solo cable), mientras que el HDMI 2.1 garantiza salida de vídeo fluida a pantallas 4K.
+	
+	\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=\textbf{TIP}]
+	
+	\subsubsection*{Diferencias entre núcleos físicos e hilos lógicos}
+	\textbf{Núcleo físico} (Physical Core):
+	
+	Es la unidad de procesamiento de hardware real dentro del silicio de la CPU. Dispone de sus propias unidades aritmético-lógicas (ALU), registros, unidad de punto flotante (FPU) y cachés de nivel 1 y 2 (L1/L2). Ejecuta instrucciones de forma totalmente independiente e simultánea a nivel físico.
+	
+	\textbf{Hilo lógico} (Logical Thread / SMT / Hyper-Threading):
+	
+	Es una subdivisión virtual gestionada por el procesador que permite a un único núcleo físico presentar dos procesadores lógicos al sistema operativo. Aprovecha los tiempos muertos en los que el núcleo físico espera datos de la memoria RAM para procesar una segunda secuencia de instrucciones.
+	
+	\textbf{Impacto práctico}: Un procesador de 8 núcleos físicos con SMT (Simultaneous Multithreading) muestra 16 hilos lógicos al sistema operativo, ofreciendo entre un 15\% y un 30\% más de rendimiento en tareas multihilo paralelas (compilación de código, renderizado, cálculo distribuido) respecto a un procesador sin SMT.
+	
+	\subsubsection*{Arquitectura x86-64 vs. ARM}
+	\subsubsection*{x86-64 (CISC - Complex Instruction Set Computer):}
+	
+	\textbf{Diseño}: Utiliza instrucciones de longitud variable y alta complejidad, capaces de ejecutar múltiples operaciones internas en una sola orden.
+	
+	\textbf{Ecosistema}: Desarrollado por Intel y AMD. Es el estándar dominante en ordenadores de sobremesa, portátiles tradicionales y servidores.
+	
+	\textbf{Filosofía}: Prioriza el rendimiento bruto por ciclo de reloj y la compatibilidad retrospectiva con décadas de software, a costa de una mayor complejidad de silicio y un consumo térmico/eléctrico superior.
+	
+	\subsubsection*{ARM (RISC - Reduced Instruction Set Computer):}
+	
+	\textbf{Diseño}: Utiliza un conjunto de instrucciones simplificado y de longitud fija. Cada instrucción realiza una tarea sencilla que se ejecuta rápidamente en pocos ciclos de reloj.
+	
+	\textbf{Ecosistema}: Diseñada por ARM Ltd. y licenciada a fabricantes como Apple (Apple Silicon), Qualcomm (Snapdragon) o MediaTek.
+	
+	\textbf{Filosofía}: Prioriza la eficiencia energética por vatio, ofreciendo menor consumo eléctrico, menor emisión de calor y mayor duración de batería en dispositivos móviles y ultrabooks.
+\end{tcolorbox}
+	\subsection{Justificaciones}
+	\textbf{Arquitectura x64-86}:
+	
+	Para el perfil de portátil buscado (1.000–1.300 €, 32 GB ampliables a 64 GB, ejecución nativa de Windows 11 o Ubuntu y 2 monitores externos), la arquitectura x86-64 es la única opción que cumple íntegramente las especificaciones por las siguientes razones:
+	
+	\textbf{Ampliación de memoria RAM por módulos (SODIMM)}:
+	
+	En ARM para portátiles (Snapdragon X Elite, Apple Silicon), la RAM está soldada en placa o integrada directamente dentro del encapsulado del SoC para obtener el máximo ancho de banda. Es imposible comprar un equipo con 32 GB y ampliarlo a 64 GB en el futuro.
+	
+	En x86-64 (Intel Core / AMD Ryzen), los portátiles de gama profesional (como Lenovo ThinkPad E14 o HP ProBook) siguen ofreciendo 2 ranuras SODIMM físicas sustituibles.
+	
+	\textbf{Compatibilidad nativa y madurez en Linux (Ubuntu)}:
+	
+	La arquitectura x86-64 lleva más de dos décadas con soporte de primer nivel en el kernel de Linux. Los controladores gráficos de la GPU integrada, la gestión de suspensión (suspend-to-RAM), el control térmico y el Wi-Fi funcionan de forma estable desde la instalación.
+	
+	Los portátiles ARM en el mercado de consumo aún enfrentan serias limitaciones de controladores en distribuciones Linux convencionales (problemas con salidas de vídeo DisplayPort, aceleración gráfica por GPU o administración de energía).
+	
+	\textbf{Ejecución nativa de binarios sin emulación}:
+	
+	En x86-64, todo el entorno de desarrollo, contenedores Docker/Podman, máquinas virtuales (KVM, VirtualBox) y software técnico se ejecuta nativamente a máxima velocidad.
+	
+	En ARM, aunque existen capas de traducción de instrucciones (como Prism en Windows 11), las herramientas de virtualización de bajo nivel y aplicaciones no adaptadas sufren caídas de rendimiento o incompatibilidades directas.
+	
+	\textbf{Gestión multimonitor nativa}:
+	
+	Las GPU integradas de AMD e Intel actuales en x86-64 (Radeon 780M / Intel Arc) soportan de forma nativa hasta 3 o 4 pantallas independientes mediante el control de bus DisplayPort/HDMI directo, asegurando que ambos monitores externos funcionen sin depender de controladores USB de terceros (como DisplayLink).
+	
+	A continuación, se detalla por qué son importantes algunas características:
+	\begin{itemize}
+		\item Ampliación de RAM y SSD	
+		\begin{itemize}
+			\item La posibilidad de ampliar la memoria RAM mediante módulos físicos SODIMM garantiza la longevidad del equipo frente a las exigencias crecientes del software, máquinas virtuales y contenedores, evitando tener que reemplazar el portátil cuando los 32 GB queden cortos. Ampliar a 64 GB de forma manual en el futuro resulta significativamente más económico que pagar el sobreprecio de la memoria soldada de fábrica. Por su parte, un SSD NVMe M.2 sustituible es imprescindible para mantener un arranque dual limpio entre Windows 11 y Ubuntu con espacio suficiente para ambos, garantizando además una reparación rápida ante fallos o desgaste de las celdas de memoria sin inutilizar la placa base.
+		\end{itemize}
+		\item 	Refrigeración
+		\begin{itemize}
+			\item Un sistema de disipación bien dimensionado evita el estrangulamiento térmico (thermal throttling), situación en la que el procesador reduce automáticamente sus frecuencias de reloj al alcanzar temperaturas límite cercanas a los 95º C. Un equipo con refrigeración deficiente pierde entre un 20\% y un 40\% de su potencia real a los pocos minutos de ejecutar tareas intensivas como compilaciones o renderizados, mientras que una disipación eficiente sostiene el rendimiento máximo de forma continuada. Mantener temperaturas bajas también frena la degradación de la batería de litio y de los componentes de la placa base, además de evitar la transferencia de calor al teclado.
+		\end{itemize}
+		\item 	Consumo eléctrico
+		\begin{itemize}
+			\item La eficiencia energética del procesador determina la autonomía real y la portabilidad del equipo. Un consumo reducido en reposo o en tareas ligeras extiende la duración de la batería durante la jornada laboral y disminuye el desgaste por ciclos diarios de carga. Adicionalmente, procesadores con consumos ajustados de 15 W a 28 W permiten operar a pleno rendimiento utilizando cargadores compactos y ligeros con tecnología USB-C Power Delivery de 65 W, evitando la necesidad de transportar cargadores pesados o propietarios.
+		\end{itemize}
+		\item 	Ruido de ventilación
+		\begin{itemize}
+			\item El perfil sonoro del sistema de refrigeración influye en la concentración y la fatiga cognitiva durante jornadas de trabajo prolongadas. Los ventiladores pequeños a altas revoluciones generan silbidos agudos altamente molestos, mientras que un sistema térmico amplio con palas de mayor tamaño mueve un volumen de aire equivalente produciendo un soplido grave y discreto. Una curva de ventilación optimizada en el firmware permite que el equipo funcione en modo completamente silencioso durante la navegación o edición de texto, activando los ventiladores progresivamente solo bajo cargas altas.
+		\end{itemize}
+	\end{itemize}
+	De cualquier forma, debemos diferenciar entre requisitos imprescindibles de los deseables, para poder elegir el portátil adecuado.
+	
+	\begin{tabular}{|l|p{4cm}|p{8.25cm}|}
+		\hline
+		\textbf{Aspecto} & \textbf{Requisito} & \textbf{Imprescindible / deseable} \\
+		\hline
+		\textbf{Procesador} & Intel o AMD, arquitectura x86-64 & Imprescindible, si no se cumple este requisito no podemos utilizar el software deseado. \\
+		\hline
+		\textbf{RAM} & 32 GB como mínimo; se valora ampliación a 64 GB & Imprescindible 32 GB para soportar las máquinas virtuales. Los 64 GB son deseables para los próximos años, pero ahora no interesan por el aumento de precio. \\
+		\hline
+		\textbf{Disco} & SSD NVMe de 1 TB como mínimo; preferiblemente sustituible & Imprescindible 1 TB para soportar las máquinas virtuales y otros programas. Más de 1 TB sería deseable para los próximos años, pero ahora no interesan por el aumento de precio. \\
+		\hline
+		\textbf{Pantalla} & 14 pulgadas; preferentemente 1920 \(\times\) 1200 o superior & Tanto las 14 pulgadas como la resolución son requisitos deseables por motivos de portabilidad y comodidad, pero no son imprescindibles para trabajar. \\
+		\hline
+		\textbf{Gráfica} & Integrada suficiente & Es imprescindible que el ordenador pueda manejar gráficos, pero no es necesario que tenga una gráfica dedicada. \\
+		\hline
+		\textbf{Pantallas simultáneas} & Pantalla integrada y dos monitores externos independientes & Deseable porque no es imprescindible para realizar nuestro trabajo, pero sí es más cómodo para trabajar. \\
+		\hline
+		\textbf{Puertos} & USB-A, HDMI y USB-C con salida de vídeo & No es imprescindible para el trabajo, pero sí es un requisito muy deseable y fácil de cumplir. \\
+		\hline
+		\textbf{Red} & Wi-Fi moderno y Ethernet integrado o por adaptador/dock & La Wi-Fi es imprescindible para trabajar actualmente, el Ethernet es muy deseable y relativamente fácil de cumplir en modelos deseables. \\
+		\hline
+		\textbf{Movilidad} & Preferentemente 1,2–1,5 kg & Deseable la portabilidad y la movilidad, pero no es imprescindible para trabajar. \\
+		\hline
+		\textbf{Sistemas operativos} & Compatible con Windows 11 y Ubuntu & Imprescindible para el uso que se le va a dar. \\
+		\hline
+		\textbf{Teclado} & Español & Imprescindible para trabajar en entornos hispanohablantes. \\
+		\hline
+		\textbf{Otros} & Buena refrigeración, poco ruido, construcción duradera y garantía & Deseables y elementos que permiten dirimir el portátil más adecuado. \\
+		\hline
+	\end{tabular}
+	
+	\section{Cálculos de virtualización.}
+	\subsection{RAM}
+	En los requisitos se especifican la necesidad de utilizar las siguientes máquinas virtuales:
+	
+	\begin{tabular}{|c|l|c|}
+		\hline
+		\textbf{VM} & \textbf{Sistema operativo invitado} & \textbf{RAM asignada} \\
+		\hline
+		1 & Windows 11 & 8 GB \\
+		\hline
+		2 & Ubuntu Desktop & 4 GB \\
+		\hline
+		3 & Ubuntu Server & 2 GB \\
+		\hline
+		4 & Windows 11 & 8 GB \\
+		\hline
+	\end{tabular}
+	
+	Teniendo en cuenta las máquinas a utilizar calcularemos los GB que necesitamos (16, 32, 64 GB, etc.).
+	
+	Para calcular la memoria restante debemos sumar los siguientes datos (aproximados):
+	
+	\begin{itemize}
+		\item Windows 11 base: 6 GB
+		\item VirtualBox + vmmem (virtualización): 1 GB
+		\item RAM total máquinas virtuales: 20 GB
+	\end{itemize}
+	
+	Por tanto, el consumo total es de \textbf{27 GB}.
+	
+	Si el consumo total es de \textbf{27 GB} necesitaremos un portátil de al menos 32 GB.
+	
+	\begin{itemize}
+		\item \textbf{Equipo de 32 GB:} 5 GB restantes.
+		\begin{itemize}
+			\item \textit{¿Son suficientes?} Dependerá de qué otros programas mantengamos abiertos. Dos escenarios estimados:
+			\begin{itemize}
+				\item Ningún programa abierto o muy ligeros: con 5 GB restantes es más que suficiente.
+				\item Navegador Chromium (2 GB), VS Code (0,5 GB), AutoCAD (2 GB) o Cisco Packet Tracer (0,5 GB): podría empezar a quedarse corto.
+			\end{itemize}
+		\end{itemize}
+		
+		\item \textbf{Equipo de 64 GB:} 37 GB restantes.
+		\begin{itemize}
+			\item \textit{¿Son suficientes?} Sí, de forma sobrada. Tanto para el sistema principal como para las máquinas virtuales y demás software habitual (VMware, Visual Studio, Cisco Packet Tracer) es más que suficiente.
+		\end{itemize}
+	\end{itemize}
+	
+	\subsection{CPU}
+	
+	\subsubsection*{A. Propuesta de asignación de vCPU por Máquina Virtual}
+	
+	\begin{itemize}
+		\item \textbf{VM 1 (Windows 11 - 8 GB RAM):} \textbf{4 vCPUs} (Suficiente para mover el entorno gráfico de Windows de forma fluida).
+		\item \textbf{VM 2 (Ubuntu Desktop - 4 GB RAM):} \textbf{2 vCPUs} (Adecuado para un escritorio Linux ligero).
+		\item \textbf{VM 3 (Ubuntu Server - 2 GB RAM):} \textbf{1 o 2 vCPUs} (Ideal para servicios de red y consola sin interfaz gráfica).
+		\item \textbf{VM 4 (Windows 11 - 8 GB RAM):} \textbf{4 vCPUs} (Igual que la primera para equilibrar cargas).
+	\end{itemize}
+	
+	\textbf{Total asignado:} Entre \textbf{11 y 12 vCPUs}. Los hilos restantes (4 a 5 hilos) quedan reservados exclusivamente para el anfitrión y el hipervisor.
+	
+	\subsubsection*{B. Problemas que genera asignar demasiadas vCPU}
+	
+	\begin{enumerate}
+		\item \textbf{Problemas de planificación (\textit{Co-scheduling}):} Si asignas más hilos de los que el procesador físico tiene disponibles (por ejemplo, intentar dar 8 vCPUs a cada Windows 11 sumando más de 16 hilos en total), el hipervisor tendrá que pausar constantemente los procesos esperando a que queden núcleos libres, generando una latencia enorme (\textit{CPU throttling} virtual).
+		
+		\item \textbf{Inestabilidad del Anfitrión (\textit{Starvation}):} Si las VMs acaparan todos los hilos físicos, el sistema anfitrión se quedará sin capacidad de procesamiento para gestionar el disco, la red o la interfaz gráfica, provocando bloqueos y tirones (\textit{stuttering}).
+		
+		\item \textbf{Sobrecarga del Hipervisor:} Gestionar un exceso de cambios de contexto entre hilos virtuales consume ciclos de CPU útiles, restando rendimiento general al equipo.
+	\end{enumerate}
+	
+	\subsection{Disco de estado sólido}
+	
+	Por los requerimientos exigidos necesitamos al menos 1 TB de almacenamiento de estado sólido de alta velocidad. A continuación, una tabla que explica como se reparte el almacenamiento.
+	
+	\begin{tabular}{|l|c|}
+		\hline
+		\textbf{Concepto} & \textbf{Capacidad} \\
+		\hline
+		Anfitrión & 100 GB \\
+		\hline
+		Aplicaciones & 60 GB \\
+		\hline
+		Archivos & 300 GB \\
+		\hline
+		Discos virtuales & 80 GB + 50 GB + 50 GB + 80 GB = 260 GB \\
+		\hline
+		Espacio libre & 280 GB \\
+		\hline
+		\textbf{Total} & \textbf{1000 GB (1 TB)} \\
+		\hline
+	\end{tabular}
+	
+	\subsection{Simulación de rendimiento}
+	
+	\subsubsection*{Gestión de memoria RAM en el MSI Modern A14}
+	
+	El equipo viene configurado de fábrica con 32 GB de RAM DDR5, lo que te permite asignar unos 5 GB a cada una de las cuatro máquinas virtuales y mantener unos 12 GB libres para el sistema operativo anfitrión. Sin embargo, debido a que la placa base fija el límite máximo en 32 GB sin posibilidad de ampliar a 64 GB, no dispondrás de margen de maniobra si en el futuro necesitas virtualizar sistemas más exigentes. Si mantienes las máquinas en entornos moderados el comportamiento será fluido, pero si ejecutas cuatro máquinas virtuales pesadas de forma simultánea, la RAM se saturará y el sistema recurrirá al archivo de paginación (swap), reduciendo la agilidad general.
+	
+	\subsubsection*{Procesamiento y planificación de CPU con el procesador AMD Ryzen 7}
+	
+	El procesador AMD Ryzen 7 (arquitectura x86-64 con 8 núcleos físicos y 16 hilos lógicos) integrado en este portátil gestiona la carga de las cuatro máquinas virtuales con solvencia, permitiendo asignar entre 2 y 4 vCPUs a cada una. La sobrecarga del hipervisor por hardware AMD-V es imperceptible y la CPU repartirá las tareas sin crear cuellos de botella, respondiendo con fluidez excepto en los momentos puntuales en los que las cuatro instancias ejecuten procesos de compilación o cálculo pesado al mismo tiempo.
+	
+	\subsubsection*{Rendimiento del almacenamiento NVMe SSD}
+	
+	El SSD M.2 de 1 TB con bus PCIe 4.0 que incluye este modelo ofrece un ancho de banda y una tasa de operaciones por segundo (IOPS) elevadas. Esto garantiza que la lectura y escritura simultánea sobre los cuatro archivos de disco virtual no bloquee la entrada y salida de datos (I/O wait), permitiendo un arranque rápido de las máquinas virtuales y una buena velocidad al mover archivos grandes. Además, al ser un módulo M.2 estándar, podrás reemplazarlo fácilmente por una unidad de 2 TB o 4 TB en el futuro si las imágenes virtuales ocupan demasiado espacio.
+	
+	\subsubsection*{Comportamiento térmico y ruido en este chasis}
+	
+	Al tratarse de un chasis ligero de 14 pulgadas con un sistema de disipación compacto, la carga continua de cuatro máquinas virtuales mantendrá al procesador trabajando a un ritmo constante. Esto provocará que el ventilador interno funcione a revoluciones medias o altas para estabilizar las temperaturas, generando un soplido constante y claramente audible durante las sesiones de trabajo. El procesador regulará sus frecuencias para evitar el estrangulamiento térmico (\textit{thermal throttling}), pero la zona inferior de la carcasa alcanzará temperaturas más elevadas que en modelos profesionales con doble ventilación.
+	
+	\subsubsection*{Optimización según el sistema operativo base}
+	
+	Al comercializarse con FreeDOS, la elección del sistema anfitrión que instales determinará la eficiencia del portátil. Si instalas Ubuntu Linux como sistema base utilizando KVM / QEMU, se activará la función de deduplicación de memoria (\textit{Kernel Samepage Merging}), lo que reducirá la huella de RAM de las cuatro máquinas virtuales y compensará en parte la imposibilidad de ampliar la memoria a 64 GB. Si optas por Windows 11 como sistema anfitrión con VirtualBox o Hyper-V, el propio sistema consumirá más recursos de base, dejando un margen de RAM más justo.
+	
+	\section{Esquema funcional y comparativa de sistemas operativos.}
+	
+	
+	
+	\subsection{VM y esquema funcional}
+	
+	Lo primero que nos preguntamos es: ¿qué es una máquina virtual o Virtual Machine (VM)? ¿Para qué se utiliza?
+	
+	Es un programa que se ejecuta en un ordenador (anfitrión) pero que simula el funcionamiento de otro ordenador y puede ejecutar cualquier software como si fuese un ordenador real. Por ello, es muy utilizado para realizar pruebas y evitar pérdidas en el equipo anfitrión. También es una buena manera de echar un vistazo a un sistema operativo diferente al que usas habitualmente.
+	
+	Esquema del funcionamiento del sistema operativo con elementos tales como: hardware físico, sistema operativo anfitrión, usuarios, aplicaciones, procesos e hipervisor.
+	
+	\includegraphics[width=1\textwidth]{IMG/image-2.png}
+	
+	\subsection{Windows 11 vs Ubuntu Desktop}
+	
+	Comparativa detallada entre Windows 11 y Ubuntu Desktop, que son de los sistemas operativos más utilizados de la actualidad (por algo será).
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.25}
+		\begin{tabularx}{\textwidth}{|l|X|X|}
+			\hline
+			\textbf{Característica} & \textbf{Windows 11 (24H2 / Home \& Pro)} & \textbf{Ubuntu Desktop (24.04 LTS - Noble Numbat)} \\
+			\hline
+			\textbf{Arquitectura} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item \textbf{x86-64} (requiere extensión POPCNT / SSE4.2)
+				\item \textbf{ARM64} (dispositivos Copilot+ / Snapdragon)
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item \textbf{x86-64 (amd64)}
+				\item \textbf{ARM64} (Raspberry Pi, Apple Silicon vía VM)
+				\item RISC-V, s390x, ppc64el
+			\end{itemize} \\
+			\hline
+			\textbf{Requisitos Mínimos} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item CPU: 1 GHz 2+ núcleos de 64 bits compatibles
+				\item RAM: 4 GB
+				\item Disco: 64 GB
+				\item Seguridad: TPM 2.0 y UEFI con Secure Boot
+				\item GPU: DirectX 12 / WDDM 2.0
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item CPU: 2 GHz Dual-Core de 64 bits
+				\item RAM: 4 GB
+				\item Disco: 25 GB
+				\item Seguridad: Compatible con Secure Boot (sin necesidad de TPM)
+				\item GPU: Resolución 1024\(\times\)768
+			\end{itemize} \\
+			\hline
+			\textbf{Requisitos Recomendados} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item CPU: 4+ núcleos (Intel Gen 12+ / AMD Ryzen 5000+)
+				\item RAM: 16 GB+
+				\item Disco: 256 GB NVMe SSD
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item CPU: 4+ núcleos a 2.5 GHz
+				\item RAM: 8 GB–16 GB
+				\item Disco: 80 GB+ NVMe SSD
+			\end{itemize} \\
+			\hline
+			\textbf{Licencia} & \textbf{Propietaria / EULA} de Microsoft & \textbf{Código Abierto} (GPL y otras licencias FOSS) \\
+			\hline
+			\textbf{Coste} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item Gratuito si actualizas desde Win 10 / Win 11 previa
+				\item OEM / Retail: \(\sim\)145 € (Home) / \(\sim\)259 € (Pro)
+			\end{itemize} & \textbf{100\% Gratuito} (Uso comercial y personal sin coste) \\
+			\hline
+			\textbf{Compatibilidad con Aplicaciones} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item Nativa para todo el software comercial (MS Office, Adobe Creative Cloud, AutoCAD)
+				\item Excelente para videojuegos (DirectX 12, Anti-Cheats propietarios)
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item Soporta software nativo Linux, paquetes Snap, Flatpak, AppImage
+				\item Vía \textbf{Wine / Proton} ejecuta la gran mayoría de juegos de Steam y ejecutables \texttt{.exe}
+				\item \textbf{Incompatible} con software con anticheats a nivel de kernel (Valorant, Fortnite) o suite Adobe nativa
+			\end{itemize} \\
+			\hline
+			\textbf{Virtualización} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item \textbf{Hyper-V} (Nativo en versión Pro)
+				\item Windows Sandbox y WSL2 (Subsistema de Linux)
+				\item Compatible con VMware Workstation, VirtualBox
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item \textbf{KVM / QEMU / libvirt} (Hypervisor nativo de alto rendimiento)
+				\item LXD / Docker (Contenedores nativos)
+				\item Compatible con VirtualBox, VMware Workstation
+			\end{itemize} \\
+			\hline
+			\textbf{Ventajas} & 
+			\begin{enumerate}[leftmargin=*,nosep]
+				\item Máxima compatibilidad con programas de diseño, edición y juegos.
+				\item Excelente soporte para controladores de hardware comercial.
+				\item Integración nativa con el ecosistema Microsoft 365 y Copilot.
+			\end{enumerate} & 
+			\begin{enumerate}[leftmargin=*,nosep]
+				\item Consumo de recursos optimizado y sin software innecesario (\textit{bloatware}).
+				\item Entorno ideal para desarrollo de software, servidores y ciencia de datos.
+				\item Mayor privacidad, seguridad sin necesidad de antivirus activo y actualizaciones no invasivas.
+			\end{enumerate} \\
+			\hline
+			\textbf{Inconvenientes} & 
+			\begin{enumerate}[leftmargin=*,nosep]
+				\item Restricciones estrictas de hardware (TPM 2.0 y CPUs antiguas excluidas).
+				\item Mayor consumo de recursos de fondo y telemetría de datos integrada.
+				\item Coste de licencia para equipos montados por piezas.
+			\end{enumerate} & 
+			\begin{enumerate}[leftmargin=*,nosep]
+				\item Curva de aprendizaje para usuarios habituados al entorno de comandos/terminal.
+				\item Dificultades con cierto software propietario sin alternativas nativas exactas.
+				\item Requiere drivers específicos (ej. NVIDIA) que pueden dar problemas de configuración en portátiles.
+			\end{enumerate} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	\subsection{Elección final de SO}
+	
+	Para el parque de portátiles utilizaríamos Ubuntu 24.04 LTS que es compatible con todo el software requerido para su trabajo.
+	
+	Existen varias razones para elegir este sistema operativo:
+	
+	\begin{itemize}
+		\item KVM integrado en su kernel ofreciendo un rendimiento cercanos al nativo (bare-metal), superando a VirtualBox e Hyper-V.
+		\item 	Menor consumo de RAM respecto a Windows 11. Ubuntu consume de 2 a 3 GB en resposo, mientras que, Windows utiliza de 6 a 8 GB.
+		\item 	El procesoador del portátil cuenta con soporte y controladores natvios integrados en el kernel Linux (6.8+)
+		\item 	Coste cero en licencias. En cambio; Windows 11 Pro tiene un coste de 259 € por licencia.
+		\item 	A diferencia de Windows 11, las actualizaciones de sistema y kernel en Ubuntu no fuerzan reinicios inesperados ni interrumpen las sesiones de virtualización en ejecución.
+	\end{itemize}
+	
+	\section{Tabla de compatibilidad del software.}
+	
+	Tabla detallada que especifica sistemas operativos admitidos, arquitectura, RAM y otros requisitos relevantes del software que vamos a utilizar (VirtualBox, VMWare, VS Code, )
+	
+	\begin{table}[H]
+		\centering
+		\scriptsize
+		\renewcommand{\arraystretch}{1.15}
+		\begin{tabularx}{\textwidth}{|l|X|X|X|X|}
+			\hline
+			& \textbf{VirtualBox} & \textbf{VMware} & \textbf{Visual Studio Code} & \textbf{Cisco Packet Tracer} \\
+			\hline
+			\textbf{Versión analizada} & 
+			VirtualBox 7.2 & 
+			VMware Workstation Pro 16.x, 17.x, 25H2, 26H1 & 
+			Visual Studio Code 1.9x (última versión estable) & 
+			Cisco Packet Tracer 8.2.x / 8.3.x \\
+			\hline
+			\textbf{Sistemas operativos admitidos} & 
+			\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+				\item \textbf{Windows}: 11 (x86\_64 y Arm experimental), 10, Server 2022/2025
+				\item \textbf{macOS Intel}: 13–26 (Ventura a Tahoe)
+				\item \textbf{macOS Apple Silicon}: 13–26
+				\item \textbf{Linux}: Ubuntu 20.04–24.10, Debian 11–12, Fedora 40–42, RHEL/Oracle Linux 8–10, openSUSE 15.6
+				\item Solaris 11.4
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+				\item \textbf{Windows}: 10, 11, Server 2016–2025
+				\item \textbf{Ubuntu}: 18.04–26.04
+				\item \textbf{Debian}: 9–13
+				\item \textbf{Fedora}: 31–44
+				\item \textbf{RHEL / CentOS}: 7–10
+				\item \textbf{SUSE / openSUSE}: 12–16
+				\item Linux Mint 20–22
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+				\item \textbf{Windows}: 10 y 11 (x86\_64 y Arm64)
+				\item \textbf{macOS}: 11 (Big Sur) o posterior (Intel y Apple Silicon)
+				\item \textbf{Linux}: Ubuntu 20.04–24.04, Debian 10–12, RHEL 8–9, Fedora 38+, openSUSE 15+
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+				\item \textbf{Windows}: 10 y 11 (64-bit)
+				\item \textbf{macOS}: 10.14 o posterior (Intel y Apple Silicon)
+				\item \textbf{Linux}: Ubuntu 20.04 / 22.04 / 24.04 LTS (64-bit)
+			\end{itemize} \\
+			\hline
+			\textbf{Arquitectura} & 
+			x86\_64 \newline Arm64 (experimental) & 
+			x86\_64 / AMD64 & 
+			x86\_64 / Arm64 / ARMv7l \newline Apple Silicon Universal & 
+			x86\_64 / 64-bit \\
+			\hline
+			\textbf{RAM} & 
+			No especificado oficialmente & 
+			8 GB mínimo \newline 12 GB recomendados & 
+			1 GB mínimo \newline 4 GB o superior recomendado & 
+			4 GB mínimo \newline 8 GB recomendados \\
+			\hline
+			\textbf{Otros requisitos relevantes} & 
+			\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+				\item Módulos Qt 6.5.3 o posterior (Linux)
+				\item Instrucciones SSE2 (Intel)
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+				\item Host con al menos 2 núcleos de CPU
+				\item Disco de arranque $\geq$ 32 GB de almacenamiento persistente
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+				\item Procesador 1.6 GHz o superior
+				\item 500 MB de espacio en disco
+				\item Soporte para Git (opcional)
+			\end{itemize} & 
+			\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+				\item Procesador x86 $\geq$ 1.4 GHz
+				\item 1.4 GB de espacio libre en disco
+				\item Resolución mínima 1024$\times$768
+				\item Cuenta activa en Cisco NetAcad
+			\end{itemize} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	\subsection{Configuración elegida}
+	
+	La configuración analizada (\textbf{Procesador AMD Ryzen™ 7 250}, \textbf{32 GB RAM DDR5}, \textbf{1 TB SSD NVMe PCIe Gen4} y \textbf{Ubuntu Desktop 24.04 LTS} como sistema operativo anfitrión) es \textbf{plenamente compatible} con las herramientas exigidas (VirtualBox, VMware Workstation, Visual Studio Code y Cisco Packet Tracer).
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.25}
+		\begin{tabularx}{\textwidth}{|l|X|X|X|}
+			\hline
+			\textbf{Herramienta} & \textbf{Compatibilidad con Hardware (MSI A14)} & \textbf{Compatibilidad con SO Anfitrión (Ubuntu 24.04 LTS)} & \textbf{Observaciones Técnicas} \\
+			\hline
+			\textbf{VirtualBox (7.x)} & 
+			\textbf{Total} (Instrucciones AMD-V de virtualización nativas) & 
+			\textbf{Total} (Soporte oficial para Ubuntu 24.04 x86\_64) & 
+			Requiere activar la virtualización en la BIOS/UEFI si viene desactivada por defecto. \\
+			\hline
+			\textbf{VMware Workstation (17.5 / 17.6)} & 
+			\textbf{Total} (8 núcleos / 16 hilos del Ryzen 7 250) & 
+			\textbf{Total} (Sustentado oficialmente según la matriz de compatibilidad) & 
+			Rendimiento óptimo asignando hilos y RAM dentro de los límites calculados. \\
+			\hline
+			\textbf{Visual Studio Code} & 
+			\textbf{Total} (Uso ligero de CPU/RAM) & 
+			\textbf{Total} (Soporte nativo mediante paquete \texttt{.deb} o Snap) & 
+			Diferenciación clave: VS Code es un editor multiplataforma ligero, no el IDE pesado \textit{Microsoft Visual Studio} (exclusivo de Windows). \\
+			\hline
+			\textbf{Cisco Packet Tracer (8.x)} & 
+			\textbf{Total} (Gráficos integrados Radeon™ 780M de sobra) & 
+			\textbf{Total} (Soporte nativo para versiones Ubuntu 64-bit) & 
+			Funciona perfectamente con la resolución FHD (1920\(\times\)1080) de la pantalla. \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	Si se tomaran decisiones erróneas al seleccionar el hardware o el sistema operativo anfitrión para este encargo, surgirán los siguientes cuellos de botella y fallos operativos:
+	
+	\subsubsection*{A. Problemas por Hardware Inadecuado}
+	
+	\begin{enumerate}
+		\item \textbf{Memoria RAM insuficiente (ej. 8 GB o 16 GB no ampliables):}
+		\begin{itemize}
+			\item \textit{Problema:} Al ejecutar las 4 máquinas virtuales requeridas (que suman 22 GB de RAM asignada), un equipo con 16 GB entraría inmediatamente en colapso por \textbf{memoria agotada}.
+			\item \textit{Consecuencia:} El sistema operativo anfitrión empezará a volcar memoria en el disco (\textit{thrashing} / uso masivo de la \textit{swap}), provocando congelamientos del portátil y el cierre repentino (\textit{Out Of Memory Killer}) de las máquinas virtuales.
+		\end{itemize}
+		
+		\item \textbf{Procesador con pocos núcleos o sin virtualización por hardware:}
+		\begin{itemize}
+			\item \textit{Problema:} Usar procesadores de 2 o 4 núcleos (sin virtualización AMD-V o Intel VT-x activada).
+			\item \textit{Consecuencia:} Incapacidad de arrancar hypervisores de 64 bits o latencias extremas (\textit{CPU Stuttering}) al intentar repartir 11–12 vCPUs entre solo 4 hilos reales.
+		\end{itemize}
+		
+		\item \textbf{Almacenamiento lento (HDD o SSD SATA en lugar de NVMe Gen4):}
+		\begin{itemize}
+			\item \textit{Problema:} Ejecutar 4 sistemas operativos simultáneamente genera una alta tasa de lecturas y escrituras aleatorias de disco (I/O).
+			\item \textit{Consecuencia:} Tiempos de arranque de las VMs de varios minutos y tasa de respuesta lenta al abrir programas dentro de los entornos invitados.
+		\end{itemize}
+	\end{enumerate}
+	
+	\subsubsection*{B. Problemas por Sistema Operativo Anfitrión Inadecuado}
+	
+	\begin{enumerate}
+		\item \textbf{Seleccionar un SO de 32 bits o versiones descontinuadas:}
+		\begin{itemize}
+			\item \textit{Problema:} Sistemas antiguos no reconocen más de 4 GB de RAM ni soportan las versiones recientes de VMware o VirtualBox.
+			\item \textit{Consecuencia:} Incompatibilidad directa de instalación de las herramientas de la práctica.
+		\end{itemize}
+		
+		\item \textbf{Uso de Windows 11 Home en lugar de Pro o Ubuntu (en equipos con RAM justa):}
+		\begin{itemize}
+			\item \textit{Problema:} Windows 11 consume de 6 a 8 GB de RAM solo para mantenerse encendido, además de ejecutar servicios de telemetría y actualizaciones automáticas en segundo plano.
+			\item \textit{Consecuencia:} En la configuración de 32 GB de RAM, usar Windows 11 deja solo 3 GB libres (frente a los 7-10 GB libres que deja Ubuntu), restando margen de seguridad y forzando reinicios no programados durante la ejecución del laboratorio.
+		\end{itemize}
+		
+		\item \textbf{Confusión entre Visual Studio y Visual Studio Code según el SO:}
+		\begin{itemize}
+			\item \textit{Problema:} Confundir el entorno de desarrollo y asumir que se necesita \textbf{Visual Studio} (el IDE completo).
+			\item \textit{Consecuencia:} Visual Studio IDE \textbf{no es nativo de Linux} (requiere Windows obligatoriamente). La herramienta requerida para este encargo es \textbf{Visual Studio Code}, un editor ligero y multiplataforma disponible nativamente en Ubuntu y Windows.
+		\end{itemize}
+	\end{enumerate}
+	
+	
+	
+	\section{Cuatro fichas técnicas y fuentes verificables.}
+	
+	La selección de portátiles que se proponen es la siguiente:
+	
+	\subsubsection*{A. MSI Modern A14 AI F2HMG-009XES}
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabularx}{\textwidth}{|l|l|X|}
+			\hline
+			\textbf{Categoría} & \textbf{Especificación / Detalle} & \textbf{Información del Equipo} \\
+			\hline
+			\multirow{4}{*}{\textbf{Identificación}} 
+			& \textbf{Fabricante} & MSI \\
+			\cline{2-3}
+			& \textbf{Modelo} & Modern A14 AI F2HMG-009XES \\
+			\cline{2-3}
+			& \textbf{Referencia / SKU} & 9S7-14SK21-009 \\
+			\cline{2-3}
+			& \textbf{Tienda / Proveedor} & Store MSI \\
+			\hline
+			\multirow{3}{*}{\textbf{Procesador}} 
+			& \textbf{Procesador exacto} & AMD Ryzen™ 7 250 \\
+			\cline{2-3}
+			& \textbf{Núcleos / Hilos} & 8 núcleos / 16 hilos \\
+			\cline{2-3}
+			& \textbf{Arquitectura} & Zen 4 \\
+			\hline
+			\multirow{5}{*}{\textbf{Memoria RAM}} 
+			& \textbf{RAM instalada} & 32 GB \\
+			\cline{2-3}
+			& \textbf{Tipo de memoria} & LPDDR5 \\
+			\cline{2-3}
+			& \textbf{Ranuras (Slots)} & 16 GB \(\times\) 2 \\
+			\cline{2-3}
+			& \textbf{¿Soldada o Sustituible?} & Soldada \\
+			\cline{2-3}
+			& \textbf{Máximo admitido} & No permite ampliación \\
+			\hline
+			\multirow{3}{*}{\textbf{Almacenamiento}} 
+			& \textbf{SSD (Capacidad/Tipo)} & 1 TB NVMe SSD PCIe Gen4 \\
+			\cline{2-3}
+			& \textbf{Interfaz de comunicación} & PCIe Gen4 \\
+			\cline{2-3}
+			& \textbf{Posibilidades de ampliación/sustitución} & No \\
+			\hline
+			\multirow{2}{*}{\textbf{Pantalla y Gráficos}} 
+			& \textbf{Pantalla (Tamaño, Res., Tipo)} & 14.0'' FHD (1920\(\times\)1080), IPS-Level, 60 Hz \\
+			\cline{2-3}
+			& \textbf{Tarjeta gráfica (GPU)} & AMD Radeon™ 780M (integrada) \\
+			\hline
+			\multirow{4}{*}{\textbf{Físico y Periféricos}} 
+			& \textbf{Peso} & 1.4 kg \\
+			\cline{2-3}
+			& \textbf{Batería (Capacidad/Celdas)} & 3 celdas \\
+			\cline{2-3}
+			& \textbf{Webcam} & HD (30 fps @ 720p) con 3D Noise Reduction (3DNR) \\
+			\cline{2-3}
+			& \textbf{Teclado} & Single Backlit Keyboard (White) con tecla Copilot \\
+			\hline
+			\multirow{5}{*}{\textbf{Conectividad y Puertos}} 
+			& \textbf{Puertos USB-A} & 2\(\times\) Type-A USB 3.2 Gen1 \\
+			\cline{2-3}
+			& \textbf{Puertos USB-C} & 2\(\times\) Type-C (USB 3.2 Gen2 / DisplayPort / Power Delivery 3.0) \\
+			\cline{2-3}
+			& \textbf{Salida HDMI} & 1\(\times\) HDMI™ 2.1 (4K @ 60 Hz) \\
+			\cline{2-3}
+			& \textbf{Red (Ethernet / Wi-Fi / BT)} & Wi-Fi 6E + Bluetooth 5.3 + Ethernet RJ45 \\
+			\cline{2-3}
+			& \textbf{Otras conexiones} & --- \\
+			\hline
+			\textbf{Monitores Externos} & \textbf{Nº de pantallas externas simultáneas} & Hasta 4 pantallas externas \\
+			\hline
+			\multirow{3}{*}{\textbf{Comercial y Software}} 
+			& \textbf{Sistema operativo} & FreeDOS \\
+			\cline{2-3}
+			& \textbf{Garantía} & 3 años \\
+			\cline{2-3}
+			& \textbf{Precio (con IVA)} & 829,00 € \\
+			\hline
+			\textbf{Fuentes} & \textbf{Enlaces consultados} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item \href{https://es-store.msi.com/products/modern-a14-ai-f2hmg-009xes-portatiles}{Store MSI}
+				\item \href{https://www.amd.com/es/products/processors/laptop/ryzen/200-series/amd-ryzen-7-250.html}{AMD Ryzen™ 7 250}
+			\end{itemize} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	\subsubsection*{B. MSI Modern 15 F1MG-499ES}
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabularx}{\textwidth}{|l|l|X|}
+			\hline
+			\textbf{Categoría} & \textbf{Especificación / Detalle} & \textbf{Información del Equipo} \\
+			\hline
+			\multirow{4}{*}{\textbf{Identificación}} 
+			& \textbf{Fabricante} & MSI \\
+			\cline{2-3}
+			& \textbf{Modelo} & Modern 15 F1MG-499ES \\
+			\cline{2-3}
+			& \textbf{Referencia / SKU} & 9S7-15S112-499 \\
+			\cline{2-3}
+			& \textbf{Tienda / Proveedor} & Store MSI \\
+			\hline
+			\multirow{3}{*}{\textbf{Procesador}} 
+			& \textbf{Procesador exacto} & Intel® Core™ 7 150U \\
+			\cline{2-3}
+			& \textbf{Núcleos / Hilos} & 10 núcleos (2 P-cores + 8 E-cores) / 12 hilos \\
+			\cline{2-3}
+			& \textbf{Arquitectura} & Raptor Lake (64 bits) \\
+			\hline
+			\multirow{5}{*}{\textbf{Memoria RAM}} 
+			& \textbf{RAM instalada} & 32 GB \\
+			\cline{2-3}
+			& \textbf{Tipo de memoria} & LPDDR5 \\
+			\cline{2-3}
+			& \textbf{Ranuras (Slots)} & 16 GB \(\times\) 2 \\
+			\cline{2-3}
+			& \textbf{¿Soldada o Sustituible?} & No soldada (ampliable) \\
+			\cline{2-3}
+			& \textbf{Máximo admitido} & 64 GB \\
+			\hline
+			\multirow{3}{*}{\textbf{Almacenamiento}} 
+			& \textbf{SSD (Capacidad/Tipo)} & 1 TB NVMe SSD PCIe Gen4 \\
+			\cline{2-3}
+			& \textbf{Interfaz de comunicación} & PCIe Gen4 \\
+			\cline{2-3}
+			& \textbf{Posibilidades de ampliación/sustitución} & No \\
+			\hline
+			\multirow{2}{*}{\textbf{Pantalla y Gráficos}} 
+			& \textbf{Pantalla (Tamaño, Res., Tipo)} & 15.6'' FHD (1920\(\times\)1080), IPS-Level \\
+			\cline{2-3}
+			& \textbf{Tarjeta gráfica (GPU)} & Intel Graphics (96 EU) \\
+			\hline
+			\multirow{4}{*}{\textbf{Físico y Periféricos}} 
+			& \textbf{Peso} & 1.7 kg \\
+			\cline{2-3}
+			& \textbf{Batería (Capacidad/Celdas)} & 3 celdas / 46.8 Wh \\
+			\cline{2-3}
+			& \textbf{Webcam} & HD (30 fps @ 720p) con 3D Noise Reduction (3DNR) \\
+			\cline{2-3}
+			& \textbf{Teclado} & Single Backlit Keyboard (White) con tecla Copilot \\
+			\hline
+			\multirow{5}{*}{\textbf{Conectividad y Puertos}} 
+			& \textbf{Puertos USB-A} & 2\(\times\) Type-A USB 3.2 Gen1 \\
+			\cline{2-3}
+			& \textbf{Puertos USB-C} & 2\(\times\) Type-C (USB 3.2 Gen2 / DisplayPort / Power Delivery 3.0) \\
+			\cline{2-3}
+			& \textbf{Salida HDMI} & 1\(\times\) HDMI™ 2.1 (4K @ 60 Hz) \\
+			\cline{2-3}
+			& \textbf{Red (Ethernet / Wi-Fi / BT)} & Intel® Wi-Fi 6E AX211 + Bluetooth 5.3 + Ethernet RJ45 \\
+			\cline{2-3}
+			& \textbf{Otras conexiones} & --- \\
+			\hline
+			\textbf{Monitores Externos} & \textbf{Nº de pantallas externas simultáneas} & Hasta 4 pantallas externas \\
+			\hline
+			\multirow{3}{*}{\textbf{Comercial y Software}} 
+			& \textbf{Sistema operativo} & FreeDOS \\
+			\cline{2-3}
+			& \textbf{Garantía} & 3 años \\
+			\cline{2-3}
+			& \textbf{Precio (con IVA)} & 949,00 € \\
+			\hline
+			\textbf{Fuentes} & \textbf{Enlaces consultados} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item \href{https://es-store.msi.com/products/modern-15-f1mg-499es-portatiles}{Store MSI}
+				\item \href{https://www.geektopia.es/es/product/intel/core-7-150u/}{Intel Core 7 150U}
+			\end{itemize} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	\subsubsection*{C. Medion SPRCHRGD 14 S2 MD62722}
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabularx}{\textwidth}{|l|l|X|}
+			\hline
+			\textbf{Categoría} & \textbf{Especificación / Detalle} & \textbf{Información del Equipo} \\
+			\hline
+			\multirow{4}{*}{\textbf{Identificación}} 
+			& \textbf{Fabricante} & Medion \\
+			\cline{2-3}
+			& \textbf{Modelo} & SPRCHRGD 14 S2 MD62722 \\
+			\cline{2-3}
+			& \textbf{Referencia / SKU} & POMED024 \\
+			\cline{2-3}
+			& \textbf{Tienda / Proveedor} & Life Informática \\
+			\hline
+			\multirow{3}{*}{\textbf{Procesador}} 
+			& \textbf{Procesador exacto} & Intel Core Ultra 7 258V \\
+			\cline{2-3}
+			& \textbf{Núcleos / Hilos} & 8 núcleos / 8 hilos \\
+			\cline{2-3}
+			& \textbf{Arquitectura} & Lunar Lake (64 bits) \\
+			\hline
+			\multirow{5}{*}{\textbf{Memoria RAM}} 
+			& \textbf{RAM instalada} & 32 GB \\
+			\cline{2-3}
+			& \textbf{Tipo de memoria} & LPDDR5X 7467 MHz \\
+			\cline{2-3}
+			& \textbf{Ranuras (Slots)} & 32 GB \(\times\) 1 \\
+			\cline{2-3}
+			& \textbf{¿Soldada o Sustituible?} & Soldada \\
+			\cline{2-3}
+			& \textbf{Máximo admitido} & No ampliable \\
+			\hline
+			\multirow{3}{*}{\textbf{Almacenamiento}} 
+			& \textbf{SSD (Capacidad/Tipo)} & 1 TB NVMe SSD PCIe Gen4 \\
+			\cline{2-3}
+			& \textbf{Interfaz de comunicación} & PCIe Gen4 \\
+			\cline{2-3}
+			& \textbf{Posibilidades de ampliación/sustitución} & No \\
+			\hline
+			\multirow{2}{*}{\textbf{Pantalla y Gráficos}} 
+			& \textbf{Pantalla (Tamaño, Res., Tipo)} & 14'' IPS 2.8K (2880\(\times\)1800) 16:10, 400 nits, 100\% sRGB \\
+			\cline{2-3}
+			& \textbf{Tarjeta gráfica (GPU)} & Intel Arc 140V (integrada) \\
+			\hline
+			\multirow{4}{*}{\textbf{Físico y Periféricos}} 
+			& \textbf{Peso} & 1.4 kg \\
+			\cline{2-3}
+			& \textbf{Batería (Capacidad/Celdas)} & 65 Wh \\
+			\cline{2-3}
+			& \textbf{Webcam} & Full HD con micrófono dual \\
+			\cline{2-3}
+			& \textbf{Teclado} & Chiclet QWERTY (incluye ñ) \\
+			\hline
+			\multirow{5}{*}{\textbf{Conectividad y Puertos}} 
+			& \textbf{Puertos USB-A} & 1\(\times\) USB-A 3.2 \\
+			\cline{2-3}
+			& \textbf{Puertos USB-C} & 2\(\times\) USB4 (40 Gb/s, DisplayPort y carga) \\
+			\cline{2-3}
+			& \textbf{Salida HDMI} & 1\(\times\) HDMI 2.0 \\
+			\cline{2-3}
+			& \textbf{Red (Ethernet / Wi-Fi / BT)} & Wi-Fi 7 (802.11be) + Bluetooth 5.4 \\
+			\cline{2-3}
+			& \textbf{Otras conexiones} & 1\(\times\) Jack de audio combinado \\
+			\hline
+			\textbf{Monitores Externos} & \textbf{Nº de pantallas externas simultáneas} & Hasta 4 pantallas externas \\
+			\hline
+			\multirow{3}{*}{\textbf{Comercial y Software}} 
+			& \textbf{Sistema operativo} & Windows 11 Home \\
+			\cline{2-3}
+			& \textbf{Garantía} & 3 años \\
+			\cline{2-3}
+			& \textbf{Precio (con IVA)} & 1.148,70 € \\
+			\hline
+			\textbf{Fuentes} & \textbf{Enlaces consultados} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item \href{https://lifeinformatica.com/tienda/medion-sprchrgd-14-s2-md62722-portatil-intel-core-ultra-7-258v-32gb-ddr5-1tb-ssd-nvme-14-2-8k-windows-11-home/}{Life Informática}
+				\item \href{https://www.intel.la/content/www/xl/es/products/sku/240957/intel-core-ultra-7-processor-258v-12m-cache-up-to-4-80-ghz/specifications.html}{Intel Core Ultra 7 258V}
+			\end{itemize} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	\subsubsection*{D. Lenovo ThinkPad P15v G3}
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabularx}{\textwidth}{|l|l|X|}
+			\hline
+			\textbf{Categoría} & \textbf{Especificación / Detalle} & \textbf{Información del Equipo} \\
+			\hline
+			\multirow{4}{*}{\textbf{Identificación}} 
+			& \textbf{Fabricante} & Lenovo \\
+			\cline{2-3}
+			& \textbf{Modelo} & ThinkPad P15v G3 \\
+			\cline{2-3}
+			& \textbf{Referencia / SKU} & 21D8007USP \\
+			\cline{2-3}
+			& \textbf{Tienda / Proveedor} & Ecoportatil \\
+			\hline
+			\multirow{3}{*}{\textbf{Procesador}} 
+			& \textbf{Procesador exacto} & Intel Core i7-12800H \\
+			\cline{2-3}
+			& \textbf{Núcleos / Hilos} & 14 núcleos / 20 hilos \\
+			\cline{2-3}
+			& \textbf{Arquitectura} & Alder Lake-H (64 bits) \\
+			\hline
+			\multirow{5}{*}{\textbf{Memoria RAM}} 
+			& \textbf{RAM instalada} & 32 GB \\
+			\cline{2-3}
+			& \textbf{Tipo de memoria} & DDR5-4800 MHz (SODIMM) \\
+			\cline{2-3}
+			& \textbf{Ranuras (Slots)} & 32 GB \(\times\) 1 \\
+			\cline{2-3}
+			& \textbf{¿Soldada o Sustituible?} & Sustituible (SODIMM) \\
+			\cline{2-3}
+			& \textbf{Máximo admitido} & Hasta 64 GB (según configuración) \\
+			\hline
+			\multirow{3}{*}{\textbf{Almacenamiento}} 
+			& \textbf{SSD (Capacidad/Tipo)} & 1 TB SSD M.2 2280 PCIe Gen4 TLC Opal \\
+			\cline{2-3}
+			& \textbf{Interfaz de comunicación} & PCIe Gen4 \\
+			\cline{2-3}
+			& \textbf{Posibilidades de ampliación/sustitución} & Sí (ranura M.2) \\
+			\hline
+			\multirow{2}{*}{\textbf{Pantalla y Gráficos}} 
+			& \textbf{Pantalla (Tamaño, Res., Tipo)} & 15.6'' FHD (1920\(\times\)1080) IPS antirreflectante, 300 nits, 60 Hz, 45\% NTSC \\
+			\cline{2-3}
+			& \textbf{Tarjeta gráfica (GPU)} & NVIDIA T1200 4 GB GDDR6 (dedicada) \\
+			\hline
+			\multirow{4}{*}{\textbf{Físico y Periféricos}} 
+			& \textbf{Peso} & 2.09 kg \\
+			\cline{2-3}
+			& \textbf{Batería (Capacidad/Celdas)} & 3 celdas / 46.8 Wh \\
+			\cline{2-3}
+			& \textbf{Webcam} & HD (30 fps @ 720p) con 3D Noise Reduction (3DNR) \\
+			\cline{2-3}
+			& \textbf{Teclado} & Retroiluminado, con teclado numérico, resistente a derrames \\
+			\hline
+			\multirow{5}{*}{\textbf{Conectividad y Puertos}} 
+			& \textbf{Puertos USB-A} & 2\(\times\) USB-A 3.2 Gen1 (uno Always On) \\
+			\cline{2-3}
+			& \textbf{Puertos USB-C} & 2\(\times\) Thunderbolt 4 / USB4 40 Gbps (Power Delivery 3.0 + DisplayPort 1.4) \\
+			\cline{2-3}
+			& \textbf{Salida HDMI} & 1\(\times\) HDMI 2.1 (4K @ 60 Hz) \\
+			\cline{2-3}
+			& \textbf{Red (Ethernet / Wi-Fi / BT)} & Intel Wi-Fi 6E AX211 + Bluetooth 5.2 + Ethernet RJ45 \\
+			\cline{2-3}
+			& \textbf{Otras conexiones} & Lector de tarjetas SD, jack combinado auriculares/micrófono, ranura nano-SIM (opcional) \\
+			\hline
+			\textbf{Monitores Externos} & \textbf{Nº de pantallas externas simultáneas} & Hasta 4 pantallas externas \\
+			\hline
+			\multirow{3}{*}{\textbf{Comercial y Software}} 
+			& \textbf{Sistema operativo} & Sin sistema operativo \\
+			\cline{2-3}
+			& \textbf{Garantía} & 3 años \\
+			\cline{2-3}
+			& \textbf{Precio (con IVA)} & 1.019,95 € \\
+			\hline
+			\textbf{Fuentes} & \textbf{Enlaces consultados} & 
+			\begin{itemize}[leftmargin=*,nosep]
+				\item \href{https://ecoportatil.es/producto/lenovo-thinkpad-p15v-g3-156-i7-12800h-32gb-ssd-1tb-fhd-nvidia-quadro-t1200-4gb-a-copia}{Ecoportatil}
+				\item \href{https://www.intel.la/content/www/xl/es/products/sku/226059/intel-core-i712800h-processor-24m-cache-up-to-4-80-ghz/specifications.html}{Intel Core i7-12800H}
+			\end{itemize} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	\section{Clasificación de periféricos y esquema de conexiones.}
+	
+	\subsection{Periféricos de entrada o de salida}
+	
+	Los periféricos se pueden clasificar como entrada (si introducen información al ordenador) o de salida (muestran información).
+	
+	\begin{itemize}
+		\item \textbf{Teclado}: Periférico de entrada (permite introducir datos y órdenes al ordenador).
+		\item 	\textbf{Ratón}: Periférico de entrada (permite interactuar mediante el puntero y enviar órdenes de posición o clics).
+		\item 	\textbf{Monitor}: Periférico de salida (muestra la información visual generada por el sistema). (Nota: Las pantallas táctiles se consideran de entrada/salida).
+		\item 	\textbf{Almacenamiento externo} (discos duros, memorias USB): Periférico de entrada/salida (permite leer información guardada en ellos —entrada— y escribir o almacenar datos nuevos —salida—).
+		\item 	\textbf{Adaptadores} (tarjetas de red, Wi-Fi, Bluetooth): Periféricos de entrada/salida (envían y reciben datos, señales o comunicaciones bidireccionales).
+	\end{itemize}
+	
+	\subsection{Comparativa de puertos}
+	
+	\begin{itemize}
+		\item \textbf{USB-A}: Conector rectangular tradicional. Se comunica exclusivamente mediante protocolo USB (desde USB 1.1 hasta USB 3.2). Solo transmite datos y, según la versión, energía (carga), sin capacidad para enviar señal de vídeo ni audio digital directo.
+		\item 	\textbf{USB-C}: Es únicamente un estándar físico (un conector ovalado y reversible). Tener forma de USB-C no garantiza salida de vídeo ni una velocidad específica; puede transportar desde USB 2.0 básico hasta USB4, carga (Power Delivery) o vídeo solo si el fabricante implementa DisplayPort Alt Mode.
+		\item 	\textbf{USB4}: Es un protocolo de comunicación de alta velocidad que utiliza el conector físico USB-C. Permite transferir datos (hasta 40 Gbps o más), suministrar energía y transportar vídeo (mediante túneles compatibles con DisplayPort), unificando múltiples funciones en un solo cable.
+		\item 	\textbf{Thunderbolt} (3, 4 y 5): Es un protocolo propietario (desarrollado por Intel) que también utiliza el conector físico USB-C. Ofrece certificaciones estrictas con un mínimo garantizado de 40 Gbps (en Thunderbolt 4/5), soporte obligatorio para doble monitor 4K, túneles PCI Express y entrega de energía. Es retrocompatible con USB4 y USB-C.
+		\item 	\textbf{HDMI}: Es una interfaz de audio y vídeo digital de propósito específico. Se comunica mediante un protocolo audiovisual dedicado diseñado para conectar fuentes de vídeo (ordenadores, consolas, reproductores) directamente a pantallas o proyectores, transportando vídeo sin comprimir y audio multicanal.
+		\item 	\textbf{DisplayPort}: Es una interfaz de audio y vídeo digital de alto rendimiento (frecuente en entornos de PC y monitores profesionales). Se comunica mediante paquetes de datos de vídeo/audio de alta tasa de refresco y resolución, y además puede «subirse» al conector USB-C a través del modo alternativo (DisplayPort Alt Mode).
+		\item 	\textbf{Ethernet} (RJ45): Es una interfaz de red por cable (LAN). Se comunica mediante tramas de datos de red (protocolo IEEE 802.3) para conectar dispositivos a una red local o a internet, sin relación con el transporte de vídeo o energía de alto vataje.
+	\end{itemize}
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.3}
+		\begin{tabularx}{\textwidth}{
+				| >{\raggedright\arraybackslash}p{2.1cm} 
+				| >{\raggedright\arraybackslash}p{2.4cm} 
+				| X 
+				| >{\centering\arraybackslash}p{2.3cm} 
+				| >{\centering\arraybackslash}p{2.0cm} 
+				| >{\centering\arraybackslash}p{2.2cm} |
+			}
+			\hline
+			\textbf{Puerto} & \textbf{Conector físico} & \textbf{Función principal} & \textbf{Velocidad máxima} & \textbf{¿Transporta vídeo?} & \textbf{¿Transporta energía?} \\
+			\hline
+			\textbf{USB-A} & Rectangular (grande) & Datos y carga básica & Hasta 10/20 Gbps (USB 3.2) & \textbf{No} & Sí (baja/media) \\
+			\hline
+			\textbf{USB-C} & Ovalado (reversible) & Variable según el puerto & Desde 480 Mbps hasta 40+ Gbps (USB4) & \textbf{No garantizado} (depende de \textit{Alt Mode}) & Sí (Power Delivery) \\
+			\hline
+			\textbf{USB4} & Usa conector USB-C & Datos, vídeo y energía unificados & Hasta 40 Gbps (o más en v2) & Sí (vía túneles DisplayPort) & Sí (Power Delivery) \\
+			\hline
+			\textbf{Thunderbolt} & Usa conector USB-C & Alto rendimiento, PCIe, vídeo y datos & 40 Gbps o más (según versión) & Sí (obligatorio y certificado) & Sí (mín. 15 W) \\
+			\hline
+			\textbf{HDMI} & HDMI (A, C, D) & Audio y vídeo digital a pantallas & Hasta 48 Gbps (HDMI 2.1) & \textbf{Sí} (nativo) & \textbf{No} \\
+			\hline
+			\textbf{DisplayPort} & DisplayPort / Mini DP & Vídeo y audio de alta tasa de refresco & Según versión (HBR3 / UHBR) & \textbf{Sí} (nativo y vía USB-C \textit{Alt Mode}) & \textbf{No} \\
+			\hline
+			\textbf{Ethernet} & RJ45 (modular) & Conexión a red local / Internet & 1 / 2.5 / 10 Gbps+ & \textbf{No} & Opcional (PoE) \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=\textbf{TIP}]
+		Aunque el conector USB-C sea idéntico visualmente en todos los dispositivos, su funcionamiento interno depende de los protocolos que el fabricante haya decidido implementar en ese puerto específico.
+		
+		Para poder conectar un monitor o televisor \textbf{directamente} a un puerto USB-C, este debe cumplir con alguna de las siguientes características técnicas:
+		
+		\begin{itemize}
+			\item \textbf{DisplayPort Alt Mode} (\textit{Modo alternativo}): Es la tecnología que permite al puerto USB-C desviar los pines de datos para transmitir la señal de vídeo nativa de DisplayPort. Si el puerto no cuenta con esta certificación, \textbf{no dará imagen}.
+			
+			\item \textbf{Compatibilidad con Thunderbolt (3 o 4) o USB4}: Estos estándares sí exigen obligatoriamente la capacidad de transmitir vídeo de alta resolución.
+		\end{itemize}
+	\end{tcolorbox}
+	
+	\subsection{Esquema conexiones}
+	
+	\includegraphics[width=1\textwidth]{IMG/esquema2.png}
+	
+	Estas conexiones son posibles gracias al dock.
+	
+	Proponemos el dock: i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W a un precio de 195,95 € en \href{https://www.ldlc.com/es-es/ficha/PB00630772.html}{LDLC España}.
+	
+	\includegraphics[width=1\textwidth]{IMG/image-1.png}
+	
+	La propuesta del dock i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W es totalmente compatible con el portátil MSI Modern A14 AI F2HMG-009XES. A continuación se detalla la justificación técnica y la evidencia de funcionamiento simultáneo en modo escritorio extendido (1 pantalla integrada + 2 pantallas externas).
+	
+	Tener dos conectores de vídeo físicos en el dock no garantiza el modo extendido por sí solo, pero en esta combinación específica la evidencia técnica se fundamenta en tres pilares arquitectónicos:
+	
+	\subsubsection*{A. Multiplexación por Hardware: Protocolo DisplayPort MST (Multi-Stream Transport)}
+	
+	El puerto USB-C del MSI Modern A14 entrega una señal DisplayPort 1.4 en modo alternativo. El dock i-tec incorpora un controlador interno MST (\textit{Multi-Stream Transport}). A diferencia de un duplicador pasivo (SST), la tecnología MST desglosa el ancho de banda del enlace DisplayPort único del portátil en múltiples flujos de datos independientes, asignando una trama lógica única a cada monitor conectado al dock.
+	
+	\subsubsection*{B. Capacidad Hardware de la GPU (AMD Radeon 780M)}
+	
+	El procesador AMD Ryzen 7 250 cuenta con la GPU integrada AMD Radeon 780M, cuyo motor de pantalla (\textit{Display Engine}) soporta en silicio un máximo de 4 pantallas independientes simultáneas (MSI Matrix Display):
+	
+	\begin{enumerate}
+		\item \textbf{Pipeline 0:} Pantalla integrada del portátil ($1920 \times 1080$ @ 60 Hz).
+		\item \textbf{Pipeline 1:} Monitor externo 1 en el dock (vía flujo MST 1).
+		\item \textbf{Pipeline 2:} Monitor externo 2 en el dock (vía flujo MST 2).
+	\end{enumerate}
+	
+	\subsubsection*{C. Matriz de Ancho de Banda, Resolución y Frecuencia de Refresco}
+	
+	Gracias a que el puerto USB-C del MSI soporta DisplayPort 1.4 con DSC (\textit{Display Stream Compression}) y velocidad de enlace HBR3 (32.4 Gbps brutos / 25.92 Gbps netos), el ancho de banda disponible en el cable permite las siguientes combinaciones de rendimiento en modo extendido simultáneo:
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.3}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			\textbf{Pantalla Integrada (MSI A14)} & \textbf{Monitor Externo 1 (DP 1 del dock)} & \textbf{Monitor Externo 2 (DP 2 o HDMI del dock)} & \textbf{Rendimiento / Modo} \\
+			\hline
+			1080p ($1920\times1080$) @ 60 Hz & 4K ($3840\times2160$) @ 60 Hz & 4K ($3840\times2160$) @ 60 Hz & Escritorio Extendido (3 pantallas independientes) con DSC activado por driver. \\
+			\hline
+			1080p ($1920\times1080$) @ 60 Hz & 1440p ($2560\times1440$) @ 60 Hz & 1440p ($2560\times1440$) @ 60 Hz & Escritorio Extendido (3 pantallas independientes) en HBR3 estándar sin compresión. \\
+			\hline
+			1080p ($1920\times1080$) @ 60 Hz & 1080p ($1920\times1080$) @ 60 Hz & 1080p ($1920\times1080$) @ 60 Hz & Escritorio Extendido (3 pantallas independientes) con consumo de ancho de banda $<$ 40\%. \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	\section{Comparativa de prestaciones.}
+
+	
+	\subsubsection*{MSI Modern A14 AI F2HMG-009XES}
+	\begin{itemize}
+		\item Documentación oficial: \url{https://storage-asset.msi.com/specSheet/es/bnp/Modern\%20A14\%20AI\%20F2HMG-009XES.pdf}
+		\item Reseña del producto (similar): \url{https://www.profesionalreview.com/2022/06/24/msi-modern-14-review/}
+		\item Claves de la reseña:
+		\begin{itemize}[label=$\bullet$]
+			\item \textbf{Diseño y portabilidad:} Destaca por ser un portátil delgado, ligero y con un diseño elegante y sobrio enfocado a la movilidad y la productividad diaria (estudiantes y profesionales de oficina).
+			\item \textbf{Teclado y trackpad:} Ofrece una experiencia de escritura cómoda con un teclado bien espaciado, aunque el panel táctil puede resultar algo justito en tamaño dependiendo de la versión exacta.
+			\item \textbf{Rendimiento:} Ideal para tareas ofimáticas, navegación web y multitarea ligera; no está pensado para gaming pesado o renderizado 3D exigente, pero cumple holgadamente en su gama.
+		\end{itemize}
+		
+	\end{itemize}
+	
+	\subsubsection*{MSI Modern 15 F1MG-499ES}
+	\begin{itemize}
+		\item Documentación oficial: \url{https://storage-asset.msi.com/specSheet/es/bnp/Modern\%2015\%20F1MG-499ES.pdf}
+		\item Reseña del producto (similar): \url{https://www.techradar.com/computing/laptops/msi-modern-15}
+		\item Claves de la reseña:
+		\begin{itemize}[label=$\bullet$]
+			\item \textbf{Pantalla y espacio de trabajo:} Al contar con un chasis de 15.6 pulgadas, ofrece mayor comodidad visual para trabajar con varias ventanas abiertas de forma simultánea en comparación con los modelos de 14 pulgadas.
+			\item \textbf{Conectividad:} Viene bien equipado con múltiples puertos USB y salidas de vídeo, lo que facilita conectar periféricos sin necesidad de adaptadores constantes.
+			\item \textbf{Autonomía y eficiencia:} Está optimizado para ofrecer una buena duración de batería durante una jornada laboral estándar de oficina o estudio, manteniendo un perfil silencioso bajo carga ligera.
+		\end{itemize}
+	\end{itemize}
+	
+	\subsubsection*{Medion SPRCHRGD 14 S2 MD62722}
+	\begin{itemize}
+		\item Documentación oficial: \url{https://cdn.medion.com/downloads/anleitungen/bda_sprchrgd_14s2_en.pdf}
+		\item Reseña del producto: \url{https://www.notebookcheck.org/Intel-se-enfrenta-a-Qualcomm-Analisis-del-Medion-SPRCHRGD-14-S2.990899.0.html}
+		\item Claves de la reseña:
+		\begin{itemize}[label=$\bullet$]
+			\item \textbf{Enfoque de hardware:} Representa una propuesta muy interesante dentro del mercado al integrar la nueva generación de procesadores eficientes (como la competencia directa en rendimiento/eficiencia frente a arquitecturas ARM/Qualcomm), destacando por su bajo consumo energético.
+			\item \textbf{Movilidad y construcción:} Al ser un formato de 14 pulgadas enfocado a la ultraportabilidad, destaca por su ligereza y un chasis robusto para su categoría de precio.
+			\item \textbf{Pantalla y autonomía:} Ofrece una gran relación calidad-precio, con una autonomía de batería sobresaliente gracias a la gestión energética de sus componentes internos.
+		\end{itemize}
+	\end{itemize}
+	
+	\subsubsection*{Lenovo ThinkPad P15v G3}
+	\begin{itemize}
+		\item Documentación oficial: \url{https://download.lenovo.com/pccbbs/mobiles_pdf/p15v_t15p_gen3_ug_es.pdf}
+		\item Reseña del producto: \url{https://laptopmedia.com/review/lenovo-thinkpad-p15v-gen-3-review-a-mobile-workstation-with-an-impressive-display/p5/}
+		\item Claves de la reseña:
+		\begin{itemize}[label=$\bullet$]
+			\item \textbf{Rendimiento profesional:} Al pertenecer a la familia ThinkPad P (Workstation), está diseñado para cargas de trabajo pesadas como diseño CAD, edición de vídeo, programación avanzada y modelado 3D.
+			\item \textbf{Fiabilidad y teclado:} Hereda la mítica calidad de construcción de Lenovo, con uno de los mejores teclados ergonómicos del mercado y estrictas pruebas de durabilidad militar.
+			\item \textbf{Pantalla y expansión:} Cuenta con una pantalla de alta calidad con una precisión de color notable, además de opciones avanzadas de ampliación de memoria RAM y almacenamiento interno, aunque a cambio de un peso y grosor mayores que los modelos MSI o Medion anteriores.
+		\end{itemize}
+	\end{itemize}
+	
+	\subsection{Puntuaciones}
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.25}
+		\begin{tabularx}{\textwidth}{|l|c|c|c|c|c|}
+			\hline
+			\textbf{Criterio} & \textbf{Peso} & \textbf{MSI Modern A14} & \textbf{Medion SPRCHRGD 14} & \textbf{MSI Modern 15} & \textbf{Lenovo ThinkPad P15v} \\
+			\hline
+			Tres pantallas simultáneas & 20,00\,\% & 10 & 10 & 10 & 10 \\
+			\hline
+			RAM y ampliación & 20,00\,\% & 5 & 5 & 10 & 10 \\
+			\hline
+			Rendimiento para virtualización & 20,00\,\% & 10 & 7 & 7 & 7 \\
+			\hline
+			Temperatura, ruido y autonomía & 15,00\,\% & 8 & 8 & 8 & 5 \\
+			\hline
+			Construcción y garantía & 10,00\,\% & 8 & 8 & 8 & 8 \\
+			\hline
+			Almacenamiento y ampliación & 5,00\,\% & 7 & 7 & 7 & 7 \\
+			\hline
+			Pantalla y portabilidad & 5,00\,\% & 10 & 10 & 5 & 10 \\
+			\hline
+			Relación calidad/precio & 5,00\,\% & 10 & 10 & 6 & 10 \\
+			\hline
+			\textbf{Puntuación Final Total} & \textbf{100,00\,\%} & \textbf{83,50\,\%} & \textbf{77,50\,\%} & \textbf{83,00\,\%} & \textbf{83,00\,\%} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+
+	
+	\section{Recomendación razonada y presupuesto de diez equipos.}
+	
+	\subsection{Elección final}
+	
+	
+	Al final, el MSI Modern A14 AI F2HMG-009XES se lleva la puntuación más alta con un 83,50\%, y las razones se entienden rápido. Es el equipo que mejor responde si necesitas un portátil ligero para moverte a diario pero con soltura de sobra para tareas exigentes.
+	
+	Donde más destaca es en el rendimiento puro para virtualización. A la hora de levantar varias máquinas virtuales o trabajar con contenedores, el procesador va muy fino y se nota claramente por encima de los otros candidatos. Además, poder conectar tres pantallas simultáneas sin complicaciones es un puntazo para montar un puesto de trabajo cómodo en cualquier sitio. Que todo esto venga en un chasis de 14 pulgadas fácil de transportar, con buen control de temperatura y a un precio bastante ajustado hace que sea la opción más sensata.
+	
+	Su punto más débil es la ampliación de memoria RAM, donde se queda en un 5. Sin embargo, en el uso real esta pega queda bastante matizada. Al usar una memoria rápida e integrada en placa, se consigue menor latencia en las tareas del procesador, un consumo de batería más bajo y un diseño delgado. Salvo que necesites montar laboratorios gigantescos que requieran decenas de gigabytes adicionales, la velocidad del disco SSD ayuda a que el flujo de trabajo siga siendo muy fluido.
+	
+	En definitiva, por potencia de cálculo, portabilidad y precio, el MSI Modern A14 es la compra más práctica y equilibrada de toda la comparativa.
+	
+	La adquisición del MSI Modern A14 AI F2HMG-009XES se realizará a través del proveedor EU-BUSINESS-STORE-MSI. El equipo incluye 3 años de garantía oficial, lo que asegura cobertura frente a eventuales fallos de hardware o defectos de fabricación y garantiza asistencia técnica durante la vida útil inicial del portátil.
+	
+	\subsubsection*{Limitaciones}
+	
+	\begin{itemize}
+		\item \textbf{RAM no ampliable}: La memoria RAM está soldada en placa y no cuenta con zócalos de expansión, por lo que no es posible sustituirla ni aumentar su capacidad tras la compra.
+		\item 	\textbf{Sin ranura de almacenamiento adicional}: El chasis no incluye un segundo puerto M.2 libre para añadir una segunda unidad sin retirar la principal.
+	\end{itemize}
+	
+	\subsubsection*{Ampliaciones futuras}
+	A pesar de la modularidad contenida propia de los equipos delgados, el margen de mejora del hardware queda definido de la siguiente forma:
+	
+	\begin{itemize}
+		\item \textbf{Sustitución del disco SSD principal}: Aunque no hay un slot extra, la unidad SSD NVMe original sí se puede reemplazar por un módulo M.2 de mayor capacidad (por ejemplo, pasar de la unidad de origen a un SSD de 2 TB). Esta operación requiere la clonación del disco actual o una reinstalación limpia del sistema.
+		\item 	\textbf{Almacenamiento externo de alta velocidad}: La conectividad USB-C / Thunderbolt permite conectar unidades SSD externas de alto rendimiento para alojar máquinas virtuales o archivos pesados sin necesidad de modificar el hardware interno.
+	\end{itemize}
+	
+	\subsection{Presupuesto completo}
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\renewcommand{\arraystretch}{1.3}
+		\begin{tabularx}{\textwidth}{|l|X|c|c|c|}
+			\hline
+			\textbf{Concepto} & \textbf{Producto} & \textbf{Cantidad} & \textbf{Precio unitario} & \textbf{Total} \\
+			\hline
+			\textbf{Portátil} & 
+			MSI Modern A14 AI F2HMG-009XES 
+			\newline \url{https://es-store.msi.com/products/modern-a14-ai-f2hmg-009xes-portatiles} & 
+			10 & 829,00 € & \textbf{8.290,00 €} \\
+			\hline
+			\textbf{Dock} & 
+			i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W 
+			\newline \url{https://www.ldlc.com/es-es/ficha/PB00630772.html} & 
+			10 & 195,95 € & \textbf{1.959,50 €} \\
+			\hline
+			\textbf{Monitor} & 
+			AOC / LG 24'' (modelo económico) 
+			\newline \url{https://www.lg.com/es/monitores/todos-los-monitores/24u411b-b-aeu/} & 
+			20 & 85,00 € & \textbf{1.700,00 €} \\
+			\hline
+			\textbf{Teclado + Ratón} & 
+			LDLC Silent Duo Pack ES (Teclado QWERTY Español + Ratón) 
+			\newline \url{https://www.ldlc.com/es-es/ficha/PB00282303.html} & 
+			10 & 17,95 € & \textbf{179,50 €} \\
+			\hline
+			\multicolumn{4}{|r|}{\textbf{TOTAL GENERAL}} & \textbf{12.129,00 €} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	\subsubsection*{Resumen por categorías}
+	
+	\begin{itemize}
+		\item \textbf{Portátiles (10 unidades):} 8.290,00 € \quad (dentro del límite de 13.000 €)
+		\item \textbf{Docks (10 unidades):} 1.959,50 €
+		\item \textbf{Monitores (20 unidades):} 1.700,00 €
+		\item \textbf{Teclados + Ratones (10 packs):} 179,50 €
+		\item \textbf{Coste total de la solución:} \textbf{12.129,00 €}
+	\end{itemize}
+	
+	\section{Posibilidades de mantenimiento y ampliación.}
+	
+	Adoptar una configuración estándar idéntica para los 10 puestos durante un ciclo de vida prolongado (5 años) ofrece ventajas estratégicas a nivel operativo y económico:
+	
+	\begin{itemize}
+		\item \textbf{Gestión de imágenes y despliegue centralizado} (Clonación de SO): Al contar con un modelo de portátil único (MSI Modern A14), los departamentos de IT pueden crear una única imagen de sistema operativo (Drivers, software corporativo, configuraciones de red y seguridad) y desplegarla masivamente mediante PXE o carpetas de clonación. Si el parque fuera heterogéneo, habría que mantener imágenes de software independientes para cada modelo.
+		\item 	\textbf{Estandarización de Puestos Calientes} (Hot-Desking y Flexibilidad): La combinación del dock i-tec USB-C Power Delivery y los monitores AOC permite que cualquier empleado conecte un único cable USB-C a su portátil para tener alimentación de 100W, doble pantalla QHD, red local gigabit y periféricos (teclado/ratón) funcionando al instante, independientemente del escritorio en el que se siente.
+		\item 	\textbf{Optimización de stock de repuestos y sustituciones de cortesía}: Mantener la misma referencia de periféricos y cargadores facilita disponer de un pequeño stock de repuesto (p. ej., un portátil o dock extra). Si un equipo falla, se sustituye en minutos por el de repuesto cargándole la misma imagen de sistema sin incurrir en incompatibilidades de cargador, funda o réplica de cables.
+		\item 	\textbf{Reducción de costes de soporte técnico} (TCO - Total Cost of Ownership): Los técnicos de soporte resuelven incidencias más rápido al enfrentarse a una arquitectura idéntica de hardware, BIOS/Firmware y controladores. La curva de aprendizaje de incidencias disminuye a cero tras los primeros meses de despliegue.
+		\item 	\textbf{Gestión de garantías y contratos con fabricantes}: Lidiar con un único proveedor para el equipo principal (MSI) simplifica la gestión de garantías corporativas de 5 años, tramitación de RMA y peticiones de soporte de drivers/firmware actualizados a lo largo del tiempo.
+	\end{itemize}
+	
+	\subsection{Ampliación}
+	\textbf{Almacenamiento (SSD NVMe M.2):}
+	\begin{itemize}
+		\item \textit{Especificación:} Dispone de 1 ranura M.2 compatible con unidades \textbf{NVMe PCIe Gen4 x4}.
+		\item \textit{Mejora:} Puedes sustituir o añadir un SSD de mayor capacidad (1\,TB o 2\,TB) si requieres almacenar grandes volúmenes de datos, proyectos o máquinas virtuales. \textit{Nota del fabricante:} Se recomienda consultar con un servicio técnico oficial o autorizado para realizar la sustitución de forma segura y evitar daños en la carcasa o el conector.
+	\end{itemize}
+	\section{Conclusión}
+	
+	La adquisición de los diez puestos de trabajo docentes —compuestos por el portátil MSI Modern A14 AI F2HMG-009XES y las estaciones de acoplamiento i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W— cubre con total solvencia las necesidades operativas del ciclo formativo de ASIR.
+	
+	Técnicamente, los 32 GB de RAM de partida (en configuración soldada) ofrecen un margen excelente para ejecutar con fluidez las máquinas virtuales del escenario inicial. Al tratarse de una cantidad tan generosa, no representa ninguna limitación de cara al futuro; además, para cargas de trabajo adicionales, entornos de desarrollo o simulaciones intensivas, la virtualización tradicional puede complementarse o sustituirse eficientemente mediante contenedores Docker u otras tecnologías ligeras de virtualización a nivel de sistema operativo. Esto se complementa con la fácil sustitución de la unidad SSD NVMe y una gran longevidad operativa.
+	
+	Económicamente, el lote completo cumple estrictamente con el techo presupuestario asignado, dejando un margen de ahorro destinado a imprevistos o material complementario para el departamento.
+	
+	Por último, estandarizar diez equipos idénticos simplifica la gestión informática del centro y el despliegue del sistema operativo Ubuntu 24.04, optimizando el soporte técnico diario bajo un entorno profesional de software libre.
+	
+	\section{Bibliografía}
+	
+	\printbibliography[heading=none]
+	
+\end{document}
