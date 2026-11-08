@@ -1,45 +1,36 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Análisis de necesidades y componentes.}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Qué función tiene cada componente y modelo elegido}{4}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}CPU}{4}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}RAM}{4}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}Disco de estado sólido}{4}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {1.1.4}Tarjeta gráfica}{4}{subsubsection.1.1.4}%
-\contentsline {subsubsection}{\numberline {1.1.5}Placa base}{4}{subsubsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.6}Interfaces de entrada/salida (I/O)}{4}{subsubsection.1.1.6}%
-\contentsline {subsection}{\numberline {1.2}Diferencias entre núcleos físicos, hilos lógicos y arquitectura x86-64/ARM. Justificad la elección de arquitectura.}{5}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Diferencias entre núcleos físicos e hilos lógicos}{5}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}Arquitectura x86-64 vs. ARM}{5}{subsubsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.3}Explicad por qué importan la ampliación de RAM y SSD, la refrigeración, el consumo y el ruido.}{6}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Diferenciad los requisitos imprescindibles de los deseables y justificad vuestra clasificación.}{7}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Cálculos de virtualización.}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Calculad la RAM total asignada a las VM y la que queda para el anfitrión con 32 y 64 GB de RAM. Indicad si la memoria restante es suficiente y justificadlo.}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}2. Proponed cuántas vCPU asignaríais a cada VM. Explicad qué problemas puede generar asignar demasiadas.}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Repartid 1 TB de almacenamiento entre el anfitrión, aplicaciones, archivos, discos virtuales y espacio libre. Indicad las capacidades en una tabla.}{8}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}4. Valorad el comportamiento esperado durante el uso simultáneo de las cuatro VM.}{9}{subsection.2.4}%
+\contentsline {subsection}{\numberline {1.1}Requisitos}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Qué función tiene cada componente y modelo elegido}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Justificaciones}{6}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Cálculos de virtualización.}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}RAM}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}CPU}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Disco de estado sólido}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Simulación de rendimiento}{10}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Esquema funcional y comparativa de sistemas operativos.}{10}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Dibujad un esquema funcional que relacione hardware físico, sistema operativo anfitrión, hipervisor, sistemas invitados, aplicaciones y usuarios. Explicad la función de cada elemento.}{10}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Comparad versiones concretas de Windows 11 y Ubuntu Desktop en: arquitectura, requisitos mínimos y recomendados, licencia, coste, compatibilidad con aplicaciones y virtualización, ventajas e inconvenientes.}{11}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Elegid y justificad qué sistema operativo instalaríais como anfitrión en el parque de portátiles.}{11}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Tabla de compatibilidad del software.}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Consultad la documentación oficial de VirtualBox, VMware, Visual Studio y Cisco Packet Tracer. Para cada aplicación registrad versión analizada, sistemas operativos admitidos, arquitectura, RAM y otros requisitos relevantes.}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Explicad si la configuración que proponéis es compatible y qué problemas podría causar elegir hardware o sistema operativo inadecuados. No confundáis Visual Studio con Visual Studio Code.}{12}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Cuatro fichas técnicas y fuentes verificables.}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Buscad cuatro portátiles de al menos dos fabricantes, con disponibilidad y precio verificables en España. Para cada uno preparad una ficha con:}{14}{subsection.5.1}%
-\contentsline {section}{\numberline {6}Clasificación de periféricos y esquema de conexiones.}{17}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Clasificad monitor, teclado, ratón, almacenamiento externo y adaptadores como periféricos de entrada, salida o entrada/salida, según corresponda.}{17}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Indicad cómo se comunican y comparad USB-A, USB-C, USB4, Thunderbolt, HDMI, DisplayPort y Ethernet. Aclarad que la forma USB-C no garantiza salida de vídeo.}{18}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Diseñad y dibujad un esquema de conexión de portátil, monitor HDMI, monitor DisplayPort, teclado, ratón, Ethernet y alimentación.}{19}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Si proponéis un dock, indicad modelo, precio y compatibilidad con el portátil. Aportad evidencia de que funcionan simultáneamente la pantalla integrada y las dos pantallas externas en modo escritorio extendido, teniendo en cuenta puertos, resolución y frecuencia. Tener dos conectores de vídeo no constituye prueba suficiente.}{19}{subsubsection.6.3.1}%
-\contentsline {section}{\numberline {7}Comparativa de prestaciones.}{21}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Consultad documentación de fabricante y, cuando existan, pruebas independientes de rendimiento, autonomía, temperatura y ruido. Citad las fuentes y evitad comparar ensayos realizados en condiciones muy distintas.}{21}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Construid una hoja de cálculo con puntuaciones de 0 a 10, justificación y estos pesos:}{21}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Desglose por Modelo}{22}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Recomendación razonada y presupuesto de diez equipos.}{23}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Seleccionad un equipo y su configuración exacta. Justificad por qué es la mejor elección frente a las otras tres.}{23}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Presentad proveedor, garantía, ventajas, limitaciones y ampliaciones futuras.}{23}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Preparad un presupuesto para 10 portátiles (máximo 13.000 € en portátiles, IVA incluido) y, por separado, el coste de diez docks/adaptadores y demás accesorios necesarios. Calculad también el coste completo de la solución.}{24}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Posibilidades de mantenimiento y ampliación.}{24}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Explicad cómo favorece vuestra elección el mantenimiento de un parque homogéneo durante cinco años}{24}{subsection.9.1}%
-\contentsline {section}{\numberline {10}Conclusión}{25}{section.10}%
-\contentsline {section}{\numberline {11}Bibliografía}{25}{section.11}%
+\contentsline {subsection}{\numberline {3.1}VM y esquema funcional}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Windows 11 vs Ubuntu Desktop}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Elección final de SO}{12}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Tabla de compatibilidad del software.}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Consultad la documentación oficial de VirtualBox, VMware, Visual Studio y Cisco Packet Tracer. Para cada aplicación registrad versión analizada, sistemas operativos admitidos, arquitectura, RAM y otros requisitos relevantes.}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Explicad si la configuración que proponéis es compatible y qué problemas podría causar elegir hardware o sistema operativo inadecuados. No confundáis Visual Studio con Visual Studio Code.}{13}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Cuatro fichas técnicas y fuentes verificables.}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Buscad cuatro portátiles de al menos dos fabricantes, con disponibilidad y precio verificables en España. Para cada uno preparad una ficha con:}{15}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Clasificación de periféricos y esquema de conexiones.}{18}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Clasificad monitor, teclado, ratón, almacenamiento externo y adaptadores como periféricos de entrada, salida o entrada/salida, según corresponda.}{18}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Indicad cómo se comunican y comparad USB-A, USB-C, USB4, Thunderbolt, HDMI, DisplayPort y Ethernet. Aclarad que la forma USB-C no garantiza salida de vídeo.}{19}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Diseñad y dibujad un esquema de conexión de portátil, monitor HDMI, monitor DisplayPort, teclado, ratón, Ethernet y alimentación.}{20}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Si proponéis un dock, indicad modelo, precio y compatibilidad con el portátil. Aportad evidencia de que funcionan simultáneamente la pantalla integrada y las dos pantallas externas en modo escritorio extendido, teniendo en cuenta puertos, resolución y frecuencia. Tener dos conectores de vídeo no constituye prueba suficiente.}{20}{subsubsection.6.3.1}%
+\contentsline {section}{\numberline {7}Comparativa de prestaciones.}{22}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Consultad documentación de fabricante y, cuando existan, pruebas independientes de rendimiento, autonomía, temperatura y ruido. Citad las fuentes y evitad comparar ensayos realizados en condiciones muy distintas.}{22}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Construid una hoja de cálculo con puntuaciones de 0 a 10, justificación y estos pesos:}{23}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Desglose por Modelo}{23}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Recomendación razonada y presupuesto de diez equipos.}{24}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Seleccionad un equipo y su configuración exacta. Justificad por qué es la mejor elección frente a las otras tres.}{24}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Presentad proveedor, garantía, ventajas, limitaciones y ampliaciones futuras.}{24}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Preparad un presupuesto para 10 portátiles (máximo 13.000 € en portátiles, IVA incluido) y, por separado, el coste de diez docks/adaptadores y demás accesorios necesarios. Calculad también el coste completo de la solución.}{25}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Posibilidades de mantenimiento y ampliación.}{25}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Explicad cómo favorece vuestra elección el mantenimiento de un parque homogéneo durante cinco años}{25}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Conclusión}{26}{section.10}%
+\contentsline {section}{\numberline {11}Bibliografía}{26}{section.11}%

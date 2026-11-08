@@ -28,6 +28,8 @@
 \usepackage{tcolorbox}   % para la caja del TIP
 \usepackage{tocloft}
 \renewcommand{\cftdotsep}{4.5}     % Más separados (valor por defecto ≈ 4.5)
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
 
 \nocite{*} 
 
@@ -55,8 +57,55 @@
 	
 	\section{Análisis de necesidades y componentes.}
 	
+	El departamento de informática de un centro educativo necesita renovar diez portátiles utilizados por su profesorado. Los equipos se emplean en programación, administración de sistemas, virtualización, simulación de redes, preparación de clases y presentaciones.
+	
+	La dirección necesita un informe técnico de compra que compare distintas opciones del
+	mercado español y justifique una propuesta fiable y mantenible durante, al menos, cinco
+	años.
+	
+	Para la elección del portátil se han tenido en cuenta los requisitos marcados por el centro.
+	
+	ATENCIÓN: Cuando no se especifique el equipo nos referimos al portátil elegido: MSI Modern A14 AI F2HMG-009XES.
+	
+	\subsection{Requisitos}
+	
+	\begin{table}[H]
+		\centering
+
+		\begin{tabularx}{\textwidth}{|l|X|}
+			\hline
+			\textbf{Categoría} & \textbf{Especificación / Detalle} \\
+			\hline
+			{Procesador} & {Intel o AMD, arquitectura x86-64} \\
+			\hline
+			{RAM} & {}32 GB como mínimo; se valora ampliación a 64 GB \\
+			\hline
+			{Disco} & {SSD NVMe de 1 TB como mínimo; preferiblemente sustituible} \\
+			\hline
+			{Pantalla} & {14 pulgadas; preferentemente 1920 × 1200 o superior} \\
+			\hline
+			{Gráfica} & {Integrada suficiente} \\
+			\hline
+			{Puertos} & {USB-A, HDMI y USB-C con salida de vídeo} \\
+			\hline
+			{Red} & {Wi-Fi moderno y Ethernet integrado o por adaptador/dock} \\
+			\hline
+			{Movilidad} & {Preferentemente 1,2–1,5 kg} \\
+			\hline
+			{Sistemas operativos} & {Compatible con Windows 11 y Ubuntu} \\
+			\hline
+			{Teclado} & {Español} \\
+			\hline
+			{Otros} & {Buena refrigeración, poco ruido, construcción duradera y garantía} \\
+			\hline
+			{Otras indicaciones} & {En el despacho de cada docente se utilizará un monitor HDMI y otro DisplayPort, además del teclado, ratón y conexión Ethernet. Se valora poder conectarlo todo mediante un solo cable a un dock.} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	A la hora de elegir cada componente debemos tener en cuenta qué función tiene cada uno
 	\subsection{Qué función tiene cada componente y modelo elegido}
-	\subsubsection{CPU}
+	\subsubsection*{CPU}
 	
 	\textbf{Modelo}: AMD Ryzen™ 7 250 (8 cores, Max Boost Clock 3.3 GHz)
 	
@@ -64,34 +113,34 @@
 	
 	\textbf{Características importantes}: Sus 8 núcleos aportan una excelente capacidad multitarea, permitiendo ejecutar aplicaciones de ofimática avanzada, navegación pesada y software profesional de forma fluida.
 
-	\subsubsection{RAM}
+	\subsubsection*{RAM}
 	\textbf{Modelo}: 32 GB (16 GB * 2) DDR5
 	
 	\textbf{Función}: Memoria de acceso aleatorio donde se cargan de forma temporal los datos de los programas y archivos que estás usando activamente para un acceso ultra rápido.
 	
 	\textbf{Características importantes}: La capacidad de 32 GB en doble canal (dual-channel) es ideal para mantener decenas de pestañas abiertas, máquinas virtuales o programas pesados sin ralentizaciones.
 
-	\subsubsection{Disco de estado sólido}
+	\subsubsection*{Disco de estado sólido}
 	\textbf{Modelo}: 1 TB NVMe SSD PCIe Gen4
 	
 	\textbf{Función}: Almacenamiento permanente de alta velocidad para el sistema operativo, programas y archivos personales.
 	
 	\textbf{Características importantes}: Al ser NVMe PCIe Gen4, ofrece tasas de lectura y escritura sumamente rápidas (arranque del sistema en pocos segundos y transferencia de archivos instantánea).
 
-	\subsubsection{Tarjeta gráfica}
+	\subsubsection*{Tarjeta gráfica}
 	\textbf{Modelo}: AMD Radeon™ Graphics (Integrada)
 	
 	\textbf{Función}: Procesador gráfico encargado de renderizar la interfaz visual, vídeos y gráficos en pantalla.
 	
 	\textbf{Características importantes}: Al estar integrada en el procesador, comparte memoria con la RAM. Es perfecta para tareas multimedia de alta definición, reproducción de vídeo 4K y ofimática, ahorrando batería frente a gráficas dedicadas.
-	\subsubsection{Placa base}
+	\subsubsection*{Placa base}
 	
 	\textbf{Modelo}: Propietaria de MSI (Chipset SoC integrado / Serie MS-14SK)
 	
 	\textbf{Función}: El circuito impreso principal que conecta físicamente todos los componentes del portátil (CPU, RAM, almacenamiento y puertos) permitiendo su comunicación.
 	
 	\textbf{Características importantes}: Su diseño compacto está optimizado para el chasis ultrafino de 14 pulgadas del portátil, integrando conectividad moderna como Wi-Fi 6E y controladoras de alta velocidad.
-	\subsubsection{Interfaces de entrada/salida (I/O)}
+	\subsubsection*{Interfaces de entrada/salida (I/O)}
 	
 	\textbf{Modelo}
 	
@@ -107,8 +156,9 @@
 	
 	\textbf{Características importantes}: Los puertos USB-C con Power Delivery y DisplayPort aportan una gran versatilidad (permiten cargar el portátil y conectar monitores externos con un solo cable), mientras que el HDMI 2.1 garantiza salida de vídeo fluida a pantallas 4K.
 	
-	\subsection{Diferencias entre núcleos físicos, hilos lógicos y arquitectura x86-64/ARM. Justificad la elección de arquitectura.}
-	\subsubsection{Diferencias entre núcleos físicos e hilos lógicos}
+	\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=\textbf{TIP}]
+	
+	\subsubsection*{Diferencias entre núcleos físicos e hilos lógicos}
 	\textbf{Núcleo físico} (Physical Core):
 	
 	Es la unidad de procesamiento de hardware real dentro del silicio de la CPU. Dispone de sus propias unidades aritmético-lógicas (ALU), registros, unidad de punto flotante (FPU) y cachés de nivel 1 y 2 (L1/L2). Ejecuta instrucciones de forma totalmente independiente e simultánea a nivel físico.
@@ -119,7 +169,7 @@
 	
 	\textbf{Impacto práctico}: Un procesador de 8 núcleos físicos con SMT (Simultaneous Multithreading) muestra 16 hilos lógicos al sistema operativo, ofreciendo entre un 15\% y un 30\% más de rendimiento en tareas multihilo paralelas (compilación de código, renderizado, cálculo distribuido) respecto a un procesador sin SMT.
 	
-	\subsubsection{Arquitectura x86-64 vs. ARM}
+	\subsubsection*{Arquitectura x86-64 vs. ARM}
 	\subsubsection*{x86-64 (CISC - Complex Instruction Set Computer):}
 	
 	\textbf{Diseño}: Utiliza instrucciones de longitud variable y alta complejidad, capaces de ejecutar múltiples operaciones internas en una sola orden.
@@ -135,9 +185,11 @@
 	\textbf{Ecosistema}: Diseñada por ARM Ltd. y licenciada a fabricantes como Apple (Apple Silicon), Qualcomm (Snapdragon) o MediaTek.
 	
 	\textbf{Filosofía}: Prioriza la eficiencia energética por vatio, ofreciendo menor consumo eléctrico, menor emisión de calor y mayor duración de batería en dispositivos móviles y ultrabooks.
+\end{tcolorbox}
+	\subsection{Justificaciones}
+	\textbf{Arquitectura x64-86}:
 	
-	\subsubsection*{Justificación de la elección de x86-64 para tus requisitos}
-	Para el perfil de portátil buscado (1.000–1.300 €, 32 GB ampliables a 64 GB, dual boot Windows 11 + Ubuntu y 2 monitores externos), la arquitectura x86-64 es la única opción que cumple íntegramente las especificaciones por las siguientes razones:
+	Para el perfil de portátil buscado (1.000–1.300 €, 32 GB ampliables a 64 GB, ejecución nativa de Windows 11 o Ubuntu y 2 monitores externos), la arquitectura x86-64 es la única opción que cumple íntegramente las especificaciones por las siguientes razones:
 	
 	\textbf{Ampliación de memoria RAM por módulos (SODIMM)}:
 	
@@ -161,7 +213,7 @@
 	
 	Las GPU integradas de AMD e Intel actuales en x86-64 (Radeon 780M / Intel Arc) soportan de forma nativa hasta 3 o 4 pantallas independientes mediante el control de bus DisplayPort/HDMI directo, asegurando que ambos monitores externos funcionen sin depender de controladores USB de terceros (como DisplayLink).
 	
-	\subsection{Explicad por qué importan la ampliación de RAM y SSD, la refrigeración, el consumo y el ruido.}
+	A continuación, se detalla por qué son importantes algunas características:
 	\begin{itemize}
 		\item Ampliación de RAM y SSD	
 		\begin{itemize}
@@ -180,7 +232,7 @@
 			\item El perfil sonoro del sistema de refrigeración influye en la concentración y la fatiga cognitiva durante jornadas de trabajo prolongadas. Los ventiladores pequeños a altas revoluciones generan silbidos agudos altamente molestos, mientras que un sistema térmico amplio con palas de mayor tamaño mueve un volumen de aire equivalente produciendo un soplido grave y discreto. Una curva de ventilación optimizada en el firmware permite que el equipo funcione en modo completamente silencioso durante la navegación o edición de texto, activando los ventiladores progresivamente solo bajo cargas altas.
 		\end{itemize}
 	\end{itemize}
-	\subsection{Diferenciad los requisitos imprescindibles de los deseables y justificad vuestra clasificación.}
+	De cualquier forma, debemos diferenciar entre requisitos imprescindibles de los deseables, para poder elegir el portátil adecuado.
 	
 	\begin{tabular}{|l|p{4cm}|p{8.25cm}|}
 		\hline
@@ -213,6 +265,7 @@
 	\end{tabular}
 	
 	\section{Cálculos de virtualización.}
+	\subsection{RAM}
 	En los requisitos se especifican la necesidad de utilizar las siguientes máquinas virtuales:
 	
 	\begin{tabular}{|c|l|c|}
@@ -229,7 +282,7 @@
 		\hline
 	\end{tabular}
 	
-	\subsection{Calculad la RAM total asignada a las VM y la que queda para el anfitrión con 32 y 64 GB de RAM. Indicad si la memoria restante es suficiente y justificadlo.}
+	Teniendo en cuenta las máquinas a utilizar calcularemos los GB que necesitamos (16, 32, 64 GB, etc.).
 	
 	Para calcular la memoria restante debemos sumar los siguientes datos (aproximados):
 	
@@ -241,7 +294,7 @@
 	
 	Por tanto, el consumo total es de \textbf{27 GB}.
 	
-	\subsubsection*{Memoria restante para cada configuración}
+	Si el consumo total es de \textbf{27 GB} necesitaremos un portátil de al menos 32 GB.
 	
 	\begin{itemize}
 		\item \textbf{Equipo de 32 GB:} 5 GB restantes.
@@ -259,7 +312,7 @@
 		\end{itemize}
 	\end{itemize}
 	
-	\subsection{2. Proponed cuántas vCPU asignaríais a cada VM. Explicad qué problemas puede generar asignar demasiadas.}
+	\subsection{CPU}
 	
 	\subsubsection*{A. Propuesta de asignación de vCPU por Máquina Virtual}
 	
@@ -282,7 +335,9 @@
 		\item \textbf{Sobrecarga del Hipervisor:} Gestionar un exceso de cambios de contexto entre hilos virtuales consume ciclos de CPU útiles, restando rendimiento general al equipo.
 	\end{enumerate}
 	
-	\subsection{Repartid 1 TB de almacenamiento entre el anfitrión, aplicaciones, archivos, discos virtuales y espacio libre. Indicad las capacidades en una tabla.}
+	\subsection{Disco de estado sólido}
+	
+	Por los requerimientos exigidos necesitamos al menos 1 TB de almacenamiento de estado sólido de alta velocidad. A continuación, una tabla que explica como se reparte el almacenamiento.
 	
 	\begin{tabular}{|l|c|}
 		\hline
@@ -302,7 +357,7 @@
 		\hline
 	\end{tabular}
 	
-	\subsection{4. Valorad el comportamiento esperado durante el uso simultáneo de las cuatro VM.}
+	\subsection{Simulación de rendimiento}
 	
 	\subsubsection*{Gestión de memoria RAM en el MSI Modern A14}
 	
@@ -326,11 +381,21 @@
 	
 	\section{Esquema funcional y comparativa de sistemas operativos.}
 	
-	\subsection{Dibujad un esquema funcional que relacione hardware físico, sistema operativo anfitrión, hipervisor, sistemas invitados, aplicaciones y usuarios. Explicad la función de cada elemento.}
+	
+	
+	\subsection{VM y esquema funcional}
+	
+	Lo primero que nos preguntamos es: ¿qué es una máquina virtual o Virtual Machine (VM)? ¿Para qué se utiliza?
+	
+	Es un programa que se ejecuta en un ordenador (anfitrión) pero que simula el funcionamiento de otro ordenador y puede ejecutar cualquier software como si fuese un ordenador real. Por ello, es muy utilizado para realizar pruebas y evitar pérdidas en el equipo anfitrión. También es una buena manera de echar un vistazo a un sistema operativo diferente al que usas habitualmente.
+	
+	Esquema del funcionamiento del sistema operativo con elementos tales como: hardware físico, sistema operativo anfitrión, usuarios, aplicaciones, procesos e hipervisor.
 	
 	\includegraphics[width=1\textwidth]{IMG/image-2.png}
 	
-	\subsection{Comparad versiones concretas de Windows 11 y Ubuntu Desktop en: arquitectura, requisitos mínimos y recomendados, licencia, coste, compatibilidad con aplicaciones y virtualización, ventajas e inconvenientes.}
+	\subsection{Windows 11 vs Ubuntu Desktop}
+	
+	Comparativa detallada entre Windows 11 y Ubuntu Desktop, que son de los sistemas operativos más utilizados de la actualidad (por algo será).
 	
 	\begin{table}[H]
 		\centering
@@ -437,7 +502,7 @@
 		\end{tabularx}
 	\end{table}
 	
-	\subsection{Elegid y justificad qué sistema operativo instalaríais como anfitrión en el parque de portátiles.}
+	\subsection{Elección final de SO}
 	
 	Para el parque de portátiles utilizaríamos Ubuntu 24.04 LTS que es compatible con todo el software requerido para su trabajo.
 	
@@ -452,6 +517,8 @@
 	\end{itemize}
 	
 	\section{Tabla de compatibilidad del software.}
+	
+	Tabla detallada que especifica sistemas operativos admitidos, arquitectura, RAM y otros requisitos relevantes del software que vamos a utilizar (VirtualBox, VMWare, VS Code, )
 	
 	\subsection{Consultad la documentación oficial de VirtualBox, VMware, Visual Studio y Cisco Packet Tracer. Para cada aplicación registrad versión analizada, sistemas operativos admitidos, arquitectura, RAM y otros requisitos relevantes.}
 	

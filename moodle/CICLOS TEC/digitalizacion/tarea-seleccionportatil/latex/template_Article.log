@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.9)  8 NOV 2026 09:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.9)  8 NOV 2026 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,13 +972,13 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count472
 \@quotereset=\count473
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 43
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 45
 .
 (C:\Program Files\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 43.
+(Font)              scaled to size 9.49997pt on input line 45.
 
 
 LaTeX Warning: Unused global option(s):
@@ -992,26 +992,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `template_Article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1074,7 +1074,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 45.
 (template_Article.out) (template_Article.out)
 \@outlinefile=\write5
 \openout5 = `template_Article.out'.
@@ -1094,32 +1094,32 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'template_Article.bbl' found.
 
 (template_Article.bbl)
-Package biblatex Info: Reference section=0 on input line 43.
-Package biblatex Info: Reference segment=0 on input line 43.
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
 \c@lstlisting=\count480
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 45.
+(Font)              scaled to size 16.41594pt on input line 47.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 45.
+(Font)              scaled to size 11.39996pt on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 45.
+(Font)              <12> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 45.
+(Font)              <8> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 45.
-<IMG/image-4.png, id=182, 903.375pt x 903.375pt>
+(Font)              <6> on input line 47.
+<IMG/image-4.png, id=146, 903.375pt x 903.375pt>
 File: IMG/image-4.png Graphic file (type png)
 <use IMG/image-4.png>
-Package pdftex.def Info: IMG/image-4.png  used on input line 47.
+Package pdftex.def Info: IMG/image-4.png  used on input line 49.
 (pdftex.def)             Requested size: 500.484pt x 500.49687pt.
  [1
 
 {C:/Users/PC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files
 /MiKTeX/fonts/enc/dvips/base/8r.enc} <./IMG/image-4.png>]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 52.
+(Font)              scaled to size 13.67995pt on input line 54.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 52.
+(Font)              scaled to size 13.67995pt on input line 54.
  (template_Article.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
@@ -1130,27 +1130,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
- [2]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 4
-1.
-
-(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
+2.
+ (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 41.
-)
+(Font)              scaled to size 9.49997pt on input line 32.
+
+[2])
 \tf@toc=\write6
 \openout6 = `template_Article.toc'.
 
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 54.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
+(Font)              scaled to size 9.49997pt on input line 56.
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 54.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
+(babel)             Reported on input line 56.
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1161,9 +1160,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 58.
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
+(Font)              scaled to size 11.39996pt on input line 70.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1173,10 +1172,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
 [4]
-LaTeX Info: Redefining \. on input line 153.
-LaTeX Info: Redefining \% on input line 153.
-LaTeX Info: Redefining \. on input line 153.
-LaTeX Info: Redefining \% on input line 153.
+LaTeX Info: Redefining \. on input line 189.
+LaTeX Info: Redefining \% on input line 189.
+LaTeX Info: Redefining \. on input line 189.
+LaTeX Info: Redefining \% on input line 189.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1186,39 +1185,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
 [5]
-Underfull \hbox (badness 3780) in paragraph at lines 195--195
-[]|\T1/phv/m/n/10 14 pul-ga-das; pre-fe-ren-te-
- []
+LaTeX Info: Redefining \. on input line 205.
+LaTeX Info: Redefining \% on input line 205.
+LaTeX Info: Redefining \. on input line 205.
+LaTeX Info: Redefining \% on input line 205.
 
-
-Underfull \hbox (badness 1824) in paragraph at lines 199--199
-[]|\T1/phv/m/n/10 Pantalla in-te-gra-da y dos
- []
-
-
-Underfull \hbox (badness 2573) in paragraph at lines 199--199
-\T1/phv/m/n/10 mo-ni-to-res ex-ter-nos in-de-
- []
-
-
-Underfull \hbox (badness 3343) in paragraph at lines 203--203
-\T1/phv/m/n/10 in-te-gra-do o por adap-ta-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]|\T1/phv/m/n/10 Preferentemente 1,2^^U1,5
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 207--207
-[]|\T1/phv/m/n/10 Compatible con Win-dows
- []
-
-LaTeX Info: Redefining \. on input line 215.
-LaTeX Info: Redefining \% on input line 215.
-LaTeX Info: Redefining \. on input line 215.
-LaTeX Info: Redefining \% on input line 215.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.48717pt, for example:
@@ -1227,11 +1198,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
 [6]
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
+Underfull \hbox (badness 3780) in paragraph at lines 247--247
+[]|\T1/phv/m/n/10 14 pul-ga-das; pre-fe-ren-te-
+ []
 
+
+Underfull \hbox (badness 1824) in paragraph at lines 251--251
+[]|\T1/phv/m/n/10 Pantalla in-te-gra-da y dos
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 251--251
+\T1/phv/m/n/10 mo-ni-to-res ex-ter-nos in-de-
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 255--255
+\T1/phv/m/n/10 in-te-gra-do o por adap-ta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+[]|\T1/phv/m/n/10 Preferentemente 1,2^^U1,5
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 259--259
+[]|\T1/phv/m/n/10 Compatible con Win-dows
+ []
+
+LaTeX Info: Redefining \. on input line 267.
+LaTeX Info: Redefining \% on input line 267.
+LaTeX Info: Redefining \. on input line 267.
+LaTeX Info: Redefining \% on input line 267.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.48717pt, for example:
@@ -1240,18 +1239,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
 [7]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 249.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 249.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 278.
-LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 9.49997pt on input line 278.
-LaTeX Info: Redefining \. on input line 310.
-LaTeX Info: Redefining \% on input line 310.
-LaTeX Info: Redefining \. on input line 310.
-LaTeX Info: Redefining \% on input line 310.
+LaTeX Info: Redefining \. on input line 300.
+LaTeX Info: Redefining \% on input line 300.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1261,20 +1250,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
 [8]
-<IMG/image-2.png, id=299, 805.0075pt x 433.62pt>
-File: IMG/image-2.png Graphic file (type png)
-<use IMG/image-2.png>
-Package pdftex.def Info: IMG/image-2.png  used on input line 331.
-(pdftex.def)             Requested size: 500.484pt x 269.58267pt.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 302.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 9.49997pt on input line 302.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 331.
+LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
+(Font)              scaled to size 9.49997pt on input line 331.
+LaTeX Info: Redefining \. on input line 365.
+LaTeX Info: Redefining \% on input line 365.
+LaTeX Info: Redefining \. on input line 365.
+LaTeX Info: Redefining \% on input line 365.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 331--332
-[][] 
- []
-
-LaTeX Info: Redefining \. on input line 333.
-LaTeX Info: Redefining \% on input line 333.
-LaTeX Info: Redefining \. on input line 333.
-LaTeX Info: Redefining \% on input line 333.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.48717pt, for example:
@@ -1283,140 +1271,144 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
 [9]
+LaTeX Info: Redefining \. on input line 391.
+LaTeX Info: Redefining \% on input line 391.
+LaTeX Info: Redefining \. on input line 391.
+LaTeX Info: Redefining \% on input line 391.
+ [10]
+<IMG/image-2.png, id=268, 805.0075pt x 433.62pt>
+File: IMG/image-2.png Graphic file (type png)
+<use IMG/image-2.png>
+Package pdftex.def Info: IMG/image-2.png  used on input line 394.
+(pdftex.def)             Requested size: 500.484pt x 269.58267pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 337.
-LaTeX Info: Redefining \. on input line 439.
-LaTeX Info: Redefining \% on input line 439.
- [10 <./IMG/image-2.png>]
-LaTeX Info: Redefining \. on input line 450.
-LaTeX Info: Redefining \% on input line 450.
-LaTeX Info: Redefining \. on input line 450.
-LaTeX Info: Redefining \% on input line 450.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.58723pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.58723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
-
-[11]
+(Font)              scaled to size 7.59998pt on input line 402.
+LaTeX Info: Redefining \. on input line 504.
+LaTeX Info: Redefining \% on input line 504.
+LaTeX Info: Redefining \. on input line 504.
+LaTeX Info: Redefining \% on input line 504.
+ [11 <./IMG/image-2.png>]
+LaTeX Info: Redefining \. on input line 517.
+LaTeX Info: Redefining \% on input line 517.
+LaTeX Info: Redefining \. on input line 517.
+LaTeX Info: Redefining \% on input line 517.
+ [12]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 460.
+(Font)              scaled to size 6.64998pt on input line 527.
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 []|\T1/phv/m/n/7 VMware Works-ta-tion Pro
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 533--533
+Underfull \hbox (badness 5878) in paragraph at lines 600--600
 \T1/phv/m/n/7 Arm ex-pe-ri-men-tal), 10,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 []\T1/phv/b/n/7 macOS In-tel\T1/phv/m/n/7 : 13^^U26
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 533--533
+Underfull \hbox (badness 3428) in paragraph at lines 600--600
 []\T1/phv/b/n/7 macOS Ap-ple Si-li-con\T1/phv/m/n/7 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 []\T1/phv/b/n/7 Linux\T1/phv/m/n/7 : Ubun-tu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 \T1/phv/m/n/7 20.04^^U24.10, De-bian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 \T1/phv/m/n/7 11^^U12, Fe-do-ra 40^^U42,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 []\T1/phv/b/n/7 SUSE / open-SU-SE\T1/phv/m/n/7 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 []\T1/phv/b/n/7 Windows\T1/phv/m/n/7 : 10 y 11
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 []\T1/phv/b/n/7 Linux\T1/phv/m/n/7 : Ubun-tu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 \T1/phv/m/n/7 20.04^^U24.04, De-bian
  []
 
 
-Underfull \hbox (badness 3713) in paragraph at lines 533--533
+Underfull \hbox (badness 3713) in paragraph at lines 600--600
 []\T1/phv/b/n/7 Linux\T1/phv/m/n/7 : Ubun-tu 20.04 /
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 533--533
+Underfull \hbox (badness 1968) in paragraph at lines 600--600
 []\T1/phv/m/n/7 Instrucciones SSE2 (In-
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 533--533
+Underfull \hbox (badness 2469) in paragraph at lines 600--600
 \T1/phv/m/n/7 GB de al-ma-ce-na-mien-to
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 533--533
+Underfull \hbox (badness 1072) in paragraph at lines 600--600
 []\T1/phv/m/n/7 500 MB de es-pa-cio en
  []
 
 
-Underfull \hbox (badness 2875) in paragraph at lines 533--533
+Underfull \hbox (badness 2875) in paragraph at lines 600--600
 []\T1/phv/m/n/7 Procesador x86 $\OMS/cmsy/m/n/7 ^^U$ \T1/phv/m/n/7 1.4
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 []\T1/phv/m/n/7 Resolución mí-ni-ma
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 533--533
+Underfull \hbox (badness 1259) in paragraph at lines 600--600
 []\T1/phv/m/n/7 Cuenta ac-ti-va en Cis-co
  []
 
 LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 538.
+(Font)              scaled to size 9.49997pt on input line 605.
 
-Underfull \hbox (badness 2875) in paragraph at lines 568--568
+Underfull \hbox (badness 2875) in paragraph at lines 635--635
 []|\T1/phv/b/n/8 Total \T1/phv/m/n/8 (Sus-ten-ta-do ofi-cial-men-te
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 568--568
+Underfull \hbox (badness 1540) in paragraph at lines 635--635
 []|\T1/phv/m/n/8 Rendimiento óp-ti-mo asig-nan-do
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 568--568
+Underfull \hbox (badness 1231) in paragraph at lines 635--635
 []|\T1/phv/b/n/8 Total \T1/phv/m/n/8 (Grá-fi-cos in-te-gra-dos Ra-
  []
 
-LaTeX Info: Redefining \. on input line 570.
-LaTeX Info: Redefining \% on input line 570.
-[12]
-LaTeX Info: Redefining \. on input line 614.
-LaTeX Info: Redefining \% on input line 614.
-LaTeX Info: Redefining \. on input line 614.
-LaTeX Info: Redefining \% on input line 614.
+LaTeX Info: Redefining \. on input line 637.
+LaTeX Info: Redefining \% on input line 637.
+[13]
+LaTeX Info: Redefining \. on input line 680.
+LaTeX Info: Redefining \% on input line 680.
+LaTeX Info: Redefining \. on input line 680.
+LaTeX Info: Redefining \% on input line 680.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1425,9 +1417,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
 
-[13]
-LaTeX Info: Redefining \. on input line 796.
-LaTeX Info: Redefining \% on input line 796.
+[14]
+LaTeX Info: Redefining \. on input line 863.
+LaTeX Info: Redefining \% on input line 863.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1436,24 +1428,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
-[14]
-LaTeX Info: Redefining \. on input line 883.
-LaTeX Info: Redefining \% on input line 883.
-LaTeX Info: Redefining \. on input line 883.
-LaTeX Info: Redefining \% on input line 883.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.58723pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.58723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
-
 [15]
-LaTeX Info: Redefining \. on input line 970.
-LaTeX Info: Redefining \% on input line 970.
-LaTeX Info: Redefining \. on input line 970.
-LaTeX Info: Redefining \% on input line 970.
+LaTeX Info: Redefining \. on input line 950.
+LaTeX Info: Redefining \% on input line 950.
+LaTeX Info: Redefining \. on input line 950.
+LaTeX Info: Redefining \% on input line 950.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1463,8 +1442,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
 
 [16]
-LaTeX Info: Redefining \. on input line 986.
-LaTeX Info: Redefining \% on input line 986.
+LaTeX Info: Redefining \. on input line 1037.
+LaTeX Info: Redefining \% on input line 1037.
+LaTeX Info: Redefining \. on input line 1037.
+LaTeX Info: Redefining \% on input line 1037.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.58723pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.58723pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
+
+[17]
+LaTeX Info: Redefining \. on input line 1053.
+LaTeX Info: Redefining \% on input line 1053.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1473,11 +1465,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
-[17]
-LaTeX Info: Redefining \. on input line 1037.
-LaTeX Info: Redefining \% on input line 1037.
-LaTeX Info: Redefining \. on input line 1037.
-LaTeX Info: Redefining \% on input line 1037.
+[18]
+LaTeX Info: Redefining \. on input line 1104.
+LaTeX Info: Redefining \% on input line 1104.
+LaTeX Info: Redefining \. on input line 1104.
+LaTeX Info: Redefining \% on input line 1104.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1486,31 +1478,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
 
-[18]
-<IMG/esquema2.png, id=406, 820.2645pt x 407.6028pt>
+[19]
+<IMG/esquema2.png, id=367, 820.2645pt x 407.6028pt>
 File: IMG/esquema2.png Graphic file (type png)
 <use IMG/esquema2.png>
-Package pdftex.def Info: IMG/esquema2.png  used on input line 1040.
+Package pdftex.def Info: IMG/esquema2.png  used on input line 1107.
 (pdftex.def)             Requested size: 500.484pt x 248.69952pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 1040--1041
-[][] 
- []
-
-<IMG/image-1.png, id=408, 1204.5pt x 446.41782pt>
+<IMG/image-1.png, id=369, 1204.5pt x 446.41782pt>
 File: IMG/image-1.png Graphic file (type png)
 <use IMG/image-1.png>
-Package pdftex.def Info: IMG/image-1.png  used on input line 1046.
+Package pdftex.def Info: IMG/image-1.png  used on input line 1113.
 (pdftex.def)             Requested size: 500.484pt x 185.49153pt.
+LaTeX Info: Redefining \. on input line 1115.
+LaTeX Info: Redefining \% on input line 1115.
+LaTeX Info: Redefining \. on input line 1115.
+LaTeX Info: Redefining \% on input line 1115.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 1046--1047
-[][] 
- []
-
-LaTeX Info: Redefining \. on input line 1048.
-LaTeX Info: Redefining \% on input line 1048.
-LaTeX Info: Redefining \. on input line 1048.
-LaTeX Info: Redefining \% on input line 1048.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.58723pt, for example:
@@ -1518,73 +1501,62 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
 
-[19 <./IMG/esquema2.png>]
-Overfull \hbox (42.35979pt too wide) in paragraph at lines 1093--1094
+[20 <./IMG/esquema2.png>]
+LaTeX Info: Redefining \. on input line 1153.
+LaTeX Info: Redefining \% on input line 1153.
+LaTeX Info: Redefining \. on input line 1153.
+LaTeX Info: Redefining \% on input line 1153.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.58723pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.58723pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
+
+[21 <./IMG/image-1.png>]
+Overfull \hbox (42.35979pt too wide) in paragraph at lines 1160--1161
 []\T1/phv/m/n/10 Documentación ofi-cial: []$\T1/cmtt/m/n/10 https : / / storage
 -[]asset . msi . com / specSheet / es / bnp / Modern % 20A14 % 20AI % 20F2HMG-[
 ]009XES .
  []
 
-LaTeX Info: Redefining \. on input line 1094.
-LaTeX Info: Redefining \% on input line 1094.
-LaTeX Info: Redefining \. on input line 1094.
-LaTeX Info: Redefining \% on input line 1094.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.58723pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.58723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
-
-[20 <./IMG/image-1.png>]
-Overfull \hbox (0.37004pt too wide) in paragraph at lines 1099--1100
+Overfull \hbox (0.37004pt too wide) in paragraph at lines 1166--1167
 []\T1/phv/m/n/10 Documentación ofi-cial: []$\T1/cmtt/m/n/10 https : / / storage
 -[]asset . msi . com / specSheet / es / bnp / Modern % 2015 % 20F1MG-[]499ES .
  []
 
 
-Overfull \hbox (113.9518pt too wide) in paragraph at lines 1106--1107
+Overfull \hbox (113.9518pt too wide) in paragraph at lines 1173--1174
 []\T1/phv/m/n/10 Reseña del pro-duc-to: []$\T1/cmtt/m/n/10 https : / / www . no
 tebookcheck . org / Intel-[]se-[]enfrenta-[]a-[]Qualcomm-[]Analisis-[]del-[]Med
 ion-[]SPRCHRGD-[]14-[]S2 .
  []
 
 
-Overfull \hbox (214.67744pt too wide) in paragraph at lines 1112--1113
+Overfull \hbox (214.67744pt too wide) in paragraph at lines 1179--1180
 []\T1/phv/m/n/10 Reseña del pro-duc-to: []$\T1/cmtt/m/n/10 https : / / laptopme
 dia . com / review / lenovo-[]thinkpad-[]p15v-[]gen-[]3-[]review-[]a-[]mobile-[
 ]workstation-[]with-[]an-[]impressive-[]display /
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1143--1143
+Underfull \hbox (badness 10000) in alignment at lines 1210--1210
 [][][][][][] 
  []
 
-LaTeX Info: Redefining \. on input line 1178.
-LaTeX Info: Redefining \% on input line 1178.
-[21]
-LaTeX Info: Redefining \. on input line 1278.
-LaTeX Info: Redefining \% on input line 1278.
-LaTeX Info: Redefining \. on input line 1278.
-LaTeX Info: Redefining \% on input line 1278.
- [22]
-LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 1304.
-
-Overfull \hbox (52.78961pt too wide) in paragraph at lines 1336--1336
-[]$\T1/cmtt/m/n/8 https : / / es-[]store . msi . com / products / modern-[]a14-
-[]ai-[]f2hmg-[]009xes-[]portatiles$[]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1336--1336
-[]$\T1/cmtt/m/n/8 https : / / www . lg . com / es / monitores / todos-[]los-[]m
-onitores /
- []
-
+LaTeX Info: Redefining \. on input line 1212.
+LaTeX Info: Redefining \% on input line 1212.
+[22]
 LaTeX Info: Redefining \. on input line 1338.
 LaTeX Info: Redefining \% on input line 1338.
+LaTeX Info: Redefining \. on input line 1338.
+LaTeX Info: Redefining \% on input line 1338.
+ [23]
+LaTeX Info: Redefining \. on input line 1368.
+LaTeX Info: Redefining \% on input line 1368.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.48717pt, for example:
@@ -1592,16 +1564,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
-[23]
-LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
-(Font)              scaled to size 9.49997pt on input line 1366.
-LaTeX Info: Redefining \. on input line 1366.
-LaTeX Info: Redefining \% on input line 1366.
-LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 1366.
-LaTeX Info: Redefining \. on input line 1366.
-LaTeX Info: Redefining \% on input line 1366.
+[24]
+LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 1371.
 
+Overfull \hbox (52.78961pt too wide) in paragraph at lines 1403--1403
+[]$\T1/cmtt/m/n/8 https : / / es-[]store . msi . com / products / modern-[]a14-
+[]ai-[]f2hmg-[]009xes-[]portatiles$[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1403--1403
+[]$\T1/cmtt/m/n/8 https : / / www . lg . com / es / monitores / todos-[]los-[]m
+onitores /
+ []
+
+LaTeX Info: Redefining \. on input line 1425.
+LaTeX Info: Redefining \% on input line 1425.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 9.49997pt on input line 1425.
+LaTeX Info: Redefining \. on input line 1425.
+LaTeX Info: Redefining \% on input line 1425.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.58723pt, for example:
@@ -1609,21 +1592,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.58723pt}.
 
-[24]
+[25]
+LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
+(Font)              scaled to size 9.49997pt on input line 1433.
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <10> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 1366.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 1433.
 
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 1366.
+(Font)              scaled to size 9.49997pt on input line 1433.
 
-Overfull \hbox (3.5868pt too wide) in paragraph at lines 1366--1366
+Overfull \hbox (3.5868pt too wide) in paragraph at lines 1433--1433
 []\T1/phv/m/n/10 Isaac. \T1/phv/m/sl/10 RISC-V vs ARM: di-fe-ren-cias, ven-ta-j
 as y des-ven-ta-jas\T1/phv/m/n/10 . Dic. de 2023. \T1/phv/m/sc/10 url\T1/phv/m/
 n/10 : []$\T1/cmtt/m/n/10 https : / / www . profesionalreview .
  []
 
-LaTeX Info: Redefining \. on input line 1368.
-LaTeX Info: Redefining \% on input line 1368.
+LaTeX Info: Redefining \. on input line 1435.
+LaTeX Info: Redefining \% on input line 1435.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.48717pt, for example:
@@ -1631,7 +1616,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.48717pt}.
 
-[25] (template_Article.aux
+[26] (template_Article.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1640,27 +1625,20 @@ LaTeX Info: Redefining \% on input line 13.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-Package rerunfilecheck Warning: File `template_Article.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `template_Article.out':
-(rerunfilecheck)             Before: 5B8959D2F30D8B00B0607086E221A53A;24490
-(rerunfilecheck)             After:  88CAF5793A9FC4ABED98411A920E1BC6;24472.
+Package rerunfilecheck Info: File `template_Article.out' has not changed.
+(rerunfilecheck)             Checksum: DD420319F65F91CD5C590DD4AEDC69C0;16796.
 Package logreq Info: Writing requests to 'template_Article.run.xml'.
 \openout1 = `template_Article.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34929 strings out of 467871
- 668544 string characters out of 5428453
- 1509987 words of memory out of 5000000
- 63199 multiletter control sequences out of 15000+600000
+ 34924 strings out of 467871
+ 668381 string characters out of 5428453
+ 1509981 words of memory out of 5000000
+ 63195 multiletter control sequences out of 15000+600000
  676603 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,12n,118p,1911b,2356s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,12n,118p,1911b,2346s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt100
 0.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 0800.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
@@ -1673,9 +1651,9 @@ m/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pr
 ogram Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTe
 X/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/
 helvetic/uhvro8a.pfb>
-Output written on template_Article.pdf (25 pages, 2186748 bytes).
+Output written on template_Article.pdf (26 pages, 2176849 bytes).
 PDF statistics:
- 709 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 669 PDF objects out of 1000 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
