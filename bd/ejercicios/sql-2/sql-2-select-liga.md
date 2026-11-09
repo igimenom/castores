@@ -108,6 +108,9 @@ select nombre from jugador where id_equipo in (1,2) AND posicion in ('ala', 'por
 select nombre from jugador where nombre like 'a%';
 ```
 - **T11.** Equipos sin pabellón.
+```sql
+select id_equipo from equipo where pabellon = ''
+```
 
 | A | B | C |
 |---|---|---|
