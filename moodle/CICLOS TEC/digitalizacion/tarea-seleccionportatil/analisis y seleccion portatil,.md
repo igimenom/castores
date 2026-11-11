@@ -620,7 +620,7 @@ A pesar de la modularidad contenida propia de los equipos delgados, el margen de
 
 [i-tec USB-C Triple Display Docking Station Gen 2 Pro + Power Delivery 100W](https://www.ldlc.com/es-es/ficha/PB00630772.html): 195,95€ x 10 = 1959,50€
 #### Monitor (20)
-![alt text](image-5.png)
+![alt text](image-5.png) 
 
 [AOC Gaming Q25G4SR 25" 85,00 € x 20](https://www.lg.com/es/monitores/todos-los-monitores/24u411b-b-aeu/) = 1.700,00 € €
 #### Teclado y ratón (10)
