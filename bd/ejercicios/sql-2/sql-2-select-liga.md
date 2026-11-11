@@ -58,15 +58,26 @@ SELECT … FROM … ORDER BY columna DESC, otra_columna LIMIT 5;
 
 - **T4.** Los tres jugadores más veteranos.
 ```sql
-select j.nombre, j.fecha_nacimiento from jugador j order by j.fecha_nacimiento asc limit 3;
+select nombre, fecha_nacimiento from jugador order by fecha_nacimiento asc limit 3;
 ```
 - **T5.** Los tres partidos con más goles. ¿Sale siempre lo mismo?
-
+```sql
+select id_partido, goles locales + goles visitante as total from partido order by total desc limit 3;
+```
 Una, la que queráis:
 
 - Los cinco dorsales más altos; a igual dorsal, por nombre.
+```sql
+select dorsal, nombre from jugador order by dorsal desc, nombre limit 5;
+```
 - El primer jugador por orden alfabético.
+```sql
+select nombre from jugador order by nombre limit 1;
+```
 - Los equipos ordenados por ciudad, y dentro de cada ciudad, por nombre.
+```sql
+select nombre, ciudad from equipo order by ciudad, nombre;
+```
 
 ## 3 · `WHERE`
 
@@ -77,11 +88,29 @@ SELECT … FROM … WHERE condición;
 ```
 
 - **T6.** ¿Cuántos jugadores tiene Teruel Mudéjar?
+```sql
+select COUNT(*) as total from jugador where id_equipo = 4
+```
 - **T7.** Partidos que acabaron en empate.
+```sql
+select id_partido from partido where golges_local = goles_visitante
+```
 - **T8.** Partidos que ganó el visitante.
+```sql
+select id_partido from partido where goles_local < goles_visitante
+```
 - **T9.** Jugadores de los equipos 1 y 2 que sean alas o porteros.
+```sql
+select nombre from jugador where id_equipo in (1,2) AND posicion in ('ala', 'portero')
+```
 - **T10.** Jugadores cuyo nombre empieza por A.
+```sql
+select nombre from jugador where nombre like 'a%';
+```
 - **T11.** Equipos sin pabellón.
+```sql
+select id_equipo from equipo where pabellon = ''
+```
 
 | A | B | C |
 |---|---|---|
