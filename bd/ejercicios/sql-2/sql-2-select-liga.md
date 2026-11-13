@@ -218,7 +218,11 @@ select id_equipo, count(id_jugador) as num_jugadores from jugador where year(fec
 Sin contar a los porteros, las posiciones con una media de dorsal mayor que 9, con un decimal
 
 ```sql
-
+select id_partidor
+```
+x3
+```sql
+select id_jornada, id_partido, goles_locales - goles_visitantes as goles from partido
 ```
 ## Entrega individual
 
