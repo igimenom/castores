@@ -130,8 +130,17 @@ IF(condición, valor_si_sí, valor_si_no)
 ```
 
 - **T12.** Nombre de cada equipo en mayúsculas y cuántas letras tiene.
+```sql
+select UPPER(nombre) as nombre_upper, CHAR_LENGTH(nombre) as longitud from equipo;
+```
 - **T13.** Los tres jugadores de más edad, con la edad calculada.
+```sql
+select nombre, fecha_nacimiento from jugador order by fecha_nacimiento, TIMESTAMPDIFF(YEAR, fecha_nacimiento, CURDATE()) ASC limit 3;
+```
 - **T14.** Cada partido con quién ganó: `local`, `visitante` o `empate`.
+```sql
+select  id_partido, goles_locales - goles_visitante, if(goles_local - goles_visitante > 0, if(goles-local - goles_visitante = 0, "empate", "visitante")) from partido
+```
 
 | A | B | C |
 |---|---|---|
@@ -147,11 +156,26 @@ SELECT columna, COUNT(*) FROM … WHERE … GROUP BY columna HAVING COUNT(*) > 2
 
 - **T15.** Resumen de la liga en una fila: partidos, goles locales, goles visitantes, media de goles
   por partido y máximo de goles en un partido.
+```sql
+select count(*) as num_partido, sum(goles_local), sum(goles_visitante), avg(goles_local + goles_visitante), max(goles_local + goles_visitante) from partido group by id_partido
+```
 - **T16.** Jugadores por equipo.
+```sql
+select id_quipo, count(id_equipo) from jugador group by id_equipo;
+```
 - **T17.** Goles por jornada.
+```sql
+select jornada, sum(goles_local + goles_visitante) from partido group by jornada;
+```
 - **T18.** ¿Qué sale con `SELECT posicion, nombre, COUNT(*) FROM jugador GROUP BY posicion;`? ¿Tiene
   sentido?
+```sql
+select posicion, count(*) from jugador group by posicion;
+```
 - **T19.** Jugadores (por número) con cuatro goles o más.
+```sql
+select id_jugador, count(id_jugador) as total_goles from gol group by id_jugador having total_goles >= 4
+```
 
 | A | B | C |
 |---|---|---|
