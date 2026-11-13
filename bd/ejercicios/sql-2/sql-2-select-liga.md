@@ -207,6 +207,14 @@ equipos, en orden. No se entregan.
 | X9 | Dobletes: cada jugador que ha marcado dos goles o más en un mismo partido, con el partido y los goles |
 | X10 | Por jornada, cuántos partidos ganó el equipo local y cuántos el visitante |
 | X11 | Esta consulta da error. ¿Por qué? Arréglala: `SELECT id_equipo, COUNT(*) FROM jugador WHERE COUNT(*) > 7 GROUP BY id_equipo;` |
+---
+Los tres equipos con más jugadores nacidos en los años 90, de más a menos
+
+where fecha_nacimiento like '199%'
+```sql
+select id_equipo, count(id_jugador) as num_jugadores from jugador where year(fecha_nacimiento) between 1990 and 1999 group by id_equipo order by num_jugadores desc limit 3;
+
+```
 
 ## Entrega individual
 
