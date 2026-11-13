@@ -189,6 +189,25 @@ Más: edad media por posición.
 
 ¿Cómo se llama el máximo goleador? Con lo de hoy se puede, pero en dos consultas.
 
+## Combinadas
+
+Mezclan todo lo anterior: `WHERE`, funciones, `GROUP BY`, `HAVING`, `ORDER BY` y `LIMIT`. Por
+equipos, en orden. No se entregan.
+
+| # | Pregunta |
+|---|---|
+| X1 | Los tres equipos con más jugadores nacidos en los años 90, de más a menos |
+| X2 | Sin contar a los porteros, las posiciones con una media de dorsal mayor que 9, con un decimal |
+| X3 | Jornadas con más de 12 goles: partidos, goles y media de goles por partido, de más goles a menos |
+| X4 | Jugadores (por número) que han marcado en la segunda parte en dos partidos distintos o más, con sus goles y en cuántos partidos |
+| X5 | De visitante: partidos, goles a favor, goles en contra y diferencia de cada equipo, solo los que tienen diferencia positiva |
+| X6 | ¿En cuántos minutos distintos se ha marcado? ¿Qué minuto se repite más? |
+| X7 | Dorsales que llevan cuatro equipos o más, con cuántos equipos. ¿Puede salir alguno con más de seis? |
+| X8 | Partidos con cinco goles o más en los que el primer gol llegó en los cinco primeros minutos: goles, primer y último minuto y cuántos jugadores distintos marcaron |
+| X9 | Dobletes: cada jugador que ha marcado dos goles o más en un mismo partido, con el partido y los goles |
+| X10 | Por jornada, cuántos partidos ganó el equipo local y cuántos el visitante |
+| X11 | Esta consulta da error. ¿Por qué? Arréglala: `SELECT id_equipo, COUNT(*) FROM jugador WHERE COUNT(*) > 7 GROUP BY id_equipo;` |
+
 ## Entrega individual
 
 Cada uno, por su cuenta. Se entrega en Moodle, tarea «SQL 1 · Consultas a la liga», **antes de
