@@ -215,7 +215,11 @@ where fecha_nacimiento like '199%'
 select id_equipo, count(id_jugador) as num_jugadores from jugador where year(fecha_nacimiento) between 1990 and 1999 group by id_equipo order by num_jugadores desc limit 3;
 
 ```
+Sin contar a los porteros, las posiciones con una media de dorsal mayor que 9, con un decimal
 
+```sql
+
+```
 ## Entrega individual
 
 Cada uno, por su cuenta. Se entrega en Moodle, tarea «SQL 1 · Consultas a la liga», **antes de
