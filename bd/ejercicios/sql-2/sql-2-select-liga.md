@@ -222,7 +222,7 @@ select id_partidor
 ```
 x3
 ```sql
-select id_jornada, id_partido, sum(goles_local + goles_visitante) as total from partido group by jornada having total >= 12
+select jornada, count(*), sum(goles_local + goles_visitante) as total, avg(goles_locales + goles_visitante) from partido group by jornada having total >= 12 order by total desc;
 ```
 ## Entrega individual
 
