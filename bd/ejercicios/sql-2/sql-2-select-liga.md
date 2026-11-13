@@ -221,7 +221,7 @@ select id_equipo, count(id_jugador) as num_jugadores from jugador where year(fec
 Cada uno, por su cuenta. Se entrega en Moodle, tarea «SQL 1 · Consultas a la liga», **antes de
 la clase del viernes 6 de noviembre**.
 
-- Un solo fichero, `apellido-nombre.sql`.
+- Un solo fichero, `apellido-nombre.sql`. (solo ejrs individuales)
 - Encima de cada consulta, un comentario con la pregunta y cuántas filas salen:
   `-- I2 · ¿Cuántos jugadores de mi equipo nacieron en 2000 o después? · 1 fila`
 - Solo con lo visto hoy: sin `JOIN` ni subconsultas.
