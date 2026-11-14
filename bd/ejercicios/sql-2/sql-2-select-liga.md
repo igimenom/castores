@@ -208,21 +208,89 @@ equipos, en orden. No se entregan.
 | X10 | Por jornada, cuántos partidos ganó el equipo local y cuántos el visitante |
 | X11 | Esta consulta da error. ¿Por qué? Arréglala: `SELECT id_equipo, COUNT(*) FROM jugador WHERE COUNT(*) > 7 GROUP BY id_equipo;` |
 ---
-Los tres equipos con más jugadores nacidos en los años 90, de más a menos
-
-where fecha_nacimiento like '199%'
+X1 - Los tres equipos con más jugadores nacidos en los años 90, de más a menos 
 ```sql
-select id_equipo, count(id_jugador) as num_jugadores from jugador where year(fecha_nacimiento) between 1990 and 1999 group by id_equipo order by num_jugadores desc limit 3;
-
+where 
+  fecha_nacimiento 
+like 
+  '199%'
 ```
-Sin contar a los porteros, las posiciones con una media de dorsal mayor que 9, con un decimal
-
 ```sql
-select id_partidor
+select 
+  id_equipo, 
+  count(id_jugador) as num_jugadores 
+from 
+  jugador 
+where 
+  year(fecha_nacimiento) between 1990 and 1999 
+group by 
+  id_equipo 
+order by 
+  num_jugadores desc limit 3;
+---
 ```
-x3
+X2 - Sin contar a los porteros, las posiciones con una media de dorsal mayor que 9, con un decimal
 ```sql
-select jornada, count(*), sum(goles_local + goles_visitante) as total, avg(goles_locales + goles_visitante) from partido group by jornada having total >= 12 order by total desc;
+select 
+  nombre, 
+  posicion 
+from 
+  jugador 
+where 
+  dorsal > 9;
+```
+---
+x3 - Jornadas con más de 12 goles: partidos, goles y media de goles por partido, de más goles a menos
+```sql
+select 
+  jornada, 
+  count(*), 
+  sum(goles_local + goles_visitante) as total, 
+  avg(goles_locales + goles_visitante) 
+from 
+  partido 
+group by 
+  jornada 
+having 
+  total >= 12 
+order by 
+  total desc;
+```
+---
+X4 - Jugadores (por número) que han marcado en la segunda parte en dos partidos distintos o más, con sus goles y en cuántos partidos
+```sql
+select 
+  id_jugador,
+  COUNT(id_gol) as goles_totales_segunda_parte,
+  COUNT(distinct id_partido) as total_partido
+from 
+  gol 
+where 
+  minuto > 45
+group by
+  id_jugador
+having
+  count(distinct id_partido) >= 2
+order by
+  id_jugador;
+```
+---
+X5 - De visitante: partidos, goles a favor, goles en contra y diferencia de cada equipo, solo los que tienen diferencia positiva
+```sql
+SELECT 
+    id_visitante AS equipo,
+    COUNT(id_partido) AS partidos,
+    SUM(goles_visitante) AS goles_favor,
+    SUM(goles_local) AS goles_contra,
+    SUM(goles_visitante) - SUM(goles_local) AS diferencia
+FROM 
+    partido
+GROUP BY 
+    id_visitante
+HAVING 
+    (SUM(goles_visitante) - SUM(goles_local)) > 0
+ORDER BY 
+    diferencia DESC;
 ```
 ## Entrega individual
 
