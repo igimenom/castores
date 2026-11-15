@@ -338,6 +338,8 @@ from
   gol
 group by
  id_partido
+ having
+  count(id_gol) >= 5
 ```
 ---
 X9 - Dobletes: cada jugador que ha marcado dos goles o más en un mismo partido, con el partido y los goles
