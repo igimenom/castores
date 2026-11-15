@@ -329,17 +329,21 @@ having
 ---
 X8 - Partidos con cinco goles o más en los que el primer gol llegó en los cinco primeros minutos: goles, primer y último minuto y cuántos jugadores distintos marcaron
 ```sql
-select
-  id_partido,
-  minuto,
-  count(distinct id_jugador),
-  count(id_gol)
-from
-  gol
-group by
- id_partido
- having
-  count(id_gol) >= 5
+SELECT 
+    id_partido,
+    COUNT(id_gol) AS total_goles,
+    MIN(minuto) AS primer_minuto,
+    MAX(minuto) AS ultimo_minuto,
+    COUNT(DISTINCT id_jugador) AS jugadores_distintos
+FROM 
+    gol
+GROUP BY 
+    id_partido
+HAVING 
+    COUNT(id_gol) >= 5 
+    AND MIN(minuto) <= 5
+ORDER BY 
+    id_partido;
 ```
 ---
 X9 - Dobletes: cada jugador que ha marcado dos goles o más en un mismo partido, con el partido y los goles
