@@ -292,6 +292,65 @@ HAVING
 ORDER BY 
     diferencia DESC;
 ```
+---
+X6 - ¿En cuántos minutos distintos se ha marcado? ¿Qué minuto se repite más?
+```sql
+select
+  count(distinct minuto) as total_goles_en_minutos_distintos
+from
+  gol
+```
+```sql
+select
+  minuto,
+  count(id_gol) as total_goles
+from
+  gol
+group by
+  minuto
+order by
+  total_goles DESC
+limit 1;
+```
+---
+X7 - Dorsales que llevan cuatro equipos o más, con cuántos equipos. ¿Puede salir alguno con más de seis?
+```sql
+select
+  count(id_equipo) as nmro_equipo,
+  dorsal
+from
+  jugador
+group by
+  dorsal
+having
+ count(id_equipo) >= 4;
+
+```
+---
+X8 - Partidos con cinco goles o más en los que el primer gol llegó en los cinco primeros minutos: goles, primer y último minuto y cuántos jugadores distintos marcaron
+```sql
+select
+  id_partido,
+  minuto,
+  count(distinct id_jugador),
+  count(id_gol)
+from
+  gol
+group by
+ id_partido
+```
+---
+X9 - Dobletes: cada jugador que ha marcado dos goles o más en un mismo partido, con el partido y los goles
+```sql
+```
+---
+X10 - Por jornada, cuántos partidos ganó el equipo local y cuántos el visitante
+```sql
+```
+---
+X11 - Esta consulta da error. ¿Por qué? Arréglala: `SELECT id_equipo, COUNT(*) FROM jugador WHERE COUNT(*) > 7 GROUP BY id_equipo;` 
+```sql
+```
 ## Entrega individual
 
 Cada uno, por su cuenta. Se entrega en Moodle, tarea «SQL 1 · Consultas a la liga», **antes de
