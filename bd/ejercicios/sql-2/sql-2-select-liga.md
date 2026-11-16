@@ -348,10 +348,34 @@ ORDER BY
 ---
 X9 - Dobletes: cada jugador que ha marcado dos goles o más en un mismo partido, con el partido y los goles
 ```sql
+select 
+  id_jugador, 
+  id_partido, 
+  count(id_gol) as goles_tot
+from 
+  gol
+group by 
+  id_partido
+having
+  goles_tot >= 2
 ```
 ---
 X10 - Por jornada, cuántos partidos ganó el equipo local y cuántos el visitante
+
 ```sql
+SELECT
+  id_partido,
+  goles_local - goles_visitante AS diferencia_local,
+  goles_visitante - goles_local AS diferencia_visitante,
+  IF(
+    goles_local - goles_visitante > 0, 
+    'local', 
+    IF(goles_local - goles_visitante = 0, 'empate', 'visitante')
+  ) AS resultado,
+  jornada
+FROM partido
+GROUP BY jornada
+  
 ```
 ---
 X11 - Esta consulta da error. ¿Por qué? Arréglala: `SELECT id_equipo, COUNT(*) FROM jugador WHERE COUNT(*) > 7 GROUP BY id_equipo;` 
