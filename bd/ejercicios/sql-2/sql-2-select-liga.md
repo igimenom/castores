@@ -414,7 +414,7 @@ Además, en el mismo fichero, las dos tandas en paralelo (A, B o C) que no hicis
 I1 - Los jugadores de tu equipo con nombre, posición, dorsal y edad hoy, ordenados por dorsal
 ```sql
 select
-  nombre, posicion, dorsal, TIMESTAMPDIFF(YEAR, fecha_nacimiento, CURDATE()) as edad
+  id_jugador, nombre, posicion, dorsal, TIMESTAMPDIFF(YEAR, fecha_nacimiento, CURDATE()) as edad
 from
   jugador
 where
@@ -467,11 +467,40 @@ where
   id_local = 1 and id_visitante = 1
 ```
 
-El jugador de tu equipo que más goles ha marcado: su número y sus goles. Los números de tu equipo los tienes en I1
+I5 - El jugador de tu equipo que más goles ha marcado: su número y sus goles. Los números de tu equipo los tienes en I1
 
 ```sql
-select id_jugador, count(id_gol)
+select 
+  id_jugador, 
+  count(id_gol)
 from gol
+where 
+    id_jugador between 1 and 6
 group by id_jugador
 order by count(id_gol) desc
+limit 1
 ```
+
+I6 - Una pregunta tuya sobre la liga, que use `GROUP BY` o una función. Escribe la pregunta, la consulta y, en un comentario, qué devuelve 
+
+Cantidad de jugadores en tú equipo para cada posición.
+```sql
+select
+  posicion,
+  count(id_jugador) as cantidad_jugadores
+from
+  jugador
+where
+  id_equipo = 1
+group by 
+  posicion
+order by
+  cantidad_jugadores DESC
+```
+Devuelve
+| posicion	| cantidad_jugadores|
+|-|-|
+|ala|	3
+|cierre	|2
+|portero	|2
+|pívot	|1
