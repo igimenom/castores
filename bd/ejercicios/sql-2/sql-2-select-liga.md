@@ -363,23 +363,30 @@ having
 X10 - Por jornada, cuántos partidos ganó el equipo local y cuántos el visitante
 
 ```sql
-SELECT
-  id_partido,
-  goles_local - goles_visitante AS diferencia_local,
-  goles_visitante - goles_local AS diferencia_visitante,
-  IF(
-    goles_local - goles_visitante > 0, 
-    'local', 
-    IF(goles_local - goles_visitante = 0, 'empate', 'visitante')
-  ) AS resultado,
-  jornada
-FROM partido
-GROUP BY jornada
+SELECT 
+    jornada,
+    SUM(goles_local > goles_visitante) AS victorias_local,
+    SUM(goles_visitante > goles_local) AS victorias_visitante
+FROM 
+    partido
+GROUP BY 
+    jornada
+ORDER BY 
+    jornada;
   
 ```
 ---
 X11 - Esta consulta da error. ¿Por qué? Arréglala: `SELECT id_equipo, COUNT(*) FROM jugador WHERE COUNT(*) > 7 GROUP BY id_equipo;` 
 ```sql
+select 
+    id_equipo, 
+    COUNT(*) 
+from 
+    jugador 
+group by 
+    id_equipo 
+having 
+    COUNT(*) > 7;
 ```
 ## Entrega individual
 
