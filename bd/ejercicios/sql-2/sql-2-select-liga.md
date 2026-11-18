@@ -409,7 +409,7 @@ la clase del viernes 6 de noviembre**.
 | I5 | El jugador de tu equipo que más goles ha marcado: su número y sus goles. Los números de tu equipo los tienes en I1 |
 | I6 | Una pregunta tuya sobre la liga, que use `GROUP BY` o una función. Escribe la pregunta, la consulta y, en un comentario, qué devuelve |
 
-Además, en el mismo fichero, las dos tandas en paralelo (A, B o C) que no hiciste en clase.
+Las tandas en paralelo (A, B y C) no se entregan: son práctica para quien quiera más.
 
 I1 - Los jugadores de tu equipo con nombre, posición, dorsal y edad hoy, ordenados por dorsal
 ```sql
