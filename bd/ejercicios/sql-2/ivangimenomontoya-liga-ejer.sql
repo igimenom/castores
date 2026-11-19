@@ -1,3 +1,4 @@
+-- EQUIPO 1 SELECCIONADO
 -- I1 - Los jugadores de tu equipo con nombre, posición, dorsal y edad hoy, ordenados por dorsal
 
 select
