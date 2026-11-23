@@ -54,6 +54,8 @@ Una base de datos es un conjunto de ficheros interrelacionados.
     * Cuando: Solo cuando hace falta optimizar.
 ## 3. Los SGBD
 Un SGBD (Sistemas de Gestión de Bases de Datos) es el software cuya finalidad es la gestión de las bases de datos.
+## 3.2
+## 3.3 
 ## 4. Modelos de bases de datos
 Un modelo de datos es un conjunto de herramientas lógicas para:
 * Describir los datos.
@@ -80,6 +82,7 @@ graph TD
     B[ALMACÉN] --> C
 ```
 * Relacional: Un único elemento: la relación. Las interrelaciones se implementan con claves ajenas que apuntan a la clave primaria de otra tabla.
+## 4.3
 ## 4.4 NO SQL (no relacional)
 El mismo dato, «EQ-04 está en el Taller y tiene un módulo de 8 GB DDR4 Crucial», en tres modelos:
 ### Relacional
@@ -162,6 +165,7 @@ equipo:EQ-04:ram_gb → 8
     * Una empresa con una sede en cada ciudad; cada sede guarda sus datos y se consultan juntos.
         * Fragmentada: Cada servidor guarda una parte distinta de la información.
         * Replicada: Varios servidores guardan una copia exacta de los mismos datos.
+## 5.7
 ## 6. Clasificación de los SGDB
 Ejemplos: 
 ### María DB
