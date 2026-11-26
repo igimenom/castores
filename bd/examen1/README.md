@@ -58,7 +58,7 @@ Un SGBD (Sistemas de Gestión de Bases de Datos) es el software cuya finalidad e
 ### Restricciones modelo y del usuario
 * Restricciones modelo: inherente al modelo. Ej: dos filas no pueden tener la misma clave primaria.
 * Restricciones del usuario: las decida el usuario. Ej: un componente retirado no puede estar montado en un equipo.
-## Técnicas concurrencia
+### Técnicas concurrencia
 * Transacción: conjunto de operaciones que se ejecutan como una unidad.
 * Bloqueo- impredir el acceso a ciertos datos mientras una transacción lo usa, para que las transacciones se ejecuten como si estuvieran aisladas.
 ## 3.3 
