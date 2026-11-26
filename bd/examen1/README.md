@@ -55,6 +55,12 @@ Una base de datos es un conjunto de ficheros interrelacionados.
 ## 3. Los SGBD
 Un SGBD (Sistemas de Gestión de Bases de Datos) es el software cuya finalidad es la gestión de las bases de datos.
 ## 3.2
+### Restricciones modelo y del usuario
+* Restricciones modelo: inherente al modelo. Ej: dos filas no pueden tener la misma clave primaria.
+* Restricciones del usuario: las decida el usuario. Ej: un componente retirado no puede estar montado en un equipo.
+## Técnicas concurrencia
+* Transacción: conjunto de operaciones que se ejecutan como una unidad.
+* Bloqueo- impredir el acceso a ciertos datos mientras una transacción lo usa, para que las transacciones se ejecuten como si estuvieran aisladas.
 ## 3.3 
 ## 4. Modelos de bases de datos
 Un modelo de datos es un conjunto de herramientas lógicas para:
@@ -166,6 +172,10 @@ equipo:EQ-04:ram_gb → 8
         * Fragmentada: Cada servidor guarda una parte distinta de la información.
         * Replicada: Varios servidores guardan una copia exacta de los mismos datos.
 ## 5.7
+* Atomicidad: O se hacen todas las operaciones de la transacción, o ninguna
+* Consistencia: Ejecutada aisladamente, la transacción conserva la consistencia de la BD
+* Aislamiento: Con concurrencia, cada transacción se ejecuta como si las demás no hubieran empezado o ya hubieran terminado
+* Durabilidad: Terminada con éxito, los cambios permanecen incluso ante fallos del sistema
 ## 6. Clasificación de los SGDB
 Ejemplos: 
 ### María DB
